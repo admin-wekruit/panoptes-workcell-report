@@ -1,5 +1,8 @@
 // Hand-authored interface and report commentary. Original findings, evidence and user text remain verbatim.
 window.panoptesTranslations=Object.fromEntries(String.raw`
+场景中没有此对象：{id}	Object not found in this scene: {id}
+Agent 对话	Agent conversation
+对话记录仅在授权工作区查看。	Conversation history is available only in the authorized workspace.
 上传与 Agent 工作区 ↗	Uploads & agent workspace ↗
 进入完整工作区 ↗	Open full workspace ↗
 上传工位照片，或与 Agent 对话补充报告。	Upload workcell photos or add to a report through the agent chat.

@@ -101,6 +101,8 @@ const $=id=>document.getElementById(id);
 function status(message,error=false){$('status').textContent=message;$('status').classList.toggle('error',error);}
 async function main(){
   const parameter=new URLSearchParams(location.search).get('scene')||'scene.json?v=2',sceneURL=localAsset(parameter,location.href),response=await fetch(sceneURL);if(!response.ok)throw Error('scene.json 加载失败：'+response.status);const original=validateScene(await response.json()),scene=structuredClone(original);
+  const initialObjectId=new URLSearchParams(location.search).get('object'),initialObjectIndex=initialObjectId===null?-1:scene.objects.findIndex(o=>o.id===initialObjectId);
+  if(initialObjectId!==null&&initialObjectIndex<0)throw Error('场景中没有此对象：'+(initialObjectId||'∅'));
   if(scene.label){$('scene-title').textContent=scene.label;document.title=scene.label+' · 工位场景编辑';}
   if(scene.description){$('scene-description').textContent=scene.description;$('scene-description').hidden=false;}
   $('scene-report').href=localAsset(scene.metrics_report||'metrics.html',sceneURL);$('scene-report').hidden=false;
@@ -219,6 +221,7 @@ async function main(){
     }catch(error){$('summary').textContent=gl.isContextLost()?'3D 显示中断 · 请重新加载':'已显示 '+loaded+' / '+scene.objects.length+' 个对象 · 加载未完成';throw Error(o.label+'：'+error.message);}
   }
   ensureContext();$('summary').textContent=scene.run_id+' · '+scene.objects.length+' 个对象 · '+generated+' 个生成 / '+(parametric?parametric+' 个参数化 / ':'')+observed+' 个观测 · 单位 '+scene.units;
+  if(initialObjectIndex>=0){selectObject(initialObjectIndex);overview(false,initialObjectIndex);ensureContext();}
   status('场景已完整加载。'+(scene.description||'原照片机位使用原始内参与外参；生成资产的完整性和位置以实际验证为准。'));
 }
 // Run with ?selftest=1; also callable from Node after extracting this script.

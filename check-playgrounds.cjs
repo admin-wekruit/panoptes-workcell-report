@@ -32,6 +32,7 @@ async function check(engine){
       }else{
         const objects=id==='components'?components.objects.length:10;
         await frame.waitForFunction(count=>Number(document.querySelector('canvas')?.dataset.loadedObjects)===count,objects,{timeout:60000});
+        if(id!=='components')assert.equal(await frame.locator('#selection-overlay').getAttribute('data-object-id'),'','original scenes retain an unselected overview');
         assert(await frame.locator('header a').evaluateAll(links=>links.length>0&&links.every(a=>a.target==='_top')),'header links must leave the playground iframe');
         assert.equal(await frame.locator('#blender-report').isVisible(),id!=='components','Blender link must describe this scene');
         assert.match(await frame.locator('#scene-report').getAttribute('href'),id==='components'?/components\/metrics\.html$/:/\/metrics\.html$/);
@@ -48,6 +49,8 @@ async function check(engine){
             assert.match(await frame.locator('#metrics-link').getAttribute('href'),/metrics\.html#blender$/);
           }
         }else if(id==='components'){
+          await frame.waitForFunction(()=>document.getElementById('selection-overlay').dataset.objectId==='object_ddfd00218e68ffd9e3e7f515');
+          assert.equal(await frame.locator('#camera-label').textContent(),'对象聚焦');await frame.selectOption('#camera','overview');
           assert.equal(await frame.locator('#scene-title').textContent(),components.label);
           assert.equal(await frame.locator('#scene-description').textContent(),components.description);
           assert.equal(await frame.locator('#object-list .badge.generated').count(),2);

@@ -152,7 +152,7 @@ const playgrounds={
   generated:{name:'完整对象重建',url:'viewer.html',preview:'playground-generated.png',description:'Pi3X + RecGen · 9 个生成资产与 1 块观测地面。旋转场景，点选对象，再调整位置、旋转和缩放。'},
   observed:{name:'照片表面重建',url:'observed/',preview:'observed/preview.png',description:'workcell-reconstruction-01 · 较早的内部表面 GLB。切换原始照片机位、原图对照和线框；未拍到的区域保留为空。'},
   blender:{name:'参数化柱体试验',url:'viewer.html?scene=blender-scene.json',preview:'blender/parametric-frame_0003.png',description:'原生 Blender 试验的实际几何：仅两根防撞柱换为拟合圆柱，其余 8 个对象保持不变。网页可调整对象变换；半径与高度参数可在下载的 .blend 中修改。'},
-  components:{name:'小物体补全',url:'viewer.html?scene=components/scene.json',preview:'components/preview.png',description:'原 BOR1 检测照片的两个按钮，保留原生网格与独立对象轴。使用原报告几何坐标，未与三照片重建场景混合；物体语义与尺寸仍需核验。'}
+  components:{name:'小物体补全',url:'viewer.html?scene=components/scene.json&object=object_ddfd00218e68ffd9e3e7f515',preview:'components/preview.png',description:'原 BOR1 检测照片的两个按钮，保留原生网格与独立对象轴。使用原报告几何坐标，未与三照片重建场景混合；物体语义与尺寸仍需核验。'}
 };
 let playgroundId='generated';
 function closePlayground(){const previous=$('playground-frame'),frame=previous.cloneNode(false);frame.removeAttribute('src');frame.hidden=true;previous.replaceWith(frame);$('playground-preview').hidden=false;$('playground-launch').hidden=false;$('playground-close').hidden=true;$('playground-fullscreen').hidden=true;}
