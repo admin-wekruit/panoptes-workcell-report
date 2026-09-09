@@ -1,0 +1,1516 @@
+{
+  "version": 1,
+  "run_id": "lucida-replica-01",
+  "units": "未标定尺度（非米）",
+  "up": [
+    -0.4769218862056732,
+    -0.605158269405365,
+    -0.6374394297599792
+  ],
+  "bounds": {
+    "min": [
+      -2.544052303990734,
+      -0.6691451018706005,
+      -1.2534038736048307
+    ],
+    "max": [
+      1.1161573067940158,
+      2.7984394224926517,
+      1.4963771295666821
+    ]
+  },
+  "binary": "scene.bin",
+  "glb": "scene.glb",
+  "metrics_report": "metrics.html",
+  "cameras": [
+    {
+      "id": "frame_0001",
+      "label": "照片 1",
+      "width": 518,
+      "height": 518,
+      "K": [
+        [
+          380.4815368652344,
+          0.0,
+          258.5
+        ],
+        [
+          0.0,
+          379.89910888671875,
+          258.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_to_world": [
+        [
+          -0.3443349003791809,
+          0.5738850831985474,
+          -0.7430273294448853,
+          1.4269007444381714
+        ],
+        [
+          -0.5662743449211121,
+          0.5043041110038757,
+          0.6519284844398499,
+          -0.945278525352478
+        ],
+        [
+          0.7488440275192261,
+          0.6452388167381287,
+          0.1513267606496811,
+          0.006183192599564791
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "images/frame_0001.png"
+    },
+    {
+      "id": "frame_0002",
+      "label": "照片 2",
+      "width": 518,
+      "height": 518,
+      "K": [
+        [
+          382.533447265625,
+          0.0,
+          258.5
+        ],
+        [
+          0.0,
+          382.12298583984375,
+          258.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_to_world": [
+        [
+          -0.6951888203620911,
+          0.5486595630645752,
+          -0.46441954374313354,
+          0.8643792867660522
+        ],
+        [
+          -0.15310397744178772,
+          0.5182378888130188,
+          0.8414207696914673,
+          -1.2814918756484985
+        ],
+        [
+          0.7023336887359619,
+          0.6560505032539368,
+          -0.2762713134288788,
+          0.7568816542625427
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "images/frame_0002.png"
+    },
+    {
+      "id": "frame_0003",
+      "label": "照片 3",
+      "width": 518,
+      "height": 518,
+      "K": [
+        [
+          378.57366943359375,
+          0.0,
+          258.5
+        ],
+        [
+          0.0,
+          377.83770751953125,
+          258.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_to_world": [
+        [
+          -0.4863566756248474,
+          0.5461332201957703,
+          -0.6820527911186218,
+          1.360137701034546
+        ],
+        [
+          -0.39889681339263916,
+          0.5557212829589844,
+          0.7294214367866516,
+          -1.1813066005706787
+        ],
+        [
+          0.7773927450180054,
+          0.6268274784088135,
+          -0.052427880465984344,
+          0.26846951246261597
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "images/frame_0003.png"
+    }
+  ],
+  "objects": [
+    {
+      "id": "left_post",
+      "label": "left front black bollard",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          0.8799673742663123,
+          0.6550762468666369,
+          0.2601903596973529
+        ],
+        "rotation_deg": [
+          128.55201655885335,
+          2.05313873771526,
+          -36.5159482816965
+        ],
+        "scale": [
+          0.7206069352773561,
+          0.6223136563001338,
+          0.7111765469154706
+        ]
+      },
+      "frame_ids": [
+        "frame_0001",
+        "frame_0003",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [
+        15,
+        21
+      ],
+      "metrics": {
+        "comparison": "left_post-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0001",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9006126616746086,
+              "boundary_error_image_height": 0.0018060151487588882,
+              "relative_depth_p50": 0.0006941687897779047,
+              "relative_depth_p95": 0.007030417397618293,
+              "target_pixels": 1401,
+              "visible_predicted_pixels": 1391,
+              "depth_comparison_pixels": 1313,
+              "loss": 0.10369353741268705
+            },
+            "generated_initial": {
+              "visible_iou": 0.7834285714285715,
+              "boundary_error_image_height": 0.005254370626062155,
+              "relative_depth_p50": 0.002406525891274214,
+              "relative_depth_p95": 0.008392809890210629,
+              "target_pixels": 1401,
+              "visible_predicted_pixels": 1720,
+              "depth_comparison_pixels": 1341,
+              "loss": 0.22948669571482705
+            },
+            "generated_refined": {
+              "visible_iou": 0.8825396825396825,
+              "boundary_error_image_height": 0.0027006370946764946,
+              "relative_depth_p50": 0.008701194543391466,
+              "relative_depth_p95": 0.016586535517126338,
+              "target_pixels": 1401,
+              "visible_predicted_pixels": 1564,
+              "depth_comparison_pixels": 1362,
+              "loss": 0.13156278619306194
+            }
+          },
+          {
+            "frame_id": "frame_0003",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9234782608695652,
+              "boundary_error_image_height": 0.001208793604746461,
+              "relative_depth_p50": 0.0032803842332214117,
+              "relative_depth_p95": 0.00802018409594893,
+              "target_pixels": 1121,
+              "visible_predicted_pixels": 1091,
+              "depth_comparison_pixels": 1058,
+              "loss": 0.08221971057314914
+            },
+            "generated_initial": {
+              "visible_iou": 0.7526427061310782,
+              "boundary_error_image_height": 0.005334533751010895,
+              "relative_depth_p50": 0.004864340648055077,
+              "relative_depth_p95": 0.014298022165894488,
+              "target_pixels": 1121,
+              "visible_predicted_pixels": 1366,
+              "depth_comparison_pixels": 1044,
+              "loss": 0.26289070201899867
+            },
+            "generated_refined": {
+              "visible_iou": 0.8563706563706563,
+              "boundary_error_image_height": 0.0027277632616460323,
+              "relative_depth_p50": 0.011013836599886417,
+              "relative_depth_p95": 0.022603374626487493,
+              "target_pixels": 1121,
+              "visible_predicted_pixels": 1283,
+              "depth_comparison_pixels": 1090,
+              "loss": 0.16009870675252214
+            }
+          },
+          {
+            "frame_id": "frame_0002",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9041353383458647,
+              "boundary_error_image_height": 0.001523190294392407,
+              "relative_depth_p50": 0.005820685997605324,
+              "relative_depth_p95": 0.010313299484550953,
+              "target_pixels": 1044,
+              "visible_predicted_pixels": 982,
+              "depth_comparison_pixels": 961,
+              "loss": 0.10473172824052546
+            },
+            "generated_initial": {
+              "visible_iou": 0.6366197183098592,
+              "boundary_error_image_height": 0.008010159246623516,
+              "relative_depth_p50": 0.009538804180920124,
+              "relative_depth_p95": 0.0239101480692625,
+              "target_pixels": 1044,
+              "visible_predicted_pixels": 1280,
+              "depth_comparison_pixels": 899,
+              "loss": 0.38893940436430796
+            },
+            "generated_refined": {
+              "visible_iou": 0.8143194335169158,
+              "boundary_error_image_height": 0.003670712001621723,
+              "relative_depth_p50": 0.013065407983958721,
+              "relative_depth_p95": 0.020808790996670715,
+              "target_pixels": 1044,
+              "visible_predicted_pixels": 1262,
+              "depth_comparison_pixels": 997,
+              "loss": 0.20608739847028634
+            }
+          }
+        ],
+        "watertight": true,
+        "faces": 159120
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 79562,
+        "stride": 9,
+        "index_byte_offset": 2864232,
+        "index_count": 477360,
+        "index_type": "uint32"
+      }
+    },
+    {
+      "id": "right_post",
+      "label": "right front black bollard",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          0.20817465937750393,
+          0.18237652855814857,
+          1.2130669186756042
+        ],
+        "rotation_deg": [
+          133.1112302562388,
+          -19.464581400860443,
+          -55.31325218595098
+        ],
+        "scale": [
+          0.6817049888478003,
+          0.6019275629332137,
+          0.6957671201062069
+        ]
+      },
+      "frame_ids": [
+        "frame_0001",
+        "frame_0003",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [
+        16,
+        22
+      ],
+      "metrics": {
+        "comparison": "right_post-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0001",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.859344894026975,
+              "boundary_error_image_height": 0.0022075497545301914,
+              "relative_depth_p50": 0.0024903900921344757,
+              "relative_depth_p95": 0.010464179329574108,
+              "target_pixels": 973,
+              "visible_predicted_pixels": 957,
+              "depth_comparison_pixels": 881,
+              "loss": 0.14756059557421985
+            },
+            "generated_initial": {
+              "visible_iou": 0.5160614525139665,
+              "boundary_error_image_height": 0.011543364264070988,
+              "relative_depth_p50": 0.006833910942077637,
+              "relative_depth_p95": 0.02920155636966228,
+              "target_pixels": 973,
+              "visible_predicted_pixels": 1198,
+              "depth_comparison_pixels": 723,
+              "loss": 0.5138591869562531
+            },
+            "generated_refined": {
+              "visible_iou": 0.8021885521885522,
+              "boundary_error_image_height": 0.003747393377125263,
+              "relative_depth_p50": 0.006035788916051388,
+              "relative_depth_p95": 0.017582921124994752,
+              "target_pixels": 973,
+              "visible_predicted_pixels": 1168,
+              "depth_comparison_pixels": 927,
+              "loss": 0.21134202348174969
+            }
+          },
+          {
+            "frame_id": "frame_0003",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9429864253393665,
+              "boundary_error_image_height": 0.0009483533794991672,
+              "relative_depth_p50": 0.0005526945169549435,
+              "relative_depth_p95": 0.006281768740154802,
+              "target_pixels": 1081,
+              "visible_predicted_pixels": 1066,
+              "depth_comparison_pixels": 1042,
+              "loss": 0.05946297593658678
+            },
+            "generated_initial": {
+              "visible_iou": 0.5834419817470665,
+              "boundary_error_image_height": 0.010341644287109375,
+              "relative_depth_p50": 0.006428118795156479,
+              "relative_depth_p95": 0.032300925627350804,
+              "target_pixels": 1081,
+              "visible_predicted_pixels": 1348,
+              "depth_comparison_pixels": 895,
+              "loss": 0.4436694256223087
+            },
+            "generated_refined": {
+              "visible_iou": 0.8078668683812406,
+              "boundary_error_image_height": 0.0039009766187518835,
+              "relative_depth_p50": 0.004362826468423009,
+              "relative_depth_p95": 0.021128215361386534,
+              "target_pixels": 1081,
+              "visible_predicted_pixels": 1309,
+              "depth_comparison_pixels": 1068,
+              "loss": 0.20429791132468622
+            }
+          },
+          {
+            "frame_id": "frame_0002",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8926512968299711,
+              "boundary_error_image_height": 0.0023780870251357555,
+              "relative_depth_p50": 0.005388729739934206,
+              "relative_depth_p95": 0.009845625329762698,
+              "target_pixels": 1366,
+              "visible_predicted_pixels": 1261,
+              "depth_comparison_pixels": 1227,
+              "loss": 0.11749360696023459
+            },
+            "generated_initial": {
+              "visible_iou": 0.7144408251900108,
+              "boundary_error_image_height": 0.008412369526922703,
+              "relative_depth_p50": 0.009047398343682289,
+              "relative_depth_p95": 0.022158159874379635,
+              "target_pixels": 1366,
+              "visible_predicted_pixels": 1792,
+              "depth_comparison_pixels": 1231,
+              "loss": 0.31143131220751685
+            },
+            "generated_refined": {
+              "visible_iou": 0.8308364544319601,
+              "boundary_error_image_height": 0.0044372775591909885,
+              "relative_depth_p50": 0.010868316050618887,
+              "relative_depth_p95": 0.018569593783468008,
+              "target_pixels": 1366,
+              "visible_predicted_pixels": 1567,
+              "depth_comparison_pixels": 1246,
+              "loss": 0.18890641673704078
+            }
+          }
+        ],
+        "watertight": true,
+        "faces": 185228
+      },
+      "mesh": {
+        "byte_offset": 4773672,
+        "vertex_count": 92618,
+        "stride": 9,
+        "index_byte_offset": 8107920,
+        "index_count": 555684,
+        "index_type": "uint32"
+      }
+    },
+    {
+      "id": "right_fence",
+      "label": "right front safety fence panel",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          -0.9022048398973211,
+          0.3566691531589754,
+          0.6610176326533952
+        ],
+        "rotation_deg": [
+          -165.93564175113315,
+          -50.63553708989654,
+          -140.87720178422887
+        ],
+        "scale": [
+          1.8016228778650747,
+          1.6683070507731215,
+          1.7985579779571135
+        ]
+      },
+      "frame_ids": [
+        "frame_0001",
+        "frame_0003"
+      ],
+      "source_inventory_indices": [
+        13,
+        19
+      ],
+      "metrics": {
+        "comparison": "right_fence-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0001",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9429893658920835,
+              "boundary_error_image_height": 0.005913949571549892,
+              "relative_depth_p50": 0.005995051935315132,
+              "relative_depth_p95": 0.01733818724751472,
+              "target_pixels": 9699,
+              "visible_predicted_pixels": 10034,
+              "depth_comparison_pixels": 9577,
+              "loss": 0.07483358518633143
+            },
+            "generated_initial": {
+              "visible_iou": 0.8496462264150944,
+              "boundary_error_image_height": 0.027284270152449608,
+              "relative_depth_p50": 0.018861633725464344,
+              "relative_depth_p95": 0.07432874105870724,
+              "target_pixels": 9699,
+              "visible_predicted_pixels": 9123,
+              "depth_comparison_pixels": 8646,
+              "loss": 0.2237839476152692
+            },
+            "generated_refined": {
+              "visible_iou": 0.822347585114806,
+              "boundary_error_image_height": 0.0262875035405159,
+              "relative_depth_p50": 0.019316505640745163,
+              "relative_depth_p95": 0.08403488248586653,
+              "target_pixels": 9699,
+              "visible_predicted_pixels": 8714,
+              "depth_comparison_pixels": 8309,
+              "loss": 0.24954392760697097
+            }
+          },
+          {
+            "frame_id": "frame_0003",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8174663620208175,
+              "boundary_error_image_height": 0.010442731902003288,
+              "relative_depth_p50": 0.0016598977381363511,
+              "relative_depth_p95": 0.005981503752991535,
+              "target_pixels": 6538,
+              "visible_predicted_pixels": 7780,
+              "depth_comparison_pixels": 6440,
+              "loss": 0.20507899952132547
+            },
+            "generated_initial": {
+              "visible_iou": 0.7612748803224993,
+              "boundary_error_image_height": 0.01634054072201252,
+              "relative_depth_p50": 0.020572658628225327,
+              "relative_depth_p95": 0.09238908588886259,
+              "target_pixels": 6538,
+              "visible_predicted_pixels": 7443,
+              "depth_comparison_pixels": 6043,
+              "loss": 0.291978859749751
+            },
+            "generated_refined": {
+              "visible_iou": 0.9290530636177075,
+              "boundary_error_image_height": 0.005086761433631182,
+              "relative_depth_p50": 0.023967258632183075,
+              "relative_depth_p95": 0.11351978294551372,
+              "target_pixels": 6538,
+              "visible_predicted_pixels": 6622,
+              "depth_comparison_pixels": 6332,
+              "loss": 0.10508771788173799
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 349602
+      },
+      "mesh": {
+        "byte_offset": 10330656,
+        "vertex_count": 174690,
+        "stride": 9,
+        "index_byte_offset": 16619496,
+        "index_count": 1048806,
+        "index_type": "uint32"
+      }
+    },
+    {
+      "id": "robot",
+      "label": "BOR1 00090 RB01 industrial robot",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          -2.1263044465454186,
+          2.050629748118587,
+          -0.37356304939064633
+        ],
+        "rotation_deg": [
+          135.53715510435336,
+          -15.17792583834896,
+          -43.552096704010616
+        ],
+        "scale": [
+          1.154586376679325,
+          1.6716359182747256,
+          1.3016324813146203
+        ]
+      },
+      "frame_ids": [
+        "frame_0003",
+        "frame_0001",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "robot-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0003",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.815968841285297,
+              "boundary_error_image_height": 0.0026314929127693176,
+              "relative_depth_p50": 0.003220811951905489,
+              "relative_depth_p95": 0.017348255217075313,
+              "target_pixels": 893,
+              "visible_predicted_pixels": 972,
+              "depth_comparison_pixels": 837,
+              "loss": 0.19251495649214712
+            },
+            "generated_initial": {
+              "visible_iou": 0.583778014941302,
+              "boundary_error_image_height": 0.005221070256084204,
+              "relative_depth_p50": 0.01064874418079853,
+              "relative_depth_p95": 0.055590474233031144,
+              "target_pixels": 893,
+              "visible_predicted_pixels": 591,
+              "depth_comparison_pixels": 547,
+              "loss": 0.43731286975166495
+            },
+            "generated_refined": {
+              "visible_iou": 0.7753846153846153,
+              "boundary_error_image_height": 0.0027625923976302147,
+              "relative_depth_p50": 0.0068028089590370655,
+              "relative_depth_p95": 0.059924254193902016,
+              "target_pixels": 893,
+              "visible_predicted_pixels": 838,
+              "depth_comparison_pixels": 756,
+              "loss": 0.23694337836968216
+            }
+          },
+          {
+            "frame_id": "frame_0001",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8369747899159664,
+              "boundary_error_image_height": 0.0019316705875098705,
+              "relative_depth_p50": 0.0012607024982571602,
+              "relative_depth_p95": 0.014090237766504287,
+              "target_pixels": 1089,
+              "visible_predicted_pixels": 1097,
+              "depth_comparison_pixels": 995,
+              "loss": 0.1681492537573105
+            },
+            "generated_initial": {
+              "visible_iou": 0.5521739130434783,
+              "boundary_error_image_height": 0.005956448148936033,
+              "relative_depth_p50": 0.007229567505419254,
+              "relative_depth_p95": 0.05847621783614152,
+              "target_pixels": 1089,
+              "visible_predicted_pixels": 696,
+              "depth_comparison_pixels": 635,
+              "loss": 0.46696855075981303
+            },
+            "generated_refined": {
+              "visible_iou": 0.6972928630024611,
+              "boundary_error_image_height": 0.0036921959836035967,
+              "relative_depth_p50": 0.007243993692100048,
+              "relative_depth_p95": 0.05928672756999731,
+              "target_pixels": 1089,
+              "visible_predicted_pixels": 980,
+              "depth_comparison_pixels": 846,
+              "loss": 0.31733552265684617
+            }
+          },
+          {
+            "frame_id": "frame_0002",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.813915857605178,
+              "boundary_error_image_height": 0.0027223334182053804,
+              "relative_depth_p50": 0.007342359516769648,
+              "relative_depth_p95": 0.030531488824635744,
+              "target_pixels": 1070,
+              "visible_predicted_pixels": 1172,
+              "depth_comparison_pixels": 1006,
+              "loss": 0.19887116874800237
+            },
+            "generated_initial": {
+              "visible_iou": 0.6030465949820788,
+              "boundary_error_image_height": 0.005586368963122368,
+              "relative_depth_p50": 0.013860256411135197,
+              "relative_depth_p95": 0.05888010933995247,
+              "target_pixels": 1070,
+              "visible_predicted_pixels": 719,
+              "depth_comparison_pixels": 673,
+              "loss": 0.42198639935530113
+            },
+            "generated_refined": {
+              "visible_iou": 0.716821639898563,
+              "boundary_error_image_height": 0.0036693227011710405,
+              "relative_depth_p50": 0.0101624121889472,
+              "relative_depth_p95": 0.051468358933925616,
+              "target_pixels": 1070,
+              "visible_predicted_pixels": 961,
+              "depth_comparison_pixels": 848,
+              "loss": 0.3006794176927263
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 283612
+      },
+      "mesh": {
+        "byte_offset": 20814720,
+        "vertex_count": 141776,
+        "stride": 9,
+        "index_byte_offset": 25918656,
+        "index_count": 850836,
+        "index_type": "uint32"
+      }
+    },
+    {
+      "id": "left_fence",
+      "label": "left gate safety fence assembly",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          -0.2119374764100955,
+          1.1848956626955596,
+          -0.5266908232055402
+        ],
+        "rotation_deg": [
+          127.32517773980784,
+          -9.628325960761416,
+          -40.955278358106064
+        ],
+        "scale": [
+          1.7655007758065873,
+          1.9058295421504752,
+          1.9028387132941398
+        ]
+      },
+      "frame_ids": [
+        "frame_0002",
+        "frame_0003"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "left_fence-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0002",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9622285174693107,
+              "boundary_error_image_height": 0.002626559929922223,
+              "relative_depth_p50": 0.0029177659889683127,
+              "relative_depth_p95": 0.06922588087618349,
+              "target_pixels": 8447,
+              "visible_predicted_pixels": 8177,
+              "depth_comparison_pixels": 8148,
+              "loss": 0.04594236837950205
+            },
+            "generated_initial": {
+              "visible_iou": 0.6506246605105921,
+              "boundary_error_image_height": 0.0195227712392807,
+              "relative_depth_p50": 0.033118389546871185,
+              "relative_depth_p95": 0.11143457144498825,
+              "target_pixels": 8447,
+              "visible_predicted_pixels": 6747,
+              "depth_comparison_pixels": 5971,
+              "loss": 0.4215392715148405
+            },
+            "generated_refined": {
+              "visible_iou": 0.7784110736303361,
+              "boundary_error_image_height": 0.017350072041153908,
+              "relative_depth_p50": 0.026770262978971004,
+              "relative_depth_p95": 0.0922681964933872,
+              "target_pixels": 8447,
+              "visible_predicted_pixels": 6842,
+              "depth_comparison_pixels": 6668,
+              "loss": 0.2830593334309427
+            }
+          },
+          {
+            "frame_id": "frame_0003",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.85420663195396,
+              "boundary_error_image_height": 0.005573487374931574,
+              "relative_depth_p50": 0.0037283693673089147,
+              "relative_depth_p95": 0.0296663329936564,
+              "target_pixels": 3153,
+              "visible_predicted_pixels": 3613,
+              "depth_comparison_pixels": 3058,
+              "loss": 0.1606687121632121
+            },
+            "generated_initial": {
+              "visible_iou": 0.5445584389458862,
+              "boundary_error_image_height": 0.017339084297418594,
+              "relative_depth_p50": 0.07425690442323685,
+              "relative_depth_p95": 0.23466046378016472,
+              "target_pixels": 3153,
+              "visible_predicted_pixels": 4525,
+              "depth_comparison_pixels": 2650,
+              "loss": 0.5643766340721879
+            },
+            "generated_refined": {
+              "visible_iou": 0.8978124063530117,
+              "boundary_error_image_height": 0.0026574349030852318,
+              "relative_depth_p50": 0.030299752950668335,
+              "relative_depth_p95": 0.09349351227283478,
+              "target_pixels": 3153,
+              "visible_predicted_pixels": 3180,
+              "depth_comparison_pixels": 2933,
+              "loss": 0.13780221640382706
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 291218
+      },
+      "mesh": {
+        "byte_offset": 29322000,
+        "vertex_count": 145474,
+        "stride": 9,
+        "index_byte_offset": 34559064,
+        "index_count": 873654,
+        "index_type": "uint32"
+      }
+    },
+    {
+      "id": "cart",
+      "label": "loaded material cart marked 0001 B",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          -0.7541128050975063,
+          1.666717994332375,
+          0.4067760998177223
+        ],
+        "rotation_deg": [
+          -161.08291808351055,
+          -49.53485392533541,
+          -144.530373025266
+        ],
+        "scale": [
+          1.3520823604317347,
+          1.3244954938902436,
+          1.2540092280869806
+        ]
+      },
+      "frame_ids": [
+        "frame_0003",
+        "frame_0001",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "cart-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0003",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8467289719626169,
+              "boundary_error_image_height": 0.004568516276776791,
+              "relative_depth_p50": 0.002275696489959955,
+              "relative_depth_p95": 0.04919880572706461,
+              "target_pixels": 2374,
+              "visible_predicted_pixels": 2566,
+              "depth_comparison_pixels": 2254,
+              "loss": 0.16468375708089666
+            },
+            "generated_initial": {
+              "visible_iou": 0.7401606425702811,
+              "boundary_error_image_height": 0.0053834570571780205,
+              "relative_depth_p50": 0.03155030682682991,
+              "relative_depth_p95": 0.23101693913340562,
+              "target_pixels": 2374,
+              "visible_predicted_pixels": 1959,
+              "depth_comparison_pixels": 1832,
+              "loss": 0.3021565783709048
+            },
+            "generated_refined": {
+              "visible_iou": 0.8545310015898251,
+              "boundary_error_image_height": 0.0029962335247546434,
+              "relative_depth_p50": 0.01619204320013523,
+              "relative_depth_p95": 0.21892071515321704,
+              "target_pixels": 2374,
+              "visible_predicted_pixels": 2292,
+              "depth_comparison_pixels": 2139,
+              "loss": 0.16765350865981943
+            }
+          },
+          {
+            "frame_id": "frame_0001",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.7818756585879874,
+              "boundary_error_image_height": 0.006361490115523338,
+              "relative_depth_p50": 0.002265998045913875,
+              "relative_depth_p95": 0.0895112685859203,
+              "target_pixels": 2309,
+              "visible_predicted_pixels": 2764,
+              "depth_comparison_pixels": 2204,
+              "loss": 0.2331133196889732
+            },
+            "generated_initial": {
+              "visible_iou": 0.7118380062305296,
+              "boundary_error_image_height": 0.0050419894978404045,
+              "relative_depth_p50": 0.03286396712064743,
+              "relative_depth_p95": 0.2182617075741291,
+              "target_pixels": 2309,
+              "visible_predicted_pixels": 2087,
+              "depth_comparison_pixels": 1806,
+              "loss": 0.3311099398857986
+            },
+            "generated_refined": {
+              "visible_iou": 0.8242612752721618,
+              "boundary_error_image_height": 0.004442563280463219,
+              "relative_depth_p50": 0.017454967834055424,
+              "relative_depth_p95": 0.22118455916643143,
+              "target_pixels": 2309,
+              "visible_predicted_pixels": 2383,
+              "depth_comparison_pixels": 2096,
+              "loss": 0.2020788191228201
+            }
+          },
+          {
+            "frame_id": "frame_0002",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.84532252617359,
+              "boundary_error_image_height": 0.003570044180378318,
+              "relative_depth_p50": 0.004288075491786003,
+              "relative_depth_p95": 0.0479860614985227,
+              "target_pixels": 2613,
+              "visible_predicted_pixels": 2851,
+              "depth_comparison_pixels": 2487,
+              "loss": 0.1661056376789526
+            },
+            "generated_initial": {
+              "visible_iou": 0.7516387472687546,
+              "boundary_error_image_height": 0.006446821615099907,
+              "relative_depth_p50": 0.033341988921165466,
+              "relative_depth_p95": 0.20023380964994428,
+              "target_pixels": 2613,
+              "visible_predicted_pixels": 2197,
+              "depth_comparison_pixels": 2047,
+              "loss": 0.2945968848826107
+            },
+            "generated_refined": {
+              "visible_iou": 0.8745055735346997,
+              "boundary_error_image_height": 0.004095796495676041,
+              "relative_depth_p50": 0.018262771889567375,
+              "relative_depth_p95": 0.2089776366949079,
+              "target_pixels": 2613,
+              "visible_predicted_pixels": 2600,
+              "depth_comparison_pixels": 2415,
+              "loss": 0.15194879134621975
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 767074
+      },
+      "mesh": {
+        "byte_offset": 38053680,
+        "vertex_count": 383330,
+        "stride": 9,
+        "index_byte_offset": 51853560,
+        "index_count": 2301222,
+        "index_type": "uint32"
+      }
+    },
+    {
+      "id": "guard",
+      "label": "yellow-black folded safety guard behind cart",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          -0.7915991945134582,
+          1.5057423554678633,
+          0.3047073189565914
+        ],
+        "rotation_deg": [
+          -165.30755473375524,
+          -49.736497482172396,
+          -138.89340014777179
+        ],
+        "scale": [
+          1.4807083296970884,
+          1.5688212293165744,
+          1.417025859946341
+        ]
+      },
+      "frame_ids": [
+        "frame_0003",
+        "frame_0001",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "guard-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0003",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.7971149371800837,
+              "boundary_error_image_height": 0.002670062007382512,
+              "relative_depth_p50": 0.001591638196259737,
+              "relative_depth_p95": 0.02750669866800308,
+              "target_pixels": 1760,
+              "visible_predicted_pixels": 2102,
+              "depth_comparison_pixels": 1713,
+              "loss": 0.209816825030941
+            },
+            "generated_initial": {
+              "visible_iou": 0.7124939700916546,
+              "boundary_error_image_height": 0.004591491539031267,
+              "relative_depth_p50": 0.04082299768924713,
+              "relative_depth_p95": 0.10954122096300126,
+              "target_pixels": 1760,
+              "visible_predicted_pixels": 1790,
+              "depth_comparison_pixels": 1465,
+              "loss": 0.33751201067565506
+            },
+            "generated_refined": {
+              "visible_iou": 0.8554790894653256,
+              "boundary_error_image_height": 0.002159685827791691,
+              "relative_depth_p50": 0.04715588316321373,
+              "relative_depth_p95": 0.10892724990844727,
+              "target_pixels": 1760,
+              "visible_predicted_pixels": 1745,
+              "depth_comparison_pixels": 1611,
+              "loss": 0.19599616535347153
+            }
+          },
+          {
+            "frame_id": "frame_0001",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8727045075125208,
+              "boundary_error_image_height": 0.0026825813110917807,
+              "relative_depth_p50": 0.00441407598555088,
+              "relative_depth_p95": 0.041962898522615436,
+              "target_pixels": 2177,
+              "visible_predicted_pixels": 2310,
+              "depth_comparison_pixels": 2090,
+              "loss": 0.13707473109521362
+            },
+            "generated_initial": {
+              "visible_iou": 0.7218958088523306,
+              "boundary_error_image_height": 0.004546336829662323,
+              "relative_depth_p50": 0.03534980118274689,
+              "relative_depth_p95": 0.1541796669363975,
+              "target_pixels": 2177,
+              "visible_predicted_pixels": 2219,
+              "depth_comparison_pixels": 1842,
+              "loss": 0.3225466659897409
+            },
+            "generated_refined": {
+              "visible_iou": 0.841296928327645,
+              "boundary_error_image_height": 0.0023028412833809853,
+              "relative_depth_p50": 0.044608116149902344,
+              "relative_depth_p95": 0.1630963236093521,
+              "target_pixels": 2177,
+              "visible_predicted_pixels": 2139,
+              "depth_comparison_pixels": 1971,
+              "loss": 0.2079168703890193
+            }
+          },
+          {
+            "frame_id": "frame_0002",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8224921630094044,
+              "boundary_error_image_height": 0.0029967734590172768,
+              "relative_depth_p50": 0.01108380313962698,
+              "relative_depth_p95": 0.07006430476903912,
+              "target_pixels": 2173,
+              "visible_predicted_pixels": 2478,
+              "depth_comparison_pixels": 2099,
+              "loss": 0.1945851870482571
+            },
+            "generated_initial": {
+              "visible_iou": 0.7365677626303128,
+              "boundary_error_image_height": 0.004267482552677393,
+              "relative_depth_p50": 0.02963925525546074,
+              "relative_depth_p95": 0.08922405987977977,
+              "target_pixels": 2173,
+              "visible_predicted_pixels": 2158,
+              "depth_comparison_pixels": 1837,
+              "loss": 0.30160645773050276
+            },
+            "generated_refined": {
+              "visible_iou": 0.8403653762505437,
+              "boundary_error_image_height": 0.0026115737855434418,
+              "relative_depth_p50": 0.03976857289671898,
+              "relative_depth_p95": 0.09450088068842882,
+              "target_pixels": 2173,
+              "visible_predicted_pixels": 2058,
+              "depth_comparison_pixels": 1932,
+              "loss": 0.2046263442172621
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 204510
+      },
+      "mesh": {
+        "byte_offset": 61058448,
+        "vertex_count": 102260,
+        "stride": 9,
+        "index_byte_offset": 64739808,
+        "index_count": 613530,
+        "index_type": "uint32"
+      }
+    },
+    {
+      "id": "left_light_curtain",
+      "label": "left yellow safety light curtain housing",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          0.5245103896182126,
+          0.49666070435489973,
+          -0.19460897232017887
+        ],
+        "rotation_deg": [
+          129.35847292287522,
+          -12.889786606820069,
+          -46.235204904008306
+        ],
+        "scale": [
+          0.8310320839278681,
+          0.9532163821642389,
+          1.0809419508219427
+        ]
+      },
+      "frame_ids": [
+        "frame_0003",
+        "frame_0001",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "left_light_curtain-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0003",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9039106145251397,
+              "boundary_error_image_height": 0.0008556440006941557,
+              "relative_depth_p50": 0.004982722923159599,
+              "relative_depth_p95": 0.010848032869398594,
+              "target_pixels": 869,
+              "visible_predicted_pixels": 835,
+              "depth_comparison_pixels": 809,
+              "loss": 0.10278339639940826
+            },
+            "generated_initial": {
+              "visible_iou": 0.4957587181903864,
+              "boundary_error_image_height": 0.010410322807729244,
+              "relative_depth_p50": 0.012857519090175629,
+              "relative_depth_p95": 0.027314846869558096,
+              "target_pixels": 869,
+              "visible_predicted_pixels": 718,
+              "depth_comparison_pixels": 526,
+              "loss": 0.5379194465152477
+            },
+            "generated_refined": {
+              "visible_iou": 0.8572996706915478,
+              "boundary_error_image_height": 0.0035201695282012224,
+              "relative_depth_p50": 0.009297878947108984,
+              "relative_depth_p95": 0.03685726970434189,
+              "target_pixels": 869,
+              "visible_predicted_pixels": 823,
+              "depth_comparison_pixels": 776,
+              "loss": 0.15903854731196365
+            }
+          },
+          {
+            "frame_id": "frame_0001",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8782006920415225,
+              "boundary_error_image_height": 0.0015521483728662133,
+              "relative_depth_p50": 0.0010796434944495559,
+              "relative_depth_p95": 0.009515153430402257,
+              "target_pixels": 1348,
+              "visible_predicted_pixels": 1366,
+              "depth_comparison_pixels": 1269,
+              "loss": 0.12598324819865947
+            },
+            "generated_initial": {
+              "visible_iou": 0.39408866995073893,
+              "boundary_error_image_height": 0.015410994179546833,
+              "relative_depth_p50": 0.01052519865334034,
+              "relative_depth_p95": 0.030916130449622853,
+              "target_pixels": 1348,
+              "visible_predicted_pixels": 1199,
+              "depth_comparison_pixels": 720,
+              "loss": 0.6472585170616951
+            },
+            "generated_refined": {
+              "visible_iou": 0.6901748040988547,
+              "boundary_error_image_height": 0.006692400202155113,
+              "relative_depth_p50": 0.010957693681120872,
+              "relative_depth_p95": 0.02788795121014118,
+              "target_pixels": 1348,
+              "visible_predicted_pixels": 1456,
+              "depth_comparison_pixels": 1145,
+              "loss": 0.3341676899865764
+            }
+          },
+          {
+            "frame_id": "frame_0002",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9125117591721543,
+              "boundary_error_image_height": 0.000982780009508133,
+              "relative_depth_p50": 0.0025470207910984755,
+              "relative_depth_p95": 0.009583975560963152,
+              "target_pixels": 1029,
+              "visible_predicted_pixels": 1004,
+              "depth_comparison_pixels": 970,
+              "loss": 0.09200082163796042
+            },
+            "generated_initial": {
+              "visible_iou": 0.5611650485436893,
+              "boundary_error_image_height": 0.008731027133762836,
+              "relative_depth_p50": 0.005329966777935624,
+              "relative_depth_p95": 0.03853002823889255,
+              "target_pixels": 1029,
+              "visible_predicted_pixels": 579,
+              "depth_comparison_pixels": 578,
+              "loss": 0.461626972501772
+            },
+            "generated_refined": {
+              "visible_iou": 0.6660212971926428,
+              "boundary_error_image_height": 0.005377848166972399,
+              "relative_depth_p50": 0.01672544050961733,
+              "relative_depth_p95": 0.032612853683531284,
+              "target_pixels": 1029,
+              "visible_predicted_pixels": 692,
+              "depth_comparison_pixels": 688,
+              "loss": 0.3614598396509193
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 44786
+      },
+      "mesh": {
+        "byte_offset": 67193928,
+        "vertex_count": 22398,
+        "stride": 9,
+        "index_byte_offset": 68000256,
+        "index_count": 134358,
+        "index_type": "uint32"
+      }
+    },
+    {
+      "id": "right_light_curtain",
+      "label": "right yellow safety light curtain housing",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          -0.17046064046464876,
+          0.06298385840400333,
+          0.9322327796983846
+        ],
+        "rotation_deg": [
+          134.7082789988535,
+          -26.153885923551638,
+          -64.93097211416823
+        ],
+        "scale": [
+          1.2762660313029266,
+          0.8565154026792091,
+          1.2906824028916737
+        ]
+      },
+      "frame_ids": [
+        "frame_0003",
+        "frame_0001",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "right_light_curtain-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0003",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9075471698113208,
+              "boundary_error_image_height": 0.0010811460670083761,
+              "relative_depth_p50": 0.000594685145188123,
+              "relative_depth_p95": 0.008986149309203025,
+              "target_pixels": 995,
+              "visible_predicted_pixels": 1027,
+              "depth_comparison_pixels": 962,
+              "loss": 0.0952098074678841
+            },
+            "generated_initial": {
+              "visible_iou": 0.416017316017316,
+              "boundary_error_image_height": 0.013807684183120728,
+              "relative_depth_p50": 0.014361626468598843,
+              "relative_depth_p95": 0.04083764422684908,
+              "target_pixels": 995,
+              "visible_predicted_pixels": 2276,
+              "depth_comparison_pixels": 960,
+              "loss": 0.6259596788175243
+            },
+            "generated_refined": {
+              "visible_iou": 0.621106166560712,
+              "boundary_error_image_height": 0.00653116125613451,
+              "relative_depth_p50": 0.0061873632948845625,
+              "relative_depth_p95": 0.036880750209093094,
+              "target_pixels": 995,
+              "visible_predicted_pixels": 1555,
+              "depth_comparison_pixels": 976,
+              "loss": 0.39814351924644154
+            }
+          },
+          {
+            "frame_id": "frame_0001",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8492706645056726,
+              "boundary_error_image_height": 0.002315664431080222,
+              "relative_depth_p50": 0.004488537320867181,
+              "relative_depth_p95": 0.0197187946178019,
+              "target_pixels": 1135,
+              "visible_predicted_pixels": 1147,
+              "depth_comparison_pixels": 1048,
+              "loss": 0.15984920167735506
+            },
+            "generated_initial": {
+              "visible_iou": 0.43409806567701303,
+              "boundary_error_image_height": 0.012778648175299168,
+              "relative_depth_p50": 0.01617497391998768,
+              "relative_depth_p95": 0.04358257427811622,
+              "target_pixels": 1135,
+              "visible_predicted_pixels": 2053,
+              "depth_comparison_pixels": 965,
+              "loss": 0.607634204593573
+            },
+            "generated_refined": {
+              "visible_iou": 0.7052498418722327,
+              "boundary_error_image_height": 0.005202733911573887,
+              "relative_depth_p50": 0.0077948966063559055,
+              "relative_depth_p95": 0.031584811955690385,
+              "target_pixels": 1135,
+              "visible_predicted_pixels": 1561,
+              "depth_comparison_pixels": 1115,
+              "loss": 0.31295052255727096
+            }
+          },
+          {
+            "frame_id": "frame_0002",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8037209302325582,
+              "boundary_error_image_height": 0.002658517099916935,
+              "relative_depth_p50": 0.0038344028871506453,
+              "relative_depth_p95": 0.00877898558974266,
+              "target_pixels": 937,
+              "visible_predicted_pixels": 1002,
+              "depth_comparison_pixels": 861,
+              "loss": 0.20543050685442632
+            },
+            "generated_initial": {
+              "visible_iou": 0.3422321097515758,
+              "boundary_error_image_height": 0.03177889809012413,
+              "relative_depth_p50": 0.010273289401084185,
+              "relative_depth_p95": 0.02363098943606019,
+              "target_pixels": 937,
+              "visible_predicted_pixels": 2683,
+              "depth_comparison_pixels": 880,
+              "loss": 0.7315989758297566
+            },
+            "generated_refined": {
+              "visible_iou": 0.4458724666337123,
+              "boundary_error_image_height": 0.029047153890132904,
+              "relative_depth_p50": 0.005182133289054036,
+              "relative_depth_p95": 0.01816188292577861,
+              "target_pixels": 937,
+              "visible_predicted_pixels": 1988,
+              "depth_comparison_pixels": 862,
+              "loss": 0.6174039744356075
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 74722
+      },
+      "mesh": {
+        "byte_offset": 68537688,
+        "vertex_count": 37364,
+        "stride": 9,
+        "index_byte_offset": 69882792,
+        "index_count": 224166,
+        "index_type": "uint32"
+      }
+    },
+    {
+      "id": "observed_floor",
+      "label": "观测到的工位地面",
+      "source": "observed",
+      "model": "Pi3X",
+      "transform": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "frame_ids": [
+        "frame_0003"
+      ],
+      "metrics": {
+        "plane_residual_p95_native": 0.004893159959465265
+      },
+      "mesh": {
+        "byte_offset": 70779456,
+        "vertex_count": 17077,
+        "stride": 9,
+        "index_byte_offset": 71394228,
+        "index_count": 98523,
+        "index_type": "uint32"
+      }
+    }
+  ],
+  "limitations": [
+    "RecGen experiment, not a reproduction of the unreleased Lucida GizmoAct policy",
+    "Generated hidden surfaces and textures have no photographic ground truth",
+    "All supplied views contribute to geometry and placement; scores measure input consistency, not held-out accuracy",
+    "Static editable meshes; no robot joints, collision validation or physical calibration"
+  ],
+  "unavailable_objects": [],
+  "binary_asset": {
+    "bytes": 71788320,
+    "sha256": "37a6bb27d80c219b152cba6b5cdc4a56e8f20b0413d7538b74d658e612ce7510",
+    "parts": [
+      {
+        "path": "model/scene.bin.part1",
+        "bytes": 20971520
+      },
+      {
+        "path": "model/scene.bin.part2",
+        "bytes": 20971520
+      },
+      {
+        "path": "model/scene.bin.part3",
+        "bytes": 20971520
+      },
+      {
+        "path": "model/scene.bin.part4",
+        "bytes": 8873760
+      }
+    ]
+  },
+  "glb_asset": {
+    "bytes": 62229748,
+    "sha256": "88b407cfd40c47a54f5af73283bd475df96a9cb2697ed90053f29e75c00b50fe",
+    "parts": [
+      {
+        "path": "model/scene.glb.part1",
+        "bytes": 20971520
+      },
+      {
+        "path": "model/scene.glb.part2",
+        "bytes": 20971520
+      },
+      {
+        "path": "model/scene.glb.part3",
+        "bytes": 20286708
+      }
+    ]
+  }
+}
