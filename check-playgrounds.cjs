@@ -2,6 +2,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const browsers=require(process.argv[2]||'playwright'),url=process.argv[3]||'http://127.0.0.1:8892/';
 const trial=JSON.parse(fs.readFileSync(path.join(__dirname,'blender-scene.json')));
+const components=JSON.parse(fs.readFileSync(path.join(__dirname,'components/scene.json')));
 async function check(engine){
   const browser=await browsers[engine].launch({headless:true,timeout:20000,...(engine==='chromium'?{args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']}: {})});
   try{
@@ -12,13 +13,13 @@ async function check(engine){
     await page.goto(url,{waitUntil:'domcontentloaded',timeout:20000});
     await page.waitForFunction(()=>document.querySelectorAll('.object-chip').length===10);
     const completed=[];
-    for(const id of ['generated','observed','blender']){
+    for(const id of ['generated','observed','blender','components']){
       await page.locator(`[data-playground="${id}"]`).click();
       assert.equal(await page.locator('#playground-frame').getAttribute('src'),null,'switching playgrounds must unload the previous viewer');
       await page.waitForFunction(()=>document.querySelector('#playground-frame').contentWindow.location.href==='about:blank');
       await page.waitForFunction(()=>{const image=document.querySelector('#playground-preview');return !image.hidden&&image.complete&&image.naturalWidth>0;});
       const preview=await page.locator('#playground-preview').getAttribute('src');
-      await page.locator('#explore-playground').click();await page.locator('#playground-frame').scrollIntoViewIfNeeded();
+      await page.locator('#explore-playground').click();await page.locator('#playground-frame').evaluate(node=>node.scrollIntoView({block:'center',behavior:'instant'}));
       const frame=await(await page.$('#playground-frame')).contentFrame();
       assert.equal(await page.locator('#playground-preview').isVisible(),false);
       if(id==='observed'){
@@ -29,8 +30,11 @@ async function check(engine){
         assert.equal(await frame.locator('#status').evaluate(el=>el.classList.contains('error')),false);
         completed.push({id,preview,triangles:359983});
       }else{
-        await frame.waitForFunction(()=>document.querySelector('canvas')?.dataset.loadedObjects==='10',null,{timeout:60000});
+        const objects=id==='components'?components.objects.length:10;
+        await frame.waitForFunction(count=>Number(document.querySelector('canvas')?.dataset.loadedObjects)===count,objects,{timeout:60000});
         assert(await frame.locator('header a').evaluateAll(links=>links.length>0&&links.every(a=>a.target==='_top')),'header links must leave the playground iframe');
+        assert.equal(await frame.locator('#blender-report').isVisible(),id!=='components','Blender link must describe this scene');
+        assert.match(await frame.locator('#scene-report').getAttribute('href'),id==='components'?/components\/metrics\.html$/:/\/metrics\.html$/);
         if(id==='blender'){
           assert.equal(await frame.locator('#scene-title').textContent(),trial.label);
           assert.equal(await frame.locator('#scene-description').textContent(),trial.description);
@@ -43,13 +47,19 @@ async function check(engine){
             assert.equal((await frame.locator('#metrics').textContent()).includes('generated_refined'),false,'parameterized posts must not inherit RecGen pose metrics');
             assert.match(await frame.locator('#metrics-link').getAttribute('href'),/metrics\.html#blender$/);
           }
+        }else if(id==='components'){
+          assert.equal(await frame.locator('#scene-title').textContent(),components.label);
+          assert.equal(await frame.locator('#scene-description').textContent(),components.description);
+          assert.equal(await frame.locator('#object-list .badge.generated').count(),2);
+          assert.equal(await frame.locator('#object-list .badge.observed').count(),1);
+          for(let i=0;i<objects;i++){await frame.locator('#object-list .object-row button').nth(i).click();assert.equal(await frame.locator('#selection-overlay').getAttribute('data-object-id'),components.objects[i].id);assert.equal(await frame.locator('[data-bbox-edge]').count(),12);assert.equal(await frame.locator('[data-axis]').count(),3);}
         }else{assert.equal(await frame.locator('#scene-title').textContent(),'工位 · 对象场景编辑');assert.equal(await frame.locator('#glb').isVisible(),true);}
-        await frame.locator('#object-list .object-row button').nth(3).click();
-        assert.match(await frame.locator('#metrics').textContent(),/generated_refined/,'the shared robot preserves its measured comparison record');
+        await frame.locator('#object-list .object-row button').nth(id==='components'?0:3).click();
+        assert.match(await frame.locator('#metrics').textContent(),/generated_refined/,'generated objects preserve their measured comparison record');
         assert.match(await frame.locator('#metrics-link').getAttribute('href'),/metrics\.html$/);
         const x=frame.locator('#position-0'),before=await x.inputValue();await x.press('ArrowUp');assert.notEqual(await x.inputValue(),before);
         // Leave this transform dirty: switching or closing must tear down the framed editor, without a hidden cancelled navigation.
-        completed.push({id,preview,objects:10,parametric:id==='blender'?2:0});
+        completed.push({id,preview,objects,parametric:id==='blender'?2:0});
       }
     }
     await page.locator('#playground-close').click();

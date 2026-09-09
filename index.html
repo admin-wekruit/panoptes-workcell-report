@@ -2,12 +2,12 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Panoptes · BOR1 工位联合报告</title>
+<script src="i18n-catalog.js"></script><script src="i18n.js" defer></script><title>Panoptes · BOR1 工位联合报告</title>
 <link rel="stylesheet" href="unified-report.css">
 <script src="unified-report.js" defer></script>
 </head>
 <body>
-<header class="site-header"><a class="brand" href="./" aria-label="Panoptes 报告首页"><span class="brand-symbol" aria-hidden="true">P</span>PANOPTES<span class="brand-sub">工位空间报告</span></a><nav aria-label="报告章节"><a href="#playgrounds">Playgrounds</a><a href="#workspace">四视图报告</a><a href="#legacy">原检测</a><a href="#experiments">实验对比</a><a class="download-link" href="blender/workcell.blend" download>Blender ↗</a></nav></header>
+<header class="site-header"><a class="brand" href="./" aria-label="Panoptes 报告首页"><span class="brand-symbol" aria-hidden="true">P</span>PANOPTES<span class="brand-sub">工位空间报告</span></a><nav aria-label="报告章节"><a href="reports.html">报告历史</a><a href="#playgrounds">Playgrounds</a><a href="#workspace">四视图报告</a><a href="#legacy">原检测</a><a href="#experiments">实验对比</a><a class="download-link" href="blender/workcell.blend" download>Blender ↗</a><span data-language-switch></span></nav></header>
 <main>
 <section class="intro"><div><p class="eyebrow">BOR1 00090 / WORKCELL</p><h1>现场证据，与三维场景一起看。</h1><p class="intro-copy">先进入不同实验场探索工位，再从四联动报告查看对象证据、原检测与实验指标。</p></div><div class="run-note"><span>检测来源 <b>user-bor1-02</b></span><span>重建来源 <b>lucida-replica-01</b></span><a href="viewer.html">打开完整 3D 编辑器 ↗</a></div></section>
 <section id="playgrounds" aria-labelledby="playgrounds-title"><div class="section-heading"><div><p class="eyebrow">INTERACTIVE DEMOS</p><h2 id="playgrounds-title">Playgrounds</h2></div><span class="quiet">同一工位 · 不同实验产物</span></div>
@@ -15,10 +15,11 @@
 <button class="playground-choice" data-playground="generated" aria-pressed="true"><span>01 / OBJECT SCENE</span><strong>完整对象重建</strong><small>独立网格 · 点选、移动、隐藏</small></button>
 <button class="playground-choice" data-playground="observed" aria-pressed="false"><span>02 / OBSERVED SURFACE</span><strong>照片表面重建</strong><small>内部 GLB · 原图对照、线框</small></button>
 <button class="playground-choice" data-playground="blender" aria-pressed="false"><span>03 / BLENDER TRIAL</span><strong>参数化柱体试验</strong><small>两根拟合圆柱 + 原始场景</small></button>
+<button class="playground-choice" data-playground="components" aria-pressed="false"><span>04 / SMALL OBJECTS</span><strong>小物体补全</strong><small>急停与控制按钮 · 独立生成网格</small></button>
 </div>
 <div class="playground-stage" id="playground-stage"><img id="playground-preview" src="playground-generated.png" alt="完整对象重建的实际三维预览"><div id="playground-launch" class="playground-launch"><span>SCENE PREVIEW</span><button id="explore-playground">探索 3D ↗</button></div><iframe id="playground-frame" title="当前实验场" allow="fullscreen" hidden></iframe></div>
 <div class="playground-caption"><div><strong id="playground-name">完整对象重建</strong><p id="playground-description">Pi3X + RecGen · 9 个生成资产与 1 块观测地面。旋转场景，点选对象，再调整位置、旋转和缩放。</p></div><div class="playground-actions"><button id="playground-fullscreen" hidden>全屏</button><button id="playground-close" hidden>返回预览</button><a id="playground-open" href="viewer.html">单独打开 ↗</a></div></div>
-<p class="scope-note">展示的是我们的实际实验产物。照片表面重建来自较早的独立 run；参数化试验仅替换两根柱体。切换实验场前，请下载 JSON 保存编辑。各实验场的编辑不会改写下方报告与指标。三个入口均未标定真实尺寸，也不代表已完成 Lucida 论文复现。<a href="https://lucida-r2s.github.io/" target="_blank" rel="noopener">参考 Lucida 的 Demo 展示方式 ↗</a></p>
+<p class="scope-note">展示的是我们的实际实验产物。照片表面重建来自较早的独立 run；参数化试验仅替换两根柱体。切换实验场前，请下载 JSON 保存编辑。各实验场的编辑不会改写下方报告与指标。各实验场均未标定真实尺寸，也不代表已完成 Lucida 论文复现。<a href="https://lucida-r2s.github.io/" target="_blank" rel="noopener">参考 Lucida 的 Demo 展示方式 ↗</a></p>
 </section>
 <div class="status-line" id="report-status" role="status">正在读取冻结的报告与场景数据…</div>
 <section id="workspace" aria-labelledby="workspace-title"><div class="section-heading"><div><p class="eyebrow">01 / LINKED WORKSPACE</p><h2 id="workspace-title">一个对象，四个视角</h2></div><span class="quiet" id="counts"></span></div>

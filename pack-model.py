@@ -6,8 +6,8 @@ import json
 import struct
 import sys
 
-root = Path(__file__).resolve().parent
 source = Path(sys.argv[1])
+root = Path(sys.argv[2]) if len(sys.argv) > 2 else Path(__file__).resolve().parent
 scene = json.loads((root / 'scene.json').read_text())
 original = json.loads((source / 'scene.json').read_text())
 binary = (source / 'scene.bin').read_bytes()

@@ -1,0 +1,808 @@
+{
+  "version": 1,
+  "run_id": "product-evidence-01",
+  "units": "未标定尺度（非米）",
+  "up": [
+    0.04003097862005234,
+    -0.9815926551818848,
+    -0.18674422800540924
+  ],
+  "bounds": {
+    "min": [
+      -1.5003267526626587,
+      0.056693033492187336,
+      2.475024700164795
+    ],
+    "max": [
+      2.4349923133850098,
+      1.5999376773834229,
+      7.586737632751465
+    ]
+  },
+  "glb": "scene.glb",
+  "metrics_report": "metrics.html",
+  "cameras": [
+    {
+      "id": "frame_0001",
+      "label": "照片 1",
+      "width": 518,
+      "height": 518,
+      "K": [
+        [
+          472.6769714355469,
+          0.0,
+          257.2390441894531
+        ],
+        [
+          0.0,
+          476.72052001953125,
+          258.7164001464844
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_to_world": [
+        [
+          0.9999999403953552,
+          0.00011827349226223305,
+          0.00035920029040426016,
+          -0.0017893974436447024
+        ],
+        [
+          -0.0001182553605758585,
+          1.0,
+          -5.0501090299803764e-05,
+          0.0005780861829407513
+        ],
+        [
+          -0.00035920628579333425,
+          5.0458605983294547e-05,
+          0.9999999403953552,
+          0.0023733775597065687
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "images/frame_0001.png"
+    },
+    {
+      "id": "frame_0002",
+      "label": "照片 2",
+      "width": 518,
+      "height": 518,
+      "K": [
+        [
+          478.4123229980469,
+          0.0,
+          257.38018798828125
+        ],
+        [
+          0.0,
+          479.1325378417969,
+          258.25372314453125
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_to_world": [
+        [
+          0.8168787360191345,
+          -0.003204094246029854,
+          -0.5768005847930908,
+          2.2414097785949707
+        ],
+        [
+          -0.022247662767767906,
+          0.9990654587745667,
+          -0.03705742955207825,
+          -0.012975124642252922
+        ],
+        [
+          0.5763802528381348,
+          0.043103888630867004,
+          0.8160440325737,
+          0.019580058753490448
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "images/frame_0002.png"
+    },
+    {
+      "id": "frame_0003",
+      "label": "照片 3",
+      "width": 518,
+      "height": 518,
+      "K": [
+        [
+          469.8390808105469,
+          0.0,
+          256.480712890625
+        ],
+        [
+          0.0,
+          473.96441650390625,
+          258.60601806640625
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_to_world": [
+        [
+          0.9989011883735657,
+          0.011060595512390137,
+          0.045542582869529724,
+          0.0008118838886730373
+        ],
+        [
+          -0.012694228440523148,
+          0.9992805123329163,
+          0.03573889285326004,
+          -0.0936705693602562
+        ],
+        [
+          -0.04511452466249466,
+          -0.03627774864435196,
+          0.9983229041099548,
+          -0.3006603717803955
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "images/frame_0003.png"
+    },
+    {
+      "id": "frame_0004",
+      "label": "照片 4",
+      "width": 518,
+      "height": 518,
+      "K": [
+        [
+          478.79443359375,
+          0.0,
+          257.0517272949219
+        ],
+        [
+          0.0,
+          482.6806640625,
+          258.1623840332031
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_to_world": [
+        [
+          0.987859308719635,
+          -0.014772503636777401,
+          -0.154647096991539,
+          0.5719337463378906
+        ],
+        [
+          0.012066283263266087,
+          0.9997574687004089,
+          -0.01842343807220459,
+          -0.052690476179122925
+        ],
+        [
+          0.15488176047801971,
+          0.016333747655153275,
+          0.9877979755401611,
+          -0.5338703393936157
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "images/frame_0004.png"
+    }
+  ],
+  "objects": [
+    {
+      "id": "object_6dd85942d104987a83c677d6",
+      "label": "emergency stop button",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          1.273790992699252,
+          0.12387327296971536,
+          3.2010246952443855
+        ],
+        "rotation_deg": [
+          -123.50094805350052,
+          75.60647239040662,
+          139.17032818044103
+        ],
+        "scale": [
+          0.12859984862309495,
+          0.12558156185265965,
+          0.12313999254385069
+        ]
+      },
+      "frame_ids": [
+        "frame_0001"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "object_6dd85942d104987a83c677d6-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0001",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.041666666666666664,
+              "boundary_error_image_height": 0.0047454675659537315,
+              "relative_depth_p50": 0.0023243329487740993,
+              "relative_depth_p95": 0.0023243329487740993,
+              "target_pixels": 17,
+              "visible_predicted_pixels": 8,
+              "depth_comparison_pixels": 1,
+              "loss": 0.9701486014140149
+            },
+            "generated_initial": {
+              "visible_iou": 0.38636363636363635,
+              "boundary_error_image_height": 0.0032865479588508606,
+              "relative_depth_p50": 0.0038721621967852116,
+              "relative_depth_p95": 0.028189026191830634,
+              "target_pixels": 17,
+              "visible_predicted_pixels": 44,
+              "depth_comparison_pixels": 17,
+              "loss": 0.6240816217508506
+            },
+            "generated_refined": {
+              "visible_iou": 0.4146341463414634,
+              "boundary_error_image_height": 0.003034173045307398,
+              "relative_depth_p50": 0.0037138171028345823,
+              "relative_depth_p95": 0.028667864575982093,
+              "target_pixels": 17,
+              "visible_predicted_pixels": 41,
+              "depth_comparison_pixels": 17,
+              "loss": 0.595148016851986
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 541336
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 270810,
+        "stride": 9,
+        "index_byte_offset": 9749160,
+        "index_count": 1624008,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.3351961672306061,
+            -0.2577837109565735,
+            -0.49981722235679626
+          ],
+          "max": [
+            0.33611685037612915,
+            0.27818334102630615,
+            0.49940794706344604
+          ]
+        },
+        "asset": {
+          "path": "model/objects/object_6dd85942d104987a83c677d6.bin.gz",
+          "bytes": 16245192,
+          "packed_bytes": 8533224,
+          "sha256": "c92a82ea0f9e35b3ba01fb727bae25e06f162cb0f357474690c5057f7d2660df"
+        }
+      }
+    },
+    {
+      "id": "object_ddfd00218e68ffd9e3e7f515",
+      "label": "control button",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          1.2867437111380142,
+          0.32484702258600845,
+          3.1935141611997455
+        ],
+        "rotation_deg": [
+          99.725767922231,
+          8.164952129397651,
+          -8.79256461708466
+        ],
+        "scale": [
+          0.25940091066078985,
+          0.28886880221326694,
+          0.2641693064411718
+        ]
+      },
+      "frame_ids": [
+        "frame_0001"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "object_ddfd00218e68ffd9e3e7f515-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0001",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.5064935064935064,
+              "boundary_error_image_height": 0.00401352159678936,
+              "relative_depth_p50": 0.002577016013674438,
+              "relative_depth_p95": 0.007024067314341664,
+              "target_pixels": 123,
+              "visible_predicted_pixels": 109,
+              "depth_comparison_pixels": 78,
+              "loss": 0.5041105527137467
+            },
+            "generated_initial": {
+              "visible_iou": 0.6416184971098265,
+              "boundary_error_image_height": 0.0032104188576340675,
+              "relative_depth_p50": 0.0024288478307425976,
+              "relative_depth_p95": 0.006704529281705618,
+              "target_pixels": 123,
+              "visible_predicted_pixels": 161,
+              "depth_comparison_pixels": 111,
+              "loss": 0.3672311884361842
+            },
+            "generated_refined": {
+              "visible_iou": 0.6470588235294118,
+              "boundary_error_image_height": 0.003244946710765362,
+              "relative_depth_p50": 0.0017565343296155334,
+              "relative_depth_p95": 0.006750007299706339,
+              "target_pixels": 123,
+              "visible_predicted_pixels": 157,
+              "depth_comparison_pixels": 110,
+              "loss": 0.36118760422173446
+            }
+          }
+        ],
+        "watertight": true,
+        "faces": 227880
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 113936,
+        "stride": 9,
+        "index_byte_offset": 4101696,
+        "index_count": 683640,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.19830270111560822,
+            -0.13915517926216125,
+            -0.4876871705055237
+          ],
+          "max": [
+            0.19695085287094116,
+            0.1387384682893753,
+            0.4997159540653229
+          ]
+        },
+        "asset": {
+          "path": "model/objects/object_ddfd00218e68ffd9e3e7f515.bin.gz",
+          "bytes": 6836256,
+          "packed_bytes": 3732700,
+          "sha256": "51cdfcf70001470630c14074a444c024c70df90741639636ec123b34a2fce988"
+        }
+      }
+    },
+    {
+      "id": "observed_floor",
+      "label": "观测到的工位地面",
+      "source": "observed",
+      "model": "source geometry",
+      "transform": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "frame_ids": [
+        "frame_0004"
+      ],
+      "metrics": {
+        "plane_residual_p95_native": 0.20443463325500488
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 35003,
+        "stride": 9,
+        "index_byte_offset": 1260108,
+        "index_count": 202128,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -1.5003267526626587,
+            1.1210644245147705,
+            2.475024700164795
+          ],
+          "max": [
+            2.4349923133850098,
+            1.5999376773834229,
+            7.586737632751465
+          ]
+        },
+        "asset": {
+          "path": "model/objects/observed_floor.bin.gz",
+          "bytes": 2068620,
+          "packed_bytes": 1178215,
+          "sha256": "75520ff529f58ee0454150de614c703c33628cf977c3b24bd2acbacc76125b77"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "RecGen experiment, not a reproduction of the unreleased Lucida GizmoAct policy",
+    "Generated hidden surfaces and textures have no photographic ground truth",
+    "All supplied views contribute to geometry and placement; scores measure input consistency, not held-out accuracy",
+    "Static editable meshes; no robot joints, collision validation or physical calibration"
+  ],
+  "unavailable_objects": [
+    {
+      "id": "object_0453826d5e2f10c7c04e62b5",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_0d584641e84865d07b64e7da",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_0ddb7d7b8f5dd925e23131b1",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_1e889200afb4908209e7aa57",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_1f0c05f408acc6c9ca28aa5b",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_2439d2eef4bc91733a7db683",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_251eafa8d4599f3d3595aca3",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_28c7df8abd5cb0cc4ae91328",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_29a98d6ff155048fb79c8848",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_30eda03fb45da6d35a7bbdaa",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_345e3e91edfd9627fe94f9b4",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_3a3223f41b3bbc60d232137e",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_3ae7f4cca8f551b6fbed2185",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_3bcadefa5c8062a2f12db7dc",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_4223a1088d135d12e61e0f1d",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_46b624778b66017e6cecf0c8",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_4d38ce5495cf2b3d8446b743",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_4e409ac774af382ff7643d77",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_52f1aeb9691108b4fb4bf77a",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_58cd56c49b16c217970c0e01",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_5e2743ca271b8f21a38778bb",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_6b7e2342181e52f9c9c3b9b7",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_79e309a13d77200563b6c766",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_7f36d6bfdb3ba7628775df9e",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_83d972f07717beee46f135df",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_84394050703d9d92a9abb4b0",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_84842d0160fef6b06f2da7a3",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_958507d6d82c5b9c0633d15b",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_a50e11d5c6411660012dd3ef",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_a5998b33941a3dd44ef6d89e",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_b4e22af4fbb40a9b6ebb86c6",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_b5dc2cd917093f7c1da2f6df",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_bb6a55b5afd50d846b0e4d02",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_c7ce0d678ecafd4249139a88",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_e2cb98ef84558416a36e1873",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_e39505f06fe96c4491c5d58e",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_e4cc87b3a2dda08935bbda33",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_f0596b23993ed5f35f1747c0",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_f3a4521b1626c18a210e6051",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_11cfa560f57ace58b0a7dc43",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_120d39139c26d633431cf3a7",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_38956f772e7727b6b1126db8",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_5670b3b749d207e1c8ab3c45",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_69f3fa859dcf31f028afdc92",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_6d06b4c53f0a0a4ff23c5af3",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_7b5616bfca7637997659808e",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_97eee9b7c2ff43da4c2a8759",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_a3c8deff6e8757b21fd6e949",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_a7f34c753f4a5a932138b38e",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_b12c230e9642198c73f0206f",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_b912decaa165b1931dd5cf69",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_cbd462d372de66c314740612",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_cce700391288df97a8ca14cd",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_0d045ff5a83512a95d6d8f0b",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_3f2131e19c9f8e4cfd8e4769",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_4265b9c37133a2f2f46a5847",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_4de309904125efae06cf4ef7",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_58d2d63b233551f32ef9cdf7",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_89f616ef2aebbb03320b62fb",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_9b802f816a454325b920b7ad",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_acab92014db1a59702c60626",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_d834a58657f84b81406d012f",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_dbd46a26f4114bfebcb41f25",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_0155db2a7245c50c587dc0d1",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_062a3528aeaeca0d20eda61a",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_11c2da64b630ff751186c284",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_24e73a945a115be67eda3d9a",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_53b45c49e473485d27d32302",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_5c6c4afe0bd088cb994adf35",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_6171ea7083775e2886f9b18e",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_82156a75e99622f4d9101518",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_9583535e4f2c4cb4a1eb6349",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_a9b752847829907a66bd750c",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_ae39e82b5388be9e91cdc4f5",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_c1ca5994c5ef3e51f2ce57c6",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_c6964c784e2d3790aff13430",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_c729ff966ff8f986b97de13a",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_ee874fd3644d0311a732a94d",
+      "reason": "No native model output"
+    },
+    {
+      "id": "object_f4324e7dd0da0737840a6675",
+      "reason": "No native model output"
+    }
+  ],
+  "object_evidence": "object-evidence.json",
+  "floor_plane": [
+    0.04003097862005234,
+    -0.9815926551818848,
+    -0.18674422800540924,
+    2.0043232440948486
+  ],
+  "source_binary": {
+    "bytes": 25150068,
+    "sha256": "6120650c879101d0012edaace3be41d8a18b70c50b216dd394f14e53678b687c"
+  },
+  "label": "BOR1 · 小物体补全",
+  "description": "原报告照片的急停与控制按钮，使用原几何坐标；地面为观测表面。尺寸尚未标定。"
+}
