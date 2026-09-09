@@ -1,0 +1,188 @@
+{
+  "run_id": "lucida-replica-01",
+  "evaluation_grid_height": 288,
+  "before": "current generated asset with existing refined pose",
+  "after": "new fitted 64-segment cylinder",
+  "objects": [
+    {
+      "object_id": "left_post",
+      "baseline_file": "result/left_post-comparison.json",
+      "baseline_sha256": "1f8ee94b0e65f301d91a5b998b2807a72ec528076c06c865cf084acb6da573ca",
+      "views": [
+        {
+          "frame_id": "frame_0001",
+          "before_generated_refined": {
+            "visible_iou": 0.8825396825396825,
+            "boundary_error_image_height": 0.0027006370946764946,
+            "relative_depth_p50": 0.008701194543391466,
+            "relative_depth_p95": 0.016586535517126338,
+            "target_pixels": 1401,
+            "visible_predicted_pixels": 1564,
+            "depth_comparison_pixels": 1362,
+            "loss": 0.13156278619306194
+          },
+          "after_cylinder": {
+            "visible_iou": 0.9175257731958762,
+            "boundary_error_image_height": 0.0017088347813114524,
+            "relative_depth_p50": 0.0015448643825948238,
+            "relative_depth_p95": 0.0087893103249371,
+            "target_pixels": 1401,
+            "visible_predicted_pixels": 1389,
+            "depth_comparison_pixels": 1319,
+            "loss": 0.08743676074934148
+          }
+        },
+        {
+          "frame_id": "frame_0003",
+          "before_generated_refined": {
+            "visible_iou": 0.8563706563706563,
+            "boundary_error_image_height": 0.0027277632616460323,
+            "relative_depth_p50": 0.011013836599886417,
+            "relative_depth_p95": 0.022603374626487493,
+            "target_pixels": 1121,
+            "visible_predicted_pixels": 1283,
+            "depth_comparison_pixels": 1090,
+            "loss": 0.16009870675252214
+          },
+          "after_cylinder": {
+            "visible_iou": 0.9452173913043478,
+            "boundary_error_image_height": 0.0009464945178478956,
+            "relative_depth_p50": 0.003537516575306654,
+            "relative_depth_p95": 0.010883683850988741,
+            "target_pixels": 1121,
+            "visible_predicted_pixels": 1116,
+            "depth_comparison_pixels": 1068,
+            "loss": 0.06021311430665466
+          }
+        },
+        {
+          "frame_id": "frame_0002",
+          "before_generated_refined": {
+            "visible_iou": 0.8143194335169158,
+            "boundary_error_image_height": 0.003670712001621723,
+            "relative_depth_p50": 0.013065407983958721,
+            "relative_depth_p95": 0.020808790996670715,
+            "target_pixels": 1044,
+            "visible_predicted_pixels": 1262,
+            "depth_comparison_pixels": 997,
+            "loss": 0.20608739847028634
+          },
+          "after_cylinder": {
+            "visible_iou": 0.8109756097560976,
+            "boundary_error_image_height": 0.0034446106292307377,
+            "relative_depth_p50": 0.006387647241353989,
+            "relative_depth_p95": 0.012947583803907037,
+            "target_pixels": 1044,
+            "visible_predicted_pixels": 1035,
+            "depth_comparison_pixels": 926,
+            "loss": 0.20230125874371785
+          }
+        }
+      ],
+      "available_view_mean": {
+        "before_generated_refined": {
+          "visible_iou": 0.8510765908090848,
+          "relative_depth_p50": 0.010926813042412201
+        },
+        "after_cylinder": {
+          "visible_iou": 0.891239591418774,
+          "relative_depth_p50": 0.0038233427330851555
+        }
+      },
+      "meets_exploratory_decision_gate": true
+    },
+    {
+      "object_id": "right_post",
+      "baseline_file": "result/right_post-comparison.json",
+      "baseline_sha256": "2fe4a940f4712923784b4f16322d7f5d73b8a4aa20259ca36027504ff695086e",
+      "views": [
+        {
+          "frame_id": "frame_0001",
+          "before_generated_refined": {
+            "visible_iou": 0.8021885521885522,
+            "boundary_error_image_height": 0.003747393377125263,
+            "relative_depth_p50": 0.006035788916051388,
+            "relative_depth_p95": 0.017582921124994752,
+            "target_pixels": 973,
+            "visible_predicted_pixels": 1168,
+            "depth_comparison_pixels": 927,
+            "loss": 0.21134202348174969
+          },
+          "after_cylinder": {
+            "visible_iou": 0.9030303030303031,
+            "boundary_error_image_height": 0.0015395733062177896,
+            "relative_depth_p50": 0.012573477812111378,
+            "relative_depth_p95": 0.01776822805404663,
+            "target_pixels": 973,
+            "visible_predicted_pixels": 911,
+            "depth_comparison_pixels": 883,
+            "loss": 0.11262232139424388
+          }
+        },
+        {
+          "frame_id": "frame_0003",
+          "before_generated_refined": {
+            "visible_iou": 0.8078668683812406,
+            "boundary_error_image_height": 0.0039009766187518835,
+            "relative_depth_p50": 0.004362826468423009,
+            "relative_depth_p95": 0.021128215361386534,
+            "target_pixels": 1081,
+            "visible_predicted_pixels": 1309,
+            "depth_comparison_pixels": 1068,
+            "loss": 0.20429791132468622
+          },
+          "after_cylinder": {
+            "visible_iou": 0.9475138121546961,
+            "boundary_error_image_height": 0.0008445301209576428,
+            "relative_depth_p50": 0.010881688445806503,
+            "relative_depth_p95": 0.01900245063006878,
+            "target_pixels": 1081,
+            "visible_predicted_pixels": 1034,
+            "depth_comparison_pixels": 1029,
+            "loss": 0.06505693653302569
+          }
+        },
+        {
+          "frame_id": "frame_0002",
+          "before_generated_refined": {
+            "visible_iou": 0.8308364544319601,
+            "boundary_error_image_height": 0.0044372775591909885,
+            "relative_depth_p50": 0.010868316050618887,
+            "relative_depth_p95": 0.018569593783468008,
+            "target_pixels": 1366,
+            "visible_predicted_pixels": 1567,
+            "depth_comparison_pixels": 1246,
+            "loss": 0.18890641673704078
+          },
+          "after_cylinder": {
+            "visible_iou": 0.9381739755571531,
+            "boundary_error_image_height": 0.0013863756321370602,
+            "relative_depth_p50": 0.018091964535415173,
+            "relative_depth_p95": 0.02306703682988882,
+            "target_pixels": 1366,
+            "visible_predicted_pixels": 1330,
+            "depth_comparison_pixels": 1232,
+            "loss": 0.0826907402425362
+          }
+        }
+      ],
+      "available_view_mean": {
+        "before_generated_refined": {
+          "visible_iou": 0.8136306250005844,
+          "relative_depth_p50": 0.0070889771450310946
+        },
+        "after_cylinder": {
+          "visible_iou": 0.9295726969140508,
+          "relative_depth_p50": 0.013849043597777685
+        }
+      },
+      "meets_exploratory_decision_gate": false
+    }
+  ],
+  "decision_gate": {
+    "rule": "mean IoU >= current generated_refined AND mean relative_depth_p50 <= current generated_refined",
+    "status": "Specified after the initial candidate scores were available; exploratory decision gate, not predeclared validation",
+    "target_masks": "Full original evidence masks retained, including observed base plates",
+    "promotes_source_scene": false
+  }
+}

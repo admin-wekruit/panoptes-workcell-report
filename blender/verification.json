@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "objects": [
+    {
+      "object_id": "left_post",
+      "triangles": 159120,
+      "max_world_coordinate_error_native": 4.0057208661181676e-08
+    },
+    {
+      "object_id": "right_post",
+      "triangles": 185228,
+      "max_world_coordinate_error_native": 4.7726492646837926e-08
+    },
+    {
+      "object_id": "right_fence",
+      "triangles": 349602,
+      "max_world_coordinate_error_native": 6.816421316280241e-08
+    },
+    {
+      "object_id": "robot",
+      "triangles": 283612,
+      "max_world_coordinate_error_native": 7.864594775419675e-08
+    },
+    {
+      "object_id": "left_fence",
+      "triangles": 291218,
+      "max_world_coordinate_error_native": 9.515138876814433e-08
+    },
+    {
+      "object_id": "cart",
+      "triangles": 767074,
+      "max_world_coordinate_error_native": 1.21015063969665e-07
+    },
+    {
+      "object_id": "guard",
+      "triangles": 204510,
+      "max_world_coordinate_error_native": 4.778008766415098e-08
+    },
+    {
+      "object_id": "left_light_curtain",
+      "triangles": 44786,
+      "max_world_coordinate_error_native": 2.3460768772132212e-08
+    },
+    {
+      "object_id": "right_light_curtain",
+      "triangles": 74722,
+      "max_world_coordinate_error_native": 5.090166799170959e-08
+    },
+    {
+      "object_id": "observed_floor",
+      "triangles": 32841,
+      "max_world_coordinate_error_native": 2.5723841234892575e-07
+    }
+  ],
+  "cameras": [
+    {
+      "camera": "frame_0001",
+      "max_conversion_error_pixels": 0.00010478496551513672
+    },
+    {
+      "camera": "frame_0002",
+      "max_conversion_error_pixels": 9.498596190837816e-05
+    },
+    {
+      "camera": "frame_0003",
+      "max_conversion_error_pixels": 5.21659851244749e-05
+    }
+  ],
+  "parametric_trial": [
+    {
+      "object_id": "left_post",
+      "radius_driver_edit_check": "passed",
+      "height_driver_edit_check": "passed",
+      "triangles": 256
+    },
+    {
+      "object_id": "right_post",
+      "radius_driver_edit_check": "passed",
+      "height_driver_edit_check": "passed",
+      "triangles": 256
+    }
+  ],
+  "source_triangle_count": 2392713,
+  "floor_residual_p95_native": 0.00489317926565773,
+  "vlm_calls_this_export": 0,
+  "new_model_inference_calls": 0,
+  "reopened_from_disk": true,
+  "elapsed_seconds": 4.593844083996373,
+  "blend_sha256": "6eeff537b6c73e7f963be897a9fde85ff07cc76772ef79a390cf018d3b69872b"
+}
