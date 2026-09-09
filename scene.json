@@ -19,7 +19,6 @@
       1.4963771295666821
     ]
   },
-  "binary": "scene.bin",
   "glb": "scene.glb",
   "metrics_report": "metrics.html",
   "cameras": [
@@ -321,7 +320,25 @@
         "stride": 9,
         "index_byte_offset": 2864232,
         "index_count": 477360,
-        "index_type": "uint32"
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.08560411632061005,
+            -0.08534323424100876,
+            -0.49907979369163513
+          ],
+          "max": [
+            0.08526604622602463,
+            0.0858905091881752,
+            0.5000557899475098
+          ]
+        },
+        "asset": {
+          "path": "model/objects/left_post.bin.gz",
+          "bytes": 4773672,
+          "packed_bytes": 2446709,
+          "sha256": "102e349be59711fb12f08c4c3f41d0a03f41f97d7abf34b1580805f3e0a68f97"
+        }
       }
     },
     {
@@ -465,12 +482,30 @@
         "faces": 185228
       },
       "mesh": {
-        "byte_offset": 4773672,
+        "byte_offset": 0,
         "vertex_count": 92618,
         "stride": 9,
-        "index_byte_offset": 8107920,
+        "index_byte_offset": 3334248,
         "index_count": 555684,
-        "index_type": "uint32"
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.0962657630443573,
+            -0.09659367799758911,
+            -0.498944491147995
+          ],
+          "max": [
+            0.09629186242818832,
+            0.09607652574777603,
+            0.5001624822616577
+          ]
+        },
+        "asset": {
+          "path": "model/objects/right_post.bin.gz",
+          "bytes": 5556984,
+          "packed_bytes": 2772003,
+          "sha256": "abc5c877ef00263424c1ecb76f8c037c360e346715b4328e18d7d6941c98979c"
+        }
       }
     },
     {
@@ -579,12 +614,30 @@
         "faces": 349602
       },
       "mesh": {
-        "byte_offset": 10330656,
+        "byte_offset": 0,
         "vertex_count": 174690,
         "stride": 9,
-        "index_byte_offset": 16619496,
+        "index_byte_offset": 6288840,
         "index_count": 1048806,
-        "index_type": "uint32"
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.060947246849536896,
+            -0.49471190571784973,
+            -0.5007253885269165
+          ],
+          "max": [
+            0.06073783338069916,
+            0.491456538438797,
+            0.4979681968688965
+          ]
+        },
+        "asset": {
+          "path": "model/objects/right_fence.bin.gz",
+          "bytes": 10484064,
+          "packed_bytes": 5419508,
+          "sha256": "f7f83e2dc84e2ea68fe72570fc42d2499162fa0bf587eee8cf7ca72c98502497"
+        }
       }
     },
     {
@@ -725,12 +778,30 @@
         "faces": 283612
       },
       "mesh": {
-        "byte_offset": 20814720,
+        "byte_offset": 0,
         "vertex_count": 141776,
         "stride": 9,
-        "index_byte_offset": 25918656,
+        "index_byte_offset": 5103936,
         "index_count": 850836,
-        "index_type": "uint32"
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.2529774308204651,
+            -0.23291164636611938,
+            -0.5002148151397705
+          ],
+          "max": [
+            0.25327301025390625,
+            0.22630073130130768,
+            0.49980130791664124
+          ]
+        },
+        "asset": {
+          "path": "model/objects/robot.bin.gz",
+          "bytes": 8507280,
+          "packed_bytes": 4742723,
+          "sha256": "0b8c554ba008160926884257ac642d0475096bedcffc190615376574a1c699b4"
+        }
       }
     },
     {
@@ -836,12 +907,30 @@
         "faces": 291218
       },
       "mesh": {
-        "byte_offset": 29322000,
+        "byte_offset": 0,
         "vertex_count": 145474,
         "stride": 9,
-        "index_byte_offset": 34559064,
+        "index_byte_offset": 5237064,
         "index_count": 873654,
-        "index_type": "uint32"
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.4891800582408905,
+            -0.054144833236932755,
+            -0.5005651116371155
+          ],
+          "max": [
+            0.4852444529533386,
+            0.05054629221558571,
+            0.5005469918251038
+          ]
+        },
+        "asset": {
+          "path": "model/objects/left_fence.bin.gz",
+          "bytes": 8731680,
+          "packed_bytes": 4677496,
+          "sha256": "88150537116fd600c0b08f7c0ad299c59a8b2f83a8982bd3648a3ec879fb5753"
+        }
       }
     },
     {
@@ -982,12 +1071,30 @@
         "faces": 767074
       },
       "mesh": {
-        "byte_offset": 38053680,
+        "byte_offset": 0,
         "vertex_count": 383330,
         "stride": 9,
-        "index_byte_offset": 51853560,
+        "index_byte_offset": 13799880,
         "index_count": 2301222,
-        "index_type": "uint32"
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.3415108323097229,
+            -0.500236451625824,
+            -0.2417839765548706
+          ],
+          "max": [
+            0.34165871143341064,
+            0.5006798505783081,
+            0.24067316949367523
+          ]
+        },
+        "asset": {
+          "path": "model/objects/cart.bin.gz",
+          "bytes": 23004768,
+          "packed_bytes": 12621842,
+          "sha256": "84f0f12df8ce491014cfcb2ca67fabf7d4077e4926c9fcc3d510a576e2a7a432"
+        }
       }
     },
     {
@@ -1128,12 +1235,30 @@
         "faces": 204510
       },
       "mesh": {
-        "byte_offset": 61058448,
+        "byte_offset": 0,
         "vertex_count": 102260,
         "stride": 9,
-        "index_byte_offset": 64739808,
+        "index_byte_offset": 3681360,
         "index_count": 613530,
-        "index_type": "uint32"
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.5007845163345337,
+            -0.339188814163208,
+            -0.10955267399549484
+          ],
+          "max": [
+            0.5002206563949585,
+            0.33855199813842773,
+            0.10864163190126419
+          ]
+        },
+        "asset": {
+          "path": "model/objects/guard.bin.gz",
+          "bytes": 6135480,
+          "packed_bytes": 3453272,
+          "sha256": "1f22a89a9a608cec2c7592bda887a66c187116019574e62c29df9baf33876daa"
+        }
       }
     },
     {
@@ -1274,12 +1399,30 @@
         "faces": 44786
       },
       "mesh": {
-        "byte_offset": 67193928,
+        "byte_offset": 0,
         "vertex_count": 22398,
         "stride": 9,
-        "index_byte_offset": 68000256,
+        "index_byte_offset": 806328,
         "index_count": 134358,
-        "index_type": "uint32"
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.04470356926321983,
+            -0.041117530316114426,
+            -0.5007830262184143
+          ],
+          "max": [
+            0.03680531308054924,
+            0.038541294634342194,
+            0.49478602409362793
+          ]
+        },
+        "asset": {
+          "path": "model/objects/left_light_curtain.bin.gz",
+          "bytes": 1343760,
+          "packed_bytes": 728892,
+          "sha256": "45fa5b28c28f88ff18a005139767b1fb1c522863991e2dff2af3f5d19cd3f5a0"
+        }
       }
     },
     {
@@ -1420,12 +1563,30 @@
         "faces": 74722
       },
       "mesh": {
-        "byte_offset": 68537688,
+        "byte_offset": 0,
         "vertex_count": 37364,
         "stride": 9,
-        "index_byte_offset": 69882792,
+        "index_byte_offset": 1345104,
         "index_count": 224166,
-        "index_type": "uint32"
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.05021902546286583,
+            -0.0605623796582222,
+            -0.5005114078521729
+          ],
+          "max": [
+            0.05066494271159172,
+            0.07072696834802628,
+            0.500324010848999
+          ]
+        },
+        "asset": {
+          "path": "model/objects/right_light_curtain.bin.gz",
+          "bytes": 2241768,
+          "packed_bytes": 1161339,
+          "sha256": "92f8eda5ffa50cad026a371055fe5fe3c6f190f2f3247153e402d52cfbe46a8d"
+        }
       }
     },
     {
@@ -1457,12 +1618,30 @@
         "plane_residual_p95_native": 0.004893159959465265
       },
       "mesh": {
-        "byte_offset": 70779456,
+        "byte_offset": 0,
         "vertex_count": 17077,
         "stride": 9,
-        "index_byte_offset": 71394228,
+        "index_byte_offset": 614772,
         "index_count": 98523,
-        "index_type": "uint32"
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.44948169589042664,
+            0.47607800364494324,
+            0.19241727888584137
+          ],
+          "max": [
+            0.9152171611785889,
+            1.770679235458374,
+            1.4533143043518066
+          ]
+        },
+        "asset": {
+          "path": "model/objects/observed_floor.bin.gz",
+          "bytes": 1008864,
+          "packed_bytes": 562352,
+          "sha256": "40a61a090352cc96e8ee605f2b84a6860c956ebc5d0f19d0319d7a76b8da8dfe"
+        }
       }
     }
   ],
@@ -1473,28 +1652,6 @@
     "Static editable meshes; no robot joints, collision validation or physical calibration"
   ],
   "unavailable_objects": [],
-  "binary_asset": {
-    "bytes": 71788320,
-    "sha256": "37a6bb27d80c219b152cba6b5cdc4a56e8f20b0413d7538b74d658e612ce7510",
-    "parts": [
-      {
-        "path": "model/scene.bin.part1",
-        "bytes": 20971520
-      },
-      {
-        "path": "model/scene.bin.part2",
-        "bytes": 20971520
-      },
-      {
-        "path": "model/scene.bin.part3",
-        "bytes": 20971520
-      },
-      {
-        "path": "model/scene.bin.part4",
-        "bytes": 8873760
-      }
-    ]
-  },
   "glb_asset": {
     "bytes": 62229748,
     "sha256": "88b407cfd40c47a54f5af73283bd475df96a9cb2697ed90053f29e75c00b50fe",
@@ -1512,5 +1669,9 @@
         "bytes": 20286708
       }
     ]
+  },
+  "source_binary": {
+    "bytes": 71788320,
+    "sha256": "37a6bb27d80c219b152cba6b5cdc4a56e8f20b0413d7538b74d658e612ce7510"
   }
 }
