@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self' blob: data:; img-src 'self' blob: data:; object-src 'none'; base-uri 'none'">
+<title>BOR1 · 观测内部表面 Playground</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#121519;color:#eef1f4;font:14px system-ui}body{display:grid;grid-template-rows:auto minmax(0,1fr) auto}header{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid #343a42}h1{font-size:16px;margin:0;font-weight:600}nav{display:flex;gap:6px;flex-wrap:wrap}button{font:inherit;padding:7px 11px;border:1px solid #555e69;border-radius:5px;background:#21262d;color:inherit;cursor:pointer}button:hover:not(:disabled){background:#333d49}button[aria-pressed=true]{background:#dce7f3;color:#172330;border-color:#dce7f3}button:disabled{opacity:.45;cursor:wait}button:focus-visible{outline:2px solid #79b9fc;outline-offset:3px}.scale{margin-left:auto;color:#b6c0cb;font-size:12px}main{display:grid;grid-template-columns:minmax(0,1fr);min-height:0}main.compare{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}#draw{display:grid;place-items:center;min-width:0;min-height:0;overflow:hidden}canvas{display:block;touch-action:none}figure{margin:0;min-width:0;min-height:0;display:grid;grid-template-rows:auto minmax(0,1fr);border-left:1px solid #343a42;background:#0d1013}figure[hidden]{display:none}figcaption{padding:10px 14px;color:#c0cad5;font-size:12px}img{width:100%;height:100%;min-height:0;object-fit:contain}footer{display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap;padding:9px 18px;border-top:1px solid #343a42;color:#aeb9c5;font-size:12px}#status[data-error=true]{color:#ffb3a8}@media(max-width:640px){header{gap:10px;padding:10px}.scale{margin-left:0}main.compare{grid-template-columns:1fr;grid-template-rows:1fr 1fr}figure{border-left:0;border-top:1px solid #343a42}footer{padding:8px 10px}}
+</style>
+<header><a href="../#playgrounds" style="color:#9ad5c7;text-decoration:none">← 联合报告</a><h1>BOR1 · 观测内部表面</h1><nav id="views" aria-label="原始照片机位"></nav><nav aria-label="显示控制"><button id="compare" aria-pressed="false" disabled>原图对照</button><button id="wire" aria-pressed="false" disabled>线框</button><button id="overview" disabled>整体视图</button></nav><span class="scale">独立两照片实验 · 尺度未标定 · 未与其它场景配准</span></header>
+<main id="stage"><div id="draw" aria-label="工位三维表面"></div><figure id="reference" hidden><figcaption id="caption"></figcaption><img id="photo" alt="当前机位的原始照片"></figure></main>
+<footer><span>拖动旋转 · 滚轮缩放 · 右键或双指平移</span><span id="status" role="status">正在加载工位重建…</span></footer>
+<script>window.addEventListener('error',e=>{const s=document.getElementById('status');s.dataset.error='true';s.textContent='加载失败：'+e.message});</script>
+<script type="importmap">{"imports":{"three":"./viewer-assets/three.module.js","three/addons/":"./viewer-assets/addons/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+const $ = id => document.getElementById(id), status = $('status');
+try {
+  const response = await fetch('./cameras.json'); if (!response.ok) throw Error('cameras.json: HTTP '+response.status);
+  const data = await response.json();
+  if (!Array.isArray(data.frames) || data.frames.length === 0) throw Error('需要真实照片机位');
+  for (const f of data.frames) if (!(f.width>0 && f.height>0 && f.K?.length===3 && f.camera_to_world?.length===4 && f.K.flat().length===9 && f.camera_to_world.flat().length===16 && [...f.K.flat(),...f.camera_to_world.flat()].every(Number.isFinite) && f.K[0][0]>0 && f.K[1][1]>0)) throw Error('机位参数无效：'+f.id);
+  if (![data.bounds?.min,data.bounds?.max].every(v=>Array.isArray(v)&&v.length===3&&v.every(Number.isFinite))) throw Error('缺少有效网格边界');
+  const bounds = new THREE.Box3(new THREE.Vector3(...data.bounds.min),new THREE.Vector3(...data.bounds.max)), center = bounds.getCenter(new THREE.Vector3()), radius = bounds.getSize(new THREE.Vector3()).length()/2;
+  if (!(radius>0) || bounds.isEmpty()) throw Error('网格边界为空');
+  const scene = new THREE.Scene(), camera = new THREE.PerspectiveCamera(50,1,Math.max(radius/10000,0.0001),radius*50), renderer = new THREE.WebGLRenderer({antialias:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio||1,2)); renderer.setClearColor('#121519'); $('draw').appendChild(renderer.domElement);
+  let controls;
+  function resetControls(){controls?.dispose();controls=new OrbitControls(camera,renderer.domElement);controls.screenSpacePanning=true;controls.minDistance=radius/1000;controls.maxDistance=radius*20;controls.addEventListener('change',render);controls.addEventListener('start',()=>{if(!frame)return;camera.fov=THREE.MathUtils.radToDeg(2*Math.atan(frame.height/(2*frame.K[1][1])));frame=null;buttons.forEach(b=>b.setAttribute('aria-pressed','false'));$('overview').setAttribute('aria-pressed','false');$('reference').hidden=true;$('stage').classList.remove('compare');$('compare').setAttribute('aria-pressed','false');$('compare').disabled=true;resize()})}
+  let frame = null, wireframe = false; const materials = [], buttons = [];
+  function render(){renderer.render(scene,camera)}
+  function resize(){
+    const width=$('draw').clientWidth,height=$('draw').clientHeight; if (!(width>0&&height>0)) return;
+    if(frame){const fit=Math.min(width/frame.width,height/frame.height);renderer.setSize(Math.max(1,Math.floor(frame.width*fit)),Math.max(1,Math.floor(frame.height*fit)))}
+    else{renderer.setSize(width,height);camera.aspect=width/height;camera.updateProjectionMatrix()}
+    render();
+  }
+  function selectFrame(index){
+    frame=data.frames[index]; const matrix=new THREE.Matrix4().set(...frame.camera_to_world.flat()).multiply(new THREE.Matrix4().makeScale(1,-1,-1));
+    camera.up.setFromMatrixColumn(matrix,1).normalize();resetControls();matrix.decompose(camera.position,camera.quaternion,new THREE.Vector3());
+    controls.target.copy(camera.position).add(new THREE.Vector3(0,0,-1).applyQuaternion(camera.quaternion).multiplyScalar(radius/2)); controls.update();
+    const k=frame.K,n=camera.near,w=frame.width,h=frame.height;
+    camera.projectionMatrix.makePerspective(-(k[0][2]+.5)/k[0][0]*n,(w-k[0][2]-.5)/k[0][0]*n,(k[1][2]+.5)/k[1][1]*n,-(h-k[1][2]-.5)/k[1][1]*n,n,camera.far);camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
+    $('photo').src=frame.image;$('photo').alt=frame.label+' · '+frame.id;$('caption').textContent='原图 · '+frame.label;$('compare').disabled=false;
+    buttons.forEach((b,i)=>b.setAttribute('aria-pressed',String(i===index)));$('overview').setAttribute('aria-pressed','false');resize();
+  }
+  function overview(){
+    frame=null;const first=new THREE.Matrix4().set(...data.frames[0].camera_to_world.flat()),up=new THREE.Vector3().setFromMatrixColumn(first,1).negate().normalize(),right=new THREE.Vector3().setFromMatrixColumn(first,0).normalize(),back=new THREE.Vector3().setFromMatrixColumn(first,2).negate().normalize();
+    camera.up.copy(up);resetControls();camera.position.copy(center).addScaledVector(back,radius*2.2).addScaledVector(right,radius*.9).addScaledVector(up,radius*.7);controls.target.copy(center);controls.update();
+    buttons.forEach(b=>b.setAttribute('aria-pressed','false'));$('overview').setAttribute('aria-pressed','true');$('reference').hidden=true;$('stage').classList.remove('compare');$('compare').setAttribute('aria-pressed','false');$('compare').disabled=true;resize();
+  }
+  new ResizeObserver(resize).observe($('draw'));
+  const gltf=await new GLTFLoader().loadAsync('./workcell.glb');let triangles=0;
+  gltf.scene.traverse(object=>{if(!object.isMesh)return;triangles+=(object.geometry.index?.count??object.geometry.attributes.position.count)/3;const originals=Array.isArray(object.material)?object.material:[object.material];const mapped=originals.map(m=>{const material=new THREE.MeshBasicMaterial({map:m.map,color:m.color??0xffffff,vertexColors:Boolean(object.geometry.getAttribute('color')),side:THREE.DoubleSide,opacity:m.opacity,transparent:m.transparent});materials.push(material);return material});object.material=Array.isArray(object.material)?mapped:mapped[0]});
+  if (!(triangles>0)) throw Error('workcell.glb 不包含三角表面');scene.add(gltf.scene);renderer.domElement.dataset.triangles=String(triangles);renderer.domElement.dataset.meshLoaded='true';
+  data.frames.forEach((f,index)=>{const button=document.createElement('button');button.textContent=f.label;button.setAttribute('aria-pressed','false');button.addEventListener('click',()=>selectFrame(index));$('views').appendChild(button);buttons.push(button)});
+  $('compare').addEventListener('click',()=>{const on=$('reference').hidden;$('reference').hidden=!on;$('stage').classList.toggle('compare',on);$('compare').setAttribute('aria-pressed',String(on));resize()});
+  $('wire').addEventListener('click',()=>{wireframe=!wireframe;materials.forEach(m=>{m.wireframe=wireframe});$('wire').textContent=wireframe?'实体':'线框';$('wire').setAttribute('aria-pressed',String(wireframe));render()});
+  $('overview').addEventListener('click',overview);$('wire').disabled=false;$('overview').disabled=false;selectFrame(data.frames.length-1);status.textContent=data.frames.length+' 张同状态照片 · 照片重建表面 · 未拍到处留空';
+} catch(error){status.dataset.error='true';status.textContent='加载失败：'+error.message;console.error(error)}
+</script>
+</html>

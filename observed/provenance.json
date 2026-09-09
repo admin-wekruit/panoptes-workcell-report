@@ -1,0 +1,19 @@
+{
+  "experiment": "workcell-reconstruction-01",
+  "source_run_id": "user-bor1-02",
+  "source_frames": [
+    "frame_0003",
+    "frame_0004"
+  ],
+  "representation": "Pi3X observed surface reconstruction, TSDF triangles, real-photo atlas texture",
+  "metric_scale_known": false,
+  "registered_to_other_playgrounds": false,
+  "triangles": 359983,
+  "glb_bytes": 28520336,
+  "glb_sha256": "df6356bfa2b4ab0e2040e90df005f392b0f343e72d6786b6507b48e2e70047c3",
+  "limitations": [
+    "Unobserved backsides are open.",
+    "Transparent fences and fine details are incomplete.",
+    "Static two-photo experiment, not a physics simulator."
+  ]
+}

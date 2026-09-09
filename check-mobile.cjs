@@ -21,7 +21,7 @@ const server=http.createServer(async(req,res)=>{
   try{
     const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:2});
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
-    const started=Date.now();await page.goto('http://127.0.0.1:'+server.address().port);
+    const started=Date.now();await page.goto('http://127.0.0.1:'+server.address().port+'/viewer.html');
     await page.waitForFunction(()=>document.querySelectorAll('.object-row').length===10,null,{timeout:10000});
     // Draw calls count actual uploaded meshes, not a poster, spinner, or placeholder box.
     await page.waitForFunction(()=>Number(document.querySelector('canvas').dataset.loadedObjects)>0,null,{timeout:10000});
@@ -40,7 +40,7 @@ const server=http.createServer(async(req,res)=>{
     assert.deepEqual(errors,[]);
     await page.locator('#render-panel').screenshot({path:'/tmp/panoptes-mobile-complete.png'});
     console.log(JSON.stringify({simulated_mbps:mbps||null,first_object_ms:firstObjectMs,complete_ms:Date.now()-started}));
-    corrupt=true;await page.goto('http://127.0.0.1:'+server.address().port+'/?integrity-check=1');
+    corrupt=true;await page.goto('http://127.0.0.1:'+server.address().port+'/viewer.html?integrity-check=1');
     await page.waitForFunction(()=>document.querySelector('#status').classList.contains('error'),null,{timeout:15000});
     assert.equal(await page.locator('canvas').getAttribute('data-loaded-objects'),'9');
     assert.match(await page.locator('#summary').textContent(),/加载未完成/);
@@ -58,7 +58,7 @@ const server=http.createServer(async(req,res)=>{
       });
       new MutationObserver(()=>{if(window.injectedLoss&&document.querySelector('#status')?.textContent.includes('场景已完整加载'))window.falseComplete=true;}).observe(document,{subtree:true,childList:true,characterData:true});
     });
-    await lossPage.goto('http://127.0.0.1:'+server.address().port);
+    await lossPage.goto('http://127.0.0.1:'+server.address().port+'/viewer.html');
     await lossPage.waitForFunction(()=>window.injectedLoss&&document.querySelector('#status').classList.contains('error'),null,{timeout:60000});
     assert.equal(await lossPage.evaluate(()=>!!window.falseComplete),false,'lost WebGL context must never report complete');
     assert.equal(await lossPage.getByRole('button',{name:'重新加载',exact:true}).isVisible(),true);

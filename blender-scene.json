@@ -1,0 +1,1534 @@
+{
+  "version": 1,
+  "run_id": "lucida-replica-01-blender-posts",
+  "units": "未标定尺度（非米）",
+  "up": [
+    -0.4769218862056732,
+    -0.605158269405365,
+    -0.6374394297599792
+  ],
+  "bounds": {
+    "min": [
+      -2.544052303990734,
+      -0.6691451018706007,
+      -1.2534038736048307
+    ],
+    "max": [
+      1.0868068739085346,
+      2.7984394224926517,
+      1.4624414062355378
+    ]
+  },
+  "metrics_report": "metrics.html",
+  "cameras": [
+    {
+      "id": "frame_0001",
+      "label": "照片 1",
+      "width": 518,
+      "height": 518,
+      "K": [
+        [
+          380.4815368652344,
+          0.0,
+          258.5
+        ],
+        [
+          0.0,
+          379.89910888671875,
+          258.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_to_world": [
+        [
+          -0.3443349003791809,
+          0.5738850831985474,
+          -0.7430273294448853,
+          1.4269007444381714
+        ],
+        [
+          -0.5662743449211121,
+          0.5043041110038757,
+          0.6519284844398499,
+          -0.945278525352478
+        ],
+        [
+          0.7488440275192261,
+          0.6452388167381287,
+          0.1513267606496811,
+          0.006183192599564791
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "images/frame_0001.png"
+    },
+    {
+      "id": "frame_0002",
+      "label": "照片 2",
+      "width": 518,
+      "height": 518,
+      "K": [
+        [
+          382.533447265625,
+          0.0,
+          258.5
+        ],
+        [
+          0.0,
+          382.12298583984375,
+          258.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_to_world": [
+        [
+          -0.6951888203620911,
+          0.5486595630645752,
+          -0.46441954374313354,
+          0.8643792867660522
+        ],
+        [
+          -0.15310397744178772,
+          0.5182378888130188,
+          0.8414207696914673,
+          -1.2814918756484985
+        ],
+        [
+          0.7023336887359619,
+          0.6560505032539368,
+          -0.2762713134288788,
+          0.7568816542625427
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "images/frame_0002.png"
+    },
+    {
+      "id": "frame_0003",
+      "label": "照片 3",
+      "width": 518,
+      "height": 518,
+      "K": [
+        [
+          378.57366943359375,
+          0.0,
+          258.5
+        ],
+        [
+          0.0,
+          377.83770751953125,
+          258.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_to_world": [
+        [
+          -0.4863566756248474,
+          0.5461332201957703,
+          -0.6820527911186218,
+          1.360137701034546
+        ],
+        [
+          -0.39889681339263916,
+          0.5557212829589844,
+          0.7294214367866516,
+          -1.1813066005706787
+        ],
+        [
+          0.7773927450180054,
+          0.6268274784088135,
+          -0.052427880465984344,
+          0.26846951246261597
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "images/frame_0003.png"
+    }
+  ],
+  "objects": [
+    {
+      "id": "left_post",
+      "label": "left front black bollard · 参数化圆柱",
+      "source": "parametric",
+      "model": "Blender 4.5.9 · fitted 64-segment cylinder",
+      "transform": {
+        "position": [
+          0.8758283808140903,
+          0.6534275940349703,
+          0.2549469177589094
+        ],
+        "rotation_deg": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "frame_ids": [
+        "frame_0001",
+        "frame_0003",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [
+        15,
+        21
+      ],
+      "metrics": {
+        "comparison": "blender/post-comparisons.json",
+        "candidate": "ground-axis-cylinder-64",
+        "faces": 256,
+        "parameter_source": "blender/post-parameters.json"
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 258,
+        "stride": 9,
+        "index_byte_offset": 9288,
+        "index_count": 768,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.21097849309444427,
+            -0.2529316842556,
+            -0.2632858157157898
+          ],
+          "max": [
+            0.21097849309444427,
+            0.2529316842556,
+            0.2632858157157898
+          ]
+        },
+        "asset": {
+          "path": "model-assets/blender-left_post.bin.gz",
+          "bytes": 12360,
+          "packed_bytes": 3537,
+          "sha256": "4adfd7cac4eb32472e696ab16fd9196ccb667f34d4b9c3ea8411dd1a8b71a37a"
+        }
+      },
+      "description": "冻结 Pi3X 观测点与多视图数值拟合；圆柱先验，无底板。统一深色用于展示，不是恢复的物理材质。",
+      "metrics_report": "metrics.html#blender",
+      "parameters": {
+        "center_floor_native": [
+          0.46706336971233686,
+          -0.29835434142373807,
+          0.34716094554262666
+        ],
+        "radius_native": 0.04623191208118776,
+        "height_native": 0.7143441227966534
+      }
+    },
+    {
+      "id": "right_post",
+      "label": "right front black bollard · 参数化圆柱",
+      "source": "parametric",
+      "model": "Blender 4.5.9 · fitted 64-segment cylinder",
+      "transform": {
+        "position": [
+          0.22643729085020414,
+          0.1639944766367205,
+          1.2030706620071747
+        ],
+        "rotation_deg": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "frame_ids": [
+        "frame_0001",
+        "frame_0003",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [
+        16,
+        22
+      ],
+      "metrics": {
+        "comparison": "blender/post-comparisons.json",
+        "candidate": "ground-axis-cylinder-64",
+        "faces": 256,
+        "parameter_source": "blender/post-parameters.json"
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 258,
+        "stride": 9,
+        "index_byte_offset": 9288,
+        "index_count": 768,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.20723767578601837,
+            -0.2490420937538147,
+            -0.25937074422836304
+          ],
+          "max": [
+            0.20723767578601837,
+            0.2490420937538147,
+            0.25937074422836304
+          ]
+        },
+        "asset": {
+          "path": "model-assets/blender-right_post.bin.gz",
+          "bytes": 12360,
+          "packed_bytes": 3532,
+          "sha256": "6cbba092960ac0bad907686f95838ff36ef3446e43248425b1010e1510535b3c"
+        }
+      },
+      "description": "冻结 Pi3X 观测点与多视图数值拟合；圆柱先验，无底板。统一深色用于展示，不是恢复的物理材质。",
+      "metrics_report": "metrics.html#blender",
+      "parameters": {
+        "center_floor_native": [
+          -0.27094044393909306,
+          0.7093858043707262,
+          0.34868281535809637
+        ],
+        "radius_native": 0.04355018271256018,
+        "height_native": 0.7085413981788293
+      }
+    },
+    {
+      "id": "right_fence",
+      "label": "right front safety fence panel",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          -0.9022048398973211,
+          0.3566691531589754,
+          0.6610176326533952
+        ],
+        "rotation_deg": [
+          -165.93564175113315,
+          -50.63553708989654,
+          -140.87720178422887
+        ],
+        "scale": [
+          1.8016228778650747,
+          1.6683070507731215,
+          1.7985579779571135
+        ]
+      },
+      "frame_ids": [
+        "frame_0001",
+        "frame_0003"
+      ],
+      "source_inventory_indices": [
+        13,
+        19
+      ],
+      "metrics": {
+        "comparison": "right_fence-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0001",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9429893658920835,
+              "boundary_error_image_height": 0.005913949571549892,
+              "relative_depth_p50": 0.005995051935315132,
+              "relative_depth_p95": 0.01733818724751472,
+              "target_pixels": 9699,
+              "visible_predicted_pixels": 10034,
+              "depth_comparison_pixels": 9577,
+              "loss": 0.07483358518633143
+            },
+            "generated_initial": {
+              "visible_iou": 0.8496462264150944,
+              "boundary_error_image_height": 0.027284270152449608,
+              "relative_depth_p50": 0.018861633725464344,
+              "relative_depth_p95": 0.07432874105870724,
+              "target_pixels": 9699,
+              "visible_predicted_pixels": 9123,
+              "depth_comparison_pixels": 8646,
+              "loss": 0.2237839476152692
+            },
+            "generated_refined": {
+              "visible_iou": 0.822347585114806,
+              "boundary_error_image_height": 0.0262875035405159,
+              "relative_depth_p50": 0.019316505640745163,
+              "relative_depth_p95": 0.08403488248586653,
+              "target_pixels": 9699,
+              "visible_predicted_pixels": 8714,
+              "depth_comparison_pixels": 8309,
+              "loss": 0.24954392760697097
+            }
+          },
+          {
+            "frame_id": "frame_0003",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8174663620208175,
+              "boundary_error_image_height": 0.010442731902003288,
+              "relative_depth_p50": 0.0016598977381363511,
+              "relative_depth_p95": 0.005981503752991535,
+              "target_pixels": 6538,
+              "visible_predicted_pixels": 7780,
+              "depth_comparison_pixels": 6440,
+              "loss": 0.20507899952132547
+            },
+            "generated_initial": {
+              "visible_iou": 0.7612748803224993,
+              "boundary_error_image_height": 0.01634054072201252,
+              "relative_depth_p50": 0.020572658628225327,
+              "relative_depth_p95": 0.09238908588886259,
+              "target_pixels": 6538,
+              "visible_predicted_pixels": 7443,
+              "depth_comparison_pixels": 6043,
+              "loss": 0.291978859749751
+            },
+            "generated_refined": {
+              "visible_iou": 0.9290530636177075,
+              "boundary_error_image_height": 0.005086761433631182,
+              "relative_depth_p50": 0.023967258632183075,
+              "relative_depth_p95": 0.11351978294551372,
+              "target_pixels": 6538,
+              "visible_predicted_pixels": 6622,
+              "depth_comparison_pixels": 6332,
+              "loss": 0.10508771788173799
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 349602
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 174690,
+        "stride": 9,
+        "index_byte_offset": 6288840,
+        "index_count": 1048806,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.060947246849536896,
+            -0.49471190571784973,
+            -0.5007253885269165
+          ],
+          "max": [
+            0.06073783338069916,
+            0.491456538438797,
+            0.4979681968688965
+          ]
+        },
+        "asset": {
+          "path": "model/objects/right_fence.bin.gz",
+          "bytes": 10484064,
+          "packed_bytes": 5419508,
+          "sha256": "f7f83e2dc84e2ea68fe72570fc42d2499162fa0bf587eee8cf7ca72c98502497"
+        }
+      }
+    },
+    {
+      "id": "robot",
+      "label": "BOR1 00090 RB01 industrial robot",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          -2.1263044465454186,
+          2.050629748118587,
+          -0.37356304939064633
+        ],
+        "rotation_deg": [
+          135.53715510435336,
+          -15.17792583834896,
+          -43.552096704010616
+        ],
+        "scale": [
+          1.154586376679325,
+          1.6716359182747256,
+          1.3016324813146203
+        ]
+      },
+      "frame_ids": [
+        "frame_0003",
+        "frame_0001",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "robot-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0003",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.815968841285297,
+              "boundary_error_image_height": 0.0026314929127693176,
+              "relative_depth_p50": 0.003220811951905489,
+              "relative_depth_p95": 0.017348255217075313,
+              "target_pixels": 893,
+              "visible_predicted_pixels": 972,
+              "depth_comparison_pixels": 837,
+              "loss": 0.19251495649214712
+            },
+            "generated_initial": {
+              "visible_iou": 0.583778014941302,
+              "boundary_error_image_height": 0.005221070256084204,
+              "relative_depth_p50": 0.01064874418079853,
+              "relative_depth_p95": 0.055590474233031144,
+              "target_pixels": 893,
+              "visible_predicted_pixels": 591,
+              "depth_comparison_pixels": 547,
+              "loss": 0.43731286975166495
+            },
+            "generated_refined": {
+              "visible_iou": 0.7753846153846153,
+              "boundary_error_image_height": 0.0027625923976302147,
+              "relative_depth_p50": 0.0068028089590370655,
+              "relative_depth_p95": 0.059924254193902016,
+              "target_pixels": 893,
+              "visible_predicted_pixels": 838,
+              "depth_comparison_pixels": 756,
+              "loss": 0.23694337836968216
+            }
+          },
+          {
+            "frame_id": "frame_0001",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8369747899159664,
+              "boundary_error_image_height": 0.0019316705875098705,
+              "relative_depth_p50": 0.0012607024982571602,
+              "relative_depth_p95": 0.014090237766504287,
+              "target_pixels": 1089,
+              "visible_predicted_pixels": 1097,
+              "depth_comparison_pixels": 995,
+              "loss": 0.1681492537573105
+            },
+            "generated_initial": {
+              "visible_iou": 0.5521739130434783,
+              "boundary_error_image_height": 0.005956448148936033,
+              "relative_depth_p50": 0.007229567505419254,
+              "relative_depth_p95": 0.05847621783614152,
+              "target_pixels": 1089,
+              "visible_predicted_pixels": 696,
+              "depth_comparison_pixels": 635,
+              "loss": 0.46696855075981303
+            },
+            "generated_refined": {
+              "visible_iou": 0.6972928630024611,
+              "boundary_error_image_height": 0.0036921959836035967,
+              "relative_depth_p50": 0.007243993692100048,
+              "relative_depth_p95": 0.05928672756999731,
+              "target_pixels": 1089,
+              "visible_predicted_pixels": 980,
+              "depth_comparison_pixels": 846,
+              "loss": 0.31733552265684617
+            }
+          },
+          {
+            "frame_id": "frame_0002",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.813915857605178,
+              "boundary_error_image_height": 0.0027223334182053804,
+              "relative_depth_p50": 0.007342359516769648,
+              "relative_depth_p95": 0.030531488824635744,
+              "target_pixels": 1070,
+              "visible_predicted_pixels": 1172,
+              "depth_comparison_pixels": 1006,
+              "loss": 0.19887116874800237
+            },
+            "generated_initial": {
+              "visible_iou": 0.6030465949820788,
+              "boundary_error_image_height": 0.005586368963122368,
+              "relative_depth_p50": 0.013860256411135197,
+              "relative_depth_p95": 0.05888010933995247,
+              "target_pixels": 1070,
+              "visible_predicted_pixels": 719,
+              "depth_comparison_pixels": 673,
+              "loss": 0.42198639935530113
+            },
+            "generated_refined": {
+              "visible_iou": 0.716821639898563,
+              "boundary_error_image_height": 0.0036693227011710405,
+              "relative_depth_p50": 0.0101624121889472,
+              "relative_depth_p95": 0.051468358933925616,
+              "target_pixels": 1070,
+              "visible_predicted_pixels": 961,
+              "depth_comparison_pixels": 848,
+              "loss": 0.3006794176927263
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 283612
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 141776,
+        "stride": 9,
+        "index_byte_offset": 5103936,
+        "index_count": 850836,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.2529774308204651,
+            -0.23291164636611938,
+            -0.5002148151397705
+          ],
+          "max": [
+            0.25327301025390625,
+            0.22630073130130768,
+            0.49980130791664124
+          ]
+        },
+        "asset": {
+          "path": "model/objects/robot.bin.gz",
+          "bytes": 8507280,
+          "packed_bytes": 4742723,
+          "sha256": "0b8c554ba008160926884257ac642d0475096bedcffc190615376574a1c699b4"
+        }
+      }
+    },
+    {
+      "id": "left_fence",
+      "label": "left gate safety fence assembly",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          -0.2119374764100955,
+          1.1848956626955596,
+          -0.5266908232055402
+        ],
+        "rotation_deg": [
+          127.32517773980784,
+          -9.628325960761416,
+          -40.955278358106064
+        ],
+        "scale": [
+          1.7655007758065873,
+          1.9058295421504752,
+          1.9028387132941398
+        ]
+      },
+      "frame_ids": [
+        "frame_0002",
+        "frame_0003"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "left_fence-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0002",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9622285174693107,
+              "boundary_error_image_height": 0.002626559929922223,
+              "relative_depth_p50": 0.0029177659889683127,
+              "relative_depth_p95": 0.06922588087618349,
+              "target_pixels": 8447,
+              "visible_predicted_pixels": 8177,
+              "depth_comparison_pixels": 8148,
+              "loss": 0.04594236837950205
+            },
+            "generated_initial": {
+              "visible_iou": 0.6506246605105921,
+              "boundary_error_image_height": 0.0195227712392807,
+              "relative_depth_p50": 0.033118389546871185,
+              "relative_depth_p95": 0.11143457144498825,
+              "target_pixels": 8447,
+              "visible_predicted_pixels": 6747,
+              "depth_comparison_pixels": 5971,
+              "loss": 0.4215392715148405
+            },
+            "generated_refined": {
+              "visible_iou": 0.7784110736303361,
+              "boundary_error_image_height": 0.017350072041153908,
+              "relative_depth_p50": 0.026770262978971004,
+              "relative_depth_p95": 0.0922681964933872,
+              "target_pixels": 8447,
+              "visible_predicted_pixels": 6842,
+              "depth_comparison_pixels": 6668,
+              "loss": 0.2830593334309427
+            }
+          },
+          {
+            "frame_id": "frame_0003",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.85420663195396,
+              "boundary_error_image_height": 0.005573487374931574,
+              "relative_depth_p50": 0.0037283693673089147,
+              "relative_depth_p95": 0.0296663329936564,
+              "target_pixels": 3153,
+              "visible_predicted_pixels": 3613,
+              "depth_comparison_pixels": 3058,
+              "loss": 0.1606687121632121
+            },
+            "generated_initial": {
+              "visible_iou": 0.5445584389458862,
+              "boundary_error_image_height": 0.017339084297418594,
+              "relative_depth_p50": 0.07425690442323685,
+              "relative_depth_p95": 0.23466046378016472,
+              "target_pixels": 3153,
+              "visible_predicted_pixels": 4525,
+              "depth_comparison_pixels": 2650,
+              "loss": 0.5643766340721879
+            },
+            "generated_refined": {
+              "visible_iou": 0.8978124063530117,
+              "boundary_error_image_height": 0.0026574349030852318,
+              "relative_depth_p50": 0.030299752950668335,
+              "relative_depth_p95": 0.09349351227283478,
+              "target_pixels": 3153,
+              "visible_predicted_pixels": 3180,
+              "depth_comparison_pixels": 2933,
+              "loss": 0.13780221640382706
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 291218
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 145474,
+        "stride": 9,
+        "index_byte_offset": 5237064,
+        "index_count": 873654,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.4891800582408905,
+            -0.054144833236932755,
+            -0.5005651116371155
+          ],
+          "max": [
+            0.4852444529533386,
+            0.05054629221558571,
+            0.5005469918251038
+          ]
+        },
+        "asset": {
+          "path": "model/objects/left_fence.bin.gz",
+          "bytes": 8731680,
+          "packed_bytes": 4677496,
+          "sha256": "88150537116fd600c0b08f7c0ad299c59a8b2f83a8982bd3648a3ec879fb5753"
+        }
+      }
+    },
+    {
+      "id": "cart",
+      "label": "loaded material cart marked 0001 B",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          -0.7541128050975063,
+          1.666717994332375,
+          0.4067760998177223
+        ],
+        "rotation_deg": [
+          -161.08291808351055,
+          -49.53485392533541,
+          -144.530373025266
+        ],
+        "scale": [
+          1.3520823604317347,
+          1.3244954938902436,
+          1.2540092280869806
+        ]
+      },
+      "frame_ids": [
+        "frame_0003",
+        "frame_0001",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "cart-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0003",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8467289719626169,
+              "boundary_error_image_height": 0.004568516276776791,
+              "relative_depth_p50": 0.002275696489959955,
+              "relative_depth_p95": 0.04919880572706461,
+              "target_pixels": 2374,
+              "visible_predicted_pixels": 2566,
+              "depth_comparison_pixels": 2254,
+              "loss": 0.16468375708089666
+            },
+            "generated_initial": {
+              "visible_iou": 0.7401606425702811,
+              "boundary_error_image_height": 0.0053834570571780205,
+              "relative_depth_p50": 0.03155030682682991,
+              "relative_depth_p95": 0.23101693913340562,
+              "target_pixels": 2374,
+              "visible_predicted_pixels": 1959,
+              "depth_comparison_pixels": 1832,
+              "loss": 0.3021565783709048
+            },
+            "generated_refined": {
+              "visible_iou": 0.8545310015898251,
+              "boundary_error_image_height": 0.0029962335247546434,
+              "relative_depth_p50": 0.01619204320013523,
+              "relative_depth_p95": 0.21892071515321704,
+              "target_pixels": 2374,
+              "visible_predicted_pixels": 2292,
+              "depth_comparison_pixels": 2139,
+              "loss": 0.16765350865981943
+            }
+          },
+          {
+            "frame_id": "frame_0001",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.7818756585879874,
+              "boundary_error_image_height": 0.006361490115523338,
+              "relative_depth_p50": 0.002265998045913875,
+              "relative_depth_p95": 0.0895112685859203,
+              "target_pixels": 2309,
+              "visible_predicted_pixels": 2764,
+              "depth_comparison_pixels": 2204,
+              "loss": 0.2331133196889732
+            },
+            "generated_initial": {
+              "visible_iou": 0.7118380062305296,
+              "boundary_error_image_height": 0.0050419894978404045,
+              "relative_depth_p50": 0.03286396712064743,
+              "relative_depth_p95": 0.2182617075741291,
+              "target_pixels": 2309,
+              "visible_predicted_pixels": 2087,
+              "depth_comparison_pixels": 1806,
+              "loss": 0.3311099398857986
+            },
+            "generated_refined": {
+              "visible_iou": 0.8242612752721618,
+              "boundary_error_image_height": 0.004442563280463219,
+              "relative_depth_p50": 0.017454967834055424,
+              "relative_depth_p95": 0.22118455916643143,
+              "target_pixels": 2309,
+              "visible_predicted_pixels": 2383,
+              "depth_comparison_pixels": 2096,
+              "loss": 0.2020788191228201
+            }
+          },
+          {
+            "frame_id": "frame_0002",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.84532252617359,
+              "boundary_error_image_height": 0.003570044180378318,
+              "relative_depth_p50": 0.004288075491786003,
+              "relative_depth_p95": 0.0479860614985227,
+              "target_pixels": 2613,
+              "visible_predicted_pixels": 2851,
+              "depth_comparison_pixels": 2487,
+              "loss": 0.1661056376789526
+            },
+            "generated_initial": {
+              "visible_iou": 0.7516387472687546,
+              "boundary_error_image_height": 0.006446821615099907,
+              "relative_depth_p50": 0.033341988921165466,
+              "relative_depth_p95": 0.20023380964994428,
+              "target_pixels": 2613,
+              "visible_predicted_pixels": 2197,
+              "depth_comparison_pixels": 2047,
+              "loss": 0.2945968848826107
+            },
+            "generated_refined": {
+              "visible_iou": 0.8745055735346997,
+              "boundary_error_image_height": 0.004095796495676041,
+              "relative_depth_p50": 0.018262771889567375,
+              "relative_depth_p95": 0.2089776366949079,
+              "target_pixels": 2613,
+              "visible_predicted_pixels": 2600,
+              "depth_comparison_pixels": 2415,
+              "loss": 0.15194879134621975
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 767074
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 383330,
+        "stride": 9,
+        "index_byte_offset": 13799880,
+        "index_count": 2301222,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.3415108323097229,
+            -0.500236451625824,
+            -0.2417839765548706
+          ],
+          "max": [
+            0.34165871143341064,
+            0.5006798505783081,
+            0.24067316949367523
+          ]
+        },
+        "asset": {
+          "path": "model/objects/cart.bin.gz",
+          "bytes": 23004768,
+          "packed_bytes": 12621842,
+          "sha256": "84f0f12df8ce491014cfcb2ca67fabf7d4077e4926c9fcc3d510a576e2a7a432"
+        }
+      }
+    },
+    {
+      "id": "guard",
+      "label": "yellow-black folded safety guard behind cart",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          -0.7915991945134582,
+          1.5057423554678633,
+          0.3047073189565914
+        ],
+        "rotation_deg": [
+          -165.30755473375524,
+          -49.736497482172396,
+          -138.89340014777179
+        ],
+        "scale": [
+          1.4807083296970884,
+          1.5688212293165744,
+          1.417025859946341
+        ]
+      },
+      "frame_ids": [
+        "frame_0003",
+        "frame_0001",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "guard-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0003",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.7971149371800837,
+              "boundary_error_image_height": 0.002670062007382512,
+              "relative_depth_p50": 0.001591638196259737,
+              "relative_depth_p95": 0.02750669866800308,
+              "target_pixels": 1760,
+              "visible_predicted_pixels": 2102,
+              "depth_comparison_pixels": 1713,
+              "loss": 0.209816825030941
+            },
+            "generated_initial": {
+              "visible_iou": 0.7124939700916546,
+              "boundary_error_image_height": 0.004591491539031267,
+              "relative_depth_p50": 0.04082299768924713,
+              "relative_depth_p95": 0.10954122096300126,
+              "target_pixels": 1760,
+              "visible_predicted_pixels": 1790,
+              "depth_comparison_pixels": 1465,
+              "loss": 0.33751201067565506
+            },
+            "generated_refined": {
+              "visible_iou": 0.8554790894653256,
+              "boundary_error_image_height": 0.002159685827791691,
+              "relative_depth_p50": 0.04715588316321373,
+              "relative_depth_p95": 0.10892724990844727,
+              "target_pixels": 1760,
+              "visible_predicted_pixels": 1745,
+              "depth_comparison_pixels": 1611,
+              "loss": 0.19599616535347153
+            }
+          },
+          {
+            "frame_id": "frame_0001",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8727045075125208,
+              "boundary_error_image_height": 0.0026825813110917807,
+              "relative_depth_p50": 0.00441407598555088,
+              "relative_depth_p95": 0.041962898522615436,
+              "target_pixels": 2177,
+              "visible_predicted_pixels": 2310,
+              "depth_comparison_pixels": 2090,
+              "loss": 0.13707473109521362
+            },
+            "generated_initial": {
+              "visible_iou": 0.7218958088523306,
+              "boundary_error_image_height": 0.004546336829662323,
+              "relative_depth_p50": 0.03534980118274689,
+              "relative_depth_p95": 0.1541796669363975,
+              "target_pixels": 2177,
+              "visible_predicted_pixels": 2219,
+              "depth_comparison_pixels": 1842,
+              "loss": 0.3225466659897409
+            },
+            "generated_refined": {
+              "visible_iou": 0.841296928327645,
+              "boundary_error_image_height": 0.0023028412833809853,
+              "relative_depth_p50": 0.044608116149902344,
+              "relative_depth_p95": 0.1630963236093521,
+              "target_pixels": 2177,
+              "visible_predicted_pixels": 2139,
+              "depth_comparison_pixels": 1971,
+              "loss": 0.2079168703890193
+            }
+          },
+          {
+            "frame_id": "frame_0002",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8224921630094044,
+              "boundary_error_image_height": 0.0029967734590172768,
+              "relative_depth_p50": 0.01108380313962698,
+              "relative_depth_p95": 0.07006430476903912,
+              "target_pixels": 2173,
+              "visible_predicted_pixels": 2478,
+              "depth_comparison_pixels": 2099,
+              "loss": 0.1945851870482571
+            },
+            "generated_initial": {
+              "visible_iou": 0.7365677626303128,
+              "boundary_error_image_height": 0.004267482552677393,
+              "relative_depth_p50": 0.02963925525546074,
+              "relative_depth_p95": 0.08922405987977977,
+              "target_pixels": 2173,
+              "visible_predicted_pixels": 2158,
+              "depth_comparison_pixels": 1837,
+              "loss": 0.30160645773050276
+            },
+            "generated_refined": {
+              "visible_iou": 0.8403653762505437,
+              "boundary_error_image_height": 0.0026115737855434418,
+              "relative_depth_p50": 0.03976857289671898,
+              "relative_depth_p95": 0.09450088068842882,
+              "target_pixels": 2173,
+              "visible_predicted_pixels": 2058,
+              "depth_comparison_pixels": 1932,
+              "loss": 0.2046263442172621
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 204510
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 102260,
+        "stride": 9,
+        "index_byte_offset": 3681360,
+        "index_count": 613530,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.5007845163345337,
+            -0.339188814163208,
+            -0.10955267399549484
+          ],
+          "max": [
+            0.5002206563949585,
+            0.33855199813842773,
+            0.10864163190126419
+          ]
+        },
+        "asset": {
+          "path": "model/objects/guard.bin.gz",
+          "bytes": 6135480,
+          "packed_bytes": 3453272,
+          "sha256": "1f22a89a9a608cec2c7592bda887a66c187116019574e62c29df9baf33876daa"
+        }
+      }
+    },
+    {
+      "id": "left_light_curtain",
+      "label": "left yellow safety light curtain housing",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          0.5245103896182126,
+          0.49666070435489973,
+          -0.19460897232017887
+        ],
+        "rotation_deg": [
+          129.35847292287522,
+          -12.889786606820069,
+          -46.235204904008306
+        ],
+        "scale": [
+          0.8310320839278681,
+          0.9532163821642389,
+          1.0809419508219427
+        ]
+      },
+      "frame_ids": [
+        "frame_0003",
+        "frame_0001",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "left_light_curtain-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0003",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9039106145251397,
+              "boundary_error_image_height": 0.0008556440006941557,
+              "relative_depth_p50": 0.004982722923159599,
+              "relative_depth_p95": 0.010848032869398594,
+              "target_pixels": 869,
+              "visible_predicted_pixels": 835,
+              "depth_comparison_pixels": 809,
+              "loss": 0.10278339639940826
+            },
+            "generated_initial": {
+              "visible_iou": 0.4957587181903864,
+              "boundary_error_image_height": 0.010410322807729244,
+              "relative_depth_p50": 0.012857519090175629,
+              "relative_depth_p95": 0.027314846869558096,
+              "target_pixels": 869,
+              "visible_predicted_pixels": 718,
+              "depth_comparison_pixels": 526,
+              "loss": 0.5379194465152477
+            },
+            "generated_refined": {
+              "visible_iou": 0.8572996706915478,
+              "boundary_error_image_height": 0.0035201695282012224,
+              "relative_depth_p50": 0.009297878947108984,
+              "relative_depth_p95": 0.03685726970434189,
+              "target_pixels": 869,
+              "visible_predicted_pixels": 823,
+              "depth_comparison_pixels": 776,
+              "loss": 0.15903854731196365
+            }
+          },
+          {
+            "frame_id": "frame_0001",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8782006920415225,
+              "boundary_error_image_height": 0.0015521483728662133,
+              "relative_depth_p50": 0.0010796434944495559,
+              "relative_depth_p95": 0.009515153430402257,
+              "target_pixels": 1348,
+              "visible_predicted_pixels": 1366,
+              "depth_comparison_pixels": 1269,
+              "loss": 0.12598324819865947
+            },
+            "generated_initial": {
+              "visible_iou": 0.39408866995073893,
+              "boundary_error_image_height": 0.015410994179546833,
+              "relative_depth_p50": 0.01052519865334034,
+              "relative_depth_p95": 0.030916130449622853,
+              "target_pixels": 1348,
+              "visible_predicted_pixels": 1199,
+              "depth_comparison_pixels": 720,
+              "loss": 0.6472585170616951
+            },
+            "generated_refined": {
+              "visible_iou": 0.6901748040988547,
+              "boundary_error_image_height": 0.006692400202155113,
+              "relative_depth_p50": 0.010957693681120872,
+              "relative_depth_p95": 0.02788795121014118,
+              "target_pixels": 1348,
+              "visible_predicted_pixels": 1456,
+              "depth_comparison_pixels": 1145,
+              "loss": 0.3341676899865764
+            }
+          },
+          {
+            "frame_id": "frame_0002",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9125117591721543,
+              "boundary_error_image_height": 0.000982780009508133,
+              "relative_depth_p50": 0.0025470207910984755,
+              "relative_depth_p95": 0.009583975560963152,
+              "target_pixels": 1029,
+              "visible_predicted_pixels": 1004,
+              "depth_comparison_pixels": 970,
+              "loss": 0.09200082163796042
+            },
+            "generated_initial": {
+              "visible_iou": 0.5611650485436893,
+              "boundary_error_image_height": 0.008731027133762836,
+              "relative_depth_p50": 0.005329966777935624,
+              "relative_depth_p95": 0.03853002823889255,
+              "target_pixels": 1029,
+              "visible_predicted_pixels": 579,
+              "depth_comparison_pixels": 578,
+              "loss": 0.461626972501772
+            },
+            "generated_refined": {
+              "visible_iou": 0.6660212971926428,
+              "boundary_error_image_height": 0.005377848166972399,
+              "relative_depth_p50": 0.01672544050961733,
+              "relative_depth_p95": 0.032612853683531284,
+              "target_pixels": 1029,
+              "visible_predicted_pixels": 692,
+              "depth_comparison_pixels": 688,
+              "loss": 0.3614598396509193
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 44786
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 22398,
+        "stride": 9,
+        "index_byte_offset": 806328,
+        "index_count": 134358,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.04470356926321983,
+            -0.041117530316114426,
+            -0.5007830262184143
+          ],
+          "max": [
+            0.03680531308054924,
+            0.038541294634342194,
+            0.49478602409362793
+          ]
+        },
+        "asset": {
+          "path": "model/objects/left_light_curtain.bin.gz",
+          "bytes": 1343760,
+          "packed_bytes": 728892,
+          "sha256": "45fa5b28c28f88ff18a005139767b1fb1c522863991e2dff2af3f5d19cd3f5a0"
+        }
+      }
+    },
+    {
+      "id": "right_light_curtain",
+      "label": "right yellow safety light curtain housing",
+      "source": "generated",
+      "model": "TRI-ML/RecGen",
+      "transform": {
+        "position": [
+          -0.17046064046464876,
+          0.06298385840400333,
+          0.9322327796983846
+        ],
+        "rotation_deg": [
+          134.7082789988535,
+          -26.153885923551638,
+          -64.93097211416823
+        ],
+        "scale": [
+          1.2762660313029266,
+          0.8565154026792091,
+          1.2906824028916737
+        ]
+      },
+      "frame_ids": [
+        "frame_0003",
+        "frame_0001",
+        "frame_0002"
+      ],
+      "source_inventory_indices": [],
+      "metrics": {
+        "comparison": "right_light_curtain-comparison.json",
+        "views": [
+          {
+            "frame_id": "frame_0003",
+            "role": "anchor; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.9075471698113208,
+              "boundary_error_image_height": 0.0010811460670083761,
+              "relative_depth_p50": 0.000594685145188123,
+              "relative_depth_p95": 0.008986149309203025,
+              "target_pixels": 995,
+              "visible_predicted_pixels": 1027,
+              "depth_comparison_pixels": 962,
+              "loss": 0.0952098074678841
+            },
+            "generated_initial": {
+              "visible_iou": 0.416017316017316,
+              "boundary_error_image_height": 0.013807684183120728,
+              "relative_depth_p50": 0.014361626468598843,
+              "relative_depth_p95": 0.04083764422684908,
+              "target_pixels": 995,
+              "visible_predicted_pixels": 2276,
+              "depth_comparison_pixels": 960,
+              "loss": 0.6259596788175243
+            },
+            "generated_refined": {
+              "visible_iou": 0.621106166560712,
+              "boundary_error_image_height": 0.00653116125613451,
+              "relative_depth_p50": 0.0061873632948845625,
+              "relative_depth_p95": 0.036880750209093094,
+              "target_pixels": 995,
+              "visible_predicted_pixels": 1555,
+              "depth_comparison_pixels": 976,
+              "loss": 0.39814351924644154
+            }
+          },
+          {
+            "frame_id": "frame_0001",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8492706645056726,
+              "boundary_error_image_height": 0.002315664431080222,
+              "relative_depth_p50": 0.004488537320867181,
+              "relative_depth_p95": 0.0197187946178019,
+              "target_pixels": 1135,
+              "visible_predicted_pixels": 1147,
+              "depth_comparison_pixels": 1048,
+              "loss": 0.15984920167735506
+            },
+            "generated_initial": {
+              "visible_iou": 0.43409806567701303,
+              "boundary_error_image_height": 0.012778648175299168,
+              "relative_depth_p50": 0.01617497391998768,
+              "relative_depth_p95": 0.04358257427811622,
+              "target_pixels": 1135,
+              "visible_predicted_pixels": 2053,
+              "depth_comparison_pixels": 965,
+              "loss": 0.607634204593573
+            },
+            "generated_refined": {
+              "visible_iou": 0.7052498418722327,
+              "boundary_error_image_height": 0.005202733911573887,
+              "relative_depth_p50": 0.0077948966063559055,
+              "relative_depth_p95": 0.031584811955690385,
+              "target_pixels": 1135,
+              "visible_predicted_pixels": 1561,
+              "depth_comparison_pixels": 1115,
+              "loss": 0.31295052255727096
+            }
+          },
+          {
+            "frame_id": "frame_0002",
+            "role": "other supplied view; used for pose refinement",
+            "observed_surface": {
+              "visible_iou": 0.8037209302325582,
+              "boundary_error_image_height": 0.002658517099916935,
+              "relative_depth_p50": 0.0038344028871506453,
+              "relative_depth_p95": 0.00877898558974266,
+              "target_pixels": 937,
+              "visible_predicted_pixels": 1002,
+              "depth_comparison_pixels": 861,
+              "loss": 0.20543050685442632
+            },
+            "generated_initial": {
+              "visible_iou": 0.3422321097515758,
+              "boundary_error_image_height": 0.03177889809012413,
+              "relative_depth_p50": 0.010273289401084185,
+              "relative_depth_p95": 0.02363098943606019,
+              "target_pixels": 937,
+              "visible_predicted_pixels": 2683,
+              "depth_comparison_pixels": 880,
+              "loss": 0.7315989758297566
+            },
+            "generated_refined": {
+              "visible_iou": 0.4458724666337123,
+              "boundary_error_image_height": 0.029047153890132904,
+              "relative_depth_p50": 0.005182133289054036,
+              "relative_depth_p95": 0.01816188292577861,
+              "target_pixels": 937,
+              "visible_predicted_pixels": 1988,
+              "depth_comparison_pixels": 862,
+              "loss": 0.6174039744356075
+            }
+          }
+        ],
+        "watertight": false,
+        "faces": 74722
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 37364,
+        "stride": 9,
+        "index_byte_offset": 1345104,
+        "index_count": 224166,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.05021902546286583,
+            -0.0605623796582222,
+            -0.5005114078521729
+          ],
+          "max": [
+            0.05066494271159172,
+            0.07072696834802628,
+            0.500324010848999
+          ]
+        },
+        "asset": {
+          "path": "model/objects/right_light_curtain.bin.gz",
+          "bytes": 2241768,
+          "packed_bytes": 1161339,
+          "sha256": "92f8eda5ffa50cad026a371055fe5fe3c6f190f2f3247153e402d52cfbe46a8d"
+        }
+      }
+    },
+    {
+      "id": "observed_floor",
+      "label": "观测到的工位地面",
+      "source": "observed",
+      "model": "Pi3X",
+      "transform": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "frame_ids": [
+        "frame_0003"
+      ],
+      "metrics": {
+        "plane_residual_p95_native": 0.004893159959465265
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 17077,
+        "stride": 9,
+        "index_byte_offset": 614772,
+        "index_count": 98523,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -0.44948169589042664,
+            0.47607800364494324,
+            0.19241727888584137
+          ],
+          "max": [
+            0.9152171611785889,
+            1.770679235458374,
+            1.4533143043518066
+          ]
+        },
+        "asset": {
+          "path": "model/objects/observed_floor.bin.gz",
+          "bytes": 1008864,
+          "packed_bytes": 562352,
+          "sha256": "40a61a090352cc96e8ee605f2b84a6860c956ebc5d0f19d0319d7a76b8da8dfe"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "RecGen experiment, not a reproduction of the unreleased Lucida GizmoAct policy",
+    "Generated hidden surfaces and textures have no photographic ground truth",
+    "All supplied views contribute to geometry and placement; scores measure input consistency, not held-out accuracy",
+    "Static editable meshes; no robot joints, collision validation or physical calibration",
+    "Two fitted cylinders are explicit geometric priors with no footplates; their metrics are in blender/post-comparisons.json, not the RecGen table."
+  ],
+  "unavailable_objects": [],
+  "source_run_id": "lucida-replica-01",
+  "label": "参数化防撞柱试验",
+  "description": "实际 Blender 场景 02：只用拟合圆柱替换两根防撞柱，其余八个对象与原相机不变。此候选未替换原始生成场景；浏览器修改仅作用于本地编辑。",
+  "provenance": {
+    "source_scene": "scene.json",
+    "source_blend": "blender/workcell.blend",
+    "blender_scene": "02 · 参数化防撞柱试验",
+    "blender_version": "4.5.9 LTS",
+    "source_sha256": {
+      "scene.json": "8359b34ba11decf1051055360ced98ea9cb624dd35150b3cc39f86715c07c8d1",
+      "blender/workcell.blend": "6eeff537b6c73e7f963be897a9fde85ff07cc76772ef79a390cf018d3b69872b",
+      "blender/post-parameters.json": "42e28d37861f8da2bf4e6a1905217eb1b8f414fef8e18240397d35cab922b96d",
+      "blender/post-comparisons.json": "ae0043c922acdda8d28b1b8559b8195c60e5733f0b30765e0be537b68c93313d",
+      "blender/verification.json": "2b04738bdbf6365480c29f1d98d4a4c0344e84d229a8ddbf9e43bed2fabc64c0"
+    },
+    "native_to_blender": [
+      [
+        0.37264418601989746,
+        -0.7960413694381714,
+        0.4769219160079956,
+        2.0164702407843293e-08
+      ],
+      [
+        -0.7960413694381714,
+        -0.010083688423037529,
+        0.605158269405365,
+        4.8522021733887755e-08
+      ],
+      [
+        -0.4769219160079956,
+        -0.605158269405365,
+        -0.637439489364624,
+        1.3228030895378358
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "validation": [
+      {
+        "object_id": "left_post",
+        "triangles": 256,
+        "vertices": 258,
+        "packed_bytes": 3537,
+        "max_evaluated_coordinate_error_native": 1.4606732767763475e-08,
+        "max_corner_normal_error": 2.9508521848242708e-08
+      },
+      {
+        "object_id": "right_post",
+        "triangles": 256,
+        "vertices": 258,
+        "packed_bytes": 3532,
+        "max_evaluated_coordinate_error_native": 1.463388044076197e-08,
+        "max_corner_normal_error": 2.8964295517575067e-08
+      }
+    ],
+    "reused_original_objects": 8,
+    "new_inference_calls": 0,
+    "new_fitting_calls": 0
+  }
+}

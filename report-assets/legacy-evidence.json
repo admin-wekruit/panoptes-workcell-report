@@ -1,0 +1,1343 @@
+{
+  "source_run_id": "user-bor1-02",
+  "notice": "历史原报告保存值；没有使用新三图重建重新裁决。",
+  "assessment": {
+    "status": "FAIL",
+    "fact_ids": [
+      "fact-inside-or-intersects",
+      "fact-clearance-error-budget",
+      "fact-minimum-boundary-clearance",
+      "fact-object-height",
+      "fact-object-orientation",
+      "fact-object-tilt",
+      "fact-object-overhang"
+    ],
+    "evidence_frame_ids": [
+      "frame_0001",
+      "frame_0002",
+      "frame_0003",
+      "frame_0004"
+    ],
+    "approximate_distance_m": 0.0,
+    "distance_error_budget_m": 0.2,
+    "climb_review": {
+      "verdict": "yes",
+      "rationale": "REVIEW only: semantic climb hint verdict=yes. SceneMap facts: inside_or_intersects(entity-portable-work-platform-02, entity-safety-fence-08) = 1 boolean [fact-inside-or-intersects]; minimum_boundary_clearance(entity-portable-work-platform-02, entity-safety-fence-08) = 0 m [fact-minimum-boundary-clearance]; object_height(entity-portable-work-platform-02, entity-portable-work-platform-02) = 0.150133830101 m [fact-object-height]",
+      "fact_ids": [
+        "fact-inside-or-intersects",
+        "fact-minimum-boundary-clearance",
+        "fact-object-height"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "id": "p01-movable-equipment-clearance",
+      "statement": "Movable equipment must be kept at least 0.6 m clear of any machine guarding fence.",
+      "status": "FAIL",
+      "warnings": [
+        "entity-portable-work-platform-01 to entity-safety-fence-03 gap 0.62 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "entity-portable-work-platform-01 to entity-safety-fence-04 gap 0.65 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "entity-portable-work-platform-02 to entity-safety-fence-03 gap 0.53 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "entity-portable-work-platform-02 to entity-safety-fence-05 gap 0.36 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "entity-portable-work-platform-02 to entity-safety-fence-06 gap 0.69 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "entity-portable-work-platform-02 to entity-safety-fence-07 gap 0.80 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "entity-portable-work-platform-02 to entity-safety-fence-10 gap 0.40 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "entity-portable-work-platform-02 to entity-safety-fence-13 gap 0.41 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "entity-portable-work-platform-03 to entity-safety-fence-08 gap 0.92 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "entity-portable-work-platform-03 to entity-safety-fence-13 gap 0.49 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "entity-portable-work-platform-03 to entity-safety-fence-15 gap 0.77 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "refine-01 to entity-safety-fence-03 gap 0.67 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "refine-01 to entity-safety-fence-05 gap 0.38 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side",
+        "refine-01 to entity-safety-fence-10 gap 0.84 m is within ±0.35 m of the 0.6 m limit; cannot honestly pick a side"
+      ],
+      "violations": [
+        {
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-05",
+          "measured": 0.0,
+          "threshold": 0.6,
+          "unit": "m"
+        },
+        {
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-08",
+          "measured": 0.0,
+          "threshold": 0.6,
+          "unit": "m"
+        },
+        {
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-08",
+          "measured": 0.0,
+          "threshold": 0.6,
+          "unit": "m"
+        },
+        {
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-19",
+          "measured": 0.0,
+          "threshold": 0.6,
+          "unit": "m"
+        },
+        {
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-08",
+          "measured": 0.0,
+          "threshold": 0.6,
+          "unit": "m"
+        },
+        {
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-11",
+          "measured": 0.0936,
+          "threshold": 0.6,
+          "unit": "m"
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-01",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-01",
+          "value": 7.2295,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0002",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-02",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-02",
+          "value": 6.2298,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0002",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-03",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-03",
+          "value": 0.6177,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0002",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-04",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-04",
+          "value": 0.6477,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-05",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-05",
+          "value": 0.0,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-06",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-06",
+          "value": 2.0335,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0002",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-07",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-07",
+          "value": 2.1851,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0002",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-08",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-08",
+          "value": 0.0,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0002",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-09",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-09",
+          "value": 2.3792,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-10",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-10",
+          "value": 2.2151,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-11",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-11",
+          "value": 2.9681,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-12",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-12",
+          "value": 3.3347,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-13",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-13",
+          "value": 2.8127,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-14",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-14",
+          "value": 3.8981,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-15",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-15",
+          "value": 3.3791,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-16",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-17",
+          "value": 4.373,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-17",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-01",
+          "object_id": "entity-safety-fence-19",
+          "value": 4.3475,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-18",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-01",
+          "value": 7.8612,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0002",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-19",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-02",
+          "value": 6.8176,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0002",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-20",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-03",
+          "value": 0.5283,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0002",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-21",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-04",
+          "value": 1.2731,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-22",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-05",
+          "value": 0.3595,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-23",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-06",
+          "value": 0.6902,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0002",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-24",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-07",
+          "value": 0.7971,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0002",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-25",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-08",
+          "value": 0.0,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0002",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-26",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-09",
+          "value": 1.0016,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-27",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-10",
+          "value": 0.3965,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-28",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-11",
+          "value": 0.0936,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-29",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-12",
+          "value": 1.7829,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-30",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-13",
+          "value": 0.4084,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-31",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-14",
+          "value": 2.4711,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-32",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-15",
+          "value": 1.7254,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-33",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-17",
+          "value": 3.1304,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-34",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-02",
+          "object_id": "entity-safety-fence-19",
+          "value": 2.077,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-35",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-01",
+          "value": 11.0169,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0002",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-36",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-02",
+          "value": 10.0335,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0002",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-37",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-03",
+          "value": 4.0526,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0002",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-38",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-04",
+          "value": 3.9826,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-39",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-05",
+          "value": 3.6383,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-40",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-06",
+          "value": 3.8716,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0002",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-41",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-07",
+          "value": 3.87,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0002",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-42",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-08",
+          "value": 0.9239,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0002",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-43",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-09",
+          "value": 1.8345,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-44",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-10",
+          "value": 1.4105,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-45",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-11",
+          "value": 1.9572,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-46",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-12",
+          "value": 1.1735,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-47",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-13",
+          "value": 0.4912,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-48",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-14",
+          "value": 1.1785,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-49",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-15",
+          "value": 0.7671,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-50",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-17",
+          "value": 1.6328,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-51",
+          "predicate": "min_separation",
+          "subject_id": "entity-portable-work-platform-03",
+          "object_id": "entity-safety-fence-19",
+          "value": 0.0,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-52",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-01",
+          "value": 7.8641,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0002"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-53",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-02",
+          "value": 6.83,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0002"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-54",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-03",
+          "value": 0.6749,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0002"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-55",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-04",
+          "value": 1.5481,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-56",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-05",
+          "value": 0.3769,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-57",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-06",
+          "value": 1.5358,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0002"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-58",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-07",
+          "value": 1.6622,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0002"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-59",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-08",
+          "value": 0.0,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0002",
+            "frame_0003",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-60",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-09",
+          "value": 1.4577,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0004"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-61",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-10",
+          "value": 0.8425,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-62",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-11",
+          "value": 1.5216,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-63",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-12",
+          "value": 2.2312,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-64",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-13",
+          "value": 1.1682,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-65",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-14",
+          "value": 2.9204,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-66",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-15",
+          "value": 2.1976,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-67",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-17",
+          "value": 3.5675,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003"
+          ]
+        },
+        {
+          "fact_id": "fact-p01-movable-equipment-clearance-68",
+          "predicate": "min_separation",
+          "subject_id": "refine-01",
+          "object_id": "entity-safety-fence-19",
+          "value": 2.8207,
+          "unit": "m",
+          "evidence_frame_ids": [
+            "frame_0001",
+            "frame_0003"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p02-robot-guarding-separation",
+      "statement": "No person may stand within 1.2 m of an industrial robot arm while it is enclosed by guarding.",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "warnings": [
+        "policy not evaluable: The conditional clause 'while it is enclosed by guarding' requires evaluating enclosure status and spatial containment of the robot by a safety fence, which is not supported by the simple predicate vocabulary."
+      ],
+      "violations": [],
+      "facts": []
+    },
+    {
+      "id": "p03-clear-marked-walkways",
+      "statement": "Marked walkways must remain clear: no pallet may come within 0.5 m of a floor marking line.",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "warnings": [
+        "no entity matching subject labels ['pallet'] passed the evidence gates"
+      ],
+      "violations": [],
+      "facts": []
+    },
+    {
+      "id": "p04-fire-extinguisher-proximity",
+      "statement": "A fire extinguisher must be within 15 m of every control panel on the shop floor.",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "warnings": [
+        "no entity matching subject labels ['fire extinguisher'] passed the evidence gates"
+      ],
+      "violations": [],
+      "facts": []
+    },
+    {
+      "id": "p05-pallet-max-height",
+      "statement": "Stacked pallets must not exceed 2.5 m in height.",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "warnings": [
+        "no entity matching subject labels ['pallet'] passed the evidence gates"
+      ],
+      "violations": [],
+      "facts": []
+    },
+    {
+      "id": "p06-portable-ladder-tilt-limit",
+      "statement": "Portable ladders showing more than 10 degrees of lean must be taken out of service.",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "warnings": [
+        "no entity matching subject labels ['step ladder'] passed the evidence gates"
+      ],
+      "violations": [],
+      "facts": []
+    },
+    {
+      "id": "p07-storage-rack-walkway-encroachment",
+      "statement": "Storage racks must not encroach into a marked walkway at all.",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "warnings": [
+        "no entity matching subject labels ['storage rack'] passed the evidence gates"
+      ],
+      "violations": [],
+      "facts": []
+    },
+    {
+      "id": "p08-worker-hard-hat-requirement",
+      "statement": "Every worker on the production floor must wear a hard hat at all times.",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "warnings": [
+        "no entity matching subject labels ['worker'] passed the evidence gates"
+      ],
+      "violations": [],
+      "facts": []
+    },
+    {
+      "id": "p09-estop-repaint-schedule",
+      "statement": "Emergency stop buttons must be repainted red every two years.",
+      "status": "INSUFFICIENT_EVIDENCE",
+      "warnings": [
+        "policy not evaluable: The system cannot verify paint color (red) or track temporal maintenance schedules (every two years)."
+      ],
+      "violations": [],
+      "facts": []
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "fact-inside-or-intersects",
+      "predicate": "inside_or_intersects",
+      "subject_id": "entity-portable-work-platform-02",
+      "object_id": "entity-safety-fence-08",
+      "value": 1.0,
+      "unit": "boolean",
+      "evidence_frame_ids": [
+        "frame_0001",
+        "frame_0002",
+        "frame_0003",
+        "frame_0004"
+      ]
+    },
+    {
+      "fact_id": "fact-clearance-error-budget",
+      "predicate": "clearance_error_budget",
+      "subject_id": "entity-portable-work-platform-02",
+      "object_id": "entity-safety-fence-08",
+      "value": 0.2,
+      "unit": "m",
+      "evidence_frame_ids": [
+        "frame_0001",
+        "frame_0002",
+        "frame_0003",
+        "frame_0004"
+      ]
+    },
+    {
+      "fact_id": "fact-minimum-boundary-clearance",
+      "predicate": "minimum_boundary_clearance",
+      "subject_id": "entity-portable-work-platform-02",
+      "object_id": "entity-safety-fence-08",
+      "value": 0.0,
+      "unit": "m",
+      "evidence_frame_ids": [
+        "frame_0001",
+        "frame_0002",
+        "frame_0003",
+        "frame_0004"
+      ]
+    },
+    {
+      "fact_id": "fact-object-height",
+      "predicate": "object_height",
+      "subject_id": "entity-portable-work-platform-02",
+      "object_id": "entity-portable-work-platform-02",
+      "value": 0.15013383010076273,
+      "unit": "m",
+      "evidence_frame_ids": [
+        "frame_0003",
+        "frame_0004"
+      ]
+    },
+    {
+      "fact_id": "fact-object-orientation",
+      "predicate": "object_orientation",
+      "subject_id": "entity-portable-work-platform-02",
+      "object_id": "entity-portable-work-platform-02",
+      "value": 159.84741627464874,
+      "unit": "deg",
+      "evidence_frame_ids": [
+        "frame_0003",
+        "frame_0004"
+      ]
+    },
+    {
+      "fact_id": "fact-object-tilt",
+      "predicate": "object_tilt",
+      "subject_id": "entity-portable-work-platform-02",
+      "object_id": "entity-portable-work-platform-02",
+      "value": 89.0283185205063,
+      "unit": "deg",
+      "evidence_frame_ids": [
+        "frame_0003",
+        "frame_0004"
+      ]
+    },
+    {
+      "fact_id": "fact-object-overhang",
+      "predicate": "object_overhang",
+      "subject_id": "entity-portable-work-platform-02",
+      "object_id": "entity-portable-work-platform-02",
+      "value": 1.203804885314956,
+      "unit": "m",
+      "evidence_frame_ids": [
+        "frame_0003",
+        "frame_0004"
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity-industrial-robot-arm-01",
+      "label": "industrial robot arm",
+      "frame_ids": [
+        "frame_0002"
+      ]
+    },
+    {
+      "id": "entity-industrial-robot-arm-02",
+      "label": "industrial robot arm",
+      "frame_ids": [
+        "frame_0002"
+      ]
+    },
+    {
+      "id": "entity-industrial-robot-arm-03",
+      "label": "industrial robot arm",
+      "frame_ids": [
+        "frame_0001",
+        "frame_0002"
+      ]
+    },
+    {
+      "id": "entity-industrial-robot-arm-04",
+      "label": "industrial robot arm",
+      "frame_ids": [
+        "frame_0002"
+      ]
+    },
+    {
+      "id": "entity-portable-work-platform-01",
+      "label": "portable work platform",
+      "frame_ids": [
+        "frame_0004"
+      ]
+    },
+    {
+      "id": "entity-portable-work-platform-02",
+      "label": "portable work platform",
+      "frame_ids": [
+        "frame_0003",
+        "frame_0004"
+      ]
+    },
+    {
+      "id": "entity-portable-work-platform-03",
+      "label": "portable work platform",
+      "frame_ids": [
+        "frame_0003"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-01",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0002"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-02",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0002"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-03",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0002"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-04",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0001"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-05",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0001",
+        "frame_0004"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-06",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0002"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-07",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0001",
+        "frame_0002"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-08",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0001",
+        "frame_0002",
+        "frame_0003",
+        "frame_0004"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-09",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0004"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-10",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0003"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-11",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0003"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-12",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0001"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-13",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0001"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-14",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0001"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-15",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0001"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-16",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0001"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-17",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0003"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-18",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0003"
+      ]
+    },
+    {
+      "id": "entity-safety-fence-19",
+      "label": "safety fence",
+      "frame_ids": [
+        "frame_0003"
+      ]
+    },
+    {
+      "id": "entity-safety-light-01",
+      "label": "safety light",
+      "frame_ids": [
+        "frame_0002",
+        "frame_0004"
+      ]
+    },
+    {
+      "id": "entity-safety-light-02",
+      "label": "safety light",
+      "frame_ids": [
+        "frame_0002"
+      ]
+    },
+    {
+      "id": "entity-safety-light-03",
+      "label": "safety light",
+      "frame_ids": [
+        "frame_0003",
+        "frame_0004"
+      ]
+    },
+    {
+      "id": "refine-01",
+      "label": "material cart",
+      "frame_ids": [
+        "frame_0001"
+      ]
+    },
+    {
+      "id": "refine-02",
+      "label": "cart",
+      "frame_ids": [
+        "frame_0001"
+      ]
+    },
+    {
+      "id": "refine-03",
+      "label": "cart",
+      "frame_ids": [
+        "frame_0001"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "assessment.json": "db465a733ca502744a8ac71ac8aff713cdeed85a35d1ee4bd9149008608b9cdc",
+    "policies.json": "a69dd9621abdd385b4c9fb452e91a0f7dc654c6ef3f75363407586c27c3c3b58",
+    "scene.json": "61c1bc3208369c2c563d40b2ebb25e679d4dd53909425ea4e1a515ca32a22c06"
+  }
+}

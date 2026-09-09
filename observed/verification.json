@@ -1,0 +1,32 @@
+[
+  {
+    "engine": "chromium",
+    "mobile_emulation": false,
+    "triangles": 359983,
+    "canvas_size": [
+      1440,
+      899
+    ],
+    "camera_photo_comparison": true,
+    "wireframe": true,
+    "orbit": true,
+    "zoom": true,
+    "page_errors": [],
+    "failed_assets": []
+  },
+  {
+    "engine": "webkit",
+    "mobile_emulation": true,
+    "triangles": 359983,
+    "canvas_size": [
+      390,
+      659
+    ],
+    "camera_photo_comparison": true,
+    "wireframe": true,
+    "orbit": true,
+    "zoom": "not exercised: mobile WebKit wheel unsupported",
+    "page_errors": [],
+    "failed_assets": []
+  }
+]
