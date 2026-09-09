@@ -14,7 +14,7 @@ async function check(engine){
  try{
   const context=await browser.newContext(engine==='webkit'?{viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:2}:{viewport:{width:1440,height:1000}});
   const page=await context.newPage(),errors=[];
-  page.on('pageerror',error=>errors.push(error.message));await page.emulateMedia({reducedMotion:'reduce'});
+  page.on('pageerror',error=>errors.push({url:page.url(),error:error.stack}));await page.emulateMedia({reducedMotion:'reduce'});
   await page.goto(base+'reports.html');await hasText(page,'#history-status','2 份已发布报告');
   assert.equal(await page.locator('[data-report-id]').count(),2,'both real report artifacts are listed');
   await page.waitForFunction(()=>[...document.querySelectorAll('.history-preview img')].every(img=>img.complete&&img.naturalWidth>0));
@@ -31,7 +31,7 @@ async function check(engine){
   await lang(page,'zh');await hasText(page,'h1','同一批照片');await lang(page,'en');assert.deepEqual(await page.locator('tbody td').allTextContents(),componentNumbers);await noOverflow(page);
   await page.goto(base+'reports.html');await hasText(page,'#history-status','2 published reports');
   const workspace='https://wekruit-livekit-agents--panoptes-report-workspace-web.modal.run/reports';
-  await page.locator(`a.primary-link[href="${workspace}"]`).click();await page.waitForURL(workspace);await page.waitForSelector('#library h1');await noOverflow(page);
+  await page.locator(`a.primary-link[href="${workspace}"]`).click();await page.waitForURL(workspace);await page.waitForSelector('a.report-card');await page.evaluate(()=>panoptesSession.ready);await noOverflow(page);
   await page.goto(base+'reports.html');await hasText(page,'#history-status','2 published reports');
   await page.locator('[data-report-id="bor1-workcell"] [data-open-report]').click();await page.waitForFunction(()=>window.panoptesReport);await hasText(page,'h1','See site evidence');
   await page.locator('a[href="reports.html"]').click();await hasText(page,'#history-status','2 published reports');
