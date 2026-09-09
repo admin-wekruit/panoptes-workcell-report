@@ -21,7 +21,7 @@ async function check(engine){
   await lang(page,'en');await hasText(page,'#history-status','2 published reports');await hasText(page,'.history-body h2','BOR1 · Unified workcell report');
   assert.equal(await page.locator('.history-runs code').first().textContent(),'user-bor1-02');
   await page.locator('[data-report-id="product-evidence-01"] [data-open-report]').click();
-  await page.waitForFunction(()=>document.querySelector('canvas')?.dataset.loadedObjects==='3',null,{timeout:60000});await hasText(page,'#scene-title','Small-object reconstruction');
+  await page.waitForFunction(()=>window.lucidaViewer&&document.querySelector('canvas')?.dataset.loadedObjects===String(lucidaViewer.scene.objects.length),null,{timeout:60000});await hasText(page,'#scene-title','Small-object reconstruction');
   assert(!await page.locator('#blender-report').isVisible());assert.match(await page.locator('#scene-report').getAttribute('href'),/components\/metrics\.html$/);
   await page.locator('#scene-report').click();await hasText(page,'h1','Same photos, same objects, same metrics');
   assert.equal(await page.locator('section').count(),2);const componentNumbers=await page.locator('tbody td').allTextContents();

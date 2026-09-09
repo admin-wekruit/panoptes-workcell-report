@@ -1,5 +1,18 @@
 // Hand-authored interface and report commentary. Original findings, evidence and user text remain verbatim.
 window.panoptesTranslations=Object.fromEntries(String.raw`
+原图叠加	Photo overlay
+自由 3D	Free 3D
+显示模式	Display mode
+模型不透明度	Model opacity
+完整工位原照片	Original full workcell photo
+原图叠加：点击物体查看坐标轴；自由旋转请切换自由 3D。	Photo overlay: select an object to see its axes. Switch to Free 3D to orbit.
+原照片加载失败，请重新加载。	The original photo failed to load. Please reload.
+原照片相机字段不完整	The original-photo camera fields are incomplete
+此对象没有来源机位。	This object has no source viewpoint.
+观测背景必须只读且不可选	Observed context must be read-only and non-selectable
+对象的来源机位不匹配	The object source viewpoint does not match
+对象的观测背景不匹配	The object's observed context does not match
+观测背景不可编辑	Observed context cannot be edited
 场景中没有此对象：{id}	Object not found in this scene: {id}
 Agent 对话	Agent conversation
 对话记录仅在授权工作区查看。	Conversation history is available only in the authorized workspace.

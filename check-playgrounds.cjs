@@ -50,12 +50,14 @@ async function check(engine){
           }
         }else if(id==='components'){
           await frame.waitForFunction(()=>document.getElementById('selection-overlay').dataset.objectId==='object_ddfd00218e68ffd9e3e7f515');
-          assert.equal(await frame.locator('#camera-label').textContent(),'对象聚焦');await frame.selectOption('#camera','overview');
+          assert.equal(await frame.locator('#view-mode').inputValue(),'photo');assert(await frame.locator('#photo-overlay').isVisible());
           assert.equal(await frame.locator('#scene-title').textContent(),components.label);
           assert.equal(await frame.locator('#scene-description').textContent(),components.description);
           assert.equal(await frame.locator('#object-list .badge.generated').count(),2);
-          assert.equal(await frame.locator('#object-list .badge.observed').count(),1);
-          for(let i=0;i<objects;i++){await frame.locator('#object-list .object-row button').nth(i).click();assert.equal(await frame.locator('#selection-overlay').getAttribute('data-object-id'),components.objects[i].id);assert.equal(await frame.locator('[data-bbox-edge]').count(),12);assert.equal(await frame.locator('[data-axis]').count(),3);}
+          assert.equal(await frame.locator('#object-list .badge.observed').count(),0);
+          const selectable=components.objects.filter(o=>o.selectable!==false);
+          assert.equal(await frame.locator('#object-list .object-row button').count(),selectable.length);
+          for(let i=0;i<selectable.length;i++){await frame.locator('#object-list .object-row button').nth(i).click();assert.equal(await frame.locator('#selection-overlay').getAttribute('data-object-id'),selectable[i].id);assert.equal(await frame.locator('[data-bbox-edge]').count(),12);assert.equal(await frame.locator('[data-axis]').count(),3);}
         }else{assert.equal(await frame.locator('#scene-title').textContent(),'工位 · 对象场景编辑');assert.equal(await frame.locator('#glb').isVisible(),true);}
         await frame.locator('#object-list .object-row button').nth(id==='components'?0:3).click();
         assert.match(await frame.locator('#metrics').textContent(),/generated_refined/,'generated objects preserve their measured comparison record');

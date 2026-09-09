@@ -1,0 +1,27 @@
+{
+  "new_model_calls": 0,
+  "pose_optimization_calls": 0,
+  "source_run": "user-bor1-02",
+  "frozen_metrics_sha256": {
+    "object_ddfd00218e68ffd9e3e7f515-comparison.json": "4c9a6cbc62358f81a136fce8f43e2548ae212f772e11b4fd6e092a80d11303c2",
+    "object_ddfd00218e68ffd9e3e7f515-alignment.png": "5b44eddc8988464bd1c79253cbc45c23405f7d31711c0012c2e67b5122207301",
+    "comparisons.json": "de24e93100d0827b76e052658e94df917751298d64be4a5ece7fc72fbf2154ac",
+    "object_6dd85942d104987a83c677d6-comparison.json": "a8c3b95c1ca03d9171b36ea13d38b1824867f35a5f7ee1c16e40adc096e11bd8",
+    "object_6dd85942d104987a83c677d6-alignment.png": "60e82872b610aa23b558f689bd4b93b109f325df0fc7cee4e04ab250912d58ed",
+    "metrics.html": "788767509221eb5015426754ba960aaa7672b78f7454a72920ee70baab871cdb"
+  },
+  "contexts": [
+    {
+      "id": "observed_context_frame_0001",
+      "frame_id": "frame_0001",
+      "triangles": 275825,
+      "source_image_sha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac"
+    }
+  ],
+  "full_source_cameras": [
+    "frame_0001",
+    "frame_0002",
+    "frame_0003",
+    "frame_0004"
+  ]
+}

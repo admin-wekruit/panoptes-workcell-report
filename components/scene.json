@@ -9,14 +9,14 @@
   ],
   "bounds": {
     "min": [
-      -1.5003267526626587,
-      0.056693033492187336,
-      2.475024700164795
+      -3.376995325088501,
+      -4.649719715118408,
+      2.190931558609009
     ],
     "max": [
-      2.4349923133850098,
+      2.482510805130005,
       1.5999376773834229,
-      7.586737632751465
+      18.33620262145996
     ]
   },
   "glb": "scene.glb",
@@ -70,7 +70,47 @@
           1.0
         ]
       ],
-      "image": "images/frame_0001.png"
+      "image": "images/frame_0001.png",
+      "original_image": "images/frame_0001-original.jpg",
+      "original_width": 3024,
+      "original_height": 4032,
+      "original_K": [
+        [
+          3646.365208217076,
+          0.0,
+          1501.7726266043528
+        ],
+        [
+          0.0,
+          3710.689453125,
+          2017.1844119510135
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_sha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac",
+      "original_source_sha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac",
+      "input_to_canonical_pixel_centres": [
+        [
+          0.12962962962962962,
+          0.0,
+          62.56481481481482
+        ],
+        [
+          0.0,
+          0.1284722222222222,
+          -0.4357638888888889
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_encoding": "unchanged source bytes"
     },
     {
       "id": "frame_0002",
@@ -120,7 +160,47 @@
           1.0
         ]
       ],
-      "image": "images/frame_0002.png"
+      "image": "images/frame_0002.png",
+      "original_image": "images/frame_0002-original.jpg",
+      "original_width": 3024,
+      "original_height": 4032,
+      "original_K": [
+        [
+          3690.609348842076,
+          0.0,
+          1502.8614501953125
+        ],
+        [
+          0.0,
+          3729.4640783361488,
+          2013.5830342060813
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_sha256": "6cd81ae4ae783c37d0a1129e39acb0d7064c46d9b51524130406642f8c7a3bea",
+      "original_source_sha256": "6cd81ae4ae783c37d0a1129e39acb0d7064c46d9b51524130406642f8c7a3bea",
+      "input_to_canonical_pixel_centres": [
+        [
+          0.12962962962962962,
+          0.0,
+          62.56481481481482
+        ],
+        [
+          0.0,
+          0.1284722222222222,
+          -0.4357638888888889
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_encoding": "unchanged source bytes"
     },
     {
       "id": "frame_0003",
@@ -170,7 +250,47 @@
           1.0
         ]
       ],
-      "image": "images/frame_0003.png"
+      "image": "images/frame_0003.png",
+      "original_image": "images/frame_0003-original.jpg",
+      "original_width": 3024,
+      "original_height": 4032,
+      "original_K": [
+        [
+          3624.472909109933,
+          0.0,
+          1495.922642299107
+        ],
+        [
+          0.0,
+          3689.2365392736488,
+          2016.3252217060813
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_sha256": "0a8d4b8884867bf9f1836193db2fae0350a99e9e6b242eb9e01e20fda7c59438",
+      "original_source_sha256": "0a8d4b8884867bf9f1836193db2fae0350a99e9e6b242eb9e01e20fda7c59438",
+      "input_to_canonical_pixel_centres": [
+        [
+          0.12962962962962962,
+          0.0,
+          62.56481481481482
+        ],
+        [
+          0.0,
+          0.1284722222222222,
+          -0.4357638888888889
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_encoding": "unchanged source bytes"
     },
     {
       "id": "frame_0004",
@@ -220,7 +340,47 @@
           1.0
         ]
       ],
-      "image": "images/frame_0004.png"
+      "image": "images/frame_0004.png",
+      "original_image": "images/frame_0004-original.jpg",
+      "original_width": 3024,
+      "original_height": 4032,
+      "original_K": [
+        [
+          3693.557059151786,
+          0.0,
+          1500.3276105608259
+        ],
+        [
+          0.0,
+          3757.081925675676,
+          2012.8720703125
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_sha256": "e73931b6cdf68775ddafbc949c392c0ea2908f4dec671a4935e4c09361ae66ec",
+      "original_source_sha256": "e73931b6cdf68775ddafbc949c392c0ea2908f4dec671a4935e4c09361ae66ec",
+      "input_to_canonical_pixel_centres": [
+        [
+          0.12962962962962962,
+          0.0,
+          62.56481481481482
+        ],
+        [
+          0.0,
+          0.1284722222222222,
+          -0.4357638888888889
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_encoding": "unchanged source bytes"
     }
   ],
   "objects": [
@@ -316,7 +476,9 @@
           "packed_bytes": 8533224,
           "sha256": "c92a82ea0f9e35b3ba01fb727bae25e06f162cb0f357474690c5057f7d2660df"
         }
-      }
+      },
+      "context_id": "observed_context_frame_0001",
+      "reference_frame": "frame_0001"
     },
     {
       "id": "object_ddfd00218e68ffd9e3e7f515",
@@ -410,7 +572,9 @@
           "packed_bytes": 3732700,
           "sha256": "51cdfcf70001470630c14074a444c024c70df90741639636ec123b34a2fce988"
         }
-      }
+      },
+      "context_id": "observed_context_frame_0001",
+      "reference_frame": "frame_0001"
     },
     {
       "id": "observed_floor",
@@ -465,6 +629,98 @@
           "packed_bytes": 1178215,
           "sha256": "75520ff529f58ee0454150de614c703c33628cf977c3b24bd2acbacc76125b77"
         }
+      },
+      "selectable": false,
+      "editable": false
+    },
+    {
+      "id": "observed_context_frame_0001",
+      "label": "同机位观测工位背景",
+      "source": "observed",
+      "role": "context",
+      "editable": false,
+      "selectable": false,
+      "model": "source geometry",
+      "frame_ids": [
+        "frame_0001"
+      ],
+      "context_for": [
+        "object_6dd85942d104987a83c677d6",
+        "object_ddfd00218e68ffd9e3e7f515"
+      ],
+      "transform": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "mesh": {
+        "byte_offset": 0,
+        "vertex_count": 148879,
+        "stride": 9,
+        "index_byte_offset": 5359644,
+        "index_count": 827475,
+        "index_type": "uint32",
+        "bounds": {
+          "min": [
+            -3.376995325088501,
+            -4.649719715118408,
+            2.190931558609009
+          ],
+          "max": [
+            2.482510805130005,
+            1.586026668548584,
+            18.33620262145996
+          ]
+        },
+        "asset": {
+          "path": "model/objects/observed_context_frame_0001.bin.gz",
+          "bytes": 8669544,
+          "packed_bytes": 5120975,
+          "sha256": "dde34645f107bced9e5911e725b7b8fa8c71ace91d98d733c4b94d93e8b4ef46"
+        }
+      },
+      "provenance": {
+        "source_run_id": "user-bor1-02",
+        "frame_id": "frame_0001",
+        "source_image_sha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac",
+        "geometry_sha256": {
+          "pointmap_path": "1ad8af961299770b1ab31d86b0ec250e25f3f2ea07f283e2440c384ceb83108c",
+          "content_valid_path": "f8478ae287182688afb914e7c990281204979dc4658b69af4b301da8ff2fc4b9",
+          "conf_path": "bb1e8b3dbebe94ac915d71c96e3250729e6cb3a1c55153b6f12ceff7fe88071f",
+          "K_path": "1a852ffaa3c2d9be37a5298b9c70872953e0d46692686258a8b8a975be86acb7",
+          "c2w_path": "5ff0f0e941d638251e9895d64a6efa32466b03558334c7b7c52e6ca675f22bec",
+          "canonical_rgb_path": "4c1ca8abbf03dd67b5c390108379a2333a7fdfbcf91b02ea47752c3de5f180b6"
+        },
+        "mask_rule": "valid observed anchor-frame pixels excluding exact generated-object masks; no multi-frame fusion",
+        "excluded_objects": [
+          {
+            "object_id": "object_6dd85942d104987a83c677d6",
+            "native_record_sha256": "87cc247393f408f1d9e72a7029344570132b6f988360934fa6e288f3812e2231",
+            "canonical_mask_sha256": "dda5c22eecba03a454ccfb917c9765c234b96e8577079e3c0f039a86d961bcb7"
+          },
+          {
+            "object_id": "object_ddfd00218e68ffd9e3e7f515",
+            "native_record_sha256": "b5d9b0084ffcba4c4c004750ea89b2315661c8e8edde02483f496563fecdb824",
+            "canonical_mask_sha256": "607c95bb218668a7e71c9474d6e6ce466ead774b17b0b330c92c5fba101dc4ae"
+          }
+        ],
+        "observed_support_pixels": 150069,
+        "triangulation": "existing observed_mesh adjacent pixels and depth-relative edge gate; no filling",
+        "metric_scale_known": false,
+        "canonical_mask_path": "observed_context_frame_0001-mask.png",
+        "canonical_mask_sha256": "165380cbeeea61004475acb4522afcd9c08de3902f9df98a894ba564901a9366"
       }
     }
   ],
@@ -472,7 +728,8 @@
     "RecGen experiment, not a reproduction of the unreleased Lucida GizmoAct policy",
     "Generated hidden surfaces and textures have no photographic ground truth",
     "All supplied views contribute to geometry and placement; scores measure input consistency, not held-out accuracy",
-    "Static editable meshes; no robot joints, collision validation or physical calibration"
+    "Static editable meshes; no robot joints, collision validation or physical calibration",
+    "Context is a partial observed surface from the selected object anchor frame; unseen regions remain absent and other capture states are not fused"
   ],
   "unavailable_objects": [
     {
@@ -799,10 +1056,10 @@
     -0.18674422800540924,
     2.0043232440948486
   ],
-  "source_binary": {
-    "bytes": 25150068,
-    "sha256": "6120650c879101d0012edaace3be41d8a18b70c50b216dd394f14e53678b687c"
-  },
   "label": "BOR1 · 小物体补全",
-  "description": "原报告照片的急停与控制按钮，使用原几何坐标；地面为观测表面。尺寸尚未标定。"
+  "description": "原报告照片的急停与控制按钮，使用原几何坐标；地面为观测表面。尺寸尚未标定。",
+  "source_binary": {
+    "bytes": 33819612,
+    "sha256": "21e3e8a1b2adb331ffeb8bf33fd40c7ce67b13b923d1c992f82bea9c8d4058b1"
+  }
 }
