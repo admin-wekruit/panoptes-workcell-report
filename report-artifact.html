@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panoptes · 实验报告</title><link rel="stylesheet" href="workspace-assets/workspace.css">
+<script src="site-config.js"></script><script src="site-client.js"></script><script src="i18n-catalog.js"></script><script src="i18n.js" defer></script>
+<style>main{padding-top:20px}iframe{width:100%;height:calc(100vh - 150px);border:0;background:#fff}</style></head>
+<body><header><a class="brand" href="reports.html"><b>P</b> PANOPTES</a><nav><a id="back" href="reports.html">← 报告历史</a><span data-language-switch></span></nav></header>
+<main><p id="status" role="status">正在读取实验报告…</p><iframe id="report" title="实验报告" hidden></iframe></main>
+<script>
+const source=new URLSearchParams(location.search).get('source'),report=document.getElementById('report'),status=document.getElementById('status');
+if(!source||!/^\/api\/reports\/[^/]+\/.+\.html(?:\?|$)/.test(source))status.textContent='无效的报告地址。';
+else {
+ const run=source.split('/')[3];document.getElementById('back').href=panoptesSite.pageURL('/reports/'+encodeURIComponent(run));
+ panoptesSite.reportFrame(report,source).then(()=>{report.hidden=false;status.hidden=true;}).catch(error=>{status.textContent=error.message;status.setAttribute('role','alert');});
+}
+</script></body></html>

@@ -7,7 +7,7 @@ async function loadMesh(asset, base, onProgress) {
   const touch = () => { clearTimeout(timer); timer = setTimeout(() => controller.abort(), 30000); };
   try {
     touch();
-    const response = await fetch(localAsset(asset.path, base), {signal: controller.signal});
+    const response = await panoptesSite.fetch(localAsset(asset.path, base), {signal: controller.signal});
     if (!response.ok) throw Error('对象下载失败：HTTP ' + response.status);
     const measured = response.body.pipeThrough(new TransformStream({transform(chunk, stream) {
       touch(); packed += chunk.byteLength;
@@ -39,7 +39,7 @@ async function loadParts(asset, base) {
   if (!asset || !Number.isSafeInteger(asset.bytes) || asset.bytes <= 0 || asset.bytes > 200 * 1024 * 1024 || !/^[a-f0-9]{64}$/.test(asset.sha256) || !Array.isArray(asset.parts) || !asset.parts.length || asset.parts.length > 20) throw Error('无效模型文件记录');
   const buffers = await Promise.all(asset.parts.map(async part => {
     if (!part || !Number.isSafeInteger(part.bytes) || part.bytes <= 0 || part.bytes > 20 * 1024 * 1024) throw Error('无效模型分段');
-    const response = await fetch(localAsset(part.path, base));
+    const response = await panoptesSite.fetch(localAsset(part.path, base));
     if (!response.ok) throw Error('模型加载失败：' + response.status);
     const buffer = await response.arrayBuffer();
     if (buffer.byteLength !== part.bytes) throw Error('模型文件不完整，请刷新重试');

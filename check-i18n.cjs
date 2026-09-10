@@ -5,7 +5,7 @@ const {webkit,chromium}=require('/Users/adam/.codex/skills/gstack/node_modules/p
 const base=(process.argv[2]||'http://127.0.0.1:8892/').replace(/\/?$/,'/');
 const engines=(process.env.ENGINES||'webkit,chromium').split(',');
 const text=async(page,selector)=>(await page.locator(selector).textContent()).trim();
-async function lang(page,value){await page.locator('[data-language-select]').selectOption(value);await page.waitForFunction(value=>document.documentElement.lang===(value==='zh'?'zh-CN':'en'),value);}
+async function lang(page,value){await page.locator('[data-language-select],#language').selectOption(value);await page.waitForFunction(value=>document.documentElement.lang===(value==='zh'?'zh-CN':'en'),value);}
 async function hasText(page,selector,value){await page.waitForFunction(({selector,value})=>document.querySelector(selector)?.textContent.includes(value),{selector,value});}
 async function noOverflow(page){assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'page overflows horizontally');}
 async function check(engine){
@@ -15,12 +15,28 @@ async function check(engine){
   const context=await browser.newContext(engine==='webkit'?{viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:2}:{viewport:{width:1440,height:1000}});
   const page=await context.newPage(),errors=[];
   page.on('pageerror',error=>errors.push({url:page.url(),error:error.stack}));await page.emulateMedia({reducedMotion:'reduce'});
-  await page.goto(base+'reports.html');await hasText(page,'#history-status','2 份已发布报告');
-  assert.equal(await page.locator('[data-report-id]').count(),2,'both real report artifacts are listed');
-  await page.waitForFunction(()=>[...document.querySelectorAll('.history-preview img')].every(img=>img.complete&&img.naturalWidth>0));
-  await lang(page,'en');await hasText(page,'#history-status','2 published reports');await hasText(page,'.history-body h2','BOR1 · Unified workcell report');
-  assert.equal(await page.locator('.history-runs code').first().textContent(),'user-bor1-02');
-  await page.locator('[data-report-id="product-evidence-01"] [data-open-report]').click();
+  // Exercise the real workspace renderer without depending on cloud report state.
+  const apiOrigin='https://panoptes-i18n-check.example.invalid',history=[
+   {run_id:'user-bor1-02',title:'BOR1 · 原图工位报告',phase:'done',image_count:3,report_url:'/reports/user-bor1-02'},
+   {run_id:'bor1-components-20260909',title:'BOR1 · Components',phase:'done',image_count:4,report_url:'/reports/bor1-components-20260909'}];
+  await page.route('**/site-config.js',route=>route.fulfill({contentType:'application/javascript',body:'window.panoptesSiteConfig='+JSON.stringify({apiOrigin,siteRoot:base,workspaceRoot:base+'reports.html',workspaceAssets:base+'workspace-assets/'})+';'}));
+  await page.route(apiOrigin+'/**',route=>{
+   const pathname=new URL(route.request().url()).pathname,headers={'Access-Control-Allow-Origin':new URL(base).origin};
+   if(pathname==='/api/session')return route.fulfill({headers,json:{can_write:false,requires_access:true}});
+   if(pathname==='/api/reports')return route.fulfill({headers,json:{reports:history,mode:'live'}});
+   if(pathname.endsWith('/images/frame_0001'))return route.fulfill({headers,contentType:'image/png',path:require('node:path').join(__dirname,'components/images/frame_0001.png')});
+   const row=history.find(row=>pathname==='/api/reports/'+row.run_id);
+   if(row)return route.fulfill({headers,json:{...row,has_report:false,revision:'i18n-check',evidence:{frames:[],candidates:[]},playgrounds:[]}});
+   throw Error('Unexpected workspace API request: '+pathname);
+  });
+  await page.goto(base+'reports.html');await hasText(page,'h1','每个工位，一份持续完善的报告。');
+  await page.waitForSelector('a.report-card');assert.equal(await page.locator('a.report-card').count(),2,'workspace history renders both API reports');
+  await page.waitForFunction(()=>[...document.querySelectorAll('.report-card img')].every(img=>img.complete&&img.naturalWidth>0));
+  await lang(page,'en');await hasText(page,'h1','A living report for every workcell.');await hasText(page,'#new-report','New report');
+  assert.equal((await page.locator('.report-card h2').first().textContent()).trim(),'BOR1 · 原图工位报告','report titles remain user-authored evidence');
+  const reportURL=base+'reports.html?run=user-bor1-02';assert.equal(await page.locator('a.report-card').first().getAttribute('href'),reportURL);
+  await page.locator('a.report-card').first().click();await page.waitForURL(reportURL);await hasText(page,'#report-title','BOR1 · 原图工位报告');await hasText(page,'#agent-action','Ask about report');await noOverflow(page);
+  await page.goto(base+'viewer.html?scene=components/scene.json');
   await page.waitForFunction(()=>window.lucidaViewer&&document.querySelector('canvas')?.dataset.sceneReady==='true',null,{timeout:60000});await hasText(page,'#scene-title','Workcell objects & bounds');
   assert(!await page.locator('#blender-report').isVisible());assert.match(await page.locator('#scene-report').getAttribute('href'),/components\/metrics\.html$/);
   await page.locator('#scene-report').click();await hasText(page,'h1','Same photos, same objects, same metrics');
@@ -29,13 +45,11 @@ async function check(engine){
   for(const img of await page.locator('section img').all())await img.evaluate(node=>node.scrollIntoView({block:'center',behavior:'instant'}));
   await page.waitForFunction(()=>[...document.querySelectorAll('section img')].every(img=>img.complete&&img.naturalWidth>0));
   await lang(page,'zh');await hasText(page,'h1','同一批照片');await lang(page,'en');assert.deepEqual(await page.locator('tbody td').allTextContents(),componentNumbers);await noOverflow(page);
-  await page.goto(base+'reports.html');await hasText(page,'#history-status','2 published reports');
-  const workspace='https://wekruit-livekit-agents--panoptes-report-workspace-web.modal.run/reports';
-  await page.locator(`a.primary-link[href="${workspace}"]`).click();await page.waitForURL(workspace);await page.waitForSelector('a.report-card');await page.evaluate(()=>panoptesSession.ready);await noOverflow(page);
-  await page.goto(base+'reports.html');await hasText(page,'#history-status','2 published reports');
-  await page.locator('[data-report-id="bor1-workcell"] [data-open-report]').click();await page.waitForFunction(()=>window.panoptesReport);await hasText(page,'h1','See site evidence');
-  await page.locator('a[href="reports.html"]').click();await hasText(page,'#history-status','2 published reports');
-  await lang(page,'zh');await page.locator('[data-report-id="bor1-workcell"] [data-open-report]').click();await page.waitForFunction(()=>window.panoptesReport);
+  await page.goto(base+'reports.html');await hasText(page,'h1','A living report for every workcell.');await page.waitForSelector('a.report-card');await page.evaluate(()=>panoptesSession.ready);await noOverflow(page);
+  assert((await page.locator('a.report-card').evaluateAll(nodes=>nodes.map(n=>n.href))).every(url=>url.startsWith(base+'reports.html?run=')),'report history stays on the website');
+  await page.goto(base+'index.html');await page.waitForFunction(()=>window.panoptesReport);await hasText(page,'h1','See site evidence');
+  await page.locator('a[href="reports.html"]').click();await hasText(page,'h1','A living report for every workcell.');
+  await lang(page,'zh');await page.goto(base+'index.html');await page.waitForFunction(()=>window.panoptesReport);
   assert.equal(await text(page,'h1'),'现场证据，与三维场景一起看。');
   const source=await page.evaluate(()=>JSON.stringify(panoptesReport.state.data));
   const evidence=await page.locator('#findings [data-i18n-ignore],#legacy-inventory [data-i18n-ignore]').allTextContents();
@@ -105,7 +119,7 @@ async function check(engine){
   await inherited.evaluate(()=>panoptesI18n.setLanguage('en'));await hasText(page,'#metrics-title','Parametric trial comparison');
   await inherited.evaluate(()=>window.dispatchEvent(new MessageEvent('message',{source:parent,origin:'https://untrusted.example',data:{type:'panoptes:language',language:'zh'}})));
   assert.equal(await inherited.evaluate(()=>panoptesI18n.language),'en');
-  assert.deepEqual(errors,[]);console.log(JSON.stringify({engine,passed:true,coverage:'2 history entries + live cloud workspace link + 5 report surfaces, component metrics, live iframe sync, persistence, dynamic controls and loading/errors, immutable evidence/edits, mobile overflow'}));
+  assert.deepEqual(errors,[]);console.log(JSON.stringify({engine,passed:true,coverage:'API-backed history + same-site detail and Agent shell + 5 report surfaces, component metrics, live iframe sync, persistence, dynamic controls and loading/errors, immutable evidence/edits, mobile overflow'}));
  }finally{release();await browser.close();}
 }
 (async()=>{for(const engine of engines)await check(engine);})().catch(error=>{console.error(error);process.exitCode=1;});

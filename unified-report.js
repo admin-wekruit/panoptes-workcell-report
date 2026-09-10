@@ -151,7 +151,7 @@ function bindInteractions(){
 const playgrounds={
   generated:{name:'完整对象重建',url:'viewer.html',preview:'playground-generated.png',description:'Pi3X + RecGen · 9 个生成资产与 1 块观测地面。旋转场景，点选对象，再调整位置、旋转和缩放。'},
   observed:{name:'照片表面重建',url:'observed/',preview:'observed/preview.png',description:'workcell-reconstruction-01 · 较早的内部表面 GLB。切换原始照片机位、原图对照和线框；未拍到的区域保留为空。'},
-  blender:{name:'参数化柱体试验',url:'viewer.html?scene=blender-scene.json',preview:'blender/parametric-frame_0003.png',description:'原生 Blender 试验的实际几何：仅两根防撞柱换为拟合圆柱，其余 8 个对象保持不变。网页可调整对象变换；半径与高度参数可在下载的 .blend 中修改。'},
+  blender:{name:'完整工位 + 物体范围',url:'viewer.html?scene=blender-ranges-scene.json',preview:'blender/parametric-frame_0003.png',description:'保留完整工位的 10 个场景对象。点选后同时查看模型外形、原图支持的范围、高宽深和坐标轴；两根防撞柱仍为 Blender 拟合圆柱。遮挡部分未知，尺寸未标定。'},
   components:{name:'工位物体与范围',url:'viewer.html?scene=components/scene.json',preview:'components/preview.png',description:'查看各照片中的物体观测范围，在原图和 3D 中点选、查看包围框与三轴。两个按钮保留完整生成网格；其余区域来自分割和深度，尚未合并为跨视角实体。'}
 };
 let playgroundId='generated';
@@ -164,3 +164,6 @@ for(const button of document.querySelectorAll('[data-playground]'))button.addEve
 $('explore-playground').onclick=()=>{const item=playgrounds[playgroundId],frame=$('playground-frame');frame.title=item.name+' · 可交互实验场';frame.src=item.url;frame.hidden=false;$('playground-preview').hidden=true;$('playground-launch').hidden=true;$('playground-close').hidden=false;$('playground-fullscreen').hidden=!document.fullscreenEnabled;};
 $('playground-close').onclick=closePlayground;
 $('playground-fullscreen').onclick=async()=>{try{await $('playground-stage').requestFullscreen();}catch{$('playground-description').textContent='当前浏览器未进入全屏，可使用“单独打开”继续操作。';}};
+
+const requestedPlayground=new URLSearchParams(location.search).get('playground');
+if(Object.hasOwn(playgrounds,requestedPlayground)){document.querySelector(`[data-playground="${requestedPlayground}"]`).click();$('explore-playground').click();}
