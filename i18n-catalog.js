@@ -1,5 +1,7 @@
 // Hand-authored interface and report commentary. Original findings, evidence and user text remain verbatim.
 window.panoptesTranslations=Object.fromEntries(String.raw`
+打开报告工作区 · Agent	Open report workspace · Agent
+在来源照片上选定区域，通过 Agent 添加物体；空间范围和量测随报告一起更新。	Select a region in the source photo and add it through the agent. Spatial bounds and measurements update with the report.
 观测背景必须保留原生坐标	Observed context must retain native coordinates
 表面已由生成网格覆盖；此区域仅显示观测点范围。	The surface is covered by a generated mesh; this region shows observed-point bounds only.
 观测区域 · 只读 · 可见表面，非完整模型 · {model} · 来源 {frames}。{description}	Observed region · Read-only · Visible surface, not a complete model · {model} · Source {frames}. {description}
@@ -25,6 +27,31 @@ BOR1 · 工位物体与范围	BOR1 · Workcell objects & bounds
 机位的观测背景不匹配	The viewpoint's observed context does not match
 已显示 {loaded} / {count} 个网格 · 下载 {bytes} / {total} MB	Showing {loaded} / {count} meshes · Downloaded {bytes} / {total} MB
 已显示 {loaded} / {count} 个网格 · 加载未完成	Showing {loaded} / {count} meshes · Loading incomplete
+未知	Unknown
+俯视 · 导航参考	Top · Navigation reference
+侧视 · 导航参考	Side · Navigation reference
+正视 · 导航参考	Front · Navigation reference
+观测范围	Observed extent
+来源照片量测	Source-photo measurements
+人工定标 · m	Operator-anchored scale · m
+估计比例 · m	Estimated scale · m
+未标定 · 模型单位	Uncalibrated · Model units
+模型单位	model units
+高 H {value}	Height H {value}
+宽 W {value}	Width W {value}
+深 D {value}	Depth D {value}
+表面坡度 {value}	Surface slope {value}
+主轴离竖直角 {value}	Principal-axis angle to vertical {value}
+{value} 模型单位	{value} model units
+当前模型 · 高 {height} / 宽 {width} / 深 {depth}；编辑不改变来源证据。	Current model · H {height} / W {width} / D {depth}; edits do not change source evidence.
+可见表面；H/W/D 沿地面参考方向，XYZ 为场景参考轴。方向仅为几何估计。	Visible surface; H/W/D follow the floor reference, while XYZ are scene reference axes. Orientation is a geometric estimate.
+来源量测来自可见表面；H/W/D 沿地面参考方向，XYZ 为模型参考轴。方向仅为几何估计。	Source measurements use the visible surface. H/W/D follow the floor reference; XYZ are model reference axes. Orientation is a geometric estimate.
+未建立地面参考，尺寸与方向未知。	No floor reference is established; dimensions and orientation are unknown.
+空间证据不足，无法给出尺寸与方向。	Insufficient spatial evidence for dimensions and orientation.
+空间证据不足	Insufficient spatial evidence
+无效量测证据	Invalid measurement evidence
+尺寸与范围不匹配	Dimensions do not match their bounds
+无效方向证据	Invalid orientation evidence
 原图叠加	Photo overlay
 自由 3D	Free 3D
 显示模式	Display mode

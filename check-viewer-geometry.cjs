@@ -16,6 +16,7 @@ const baked={transform:{position:[0,0,0],rotation_deg:[0,0,0],scale:[1,1,1]}},ba
 close(measureGeometry(baked,box(4,2,2),[1,0,0],basis).axisAngles[2],0);
 baked.transform.rotation_deg[2]=30;const turned=measureGeometry(baked,box(4,2,2),[1,0,0],basis);
 close(turned.axisAngles[2],30);close(turned.height,4*Math.cos(Math.PI/6)+2*Math.sin(Math.PI/6));
+const floorBasis=[[Math.SQRT1_2,-Math.SQRT1_2,0],[0,0,1],diagonal],sized=measureGeometry(object,box(2,1,4),diagonal,undefined,floorBasis);close(sized.dimensions.height,6);close(sized.dimensions.width,1);close(sized.dimensions.depth,4);
 const camera={eye:[0,0,10],target:[0,0,0],up:[0,1,0],orthographic:true,orthoHeight:4},matrix=cameraMatrix(camera,2,2);
 close(matrix[0],.25);close(matrix[5],.5);close(matrix[15],1); // Real orthographic projection, not a narrow perspective camera.
 console.log('PASS: arbitrary floor normal, translation invariant height, nonuniform scale, baked cylinder reference axis, orthographic projection.');
@@ -31,7 +32,7 @@ async function check(engine){const browser=await ({webkit,chromium}[engine]).lau
  for(const view of ['front','side','top']){await page.selectOption('#camera',view);assert.equal(await page.locator('#canvas').getAttribute('data-projection'),'orthographic');assert.equal(await page.locator('[data-bbox-edge]').count(),12);}
  await page.selectOption('#camera','front');
  const before=await page.evaluate(()=>({position:[...lucidaViewer.scene.objects[0].transform.position],directions:lucidaViewer.measurement(0).directions}));
- const handle=await page.locator('#selection-overlay [data-axis="2"] .axis-line').evaluate(line=>{const r=line.ownerSVGElement.getBoundingClientRect();return {x:r.x+Number(line.getAttribute('x1')),y:r.y+Number(line.getAttribute('y1')),dx:Number(line.getAttribute('x2'))-Number(line.getAttribute('x1')),dy:Number(line.getAttribute('y2'))-Number(line.getAttribute('y1'))};});
+ const handle=await page.locator('#selection-overlay').evaluate(svg=>{const line=svg.querySelector('[data-axis="2"] .axis-line'),r=svg.getBoundingClientRect();return {x:r.x+Number(line.getAttribute('x1')),y:r.y+Number(line.getAttribute('y1')),dx:Number(line.getAttribute('x2'))-Number(line.getAttribute('x1')),dy:Number(line.getAttribute('y2'))-Number(line.getAttribute('y1'))};});
  const norm=Math.hypot(handle.dx,handle.dy),start={x:handle.x+handle.dx*.7,y:handle.y+handle.dy*.7};assert(norm>8);
  await page.mouse.move(start.x,start.y);await page.mouse.down();await page.mouse.move(start.x+handle.dx/norm*20,start.y+handle.dy/norm*20,{steps:4});await page.mouse.up();
  const after=await page.evaluate(()=>lucidaViewer.scene.objects[0].transform.position),delta=after.map((value,i)=>value-before.position[i]),axis=before.directions[2],length=Math.hypot(...delta);
