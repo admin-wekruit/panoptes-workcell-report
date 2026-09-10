@@ -1,0 +1,1189 @@
+{
+  "source_run_id": "bor1-components-20260909",
+  "target_run_id": "lucida-replica-01",
+  "source_candidates": 131,
+  "mapped_candidates": 58,
+  "ready": 58,
+  "unavailable": 0,
+  "omitted_candidates": [
+    {
+      "id": "object_0453826d5e2f10c7c04e62b5",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_0d584641e84865d07b64e7da",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_0ddb7d7b8f5dd925e23131b1",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_1e889200afb4908209e7aa57",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_1f0c05f408acc6c9ca28aa5b",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_2439d2eef4bc91733a7db683",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_251eafa8d4599f3d3595aca3",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_28c7df8abd5cb0cc4ae91328",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_29a98d6ff155048fb79c8848",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_30eda03fb45da6d35a7bbdaa",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_345e3e91edfd9627fe94f9b4",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_3a3223f41b3bbc60d232137e",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_3ae7f4cca8f551b6fbed2185",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_3bcadefa5c8062a2f12db7dc",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_3f1e99be8026db7c83818489",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_4223a1088d135d12e61e0f1d",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_46b624778b66017e6cecf0c8",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_4d38ce5495cf2b3d8446b743",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_4e409ac774af382ff7643d77",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_52f1aeb9691108b4fb4bf77a",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_58cd56c49b16c217970c0e01",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_5e2743ca271b8f21a38778bb",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_6dd85942d104987a83c677d6",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_79e309a13d77200563b6c766",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_7f36d6bfdb3ba7628775df9e",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_83d972f07717beee46f135df",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_84394050703d9d92a9abb4b0",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_84842d0160fef6b06f2da7a3",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_958507d6d82c5b9c0633d15b",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_a50e11d5c6411660012dd3ef",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_a5998b33941a3dd44ef6d89e",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_b4e22af4fbb40a9b6ebb86c6",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_b5dc2cd917093f7c1da2f6df",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_bb6a55b5afd50d846b0e4d02",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_c7ce0d678ecafd4249139a88",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_ddfd00218e68ffd9e3e7f515",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_e2cb98ef84558416a36e1873",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_e39505f06fe96c4491c5d58e",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_e4cc87b3a2dda08935bbda33",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_f0596b23993ed5f35f1747c0",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_f3a4521b1626c18a210e6051",
+      "source_frame_id": "frame_0001",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_10d5d264d765d6ff02d45120",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_11cfa560f57ace58b0a7dc43",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_120d39139c26d633431cf3a7",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_1a762df59e3dd4b72f60b8d5",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_1da837cccea38b448d8fddbc",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_330f869f9923359a772e3489",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_38956f772e7727b6b1126db8",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_3e5776d1f58ce1aef63af236",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_50729f87cf65c4c18941acd4",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_5670b3b749d207e1c8ab3c45",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_5f3947fe34e310312c73fb0b",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_68466c30a4ffe56a6cbf0791",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_68abd775caf992c9bb24ffe8",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_69f3fa859dcf31f028afdc92",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_6d06b4c53f0a0a4ff23c5af3",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_7b5616bfca7637997659808e",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_81259d1cd9c7c770902076ad",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_82230740ca864f6c0e926855",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_97eee9b7c2ff43da4c2a8759",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_a19d8b834500a55789e70f89",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_a3c8deff6e8757b21fd6e949",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_a7f34c753f4a5a932138b38e",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_a8be40636c9253649af62fab",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_b12c230e9642198c73f0206f",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_b912decaa165b1931dd5cf69",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_c3939899ffab84a39f042918",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_cbd462d372de66c314740612",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_cce700391288df97a8ca14cd",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_d569f965666f1317e820dd02",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_e73f117bc644528c9d5178e4",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_f8d839d94a4e79c83c75d1d5",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    },
+    {
+      "id": "object_fe6477fe9e40f12e1402291d",
+      "source_frame_id": "frame_0002",
+      "reason": "No manifest-verified same-capture target frame"
+    }
+  ],
+  "source_frame_counts": {
+    "frame_0001": 41,
+    "frame_0002": 32,
+    "frame_0003": 24,
+    "frame_0004": 34
+  },
+  "mapped_source_frames": {
+    "frame_0003": {
+      "target_frame_id": "frame_0001",
+      "source_image_sha256": "0a8d4b8884867bf9f1836193db2fae0350a99e9e6b242eb9e01e20fda7c59438",
+      "target_image_sha256": "4c6b1e0f0d7ddc82d343d5952789303a96775fc7723380cc37d68e2b07ae0bf7",
+      "source_canonical_to_target_canonical": [
+        [
+          1.0,
+          0.0,
+          -7.105427357601002e-15
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_to_original": [
+        [
+          0.9523809523809523,
+          0.0,
+          -0.023809523809523836
+        ],
+        [
+          0.0,
+          0.9523809523809523,
+          -0.023809523809523836
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "method": "full image bounds preserved; pixel-center resize",
+      "assumption": "same capture after resampling and JPEG recompression; not byte/pixel identical"
+    },
+    "frame_0004": {
+      "target_frame_id": "frame_0003",
+      "source_image_sha256": "e73931b6cdf68775ddafbc949c392c0ea2908f4dec671a4935e4c09361ae66ec",
+      "target_image_sha256": "816df6592ffe897a5ff31faa7b97863d6cf6860bf9f7ff954d3fade3be5d26e3",
+      "source_canonical_to_target_canonical": [
+        [
+          1.0,
+          0.0,
+          -7.105427357601002e-15
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_to_original": [
+        [
+          0.9523809523809523,
+          0.0,
+          -0.023809523809523836
+        ],
+        [
+          0.0,
+          0.9523809523809523,
+          -0.023809523809523836
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "method": "full image bounds preserved; pixel-center resize",
+      "assumption": "same capture after resampling and JPEG recompression; not byte/pixel identical"
+    }
+  },
+  "target_frames_without_registry": [
+    "frame_0002"
+  ],
+  "records": [
+    {
+      "id": "object_03cdc58071cc80458437601e",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 6519,
+      "target_supported_points": 6507,
+      "native_triangles": 12055,
+      "supplementary_triangles": 20,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_0d045ff5a83512a95d6d8f0b",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 29806,
+      "target_supported_points": 29806,
+      "native_triangles": 57322,
+      "supplementary_triangles": 5241,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_146e2b175312f1d82a36f66d",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 12418,
+      "target_supported_points": 12418,
+      "native_triangles": 24242,
+      "supplementary_triangles": 12,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_17f138bd1f77e1d8242198c2",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 4655,
+      "target_supported_points": 4651,
+      "native_triangles": 8639,
+      "supplementary_triangles": 196,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_3874f2239ea169d744f5de42",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 9181,
+      "target_supported_points": 9091,
+      "native_triangles": 16935,
+      "supplementary_triangles": 807,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_3f2131e19c9f8e4cfd8e4769",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 43580,
+      "target_supported_points": 43471,
+      "native_triangles": 84383,
+      "supplementary_triangles": 84383,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_4265b9c37133a2f2f46a5847",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 4523,
+      "target_supported_points": 4405,
+      "native_triangles": 8307,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_4de309904125efae06cf4ef7",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 3132,
+      "target_supported_points": 3044,
+      "native_triangles": 5600,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_58d2d63b233551f32ef9cdf7",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 314,
+      "target_supported_points": 314,
+      "native_triangles": 552,
+      "supplementary_triangles": 552,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_89742eddc0feb3840e57f560",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 3556,
+      "target_supported_points": 3556,
+      "native_triangles": 6496,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_89f616ef2aebbb03320b62fb",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 6311,
+      "target_supported_points": 5615,
+      "native_triangles": 10467,
+      "supplementary_triangles": 10467,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_8e46a984ef37c3a5fc3eaa16",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 4549,
+      "target_supported_points": 4427,
+      "native_triangles": 8332,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_9b802f816a454325b920b7ad",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 42266,
+      "target_supported_points": 42243,
+      "native_triangles": 81935,
+      "supplementary_triangles": 81935,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_9d2615582c04ef6c07eb601d",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 7252,
+      "target_supported_points": 7252,
+      "native_triangles": 14044,
+      "supplementary_triangles": 934,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_9fb8e70f3d2a84d6ec987880",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 4673,
+      "target_supported_points": 4673,
+      "native_triangles": 9017,
+      "supplementary_triangles": 3368,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_ab33201c0ba2b32cd09fc845",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 3146,
+      "target_supported_points": 3056,
+      "native_triangles": 5610,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_acab92014db1a59702c60626",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 31327,
+      "target_supported_points": 31327,
+      "native_triangles": 61338,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_bf77a49cb3e23b15c70d69a0",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 392,
+      "target_supported_points": 392,
+      "native_triangles": 688,
+      "supplementary_triangles": 688,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_cc0adc4b1e33a19d6eb0864e",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 1801,
+      "target_supported_points": 1801,
+      "native_triangles": 3239,
+      "supplementary_triangles": 3239,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_d01b29a96d5d99d1ab9406fc",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 325,
+      "target_supported_points": 320,
+      "native_triangles": 564,
+      "supplementary_triangles": 301,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_d834a58657f84b81406d012f",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 5600,
+      "target_supported_points": 5069,
+      "native_triangles": 9552,
+      "supplementary_triangles": 9552,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_dbd46a26f4114bfebcb41f25",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 29759,
+      "target_supported_points": 29759,
+      "native_triangles": 57427,
+      "supplementary_triangles": 5415,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_f140871195df01a75696535c",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 43,
+      "target_supported_points": 43,
+      "native_triangles": 60,
+      "supplementary_triangles": 60,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_f607457b41e040b75aa5b39d",
+      "source_frame_id": "frame_0003",
+      "target_frame_id": "frame_0001",
+      "source_resolution": "original",
+      "target_mask_pixels": 350,
+      "target_supported_points": 350,
+      "native_triangles": 628,
+      "supplementary_triangles": 122,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_0155db2a7245c50c587dc0d1",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 19400,
+      "target_supported_points": 19400,
+      "native_triangles": 37684,
+      "supplementary_triangles": 4711,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_03f0d286aaf7054c5041f0ed",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 8032,
+      "target_supported_points": 7985,
+      "native_triangles": 14731,
+      "supplementary_triangles": 320,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_062a3528aeaeca0d20eda61a",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 18552,
+      "target_supported_points": 18550,
+      "native_triangles": 35991,
+      "supplementary_triangles": 4581,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_07055887a4b98cafa71e631d",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 413,
+      "target_supported_points": 413,
+      "native_triangles": 747,
+      "supplementary_triangles": 657,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_0bf3ed137e563254bcd2ad67",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 1998,
+      "target_supported_points": 1998,
+      "native_triangles": 3791,
+      "supplementary_triangles": 3791,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_11c2da64b630ff751186c284",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 10646,
+      "target_supported_points": 10454,
+      "native_triangles": 19699,
+      "supplementary_triangles": 568,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_11dd02eabd5a344548b95afe",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 1700,
+      "target_supported_points": 1700,
+      "native_triangles": 3041,
+      "supplementary_triangles": 2991,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_24e73a945a115be67eda3d9a",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 9345,
+      "target_supported_points": 9287,
+      "native_triangles": 17487,
+      "supplementary_triangles": 672,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_381292628836530dc61e6a8c",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 3533,
+      "target_supported_points": 3509,
+      "native_triangles": 6413,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_499274e489fbc93902671314",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 3085,
+      "target_supported_points": 3009,
+      "native_triangles": 5456,
+      "supplementary_triangles": 366,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_53b45c49e473485d27d32302",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 11306,
+      "target_supported_points": 11097,
+      "native_triangles": 20992,
+      "supplementary_triangles": 1737,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_559d83a72465f35ba9f8b81f",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 3616,
+      "target_supported_points": 3543,
+      "native_triangles": 6520,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_5c6c4afe0bd088cb994adf35",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 35349,
+      "target_supported_points": 35275,
+      "native_triangles": 67880,
+      "supplementary_triangles": 34402,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_6171ea7083775e2886f9b18e",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 6344,
+      "target_supported_points": 6302,
+      "native_triangles": 11730,
+      "supplementary_triangles": 324,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_6453db8f084f9949a7da163e",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 3425,
+      "target_supported_points": 3424,
+      "native_triangles": 6224,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_64a744dff2fa8435e0cb7851",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 2939,
+      "target_supported_points": 2922,
+      "native_triangles": 5277,
+      "supplementary_triangles": 95,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_7f2824b5fa5b478d2b31d6d3",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 18796,
+      "target_supported_points": 18792,
+      "native_triangles": 36376,
+      "supplementary_triangles": 4569,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_82156a75e99622f4d9101518",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 21022,
+      "target_supported_points": 20955,
+      "native_triangles": 40350,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_95264bd73d3ae94fd81361b6",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 690,
+      "target_supported_points": 687,
+      "native_triangles": 1256,
+      "supplementary_triangles": 1256,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_9583535e4f2c4cb4a1eb6349",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 382,
+      "target_supported_points": 382,
+      "native_triangles": 674,
+      "supplementary_triangles": 674,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_a9b752847829907a66bd750c",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 412,
+      "target_supported_points": 412,
+      "native_triangles": 730,
+      "supplementary_triangles": 730,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_ae39e82b5388be9e91cdc4f5",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 19401,
+      "target_supported_points": 19401,
+      "native_triangles": 37720,
+      "supplementary_triangles": 4689,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_ae5d930142aff3cc8a72f0c6",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 5822,
+      "target_supported_points": 4368,
+      "native_triangles": 7548,
+      "supplementary_triangles": 7548,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_b74763f31021a923edb03937",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 1818,
+      "target_supported_points": 1816,
+      "native_triangles": 3201,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_c1ca5994c5ef3e51f2ce57c6",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 3530,
+      "target_supported_points": 3513,
+      "native_triangles": 6428,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_c6540ecd241c62fd9756c652",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 1805,
+      "target_supported_points": 1805,
+      "native_triangles": 3359,
+      "supplementary_triangles": 5,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_c6964c784e2d3790aff13430",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 33307,
+      "target_supported_points": 33307,
+      "native_triangles": 64167,
+      "supplementary_triangles": 31576,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_c729ff966ff8f986b97de13a",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 3613,
+      "target_supported_points": 3544,
+      "native_triangles": 6567,
+      "supplementary_triangles": 0,
+      "status": "ready",
+      "reason": "Native connected surface is covered by existing asset masks; evidence bounds retained without inferred identity"
+    },
+    {
+      "id": "object_c9ce1fa209db3c3deb2094ac",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 669,
+      "target_supported_points": 669,
+      "native_triangles": 1220,
+      "supplementary_triangles": 1220,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_dba784342ab7d155d11c41e0",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 10779,
+      "target_supported_points": 10601,
+      "native_triangles": 20012,
+      "supplementary_triangles": 651,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_ded6c0bfde6d87822751b151",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 833,
+      "target_supported_points": 832,
+      "native_triangles": 1373,
+      "supplementary_triangles": 1340,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_ee874fd3644d0311a732a94d",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 5378,
+      "target_supported_points": 5303,
+      "native_triangles": 9994,
+      "supplementary_triangles": 92,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_f4324e7dd0da0737840a6675",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "canonical",
+      "target_mask_pixels": 9938,
+      "target_supported_points": 9737,
+      "native_triangles": 18325,
+      "supplementary_triangles": 98,
+      "status": "ready",
+      "reason": null
+    },
+    {
+      "id": "object_f595a5e6891b7fbc1b28c5dc",
+      "source_frame_id": "frame_0004",
+      "target_frame_id": "frame_0003",
+      "source_resolution": "original",
+      "target_mask_pixels": 401,
+      "target_supported_points": 401,
+      "native_triangles": 718,
+      "supplementary_triangles": 718,
+      "status": "ready",
+      "reason": null
+    }
+  ],
+  "original_mesh_sha256": {
+    "model-assets/blender-left_post.bin.gz": "e1999168fabc8068792cf36f5766d71adca0434b50a5e8e675e59c2fd4d85d11",
+    "model-assets/blender-right_post.bin.gz": "dbd7aaa177a33b96ce91aa48577323e3aaadb034865f2a77ab4d684cc481fba5",
+    "model/objects/right_fence.bin.gz": "353d893e4d422d6764158efe4942ca1bbe27896bb27b32382a06bcfa9e35eb95",
+    "model/objects/robot.bin.gz": "47d7065c33c4c6c45c56bd51c7f0cb97b89503f75b18b4b52ae202a7b60ce97e",
+    "model/objects/left_fence.bin.gz": "e6e121f3c2bb0cb804ace6e33f429dd45d03dbbbb725b923cabd62524b95dabc",
+    "model/objects/cart.bin.gz": "9c9a1902391299a2bb07e08eabdc3dba2449632100da37fd143610c9c6375373",
+    "model/objects/guard.bin.gz": "47f7bc942009364fa0e3610edd7ed81bbfee7e914844db9733f2d4149196ff05",
+    "model/objects/left_light_curtain.bin.gz": "4e71598a5ee5802105bc5493d42726c11f97ce34eacfe28a445871451199ef5d",
+    "model/objects/right_light_curtain.bin.gz": "96ad6c91b989dafac9f20df346df047177a9fd744f92138a543aa68d19917f49",
+    "model/objects/observed_floor.bin.gz": "93a69eb90c1e25ad7fa3705a605c66851afbbdd7e5f0b1b9f859b9bbcd2147de"
+  },
+  "new_context_packed_bytes": 2978421,
+  "new_model_calls": 0,
+  "source_sha256": {
+    "source_registry_sha256": "9e2d1f0e052497cb8e183c188cafad7c8f4aef02783aa991a610a764e4372163",
+    "target_manifest_sha256": "c5d3d3c75dc1101e6c4c53338c18deb94ad299bcb0110a1c50e924712f1567d4",
+    "base_scene_sha256": "5127b2211287fb8483d201855099016c95c0bee6763a70dbe98c12403421b5f7",
+    "coordinate_system": "new joint Pi3X native OpenCV world",
+    "registration": "Identity in target Pi3X; source 3D never used",
+    "audit": "workcell-assets/bridge-audit.json",
+    "new_model_calls": 0
+  }
+}

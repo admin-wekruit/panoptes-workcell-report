@@ -2,38 +2,37 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<script src="i18n-catalog.js?v=73ccf43a8f05"></script><script src="i18n.js?v=8a9ea3ac37a3" defer></script><title>Panoptes · BOR1 工位联合报告</title>
-<link rel="stylesheet" href="unified-report.css?v=4b59ab55676e">
-<script src="unified-report.js?v=ba9a1b00344e" defer></script>
+<script src="i18n-catalog.js?v=6f187a770553"></script><script src="i18n.js?v=8a9ea3ac37a3" defer></script><title>Panoptes · BOR1 工位联合报告</title>
+<link rel="stylesheet" href="unified-report.css?v=30e87d1e751f">
+<script src="unified-report.js?v=62f5e61bece8" defer></script>
 </head>
 <body>
 <header class="site-header"><a class="brand" href="./" aria-label="Panoptes 报告首页"><span class="brand-symbol" aria-hidden="true">P</span>PANOPTES<span class="brand-sub">工位空间报告</span></a><nav aria-label="报告章节"><a href="reports.html">报告历史</a><a href="#playgrounds">Playgrounds</a><a href="#workspace">四视图报告</a><a href="#legacy">原检测</a><a href="#experiments">实验对比</a><a class="download-link" href="blender/workcell.blend" download>Blender ↗</a><span data-language-switch></span></nav></header>
 <main>
-<section class="intro"><div><p class="eyebrow">BOR1 00090 / WORKCELL</p><h1>现场证据，与三维场景一起看。</h1><p class="intro-copy">先进入不同实验场探索工位，再从四联动报告查看对象证据、原检测与实验指标。</p></div><div class="run-note"><span>检测来源 <b>user-bor1-02</b></span><span>重建来源 <b>lucida-replica-01</b></span><a href="reports.html?run=bor1-components-20260909">打开报告 · 原图 / 3D / Agent →</a></div></section>
+<section class="intro"><div><p class="eyebrow">BOR1 00090 / WORKCELL</p><h1>现场证据，与三维场景一起看。</h1><p class="intro-copy">先进入不同实验场探索工位，再从四联动报告查看对象证据、原检测与实验指标。</p></div><div class="run-note"><span>检测来源 <b>bor1-components-20260909</b></span><span>重建来源 <b>lucida-replica-01</b></span><a href="reports.html?run=bor1-components-20260909">打开报告 · 原图 / 3D / Agent →</a></div></section>
 <section id="playgrounds" aria-labelledby="playgrounds-title"><div class="section-heading"><div><p class="eyebrow">INTERACTIVE DEMOS</p><h2 id="playgrounds-title">Playgrounds</h2></div><span class="quiet">同一工位 · 不同实验产物</span></div>
 <div class="playground-choices" aria-label="选择实验场">
-<button class="playground-choice" data-playground="generated" aria-pressed="true"><span>01 / OBJECT SCENE</span><strong>完整对象重建</strong><small>独立网格 · 点选、移动、隐藏</small></button>
+<button class="playground-choice" data-playground="blender" aria-pressed="true"><span>01 / WORKCELL</span><strong>完整工位 + 物体范围</strong><small>原图证据 · 高宽深 · 坐标轴</small></button>
 <button class="playground-choice" data-playground="observed" aria-pressed="false"><span>02 / OBSERVED SURFACE</span><strong>照片表面重建</strong><small>内部 GLB · 原图对照、线框</small></button>
-<button class="playground-choice" data-playground="blender" aria-pressed="false"><span>03 / BLENDER TRIAL</span><strong>完整工位 + 物体范围</strong><small>原图证据 · 高宽深 · 坐标轴</small></button>
-<button class="playground-choice" data-playground="components" aria-pressed="false"><span>04 / OBJECT REGIONS</span><strong>工位物体与范围</strong><small>原图与 3D 联动 · 包围框与三轴</small></button>
+<button class="playground-choice" data-playground="components" aria-pressed="false"><span>03 / OBJECT REGIONS</span><strong>逐图检测复核</strong><small>四张来源照片 · 逐图物体范围</small></button>
 </div>
-<div class="playground-stage" id="playground-stage"><img id="playground-preview" src="playground-generated.png" alt="完整对象重建的实际三维预览"><div id="playground-launch" class="playground-launch"><span>SCENE PREVIEW</span><button id="explore-playground">探索 3D ↗</button></div><iframe id="playground-frame" title="当前实验场" allow="fullscreen" hidden></iframe></div>
-<div class="playground-caption"><div><strong id="playground-name">完整对象重建</strong><p id="playground-description">Pi3X + RecGen · 9 个生成资产与 1 块观测地面。旋转场景，点选对象，再调整位置、旋转和缩放。</p></div><div class="playground-actions"><button id="playground-fullscreen" hidden>全屏</button><button id="playground-close" hidden>返回预览</button><a id="playground-open" href="viewer.html">单独打开 ↗</a></div></div>
-<p class="scope-note">展示的是我们的实际实验产物。照片表面重建来自较早的独立 run；参数化试验仅替换两根柱体。切换实验场前，请下载 JSON 保存编辑。各实验场的编辑不会改写下方报告与指标。各实验场均未标定真实尺寸，也不代表已完成 Lucida 论文复现。<a href="https://lucida-r2s.github.io/" target="_blank" rel="noopener">参考 Lucida 的 Demo 展示方式 ↗</a></p>
+<div class="playground-stage" id="playground-stage"><img id="playground-preview" src="blender/parametric-frame_0003.png" alt="完整工位与 Blender 柱体的实际三维预览"><div id="playground-launch" class="playground-launch"><span>SCENE PREVIEW</span><button id="explore-playground">探索 3D ↗</button></div><iframe id="playground-frame" title="当前实验场" allow="fullscreen" hidden></iframe></div>
+<div class="playground-caption"><div><strong id="playground-name">完整工位 + 物体范围</strong><p id="playground-description">在完整工位中选择对象，查看原图、观测范围、高宽深和坐标轴。包含 Blender 柱体；检测到的可见表面与生成模型分别标明。</p></div><div class="playground-actions"><button id="playground-fullscreen" hidden>全屏</button><button id="playground-close" hidden>返回预览</button><a id="playground-open" href="viewer.html?scene=workcell-scene.json">单独打开 ↗</a></div></div>
+<p class="scope-note">完整工位合并了对象重建、Blender 柱体和同照片的检测范围；原始生成与 Blender 对比保留在下方实验记录。另两个实验场保留各自的照片和坐标来源。切换前请下载 JSON 保存编辑。尺寸尚未标定；当前是实验结果，尚未完成 Lucida 论文复现。<a href="https://lucida-r2s.github.io/" target="_blank" rel="noopener">参考 Lucida 的 Demo 展示方式 ↗</a></p>
 </section>
 <div class="status-line" id="report-status" role="status">正在读取冻结的报告与场景数据…</div>
 <section id="workspace" aria-labelledby="workspace-title"><div class="section-heading"><div><p class="eyebrow">01 / LINKED WORKSPACE</p><h2 id="workspace-title">一个对象，四个视角</h2></div><span class="quiet" id="counts"></span></div>
-<div id="object-list" class="object-strip" aria-label="重建场景对象"></div>
+<div id="object-list" class="object-strip" aria-label="场景对象与照片检测记录"></div>
 <div class="selection-bar" aria-live="polite"><div><span class="selection-marker" aria-hidden="true"></span><strong id="selected-name">读取对象…</strong><span id="selected-source" class="quiet"></span></div><span id="selected-mapping" class="quiet"></span></div>
 <div class="workspace-grid">
 <section class="view-panel photo-panel" aria-labelledby="photo-title"><div class="panel-heading"><h3 id="photo-title"><span>01</span>照片与分割证据</h3><select id="photo-select" aria-label="原图视角"></select></div><div class="view-stage"><svg id="photo-view" role="group" aria-label="点击照片中的对象以联动其他视图" viewBox="0 0 518 518"></svg></div><div class="panel-footer"><span id="photo-caption">三张输入照片 · 点击轮廓选择对象</span><span class="accent">● 当前选择</span></div></section>
-<section class="view-panel model-panel" aria-labelledby="model-title"><div class="panel-heading"><h3 id="model-title"><span>02</span>对象级 3D 重建</h3><a href="viewer.html">完整编辑 ↗</a></div><iframe id="model-viewer" src="viewer.html?embedded=1" loading="lazy" title="可交互工位 3D 场景" allow="fullscreen"></iframe><div class="panel-footer"><span>Pi3X + RecGen · Lucida 路线实验</span><span>可旋转、缩放、点选</span></div></section>
-<section class="view-panel" aria-labelledby="cad-title"><div class="panel-heading"><h3 id="cad-title"><span>03</span>CAD 式投影图</h3><span class="quiet">当前重建坐标</span></div><div class="view-stage plan-stage"><svg id="cad-view" role="group" aria-label="CAD 式平面投影，点击对象联动" viewBox="0 0 600 400"></svg></div><div class="panel-footer"><span>网格投影外包络（凸包）· 非实测 CAD</span><span>未标定单位</span></div></section>
+<section class="view-panel model-panel" aria-labelledby="model-title"><div class="panel-heading"><h3 id="model-title"><span>02</span>对象级 3D 重建</h3><a href="viewer.html?scene=workcell-scene.json">完整编辑 ↗</a></div><iframe id="model-viewer" src="viewer.html?scene=workcell-scene.json&amp;embedded=1" loading="lazy" title="可交互工位 3D 场景" allow="fullscreen"></iframe><div class="panel-footer"><span>Pi3X + RecGen · Lucida 路线实验</span><span>可旋转、缩放、点选</span></div></section>
+<section class="view-panel" aria-labelledby="cad-title"><div class="panel-heading"><h3 id="cad-title"><span>03</span>CAD 式投影图</h3><span class="quiet">当前重建坐标</span></div><div class="view-stage plan-stage"><svg id="cad-view" role="group" aria-label="CAD 式平面投影，点击对象联动" viewBox="0 0 600 400"></svg></div><div class="panel-footer"><span>模型与观测范围投影 · 非实测 CAD</span><span>未标定单位</span></div></section>
 <section class="view-panel" aria-labelledby="plan-title"><div class="panel-heading"><h3 id="plan-title"><span>04</span>交互平面</h3><div class="zoom-controls"><button id="plan-minus" aria-label="缩小交互平面">−</button><button id="plan-reset" aria-label="恢复交互平面视角">复位</button><button id="plan-plus" aria-label="放大交互平面">＋</button></div></div><div class="view-stage plan-stage"><svg id="plan-view" role="group" aria-label="可缩放拖动的工位平面" viewBox="0 0 600 400"></svg></div><div class="panel-footer"><span>滚轮缩放 · 空白处拖动 · 对象点选</span><span>△ 源相机</span></div></section>
 </div>
 <div class="object-evidence"><div><p class="eyebrow">SELECTED OBJECT</p><h3 id="object-detail-name"></h3><p id="object-detail-copy"></p></div><div id="object-metrics" class="object-metrics"></div></div>
 <details class="view-details"><summary>所选对象的逐图对比与对应记录</summary><div id="object-view-metrics" class="table-scroll"></div></details>
-<p class="scope-note">上面两个平面视图与当前 3D 使用同一套坐标。原检测报告的 CAD 与尺度保留在下方；历史判定未针对新网格或后续编辑重新计算。</p>
+<p class="scope-note">上面两个平面视图与当前 3D 使用同一套坐标。原检测报告的 CAD 与尺度保留在下方；历史判定未针对新网格或后续编辑重新计算。<a href="workcell-assets/bridge-audit.json">检测覆盖与来源记录 ↗</a></p>
 </section>
 <section id="legacy" aria-labelledby="legacy-title"><div class="section-heading"><div><p class="eyebrow">02 / INSPECTION EVIDENCE</p><h2 id="legacy-title">已有检测报告，保留原始依据</h2></div><span class="source-tag">user-bor1-02</span></div><div id="legacy-summary" class="legacy-summary"></div>
 <div class="legacy-layout"><div><div class="subheading"><h3>已保存的规则判定</h3><span id="review-status" class="quiet"></span></div><div id="findings" class="finding-list"></div></div><section class="legacy-cad-panel"><div class="subheading"><h3>原检测 CAD</h3><span class="quiet">原报告坐标</span></div><svg id="legacy-cad" role="group" aria-label="原检测 CAD，已匹配对象可联动新场景"></svg><p id="legacy-cad-note" class="scope-note"></p></section></div>

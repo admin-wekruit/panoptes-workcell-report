@@ -1,86 +1,22 @@
-// Run: node check-playgrounds.cjs [installed Playwright module] [running report URL]
+// Run: node check-playgrounds.cjs [Playwright module] [report URL]
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
-const browsers=require(process.argv[2]||'playwright'),url=process.argv[3]||'http://127.0.0.1:8892/';
-const trial=JSON.parse(fs.readFileSync(path.join(__dirname,'blender-scene.json')));
-const components=JSON.parse(fs.readFileSync(path.join(__dirname,'components/scene.json')));
-async function check(engine){
-  const browser=await browsers[engine].launch({headless:true,timeout:20000,...(engine==='chromium'?{args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']}: {})});
-  try{
-    const mobile=engine==='webkit',page=await browser.newPage(mobile?{viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:2}:{viewport:{width:1440,height:1000}}),errors=[],missing=[],dialogs=[];
-    page.setDefaultTimeout(10000);await page.emulateMedia({reducedMotion:'reduce'});
-    page.on('pageerror',e=>errors.push(e.message));page.on('dialog',d=>{dialogs.push(d.type());d.dismiss();});
-    page.on('response',r=>{if(r.status()>=400&&!r.url().endsWith('/favicon.ico'))missing.push(r.status()+' '+r.url());});
-    await page.goto(url,{waitUntil:'domcontentloaded',timeout:20000});
-    await page.waitForFunction(()=>document.querySelectorAll('.object-chip').length===10);
-    const completed=[];
-    for(const id of ['generated','observed','blender','components']){
-      await page.locator(`[data-playground="${id}"]`).click();
-      assert.equal(await page.locator('#playground-frame').getAttribute('src'),null,'switching playgrounds must unload the previous viewer');
-      await page.waitForFunction(()=>document.querySelector('#playground-frame').contentWindow.location.href==='about:blank');
-      await page.waitForFunction(()=>{const image=document.querySelector('#playground-preview');return !image.hidden&&image.complete&&image.naturalWidth>0;});
-      const preview=await page.locator('#playground-preview').getAttribute('src');
-      await page.locator('#explore-playground').click();await page.locator('#playground-frame').evaluate(node=>node.scrollIntoView({block:'center',behavior:'instant'}));
-      const frame=await(await page.$('#playground-frame')).contentFrame();
-      assert.equal(await page.locator('#playground-preview').isVisible(),false);
-      if(id==='observed'){
-        await frame.waitForFunction(()=>document.querySelector('canvas')?.dataset.meshLoaded==='true',null,{timeout:60000});
-        assert.equal(await frame.locator('canvas').getAttribute('data-triangles'),'359983');
-        await frame.locator('#views button').first().click();await frame.locator('#compare').click();
-        await frame.locator('#wire').click();
-        assert.equal(await frame.locator('#status').evaluate(el=>el.classList.contains('error')),false);
-        completed.push({id,preview,triangles:359983});
-      }else{
-        const objects=id==='components'?components.objects.length:10;
-        await frame.waitForFunction(count=>Number(document.querySelector('canvas')?.dataset.loadedObjects)===count,objects,{timeout:60000});
-        if(id!=='components')assert.equal(await frame.locator('#selection-overlay').getAttribute('data-object-id'),'','original scenes retain an unselected overview');
-        assert(await frame.locator('header a').evaluateAll(links=>links.length>0&&links.every(a=>a.target==='_top')),'header links must leave the playground iframe');
-        assert.equal(await frame.locator('#blender-report').isVisible(),id!=='components','Blender link must describe this scene');
-        assert.match(await frame.locator('#scene-report').getAttribute('href'),id==='components'?/components\/metrics\.html$/:/\/metrics\.html$/);
-        if(id==='blender'){
-          assert.equal(await frame.locator('#scene-title').textContent(),trial.label);
-          assert.equal(await frame.locator('#scene-description').textContent(),trial.description);
-          assert.equal(await frame.locator('#object-list .badge.parametric').count(),2);
-          assert.equal(await frame.locator('#glb').isVisible(),false,'the Blender trial must not offer the original generated GLB');
-          for(const index of [0,1]){
-            await frame.locator('#object-list .object-row button').nth(index).click();
-            assert.match(await frame.locator('#provenance').textContent(),/参数化资产.*Blender/);
-            assert.match(await frame.locator('#metrics-caption').textContent(),/参数化圆柱/);
-            assert.equal((await frame.locator('#metrics').textContent()).includes('generated_refined'),false,'parameterized posts must not inherit RecGen pose metrics');
-            assert.match(await frame.locator('#metrics-link').getAttribute('href'),/metrics\.html#blender$/);
-          }
-        }else if(id==='components'){
-          await frame.waitForFunction(()=>document.getElementById('canvas').dataset.sceneReady==='true',null,{timeout:60000});
-          assert.equal(await frame.locator('#selection-overlay').getAttribute('data-object-id'),'','gallery opens the whole workcell');
-          assert.equal(await frame.locator('#view-mode').inputValue(),'free');assert(await frame.locator('#photo-overlay').isHidden());assert(await frame.locator('#all-bounds').isChecked());
-          assert.equal(await frame.locator('#scene-title').textContent(),components.label);
-          assert.equal(await frame.locator('#scene-description').textContent(),components.description);
-          assert.equal(await frame.locator('#object-list .badge.generated').count(),2);
-          assert.equal(await frame.locator('#object-list .badge.observed').count(),components.observed_regions.length);
-          const selectable=components.objects.filter(o=>o.selectable!==false);
-          assert.equal(await frame.locator('#object-list .object-row button').count(),selectable.length+components.observed_regions.length);
-          const currentFrame=components.cameras[0].id,observed=components.observed_regions.filter(o=>o.reference_frame===currentFrame);
-          assert.equal(await frame.locator('#object-list .object-row:visible').count(),selectable.length+observed.length);
-          assert((await frame.locator('[data-region-bound]').count())>12,'3D overview shows bounds for multiple objects');
-          const robot=observed.find(o=>/robot/i.test(o.label));assert(robot);
-          await frame.locator('#object-list .object-row button').nth(selectable.length+components.observed_regions.indexOf(robot)).click();
-          assert.equal(await frame.locator('#selection-overlay').getAttribute('data-object-id'),robot.id);assert(await frame.locator('#fields').isHidden());
-          await frame.locator('#view-mode').selectOption('photo');assert(await frame.locator('#photo-overlay').isVisible());assert.equal(await frame.locator('#selection-overlay').getAttribute('data-object-id'),robot.id);
-          for(let i=0;i<selectable.length;i++){await frame.locator('#object-list .object-row button').nth(i).click();assert.equal(await frame.locator('#selection-overlay').getAttribute('data-object-id'),selectable[i].id);assert.equal(await frame.locator('[data-bbox-edge]').count(),12);assert.equal(await frame.locator('[data-axis]').count(),3);}
-        }else{assert.equal(await frame.locator('#scene-title').textContent(),'工位 · 对象场景编辑');assert.equal(await frame.locator('#glb').isVisible(),true);}
-        await frame.locator('#object-list .object-row button').nth(id==='components'?0:3).click();
-        assert.match(await frame.locator('#metrics').textContent(),/generated_refined/,'generated objects preserve their measured comparison record');
-        assert.match(await frame.locator('#metrics-link').getAttribute('href'),/metrics\.html$/);
-        const x=frame.locator('#position-0'),before=await x.inputValue();await x.press('ArrowUp');assert.notEqual(await x.inputValue(),before);
-        // Leave this transform dirty: switching or closing must tear down the framed editor, without a hidden cancelled navigation.
-        completed.push({id,preview,objects,parametric:id==='blender'?2:0});
-      }
-    }
-    await page.locator('#playground-close').click();
-    await page.waitForFunction(()=>document.querySelector('#playground-frame').contentWindow.location.href==='about:blank');
-    assert.equal(await page.locator('#playground-frame').getAttribute('src'),null);assert.equal(await page.locator('#explore-playground').isVisible(),true);
-    const sizes=await page.evaluate(()=>[document.documentElement.scrollWidth,document.documentElement.clientWidth]);assert(sizes[0]<=sizes[1]+1,'gallery causes horizontal page overflow');
-    assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);assert.deepEqual(dialogs,[],'switching or closing an edited playground must not open a native dialog');
-    console.log(JSON.stringify({engine,mobile,playgrounds:completed,unloads_dirty_edits_on_switch:true,dialogs:dialogs.length,passed:true}));
-  }finally{await browser.close();}
-}
-(async()=>{let failed=false;for(const engine of (process.env.ENGINES||'webkit,chromium').split(',')){try{await check(engine);}catch(e){failed=true;console.error(engine+': '+e.stack);}}if(failed)process.exitCode=1;})();
+const browsers=require(process.argv[2]||'playwright'),url=process.argv[3]||'http://127.0.0.1:8896/panoptes-workcell-report/';
+const read=name=>JSON.parse(fs.readFileSync(path.join(__dirname,name))),workcell=read('workcell-scene.json'),components=read('components/scene.json'),base=read('blender-ranges-scene.json');
+async function check(engine){const browser=await browsers[engine].launch({headless:true,timeout:20000,...(engine==='chromium'?{args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']}: {})});let page,stage='open';try{
+ const mobile=engine==='webkit';page=await browser.newPage(mobile?{viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:2}:{viewport:{width:1440,height:1000}});const errors=[],missing=[],dialogs=[];page.setDefaultTimeout(10000);await page.emulateMedia({reducedMotion:'reduce'});page.on('pageerror',e=>errors.push(e.message));page.on('dialog',d=>{dialogs.push(d.type());d.dismiss();});page.on('response',r=>{if(r.status()>=400&&!r.url().endsWith('/favicon.ico'))missing.push(r.status()+' '+r.url());});
+ await page.goto(url,{waitUntil:'domcontentloaded',timeout:30000});await page.locator('.object-chip').first().waitFor();assert.deepEqual(await page.locator('[data-playground]').evaluateAll(nodes=>nodes.map(n=>n.dataset.playground)),['blender','observed','components'],'one workcell card replaces duplicate generated/Blender entries');assert.equal(await page.locator('[data-playground][aria-pressed=true]').getAttribute('data-playground'),'blender');const completed=[];
+ for(const id of ['blender','observed','components']){stage=id;await page.locator('[data-playground="'+id+'"]').click();assert.equal(await page.locator('#playground-frame').getAttribute('src'),null);await page.waitForFunction(()=>document.getElementById('playground-frame').contentWindow.location.href==='about:blank');await page.waitForFunction(()=>{const image=document.getElementById('playground-preview');return !image.hidden&&image.complete&&image.naturalWidth>0;});const preview=await page.locator('#playground-preview').getAttribute('src');if(id==='blender')assert.match(await page.locator('#playground-open').getAttribute('href'),/workcell-scene\.json/);await page.locator('#explore-playground').click();await page.locator('#playground-frame').scrollIntoViewIfNeeded();const frame=await(await page.locator('#playground-frame').elementHandle()).contentFrame();assert(await page.locator('#playground-preview').isHidden());
+  if(id==='observed'){await frame.locator('canvas[data-mesh-loaded=true]').waitFor({timeout:60000});assert.equal(await frame.locator('canvas').getAttribute('data-triangles'),'359983');await frame.locator('#views button').first().click();await frame.locator('#compare').click();await frame.locator('#wire').click();assert.equal(await frame.locator('#status').evaluate(el=>el.classList.contains('error')),false);completed.push({id,preview,triangles:359983});continue;}
+  const scene=id==='blender'?workcell:components,selectable=scene.objects.filter(o=>o.selectable!==false);await frame.waitForFunction(()=>document.getElementById('canvas')?.dataset.sceneReady==='true'||document.getElementById('status')?.classList.contains('error'),null,{timeout:90000});assert.equal(await frame.locator('#canvas').getAttribute('data-scene-ready'),'true',await frame.locator('#status').textContent());assert.equal(Number(await frame.locator('#canvas').getAttribute('data-loaded-objects')),scene.objects.length);assert.equal(await frame.locator('#object-list .object-row').count(),selectable.length+(scene.observed_regions?.length||0));assert.equal(await frame.locator('#selection-overlay').getAttribute('data-object-id'),'','gallery opens the whole workcell');assert.equal(await frame.locator('#view-mode').inputValue(),'free');assert(await frame.locator('#photo-overlay').isHidden());assert.equal(await frame.locator('#all-bounds').isChecked(),id!=='blender','supplementary ranges are opt-in; the default workcell remains legible');assert.equal(await frame.locator('#scene-title').textContent(),scene.label);assert.equal(await frame.locator('#scene-description').textContent(),scene.description);assert(await frame.locator('header a').evaluateAll(links=>links.every(a=>a.target==='_top')));assert.equal(await frame.locator('#blender-report').isVisible(),!!scene.provenance?.source_blend);assert.equal(await frame.locator('#glb').isVisible(),!!scene.glb_asset);
+  const choose=async id=>{const index=await frame.evaluate(id=>lucidaViewer.scene.objects.filter(o=>o.selectable!==false).findIndex(o=>o.id===id),id);assert(index>=0);await frame.locator('#object-list .object-row button').nth(index).click();await frame.locator('#selection-overlay[data-object-id="'+id+'"]').waitFor();};
+  if(id==='blender'){
+   // Observe actual forwarded draw calls: supplemental context must not replace any original full mesh or the original floor.
+   const drawCounts=await frame.evaluate(()=>{const gl=document.getElementById('canvas').getContext('webgl'),original=gl.drawElements,counts=[];gl.drawElements=function(...args){counts.push(args[1]);return original.apply(this,args);};try{lucidaViewer.draw();return counts;}finally{gl.drawElements=original;}}),contextId=await frame.locator('#canvas').getAttribute('data-context-id'),context=scene.objects.find(o=>o.id===contextId);assert(context?.supplemental);assert.deepEqual(drawCounts.sort((a,b)=>a-b),[...base.objects.map(o=>o.mesh.index_count),context.mesh.index_count].sort((a,b)=>a-b),'full workcell meshes and active supplementary context must be drawn together');
+   assert.equal(await frame.locator('#object-list .badge.parametric').count(),base.objects.filter(o=>o.source==='parametric').length);for(const post of base.objects.filter(o=>o.source==='parametric')){await choose(post.id);assert.match(await frame.locator('#provenance').textContent(),/参数化资产.*Blender/);assert.equal((await frame.locator('#metrics').textContent()).includes('generated_refined'),false);assert.match(await frame.locator('#metrics-link').getAttribute('href'),/metrics\.html#blender$/);}
+   const button='object_f595a5e6891b7fbc1b28c5dc';await frame.locator('#camera').selectOption('frame_0003');await choose(button);assert(await frame.locator('#fields').isHidden());assert.equal(await frame.locator('[data-bbox-edge]').count(),12);assert.equal(await frame.locator('[data-axis]').count(),3);
+  }else{assert.equal(await frame.locator('#object-list .badge.generated').count(),scene.objects.filter(o=>o.source==='generated'&&o.selectable!==false).length);const robot=scene.observed_regions.find(o=>/robot/i.test(o.label));assert(robot);await frame.locator('#camera').selectOption(robot.reference_frame);await choose(robot.id);assert(await frame.locator('#fields').isHidden());assert.equal(await frame.locator('[data-axis]').count(),3);}
+  const editable=scene.objects.find(o=>o.source==='generated'&&o.editable!==false);assert(editable);await frame.locator('#camera').selectOption(editable.reference_frame||editable.frame_ids[0]);await choose(editable.id);assert.match(await frame.locator('#metrics').textContent(),/generated_refined/);const x=frame.locator('#position-0'),before=await x.inputValue();await x.press('ArrowUp');await x.press('Tab');assert.notEqual(await x.inputValue(),before);completed.push({id,preview,meshes:scene.objects.length,regions:scene.observed_regions?.length||0});
+ }
+ stage='close dirty scene';await page.locator('#playground-close').click();await page.waitForFunction(()=>document.getElementById('playground-frame').contentWindow.location.href==='about:blank');assert.equal(await page.locator('#playground-frame').getAttribute('src'),null);assert(await page.locator('#explore-playground').isVisible());const sizes=await page.evaluate(()=>[document.documentElement.scrollWidth,document.documentElement.clientWidth]);assert(sizes[0]<=sizes[1]+1);assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);assert.deepEqual(dialogs,[]);console.log(JSON.stringify({engine,mobile,playgrounds:completed,unloadsDirtyEdits:true,originalWorkcellPreserved:true,passed:true}));
+ }catch(error){console.error(JSON.stringify({engine,stage}));if(page)await page.screenshot({path:'/tmp/panoptes-playgrounds-'+engine+'-failure.png'}).catch(()=>{});throw error;}finally{await browser.close();}}
+(async()=>{let failed=false;for(const engine of(process.env.ENGINES||'webkit,chromium').split(',')){try{await check(engine);}catch(error){failed=true;console.error(engine+': '+error.stack);}}if(failed)process.exitCode=1;})();

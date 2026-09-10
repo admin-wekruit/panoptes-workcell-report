@@ -19,7 +19,7 @@ async function check(engine){
   const apiOrigin='https://panoptes-i18n-check.example.invalid',history=[
    {run_id:'user-bor1-02',title:'BOR1 · 原图工位报告',phase:'done',image_count:3,report_url:'/reports/user-bor1-02'},
    {run_id:'bor1-components-20260909',title:'BOR1 · Components',phase:'done',image_count:4,report_url:'/reports/bor1-components-20260909'}];
-  await page.route('**/site-config.js',route=>route.fulfill({contentType:'application/javascript',body:'window.panoptesSiteConfig='+JSON.stringify({apiOrigin,siteRoot:base,workspaceRoot:base+'reports.html',workspaceAssets:base+'workspace-assets/'})+';'}));
+  await page.route('**/site-config.js*',route=>route.fulfill({contentType:'application/javascript',body:'window.panoptesSiteConfig='+JSON.stringify({apiOrigin,siteRoot:base,workspaceRoot:base+'reports.html',workspaceAssets:base+'workspace-assets/'})+';'}));
   await page.route(apiOrigin+'/**',route=>{
    const pathname=new URL(route.request().url()).pathname,headers={'Access-Control-Allow-Origin':new URL(base).origin};
    if(pathname==='/api/session')return route.fulfill({headers,json:{can_write:false,requires_access:true}});
@@ -53,7 +53,7 @@ async function check(engine){
   assert.equal(await text(page,'h1'),'现场证据，与三维场景一起看。');
   const source=await page.evaluate(()=>JSON.stringify(panoptesReport.state.data));
   const evidence=await page.locator('#findings [data-i18n-ignore],#legacy-inventory [data-i18n-ignore]').allTextContents();
-  await lang(page,'en');await hasText(page,'h1','See site evidence');await hasText(page,'#counts','10 scene objects / 37');
+  await lang(page,'en');await hasText(page,'h1','See site evidence');const counts=await page.evaluate(()=>{const d=panoptesReport.state.data,n=d.objects.filter(o=>o.source_record).length;return `${d.objects.length-n} scene objects · ${n} photo detections / ${d.legacy.inventory.length} original detection records`;});await hasText(page,'#counts',counts);
   assert.equal(await page.locator('a[href="reports.html"]').textContent(),'Report history');
   await page.evaluate(()=>{const raw=document.createElement('p');raw.id='original-user-text';raw.dataset.i18nIgnore='';raw.textContent='原图对照';document.body.append(raw);});
   assert.equal(await text(page,'#original-user-text'),'原图对照','user content must stay verbatim');
@@ -61,7 +61,7 @@ async function check(engine){
   await hasText(page,'#legacy-hud-check','600,000 points');await hasText(page,'#legacy-hud-check','2 selected');assert.equal(await text(page,'#original-raw-evidence'),'全选');
   await page.locator('#workspace').scrollIntoViewIfNeeded();await page.locator('#model-viewer').scrollIntoViewIfNeeded();
   const child=await page.locator('#model-viewer').elementHandle().then(handle=>handle.contentFrame());
-  await child.waitForFunction(()=>window.lucidaViewer&&document.getElementById('canvas').dataset.loadedObjects==='10',null,{timeout:60000});
+  await child.waitForFunction(()=>window.lucidaViewer&&document.getElementById('canvas').dataset.sceneReady==='true'&&Number(document.getElementById('canvas').dataset.loadedObjects)===lucidaViewer.original.objects.length,null,{timeout:60000});
   assert.equal(await child.locator('html').getAttribute('lang'),'en');
   await hasText(child,'#status','Scene fully loaded.');
   await page.evaluate(()=>panoptesReport.selectObject('robot'));await hasText(page,'#selected-name','Industrial robot');

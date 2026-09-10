@@ -1,78 +1,35 @@
-// Run with the report server running: node check-unified-report.cjs [Playwright module] [URL]
+// Run: node check-unified-report.cjs [Playwright module] [report URL]
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
-const playwright=require(process.argv[2]||'playwright'),url=process.argv[3]||'http://127.0.0.1:8892/';
-const data=JSON.parse(fs.readFileSync(path.join(__dirname,'unified-data.json'))),ids=data.objects.map(o=>o.id);
-const mappings={left_post:[15,21],right_post:[16,22],right_fence:[13,19]};
-assert.deepEqual(Object.fromEntries(data.objects.filter(o=>o.inventory_indices.length).map(o=>[o.id,o.inventory_indices])),mappings,'preserve the six verified legacy correspondences');
-async function run(engine){
-  const browser=await playwright[engine].launch({headless:true,timeout:20000,...(engine==='chromium'?{args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']}: {})});
-  try{
-    const mobile=engine==='webkit',page=await browser.newPage(mobile?{viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:2}:{viewport:{width:1440,height:1000}}),errors=[],badResponses=[];
-    await page.emulateMedia({reducedMotion:'reduce'});
-    page.setDefaultTimeout(7000);
-    page.on('pageerror',e=>errors.push(e.message));page.on('response',response=>{if(response.status()>=400&&!response.url().endsWith('/favicon.ico'))badResponses.push(response.status()+' '+response.url());});
-    await page.addInitScript(()=>{window.integrationEvents=[];addEventListener('panoptes-selection',e=>integrationEvents.push(e.detail));});
-    await page.goto(url,{waitUntil:'domcontentloaded',timeout:20000});
-    await page.waitForFunction(()=>document.querySelectorAll('.object-chip').length===10,null,{timeout:20000});
-    await page.locator('#workspace').scrollIntoViewIfNeeded();
-    await page.locator('#model-viewer').scrollIntoViewIfNeeded();
-    await page.waitForFunction(()=>document.querySelector('#model-viewer')?.contentDocument?.querySelectorAll('.object-row').length===10,null,{timeout:20000});
-    const child=page.frames().find(f=>f.url().includes('/viewer.html'));
-    assert(child,'3D viewer iframe initialized');
-    assert.equal(await page.locator('#legacy-inventory tbody tr').count(),37);assert.equal(await page.locator('#findings .finding').count(),9);
-    async function selection(id){
-      await page.waitForFunction(({id,index})=>{
-        const selected=selector=>document.querySelector(selector)?.closest('[data-object-id]')?.dataset.objectId||null;
-        const doc=document.querySelector('#model-viewer').contentDocument,rows=[...doc.querySelectorAll('.object-row')];
-        return selected('.object-chip[aria-pressed="true"]')===id&&selected('#photo-view .selected')===id&&selected('#cad-view .selected')===id&&selected('#plan-view .selected')===id&&rows.findIndex(row=>row.classList.contains('active'))===index;
-      },{id,index:id===null?-1:ids.indexOf(id)},{timeout:7000});
-    }
-    async function camera(frameId){
-      await page.waitForFunction(id=>document.querySelector('#photo-select').value===id&&document.querySelector('#model-viewer').contentDocument.querySelector('#camera').value===id,frameId,{timeout:7000});
-      const frame=data.frames.find(f=>f.id===frameId);assert.match(await page.locator('#photo-caption').textContent(),new RegExp(frame.label));
-    }
-    await page.locator('#photo-select').selectOption('frame_0003');await camera('frame_0003');
-    // All ten objects must be selectable from each of the three SVG panels, with the fourth view following.
-    for(const panel of ['photo-view','cad-view','plan-view'])for(const id of ids){
-      await page.locator(`#${panel} [data-object-id="${id}"]`).press('Enter');await selection(id);
-    }
-    for(const frame of data.frames){await page.locator('#photo-select').selectOption(frame.id);await camera(frame.id);}
-    for(const frame of data.frames){await child.locator('#camera').selectOption(frame.id);await camera(frame.id);}
-    for(const choice of ['top','overview']){await child.locator('#camera').selectOption(choice);assert.equal(await page.locator('#photo-select').inputValue(),'frame_0003');}
-    // Selecting an object absent from the current photo automatically switches both photo and 3D camera.
-    for(const [frameId,id] of [['frame_0002','right_fence'],['frame_0001','left_fence'],['frame_0002','observed_floor']]){
-      await page.locator('#photo-select').selectOption(frameId);await camera(frameId);
-      await page.locator(`#cad-view [data-object-id="${id}"]`).press('Enter');await selection(id);await camera('frame_0003');
-    }
-    await page.locator('.inventory-details>summary').click();
-    for(const [id,invs] of Object.entries(mappings))for(const inv of invs){
-      await page.locator(`#legacy-cad [data-inv="${inv}"]`).press('Enter');await selection(id);
-      assert.deepEqual(await page.locator('#legacy-inventory tr.active').evaluateAll(rows=>rows.map(row=>Number(row.dataset.inv)).sort((a,b)=>a-b)),invs);
-      await page.getByRole('button',{name:'选择检测记录'+inv,exact:true}).click();await selection(id);
-    }
-    await page.locator('#legacy-cad [data-inv="0"]').press('Enter');await selection(null);
-    assert.deepEqual(await page.locator('#legacy-cad .selected').evaluateAll(nodes=>nodes.map(node=>Number(node.dataset.inv))),[0]);
-    await page.getByRole('button',{name:'选择检测记录15',exact:true}).click();await selection('left_post');
-    await page.getByRole('button',{name:'选择检测记录5',exact:true}).click();await selection(null);
-    assert.deepEqual(await page.locator('#legacy-inventory tr.active').evaluateAll(rows=>rows.map(row=>Number(row.dataset.inv))),[5]);
-    assert.equal(await page.locator('#legacy-cad .selected').count(),0,'an unmapped inventory item must not retain a prior CAD highlight');
-    assert.match(await page.locator('#legacy-cad-note').textContent(),/#5.*没有可靠/);
-    await page.locator('#model-viewer').scrollIntoViewIfNeeded();
-    await child.waitForFunction(()=>document.querySelector('canvas').dataset.loadedObjects==='10',null,{timeout:60000});
-    await child.locator('#camera').selectOption('overview');
-    const canvas=child.locator('canvas');await canvas.scrollIntoViewIfNeeded();const box=await canvas.boundingBox();let picked=null;
-    await page.evaluate(()=>integrationEvents=[]);
-    for(const y of [.5,.35,.65,.2,.8]){for(const x of [.5,.35,.65,.2,.8]){
-      await canvas.click({position:{x:box.width*x,y:box.height*y}});
-      picked=await page.evaluate(()=>integrationEvents.find(e=>e.source==='3d'&&e.objectId)?.objectId||null);
-      if(picked)break;
-    }if(picked)break;}
-    assert(ids.includes(picked),'a real 3D ray pick must reach the report');await selection(picked);
-    const size=await page.evaluate(()=>({width:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth}));
-    assert(size.scrollWidth<=size.width+1,'page has horizontal overflow: '+JSON.stringify(size));
-    assert.deepEqual(errors,[],'uncaught browser errors');assert.deepEqual(badResponses,[],'missing public report assets');
-    await page.locator('#workspace').screenshot({path:'/tmp/panoptes-unified-'+engine+'.png'});
-    console.log(JSON.stringify({engine,mobile,objects:ids.length,svg_selection_paths:ids.length*3,legacy_inventory:37,findings:9,verified_legacy_ids:Object.values(mappings).flat(),real_3d_pick:picked,horizontal_overflow:size.scrollWidth-size.width,passed:true}));
-  }finally{await browser.close();}
+const playwright=require(process.argv[2]||'playwright'),url=process.argv[3]||'http://127.0.0.1:8896/panoptes-workcell-report/';
+const read=name=>JSON.parse(fs.readFileSync(path.join(__dirname,name))),data=read('workcell-data.json'),scene=read('workcell-scene.json'),baseline=read('unified-data.json'),ids=data.objects.map(o=>o.id),spatialIds=new Set([...scene.objects.filter(o=>o.selectable!==false),...(scene.observed_regions||[])].map(o=>o.id));
+const missingButton='object_f595a5e6891b7fbc1b28c5dc',target=data.objects.find(o=>o.id===missingButton),mappings={left_post:[15,21],right_post:[16,22],right_fence:[13,19]};
+assert(target,'the circled button must be included in the main report data');assert(target.views.some(v=>v.frame_id==='frame_0003'));assert.deepEqual(data.legacy,baseline.legacy,'saved inspection evidence must remain unchanged');
+for(const [id,invs]of Object.entries(mappings))assert.deepEqual(data.objects.find(o=>o.id===id).inventory_indices,invs,'preserve verified legacy correspondence '+id);
+for(const original of baseline.objects)assert(data.objects.some(o=>o.id===original.id),'retain original workcell object '+original.id);
+async function pickFreeButton(page,child){
+ await child.locator('#camera').selectOption('frame_0003');await child.locator('#view-mode').selectOption('free');await child.locator('#all-bounds').uncheck();const canvas=child.locator('#canvas');await canvas.scrollIntoViewIfNeeded();
+ const box=await child.evaluate(()=>{const c=document.getElementById('canvas').getBoundingClientRect(),svg=document.getElementById('selection-overlay'),M=svg.getScreenCTM(),points=[...svg.querySelectorAll('[data-bbox-edge]')].flatMap(l=>[new DOMPoint(+l.getAttribute('x1'),+l.getAttribute('y1')),new DOMPoint(+l.getAttribute('x2'),+l.getAttribute('y2'))]).map(p=>p.matrixTransform(M));return{left:Math.min(...points.map(p=>p.x))-c.left,top:Math.min(...points.map(p=>p.y))-c.top,right:Math.max(...points.map(p=>p.x))-c.left,bottom:Math.max(...points.map(p=>p.y))-c.top,width:c.width,height:c.height};});
+ await child.evaluate(()=>lucidaViewer.selectObject(lucidaViewer.scene.objects.findIndex(o=>o.id==='robot')));await page.waitForFunction(()=>document.querySelector('.object-chip[aria-pressed=true]')?.dataset.objectId==='robot');
+ await child.evaluate(()=>{const gl=document.getElementById('canvas').getContext('webgl');window.savedReadPixels=gl.readPixels;window.gpuReads=0;gl.readPixels=function(...args){gpuReads++;return savedReadPixels.apply(this,args);};});await page.evaluate(()=>integrationEvents=[]);
+ const fractions=[[.5,.5],...[.3,.4,.5,.6,.7].flatMap(y=>[.3,.4,.5,.6,.7].map(x=>[x,y]))];let picked=null,tries=0,position,reads=0;
+ try{for(const [x,y]of fractions){position={x:box.left+(box.right-box.left)*x,y:box.top+(box.bottom-box.top)*y};assert(position.x>0&&position.x<box.width&&position.y>0&&position.y<box.height);await canvas.click({position});tries++;picked=await page.evaluate(()=>integrationEvents.filter(e=>e.source==='3d').at(-1)?.objectId);if(picked===missingButton)break;}}finally{reads=await child.evaluate(()=>{const gl=document.getElementById('canvas').getContext('webgl');gl.readPixels=savedReadPixels;return gpuReads;});}
+ assert.equal(picked,missingButton,'Free 3D must GPU-pick the circled button, not another region');assert(reads>0);assert.equal(await child.locator('#view-mode').inputValue(),'free');return{box,position,tries,picked,gpuReadPixels:reads};
 }
-(async()=>{let failed=false;for(const engine of (process.env.ENGINES||'webkit,chromium').split(',')){try{await run(engine);}catch(error){failed=true;console.error(engine+': '+error.stack);}}if(failed)process.exitCode=1;})();
+async function run(engine){
+ const browser=await playwright[engine].launch({headless:true,timeout:20000,...(engine==='chromium'?{args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']}: {})});let page,stage='open';
+ try{
+  const mobile=engine==='webkit';page=await browser.newPage(mobile?{viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:2}:{viewport:{width:1440,height:1000}});const errors=[],badResponses=[];page.setDefaultTimeout(10000);await page.emulateMedia({reducedMotion:'reduce'});page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400&&!r.url().endsWith('/favicon.ico'))badResponses.push(r.status()+' '+r.url());});await page.addInitScript(()=>{window.integrationEvents=[];addEventListener('panoptes-selection',e=>integrationEvents.push(e.detail));});
+  await page.goto(url,{waitUntil:'domcontentloaded',timeout:30000});await page.waitForFunction(n=>document.querySelectorAll('.object-chip').length===n,ids.length);assert.match(await page.locator('#model-viewer').getAttribute('src'),/workcell-scene\.json/);await page.locator('#model-viewer').scrollIntoViewIfNeeded();const child=await(await page.locator('#model-viewer').elementHandle()).contentFrame();stage='full scene';await child.waitForFunction(()=>document.getElementById('canvas')?.dataset.sceneReady==='true'||document.getElementById('status')?.classList.contains('error'),null,{timeout:90000});assert.equal(await child.locator('#canvas').getAttribute('data-scene-ready'),'true',await child.locator('#status').textContent());assert.equal(await child.locator('.object-row').count(),spatialIds.size);assert.equal(await page.locator('#legacy-inventory tbody tr').count(),data.legacy.inventory.length);assert.equal(await page.locator('#findings .finding').count(),data.legacy.findings.length);
+  async function selection(id){const o=data.objects.find(o=>o.id===id);await page.waitForFunction(({id,plan,spatial})=>{const selected=selector=>document.querySelector(selector)?.closest('[data-object-id]')?.dataset.objectId||null,doc=document.querySelector('#model-viewer').contentDocument;return selected('.object-chip[aria-pressed="true"]')===id&&selected('#photo-view .selected')===id&&selected('#cad-view .selected')===(plan?id:null)&&selected('#plan-view .selected')===(plan?id:null)&&(doc.querySelector('#selection-overlay')?.dataset.objectId||null)===(spatial?id:null);},{id,plan:!!o?.plan,spatial:spatialIds.has(id)},{timeout:10000});}
+  async function camera(id){await page.waitForFunction(id=>document.querySelector('#photo-select').value===id&&document.querySelector('#model-viewer').contentDocument.querySelector('#camera').value===id,id);}
+  stage='missing button real photo click';await page.locator('#photo-select').selectOption('frame_0003');await camera('frame_0003');await page.locator('#photo-view').scrollIntoViewIfNeeded();
+  const photoPoint=await page.locator('#photo-view').evaluate((svg,id)=>{const node=svg.querySelector('[data-object-id="'+id+'"]'),b=node.getBBox(),M=svg.getScreenCTM();const candidates=[];for(let y=b.y+.5;y<b.y+b.height;y++)for(let x=b.x+.5;x<b.x+b.width;x++)candidates.push({x,y,d:(x-b.x-b.width/2)**2+(y-b.y-b.height/2)**2});for(const {x,y}of candidates.sort((a,b)=>a.d-b.d)){if(!node.isPointInFill(new DOMPoint(x,y)))continue;const p=new DOMPoint(x,y).matrixTransform(M);if([[0,0],[-1,0],[1,0],[0,-1],[0,1]].every(([dx,dy])=>document.elementFromPoint(p.x+dx,p.y+dy)?.closest('[data-object-id]')?.dataset.objectId===id))return{x,y,screenX:p.x,screenY:p.y};}return null;},missingButton);assert(photoPoint,'the circled button must have a genuinely clickable source-photo mask');await page.mouse.click(photoPoint.screenX,photoPoint.screenY);await selection(missingButton);
+  let keyboardPaths=0;stage='all available keyboard paths';for(const o of data.objects){if(!o.views.some(v=>v.polygons?.length))continue;await page.locator('.object-chip[data-object-id="'+o.id+'"]').press('Enter');await selection(o.id);await page.locator('#photo-view [data-object-id="'+o.id+'"]').press('Enter');await selection(o.id);keyboardPaths++;if(o.plan)for(const panel of ['cad-view','plan-view']){await page.locator('#'+panel+' [data-object-id="'+o.id+'"]').press('Enter');await selection(o.id);keyboardPaths++;}else{assert.equal(await page.locator('#cad-view .selected,#plan-view .selected').count(),0,'unsupported plans must clear earlier highlights');}}
+  stage='camera bridge';for(const frame of data.frames){await page.locator('#photo-select').selectOption(frame.id);await camera(frame.id);await child.locator('#camera').selectOption(frame.id);await camera(frame.id);}const lastPhoto=await page.locator('#photo-select').inputValue();for(const choice of ['top','overview']){await child.locator('#camera').selectOption(choice);assert.equal(await page.locator('#photo-select').inputValue(),lastPhoto);}
+  stage='legacy evidence mapping';await page.locator('.inventory-details>summary').click();for(const [id,invs]of Object.entries(mappings))for(const inv of invs){await page.locator('#legacy-cad [data-inv="'+inv+'"]').press('Enter');await selection(id);assert.deepEqual(await page.locator('#legacy-inventory tr.active').evaluateAll(rows=>rows.map(row=>Number(row.dataset.inv)).sort((a,b)=>a-b)),invs);await page.getByRole('button',{name:'选择检测记录'+inv,exact:true}).click();await selection(id);}
+  const unmapped=data.legacy.inventory.find(i=>!data.objects.some(o=>o.inventory_indices.includes(i.inv)));if(unmapped){await page.getByRole('button',{name:'选择检测记录'+unmapped.inv,exact:true}).click();await selection(null);assert.deepEqual(await page.locator('#legacy-inventory tr.active').evaluateAll(rows=>rows.map(row=>Number(row.dataset.inv))),[unmapped.inv]);}
+  stage='actual source-photo canvas pick';await page.locator('.object-chip[data-object-id="'+missingButton+'"]').press('Enter');await selection(missingButton);await child.locator('#camera').selectOption('frame_0003');await child.locator('#view-mode').selectOption('photo');await page.locator('#model-viewer').scrollIntoViewIfNeeded();const canvas=child.locator('#canvas');await canvas.scrollIntoViewIfNeeded();const rect=await canvas.boundingBox(),frame=data.frames.find(f=>f.id==='frame_0003');await child.locator('#all-bounds').uncheck();await page.evaluate(()=>integrationEvents=[]);let picked=null;const sourceCamera=scene.cameras.find(c=>c.id===frame.id),A=sourceCamera.input_to_canonical_pixel_centres,toCanvas=(x,y)=>sourceCamera.original_width?[( (x-A[0][2])/A[0][0]+.5)/sourceCamera.original_width,((y-A[1][2])/A[1][1]+.5)/sourceCamera.original_height]:[(x+.5)/frame.width,(y+.5)/frame.height],box=target.views.find(v=>v.frame_id===frame.id).bbox,points=[toCanvas(photoPoint.x,photoPoint.y),...[.3,.5,.7].flatMap(y=>[.3,.5,.7].map(x=>toCanvas(box[0]+(box[2]-box[0])*x,box[1]+(box[3]-box[1])*y)))];for(const [x,y]of points){await canvas.click({position:{x:rect.width*x,y:rect.height*y}});picked=await page.evaluate(()=>integrationEvents.filter(e=>e.source==='3d'&&e.objectId).at(-1)?.objectId||null);if(picked===missingButton)break;}assert.equal(picked,missingButton,'the source-photo canvas must pick the circled button and reach the same report ID');await selection(picked);const photoCanvasPick=picked;stage='actual Free 3D GPU pick';const freePick=await pickFreeButton(page,child);picked=freePick.picked;await selection(picked);
+  stage='language and mobile';await page.locator('.object-chip[data-object-id="'+missingButton+'"]').press('Enter');await selection(missingButton);await page.selectOption('[data-language-select]','en');await selection(missingButton);await page.waitForFunction(()=>document.documentElement.lang==='en');await child.waitForFunction(()=>document.documentElement.lang==='en');await page.selectOption('[data-language-select]','zh');await selection(missingButton);const size=await page.evaluate(()=>({width:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth}));assert(size.scrollWidth<=size.width+1,'horizontal overflow');assert.deepEqual(errors,[]);assert.deepEqual(badResponses,[]);await page.locator('#workspace').screenshot({path:'/tmp/panoptes-unified-'+engine+'.png'});stage='nullable plan fixture';const noPlan=structuredClone(data);noPlan.objects.find(o=>o.id===missingButton).plan=null;await page.route('**/workcell-data.json',route=>route.fulfill({json:noPlan}));await page.reload({waitUntil:'domcontentloaded'});await page.locator('.object-chip[data-object-id="'+missingButton+'"]').press('Enter');await page.waitForFunction(id=>document.querySelector('.object-chip[aria-pressed=true]')?.dataset.objectId===id,missingButton);assert.equal(await page.locator('#cad-view .selected,#plan-view .selected').count(),0);assert((await page.locator('#cad-view').textContent()).includes('没有可靠平面范围'));assert((await page.locator('#plan-view').textContent()).includes('没有可靠平面范围'));assert.equal(await page.locator('#photo-view .selected').getAttribute('data-object-id'),missingButton);assert.deepEqual(errors,[]);assert.deepEqual(badResponses,[]);console.log(JSON.stringify({engine,mobile,objects:ids.length,spatialObjects:spatialIds.size,keyboardPaths,missingButton,photoPoint,photoCanvasPick,free3dRegionPick:picked,gpuReadPixels:freePick.gpuReadPixels,freePickAttempts:freePick.tries,nullablePlans:data.objects.filter(o=>!o.plan).length,nullablePlanFixture:true,legacyInventory:data.legacy.inventory.length,findings:data.legacy.findings.length,passed:true}));
+ }catch(error){console.error(JSON.stringify({engine,stage,selection:page?await page.evaluate(()=>{const selected=s=>[...document.querySelectorAll(s)].map(n=>n.closest('[data-object-id]')?.dataset.objectId);return{state:panoptesReport?.state.selected,chip:selected('.object-chip[aria-pressed=true]'),photo:selected('#photo-view .selected'),cad:selected('#cad-view .selected'),plan:selected('#plan-view .selected'),viewer:document.getElementById('model-viewer').contentDocument?.getElementById('selection-overlay')?.dataset.objectId,events:integrationEvents.slice(-5)};}).catch(()=>null):null}));if(page)await page.screenshot({path:'/tmp/panoptes-unified-'+engine+'-failure.png'}).catch(()=>{});throw error;}finally{await browser.close();}
+}
+(async()=>{let failed=false;for(const engine of(process.env.ENGINES||'webkit,chromium').split(',')){try{await run(engine);}catch(error){failed=true;console.error(engine+': '+error.stack);}}if(failed)process.exitCode=1;})();

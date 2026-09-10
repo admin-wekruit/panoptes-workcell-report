@@ -1,5 +1,32 @@
 // Hand-authored interface and report commentary. Original findings, evidence and user text remain verbatim.
 window.panoptesTranslations=Object.fromEntries(String.raw`
+逐图检测复核	Per-photo detection review
+四张来源照片 · 逐图物体范围	Four source photos · Per-photo object bounds
+检测覆盖与来源记录 ↗	Detection coverage and provenance ↗
+同源照片补充观测区域	Supplementary source-photo observations
+完整工位 · 模型与同源观测范围	Full workcell · Models and source-photo bounds
+保留原完整模型；补充经照片 SHA 与像素映射验证的逐帧观测。相同标签不是相同实物，未完成背面，不推断不可见对象。	The complete model is retained, supplemented with per-photo observations verified by image hashes and pixel mapping. Matching labels do not establish physical identity. Unseen surfaces have not been completed.
+工位重建与物体范围	Workcell reconstruction and object bounds
+当前物体没有可靠平面范围；原图证据仍可查看。	No reliable plan bounds are available for this object. Source-photo evidence remains available.
+已有照片证据 · 空间范围不可用	Photo evidence available · Spatial bounds unavailable
+照片观测范围 · 尚未生成完整模型	Photo-observed bounds · Full model not generated
+Blender 参数化资产	Blender parametric asset
+原生成资产摆放指标 · 历史实验	Original generated-asset placement metrics · Historical experiment
+{scene} 个场景对象 · {observations} 条照片检测记录	{scene} scene objects · {observations} photo detections
+{objects} / {inventory} 条原检测记录	{objects} / {inventory} original detection records
+来源照片 {label} · 检测 {candidate_id}	Source photo {label} · Detection {candidate_id}
+空间证据不足，保留原图中的物体选择。{reason}	Insufficient spatial evidence; the object remains selectable in the source photo. {reason}
+已定位照片中的可见表面，可查看观测范围；完整模型尚未生成，遮挡部分未知。	The visible surface is located in the photo and its observed bounds are available. A full model has not been generated; occluded parts are unknown.
+当前外形为 Blender 拟合圆柱；下方保留原生成资产的历史摆放实验指标，实际尺寸尚未标定。	The current shape is a Blender-fitted cylinder. Historical placement metrics for the original generated asset remain below. Physical dimensions are uncalibrated.
+仅保留照片观测到的表面；未补全不可见范围。	Only photo-observed surfaces are retained; unseen areas have not been completed.
+该对象没有生成资产摆放前后对比。	This object has no before-and-after generated-asset placement comparison.
+生成资产、Blender 参数化物体与照片观测范围在同一工位查看。点选物体联动原图、3D、高宽深与坐标轴；尚未生成或空间证据不足的物体保留独立状态。	Inspect generated assets, Blender parametric objects and photo-observed bounds in one workcell. Select objects to link source photos, 3D, H/W/D and axes. Objects awaiting generation or lacking spatial evidence retain their own status.
+报告缺少场景地址	The report has no scene address
+完整工位与 Blender 柱体的实际三维预览	Actual 3D preview of the full workcell and Blender bollards
+在完整工位中选择对象，查看原图、观测范围、高宽深和坐标轴。包含 Blender 柱体；检测到的可见表面与生成模型分别标明。	Select objects in the complete workcell to inspect source photos, observed bounds, H/W/D and axes. Blender bollards are included; observed surfaces and generated models are identified separately.
+完整工位合并了对象重建、Blender 柱体和同照片的检测范围；原始生成与 Blender 对比保留在下方实验记录。另两个实验场保留各自的照片和坐标来源。切换前请下载 JSON 保存编辑。尺寸尚未标定；当前是实验结果，尚未完成 Lucida 论文复现。	The workcell combines object reconstruction, Blender bollards and detected bounds from the same photos. Original-generation and Blender comparisons remain in the experiments below. The other two playgrounds retain their own photos and coordinates. Download JSON to save edits before switching. Dimensions are uncalibrated; this experiment is not yet a reproduction of Lucida.
+场景对象与照片检测记录	Scene objects and photo detections
+模型与观测范围投影 · 非实测 CAD	Model and observed bounds projections · Not measured CAD
 完整工位 · Blender 参数化与来源空间范围	Full workcell · Blender models and source bounds
 保留完整场景及两个 Blender 参数化柱。蓝色虚线范围与 H/W/D 来自同坐标系、同物体来源照片的有效深度；仅代表可见表面。未标定为米，未合并旧四图重建。	The full scene and two Blender bollards are retained. Dashed blue bounds and H/W/D use valid depth from the same object and source coordinate system. They describe visible surfaces only. Units are not calibrated to metres.
 打开报告 · 原图 / 3D / Agent →	Open report · Photos / 3D / Agent →
@@ -12,7 +39,7 @@ window.panoptesTranslations=Object.fromEntries(String.raw`
 打开报告工作区 · Agent	Open report workspace · Agent
 在来源照片上选定区域，通过 Agent 添加物体；空间范围和量测随报告一起更新。	Select a region in the source photo and add it through the agent. Spatial bounds and measurements update with the report.
 观测背景必须保留原生坐标	Observed context must retain native coordinates
-表面已由生成网格覆盖；此区域仅显示观测点范围。	The surface is covered by a generated mesh; this region shows observed-point bounds only.
+表面已由已有场景资产覆盖；此区域仅显示观测点范围。	The surface is covered by existing scene assets; this region shows observed-point bounds only.
 观测区域 · 只读 · 可见表面，非完整模型 · {model} · 来源 {frames}。{description}	Observed region · Read-only · Visible surface, not a complete model · {model} · Source {frames}. {description}
 观测区域 · 只读 · 可见表面，非完整模型 · {model} · 来源 {frames}	Observed region · Read-only · Visible surface, not a complete model · {model} · Source {frames}
 工位物体与范围	Workcell objects & bounds
