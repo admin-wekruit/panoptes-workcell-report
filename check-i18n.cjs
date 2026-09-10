@@ -95,6 +95,16 @@ async function check(engine){
   assert.equal(await page.locator('html').getAttribute('lang'),'en','foreign-origin message rejected');
   // API available to additional report surfaces and the Agent chat shell.
   assert.equal(await page.evaluate(()=>{panoptesI18n.add({'chat.test':{zh:'添加 {count} 个物体',en:'Add {count} objects'}});return panoptesI18n.t('chat.test',{count:2});}),'Add 2 objects');
+  // Downloadable report viewers use srcdoc: the window inherits its origin,
+  // while location.origin is "null" and cannot be a postMessage target.
+  await page.evaluate(base=>{const frame=document.createElement('iframe');frame.id='srcdoc-language-check';frame.srcdoc=`<!doctype html><html><body><p>工位物体与范围</p><script src="${base}i18n-catalog.js"><\/script><script src="${base}i18n.js"><\/script></body></html>`;document.body.append(frame);},base);
+  const inherited=await(await page.locator('#srcdoc-language-check').elementHandle()).contentFrame();
+  await inherited.waitForFunction(()=>window.panoptesI18n);
+  assert.equal(await inherited.evaluate(()=>window.origin),new URL(base).origin);
+  await lang(page,'zh');await inherited.waitForFunction(()=>panoptesI18n.language==='zh');
+  await inherited.evaluate(()=>panoptesI18n.setLanguage('en'));await hasText(page,'#metrics-title','Parametric trial comparison');
+  await inherited.evaluate(()=>window.dispatchEvent(new MessageEvent('message',{source:parent,origin:'https://untrusted.example',data:{type:'panoptes:language',language:'zh'}})));
+  assert.equal(await inherited.evaluate(()=>panoptesI18n.language),'en');
   assert.deepEqual(errors,[]);console.log(JSON.stringify({engine,passed:true,coverage:'2 history entries + live cloud workspace link + 5 report surfaces, component metrics, live iframe sync, persistence, dynamic controls and loading/errors, immutable evidence/edits, mobile overflow'}));
  }finally{release();await browser.close();}
 }

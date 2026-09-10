@@ -1,5 +1,6 @@
 // Hand-authored interface and report commentary. Original findings, evidence and user text remain verbatim.
 window.panoptesTranslations=Object.fromEntries(String.raw`
+原生重建单位；尺度依据见各项量测	Native reconstruction units; scale provenance is recorded in each measurement
 打开报告工作区 · Agent	Open report workspace · Agent
 在来源照片上选定区域，通过 Agent 添加物体；空间范围和量测随报告一起更新。	Select a region in the source photo and add it through the agent. Spatial bounds and measurements update with the report.
 观测背景必须保留原生坐标	Observed context must retain native coordinates

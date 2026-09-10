@@ -2,6 +2,8 @@
 (() => {
   'use strict';
   const storageKey='panoptes.language', valid=value=>value==='zh'||value==='en';
+  // srcdoc inherits its creator's origin even though its URL is about:srcdoc.
+  const messageOrigin=window.origin;
   let language='zh';
   try { const saved=localStorage.getItem(storageKey); if(valid(saved))language=saved; } catch {}
   const entries=new Map(), literal=new Map(), templates=[], textRecords=new WeakMap(), attributeRecords=new WeakMap();
@@ -56,23 +58,23 @@
   }
   function refresh(){document.documentElement.lang=language==='zh'?'zh-CN':'en';apply(document.documentElement);document.querySelectorAll('[data-language-select]').forEach(select=>select.value=language);}
   const related=source=>source===parent&&parent!==window||[...document.querySelectorAll('iframe')].some(frame=>frame.contentWindow===source);
-  function broadcast(){const message={type:'panoptes:language',language};if(parent!==window)parent.postMessage(message,location.origin);document.querySelectorAll('iframe').forEach(frame=>frame.contentWindow?.postMessage(message,location.origin));}
+  function broadcast(){if(messageOrigin==='null')return;const message={type:'panoptes:language',language};if(parent!==window)parent.postMessage(message,messageOrigin);document.querySelectorAll('iframe').forEach(frame=>frame.contentWindow?.postMessage(message,messageOrigin));}
   function setLanguage(next){if(!valid(next))return false;const changed=next!==language;language=next;try{localStorage.setItem(storageKey,next);}catch{}refresh();if(changed){broadcast();window.dispatchEvent(new CustomEvent('panoptes:language-change',{detail:{language}}));}return true;}
   window.panoptesI18n={t,add,setLanguage,apply,get language(){return language;}};
   add(window.panoptesTranslations||{});delete window.panoptesTranslations;
   window.addEventListener('storage',event=>{if(event.key===storageKey&&valid(event.newValue))setLanguage(event.newValue);});
   window.addEventListener('message',event=>{
-    if(event.origin!==location.origin||!related(event.source)||!event.data||typeof event.data!=='object')return;
+    if(messageOrigin==='null'||event.origin!==messageOrigin||!related(event.source)||!event.data||typeof event.data!=='object')return;
     if(event.data.type==='panoptes:language'&&valid(event.data.language))setLanguage(event.data.language);
-    if(event.data.type==='panoptes:language-request')event.source.postMessage({type:'panoptes:language',language},location.origin);
+    if(event.data.type==='panoptes:language-request')event.source.postMessage({type:'panoptes:language',language},messageOrigin);
   });
   function init(){
     const style=document.createElement('style');style.textContent='.language-switch{display:inline-flex;align-items:center;gap:5px;flex-shrink:0;max-width:100%}.language-switch select{font:inherit;font-size:12px;padding:6px 8px;border:1px solid currentColor;border-radius:5px;background:transparent;color:inherit;max-width:100%;cursor:pointer}.language-switch select:focus-visible{outline:2px solid currentColor;outline-offset:3px}.language-switch option{background:Canvas;color:CanvasText}';document.head.append(style);
     document.querySelectorAll('[data-language-switch]').forEach(slot=>{slot.classList.add('language-switch');const select=document.createElement('select');select.dataset.languageSelect='';select.setAttribute('aria-label','语言 / Language');select.innerHTML='<option value="zh">中文</option><option value="en">English</option>';select.addEventListener('change',()=>setLanguage(select.value));slot.append(select);});
     refresh();
     new MutationObserver(records=>{for(const record of records){if(record.type==='childList')record.addedNodes.forEach(apply);else update(record.target);}}).observe(document.documentElement,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:attributes});
-    document.addEventListener('load',event=>{if(event.target.tagName==='IFRAME')event.target.contentWindow?.postMessage({type:'panoptes:language',language},location.origin);},true);
-    if(parent!==window)parent.postMessage({type:'panoptes:language-request'},location.origin);
+    document.addEventListener('load',event=>{if(messageOrigin!=='null'&&event.target.tagName==='IFRAME')event.target.contentWindow?.postMessage({type:'panoptes:language',language},messageOrigin);},true);
+    if(messageOrigin!=='null'&&parent!==window)parent.postMessage({type:'panoptes:language-request'},messageOrigin);
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
