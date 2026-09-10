@@ -87,6 +87,7 @@ window.panoptesSite = (() => {
   }
   async function reportFrame(iframe, source) {
     const ticket = {};
+    frames.get(iframe)?.observer?.disconnect();
     frames.set(iframe, ticket);
     const response = await request(source);
     if (!response.ok) throw Error('Report HTTP ' + response.status);
@@ -139,11 +140,17 @@ window.panoptesSite = (() => {
           const p = iframe.contentDocument.createElement('p'); p.setAttribute('role', 'alert'); p.textContent = error.message; anchor.after(p);
         });
       });
-      for (const child of iframe.contentDocument.querySelectorAll('iframe[data-site-report]')) {
-        reportFrame(child, child.dataset.siteReport).catch(error => {
-          const p = iframe.contentDocument.createElement('p'); p.setAttribute('role', 'alert'); p.textContent = error.message; child.replaceWith(p);
-        });
-      }
+      // A saved report can contain a large legacy model below the fold. Fetch
+      // it when its pane is visible so it cannot block login and active scenes.
+      ticket.observer = new iframe.contentWindow.IntersectionObserver(entries => {
+        for (const entry of entries) if (entry.isIntersecting && entry.intersectionRatio >= .25) {
+          const child = entry.target; ticket.observer.unobserve(child);
+          reportFrame(child, child.dataset.siteReport).catch(error => {
+            const p = iframe.contentDocument.createElement('p'); p.setAttribute('role', 'alert'); p.textContent = error.message; child.replaceWith(p);
+          });
+        }
+      }, {threshold: .25});
+      iframe.contentDocument.querySelectorAll('iframe[data-site-report]').forEach(child => ticket.observer.observe(child));
     }, {once: true});
     // Blob documents retain the website origin, including for selection messages and Safari.
     iframe.removeAttribute('srcdoc'); iframe.src = objectURL;
