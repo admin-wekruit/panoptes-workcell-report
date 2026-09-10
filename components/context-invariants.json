@@ -1,0 +1,49 @@
+{
+  "original_mesh_transform_metrics_identical": true,
+  "checks": {
+    "object_6dd85942d104987a83c677d6": {
+      "gzip_bytes_identical": true,
+      "sha256": "1c33e20f377b6d299485dbcffc6d53b46bbab5fe935cfdcaec7cf69b1b94b236"
+    },
+    "object_ddfd00218e68ffd9e3e7f515": {
+      "gzip_bytes_identical": true,
+      "sha256": "a9bc69fb561e8d14eb080772755e83e0a883353cf1292a3226bc456dbbaaaf92"
+    },
+    "observed_floor": {
+      "gzip_bytes_identical": true,
+      "sha256": "78f22d7bdd2e2a690a5efa091e1f3ec056b48e9a3c65cb823e07ae7f88e96081"
+    },
+    "frame_0001": {
+      "canonical_camera_unchanged": true,
+      "full_photo_sha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac",
+      "original_size": [
+        3024,
+        4032
+      ]
+    },
+    "frame_0002": {
+      "canonical_camera_unchanged": true,
+      "full_photo_sha256": "6cd81ae4ae783c37d0a1129e39acb0d7064c46d9b51524130406642f8c7a3bea",
+      "original_size": [
+        3024,
+        4032
+      ]
+    },
+    "frame_0003": {
+      "canonical_camera_unchanged": true,
+      "full_photo_sha256": "0a8d4b8884867bf9f1836193db2fae0350a99e9e6b242eb9e01e20fda7c59438",
+      "original_size": [
+        3024,
+        4032
+      ]
+    },
+    "frame_0004": {
+      "canonical_camera_unchanged": true,
+      "full_photo_sha256": "e73931b6cdf68775ddafbc949c392c0ea2908f4dec671a4935e4c09361ae66ec",
+      "original_size": [
+        3024,
+        4032
+      ]
+    }
+  }
+}

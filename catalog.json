@@ -20,10 +20,10 @@
     {
       "id": "product-evidence-01",
       "title": {
-        "zh": "BOR1 · 小物体补全试验",
-        "en": "BOR1 · Small-object reconstruction"
+        "zh": "BOR1 · 工位物体与范围",
+        "en": "BOR1 · Workcell objects and bounds"
       },
-      "url": "viewer.html?scene=components/scene.json&object=object_ddfd00218e68ffd9e3e7f515",
+      "url": "viewer.html?scene=components/scene.json",
       "preview": "components/preview.png",
       "source_run_id": "user-bor1-02",
       "reconstruction_run_id": "product-evidence-01",

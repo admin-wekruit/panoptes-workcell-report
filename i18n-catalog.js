@@ -1,5 +1,30 @@
 // Hand-authored interface and report commentary. Original findings, evidence and user text remain verbatim.
 window.panoptesTranslations=Object.fromEntries(String.raw`
+观测背景必须保留原生坐标	Observed context must retain native coordinates
+表面已由生成网格覆盖；此区域仅显示观测点范围。	The surface is covered by a generated mesh; this region shows observed-point bounds only.
+观测区域 · 只读 · 可见表面，非完整模型 · {model} · 来源 {frames}。{description}	Observed region · Read-only · Visible surface, not a complete model · {model} · Source {frames}. {description}
+观测区域 · 只读 · 可见表面，非完整模型 · {model} · 来源 {frames}	Observed region · Read-only · Visible surface, not a complete model · {model} · Source {frames}
+工位物体与范围	Workcell objects & bounds
+BOR1 · 工位物体与范围	BOR1 · Workcell objects & bounds
+原图与 3D 联动 · 包围框与三轴	Linked source photo & 3D · Bounds and XYZ axes
+查看各照片中的物体观测范围，在原图和 3D 中点选、查看包围框与三轴。两个按钮保留完整生成网格；其余区域来自分割和深度，尚未合并为跨视角实体。	Explore observed object extents in each photo. Select regions in the source photo or 3D to see bounds and XYZ axes. Two buttons retain full generated meshes; other regions come from segmentation and depth and have not been merged into cross-view entities.
+{run} · {generated} 个生成资产 / {regions} 个观测区域 · 单位 {units}	{run} · {generated} generated assets / {regions} observed regions · Units: {units}
+场景 Z 轴线夹角 {angle}°	Scene Z-axis angle {angle}°
+显示所有范围	Show all bounds
+观测区域可重叠，不代表独立完整物体。范围不是安全区域。	Observed regions may overlap and do not represent separate complete objects. Bounds are not safety zones.
+无可用空间范围	No supported spatial bounds
+观测区域 · 只读 · 可见表面，非完整模型	Observed region · Read-only · Visible surface, not a complete model
+观测法向跨度 {height} · 未标定单位	Observed normal span {height} · Uncalibrated units
+仅为可见表面范围；未观测部分未知。	Visible surface extent only; unobserved parts are unknown.
+烘焙后的场景坐标轴；物体竖直轴未知。仅为可见表面范围；未观测部分未知。	Baked scene coordinates; the object's upright axis is unknown. Visible surface extent only; unobserved parts are unknown.
+正在读取观测区域：{name}	Loading observed region: {name}
+无效观测区域	Invalid observed region
+观测区域面数不匹配	Observed-region face count mismatch
+观测区域含无效或重复三角面	Observed region contains invalid or duplicate faces
+可选区域过多	Too many selectable regions
+机位的观测背景不匹配	The viewpoint's observed context does not match
+已显示 {loaded} / {count} 个网格 · 下载 {bytes} / {total} MB	Showing {loaded} / {count} meshes · Downloaded {bytes} / {total} MB
+已显示 {loaded} / {count} 个网格 · 加载未完成	Showing {loaded} / {count} meshes · Loading incomplete
 原图叠加	Photo overlay
 自由 3D	Free 3D
 显示模式	Display mode

@@ -16,6 +16,24 @@
       "frame_id": "frame_0001",
       "triangles": 275825,
       "source_image_sha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac"
+    },
+    {
+      "id": "observed_context_frame_0002",
+      "frame_id": "frame_0002",
+      "triangles": 287734,
+      "source_image_sha256": "6cd81ae4ae783c37d0a1129e39acb0d7064c46d9b51524130406642f8c7a3bea"
+    },
+    {
+      "id": "observed_context_frame_0003",
+      "frame_id": "frame_0003",
+      "triangles": 274268,
+      "source_image_sha256": "0a8d4b8884867bf9f1836193db2fae0350a99e9e6b242eb9e01e20fda7c59438"
+    },
+    {
+      "id": "observed_context_frame_0004",
+      "frame_id": "frame_0004",
+      "triangles": 312198,
+      "source_image_sha256": "e73931b6cdf68775ddafbc949c392c0ea2908f4dec671a4935e4c09361ae66ec"
     }
   ],
   "full_source_cameras": [
@@ -23,5 +41,16 @@
     "frame_0002",
     "frame_0003",
     "frame_0004"
-  ]
+  ],
+  "observed_regions_summary": {
+    "registry_candidates": 84,
+    "generated_exact_candidates": 2,
+    "observed_regions": 79,
+    "unavailable_regions": 3,
+    "regions_with_surface": 78,
+    "regions_with_bounds_only": 1,
+    "counting_unit": "source-frame mask observations, not unique physical objects",
+    "overlaps": "full memberships retained; no triangle ownership partition or identity merge",
+    "registry_sha256": "a254c0bc05f8580da8c8ae403e97b6bd4e0ba359cedbde04889e6122dfe74b3a"
+  }
 }

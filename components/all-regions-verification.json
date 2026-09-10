@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "new_model_calls": 0,
+  "generated_mesh_gzip_transform_metrics_unchanged": true,
+  "regions_verified": 79,
+  "contexts_verified": 4,
+  "full_registry_accounted": true,
+  "checks": [
+    "face indices identify exact native pixel triangles",
+    "all masks rebound to immutable source files",
+    "full supported-point native bounds and up span",
+    "overlapping source observations retained",
+    "one true covered bounds-only observation"
+  ],
+  "summary": {
+    "registry_candidates": 84,
+    "generated_exact_candidates": 2,
+    "observed_regions": 79,
+    "unavailable_regions": 3,
+    "regions_with_surface": 78,
+    "regions_with_bounds_only": 1,
+    "counting_unit": "source-frame mask observations, not unique physical objects",
+    "overlaps": "full memberships retained; no triangle ownership partition or identity merge",
+    "registry_sha256": "a254c0bc05f8580da8c8ae403e97b6bd4e0ba359cedbde04889e6122dfe74b3a"
+  }
+}
