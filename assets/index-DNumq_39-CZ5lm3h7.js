@@ -1,0 +1,1 @@
+import{n as e}from"./PolicyPage-D-8ChIRS.js";export{e as Function};
