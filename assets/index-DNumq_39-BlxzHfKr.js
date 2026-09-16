@@ -1,1 +1,0 @@
-import{n as e}from"./PolicyPage-CTWYMmIq.js";export{e as Function};
