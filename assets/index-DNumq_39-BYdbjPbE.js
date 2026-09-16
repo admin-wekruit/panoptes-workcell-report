@@ -1,0 +1,1 @@
+import{n as e}from"./PolicyPage-Dxumx5Gt.js";export{e as Function};
