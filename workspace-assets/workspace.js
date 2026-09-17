@@ -54,7 +54,7 @@ function renderMeasurements(candidate){
  for(const key of ['height','width','depth']){const cell=el('div','measurement-value'),value=m?.status==='available'?m.dimensions_native?.[key]:null;cell.append(el('span','',t(key)),el('strong','',Number.isFinite(value)?`${(value*(factor||1)).toFixed(3)}${factor?' m':''}`:'—'));values.append(cell);}
  panel.append(values);
  const angles=el('div','measurement-orientation');
- for(const [key,label] of [['planar_slope','planarSlope'],['principal_axis_tilt','axisTilt']]){const reading=m?.orientation?.[key],cell=el('div','measurement-value');cell.append(el('span','',t(label)),el('strong','',reading?.status==='available'&&Number.isFinite(reading.value_deg)?`${reading.value_deg.toFixed(1)}°`:t('unknown')));if(reading?.reason)cell.append(el('small','measurement-reason',reading.reason));angles.append(cell);}
+ for(const [key,label] of [['planar_slope','planarSlope'],['principal_axis_tilt','axisTilt']]){if(key==='planar_slope'&&spatial?.inclination_analysis)continue;const reading=m?.orientation?.[key],cell=el('div','measurement-value');cell.append(el('span','',t(label)),el('strong','',reading?.status==='available'&&Number.isFinite(reading.value_deg)?`${reading.value_deg.toFixed(1)}°`:t('unknown')));if(reading?.reason)cell.append(el('small','measurement-reason',reading.reason));angles.append(cell);}
  panel.append(angles,el('p','',m?.reason||(!m?t('measurementUnavailable'):t('dimensionBasis'))),el('p','',t('partialExtent')));
  const analysis=spatial?.inclination_analysis;
  if(analysis){
