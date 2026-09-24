@@ -1,0 +1,1 @@
+import{n as e}from"./PolicyPage-D0PhyfQM.js";export{e as Function};
