@@ -1,0 +1,1 @@
+import{n as e}from"./PolicyPage-DmGJopol.js";export{e as Function};
