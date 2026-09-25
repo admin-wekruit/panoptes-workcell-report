@@ -1,0 +1,1 @@
+import{n as e}from"./PolicyPage-CxmCrlIh.js";export{e as Function};
