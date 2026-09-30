@@ -25,14 +25,18 @@
     <p class="sub">这是当前物体层的可视化检查页。图片将 3D 模型从视频相机投影回原帧；绿色轮廓代表物体掩码，错位样本可以点开看大图。</p>
   </header>
   <div class="scroll"><table>
-    <thead><tr><th>视频</th><th>第 5 轮位置</th><th>修正版位置</th><th>第 5 轮：所有已展示模型的轮廓重合度中位</th><th>状态</th></tr></thead>
+    <thead><tr><th>视频</th><th>第 5 轮位置</th><th>修正版位置</th><th>轮廓重合度中位：旧 → 新</th><th>状态</th></tr></thead>
     <tbody>
-      <tr><td>ME340</td><td class="bad">错</td><td class="bad">仍错：对齐图复核中</td><td>0.493</td><td>旧版 149 个生成模型中 75 个未过展示规则；修正版仅 86/173 个非简单物体显示生成模型</td></tr>
-      <tr><td>Sam’s Club</td><td class="bad">局部错</td><td>待复测</td><td>0.669</td><td>32 个生成模型中 20 个未过展示规则</td></tr>
-      <tr><td>Walmart</td><td class="bad">局部错</td><td>待复测</td><td>0.635</td><td>相邻鞋子仍有错配</td></tr>
+      <tr><td>ME340</td><td class="bad">错</td><td class="bad">仍错</td><td>0.493 → 0.552</td><td>新版仅 86/173 个非简单物体显示生成模型；总体重合度仍低于 0.6 目标</td></tr>
+      <tr><td>Sam’s Club</td><td class="bad">局部错</td><td>待复测</td><td>0.669 → 待测</td><td>旧版 32 个生成模型中 20 个未过展示规则</td></tr>
+      <tr><td>Walmart</td><td class="bad">局部错</td><td>待复测</td><td>0.635 → 待测</td><td>旧版相邻鞋子仍有错配</td></tr>
     </tbody>
   </table></div>
-  <p class="notice">ME340 修正版已跑完，但尚未达到物体模型覆盖率目标；同帧对齐图正在生成。当前下方图片均为修复前，不能用于判断修正已成功。此页是视觉预览，完整的点击物体 3D 交互仍在验证。</p>
+  <p class="notice">ME340 修正版已跑完，但尚未达到物体模型覆盖率和重合度目标。新旧覆盖图来自不同帧，只能分别查看效果，不能当作同帧前后比较。此页是视觉预览，完整的点击物体 3D 交互仍在验证。</p>
+  <section><h2>ME340 · 当前修正版</h2><div class="grid">
+    <figure><a href="images/me340-new.jpg"><img src="images/me340-new.jpg" alt="修正版 ME340 视频帧上的三维模型覆盖"></a><figcaption>当前模型在视频第 575 帧上的投影。</figcaption></figure>
+    <figure><a href="images/me340-new-worst.jpg"><img src="images/me340-new-worst.jpg" alt="修正版 ME340 对齐最差的生成模型样本"></a><figcaption>当前错位最明显的生成模型样本。</figcaption></figure>
+  </div></section>
   <section><h2>ME340 · 修复前</h2><div class="grid">
     <figure><a href="images/me340-old.jpg"><img src="images/me340-old.jpg" alt="ME340 视频帧上的三维模型覆盖"></a><figcaption>3D 模型投影到视频帧。点图放大。</figcaption></figure>
     <figure><a href="images/me340-worst.jpg"><img src="images/me340-worst.jpg" alt="ME340 对齐最差的生成模型样本"></a><figcaption>对齐最差的生成模型样本。</figcaption></figure>
