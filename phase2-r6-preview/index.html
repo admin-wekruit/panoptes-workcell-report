@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panoptes · 物体层位置预览</title>
+<style>
+  :root{font-family:system-ui,-apple-system,"PingFang SC",sans-serif;color:#172421;background:#f3f6f3}
+  *{box-sizing:border-box}body{margin:0}main{max-width:1100px;margin:auto;padding:24px 18px 80px}
+  header{padding:26px 0 20px;border-bottom:2px solid #173e36}h1{font-size:clamp(28px,5vw,48px);margin:8px 0}
+  h2{font-size:25px;margin:38px 0 8px}p{line-height:1.6;max-width:78ch}.sub{color:#51645f}
+  .eyebrow{color:#346d60;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+  .scroll{overflow:auto;background:white;border:1px solid #d5dfda;border-radius:10px;margin:24px 0}
+  table{border-collapse:collapse;width:100%;min-width:690px}th,td{text-align:left;padding:13px 16px;border-bottom:1px solid #e3eae6;vertical-align:top}
+  tr:last-child td{border:0}th{font-size:13px;color:#50655e;background:#e9f0ec}.bad{color:#a3322a;font-weight:700}
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}figure{margin:0;background:white;padding:10px;border:1px solid #d5dfda;border-radius:10px}
+  img{display:block;width:100%;height:auto;border-radius:5px}figcaption{padding:9px 3px 2px;font-size:13px;color:#52655e}
+  a{color:#116553}a:focus-visible{outline:3px solid #116553;outline-offset:3px}
+  .notice{border-left:4px solid #b37718;background:#fff3dd;padding:12px 16px;margin-top:22px}
+  @media(max-width:700px){.grid{grid-template-columns:1fr}}
+</style>
+<main>
+  <header>
+    <div class="eyebrow">Phase 2 · r6 正确性修复 · 2026-09-30</div>
+    <h1>视频里的模型，位置对不对？</h1>
+    <p class="sub">这是当前物体层的可视化检查页。图片将 3D 模型从视频相机投影回原帧；绿色轮廓代表物体掩码，错位样本可以点开看大图。</p>
+  </header>
+  <div class="scroll"><table>
+    <thead><tr><th>视频</th><th>第 5 轮位置</th><th>修正版位置</th><th>第 5 轮：所有已展示模型的轮廓重合度中位</th><th>状态</th></tr></thead>
+    <tbody>
+      <tr><td>ME340</td><td class="bad">错</td><td class="bad">仍错：对齐图复核中</td><td>0.493</td><td>旧版 149 个生成模型中 75 个未过展示规则；修正版仅 86/173 个非简单物体显示生成模型</td></tr>
+      <tr><td>Sam’s Club</td><td class="bad">局部错</td><td>待复测</td><td>0.669</td><td>32 个生成模型中 20 个未过展示规则</td></tr>
+      <tr><td>Walmart</td><td class="bad">局部错</td><td>待复测</td><td>0.635</td><td>相邻鞋子仍有错配</td></tr>
+    </tbody>
+  </table></div>
+  <p class="notice">ME340 修正版已跑完，但尚未达到物体模型覆盖率目标；同帧对齐图正在生成。当前下方图片均为修复前，不能用于判断修正已成功。此页是视觉预览，完整的点击物体 3D 交互仍在验证。</p>
+  <section><h2>ME340 · 修复前</h2><div class="grid">
+    <figure><a href="images/me340-old.jpg"><img src="images/me340-old.jpg" alt="ME340 视频帧上的三维模型覆盖"></a><figcaption>3D 模型投影到视频帧。点图放大。</figcaption></figure>
+    <figure><a href="images/me340-worst.jpg"><img src="images/me340-worst.jpg" alt="ME340 对齐最差的生成模型样本"></a><figcaption>对齐最差的生成模型样本。</figcaption></figure>
+  </div></section>
+  <section><h2>Sam’s Club · 修复前</h2><div class="grid">
+    <figure><a href="images/sams-old.jpg"><img src="images/sams-old.jpg" alt="Sam's Club 视频帧上的三维模型覆盖"></a><figcaption>3D 模型投影到视频帧。</figcaption></figure>
+    <figure><a href="images/sams-worst.jpg"><img src="images/sams-worst.jpg" alt="Sam's Club 对齐最差的生成模型样本"></a><figcaption>对齐最差的生成模型样本。</figcaption></figure>
+  </div></section>
+  <section><h2>Walmart · 修复前</h2><div class="grid">
+    <figure><a href="images/walmart-old.jpg"><img src="images/walmart-old.jpg" alt="Walmart 视频帧上的三维模型覆盖"></a><figcaption>3D 模型投影到视频帧。</figcaption></figure>
+    <figure><a href="images/walmart-worst.jpg"><img src="images/walmart-worst.jpg" alt="Walmart 对齐最差的生成模型样本"></a><figcaption>对齐最差的生成模型样本。</figcaption></figure>
+  </div></section>
+  <p class="sub">重合度取每张物体卡片所选最佳关键帧，将已展示模型投影成轮廓后与该物体的 SAM 3 掩码比较。该数字不是地面位置真值误差。</p>
+</main>
+</html>
