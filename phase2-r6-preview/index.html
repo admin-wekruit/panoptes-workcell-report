@@ -28,7 +28,7 @@
     <thead><tr><th>视频</th><th>第 5 轮位置</th><th>修正版位置</th><th>轮廓重合度中位：旧 → 新</th><th>状态</th></tr></thead>
     <tbody>
       <tr><td>ME340</td><td class="bad">错</td><td class="bad">仍错</td><td>0.493 → 0.552</td><td>新版 86/156 个非简单物体显示生成模型；总体重合度仍低于 0.6 目标</td></tr>
-      <tr><td>Sam’s Club</td><td class="bad">局部错</td><td>待复测</td><td>0.669 → 待测</td><td>旧版 32 个生成模型中 20 个未过展示规则</td></tr>
+      <tr><td>Sam’s Club</td><td class="bad">局部错</td><td class="bad">局部错</td><td>0.669 → 0.688</td><td>新版 12/28 个非简单物体显示生成模型；部分生成模型仍错位</td></tr>
       <tr><td>Walmart</td><td class="bad">局部错</td><td>待复测</td><td>0.635 → 待测</td><td>旧版相邻鞋子仍有错配</td></tr>
     </tbody>
   </table></div>
@@ -45,9 +45,13 @@
     <figure><a href="images/me340-worst.jpg"><img src="images/me340-worst.jpg" alt="ME340 修复前对齐最差的生成模型样本"></a><figcaption>修复前：对齐最差的生成模型。</figcaption></figure>
     <figure><a href="images/me340-new-worst.jpg"><img src="images/me340-new-worst.jpg" alt="ME340 修正版对齐最差的生成模型样本"></a><figcaption>修正版：对齐最差的生成模型。</figcaption></figure>
   </div></section>
-  <section><h2>Sam’s Club · 修复前</h2><div class="grid">
-    <figure><a href="images/sams-old.jpg"><img src="images/sams-old.jpg" alt="Sam's Club 视频帧上的三维模型覆盖"></a><figcaption>3D 模型投影到视频帧。</figcaption></figure>
-    <figure><a href="images/sams-worst.jpg"><img src="images/sams-worst.jpg" alt="Sam's Club 对齐最差的生成模型样本"></a><figcaption>对齐最差的生成模型样本。</figcaption></figure>
+  <section><h2>Sam’s Club · 同帧对照：第 436 帧</h2><div class="grid">
+    <figure><a href="images/sams-old.jpg"><img src="images/sams-old.jpg" alt="Sam's Club 修复前第436帧的三维模型覆盖"></a><figcaption>修复前 · 第 436 帧</figcaption></figure>
+    <figure><a href="images/sams-new.jpg"><img src="images/sams-new.jpg" alt="Sam's Club 修正版第436帧的三维模型覆盖"></a><figcaption>修正版 · 第 436 帧</figcaption></figure>
+  </div></section>
+  <section><h2>Sam’s Club · 错位样本</h2><div class="grid">
+    <figure><a href="images/sams-worst.jpg"><img src="images/sams-worst.jpg" alt="Sam's Club 修复前对齐最差的生成模型样本"></a><figcaption>修复前：对齐最差的生成模型。</figcaption></figure>
+    <figure><a href="images/sams-new-worst.jpg"><img src="images/sams-new-worst.jpg" alt="Sam's Club 修正版对齐最差的生成模型样本"></a><figcaption>修正版：对齐最差的生成模型。</figcaption></figure>
   </div></section>
   <section><h2>Walmart · 修复前</h2><div class="grid">
     <figure><a href="images/walmart-old.jpg"><img src="images/walmart-old.jpg" alt="Walmart 视频帧上的三维模型覆盖"></a><figcaption>3D 模型投影到视频帧。</figcaption></figure>
