@@ -27,13 +27,14 @@
   <div class="scroll"><table>
     <thead><tr><th>视频</th><th>第 5 轮位置</th><th>修正版位置</th><th>轮廓重合度中位：旧 → 新</th><th>状态</th></tr></thead>
     <tbody>
-      <tr><td>ME340</td><td class="bad">错</td><td class="bad">仍错</td><td>0.493 → 0.552</td><td>新版 86/156 个非简单物体显示生成模型；总体重合度仍低于 0.6 目标</td></tr>
-      <tr><td>Sam’s Club</td><td class="bad">错</td><td class="bad">仍错</td><td>0.669 → 0.688</td><td>新版 12/28 个非简单物体显示生成模型；部分生成模型仍错位</td></tr>
-      <tr><td>Walmart</td><td class="bad">错</td><td class="bad">仍错</td><td>0.635 → 0.645</td><td>新版 247/373 个非简单物体显示生成模型；相邻鞋子仍有错配</td></tr>
+      <tr><td>ME340</td><td class="bad">错</td><td class="bad">仍错</td><td>0.493 → 0.556</td><td>72/159 个非简单物体显示 RecGen；生成模型重合度中位 0.623，但 14 个展示模型偏离超过 50 cm</td></tr>
+      <tr><td>Sam’s Club</td><td class="bad">错</td><td class="bad">仍错</td><td>0.669 → 0.687</td><td>11/28 个非简单物体显示 RecGen；43 个展示模型偏离超过 50 cm</td></tr>
+      <tr><td>Walmart</td><td class="bad">错</td><td class="bad">仍错</td><td>0.635 → 0.645</td><td>237/372 个非简单物体显示 RecGen；10 个展示模型偏离超过 50 cm</td></tr>
     </tbody>
   </table></div>
-  <p class="notice">三段视频的修正版均已跑完，模型覆盖率目标尚未达到。下方覆盖图分别比较同一视频帧；这是视觉预览，完整的点击物体 3D 交互仍在验证。</p>
+  <p class="notice">三段视频的本轮修正版均已跑完，位置正确性尚未验收。轻微偏差可容忍，但图中的大型机器、货架和商品仍有明显错位。下方覆盖图分别比较同一视频帧；这是视觉预览，完整的点击物体 3D 交互仍在验证。</p>
   <p>有真值的视频另做了地面位置检查：暖运行 595 张可评分物体卡，在真实相机高度下误差中位 9.84 cm；按产品当前假设的 1.6 m 相机高度则为 21.11 cm。五段真值视频共有 700 张物体卡，其中 30 张没有可评分的位置，均单独计为未验证。目标为真实高度下中位不超过 8 cm，目前未达到。</p>
+  <p>物体卡中，单视角的宽、高、深及可见长度只显示边界或“无法测量”，不直接给确定尺寸。本轮全部生成模型到齐用时：ME340 285 s、Sam’s Club 170 s、Walmart 445 s；均在上一轮各视频用时的 10% 范围内。</p>
   <section><h2>ME340 · 同帧对照：第 575 帧</h2><div class="grid">
     <figure><a href="images/me340-old.jpg"><img src="images/me340-old.jpg" alt="修复前第575帧的三维模型覆盖"></a><figcaption>修复前 · 第 575 帧</figcaption></figure>
     <figure><a href="images/me340-new.jpg"><img src="images/me340-new.jpg" alt="修正版第575帧的三维模型覆盖"></a><figcaption>修正版 · 第 575 帧</figcaption></figure>
