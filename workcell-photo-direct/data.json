@@ -208,13 +208,13 @@
         257.0
       ],
       "modelProjectedBBox": [
-        116.8,
-        172.3,
-        101.6,
+        116.7,
+        172.0,
+        102.2,
         253.3
       ],
-      "bboxIoU": 0.696,
-      "centerOffsetPx": 5.2
+      "bboxIoU": 0.69,
+      "centerOffsetPx": 5.3
     },
     {
       "photo": 1,
@@ -227,11 +227,11 @@
       ],
       "modelProjectedBBox": [
         117.0,
-        170.6,
-        103.7,
-        252.9
+        170.8,
+        104.1,
+        252.5
       ],
-      "bboxIoU": 0.661,
+      "bboxIoU": 0.66,
       "centerOffsetPx": 5.6
     },
     {
@@ -244,13 +244,13 @@
         274.0
       ],
       "modelProjectedBBox": [
-        230.1,
-        316.3,
-        140.0,
-        270.5
+        230.3,
+        315.9,
+        139.9,
+        270.4
       ],
-      "bboxIoU": 0.749,
-      "centerOffsetPx": 11.1
+      "bboxIoU": 0.745,
+      "centerOffsetPx": 11.0
     },
     {
       "photo": 2,
@@ -262,13 +262,13 @@
         274.0
       ],
       "modelProjectedBBox": [
-        258.3,
-        323.4,
-        130.1,
-        272.3
+        258.6,
+        323.3,
+        130.5,
+        271.9
       ],
-      "bboxIoU": 0.616,
-      "centerOffsetPx": 14.7
+      "bboxIoU": 0.61,
+      "centerOffsetPx": 14.8
     },
     {
       "photo": 3,
@@ -280,13 +280,13 @@
         250.0
       ],
       "modelProjectedBBox": [
-        107.0,
-        175.8,
-        142.9,
-        249.6
+        108.7,
+        173.1,
+        143.2,
+        250.2
       ],
-      "bboxIoU": 0.797,
-      "centerOffsetPx": 6.7
+      "bboxIoU": 0.782,
+      "centerOffsetPx": 6.6
     },
     {
       "photo": 3,
@@ -298,12 +298,12 @@
         250.0
       ],
       "modelProjectedBBox": [
-        100.8,
-        153.2,
-        93.8,
-        240.6
+        100.7,
+        153.4,
+        94.2,
+        240.2
       ],
-      "bboxIoU": 0.499,
+      "bboxIoU": 0.5,
       "centerOffsetPx": 27.2
     },
     {
@@ -319,10 +319,10 @@
         161.7,
         216.3,
         174.4,
-        270.6
+        270.9
       ],
-      "bboxIoU": 0.731,
-      "centerOffsetPx": 4.0
+      "bboxIoU": 0.729,
+      "centerOffsetPx": 4.2
     },
     {
       "photo": 4,
@@ -334,13 +334,13 @@
         270.0
       ],
       "modelProjectedBBox": [
-        156.3,
-        209.7,
-        122.3,
-        261.7
+        156.4,
+        209.9,
+        122.8,
+        261.4
       ],
       "bboxIoU": 0.533,
-      "centerOffsetPx": 27.3
+      "centerOffsetPx": 27.2
     }
   ],
   "cartQuality": [
@@ -354,13 +354,13 @@
         391.0
       ],
       "modelProjectedBBox": [
-        90.4,
-        233.2,
-        265.6,
-        365.2
+        90.5,
+        237.8,
+        268.4,
+        360.4
       ],
-      "bboxIoU": 0.582,
-      "centerOffsetPx": 11.5
+      "bboxIoU": 0.555,
+      "centerOffsetPx": 13.7
     },
     {
       "photo": 2,
@@ -372,31 +372,31 @@
         402.0
       ],
       "modelProjectedBBox": [
-        187.0,
-        319.0,
-        283.1,
-        375.3
+        187.8,
+        324.1,
+        286.2,
+        370.7
       ],
-      "bboxIoU": 0.69,
-      "centerOffsetPx": 8.0
+      "bboxIoU": 0.643,
+      "centerOffsetPx": 8.6
     },
     {
       "photo": 3,
       "model": "single",
       "maskBBox": [
         94.0,
-        220.0,
+        219.0,
         258.0,
         375.0
       ],
       "modelProjectedBBox": [
         76.4,
-        211.7,
-        254.8,
-        349.1
+        216.5,
+        257.7,
+        344.7
       ],
-      "bboxIoU": 0.639,
-      "centerOffsetPx": 19.5
+      "bboxIoU": 0.656,
+      "centerOffsetPx": 18.3
     },
     {
       "photo": 4,
@@ -408,13 +408,13 @@
         341.0
       ],
       "modelProjectedBBox": [
-        125.0,
-        252.1,
-        275.1,
-        365.6
+        124.8,
+        258.0,
+        277.6,
+        360.9
       ],
-      "bboxIoU": 0.516,
-      "centerOffsetPx": 15.0
+      "bboxIoU": 0.535,
+      "centerOffsetPx": 12.9
     }
   ],
   "button": {
@@ -500,13 +500,13 @@
   },
   "scale": "unverified",
   "timing": {
-    "oneShotSeconds": 448.93,
-    "geometrySeconds": 85.71,
-    "segmentationSeconds": 128.43,
+    "oneShotSeconds": 289.24,
+    "geometrySeconds": 120.396214509,
+    "segmentationSeconds": 120.36093714500001,
     "segmentationExtraSeconds": 0,
-    "owlSeconds": 46.93,
-    "cartMaskSeconds": 30.22,
-    "cartModelSeconds": 273.72,
-    "modelSeconds": 273.72
+    "owlSeconds": 9.505138125000002,
+    "cartMaskSeconds": 1.6385362729999997,
+    "cartModelSeconds": 102.59960759999998,
+    "modelSeconds": 102.59960759999998
   }
 }
