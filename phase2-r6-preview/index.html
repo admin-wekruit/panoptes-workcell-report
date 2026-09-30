@@ -22,7 +22,7 @@
   <header>
     <div class="eyebrow">Phase 2 · r6 正确性修复 · 2026-09-30</div>
     <h1>视频里的模型，位置对不对？</h1>
-    <p class="sub">这是当前物体层的可视化检查页。图片将 3D 模型从视频相机投影回原帧；绿色轮廓代表物体掩码，错位样本可以点开看大图。</p>
+    <p class="sub">这是当前物体层的可视化检查页。覆盖图把 3D 模型从视频相机投影回原帧，白线是模型投影边界；错位样本图中白线是物体掩码，黄线是模型轮廓。点图可以放大。</p>
   </header>
   <div class="scroll"><table>
     <thead><tr><th>视频</th><th>第 5 轮位置</th><th>修正版位置</th><th>轮廓重合度中位：旧 → 新</th><th>状态</th></tr></thead>
@@ -32,14 +32,18 @@
       <tr><td>Walmart</td><td class="bad">局部错</td><td>待复测</td><td>0.635 → 待测</td><td>旧版相邻鞋子仍有错配</td></tr>
     </tbody>
   </table></div>
-  <p class="notice">ME340 修正版已跑完，但尚未达到物体模型覆盖率和重合度目标。新旧覆盖图来自不同帧，只能分别查看效果，不能当作同帧前后比较。此页是视觉预览，完整的点击物体 3D 交互仍在验证。</p>
-  <section><h2>ME340 · 当前修正版</h2><div class="grid">
-    <figure><a href="images/me340-new.jpg"><img src="images/me340-new.jpg" alt="修正版 ME340 视频帧上的三维模型覆盖"></a><figcaption>当前模型在视频第 575 帧上的投影。</figcaption></figure>
-    <figure><a href="images/me340-new-worst.jpg"><img src="images/me340-new-worst.jpg" alt="修正版 ME340 对齐最差的生成模型样本"></a><figcaption>当前错位最明显的生成模型样本。</figcaption></figure>
+  <p class="notice">ME340 修正版已跑完，但尚未达到物体模型覆盖率和重合度目标。下方两组覆盖图分别比较同一视频帧；这是视觉预览，完整的点击物体 3D 交互仍在验证。</p>
+  <section><h2>ME340 · 同帧对照：第 575 帧</h2><div class="grid">
+    <figure><a href="images/me340-old.jpg"><img src="images/me340-old.jpg" alt="修复前第575帧的三维模型覆盖"></a><figcaption>修复前 · 第 575 帧</figcaption></figure>
+    <figure><a href="images/me340-new.jpg"><img src="images/me340-new.jpg" alt="修正版第575帧的三维模型覆盖"></a><figcaption>修正版 · 第 575 帧</figcaption></figure>
   </div></section>
-  <section><h2>ME340 · 修复前</h2><div class="grid">
-    <figure><a href="images/me340-old.jpg"><img src="images/me340-old.jpg" alt="ME340 视频帧上的三维模型覆盖"></a><figcaption>3D 模型投影到视频帧。点图放大。</figcaption></figure>
-    <figure><a href="images/me340-worst.jpg"><img src="images/me340-worst.jpg" alt="ME340 对齐最差的生成模型样本"></a><figcaption>对齐最差的生成模型样本。</figcaption></figure>
+  <section><h2>ME340 · 同帧对照：第 19 帧</h2><div class="grid">
+    <figure><a href="images/me340-old-19.jpg"><img src="images/me340-old-19.jpg" alt="修复前第19帧的三维模型覆盖"></a><figcaption>修复前 · 第 19 帧</figcaption></figure>
+    <figure><a href="images/me340-new-19.jpg"><img src="images/me340-new-19.jpg" alt="修正版第19帧的三维模型覆盖"></a><figcaption>修正版 · 第 19 帧</figcaption></figure>
+  </div></section>
+  <section><h2>ME340 · 错位样本</h2><div class="grid">
+    <figure><a href="images/me340-worst.jpg"><img src="images/me340-worst.jpg" alt="ME340 修复前对齐最差的生成模型样本"></a><figcaption>修复前：对齐最差的生成模型。</figcaption></figure>
+    <figure><a href="images/me340-new-worst.jpg"><img src="images/me340-new-worst.jpg" alt="ME340 修正版对齐最差的生成模型样本"></a><figcaption>修正版：对齐最差的生成模型。</figcaption></figure>
   </div></section>
   <section><h2>Sam’s Club · 修复前</h2><div class="grid">
     <figure><a href="images/sams-old.jpg"><img src="images/sams-old.jpg" alt="Sam's Club 视频帧上的三维模型覆盖"></a><figcaption>3D 模型投影到视频帧。</figcaption></figure>
