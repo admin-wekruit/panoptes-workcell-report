@@ -35,6 +35,14 @@
   <p class="notice">三段视频的本轮修正版均已跑完，位置正确性尚未验收。轻微偏差可容忍，但图中的大型机器、货架和商品仍有明显错位。下方覆盖图分别比较同一视频帧；这是视觉预览，完整的点击物体 3D 交互仍在验证。</p>
   <p>有真值的视频另做了地面位置检查：暖运行 595 张可评分物体卡，在真实相机高度下误差中位 9.84 cm；按产品当前假设的 1.6 m 相机高度则为 21.11 cm。五段真值视频共有 700 张物体卡，其中 30 张没有可评分的位置，均单独计为未验证。目标为真实高度下中位不超过 8 cm，目前未达到。</p>
   <p>物体卡中，单视角的宽、高、深及可见长度只显示边界或“无法测量”，不直接给确定尺寸。本轮全部生成模型到齐用时：ME340 285 s、Sam’s Club 170 s、Walmart 445 s；均在上一轮各视频用时的 10% 范围内。</p>
+  <section><h2>点开单个物体：当前明显错位的例子</h2>
+    <p>每张图从左到右为点击物体的白色轮廓、当前显示的绿色模型、上一轮的黄色形状。图中是同一帧的投影，能直接看到模型是否贴在轮廓上。</p>
+    <div class="grid">
+      <figure><a href="images/me340-machine-focus.jpg"><img src="images/me340-machine-focus.jpg" alt="ME340机器卡：点击轮廓混入墙面，显示面落在左侧墙上"></a><figcaption>ME340 机器：点击轮廓已混入墙面，显示面落在左侧墙上。</figcaption></figure>
+      <figure><a href="images/sams-shelf-focus.jpg"><img src="images/sams-shelf-focus.jpg" alt="Sam’s Club货架：点击轮廓覆盖长货架，模型只覆盖远端上方"></a><figcaption>Sam’s Club 货架：点击范围是整段货架，显示面只覆盖远端上方。</figcaption></figure>
+      <figure><a href="images/walmart-shoe-focus.jpg"><img src="images/walmart-shoe-focus.jpg" alt="Walmart鞋子：生成模型投影偏到鞋子轮廓右下方"></a><figcaption>Walmart 鞋子：生成模型投影偏到点击轮廓的右下方。</figcaption></figure>
+    </div>
+  </section>
   <section><h2>ME340 · 同帧对照：第 575 帧</h2><div class="grid">
     <figure><a href="images/me340-old.jpg"><img src="images/me340-old.jpg" alt="修复前第575帧的三维模型覆盖"></a><figcaption>修复前 · 第 575 帧</figcaption></figure>
     <figure><a href="images/me340-new.jpg"><img src="images/me340-new.jpg" alt="修正版第575帧的三维模型覆盖"></a><figcaption>修正版 · 第 575 帧</figcaption></figure>
