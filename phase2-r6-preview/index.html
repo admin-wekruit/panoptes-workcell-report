@@ -44,6 +44,10 @@
       <figure><a href="images/walmart-shoe-focus.jpg"><img src="images/walmart-shoe-focus.jpg" alt="Walmart鞋子修正前：生成模型投影偏到鞋子轮廓右下方"></a><figcaption>Walmart 鞋子修正前：生成模型投影偏到点击轮廓的右下方；下面是修正后的全帧叠图。</figcaption></figure>
     </div>
   </section>
+  <section><h2>为什么 Sam’s Club 的小物体会贴错</h2>
+    <p>下面是同一张物体卡在第 436、464、706 帧的实际黄色点击轮廓。每帧只覆盖货架旁很小的一块，合并后的观测点却跨了约 5 米。相邻帧的掩码整体较一致，所以只调相邻帧阈值解决不了这类明显错位；正在核对跨较远帧的物体归属。</p>
+    <figure><a href="images/sams-package-track.jpg"><img src="images/sams-package-track.jpg" alt="同一物体卡在 Sam’s Club 第 436、464、706 帧的黄色点击轮廓，分别落在不同局部区域"></a><figcaption>Sam’s Club · 同一卡片跨帧点击轮廓；这张图是诊断证据，不代表位置已经修正。</figcaption></figure>
+  </section>
   <section><h2>ME340 · 同帧对照：第 575 帧</h2><div class="grid">
     <figure><a href="images/me340-old.jpg"><img src="images/me340-old.jpg" alt="修复前第575帧的三维模型覆盖"></a><figcaption>修复前 · 第 575 帧</figcaption></figure>
     <figure><a href="images/me340-new.jpg"><img src="images/me340-new.jpg" alt="修正版第575帧的三维模型覆盖"></a><figcaption>修正版 · 第 575 帧</figcaption></figure>
