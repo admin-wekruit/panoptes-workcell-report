@@ -1,0 +1,17 @@
+{
+  "records": {
+    "metrology_original": {
+      "returncode": 0,
+      "seconds": 15.435939818000001
+    },
+    "square_pixel_cameras": {
+      "returncode": 0,
+      "seconds": 23.22550295
+    },
+    "metrology_square_pixels": {
+      "returncode": 0,
+      "seconds": 15.878742349999996
+    }
+  },
+  "containerWallSeconds": 39.604083451
+}

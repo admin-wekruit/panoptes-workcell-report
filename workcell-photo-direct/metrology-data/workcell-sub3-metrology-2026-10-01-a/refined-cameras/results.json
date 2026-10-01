@@ -1,0 +1,4673 @@
+{
+  "schemaVersion": 1,
+  "coordinateSystem": "MapAnything native",
+  "cameraRoute": "replacement cameras; independently retriangulated source geometry",
+  "reference": {
+    "objectId": "emergency-button",
+    "features": {
+      "wholeComponentHeightM": 0.1,
+      "mainBodyDiameterM": 0.085,
+      "redActuatorDiameterM": 0.04
+    },
+    "scope": "whole component: red cap, yellow body, gray lower housing; mounting bracket excluded",
+    "scopeStatus": "pending_confirmation"
+  },
+  "sourceInputs": [
+    {
+      "photo": 1,
+      "name": "source-1.jpg",
+      "sha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac",
+      "rawShape": [
+        4032,
+        3024
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "inputToCanonicalPixelCentres": [
+        [
+          0.12962962962962962,
+          0.0,
+          -0.4351851851851852
+        ],
+        [
+          0.0,
+          0.12946428571428573,
+          -2.435267857142857
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K": [
+        [
+          316.7674339178151,
+          0.0,
+          195.68698120117185
+        ],
+        [
+          0.0,
+          351.3427109317721,
+          258.802001953125
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose": [
+        [
+          0.9999800237837958,
+          -0.005974083723326263,
+          -0.0020645476568927445,
+          0.04609718952806611
+        ],
+        [
+          0.005985959866269214,
+          0.9999652929334293,
+          0.005794929942871998,
+          -0.013963116048396174
+        ],
+        [
+          0.002029856605851294,
+          -0.005807172481513758,
+          0.9999810780359455,
+          0.05705086302936352
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "photo": 2,
+      "name": "source-2.jpg",
+      "sha256": "6cd81ae4ae783c37d0a1129e39acb0d7064c46d9b51524130406642f8c7a3bea",
+      "rawShape": [
+        4032,
+        3024
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "inputToCanonicalPixelCentres": [
+        [
+          0.12962962962962962,
+          0.0,
+          -0.4351851851851852
+        ],
+        [
+          0.0,
+          0.12946428571428573,
+          -2.435267857142857
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K": [
+        [
+          396.096341938287,
+          0.0,
+          195.78422546386716
+        ],
+        [
+          0.0,
+          353.8080565416467,
+          259.02099609375
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose": [
+        [
+          0.8114587495683726,
+          -0.0137534729901877,
+          -0.5842478410141063,
+          2.641638002237457
+        ],
+        [
+          -0.015971718447584302,
+          0.9988277065761323,
+          -0.04569591651009093,
+          0.008528878620977242
+        ],
+        [
+          0.5841914086656603,
+          0.046411793291946335,
+          0.8102878152142363,
+          0.11985753032136057
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "photo": 3,
+      "name": "source-3.jpg",
+      "sha256": "0a8d4b8884867bf9f1836193db2fae0350a99e9e6b242eb9e01e20fda7c59438",
+      "rawShape": [
+        4032,
+        3024
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "inputToCanonicalPixelCentres": [
+        [
+          0.12962962962962962,
+          0.0,
+          -0.4351851851851852
+        ],
+        [
+          0.0,
+          0.12946428571428573,
+          -2.435267857142857
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K": [
+        [
+          327.94424341875833,
+          0.0,
+          195.88412475585935
+        ],
+        [
+          0.0,
+          363.5770994451301,
+          258.8451232910156
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose": [
+        [
+          0.998243254957159,
+          0.018224673650231175,
+          0.05637610489277079,
+          0.020752810008805297
+        ],
+        [
+          -0.020373659086162604,
+          0.9990782993083448,
+          0.037781819259910684,
+          -0.09632066009078946
+        ],
+        [
+          -0.055635581671973335,
+          -0.03886403377790635,
+          0.9976944767465303,
+          -0.5288435449218557
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "photo": 4,
+      "name": "source-4.jpg",
+      "sha256": "e73931b6cdf68775ddafbc949c392c0ea2908f4dec671a4935e4c09361ae66ec",
+      "rawShape": [
+        4032,
+        3024
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "inputToCanonicalPixelCentres": [
+        [
+          0.12962962962962962,
+          0.0,
+          -0.4351851851851852
+        ],
+        [
+          0.0,
+          0.12946428571428573,
+          -2.435267857142857
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K": [
+        [
+          345.2836586073791,
+          0.0,
+          195.75495910644528
+        ],
+        [
+          0.0,
+          359.80600309165914,
+          258.5035705566406
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose": [
+        [
+          0.9870103363166186,
+          -0.007856909079108278,
+          -0.16046452874040423,
+          0.6608447886004275
+        ],
+        [
+          0.0049741241830208675,
+          0.9998190853939907,
+          -0.018359046013840242,
+          -0.09339602919096676
+        ],
+        [
+          0.16057974371871944,
+          0.017322397687648983,
+          0.9868708529719495,
+          -0.6786862578450671
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "calibration": {
+    "baseline": {
+      "status": "conditional",
+      "mPerNative": 0.5966604006052245,
+      "nativeHeight": 0.16759952545629753,
+      "scopeStatus": "pending_confirmation",
+      "method": "provided whole-component height / saved whole-component native envelope"
+    },
+    "new": {
+      "status": "unsupported",
+      "mPerNative": null,
+      "rangeMPerNative": null,
+      "reason": "No named circular feature passed withheld-image support"
+    },
+    "candidates": [
+      {
+        "feature": "redActuatorDiameterM",
+        "knownDiameterM": 0.04,
+        "views": [
+          {
+            "photo": 2,
+            "hullRaw": [
+              [
+                2732.0,
+                2298.0
+              ],
+              [
+                2729.0,
+                2313.0
+              ],
+              [
+                2728.0,
+                2315.0
+              ],
+              [
+                2722.0,
+                2318.0
+              ],
+              [
+                2704.0,
+                2318.0
+              ],
+              [
+                2688.0,
+                2317.0
+              ],
+              [
+                2684.0,
+                2315.0
+              ],
+              [
+                2683.0,
+                2313.0
+              ],
+              [
+                2679.0,
+                2296.0
+              ],
+              [
+                2679.0,
+                2285.0
+              ],
+              [
+                2681.0,
+                2284.0
+              ],
+              [
+                2693.0,
+                2283.0
+              ],
+              [
+                2727.0,
+                2284.0
+              ],
+              [
+                2731.0,
+                2288.0
+              ],
+              [
+                2732.0,
+                2290.0
+              ]
+            ],
+            "tangentPixelsRaw": [
+              [
+                2732.0,
+                2290.0
+              ],
+              [
+                2683.0,
+                2313.0
+              ]
+            ]
+          },
+          {
+            "photo": 3,
+            "hullRaw": [
+              [
+                2703.0,
+                2096.0
+              ],
+              [
+                2700.0,
+                2116.0
+              ],
+              [
+                2696.0,
+                2116.0
+              ],
+              [
+                2682.0,
+                2115.0
+              ],
+              [
+                2671.0,
+                2114.0
+              ],
+              [
+                2663.0,
+                2113.0
+              ],
+              [
+                2661.0,
+                2112.0
+              ],
+              [
+                2660.0,
+                2111.0
+              ],
+              [
+                2657.0,
+                2097.0
+              ],
+              [
+                2657.0,
+                2089.0
+              ],
+              [
+                2661.0,
+                2089.0
+              ],
+              [
+                2682.0,
+                2091.0
+              ],
+              [
+                2701.0,
+                2093.0
+              ],
+              [
+                2703.0,
+                2095.0
+              ]
+            ],
+            "tangentPixelsRaw": [
+              [
+                2703.0,
+                2095.0
+              ],
+              [
+                2657.0,
+                2097.0
+              ]
+            ]
+          },
+          {
+            "photo": 4,
+            "hullRaw": [
+              [
+                2846.0,
+                2222.0
+              ],
+              [
+                2844.0,
+                2237.0
+              ],
+              [
+                2843.0,
+                2240.0
+              ],
+              [
+                2810.0,
+                2238.0
+              ],
+              [
+                2803.0,
+                2237.0
+              ],
+              [
+                2802.0,
+                2235.0
+              ],
+              [
+                2799.0,
+                2222.0
+              ],
+              [
+                2799.0,
+                2215.0
+              ],
+              [
+                2800.0,
+                2213.0
+              ],
+              [
+                2837.0,
+                2215.0
+              ],
+              [
+                2846.0,
+                2216.0
+              ]
+            ],
+            "tangentPixelsRaw": [
+              [
+                2846.0,
+                2216.0
+              ],
+              [
+                2802.0,
+                2235.0
+              ]
+            ]
+          }
+        ],
+        "method": "multiview tangent planes to maximum upright circular cross-section",
+        "assumption": "Circular section and common upright axis; full maximum-radius silhouette must be visible.",
+        "status": "unsupported",
+        "mPerNative": null,
+        "reason": "Circular tangent fit has no positive radius"
+      },
+      {
+        "feature": "mainBodyDiameterM",
+        "knownDiameterM": 0.085,
+        "views": [
+          {
+            "photo": 2,
+            "hullRaw": [
+              [
+                2764.0,
+                2376.0
+              ],
+              [
+                2763.0,
+                2378.0
+              ],
+              [
+                2762.0,
+                2379.0
+              ],
+              [
+                2755.0,
+                2383.0
+              ],
+              [
+                2746.0,
+                2385.0
+              ],
+              [
+                2723.0,
+                2386.0
+              ],
+              [
+                2636.0,
+                2387.0
+              ],
+              [
+                2629.0,
+                2384.0
+              ],
+              [
+                2629.0,
+                2369.0
+              ],
+              [
+                2651.0,
+                2330.0
+              ],
+              [
+                2657.0,
+                2325.0
+              ],
+              [
+                2683.0,
+                2318.0
+              ],
+              [
+                2688.0,
+                2318.0
+              ],
+              [
+                2726.0,
+                2319.0
+              ],
+              [
+                2750.0,
+                2327.0
+              ],
+              [
+                2756.0,
+                2331.0
+              ],
+              [
+                2757.0,
+                2332.0
+              ],
+              [
+                2759.0,
+                2338.0
+              ],
+              [
+                2763.0,
+                2355.0
+              ],
+              [
+                2764.0,
+                2362.0
+              ]
+            ],
+            "tangentPixelsRaw": [
+              [
+                2759.0,
+                2338.0
+              ],
+              [
+                2629.0,
+                2384.0
+              ]
+            ]
+          },
+          {
+            "photo": 3,
+            "hullRaw": [
+              [
+                2724.0,
+                2164.0
+              ],
+              [
+                2718.0,
+                2171.0
+              ],
+              [
+                2714.0,
+                2172.0
+              ],
+              [
+                2676.0,
+                2172.0
+              ],
+              [
+                2662.0,
+                2171.0
+              ],
+              [
+                2644.0,
+                2169.0
+              ],
+              [
+                2640.0,
+                2168.0
+              ],
+              [
+                2628.0,
+                2164.0
+              ],
+              [
+                2627.0,
+                2162.0
+              ],
+              [
+                2626.0,
+                2158.0
+              ],
+              [
+                2626.0,
+                2150.0
+              ],
+              [
+                2627.0,
+                2144.0
+              ],
+              [
+                2632.0,
+                2128.0
+              ],
+              [
+                2633.0,
+                2125.0
+              ],
+              [
+                2637.0,
+                2121.0
+              ],
+              [
+                2639.0,
+                2120.0
+              ],
+              [
+                2644.0,
+                2118.0
+              ],
+              [
+                2660.0,
+                2115.0
+              ],
+              [
+                2667.0,
+                2115.0
+              ],
+              [
+                2694.0,
+                2117.0
+              ],
+              [
+                2700.0,
+                2118.0
+              ],
+              [
+                2714.0,
+                2125.0
+              ],
+              [
+                2721.0,
+                2130.0
+              ],
+              [
+                2722.0,
+                2134.0
+              ],
+              [
+                2724.0,
+                2148.0
+              ]
+            ],
+            "tangentPixelsRaw": [
+              [
+                2722.0,
+                2134.0
+              ],
+              [
+                2626.0,
+                2158.0
+              ]
+            ]
+          },
+          {
+            "photo": 4,
+            "hullRaw": [
+              [
+                2882.0,
+                2270.0
+              ],
+              [
+                2875.0,
+                2292.0
+              ],
+              [
+                2871.0,
+                2296.0
+              ],
+              [
+                2869.0,
+                2297.0
+              ],
+              [
+                2864.0,
+                2298.0
+              ],
+              [
+                2845.0,
+                2299.0
+              ],
+              [
+                2820.0,
+                2299.0
+              ],
+              [
+                2793.0,
+                2297.0
+              ],
+              [
+                2783.0,
+                2296.0
+              ],
+              [
+                2778.0,
+                2295.0
+              ],
+              [
+                2774.0,
+                2293.0
+              ],
+              [
+                2773.0,
+                2292.0
+              ],
+              [
+                2772.0,
+                2290.0
+              ],
+              [
+                2771.0,
+                2285.0
+              ],
+              [
+                2771.0,
+                2271.0
+              ],
+              [
+                2772.0,
+                2266.0
+              ],
+              [
+                2775.0,
+                2254.0
+              ],
+              [
+                2776.0,
+                2251.0
+              ],
+              [
+                2778.0,
+                2248.0
+              ],
+              [
+                2779.0,
+                2247.0
+              ],
+              [
+                2784.0,
+                2245.0
+              ],
+              [
+                2804.0,
+                2239.0
+              ],
+              [
+                2806.0,
+                2239.0
+              ],
+              [
+                2830.0,
+                2240.0
+              ],
+              [
+                2842.0,
+                2241.0
+              ],
+              [
+                2845.0,
+                2242.0
+              ],
+              [
+                2863.0,
+                2250.0
+              ],
+              [
+                2882.0,
+                2267.0
+              ]
+            ],
+            "tangentPixelsRaw": [
+              [
+                2882.0,
+                2267.0
+              ],
+              [
+                2772.0,
+                2290.0
+              ]
+            ]
+          }
+        ],
+        "method": "multiview tangent planes to maximum upright circular cross-section",
+        "assumption": "Circular section and common upright axis; full maximum-radius silhouette must be visible.",
+        "status": "unsupported",
+        "mPerNative": null,
+        "reason": "At least three photos with independent held-out radius fits are required",
+        "nativeDiameter": 0.0845904934961327,
+        "candidateMPerNative": 1.0048410463982698,
+        "centerAxisNative": [
+          1.698212969949974,
+          -0.4082961728604015,
+          3.080889373990807
+        ],
+        "axisNative": [
+          -0.22348489463358442,
+          -0.9746890224436745,
+          -0.0059842625619042815
+        ],
+        "condition": 5.724962271724044,
+        "maxFitErrorRawPx": 112.05688439551903,
+        "heldOutPhotos": [
+          {
+            "photo": 2,
+            "reason": "Circular tangent fit has no positive radius",
+            "maxErrorRawPx": null
+          },
+          {
+            "photo": 3,
+            "maxErrorRawPx": 154.11080582223153
+          },
+          {
+            "photo": 4,
+            "maxErrorRawPx": 153.22428672469616
+          }
+        ],
+        "heldOutRelativeDiameterError": 1.3713509435946243,
+        "sourcePhotos": [
+          2,
+          3,
+          4
+        ],
+        "leaveOnePhotoScaleRange": [
+          0.6763486516897242,
+          0.7173249427225452
+        ]
+      }
+    ],
+    "selectionReason": "No named circular feature passed withheld-image support",
+    "heightScope": "The 10 cm gray-base extent remains explicit and is not imposed on circle fits.",
+    "uprightAxisSource": "fitted local floor normal"
+  },
+  "ground": {
+    "status": "available",
+    "reason": null,
+    "normal": [
+      -0.22348489463358442,
+      -0.9746890224436745,
+      -0.0059842625619042815
+    ],
+    "offset": 1.9598994204803806,
+    "supportPoints": 23,
+    "inputPoints": 33,
+    "method": "RGB floor tracks independently retriangulated with replacement cameras",
+    "residualP95Native": 0.026768642814943223,
+    "sourcePhotos": [
+      3,
+      4
+    ],
+    "patches": [
+      {
+        "objectId": "fence-0",
+        "status": "unsupported",
+        "reason": "Insufficient nearby floor support",
+        "supportPoints": 0
+      },
+      {
+        "objectId": "post-box-1",
+        "status": "unsupported",
+        "reason": "Insufficient nearby floor support",
+        "supportPoints": 6
+      },
+      {
+        "objectId": "post-box-2",
+        "status": "unsupported",
+        "reason": "Insufficient nearby floor support",
+        "supportPoints": 7
+      }
+    ],
+    "trackDiagnostics": [
+      {
+        "side": "left",
+        "photo": 1,
+        "detectedRgbFeatures": 149
+      },
+      {
+        "side": "left",
+        "photo": 2,
+        "detectedRgbFeatures": 79
+      },
+      {
+        "side": "left",
+        "photo": 3,
+        "detectedRgbFeatures": 106
+      },
+      {
+        "side": "left",
+        "photo": 4,
+        "detectedRgbFeatures": 116
+      },
+      {
+        "method": "sift",
+        "finalTrackRejections": {
+          "invalidViewCount": 0,
+          "triangulation": 3,
+          "instanceAmbiguity": 0
+        }
+      }
+    ],
+    "assumption": "Dominant unsegmented local horizontal surface is concrete floor; mounting plates and rails must be inspected in source overlays."
+  },
+  "objects": [
+    {
+      "id": "fence-0",
+      "status": "unsupported",
+      "reason": "No sufficiently supported local floor",
+      "bottomEdge": {
+        "pointNative": [
+          1.593855657849157,
+          0.03451708061913844,
+          6.737322084908133
+        ],
+        "endsNative": [
+          [
+            1.5209210150420838,
+            -0.0019601425792271573,
+            7.087865718162229
+          ],
+          [
+            1.8029246500092881,
+            0.13907996044368826,
+            5.732479923598785
+          ]
+        ],
+        "sharedEndsNative": [
+          [
+            1.545870068595868,
+            0.010517771345390049,
+            6.967953814265905
+          ],
+          [
+            1.641841247102446,
+            0.058516389892886836,
+            6.506690355550361
+          ]
+        ],
+        "axisNative": [
+          0.20265027045726186,
+          0.10135264755093605,
+          -0.973992047564052
+        ],
+        "reprojectionErrorsRawPx": [
+          0.06483436622261718,
+          0.04223319097514695
+        ],
+        "maxReprojectionErrorRawPx": 0.06483436622261718,
+        "condition": 19.334042558757336,
+        "sourcePhotos": [
+          1,
+          4
+        ],
+        "observations": [
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                2030.7222900390625,
+                2003.36181640625
+              ],
+              [
+                2122.921142578125,
+                2028.6119384765625
+              ]
+            ],
+            "uv": [
+              [
+                262.8065931532118,
+                256.9285387311663
+              ],
+              [
+                274.75829626012734,
+                260.1975277491979
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view1-beam26"
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                2449.68359375,
+                2166.939208984375
+              ],
+              [
+                2269.83349609375,
+                2101.615478515625
+              ]
+            ],
+            "uv": [
+              [
+                317.1163917824074,
+                278.1059690202986
+              ],
+              [
+                293.802490234375,
+                269.6488789149694
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view4-beam109"
+          }
+        ],
+        "pixelSensitivityPointsNative": [
+          [
+            1.545870068595868,
+            0.010517771345390049,
+            6.967953814265905
+          ],
+          [
+            1.641841247102446,
+            0.058516389892886836,
+            6.506690355550361
+          ],
+          [
+            1.6287133661145499,
+            0.05497393014143514,
+            6.449914745732248
+          ],
+          [
+            1.5371854204085602,
+            0.009027005647745983,
+            6.891484748687016
+          ],
+          [
+            1.5545314622125577,
+            0.012042276692178923,
+            7.044325937981945
+          ],
+          [
+            1.654958537915986,
+            0.06208361803587081,
+            6.563457317559544
+          ],
+          [
+            1.6254955978745016,
+            0.05812855617202936,
+            6.441001054067374
+          ],
+          [
+            1.5341474583656909,
+            0.012678369481033243,
+            6.877742130951135
+          ],
+          [
+            1.5576779717566405,
+            0.008305539209057966,
+            7.058704780555414
+          ],
+          [
+            1.6582688027399977,
+            0.058877446561616364,
+            6.572676456617137
+          ]
+        ]
+      },
+      "axisNative": [
+        0.006940489563542177,
+        -0.9947531121063626,
+        -0.10206897451882697
+      ],
+      "topEdge": null,
+      "identity": "observed lower fence rail",
+      "scope": "visible rigid bottom edge; occluded portions and hardware are not measured",
+      "pointNative": null,
+      "footNative": null,
+      "heightNative": null,
+      "rangeNative": null,
+      "sourcePhotos": []
+    },
+    {
+      "status": "unsupported",
+      "reason": "No common RGB end edge has stable multiview reprojection support",
+      "pointNative": null,
+      "footNative": null,
+      "heightNative": null,
+      "rangeNative": null,
+      "sourcePhotos": [],
+      "id": "post-box-1",
+      "bottomEdge": null,
+      "topEdge": null
+    },
+    {
+      "status": "unsupported",
+      "reason": "No common RGB end edge has stable multiview reprojection support",
+      "pointNative": null,
+      "footNative": null,
+      "heightNative": null,
+      "rangeNative": null,
+      "sourcePhotos": [],
+      "id": "post-box-2",
+      "bottomEdge": null,
+      "topEdge": null
+    }
+  ],
+  "routes": {
+    "A": {
+      "label": "Saved geometry / saved whole-height scale",
+      "scaleMPerNative": 0.5966604006052245,
+      "objects": [
+        {
+          "id": "fence-0",
+          "status": "available",
+          "reason": null,
+          "pointNative": [
+            1.409079885537936,
+            1.6494992978842609,
+            5.115593847559617
+          ],
+          "footNative": [
+            1.4070875304371255,
+            1.9350557334692828,
+            5.144894034342692
+          ],
+          "heightNative": 0.2870626047741234,
+          "sourcePhotos": [
+            3,
+            4
+          ],
+          "rangeNative": [
+            0.27880224207382964,
+            0.2870626047741234
+          ],
+          "localFloor": {
+            "normal": [
+              0.006940489563542177,
+              -0.9947531121063626,
+              -0.10206897451882697
+            ],
+            "offset": 2.440270875646988
+          },
+          "method": "saved source rail feature and saved floor",
+          "heightM": 0.17127888876330769,
+          "rangeM": [
+            0.16635025744540596,
+            0.17127888876330769
+          ]
+        },
+        {
+          "id": "post-box-1",
+          "status": "available",
+          "reason": null,
+          "pointNative": [
+            1.6233931072230765,
+            1.7946116785363295,
+            4.169651357798163
+          ],
+          "footNative": [
+            1.6217221813892408,
+            2.0340989161568666,
+            4.194224507112081
+          ],
+          "heightNative": 0.2407504281272661,
+          "rangeNative": [
+            0.16341559125739114,
+            0.3619849109877058
+          ],
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "byPhoto": [
+            {
+              "photo": 1,
+              "heightNative": 0.23090128391005038,
+              "pointNative": [
+                1.7015209210164648,
+                1.8016796224630198,
+                4.202575469087072
+              ],
+              "footNative": [
+                1.6999183530652786,
+                2.0313693932218975,
+                4.226143326350851
+              ]
+            },
+            {
+              "photo": 2,
+              "heightNative": 0.3619849109877058,
+              "pointNative": [
+                0.3230316149516913,
+                1.2973505167023363,
+                7.739712306832141
+              ],
+              "footNative": [
+                0.3205192624548214,
+                1.6574361334429013,
+                7.776659735487945
+              ]
+            },
+            {
+              "photo": 3,
+              "heightNative": 0.2505995723444818,
+              "pointNative": [
+                1.6111129453860211,
+                1.787998373544801,
+                4.136773895802755
+              ],
+              "footNative": [
+                1.6093736616695362,
+                2.0372830780269977,
+                4.162352337166813
+              ]
+            },
+            {
+              "photo": 4,
+              "heightNative": 0.16341559125739114,
+              "pointNative": [
+                1.6356700969999027,
+                1.8790773408118784,
+                4.104965342713169
+              ],
+              "footNative": [
+                1.6345359127942607,
+                2.0416355087818694,
+                4.121645004533199
+              ]
+            }
+          ],
+          "localFloor": {
+            "normal": [
+              0.006940489563542177,
+              -0.9947531121063626,
+              -0.10206897451882697
+            ],
+            "offset": 2.440270875646988
+          },
+          "method": "median of saved all-valid-mask-point extrema; virtual display endpoint, not a physical edge",
+          "heightM": 0.1436462468922939,
+          "rangeM": [
+            0.09750361214477463,
+            0.21598206200297107
+          ]
+        },
+        {
+          "id": "post-box-2",
+          "status": "available",
+          "reason": null,
+          "pointNative": [
+            -1.2981071798466004,
+            1.8255566921939432,
+            3.448292021740813
+          ],
+          "footNative": [
+            -1.2999347464000348,
+            2.0874946289873577,
+            3.4751687776621583
+          ],
+          "heightNative": 0.26331954492584386,
+          "rangeNative": [
+            0.21726482243255463,
+            0.2714651649594728
+          ],
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "byPhoto": [
+            {
+              "photo": 1,
+              "heightNative": 0.2714651649594728,
+              "pointNative": [
+                -1.3143487700459298,
+                1.7984443118555948,
+                3.631616878147884
+              ],
+              "footNative": [
+                -1.3162328711901963,
+                2.0684851295274975,
+                3.6593250491528817
+              ]
+            },
+            {
+              "photo": 2,
+              "heightNative": 0.26015827775353095,
+              "pointNative": [
+                -1.4430050937964176,
+                1.8266955998582328,
+                3.4583114500159846
+              ],
+              "footNative": [
+                -1.444810719608035,
+                2.0854888562937894,
+                3.484865538638872
+              ]
+            },
+            {
+              "photo": 3,
+              "heightNative": 0.26648081209815677,
+              "pointNative": [
+                -1.2818593922212875,
+                1.823529531802292,
+                3.43818145221271
+              ],
+              "footNative": [
+                -1.283708899516539,
+                2.088612148953564,
+                3.4653808754325133
+              ]
+            },
+            {
+              "photo": 4,
+              "heightNative": 0.21726482243255463,
+              "pointNative": [
+                -1.2690765657757774,
+                1.885430180647247,
+                3.317957315557753
+              ],
+              "footNative": [
+                -1.2705844900083954,
+                2.101555038913267,
+                3.340133313182459
+              ]
+            }
+          ],
+          "localFloor": {
+            "normal": [
+              0.006940489563542177,
+              -0.9947531121063626,
+              -0.10206897451882697
+            ],
+            "offset": 2.440270875646988
+          },
+          "method": "median of saved all-valid-mask-point extrema; virtual display endpoint, not a physical edge",
+          "heightM": 0.15711234516263942,
+          "rangeM": [
+            0.129633315990031,
+            0.1619725140750824
+          ]
+        }
+      ]
+    },
+    "B": {
+      "label": "Saved geometry / new named-circle scale",
+      "scaleMPerNative": null,
+      "objects": [
+        {
+          "id": "fence-0",
+          "status": "unsupported",
+          "reason": "No source-supported metric scale",
+          "pointNative": [
+            1.409079885537936,
+            1.6494992978842609,
+            5.115593847559617
+          ],
+          "footNative": [
+            1.4070875304371255,
+            1.9350557334692828,
+            5.144894034342692
+          ],
+          "heightNative": 0.2870626047741234,
+          "sourcePhotos": [
+            3,
+            4
+          ],
+          "rangeNative": [
+            0.27880224207382964,
+            0.2870626047741234
+          ],
+          "localFloor": {
+            "normal": [
+              0.006940489563542177,
+              -0.9947531121063626,
+              -0.10206897451882697
+            ],
+            "offset": 2.440270875646988
+          },
+          "method": "saved source rail feature and saved floor",
+          "heightM": null,
+          "rangeM": null
+        },
+        {
+          "id": "post-box-1",
+          "status": "unsupported",
+          "reason": "No source-supported metric scale",
+          "pointNative": [
+            1.6233931072230765,
+            1.7946116785363295,
+            4.169651357798163
+          ],
+          "footNative": [
+            1.6217221813892408,
+            2.0340989161568666,
+            4.194224507112081
+          ],
+          "heightNative": 0.2407504281272661,
+          "rangeNative": [
+            0.16341559125739114,
+            0.3619849109877058
+          ],
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "byPhoto": [
+            {
+              "photo": 1,
+              "heightNative": 0.23090128391005038,
+              "pointNative": [
+                1.7015209210164648,
+                1.8016796224630198,
+                4.202575469087072
+              ],
+              "footNative": [
+                1.6999183530652786,
+                2.0313693932218975,
+                4.226143326350851
+              ]
+            },
+            {
+              "photo": 2,
+              "heightNative": 0.3619849109877058,
+              "pointNative": [
+                0.3230316149516913,
+                1.2973505167023363,
+                7.739712306832141
+              ],
+              "footNative": [
+                0.3205192624548214,
+                1.6574361334429013,
+                7.776659735487945
+              ]
+            },
+            {
+              "photo": 3,
+              "heightNative": 0.2505995723444818,
+              "pointNative": [
+                1.6111129453860211,
+                1.787998373544801,
+                4.136773895802755
+              ],
+              "footNative": [
+                1.6093736616695362,
+                2.0372830780269977,
+                4.162352337166813
+              ]
+            },
+            {
+              "photo": 4,
+              "heightNative": 0.16341559125739114,
+              "pointNative": [
+                1.6356700969999027,
+                1.8790773408118784,
+                4.104965342713169
+              ],
+              "footNative": [
+                1.6345359127942607,
+                2.0416355087818694,
+                4.121645004533199
+              ]
+            }
+          ],
+          "localFloor": {
+            "normal": [
+              0.006940489563542177,
+              -0.9947531121063626,
+              -0.10206897451882697
+            ],
+            "offset": 2.440270875646988
+          },
+          "method": "median of saved all-valid-mask-point extrema; virtual display endpoint, not a physical edge",
+          "heightM": null,
+          "rangeM": null
+        },
+        {
+          "id": "post-box-2",
+          "status": "unsupported",
+          "reason": "No source-supported metric scale",
+          "pointNative": [
+            -1.2981071798466004,
+            1.8255566921939432,
+            3.448292021740813
+          ],
+          "footNative": [
+            -1.2999347464000348,
+            2.0874946289873577,
+            3.4751687776621583
+          ],
+          "heightNative": 0.26331954492584386,
+          "rangeNative": [
+            0.21726482243255463,
+            0.2714651649594728
+          ],
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "byPhoto": [
+            {
+              "photo": 1,
+              "heightNative": 0.2714651649594728,
+              "pointNative": [
+                -1.3143487700459298,
+                1.7984443118555948,
+                3.631616878147884
+              ],
+              "footNative": [
+                -1.3162328711901963,
+                2.0684851295274975,
+                3.6593250491528817
+              ]
+            },
+            {
+              "photo": 2,
+              "heightNative": 0.26015827775353095,
+              "pointNative": [
+                -1.4430050937964176,
+                1.8266955998582328,
+                3.4583114500159846
+              ],
+              "footNative": [
+                -1.444810719608035,
+                2.0854888562937894,
+                3.484865538638872
+              ]
+            },
+            {
+              "photo": 3,
+              "heightNative": 0.26648081209815677,
+              "pointNative": [
+                -1.2818593922212875,
+                1.823529531802292,
+                3.43818145221271
+              ],
+              "footNative": [
+                -1.283708899516539,
+                2.088612148953564,
+                3.4653808754325133
+              ]
+            },
+            {
+              "photo": 4,
+              "heightNative": 0.21726482243255463,
+              "pointNative": [
+                -1.2690765657757774,
+                1.885430180647247,
+                3.317957315557753
+              ],
+              "footNative": [
+                -1.2705844900083954,
+                2.101555038913267,
+                3.340133313182459
+              ]
+            }
+          ],
+          "localFloor": {
+            "normal": [
+              0.006940489563542177,
+              -0.9947531121063626,
+              -0.10206897451882697
+            ],
+            "offset": 2.440270875646988
+          },
+          "method": "median of saved all-valid-mask-point extrema; virtual display endpoint, not a physical edge",
+          "heightM": null,
+          "rangeM": null
+        }
+      ]
+    },
+    "C": {
+      "label": "Source end edges and local floor / saved whole-height scale",
+      "scaleMPerNative": 0.5966604006052245,
+      "objects": [
+        {
+          "id": "fence-0",
+          "status": "unsupported",
+          "reason": "No sufficiently supported local floor",
+          "bottomEdge": {
+            "pointNative": [
+              1.593855657849157,
+              0.03451708061913844,
+              6.737322084908133
+            ],
+            "endsNative": [
+              [
+                1.5209210150420838,
+                -0.0019601425792271573,
+                7.087865718162229
+              ],
+              [
+                1.8029246500092881,
+                0.13907996044368826,
+                5.732479923598785
+              ]
+            ],
+            "sharedEndsNative": [
+              [
+                1.545870068595868,
+                0.010517771345390049,
+                6.967953814265905
+              ],
+              [
+                1.641841247102446,
+                0.058516389892886836,
+                6.506690355550361
+              ]
+            ],
+            "axisNative": [
+              0.20265027045726186,
+              0.10135264755093605,
+              -0.973992047564052
+            ],
+            "reprojectionErrorsRawPx": [
+              0.06483436622261718,
+              0.04223319097514695
+            ],
+            "maxReprojectionErrorRawPx": 0.06483436622261718,
+            "condition": 19.334042558757336,
+            "sourcePhotos": [
+              1,
+              4
+            ],
+            "observations": [
+              {
+                "photo": 1,
+                "rawEnds": [
+                  [
+                    2030.7222900390625,
+                    2003.36181640625
+                  ],
+                  [
+                    2122.921142578125,
+                    2028.6119384765625
+                  ]
+                ],
+                "uv": [
+                  [
+                    262.8065931532118,
+                    256.9285387311663
+                  ],
+                  [
+                    274.75829626012734,
+                    260.1975277491979
+                  ]
+                ],
+                "score": 1.0,
+                "sourceBeam": "fence-p0-view1-beam26"
+              },
+              {
+                "photo": 4,
+                "rawEnds": [
+                  [
+                    2449.68359375,
+                    2166.939208984375
+                  ],
+                  [
+                    2269.83349609375,
+                    2101.615478515625
+                  ]
+                ],
+                "uv": [
+                  [
+                    317.1163917824074,
+                    278.1059690202986
+                  ],
+                  [
+                    293.802490234375,
+                    269.6488789149694
+                  ]
+                ],
+                "score": 1.0,
+                "sourceBeam": "fence-p0-view4-beam109"
+              }
+            ],
+            "pixelSensitivityPointsNative": [
+              [
+                1.545870068595868,
+                0.010517771345390049,
+                6.967953814265905
+              ],
+              [
+                1.641841247102446,
+                0.058516389892886836,
+                6.506690355550361
+              ],
+              [
+                1.6287133661145499,
+                0.05497393014143514,
+                6.449914745732248
+              ],
+              [
+                1.5371854204085602,
+                0.009027005647745983,
+                6.891484748687016
+              ],
+              [
+                1.5545314622125577,
+                0.012042276692178923,
+                7.044325937981945
+              ],
+              [
+                1.654958537915986,
+                0.06208361803587081,
+                6.563457317559544
+              ],
+              [
+                1.6254955978745016,
+                0.05812855617202936,
+                6.441001054067374
+              ],
+              [
+                1.5341474583656909,
+                0.012678369481033243,
+                6.877742130951135
+              ],
+              [
+                1.5576779717566405,
+                0.008305539209057966,
+                7.058704780555414
+              ],
+              [
+                1.6582688027399977,
+                0.058877446561616364,
+                6.572676456617137
+              ]
+            ]
+          },
+          "axisNative": [
+            0.006940489563542177,
+            -0.9947531121063626,
+            -0.10206897451882697
+          ],
+          "topEdge": null,
+          "identity": "observed lower fence rail",
+          "scope": "visible rigid bottom edge; occluded portions and hardware are not measured",
+          "pointNative": null,
+          "footNative": null,
+          "heightNative": null,
+          "rangeNative": null,
+          "sourcePhotos": [],
+          "heightM": null,
+          "rangeM": null
+        },
+        {
+          "status": "unsupported",
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "pointNative": null,
+          "footNative": null,
+          "heightNative": null,
+          "rangeNative": null,
+          "sourcePhotos": [],
+          "id": "post-box-1",
+          "bottomEdge": null,
+          "topEdge": null,
+          "heightM": null,
+          "rangeM": null
+        },
+        {
+          "status": "unsupported",
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "pointNative": null,
+          "footNative": null,
+          "heightNative": null,
+          "rangeNative": null,
+          "sourcePhotos": [],
+          "id": "post-box-2",
+          "bottomEdge": null,
+          "topEdge": null,
+          "heightM": null,
+          "rangeM": null
+        }
+      ]
+    },
+    "D": {
+      "label": "Source end edges and local floor / new named-circle scale",
+      "scaleMPerNative": null,
+      "objects": [
+        {
+          "id": "fence-0",
+          "status": "unsupported",
+          "reason": "No source-supported metric scale",
+          "bottomEdge": {
+            "pointNative": [
+              1.593855657849157,
+              0.03451708061913844,
+              6.737322084908133
+            ],
+            "endsNative": [
+              [
+                1.5209210150420838,
+                -0.0019601425792271573,
+                7.087865718162229
+              ],
+              [
+                1.8029246500092881,
+                0.13907996044368826,
+                5.732479923598785
+              ]
+            ],
+            "sharedEndsNative": [
+              [
+                1.545870068595868,
+                0.010517771345390049,
+                6.967953814265905
+              ],
+              [
+                1.641841247102446,
+                0.058516389892886836,
+                6.506690355550361
+              ]
+            ],
+            "axisNative": [
+              0.20265027045726186,
+              0.10135264755093605,
+              -0.973992047564052
+            ],
+            "reprojectionErrorsRawPx": [
+              0.06483436622261718,
+              0.04223319097514695
+            ],
+            "maxReprojectionErrorRawPx": 0.06483436622261718,
+            "condition": 19.334042558757336,
+            "sourcePhotos": [
+              1,
+              4
+            ],
+            "observations": [
+              {
+                "photo": 1,
+                "rawEnds": [
+                  [
+                    2030.7222900390625,
+                    2003.36181640625
+                  ],
+                  [
+                    2122.921142578125,
+                    2028.6119384765625
+                  ]
+                ],
+                "uv": [
+                  [
+                    262.8065931532118,
+                    256.9285387311663
+                  ],
+                  [
+                    274.75829626012734,
+                    260.1975277491979
+                  ]
+                ],
+                "score": 1.0,
+                "sourceBeam": "fence-p0-view1-beam26"
+              },
+              {
+                "photo": 4,
+                "rawEnds": [
+                  [
+                    2449.68359375,
+                    2166.939208984375
+                  ],
+                  [
+                    2269.83349609375,
+                    2101.615478515625
+                  ]
+                ],
+                "uv": [
+                  [
+                    317.1163917824074,
+                    278.1059690202986
+                  ],
+                  [
+                    293.802490234375,
+                    269.6488789149694
+                  ]
+                ],
+                "score": 1.0,
+                "sourceBeam": "fence-p0-view4-beam109"
+              }
+            ],
+            "pixelSensitivityPointsNative": [
+              [
+                1.545870068595868,
+                0.010517771345390049,
+                6.967953814265905
+              ],
+              [
+                1.641841247102446,
+                0.058516389892886836,
+                6.506690355550361
+              ],
+              [
+                1.6287133661145499,
+                0.05497393014143514,
+                6.449914745732248
+              ],
+              [
+                1.5371854204085602,
+                0.009027005647745983,
+                6.891484748687016
+              ],
+              [
+                1.5545314622125577,
+                0.012042276692178923,
+                7.044325937981945
+              ],
+              [
+                1.654958537915986,
+                0.06208361803587081,
+                6.563457317559544
+              ],
+              [
+                1.6254955978745016,
+                0.05812855617202936,
+                6.441001054067374
+              ],
+              [
+                1.5341474583656909,
+                0.012678369481033243,
+                6.877742130951135
+              ],
+              [
+                1.5576779717566405,
+                0.008305539209057966,
+                7.058704780555414
+              ],
+              [
+                1.6582688027399977,
+                0.058877446561616364,
+                6.572676456617137
+              ]
+            ]
+          },
+          "axisNative": [
+            0.006940489563542177,
+            -0.9947531121063626,
+            -0.10206897451882697
+          ],
+          "topEdge": null,
+          "identity": "observed lower fence rail",
+          "scope": "visible rigid bottom edge; occluded portions and hardware are not measured",
+          "pointNative": null,
+          "footNative": null,
+          "heightNative": null,
+          "rangeNative": null,
+          "sourcePhotos": [],
+          "heightM": null,
+          "rangeM": null
+        },
+        {
+          "status": "unsupported",
+          "reason": "No source-supported metric scale",
+          "pointNative": null,
+          "footNative": null,
+          "heightNative": null,
+          "rangeNative": null,
+          "sourcePhotos": [],
+          "id": "post-box-1",
+          "bottomEdge": null,
+          "topEdge": null,
+          "heightM": null,
+          "rangeM": null
+        },
+        {
+          "status": "unsupported",
+          "reason": "No source-supported metric scale",
+          "pointNative": null,
+          "footNative": null,
+          "heightNative": null,
+          "rangeNative": null,
+          "sourcePhotos": [],
+          "id": "post-box-2",
+          "bottomEdge": null,
+          "topEdge": null,
+          "heightM": null,
+          "rangeM": null
+        }
+      ]
+    }
+  },
+  "diagnostics": {
+    "objectEdges": [
+      {
+        "id": "fence-0",
+        "bottomCandidates": [
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                2483.24755859375,
+                2123.950439453125
+              ],
+              [
+                2760.81982421875,
+                2198.15869140625
+              ]
+            ],
+            "uv": [
+              [
+                321.4672761140046,
+                272.5404586791993
+              ],
+              [
+                357.44886610243054,
+                282.1477770124163
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view1-beam16"
+          },
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                2030.7222900390625,
+                2003.36181640625
+              ],
+              [
+                2122.921142578125,
+                2028.6119384765625
+              ]
+            ],
+            "uv": [
+              [
+                262.8065931532118,
+                256.9285387311663
+              ],
+              [
+                274.75829626012734,
+                260.1975277491979
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view1-beam26"
+          },
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                2371.49267578125,
+                2063.84033203125
+              ],
+              [
+                2274.6826171875,
+                2043.9932861328125
+              ]
+            ],
+            "uv": [
+              [
+                306.9805320457176,
+                264.75834655761724
+              ],
+              [
+                294.43108000578707,
+                262.1888629368374
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view1-beam6"
+          },
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                1904.823486328125,
+                1946.343017578125
+              ],
+              [
+                1983.5120849609375,
+                1965.4952392578125
+              ]
+            ],
+            "uv": [
+              [
+                246.4863778573495,
+                249.54664066859655
+              ],
+              [
+                256.6867517541956,
+                252.02616936819896
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view1-beam18"
+          },
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                2487.683837890625,
+                2058.103271484375
+              ],
+              [
+                2390.033935546875,
+                2058.20263671875
+              ]
+            ],
+            "uv": [
+              [
+                322.0423493561921,
+                264.01560211181646
+              ],
+              [
+                309.38402868200234,
+                264.02846636090965
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view1-beam30"
+          },
+          {
+            "photo": 3,
+            "rawEnds": [
+              [
+                2067.669921875,
+                2800.397705078125
+              ],
+              [
+                2181.503662109375,
+                2904.177490234375
+              ]
+            ],
+            "uv": [
+              [
+                267.5961009837963,
+                360.1162207467216
+              ],
+              [
+                282.3523265697338,
+                373.5519965035575
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view3-beam95"
+          },
+          {
+            "photo": 3,
+            "rawEnds": [
+              [
+                2463.306640625,
+                2110.102294921875
+              ],
+              [
+                1976.732666015625,
+                1963.8046875
+              ]
+            ],
+            "uv": [
+              [
+                318.88234230324076,
+                270.7476185389928
+              ],
+              [
+                255.80793818721062,
+                251.80730329241072
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view3-beam70"
+          },
+          {
+            "photo": 3,
+            "rawEnds": [
+              [
+                1886.6522216796875,
+                1937.591552734375
+              ],
+              [
+                1646.835205078125,
+                1863.33837890625
+              ]
+            ],
+            "uv": [
+              [
+                244.13084355107057,
+                248.4136385236468
+              ],
+              [
+                213.0434525101273,
+                238.80050441196988
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view3-beam71"
+          },
+          {
+            "photo": 3,
+            "rawEnds": [
+              [
+                1672.903076171875,
+                1345.8848876953125
+              ],
+              [
+                1956.3853759765625,
+                1282.8055419921875
+              ]
+            ],
+            "uv": [
+              [
+                216.42262098524304,
+                171.80875778198242
+              ],
+              [
+                253.1703265154803,
+                163.64223534720287
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view3-beam69"
+          },
+          {
+            "photo": 3,
+            "rawEnds": [
+              [
+                2575.045654296875,
+                520.5950317382812
+              ],
+              [
+                2642.771484375,
+                482.4424133300781
+              ]
+            ],
+            "uv": [
+              [
+                333.36702926070603,
+                64.96319607325962
+              ],
+              [
+                342.1463035300926,
+                60.02379458291191
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view3-beam101"
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                2426.494873046875,
+                3024.31396484375
+              ],
+              [
+                2520.036865234375,
+                3135.370361328125
+              ]
+            ],
+            "uv": [
+              [
+                314.1104465060764,
+                389.1053793770927
+              ],
+              [
+                326.23626030815973,
+                403.4832164219448
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view4-beam126"
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                2026.7347412109375,
+                2024.1038818359375
+              ],
+              [
+                2194.496337890625,
+                2091.3798828125
+              ]
+            ],
+            "uv": [
+              [
+                262.2896886754919,
+                259.6138954162598
+              ],
+              [
+                284.0365623191551,
+                268.32373482840404
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view4-beam103"
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                2607.219482421875,
+                2226.67236328125
+              ],
+              [
+                2456.18896484375,
+                2169.5244140625
+              ]
+            ],
+            "uv": [
+              [
+                337.5377106843171,
+                285.83927917480474
+              ],
+              [
+                317.95968062789353,
+                278.440660749163
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view4-beam115"
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                2449.68359375,
+                2166.939208984375
+              ],
+              [
+                2269.83349609375,
+                2101.615478515625
+              ]
+            ],
+            "uv": [
+              [
+                317.1163917824074,
+                278.1059690202986
+              ],
+              [
+                293.802490234375,
+                269.6488789149694
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view4-beam109"
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                2752.103759765625,
+                575.4232788085938
+              ],
+              [
+                2689.290771484375,
+                629.1920166015625
+              ]
+            ],
+            "uv": [
+              [
+                356.31900589554397,
+                72.06149591718402
+              ],
+              [
+                348.17658148871527,
+                79.02262714930943
+              ]
+            ],
+            "score": 1.0,
+            "sourceBeam": "fence-p0-view4-beam127"
+          }
+        ],
+        "topCandidates": [],
+        "views": []
+      },
+      {
+        "id": "post-box-1",
+        "bottomCandidates": [
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                2829.4366912841797,
+                3404.554931640625
+              ],
+              [
+                2795.6320037841797,
+                3387.07861328125
+              ]
+            ],
+            "uv": [
+              [
+                366.34364516646775,
+                438.33300454275957
+              ],
+              [
+                361.96155604609737,
+                436.07044546944763
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 38.05493927001953,
+            "bodyWidthRawPx": 152.6123345661546,
+            "score": 0.2493569040680878,
+            "position": 2254.5501519956465
+          },
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                2589.9288482666016,
+                3607.320556640625
+              ],
+              [
+                2625.1534576416016,
+                3613.550537109375
+              ]
+            ],
+            "uv": [
+              [
+                335.2963321827076,
+                464.5839113507953
+              ],
+              [
+                339.8624852498372,
+                465.39047132219594
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 35.771297454833984,
+            "bodyWidthRawPx": 105.53146654743365,
+            "score": 0.33896333127101685,
+            "position": 2315.0520241850777
+          }
+        ],
+        "topCandidates": [
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                2944.88330078125,
+                1220.948829650879
+              ],
+              [
+                2876.1090698242188,
+                1217.7137298583984
+              ]
+            ],
+            "uv": [
+              [
+                381.30894639756946,
+                155.6340002673013
+              ],
+              [
+                372.3937683105469,
+                155.21517038345337
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 68.85028076171875,
+            "bodyWidthRawPx": 152.6123345661546,
+            "score": 0.4511449284715151,
+            "position": -75.879684176362
+          },
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                2872.389923095703,
+                1233.1443557739258
+              ],
+              [
+                2826.106948852539,
+                1231.705955505371
+              ]
+            ],
+            "uv": [
+              [
+                371.9116566975911,
+                157.21288534573148
+              ],
+              [
+                365.9120118882921,
+                157.0266638823918
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 46.305320739746094,
+            "bodyWidthRawPx": 152.6123345661546,
+            "score": 0.30341794371590325,
+            "position": -91.96462192426797
+          },
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                2898.6270446777344,
+                1191.134407043457
+              ],
+              [
+                2857.4320373535156,
+                1200.136085510254
+              ]
+            ],
+            "uv": [
+              [
+                375.3127650508174,
+                151.77409734044758
+              ],
+              [
+                369.97267150878906,
+                152.9394932133811
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 42.16703414916992,
+            "bodyWidthRawPx": 152.6123345661546,
+            "score": 0.276301612638599,
+            "position": -53.80611465109252
+          },
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                2864.8504638671875,
+                1202.271842956543
+              ],
+              [
+                2898.7630615234375,
+                1194.2054977416992
+              ]
+            ],
+            "uv": [
+              [
+                370.934319390191,
+                153.2159975256239
+              ],
+              [
+                375.3303968641493,
+                152.17169390405928
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 34.85871887207031,
+            "bodyWidthRawPx": 152.6123345661546,
+            "score": 0.2284135091122645,
+            "position": -56.220963194143515
+          },
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                2866.125213623047,
+                1138.6258974075317
+              ],
+              [
+                2895.0531616210938,
+                1131.8901917934418
+              ]
+            ],
+            "uv": [
+              [
+                371.0995647289135,
+                144.97612064651082
+              ],
+              [
+                374.84948391384546,
+                144.10408733040094
+              ]
+            ],
+            "aboveColorFraction": 0.5555555555555556,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 29.7017822265625,
+            "bodyWidthRawPx": 152.6123345661546,
+            "score": 0.10812356794604426,
+            "position": 6.623944639241912
+          },
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                2896.070770263672,
+                1128.3744572103024
+              ],
+              [
+                2867.5735778808594,
+                1134.5424790382385
+              ]
+            ],
+            "uv": [
+              [
+                374.9813961452908,
+                143.6489252638338
+              ],
+              [
+                371.2873156512225,
+                144.44746380405766
+              ]
+            ],
+            "aboveColorFraction": 0.4444444444444444,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 29.15706443786621,
+            "bodyWidthRawPx": 152.6123345661546,
+            "score": 0.08491250292813628,
+            "position": 10.479471751575451
+          },
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                2603.662567138672,
+                1339.2461395263672
+              ],
+              [
+                2512.4611625671387,
+                1348.4763526916504
+              ]
+            ],
+            "uv": [
+              [
+                337.07662907353154,
+                170.94927699225292
+              ],
+              [
+                325.2542247772217,
+                172.1442599466869
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 91.66728973388672,
+            "bodyWidthRawPx": 105.53146654743365,
+            "score": 0.8686251857656565,
+            "position": -48.03806495417371
+          },
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                2571.1878509521484,
+                1345.6684951782227
+              ],
+              [
+                2598.6102294921875,
+                1342.4973373413086
+              ]
+            ],
+            "uv": [
+              [
+                332.86694364194517,
+                171.78074267932348
+              ],
+              [
+                336.4216964156539,
+                171.37019099508015
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 27.605127334594727,
+            "bodyWidthRawPx": 105.53146654743365,
+            "score": 0.2615819550104228,
+            "position": -48.592971383335886
+          },
+          {
+            "photo": 3,
+            "rawEnds": [
+              [
+                2639.4246826171875,
+                1281.4791564941406
+              ],
+              [
+                2576.8399353027344,
+                1278.0072174072266
+              ]
+            ],
+            "uv": [
+              [
+                341.7124588577836,
+                163.47051579611644
+              ],
+              [
+                333.5996212429471,
+                163.0210236821856
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 62.68097686767578,
+            "bodyWidthRawPx": 127.22658951026085,
+            "score": 0.4926719886853569,
+            "position": -55.86014956984986
+          },
+          {
+            "photo": 3,
+            "rawEnds": [
+              [
+                2574.4420166015625,
+                1287.7109909057617
+              ],
+              [
+                2539.355697631836,
+                1285.138282775879
+              ]
+            ],
+            "uv": [
+              [
+                333.2887799298322,
+                164.27731578690666
+              ],
+              [
+                328.74055339671946,
+                163.94424196652005
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 35.18051528930664,
+            "bodyWidthRawPx": 127.22658951026085,
+            "score": 0.27651857543873976,
+            "position": -66.20241029682443
+          },
+          {
+            "photo": 3,
+            "rawEnds": [
+              [
+                2535.6464233398438,
+                1288.2840957641602
+              ],
+              [
+                2559.3812408447266,
+                1289.7757415771484
+              ]
+            ],
+            "uv": [
+              [
+                328.25972154405383,
+                164.3515123980386
+              ],
+              [
+                331.33645714653863,
+                164.54462725775585
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 23.781644821166992,
+            "bodyWidthRawPx": 127.22658951026085,
+            "score": 0.1869235425763653,
+            "position": -69.47472582906431
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                2724.1598052978516,
+                1395.0356826782227
+              ],
+              [
+                2652.891502380371,
+                1396.7938995361328
+              ]
+            ],
+            "uv": [
+              [
+                352.6966414274993,
+                178.1720303467342
+              ],
+              [
+                343.45815771597404,
+                178.39965663637435
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 71.28998565673828,
+            "bodyWidthRawPx": 119.3437942926374,
+            "score": 0.5973497497652153,
+            "position": -36.806475883618816
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                2657.8742904663086,
+                1399.8406410217285
+              ],
+              [
+                2721.6229705810547,
+                1398.5264472961426
+              ]
+            ],
+            "uv": [
+              [
+                344.104074690077,
+                178.79410084656308
+              ],
+              [
+                352.3677924827293,
+                178.6239596945899
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 63.76222610473633,
+            "bodyWidthRawPx": 119.3437942926374,
+            "score": 0.5342734951797152,
+            "position": -40.06404848664818
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                2651.6300354003906,
+                1405.1519165039062
+              ],
+              [
+                2624.093677520752,
+                1405.652717590332
+              ]
+            ],
+            "uv": [
+              [
+                343.2946342185692,
+                179.481721333095
+              ],
+              [
+                339.72510634528265,
+                179.54655718803406
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 27.540910720825195,
+            "bodyWidthRawPx": 119.3437942926374,
+            "score": 0.23076952500180614,
+            "position": -46.75125841042559
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                2625.375,
+                1408.625
+              ],
+              [
+                2649.125,
+                1408.625
+              ]
+            ],
+            "uv": [
+              [
+                339.8912037037037,
+                179.93136160714286
+              ],
+              [
+                342.9699074074074,
+                179.93136160714286
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 23.75,
+            "bodyWidthRawPx": 119.3437942926374,
+            "score": 0.19900490126670284,
+            "position": -49.97933673757781
+          }
+        ],
+        "views": [
+          {
+            "photo": 1,
+            "bottom": {
+              "candidateCount": 1,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    2967.5018920898438,
+                    1279.7077026367188
+                  ],
+                  [
+                    2921.482208251953,
+                    1932.48828125
+                  ]
+                ],
+                [
+                  [
+                    2902.416961669922,
+                    1933.70703125
+                  ],
+                  [
+                    2947.040771484375,
+                    1231.103775024414
+                  ]
+                ],
+                [
+                  [
+                    2866.0369567871094,
+                    1335.0185852050781
+                  ],
+                  [
+                    2808.3038330078125,
+                    2304.781494140625
+                  ]
+                ],
+                [
+                  [
+                    2814.930679321289,
+                    2071.1283569335938
+                  ],
+                  [
+                    2860.2780151367188,
+                    1323.497802734375
+                  ]
+                ],
+                [
+                  [
+                    2908.194122314453,
+                    2142.3491821289062
+                  ],
+                  [
+                    2870.11376953125,
+                    2777.4642333984375
+                  ]
+                ],
+                [
+                  [
+                    2916.7377014160156,
+                    1932.4179077148438
+                  ],
+                  [
+                    2962.3412170410156,
+                    1281.0351257324219
+                  ]
+                ],
+                [
+                  [
+                    2864.8421325683594,
+                    2783.6986083984375
+                  ],
+                  [
+                    2905.5746154785156,
+                    2109.8417358398438
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 152.6123345661546,
+              "sourceColorPixels": 250775,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            },
+            "top": {
+              "candidateCount": 6,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    2967.5018920898438,
+                    1279.7077026367188
+                  ],
+                  [
+                    2921.482208251953,
+                    1932.48828125
+                  ]
+                ],
+                [
+                  [
+                    2902.416961669922,
+                    1933.70703125
+                  ],
+                  [
+                    2947.040771484375,
+                    1231.103775024414
+                  ]
+                ],
+                [
+                  [
+                    2866.0369567871094,
+                    1335.0185852050781
+                  ],
+                  [
+                    2808.3038330078125,
+                    2304.781494140625
+                  ]
+                ],
+                [
+                  [
+                    2814.930679321289,
+                    2071.1283569335938
+                  ],
+                  [
+                    2860.2780151367188,
+                    1323.497802734375
+                  ]
+                ],
+                [
+                  [
+                    2908.194122314453,
+                    2142.3491821289062
+                  ],
+                  [
+                    2870.11376953125,
+                    2777.4642333984375
+                  ]
+                ],
+                [
+                  [
+                    2916.7377014160156,
+                    1932.4179077148438
+                  ],
+                  [
+                    2962.3412170410156,
+                    1281.0351257324219
+                  ]
+                ],
+                [
+                  [
+                    2864.8421325683594,
+                    2783.6986083984375
+                  ],
+                  [
+                    2905.5746154785156,
+                    2109.8417358398438
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 152.6123345661546,
+              "sourceColorPixels": 250775,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            }
+          },
+          {
+            "photo": 2,
+            "bottom": {
+              "candidateCount": 1,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    2639.625991821289,
+                    1297.605331838131
+                  ],
+                  [
+                    2646.430679321289,
+                    2076.3941650390625
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 105.53146654743365,
+              "sourceColorPixels": 156987,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            },
+            "top": {
+              "candidateCount": 2,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    2639.625991821289,
+                    1297.605331838131
+                  ],
+                  [
+                    2646.430679321289,
+                    2076.3941650390625
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 105.53146654743365,
+              "sourceColorPixels": 156987,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            }
+          },
+          {
+            "photo": 3,
+            "bottom": {
+              "candidateCount": 0,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    2546.8182525634766,
+                    3104.7620849609375
+                  ],
+                  [
+                    2598.8893127441406,
+                    2502.3330078125
+                  ]
+                ],
+                [
+                  [
+                    2585.5496826171875,
+                    1939.9738159179688
+                  ],
+                  [
+                    2640.4448852539062,
+                    1287.359848022461
+                  ]
+                ],
+                [
+                  [
+                    2511.7548065185547,
+                    2949.955810546875
+                  ],
+                  [
+                    2572.868362426758,
+                    2094.9459838867188
+                  ]
+                ],
+                [
+                  [
+                    2568.744827270508,
+                    1358.4770812988281
+                  ],
+                  [
+                    2499.1066131591797,
+                    2243.6038818359375
+                  ]
+                ],
+                [
+                  [
+                    2512.8929595947266,
+                    3108.6090087890625
+                  ],
+                  [
+                    2563.1073455810547,
+                    2381.0374755859375
+                  ]
+                ],
+                [
+                  [
+                    2443.3026123046875,
+                    3044.88671875
+                  ],
+                  [
+                    2485.7744903564453,
+                    2399.802490234375
+                  ]
+                ],
+                [
+                  [
+                    2482.203659057617,
+                    2412.396728515625
+                  ],
+                  [
+                    2446.841552734375,
+                    2947.372802734375
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 127.22658951026085,
+              "sourceColorPixels": 212315,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            },
+            "top": {
+              "candidateCount": 3,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    2546.8182525634766,
+                    3104.7620849609375
+                  ],
+                  [
+                    2598.8893127441406,
+                    2502.3330078125
+                  ]
+                ],
+                [
+                  [
+                    2585.5496826171875,
+                    1939.9738159179688
+                  ],
+                  [
+                    2640.4448852539062,
+                    1287.359848022461
+                  ]
+                ],
+                [
+                  [
+                    2511.7548065185547,
+                    2949.955810546875
+                  ],
+                  [
+                    2572.868362426758,
+                    2094.9459838867188
+                  ]
+                ],
+                [
+                  [
+                    2568.744827270508,
+                    1358.4770812988281
+                  ],
+                  [
+                    2499.1066131591797,
+                    2243.6038818359375
+                  ]
+                ],
+                [
+                  [
+                    2512.8929595947266,
+                    3108.6090087890625
+                  ],
+                  [
+                    2563.1073455810547,
+                    2381.0374755859375
+                  ]
+                ],
+                [
+                  [
+                    2443.3026123046875,
+                    3044.88671875
+                  ],
+                  [
+                    2485.7744903564453,
+                    2399.802490234375
+                  ]
+                ],
+                [
+                  [
+                    2482.203659057617,
+                    2412.396728515625
+                  ],
+                  [
+                    2446.841552734375,
+                    2947.372802734375
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 127.22658951026085,
+              "sourceColorPixels": 212315,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            }
+          },
+          {
+            "photo": 4,
+            "bottom": {
+              "candidateCount": 0,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    2693.644371032715,
+                    3399.9317626953125
+                  ],
+                  [
+                    2706.8487548828125,
+                    2639.857177734375
+                  ]
+                ],
+                [
+                  [
+                    2717.2191772460938,
+                    2061.133056640625
+                  ],
+                  [
+                    2726.1883697509766,
+                    1397.36909866333
+                  ]
+                ],
+                [
+                  [
+                    2733.3783111572266,
+                    2057.3812866210938
+                  ],
+                  [
+                    2739.562026977539,
+                    1562.3648376464844
+                  ]
+                ],
+                [
+                  [
+                    2648.989273071289,
+                    1577.3634490966797
+                  ],
+                  [
+                    2642.467124938965,
+                    2359.8820190429688
+                  ]
+                ],
+                [
+                  [
+                    2642.859306335449,
+                    2423.625
+                  ],
+                  [
+                    2643.622055053711,
+                    3331.12646484375
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 119.3437942926374,
+              "sourceColorPixels": 200170,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            },
+            "top": {
+              "candidateCount": 4,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    2693.644371032715,
+                    3399.9317626953125
+                  ],
+                  [
+                    2706.8487548828125,
+                    2639.857177734375
+                  ]
+                ],
+                [
+                  [
+                    2717.2191772460938,
+                    2061.133056640625
+                  ],
+                  [
+                    2726.1883697509766,
+                    1397.36909866333
+                  ]
+                ],
+                [
+                  [
+                    2733.3783111572266,
+                    2057.3812866210938
+                  ],
+                  [
+                    2739.562026977539,
+                    1562.3648376464844
+                  ]
+                ],
+                [
+                  [
+                    2648.989273071289,
+                    1577.3634490966797
+                  ],
+                  [
+                    2642.467124938965,
+                    2359.8820190429688
+                  ]
+                ],
+                [
+                  [
+                    2642.859306335449,
+                    2423.625
+                  ],
+                  [
+                    2643.622055053711,
+                    3331.12646484375
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 119.3437942926374,
+              "sourceColorPixels": 200170,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            }
+          }
+        ]
+      },
+      {
+        "id": "post-box-2",
+        "bottomCandidates": [
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                679.9563751220703,
+                3213.7374267578125
+              ],
+              [
+                711.39501953125,
+                3220.339111328125
+              ]
+            ],
+            "uv": [
+              [
+                87.70730788619429,
+                413.628952571324
+              ],
+              [
+                91.78268771701387,
+                414.4836349487305
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 32.124298095703125,
+            "bodyWidthRawPx": 116.14991912107075,
+            "score": 0.2765761555306624,
+            "position": 1743.2789583956987
+          },
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                671.9670257568359,
+                3234.728271484375
+              ],
+              [
+                696.2892150878906,
+                3219.3853759765625
+              ]
+            ],
+            "uv": [
+              [
+                86.67165148699723,
+                416.3465172903879
+              ],
+              [
+                89.82452788176359,
+                414.36016028268006
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 28.757144927978516,
+            "bodyWidthRawPx": 116.14991912107075,
+            "score": 0.2475864395394287,
+            "position": 1752.7992104591772
+          },
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                654.6618041992188,
+                3278.7772216796875
+              ],
+              [
+                626.9376983642578,
+                3272.2254638671875
+              ]
+            ],
+            "uv": [
+              [
+                84.42838202582465,
+                422.04928316388816
+              ],
+              [
+                80.834516454626,
+                421.2010645185199
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 28.487743377685547,
+            "bodyWidthRawPx": 116.14991912107075,
+            "score": 0.2452670100268506,
+            "position": 1799.3642090629094
+          },
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                642.0867462158203,
+                3244.910888671875
+              ],
+              [
+                622.9534149169922,
+                3256.793701171875
+              ]
+            ],
+            "uv": [
+              [
+                82.79828191686559,
+                417.6648025512696
+              ],
+              [
+                80.31803526701749,
+                419.20320238385887
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 22.52300262451172,
+            "bodyWidthRawPx": 116.14991912107075,
+            "score": 0.19391320110205587,
+            "position": 1774.3864658632017
+          },
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                655.2038726806641,
+                3281.0740966796875
+              ],
+              [
+                675.4925537109375,
+                3271.530517578125
+              ]
+            ],
+            "uv": [
+              [
+                84.4986501623083,
+                422.34664644513816
+              ],
+              [
+                87.12866436993633,
+                421.1110937935966
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 22.421205520629883,
+            "bodyWidthRawPx": 116.14991912107075,
+            "score": 0.19303677256338658,
+            "position": 1801.2045831829125
+          },
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                628.3104705810547,
+                3278.2164306640625
+              ],
+              [
+                649.7126770019531,
+                3282.4462890625
+              ]
+            ],
+            "uv": [
+              [
+                81.01246840865522,
+                421.9766807556153
+              ],
+              [
+                83.78682850025318,
+                422.5242963518416
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 21.816190719604492,
+            "bodyWidthRawPx": 116.14991912107075,
+            "score": 0.18782785975824945,
+            "position": 1804.1140568522037
+          },
+          {
+            "photo": 3,
+            "rawEnds": [
+              [
+                298.3011169433594,
+                3438.63916015625
+              ],
+              [
+                355.8514709472656,
+                3432.893310546875
+              ]
+            ],
+            "uv": [
+              [
+                38.23347812228732,
+                442.74569484165744
+              ],
+              [
+                45.693709196867765,
+                442.001812526158
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 57.83647918701172,
+            "bodyWidthRawPx": 132.92090563941633,
+            "score": 0.4351195089199039,
+            "position": 2390.4298767466507
+          },
+          {
+            "photo": 3,
+            "rawEnds": [
+              [
+                254.5677032470703,
+                3468.7626953125
+              ],
+              [
+                286.6439971923828,
+                3478.85888671875
+              ]
+            ],
+            "uv": [
+              [
+                32.564331902398,
+                446.6456168038505
+              ],
+              [
+                36.72237000641999,
+                447.95271301269537
+              ]
+            ],
+            "aboveColorFraction": 0.4444444444444444,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 33.62769317626953,
+            "bodyWidthRawPx": 132.92090563941633,
+            "score": 0.11244011120582802,
+            "position": 2426.6155201935717
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                513.2962493896484,
+                3454.305419921875
+              ],
+              [
+                538.6752319335938,
+                3450.79638671875
+              ]
+            ],
+            "uv": [
+              [
+                66.10321751347294,
+                444.77391597202853
+              ],
+              [
+                69.3930856210214,
+                444.31962149483826
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 25.62042236328125,
+            "bodyWidthRawPx": 128.26654617315887,
+            "score": 0.1997436052319821,
+            "position": 2085.1157086696376
+          }
+        ],
+        "topCandidates": [
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                383.5897674560547,
+                1091.3632431030273
+              ],
+              [
+                276.1979293823242,
+                1083.6142616271973
+              ]
+            ],
+            "uv": [
+              [
+                49.28941429985894,
+                138.85729486601693
+              ],
+              [
+                35.368250105116104,
+                137.85407851423537
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 107.6710433959961,
+            "bodyWidthRawPx": 157.48857969077724,
+            "score": 0.6836752455791019,
+            "position": -57.193222975095125
+          },
+          {
+            "photo": 1,
+            "rawEnds": [
+              [
+                282.36830139160156,
+                1087.223072052002
+              ],
+              [
+                381.1695251464844,
+                1093.9733505249023
+              ]
+            ],
+            "uv": [
+              [
+                36.16811314335576,
+                138.32129057816098
+              ],
+              [
+                48.97567918565538,
+                139.19521055902754
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 99.03154754638672,
+            "bodyWidthRawPx": 157.48857969077724,
+            "score": 0.6288173259345621,
+            "position": -60.36352698162852
+          },
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                594.8786239624023,
+                1534.1759796142578
+              ],
+              [
+                548.5074882507324,
+                1537.4714469909668
+              ]
+            ],
+            "uv": [
+              [
+                76.67871051364475,
+                196.1857295036316
+              ],
+              [
+                70.66763736583567,
+                196.61237483365196
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 46.48808670043945,
+            "bodyWidthRawPx": 116.14991912107075,
+            "score": 0.40024209273862554,
+            "position": -58.32079552909574
+          },
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                603.4993591308594,
+                1526.5551147460938
+              ],
+              [
+                643.5774078369141,
+                1530.8220138549805
+              ]
+            ],
+            "uv": [
+              [
+                77.79621322066694,
+                195.19909967694966
+              ],
+              [
+                82.99151583071107,
+                195.7515107222966
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 40.30454635620117,
+            "bodyWidthRawPx": 116.14991912107075,
+            "score": 0.34700451503706237,
+            "position": -53.38889149215483
+          },
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                614.8805084228516,
+                1544.2534637451172
+              ],
+              [
+                637.3927154541016,
+                1543.2878341674805
+              ]
+            ],
+            "uv": [
+              [
+                79.27154738814741,
+                197.49040378843037
+              ],
+              [
+                82.18979644775389,
+                197.36538924489705
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 22.532907485961914,
+            "bodyWidthRawPx": 116.14991912107075,
+            "score": 0.19399847762678485,
+            "position": -68.56752460398205
+          },
+          {
+            "photo": 2,
+            "rawEnds": [
+              [
+                552.375,
+                1539.125
+              ],
+              [
+                573.625,
+                1539.125
+              ]
+            ],
+            "uv": [
+              [
+                71.16898148148147,
+                196.82645089285717
+              ],
+              [
+                73.9236111111111,
+                196.82645089285717
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 21.25,
+            "bodyWidthRawPx": 116.14991912107075,
+            "score": 0.1829532053126074,
+            "position": -61.25076518953053
+          },
+          {
+            "photo": 3,
+            "rawEnds": [
+              [
+                304.4183654785156,
+                1113.8511848449707
+              ],
+              [
+                199.51632690429688,
+                1105.1676902770996
+              ]
+            ],
+            "uv": [
+              [
+                39.026454784252024,
+                141.76868018082212
+              ],
+              [
+                25.428042376482924,
+                140.6444777590888
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 105.26082611083984,
+            "bodyWidthRawPx": 132.92090563941633,
+            "score": 0.7919057247201439,
+            "position": -62.96107754245199
+          },
+          {
+            "photo": 3,
+            "rawEnds": [
+              [
+                243.1181411743164,
+                1111.9643745422363
+              ],
+              [
+                270.6478576660156,
+                1114.0771408081055
+              ]
+            ],
+            "uv": [
+              [
+                31.080129411485455,
+                141.52440563270025
+              ],
+              [
+                34.64879636411314,
+                141.79793340819222
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 27.61067008972168,
+            "bodyWidthRawPx": 132.92090563941633,
+            "score": 0.20772255467941997,
+            "position": -66.63060671056685
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                495.87620544433594,
+                1425.469669342041
+              ],
+              [
+                423.37397384643555,
+                1425.615852355957
+              ]
+            ],
+            "uv": [
+              [
+                63.84506366871022,
+                182.11214469160353
+              ],
+              [
+                54.44662623935275,
+                182.13107017108373
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 72.50238037109375,
+            "bodyWidthRawPx": 128.26654617315887,
+            "score": 0.5652477792082753,
+            "position": -57.367764094948214
+          },
+          {
+            "photo": 4,
+            "rawEnds": [
+              [
+                460.875,
+                1428.625
+              ],
+              [
+                490.875,
+                1428.625
+              ]
+            ],
+            "uv": [
+              [
+                59.30787037037037,
+                182.52064732142858
+              ],
+              [
+                63.19675925925926,
+                182.52064732142858
+              ]
+            ],
+            "aboveColorFraction": 1.0,
+            "belowColorFraction": 0.0,
+            "belowInstanceFraction": 0.0,
+            "obstructionFraction": 0.0,
+            "visibleLengthRawPx": 30.0,
+            "bodyWidthRawPx": 128.26654617315887,
+            "score": 0.23388795360171485,
+            "position": -61.277592269710375
+          }
+        ],
+        "views": [
+          {
+            "photo": 1,
+            "bottom": {
+              "candidateCount": 0,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    279.6635284423828,
+                    2753.404541015625
+                  ],
+                  [
+                    263.6640090942383,
+                    1963.27294921875
+                  ]
+                ],
+                [
+                  [
+                    290.3448791503906,
+                    3402.1845703125
+                  ],
+                  [
+                    278.59124755859375,
+                    2754.5574951171875
+                  ]
+                ],
+                [
+                  [
+                    280.09946060180664,
+                    1182.1510467529297
+                  ],
+                  [
+                    304.44395446777344,
+                    2140.885986328125
+                  ]
+                ],
+                [
+                  [
+                    404.7188720703125,
+                    1992.1566772460938
+                  ],
+                  [
+                    386.6112365722656,
+                    1188.3640441894531
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 157.48857969077724,
+              "sourceColorPixels": 257080,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            },
+            "top": {
+              "candidateCount": 2,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    279.6635284423828,
+                    2753.404541015625
+                  ],
+                  [
+                    263.6640090942383,
+                    1963.27294921875
+                  ]
+                ],
+                [
+                  [
+                    290.3448791503906,
+                    3402.1845703125
+                  ],
+                  [
+                    278.59124755859375,
+                    2754.5574951171875
+                  ]
+                ],
+                [
+                  [
+                    280.09946060180664,
+                    1182.1510467529297
+                  ],
+                  [
+                    304.44395446777344,
+                    2140.885986328125
+                  ]
+                ],
+                [
+                  [
+                    404.7188720703125,
+                    1992.1566772460938
+                  ],
+                  [
+                    386.6112365722656,
+                    1188.3640441894531
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 157.48857969077724,
+              "sourceColorPixels": 257080,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            }
+          },
+          {
+            "photo": 2,
+            "bottom": {
+              "candidateCount": 6,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    666.2888946533203,
+                    3136.61865234375
+                  ],
+                  [
+                    638.8630828857422,
+                    2422.8178100585938
+                  ]
+                ],
+                [
+                  [
+                    645.8356018066406,
+                    2424.087646484375
+                  ],
+                  [
+                    675.3910675048828,
+                    3184.10498046875
+                  ]
+                ],
+                [
+                  [
+                    608.2295989990234,
+                    1607.8347625732422
+                  ],
+                  [
+                    644.6038665771484,
+                    2380.3877563476562
+                  ]
+                ],
+                [
+                  [
+                    678.3663177490234,
+                    3180.385009765625
+                  ],
+                  [
+                    649.0069122314453,
+                    2421.6102294921875
+                  ]
+                ],
+                [
+                  [
+                    572.4720001220703,
+                    2059.0181274414062
+                  ],
+                  [
+                    619.2328033447266,
+                    3195.4013671875
+                  ]
+                ],
+                [
+                  [
+                    571.6487884521484,
+                    2296.5505981445312
+                  ],
+                  [
+                    592.3706207275391,
+                    2790.375244140625
+                  ]
+                ],
+                [
+                  [
+                    543.6899185180664,
+                    1721.6217651367188
+                  ],
+                  [
+                    572.0077285766602,
+                    2289.143310546875
+                  ]
+                ],
+                [
+                  [
+                    721.1305694580078,
+                    2919.124755859375
+                  ],
+                  [
+                    693.5883636474609,
+                    2305.320556640625
+                  ]
+                ],
+                [
+                  [
+                    674.4321441650391,
+                    2220.3391723632812
+                  ],
+                  [
+                    653.4485473632812,
+                    1747.8273315429688
+                  ]
+                ],
+                [
+                  [
+                    647.7133178710938,
+                    2380.3591918945312
+                  ],
+                  [
+                    611.6327743530273,
+                    1609.0427703857422
+                  ]
+                ],
+                [
+                  [
+                    702.1668395996094,
+                    2920.383056640625
+                  ],
+                  [
+                    682.5245208740234,
+                    2410.3211059570312
+                  ]
+                ],
+                [
+                  [
+                    613.3761825561523,
+                    3184.084228515625
+                  ],
+                  [
+                    577.1776733398438,
+                    2296.4801025390625
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 116.14991912107075,
+              "sourceColorPixels": 169348,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            },
+            "top": {
+              "candidateCount": 4,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    666.2888946533203,
+                    3136.61865234375
+                  ],
+                  [
+                    638.8630828857422,
+                    2422.8178100585938
+                  ]
+                ],
+                [
+                  [
+                    645.8356018066406,
+                    2424.087646484375
+                  ],
+                  [
+                    675.3910675048828,
+                    3184.10498046875
+                  ]
+                ],
+                [
+                  [
+                    608.2295989990234,
+                    1607.8347625732422
+                  ],
+                  [
+                    644.6038665771484,
+                    2380.3877563476562
+                  ]
+                ],
+                [
+                  [
+                    678.3663177490234,
+                    3180.385009765625
+                  ],
+                  [
+                    649.0069122314453,
+                    2421.6102294921875
+                  ]
+                ],
+                [
+                  [
+                    572.4720001220703,
+                    2059.0181274414062
+                  ],
+                  [
+                    619.2328033447266,
+                    3195.4013671875
+                  ]
+                ],
+                [
+                  [
+                    571.6487884521484,
+                    2296.5505981445312
+                  ],
+                  [
+                    592.3706207275391,
+                    2790.375244140625
+                  ]
+                ],
+                [
+                  [
+                    543.6899185180664,
+                    1721.6217651367188
+                  ],
+                  [
+                    572.0077285766602,
+                    2289.143310546875
+                  ]
+                ],
+                [
+                  [
+                    721.1305694580078,
+                    2919.124755859375
+                  ],
+                  [
+                    693.5883636474609,
+                    2305.320556640625
+                  ]
+                ],
+                [
+                  [
+                    674.4321441650391,
+                    2220.3391723632812
+                  ],
+                  [
+                    653.4485473632812,
+                    1747.8273315429688
+                  ]
+                ],
+                [
+                  [
+                    647.7133178710938,
+                    2380.3591918945312
+                  ],
+                  [
+                    611.6327743530273,
+                    1609.0427703857422
+                  ]
+                ],
+                [
+                  [
+                    702.1668395996094,
+                    2920.383056640625
+                  ],
+                  [
+                    682.5245208740234,
+                    2410.3211059570312
+                  ]
+                ],
+                [
+                  [
+                    613.3761825561523,
+                    3184.084228515625
+                  ],
+                  [
+                    577.1776733398438,
+                    2296.4801025390625
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 116.14991912107075,
+              "sourceColorPixels": 169348,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            }
+          },
+          {
+            "photo": 3,
+            "bottom": {
+              "candidateCount": 2,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    215.8618927001953,
+                    2658.22265625
+                  ],
+                  [
+                    194.30644989013672,
+                    1883.0226440429688
+                  ]
+                ],
+                [
+                  [
+                    232.7228775024414,
+                    3331.918212890625
+                  ],
+                  [
+                    215.1772232055664,
+                    2659.288818359375
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 132.92090563941633,
+              "sourceColorPixels": 257375,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            },
+            "top": {
+              "candidateCount": 2,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    215.8618927001953,
+                    2658.22265625
+                  ],
+                  [
+                    194.30644989013672,
+                    1883.0226440429688
+                  ]
+                ],
+                [
+                  [
+                    232.7228775024414,
+                    3331.918212890625
+                  ],
+                  [
+                    215.1772232055664,
+                    2659.288818359375
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 132.92090563941633,
+              "sourceColorPixels": 257375,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            }
+          },
+          {
+            "photo": 4,
+            "bottom": {
+              "candidateCount": 1,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    539.0352325439453,
+                    3412.4542236328125
+                  ],
+                  [
+                    509.4728546142578,
+                    2726.0777587890625
+                  ]
+                ],
+                [
+                  [
+                    466.2893981933594,
+                    2364.8026733398438
+                  ],
+                  [
+                    490.3021926879883,
+                    2917.39990234375
+                  ]
+                ],
+                [
+                  [
+                    484.461669921875,
+                    3399.7158203125
+                  ],
+                  [
+                    414.7303466796875,
+                    1828.3429870605469
+                  ]
+                ],
+                [
+                  [
+                    416.7405548095703,
+                    1766.0836181640625
+                  ],
+                  [
+                    455.99659729003906,
+                    2587.428955078125
+                  ]
+                ],
+                [
+                  [
+                    546.5629272460938,
+                    2436.1502685546875
+                  ],
+                  [
+                    518.0011596679688,
+                    1801.0293884277344
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 128.26654617315887,
+              "sourceColorPixels": 169288,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            },
+            "top": {
+              "candidateCount": 2,
+              "longSideEdgesRaw": [
+                [
+                  [
+                    539.0352325439453,
+                    3412.4542236328125
+                  ],
+                  [
+                    509.4728546142578,
+                    2726.0777587890625
+                  ]
+                ],
+                [
+                  [
+                    466.2893981933594,
+                    2364.8026733398438
+                  ],
+                  [
+                    490.3021926879883,
+                    2917.39990234375
+                  ]
+                ],
+                [
+                  [
+                    484.461669921875,
+                    3399.7158203125
+                  ],
+                  [
+                    414.7303466796875,
+                    1828.3429870605469
+                  ]
+                ],
+                [
+                  [
+                    416.7405548095703,
+                    1766.0836181640625
+                  ],
+                  [
+                    455.99659729003906,
+                    2587.428955078125
+                  ]
+                ],
+                [
+                  [
+                    546.5629272460938,
+                    2436.1502685546875
+                  ],
+                  [
+                    518.0011596679688,
+                    1801.0293884277344
+                  ]
+                ]
+              ],
+              "obstructedTerminationsRejected": 0,
+              "widthRawPx": 128.26654617315887,
+              "sourceColorPixels": 169288,
+              "scope": "visible yellow housing end edge; occluded width remains unknown"
+            }
+          }
+        ]
+      }
+    ],
+    "stageErrors": []
+  },
+  "limitations": [
+    "Only four supplied photos; no measured camera calibration or camera height.",
+    "Circular standard sections and housing uprightness are image-tested hypotheses.",
+    "A/B intentionally retain old points and are labelled baselines; they are not recalibrated geometry.",
+    "SAM and old pointmaps associate image regions; replacement-camera floor points and edges are newly triangulated.",
+    "Occluded whole-object minima, mounting hardware and physical accuracy remain unverified.",
+    "Pixel sensitivity and floor scatter do not bound camera or semantic systematic error.",
+    "Ground-truth evaluation values are excluded from estimator inputs and method selection."
+  ],
+  "wallSeconds": 8.824710450000001,
+  "evidenceImages": [
+    {
+      "photo": 1,
+      "file": "raw-image-features-1.jpg",
+      "rawShape": [
+        4032,
+        3024
+      ],
+      "legend": "magenta: named circular silhouettes/tangencies; gray: end-edge candidates; colored: selected visible edge and floor foot; blue: floor association pixels"
+    },
+    {
+      "photo": 2,
+      "file": "raw-image-features-2.jpg",
+      "rawShape": [
+        4032,
+        3024
+      ],
+      "legend": "magenta: named circular silhouettes/tangencies; gray: end-edge candidates; colored: selected visible edge and floor foot; blue: floor association pixels"
+    },
+    {
+      "photo": 3,
+      "file": "raw-image-features-3.jpg",
+      "rawShape": [
+        4032,
+        3024
+      ],
+      "legend": "magenta: named circular silhouettes/tangencies; gray: end-edge candidates; colored: selected visible edge and floor foot; blue: floor association pixels"
+    },
+    {
+      "photo": 4,
+      "file": "raw-image-features-4.jpg",
+      "rawShape": [
+        4032,
+        3024
+      ],
+      "legend": "magenta: named circular silhouettes/tangencies; gray: end-edge candidates; colored: selected visible edge and floor foot; blue: floor association pixels"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "records": {
+    "metrology_original": {
+      "returncode": 0,
+      "seconds": 10.49947948
+    },
+    "metrology_refined": {
+      "returncode": 0,
+      "seconds": 11.354367249000001
+    }
+  },
+  "containerWallSeconds": 11.851917070999999
+}

@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "version": "4.2.0",
+  "seconds": 20.041164864000002,
+  "beforeBa": {
+    "points": 692,
+    "meanErrorPx": 1.3107550423988905
+  },
+  "afterBa": {
+    "points": 692,
+    "meanErrorPx": 0.4325835366455441
+  },
+  "registeredImages": 4,
+  "cameraModel": "SIMPLE_PINHOLE",
+  "squareRawPixelsAssumed": true,
+  "basis": "SIFT matches; triangulation from MapAnything initial poses; camera+point BA with fixed principal points; no lens calibration truth"
+}

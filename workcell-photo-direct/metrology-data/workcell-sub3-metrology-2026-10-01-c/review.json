@@ -1,0 +1,8 @@
+{
+  "status": "review_pass_accuracy_target_not_met",
+  "date": "2026-10-01",
+  "summary": "三处实现修复后的结果：源码与输入哈希、几何/尺度/地面契约和运行账目复核通过；三处误差小于3cm目标未达到。主场景模型未替换。",
+  "sourceHashesMatched": 14,
+  "inputHashesMatched": 25,
+  "physicalAccuracyValidated": false
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-01",
+  "scope": "Incremental metrology diagnostics; existing scene retained",
+  "sourceAndGeometryReview": {
+    "status": "review_pass_accuracy_target_not_met",
+    "date": "2026-10-01",
+    "summary": "三处实现修复后的结果：源码与输入哈希、几何/尺度/地面契约和运行账目复核通过；三处误差小于3cm目标未达到。主场景模型未替换。",
+    "sourceHashesMatched": 14,
+    "inputHashesMatched": 25,
+    "physicalAccuracyValidated": false
+  },
+  "checks": [
+    "check_workcell_photo_metrology.py PASS",
+    "check_workcell_camera_pixels.py PASS",
+    "check_workcell_metrology_report.py PASS",
+    "TypeScript noEmit PASS",
+    "Vite photo build PASS"
+  ],
+  "browser": {
+    "target": "http://127.0.0.1:5192/",
+    "metrologySummaryChecked": true,
+    "latestFourEvidenceImagesDecoded": true,
+    "sceneObjects": 52,
+    "modelsLoaded": 52,
+    "fenceSelection": true,
+    "groundLineVisible": true,
+    "rotationChangedCanvas": true,
+    "comparisonWipeDragged": true,
+    "pageOverflowAt1360px": false
+  },
+  "predictionHashes": {
+    "original-cameras": "ac2db1b18eed18050b84c6b61306a158de93ee70dd385ef0238da67794534b81",
+    "refined-cameras": "e0badf5429736354dba4a9ec207b47b808158e1572378bbb9ad6d7edfe12bb67"
+  },
+  "livePublicationVerified": false
+}

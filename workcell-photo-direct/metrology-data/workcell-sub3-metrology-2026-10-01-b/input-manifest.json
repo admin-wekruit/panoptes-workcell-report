@@ -1,0 +1,29 @@
+{
+  "baseline": "/Users/adam/Desktop/panoptes-public/research-notes/workcell-three-boards-complete-2026-09-30-a",
+  "mode": "metrology-square-pixels",
+  "sha256": {
+    "frame_0002.json.gz": "03b2879904ad75835fff8d602e552a679de3bbb0f842d6fdc5aad1b876376dc8",
+    "frame_0003.json.gz": "d9b14f46f5e1afc8fa44f53bdb5eec21c4205407cb19ab20ee1cbe13505a975d",
+    "frame_0001.json.gz": "b90fa6c9a94751ea954e45160c5fc8526a1350a979f179d812753f577183ef07",
+    "frame_0004.json.gz": "b41d4c9648a532149b2715e047b4e1740c277ff9460aee6eec07befc19cebd9b",
+    "photo-3.png": "397ced20181422b4eec618c951f34e67a1892c1a26f8f74eaa50f2a8e29a02cf",
+    "photo-2.png": "483034185ebab35b0aaecf3ae037321ecd7bc9563f58838e32d258d0b0d660fb",
+    "photo-1.png": "6de905f352df2f86dd494bfdb1ef5e804967f37f0ced0055cf9099e755295905",
+    "photo-4.png": "2ba27b3727cb2b3099121ee1fa8dc60e80cd1d8893cef3a699d313a0b1f2e30c",
+    "geometry.json": "a130eadf2babefbdd4061be7108f3dcc580cc24f3bf3dd58cf8973d302ded785",
+    "sam3.json": "b098f3585bb8aba684bca3b072c75bcebc2a92b8fc4bdb0f4819ee3bba545f72",
+    "objects.json": "66e30bc912ededb0ee7d6477bd78f1f23c7d435a8e7a8d9a19bebd92af86c6bc",
+    "guard-input.npz": "85b877bd51b3c3c4527ae6685510b0257575e20c13e6cb1a11d68c1af03b4d63",
+    "guard-placement.json": "27688754309ec2c90153d5da834ce76a9c25b1b96af8fbaed6e2246c61096117",
+    "guard-partition.json": "6c4b6c98a256fd1e0649c5a7910793c5814a11b0e660c2cb103de0dc4031dda2",
+    "guard-multi.glb": "40fedbc013c6f9b5b5ef87f534c263a4fbe0d9f297315e232c4787003cfdc3ee",
+    "guard-left.glb": "0b0eb35ae603088e6d6f2d2b2019e9a517663c4d8a6d3b19355d7cfdafbe8b9e",
+    "guard-center.glb": "a8ea2edbf741003fcdc64331a4ad8661c8d3d31a302438585a3687a35b1523e2",
+    "guard-right.glb": "0f021184dc0536c1771120fb41a542fa61f5656ba3c27938bdc8080ba554fd91",
+    "source-1.jpg": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac",
+    "source-2.jpg": "6cd81ae4ae783c37d0a1129e39acb0d7064c46d9b51524130406642f8c7a3bea",
+    "source-3.jpg": "0a8d4b8884867bf9f1836193db2fae0350a99e9e6b242eb9e01e20fda7c59438",
+    "source-4.jpg": "e73931b6cdf68775ddafbc949c392c0ea2908f4dec671a4935e4c09361ae66ec",
+    "reference.json": "93174dc7fd307a192ebe8c8ea71d21454f86d6b66f7c21556c0dc320ffcf67d9"
+  }
+}

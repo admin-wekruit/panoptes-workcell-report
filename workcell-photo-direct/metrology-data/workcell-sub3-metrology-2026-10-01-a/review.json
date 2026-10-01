@@ -1,0 +1,11 @@
+{
+  "status": "superseded_implementation_bugs",
+  "date": "2026-10-01",
+  "summary": "修复前记录：含已定位的圆切线朝向、直线初值依赖和短边误删问题，仅保留用于诊断与运行账目；不据此判断四张照片能否达到目标。",
+  "issues": [
+    "Circle tangent signs depended on obsolete 3D anchor instead of observed wedge.",
+    "Noisy horizontal-line solution depended on arbitrary along-axis anchor coordinate.",
+    "RGB bottom fragments were filtered using combined housing width, despite cable or terminal interruptions."
+  ],
+  "predictionBytesUnchanged": true
+}

@@ -1,0 +1,1223 @@
+{
+  "schemaVersion": 1,
+  "targetAbsoluteErrorM": 0.03,
+  "allThreeBelow3cm": false,
+  "groundTruthUsedForFitOrSelection": false,
+  "evaluationScope": "Previously disclosed three-point development check set, not blind validation.",
+  "reports": [
+    {
+      "run": "workcell-sub3-metrology-2026-10-01-c",
+      "cameraRoute": "original MapAnything cameras",
+      "predictionSha256": "ac2db1b18eed18050b84c6b61306a158de93ee70dd385ef0238da67794534b81",
+      "source": "metrology-data/workcell-sub3-metrology-2026-10-01-c/original-cameras/results.json",
+      "comparisons": [
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "fence-0",
+          "status": "available",
+          "estimateM": 0.17127888876330769,
+          "groundTruthM": 0.2,
+          "signedErrorM": -0.028721111236692326,
+          "absoluteErrorM": 0.028721111236692326,
+          "below3cm": true,
+          "reason": null,
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "post-box-1",
+          "status": "available",
+          "estimateM": 0.1436462468922939,
+          "groundTruthM": 0.24,
+          "signedErrorM": -0.09635375310770608,
+          "absoluteErrorM": 0.09635375310770608,
+          "below3cm": false,
+          "reason": null,
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "post-box-2",
+          "status": "available",
+          "estimateM": 0.15711234516263942,
+          "groundTruthM": 0.24,
+          "signedErrorM": -0.08288765483736057,
+          "absoluteErrorM": 0.08288765483736057,
+          "below3cm": false,
+          "reason": null,
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "fence-0",
+          "status": "conditional",
+          "estimateM": 0.16224740043737512,
+          "groundTruthM": 0.2,
+          "signedErrorM": -0.03775259956262489,
+          "absoluteErrorM": 0.03775259956262489,
+          "below3cm": false,
+          "reason": "Visible source edge and inferred local floor; camera and semantic systematic errors remain unbounded",
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "sourcePhotos": []
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        }
+      ]
+    },
+    {
+      "run": "workcell-sub3-metrology-2026-10-01-c",
+      "cameraRoute": "replacement cameras; independently retriangulated source geometry",
+      "predictionSha256": "e0badf5429736354dba4a9ec207b47b808158e1572378bbb9ad6d7edfe12bb67",
+      "source": "metrology-data/workcell-sub3-metrology-2026-10-01-c/refined-cameras/results.json",
+      "comparisons": [
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "fence-0",
+          "status": "available",
+          "estimateM": 0.17127888876330769,
+          "groundTruthM": 0.2,
+          "signedErrorM": -0.028721111236692326,
+          "absoluteErrorM": 0.028721111236692326,
+          "below3cm": true,
+          "reason": null,
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "post-box-1",
+          "status": "available",
+          "estimateM": 0.1436462468922939,
+          "groundTruthM": 0.24,
+          "signedErrorM": -0.09635375310770608,
+          "absoluteErrorM": 0.09635375310770608,
+          "below3cm": false,
+          "reason": null,
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "post-box-2",
+          "status": "available",
+          "estimateM": 0.15711234516263942,
+          "groundTruthM": 0.24,
+          "signedErrorM": -0.08288765483736057,
+          "absoluteErrorM": 0.08288765483736057,
+          "below3cm": false,
+          "reason": null,
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No sufficiently supported local floor",
+          "sourcePhotos": []
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "sourcePhotos": []
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        }
+      ]
+    },
+    {
+      "run": "workcell-sub3-metrology-2026-10-01-b",
+      "cameraRoute": "original MapAnything cameras",
+      "predictionSha256": "a2fe10cdf1eb7d67bd6e1e091dd83ad98db5447ff7ba867395851709823ac0f7",
+      "source": "metrology-data/workcell-sub3-metrology-2026-10-01-b/original-cameras/results.json",
+      "comparisons": [
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "fence-0",
+          "status": "available",
+          "estimateM": 0.17127888876330769,
+          "groundTruthM": 0.2,
+          "signedErrorM": -0.028721111236692326,
+          "absoluteErrorM": 0.028721111236692326,
+          "below3cm": true,
+          "reason": null,
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "post-box-1",
+          "status": "available",
+          "estimateM": 0.1436462468922939,
+          "groundTruthM": 0.24,
+          "signedErrorM": -0.09635375310770608,
+          "absoluteErrorM": 0.09635375310770608,
+          "below3cm": false,
+          "reason": null,
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "post-box-2",
+          "status": "available",
+          "estimateM": 0.15711234516263942,
+          "groundTruthM": 0.24,
+          "signedErrorM": -0.08288765483736057,
+          "absoluteErrorM": 0.08288765483736057,
+          "below3cm": false,
+          "reason": null,
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "fence-0",
+          "status": "conditional",
+          "estimateM": 0.1639338743302265,
+          "groundTruthM": 0.2,
+          "signedErrorM": -0.03606612566977352,
+          "absoluteErrorM": 0.03606612566977352,
+          "below3cm": false,
+          "reason": "Visible source edge and inferred local floor; camera and semantic systematic errors remain unbounded",
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "sourcePhotos": []
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        }
+      ]
+    },
+    {
+      "run": "workcell-sub3-metrology-2026-10-01-b",
+      "cameraRoute": "replacement cameras; independently retriangulated source geometry",
+      "predictionSha256": "046bc3ac37104f445002b2e3a966a50bdf2a50312d778331e728d1732c9a7ba7",
+      "source": "metrology-data/workcell-sub3-metrology-2026-10-01-b/square-pixel-cameras/results.json",
+      "comparisons": [
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "fence-0",
+          "status": "available",
+          "estimateM": 0.17127888876330769,
+          "groundTruthM": 0.2,
+          "signedErrorM": -0.028721111236692326,
+          "absoluteErrorM": 0.028721111236692326,
+          "below3cm": true,
+          "reason": null,
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "post-box-1",
+          "status": "available",
+          "estimateM": 0.1436462468922939,
+          "groundTruthM": 0.24,
+          "signedErrorM": -0.09635375310770608,
+          "absoluteErrorM": 0.09635375310770608,
+          "below3cm": false,
+          "reason": null,
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "post-box-2",
+          "status": "available",
+          "estimateM": 0.15711234516263942,
+          "groundTruthM": 0.24,
+          "signedErrorM": -0.08288765483736057,
+          "absoluteErrorM": 0.08288765483736057,
+          "below3cm": false,
+          "reason": null,
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No sufficiently supported local floor",
+          "sourcePhotos": []
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "sourcePhotos": []
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        }
+      ]
+    },
+    {
+      "run": "workcell-sub3-metrology-2026-10-01-a",
+      "cameraRoute": "original MapAnything cameras",
+      "predictionSha256": "dc1d03cb89dbfcd6eec837c20e66288abbc43f2ce67cdda5b63f937cbe34116e",
+      "source": "metrology-data/workcell-sub3-metrology-2026-10-01-a/original-cameras/results.json",
+      "comparisons": [
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "fence-0",
+          "status": "available",
+          "estimateM": 0.17127888876330769,
+          "groundTruthM": 0.2,
+          "signedErrorM": -0.028721111236692326,
+          "absoluteErrorM": 0.028721111236692326,
+          "below3cm": true,
+          "reason": null,
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "post-box-1",
+          "status": "available",
+          "estimateM": 0.1436462468922939,
+          "groundTruthM": 0.24,
+          "signedErrorM": -0.09635375310770608,
+          "absoluteErrorM": 0.09635375310770608,
+          "below3cm": false,
+          "reason": null,
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "post-box-2",
+          "status": "available",
+          "estimateM": 0.15711234516263942,
+          "groundTruthM": 0.24,
+          "signedErrorM": -0.08288765483736057,
+          "absoluteErrorM": 0.08288765483736057,
+          "below3cm": false,
+          "reason": null,
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "fence-0",
+          "status": "conditional",
+          "estimateM": 0.16393387433022596,
+          "groundTruthM": 0.2,
+          "signedErrorM": -0.036066125669774046,
+          "absoluteErrorM": 0.036066125669774046,
+          "below3cm": false,
+          "reason": "Visible source edge and inferred local floor; camera and semantic systematic errors remain unbounded",
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "sourcePhotos": []
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        }
+      ]
+    },
+    {
+      "run": "workcell-sub3-metrology-2026-10-01-a",
+      "cameraRoute": "replacement cameras; independently retriangulated source geometry",
+      "predictionSha256": "2f876269923330794cf122be7bbc6dcbdedcf320bebf00e4ba0cdee3f0b39d18",
+      "source": "metrology-data/workcell-sub3-metrology-2026-10-01-a/refined-cameras/results.json",
+      "comparisons": [
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "fence-0",
+          "status": "available",
+          "estimateM": 0.17127888876330769,
+          "groundTruthM": 0.2,
+          "signedErrorM": -0.028721111236692326,
+          "absoluteErrorM": 0.028721111236692326,
+          "below3cm": true,
+          "reason": null,
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "post-box-1",
+          "status": "available",
+          "estimateM": 0.1436462468922939,
+          "groundTruthM": 0.24,
+          "signedErrorM": -0.09635375310770608,
+          "absoluteErrorM": 0.09635375310770608,
+          "below3cm": false,
+          "reason": null,
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "A",
+          "routeLabel": "Saved geometry / saved whole-height scale",
+          "objectId": "post-box-2",
+          "status": "available",
+          "estimateM": 0.15711234516263942,
+          "groundTruthM": 0.24,
+          "signedErrorM": -0.08288765483736057,
+          "absoluteErrorM": 0.08288765483736057,
+          "below3cm": false,
+          "reason": null,
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "B",
+          "routeLabel": "Saved geometry / new named-circle scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No sufficiently supported local floor",
+          "sourcePhotos": []
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "sourcePhotos": []
+        },
+        {
+          "route": "C",
+          "routeLabel": "Source end edges and local floor / saved whole-height scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No common RGB end edge has stable multiview reprojection support",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "fence-0",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.2,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "post-box-1",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        },
+        {
+          "route": "D",
+          "routeLabel": "Source end edges and local floor / new named-circle scale",
+          "objectId": "post-box-2",
+          "status": "unsupported",
+          "estimateM": null,
+          "groundTruthM": 0.24,
+          "signedErrorM": null,
+          "absoluteErrorM": null,
+          "below3cm": false,
+          "reason": "No source-supported metric scale",
+          "sourcePhotos": []
+        }
+      ]
+    }
+  ],
+  "ledger": [
+    {
+      "run": "workcell-sub3-metrology-2026-10-01-a",
+      "mode": "ephemeral modal run",
+      "hardware": "2 x A100-80GB; 16 CPU; 80 GiB",
+      "actualBilledUsd": null,
+      "status": "completed",
+      "usdPerSecond": 0.0017751999999999998,
+      "rateSource": "https://modal.com/pricing",
+      "rateCheckedDate": "2026-10-01",
+      "estimateBasis": "reserved-resource list rate; call window includes scheduling; build time excluded; not invoice",
+      "functionSeconds": 13.342400081000001,
+      "callSeconds": 79.0628569999244,
+      "estimateUsd": 0.023685428623791197,
+      "callWindowEstimateUsd": 0.1403523837462658
+    },
+    {
+      "run": "workcell-sub3-metrology-2026-10-01-b",
+      "mode": "ephemeral modal run",
+      "hardware": "2 x A100-80GB; 16 CPU; 80 GiB",
+      "actualBilledUsd": null,
+      "status": "completed",
+      "usdPerSecond": 0.0017751999999999998,
+      "rateSource": "https://modal.com/pricing",
+      "rateCheckedDate": "2026-10-01",
+      "estimateBasis": "reserved-resource list rate; call window includes scheduling; build time excluded; not invoice",
+      "functionSeconds": 43.465984750000004,
+      "callSeconds": 55.20443545805756,
+      "estimateUsd": 0.0771608161282,
+      "callWindowEstimateUsd": 0.09799891382514377
+    },
+    {
+      "run": "workcell-sub3-metrology-2026-10-01-c",
+      "mode": "ephemeral modal run",
+      "hardware": "2 x A100-80GB; 16 CPU; 80 GiB",
+      "actualBilledUsd": null,
+      "status": "completed",
+      "usdPerSecond": 0.0017751999999999998,
+      "rateSource": "https://modal.com/pricing",
+      "rateCheckedDate": "2026-10-01",
+      "estimateBasis": "reserved-resource list rate; call window includes scheduling; build time excluded; not invoice",
+      "functionSeconds": 34.092147018,
+      "callSeconds": 613.8421415420016,
+      "estimateUsd": 0.06052037938635359,
+      "callWindowEstimateUsd": 1.0896925696653612
+    }
+  ],
+  "knownFunctionSeconds": 90.900531849,
+  "knownEstimatedFunctionCostUsd": 0.1613666241383448,
+  "functionAccountingMissingRuns": 0,
+  "functionSecondsTotal": 90.900531849,
+  "estimatedFunctionCostUsd": 0.1613666241383448,
+  "callWindowEstimateUsd": 1.3280438672367707,
+  "actualBilledUsd": null,
+  "timingScope": "Cached inference inputs; geometric ablation only. Not a new end-to-end one-shot benchmark.",
+  "baselineEndToEndSeconds": 334.6
+}
