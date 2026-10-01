@@ -1,0 +1,11 @@
+{
+  "method": "A4 shared-angle structural fit to source silhouettes",
+  "result": "structural-result.json",
+  "initialization": "guard-placement-initializer.json",
+  "coordinateSystem": "unchanged source MapAnything world and cameras",
+  "optimizedVariables": "one common theta plus independent rigid pose, two panel widths and hinge-height scale per board",
+  "prior": "User supplied same-angle specification for left and right; exact equality is imposed, never accuracy evidence.",
+  "sharedModelAngleDeg": 104.27020938894461,
+  "measurementAngleDeg": null,
+  "centerPolicy": "unchanged A1; excluded from this objective and all shared parameters"
+}
