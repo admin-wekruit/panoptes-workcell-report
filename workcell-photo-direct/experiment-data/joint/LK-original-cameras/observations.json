@@ -1,0 +1,1035 @@
+{
+  "association": {
+    "anchorPhoto": 3,
+    "candidateInstancesPerPhoto": {
+      "1": 3,
+      "2": 2,
+      "3": 3,
+      "4": 3
+    },
+    "associationBasis": "mutual source-pointmap reprojection into independent SAM instance masks"
+  },
+  "featureMethod": "lk",
+  "detection": [
+    {
+      "side": "left",
+      "photo": 3,
+      "method": "lk",
+      "detectedRgbFeatures": 22,
+      "analysisShape": [
+        1800,
+        1350
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "canonicalToAnalysisPixelCentres": [
+        [
+          3.4438775510204085,
+          0.0,
+          1.2219387755102042
+        ],
+        [
+          0.0,
+          3.4482758620689653,
+          8.120689655172415
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "side": "left",
+      "photo": 1,
+      "method": "lk",
+      "detectedRgbFeatures": 56,
+      "analysisShape": [
+        1800,
+        1350
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "canonicalToAnalysisPixelCentres": [
+        [
+          3.4438775510204085,
+          0.0,
+          1.2219387755102042
+        ],
+        [
+          0.0,
+          3.4482758620689653,
+          8.120689655172415
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "side": "left",
+      "photo": 2,
+      "method": "lk",
+      "detectedRgbFeatures": 62,
+      "analysisShape": [
+        1800,
+        1350
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "canonicalToAnalysisPixelCentres": [
+        [
+          3.4438775510204085,
+          0.0,
+          1.2219387755102042
+        ],
+        [
+          0.0,
+          3.4482758620689653,
+          8.120689655172415
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "side": "left",
+      "photo": 4,
+      "method": "lk",
+      "detectedRgbFeatures": 36,
+      "analysisShape": [
+        1800,
+        1350
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "canonicalToAnalysisPixelCentres": [
+        [
+          3.4438775510204085,
+          0.0,
+          1.2219387755102042
+        ],
+        [
+          0.0,
+          3.4482758620689653,
+          8.120689655172415
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "side": "left",
+      "photos": [
+        1,
+        2
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 56,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 55,
+        "patchError": 1,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 0
+      }
+    },
+    {
+      "side": "left",
+      "photos": [
+        1,
+        3
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 56,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 56,
+        "patchError": 0,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 0
+      }
+    },
+    {
+      "side": "left",
+      "photos": [
+        1,
+        4
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 56,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 54,
+        "patchError": 2,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 0
+      }
+    },
+    {
+      "side": "left",
+      "photos": [
+        2,
+        3
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 62,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 61,
+        "patchError": 1,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 0
+      }
+    },
+    {
+      "side": "left",
+      "photos": [
+        2,
+        4
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 62,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 62,
+        "patchError": 0,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 0
+      }
+    },
+    {
+      "side": "left",
+      "photos": [
+        3,
+        4
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 22,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 16,
+        "patchError": 6,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 0
+      }
+    },
+    {
+      "side": "left",
+      "method": "lk",
+      "conflictingComponentsRejected": 0,
+      "mergedTracks": 0,
+      "nearDuplicateTracksRejected": 0,
+      "retainedDistinctTracks": 0
+    },
+    {
+      "side": "center",
+      "photo": 3,
+      "method": "lk",
+      "detectedRgbFeatures": 26,
+      "analysisShape": [
+        1800,
+        1350
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "canonicalToAnalysisPixelCentres": [
+        [
+          3.4438775510204085,
+          0.0,
+          1.2219387755102042
+        ],
+        [
+          0.0,
+          3.4482758620689653,
+          8.120689655172415
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "side": "center",
+      "photo": 1,
+      "method": "lk",
+      "detectedRgbFeatures": 16,
+      "analysisShape": [
+        1800,
+        1350
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "canonicalToAnalysisPixelCentres": [
+        [
+          3.4438775510204085,
+          0.0,
+          1.2219387755102042
+        ],
+        [
+          0.0,
+          3.4482758620689653,
+          8.120689655172415
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "side": "center",
+      "photo": 2,
+      "method": "lk",
+      "detectedRgbFeatures": 19,
+      "analysisShape": [
+        1800,
+        1350
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "canonicalToAnalysisPixelCentres": [
+        [
+          3.4438775510204085,
+          0.0,
+          1.2219387755102042
+        ],
+        [
+          0.0,
+          3.4482758620689653,
+          8.120689655172415
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "side": "center",
+      "photo": 4,
+      "method": "lk",
+      "detectedRgbFeatures": 31,
+      "analysisShape": [
+        1800,
+        1350
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "canonicalToAnalysisPixelCentres": [
+        [
+          3.4438775510204085,
+          0.0,
+          1.2219387755102042
+        ],
+        [
+          0.0,
+          3.4482758620689653,
+          8.120689655172415
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "side": "center",
+      "photos": [
+        1,
+        2
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 16,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 11,
+        "patchError": 3,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 2
+      }
+    },
+    {
+      "side": "center",
+      "photos": [
+        1,
+        3
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 16,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 16,
+        "patchError": 0,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 0
+      }
+    },
+    {
+      "side": "center",
+      "photos": [
+        1,
+        4
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 16,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 15,
+        "patchError": 1,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 0
+      }
+    },
+    {
+      "side": "center",
+      "photos": [
+        2,
+        3
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 19,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 19,
+        "patchError": 0,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 0
+      }
+    },
+    {
+      "side": "center",
+      "photos": [
+        2,
+        4
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 19,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 19,
+        "patchError": 0,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 0
+      }
+    },
+    {
+      "side": "center",
+      "photos": [
+        3,
+        4
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 26,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 17,
+        "patchError": 4,
+        "mask": 0,
+        "patchCorrelation": 1,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 4
+      }
+    },
+    {
+      "side": "center",
+      "method": "lk",
+      "conflictingComponentsRejected": 0,
+      "mergedTracks": 6,
+      "nearDuplicateTracksRejected": 0,
+      "retainedDistinctTracks": 6
+    },
+    {
+      "side": "right",
+      "photo": 3,
+      "method": "lk",
+      "detectedRgbFeatures": 59,
+      "analysisShape": [
+        1800,
+        1350
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "canonicalToAnalysisPixelCentres": [
+        [
+          3.4438775510204085,
+          0.0,
+          1.2219387755102042
+        ],
+        [
+          0.0,
+          3.4482758620689653,
+          8.120689655172415
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "side": "right",
+      "photo": 1,
+      "method": "lk",
+      "detectedRgbFeatures": 53,
+      "analysisShape": [
+        1800,
+        1350
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "canonicalToAnalysisPixelCentres": [
+        [
+          3.4438775510204085,
+          0.0,
+          1.2219387755102042
+        ],
+        [
+          0.0,
+          3.4482758620689653,
+          8.120689655172415
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "side": "right",
+      "photo": 4,
+      "method": "lk",
+      "detectedRgbFeatures": 47,
+      "analysisShape": [
+        1800,
+        1350
+      ],
+      "canonicalShape": [
+        518,
+        392
+      ],
+      "canonicalToAnalysisPixelCentres": [
+        [
+          3.4438775510204085,
+          0.0,
+          1.2219387755102042
+        ],
+        [
+          0.0,
+          3.4482758620689653,
+          8.120689655172415
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "side": "right",
+      "photos": [
+        1,
+        3
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 53,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 40,
+        "patchError": 9,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 1,
+        "triangulation": 0,
+        "acceptedPairs": 3
+      }
+    },
+    {
+      "side": "right",
+      "photos": [
+        1,
+        4
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 53,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 51,
+        "patchError": 2,
+        "mask": 0,
+        "patchCorrelation": 0,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 0
+      }
+    },
+    {
+      "side": "right",
+      "photos": [
+        3,
+        4
+      ],
+      "method": "lk",
+      "pairCounts": {
+        "attempted": 59,
+        "invalidDepthInitialization": 0,
+        "flowStatus": 0,
+        "roundTrip": 39,
+        "patchError": 14,
+        "mask": 0,
+        "patchCorrelation": 5,
+        "repeatedTextureAmbiguity": 0,
+        "triangulation": 0,
+        "acceptedPairs": 1
+      }
+    },
+    {
+      "side": "right",
+      "method": "lk",
+      "conflictingComponentsRejected": 0,
+      "mergedTracks": 4,
+      "nearDuplicateTracksRejected": 0,
+      "retainedDistinctTracks": 4
+    },
+    {
+      "method": "lk",
+      "finalTrackRejections": {
+        "invalidViewCount": 0,
+        "triangulation": 0,
+        "instanceAmbiguity": 0
+      }
+    }
+  ],
+  "boards": {
+    "left": [],
+    "center": [
+      {
+        "id": 0,
+        "xyz": [
+          -0.4891937082370376,
+          0.11701727902410461,
+          6.189073119321264
+        ],
+        "observations": [
+          {
+            "photo": 1,
+            "uv": [
+              164.86592592592592,
+              266.185
+            ],
+            "analysisUv": [
+              569.0,
+              926.0
+            ]
+          },
+          {
+            "photo": 2,
+            "uv": [
+              253.6076765046296,
+              283.8377764892578
+            ],
+            "analysisUv": [
+              874.61572265625,
+              986.8716430664062
+            ]
+          }
+        ],
+        "triangulationResidualPx": 0.06853458913761104,
+        "parallaxDeg": 22.572474742298578
+      },
+      {
+        "id": 1,
+        "xyz": [
+          -0.33499855739350065,
+          0.12294123357117809,
+          6.236155713498338
+        ],
+        "observations": [
+          {
+            "photo": 1,
+            "uv": [
+              174.7385185185185,
+              266.475
+            ],
+            "analysisUv": [
+              603.0,
+              927.0
+            ]
+          },
+          {
+            "photo": 2,
+            "uv": [
+              262.94697229456017,
+              284.4823114013672
+            ],
+            "analysisUv": [
+              906.7791137695312,
+              989.0941772460938
+            ]
+          }
+        ],
+        "triangulationResidualPx": 0.04319763649968787,
+        "parallaxDeg": 22.688441212320747
+      },
+      {
+        "id": 2,
+        "xyz": [
+          -1.1628104551391747,
+          0.135423334114584,
+          7.870270134285486
+        ],
+        "observations": [
+          {
+            "photo": 3,
+            "uv": [
+              121.60074074074072,
+              253.71500000000006
+            ],
+            "analysisUv": [
+              420.0,
+              883.0
+            ]
+          },
+          {
+            "photo": 4,
+            "uv": [
+              173.47438657407406,
+              274.70969726562504
+            ],
+            "analysisUv": [
+              598.646484375,
+              955.3955078125
+            ]
+          }
+        ],
+        "triangulationResidualPx": 0.14741055164406813,
+        "parallaxDeg": 4.544873470935117
+      },
+      {
+        "id": 3,
+        "xyz": [
+          -0.7643986941330765,
+          0.12783447521424515,
+          7.807996096595731
+        ],
+        "observations": [
+          {
+            "photo": 3,
+            "uv": [
+              140.4748148148148,
+              253.71500000000006
+            ],
+            "analysisUv": [
+              485.0,
+              883.0
+            ]
+          },
+          {
+            "photo": 4,
+            "uv": [
+              190.95124819155092,
+              274.2279333496094
+            ],
+            "analysisUv": [
+              658.8346557617188,
+              953.7342529296875
+            ]
+          }
+        ],
+        "triangulationResidualPx": 0.09590005809071789,
+        "parallaxDeg": 4.777329670388991
+      },
+      {
+        "id": 4,
+        "xyz": [
+          -0.9609056446080881,
+          0.1317084206679052,
+          7.846295167860119
+        ],
+        "observations": [
+          {
+            "photo": 3,
+            "uv": [
+              131.18296296296296,
+              253.71500000000006
+            ],
+            "analysisUv": [
+              453.0,
+              883.0
+            ]
+          },
+          {
+            "photo": 4,
+            "uv": [
+              182.33679723668982,
+              274.46049621582034
+            ],
+            "analysisUv": [
+              629.1675415039062,
+              954.5361938476562
+            ]
+          }
+        ],
+        "triangulationResidualPx": 0.11773066326439938,
+        "parallaxDeg": 4.659994724878214
+      },
+      {
+        "id": 5,
+        "xyz": [
+          -0.7367809632381296,
+          0.36856630291577297,
+          7.663234327430804
+        ],
+        "observations": [
+          {
+            "photo": 3,
+            "uv": [
+              141.05555555555554,
+              266.185
+            ],
+            "analysisUv": [
+              487.0,
+              926.0
+            ]
+          },
+          {
+            "photo": 4,
+            "uv": [
+              191.22205258969908,
+              285.27616516113284
+            ],
+            "analysisUv": [
+              659.7672729492188,
+              991.8316040039062
+            ]
+          }
+        ],
+        "triangulationResidualPx": 0.433735927278646,
+        "parallaxDeg": 4.8670388060751835
+      }
+    ],
+    "right": [
+      {
+        "id": 6,
+        "xyz": [
+          0.9985563840227023,
+          0.47437642040953193,
+          5.178460379122413
+        ],
+        "observations": [
+          {
+            "photo": 1,
+            "uv": [
+              272.8837037037037,
+              295.76500000000004
+            ],
+            "analysisUv": [
+              941.0,
+              1028.0
+            ]
+          },
+          {
+            "photo": 3,
+            "uv": [
+              245.15693106192128,
+              283.13102539062504
+            ],
+            "analysisUv": [
+              845.5123901367188,
+              984.4345703125
+            ]
+          }
+        ],
+        "triangulationResidualPx": 2.4045029865656873,
+        "parallaxDeg": 1.1002606241659518
+      },
+      {
+        "id": 7,
+        "xyz": [
+          0.9797698681687981,
+          0.47204936137344505,
+          5.423671931383046
+        ],
+        "observations": [
+          {
+            "photo": 1,
+            "uv": [
+              267.9474074074074,
+              293.735
+            ],
+            "analysisUv": [
+              924.0,
+              1021.0
+            ]
+          },
+          {
+            "photo": 3,
+            "uv": [
+              241.11345630787036,
+              281.46964965820314
+            ],
+            "analysisUv": [
+              831.587158203125,
+              978.7056884765625
+            ]
+          }
+        ],
+        "triangulationResidualPx": 2.1168836294524023,
+        "parallaxDeg": 1.022083847544705
+      },
+      {
+        "id": 8,
+        "xyz": [
+          0.9128490920678858,
+          0.5009776435890005,
+          5.17855173846385
+        ],
+        "observations": [
+          {
+            "photo": 1,
+            "uv": [
+              266.20518518518514,
+              297.505
+            ],
+            "analysisUv": [
+              918.0,
+              1034.0
+            ]
+          },
+          {
+            "photo": 3,
+            "uv": [
+              239.39710937499999,
+              285.1772210693359
+            ],
+            "analysisUv": [
+              825.67626953125,
+              991.4904174804688
+            ]
+          }
+        ],
+        "triangulationResidualPx": 2.0758082961809925,
+        "parallaxDeg": 1.0158923959784072
+      },
+      {
+        "id": 9,
+        "xyz": [
+          0.7142359745771196,
+          1.0305839453123014,
+          5.867794368045078
+        ],
+        "observations": [
+          {
+            "photo": 3,
+            "uv": [
+              221.19777777777776,
+              313.745
+            ],
+            "analysisUv": [
+              763.0,
+              1090.0
+            ]
+          },
+          {
+            "photo": 4,
+            "uv": [
+              260.93507993344906,
+              332.5017553710938
+            ],
+            "analysisUv": [
+              899.8504028320312,
+              1154.678466796875
+            ]
+          }
+        ],
+        "triangulationResidualPx": 0.3141551711760145,
+        "parallaxDeg": 6.964887824146525
+      }
+    ]
+  }
+}

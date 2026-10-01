@@ -1,0 +1,16 @@
+{
+  "baselineFullPipelineSeconds": 334.6,
+  "alignmentSeconds": 1.511,
+  "colmapSeconds": 19.091454925,
+  "functionSeconds": [
+    29.782670676,
+    14.741319404,
+    50.869077317999995,
+    17.944281133,
+    6.060715547
+  ],
+  "functionCostEstimateUsd": 0.21195544335126557,
+  "callWindowCostEstimateUsd": 0.41503091752042354,
+  "actualBilledUsd": null,
+  "basis": "frozen-data ablation; reuses baseline inference; not a new full oneshot latency benchmark"
+}

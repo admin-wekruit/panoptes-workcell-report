@@ -1,0 +1,13 @@
+{
+  "status": "unsupported",
+  "seconds": 2.7198228580000006,
+  "lines3D": 0,
+  "scope": "guard-only",
+  "reason": "no supported 3D lines",
+  "detectedLinesPerPhoto": {
+    "2": 24,
+    "4": 72,
+    "1": 62,
+    "3": 71
+  }
+}

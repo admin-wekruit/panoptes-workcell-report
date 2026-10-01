@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "version": "2.0.0",
+  "seconds": 4.2644408160000005,
+  "detectedLinesPerPhoto": {
+    "2": 500,
+    "4": 500,
+    "1": 500,
+    "3": 500
+  },
+  "lines3D": 2,
+  "scope": "scene",
+  "pointLineBaSummary": "CeresBundleAdjustmentSummary(ceres_summary=SolverSummary(minimizer_type=MinimizerType.TRUST_REGION, termination_type=TerminationType.USER_SUCCESS, message='User callback returned SOLVER_TERMINATE_SUCCESSFULLY.', initial_cost=168.50444430823376, final_cost=166.5003162842428, fixed_cost=0.0, num_successful_steps=5, num_unsuccessful_steps=0, num_inner_iteration_steps=-1, num_line_search_steps=0, preprocessor_time_in_seconds=0.0007531642913818359, minimizer_time_in_seconds=0.007227897644042969, postprocessor_time_in_seconds=1.6927719116210938e-05, total_time_in_seconds=0.007997989654541016, linear_solver_time_in_seconds=0.0047168731689453125, num_linear_solves=4, residual_evaluation_time_in_seconds=0.00038886070251464844, num_residual_evaluations=4, jacobian_evaluation_time_in_seconds=0.0013148784637451172, num_jacobian_evaluations=5, inner_iteration_time_in_seconds=0.0, line_search_cost_evaluation_time_in_seconds=0.0, line_search_gradient_evaluation_time_in_seconds=0.0, line_search_polynomial_minimization_time_in_seconds=0.0, line_search_total_time_in_seconds=0.0, num_parameter_blocks=686, num_parameters=2084, num_effective_parameters=2068, num_residual_blocks=1371, num_residuals=2742, num_parameter_blocks_reduced=686, num_parameters_reduced=2084, num_effective_parameters_reduced=2068, num_residual_blocks_reduced=1371, num_residuals_reduced=2742, is_constrained=False, num_threads_given=1, num_threads_used=1, linear_solver_type_given=LinearSolverType.SPARSE_SCHUR, linear_solver_type_used=LinearSolverType.SPARSE_SCHUR, schur_structure_given='2,d,d', schur_structure_used='2,d,d', inner_iterations_given=False, inner_iterations_used=False, preconditioner_type_given=PreconditionerType.JACOBI, preconditioner_type_used=PreconditionerType.JACOBI, visibility_clustering_type=VisibilityClusteringType.CANONICAL_VIEWS, trust_region_strategy_type=TrustRegionStrategyType.LEVENBERG_MARQUARDT, dogleg_type=DoglegType.TRADITIONAL_DOGLEG, dense_linear_algebra_library_type=DenseLinearAlgebraLibraryType.EIGEN, sparse_linear_algebra_library_type=SparseLinearAlgebraLibraryType.SUITE_SPARSE, line_search_direction_type=LineSearchDirectionType.LBFGS, line_search_type=LineSearchType.WOLFE, line_search_interpolation_type=LineSearchInterpolationType.CUBIC, nonlinear_conjugate_gradient_type=NonlinearConjugateGradientType.FLETCHER_REEVES, max_lbfgs_rank=20), termination_type=BundleAdjustmentTerminationType.USER_SUCCESS, num_residuals=2742)",
+  "basis": "LIMAP native LSD line triangulation and point+line camera BA, existing COLMAP tracks; no CAD angle prior"
+}

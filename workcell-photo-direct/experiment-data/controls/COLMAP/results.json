@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "version": "4.2.0",
+  "seconds": 19.091454925,
+  "beforeBa": {
+    "points": 676,
+    "meanErrorPx": 1.3766747658059828
+  },
+  "afterBa": {
+    "points": 676,
+    "meanErrorPx": 0.3278366283230804
+  },
+  "registeredImages": 4,
+  "basis": "SIFT matches; triangulation from MapAnything initial poses; camera+point BA with fixed principal points; no lens calibration truth"
+}

@@ -1,0 +1,946 @@
+{
+  "schemaVersion": 1,
+  "route": "A3-shared",
+  "coordinateSystem": "unchanged MapAnything native gauge",
+  "method": "two intersecting planes fitted to symmetric RGB feature transfer; depth only initializes and associates",
+  "optimizedVariables": "per-board hinge origin, orientation, interior angle; A3 shares only left/right angle",
+  "fixedVariables": "all camera intrinsics and camera poses supplied to this route; inherited floor and reference scale",
+  "cameraSource": "supplied refinement",
+  "featureMethod": "supplied-tracks",
+  "lkObservationGates": null,
+  "cameraFingerprint": "40ac691054fc4ad81f4c27129a0e8fd33b3681048990a7ce0ec25aacf7cd32be",
+  "observationFingerprint": "7dc76489ad95f57cb8d468683991eaefe39caf70ee1627c0250f45f3467f8b82",
+  "objects": [
+    {
+      "id": "v-guard-left",
+      "status": "unsupported",
+      "reasons": [
+        "insufficient independent RGB support on both planes",
+        "weak triangulation parallax",
+        "nearly collinear feature support cannot identify both plane orientations",
+        "at least one plane fails its separate held-out feature check",
+        "held-out feature transfer residual exceeds 1.5 px median or 4 px p95 in canonical image",
+        "independent optimizer did not converge",
+        "fewer than two leave-one-view fits; camera/view uncertainty unresolved",
+        "shared-angle optimizer unavailable or unconverged"
+      ],
+      "candidateAngleDeg": 13.003770621909755,
+      "measurementAngleDeg": null,
+      "initialDepthAngleDeg": 13.003770621909755,
+      "mesh": "guard-left.glb",
+      "meshAngleDeg": 13.003770621909585,
+      "panels": [
+        {
+          "panel": 1,
+          "observedExtentPoints": 2075,
+          "widthNative": 0.73134719587496,
+          "hingeSpanNative": [
+            -0.499268756266916,
+            0.36538132289485514
+          ],
+          "photoColorFraction": 1.0,
+          "normal": [
+            -0.6784752598302561,
+            0.6825747480831537,
+            0.27159351074259175
+          ],
+          "polygonNative": [
+            [
+              -1.9543471233304635,
+              0.30475437565470404,
+              5.060374073982419
+            ],
+            [
+              -1.4457756380122526,
+              0.9326949511360743,
+              4.752696584750899
+            ],
+            [
+              -1.3464492287082361,
+              1.0213393203936867,
+              4.778043668069353
+            ],
+            [
+              -1.3193161098901474,
+              1.0403135096568787,
+              4.79813931530621
+            ],
+            [
+              -1.29072109527139,
+              0.9608603872540091,
+              5.069256636116051
+            ],
+            [
+              -1.2916723346843266,
+              0.9374323495028771,
+              5.125760175233203
+            ],
+            [
+              -1.322876662232712,
+              0.8611783681497481,
+              5.239450954467229
+            ],
+            [
+              -1.364623673335845,
+              0.7672292150918562,
+              5.371276656701016
+            ],
+            [
+              -1.4345815575799141,
+              0.6183195225862845,
+              5.5707560257453235
+            ],
+            [
+              -1.451531900511073,
+              0.588395356536171,
+              5.603617973567353
+            ],
+            [
+              -1.4694142441173823,
+              0.5658077823893779,
+              5.61571318158396
+            ],
+            [
+              -1.5008427925344685,
+              0.5297829470588719,
+              5.627739059294206
+            ],
+            [
+              -1.5205811094746728,
+              0.511414152455071,
+              5.624595080032691
+            ],
+            [
+              -1.703496542576027,
+              0.3617820734601063,
+              5.5437075900658215
+            ],
+            [
+              -1.7207623400852752,
+              0.3496020294771733,
+              5.531186576626753
+            ],
+            [
+              -1.830156250777076,
+              0.2886833962019245,
+              5.411008663944667
+            ],
+            [
+              -1.9092916287622663,
+              0.2634658725122572,
+              5.276695619569004
+            ],
+            [
+              -1.9542884338135325,
+              0.25516620836552756,
+              5.185146753888904
+            ],
+            [
+              -1.9562962126500527,
+              0.26767105281948156,
+              5.148703617623593
+            ]
+          ]
+        },
+        {
+          "panel": 2,
+          "observedExtentPoints": 1169,
+          "widthNative": 0.6912375054678674,
+          "hingeSpanNative": [
+            -0.6038991279490973,
+            0.5872501894604124
+          ],
+          "photoColorFraction": 0.9411764705882353,
+          "normal": [
+            -0.7601116149075305,
+            0.6466904750527541,
+            0.06341736638106157
+          ],
+          "polygonNative": [
+            [
+              -2.0848463642771615,
+              0.1436250736281101,
+              5.139323995400007
+            ],
+            [
+              -1.384233952169363,
+              1.0086813615815953,
+              4.715464864275325
+            ],
+            [
+              -1.3582899729043805,
+              1.0364708248708094,
+              4.74304624868287
+            ],
+            [
+              -1.324869388521665,
+              1.0720824589039952,
+              4.780475583444436
+            ],
+            [
+              -1.3232905723105877,
+              1.069335824405639,
+              4.827407505695801
+            ],
+            [
+              -1.3140289521382884,
+              1.0480710799258253,
+              5.155260489221177
+            ],
+            [
+              -1.3261451635651276,
+              1.0247004731999056,
+              5.248356057021407
+            ],
+            [
+              -1.3541076598997086,
+              0.9831748698468594,
+              5.336653541339232
+            ],
+            [
+              -1.3660273674520198,
+              0.9676900550248047,
+              5.351690023473099
+            ],
+            [
+              -1.5097068681335433,
+              0.7854105715331388,
+              5.488339477305408
+            ],
+            [
+              -1.853581320550091,
+              0.3546426144946068,
+              5.759409854458464
+            ],
+            [
+              -1.9354383294353714,
+              0.25562972942038065,
+              5.787954503550753
+            ],
+            [
+              -1.9666044807645802,
+              0.2182595520754238,
+              5.795479005906324
+            ],
+            [
+              -1.9837196766736924,
+              0.19900980459377515,
+              5.786635515701901
+            ]
+          ]
+        }
+      ],
+      "originNative": [
+        -1.7394364599644072,
+        0.5701076829615934,
+        4.930356612873337
+      ],
+      "hingeAxis": [
+        -0.5881818524914054,
+        -0.7262366483446375,
+        0.3558404684699679
+      ],
+      "panelDirections": [
+        [
+          0.44012887907753273,
+          0.08168258003005952,
+          0.8942116784752857
+        ],
+        [
+          0.27617465720526413,
+          0.2331775291000205,
+          0.9323925131833504
+        ]
+      ],
+      "planeNormals": [
+        [
+          -0.6784752598302561,
+          0.6825747480831537,
+          0.27159351074259175
+        ],
+        [
+          -0.7601116149075305,
+          0.6466904750527541,
+          0.06341736638106157
+        ]
+      ],
+      "candidateGeometry": {
+        "groundClearanceNative": 0.8623867603043418,
+        "groundClearanceM": 1.0291040597596606,
+        "panelWidthsM": [
+          0.8727318217445225,
+          0.8248680938516277
+        ]
+      },
+      "groundClearanceNative": null,
+      "groundClearanceM": null,
+      "panelWidthsM": null,
+      "sourceAssociations": [
+        {
+          "photo": 3,
+          "instance": 1,
+          "score": 0.8633,
+          "mutualProjection": 1.0
+        },
+        {
+          "photo": 1,
+          "instance": 3,
+          "score": 0.8008,
+          "mutualProjection": 0.6867219917012448
+        },
+        {
+          "photo": 2,
+          "instance": 1,
+          "score": 0.8359,
+          "mutualProjection": 0.7599118942731278
+        },
+        {
+          "photo": 4,
+          "instance": 2,
+          "score": 0.8672,
+          "mutualProjection": 0.662621359223301
+        }
+      ],
+      "support": [
+        {
+          "panel": 1,
+          "rgbTracks": 0,
+          "trainingTracks": 0,
+          "heldOutTracks": 0,
+          "sourcePhotos": [],
+          "spatialSpreadRatio": 0.0,
+          "heldOutResidual": {
+            "count": 0,
+            "medianPx": null,
+            "p95Px": null,
+            "perView": {}
+          },
+          "medianParallaxDeg": null
+        },
+        {
+          "panel": 2,
+          "rgbTracks": 25,
+          "trainingTracks": 20,
+          "heldOutTracks": 5,
+          "sourcePhotos": [
+            3,
+            4
+          ],
+          "spatialSpreadRatio": 0.27573486431266,
+          "heldOutResidual": {
+            "count": 10,
+            "medianPx": 8.53065714831071,
+            "p95Px": 10.10457595874465,
+            "perView": {
+              "3": {
+                "count": 5,
+                "medianPx": 8.050934251327828,
+                "p95Px": 9.315392346204067
+              },
+              "4": {
+                "count": 5,
+                "medianPx": 8.846358076025902,
+                "p95Px": 10.235087309159189
+              }
+            }
+          },
+          "medianParallaxDeg": 4.136927471767559
+        }
+      ],
+      "trainingResidual": {
+        "count": 40,
+        "medianPx": 9.246255106605261,
+        "p95Px": 12.396771269816579,
+        "perView": {
+          "3": {
+            "count": 20,
+            "medianPx": 8.866056790765427,
+            "p95Px": 11.618557193472364
+          },
+          "4": {
+            "count": 20,
+            "medianPx": 9.572618859228905,
+            "p95Px": 12.572617824789683
+          }
+        }
+      },
+      "heldOutFeatureResidual": {
+        "count": 10,
+        "medianPx": 8.53065714831071,
+        "p95Px": 10.10457595874465,
+        "perView": {
+          "3": {
+            "count": 5,
+            "medianPx": 8.050934251327828,
+            "p95Px": 9.315392346204067
+          },
+          "4": {
+            "count": 5,
+            "medianPx": 8.846358076025902,
+            "p95Px": 10.235087309159189
+          }
+        }
+      },
+      "leaveOneView": [
+        {
+          "photo": 1,
+          "status": "unsupported",
+          "angleDeg": null,
+          "excludedTrainingTracks": 0,
+          "trainingTracksAfterRetriangulation": 0,
+          "provenance": "Excluded view removed before triangulation, depth initialization, plane assignment and fitting; supplied remaining cameras fixed.",
+          "reason": "view has no observed training features; removing it is not an independent subset"
+        },
+        {
+          "photo": 2,
+          "status": "unsupported",
+          "angleDeg": null,
+          "excludedTrainingTracks": 0,
+          "trainingTracksAfterRetriangulation": 0,
+          "provenance": "Excluded view removed before triangulation, depth initialization, plane assignment and fitting; supplied remaining cameras fixed.",
+          "reason": "view has no observed training features; removing it is not an independent subset"
+        },
+        {
+          "photo": 3,
+          "status": "unsupported",
+          "angleDeg": null,
+          "excludedTrainingTracks": 20,
+          "trainingTracksAfterRetriangulation": 0,
+          "provenance": "Excluded view removed before triangulation, depth initialization, plane assignment and fitting; supplied remaining cameras fixed.",
+          "reason": "no training tracks triangulatable after excluding observed view"
+        },
+        {
+          "photo": 4,
+          "status": "unsupported",
+          "angleDeg": null,
+          "excludedTrainingTracks": 20,
+          "trainingTracksAfterRetriangulation": 0,
+          "provenance": "Excluded view removed before triangulation, depth initialization, plane assignment and fitting; supplied remaining cameras fixed.",
+          "reason": "no training tracks triangulatable after excluding observed view"
+        }
+      ],
+      "optimizer": {
+        "converged": false,
+        "reason": "insufficient feature support"
+      },
+      "conditionalAngleRangeDeg": null,
+      "uncertaintyScope": "Independent-fit view-subset sensitivity conditional on fixed inferred cameras and feature associations; not an absolute confidence interval or uncertainty of the shared-angle fit.",
+      "geometryScope": "Two zero-thickness photo-colored sheets; boundary convex completion and hidden hinge extent are inferred; thickness unknown.",
+      "independentCandidateAngleDeg": 13.003770621909755,
+      "sharedAngleApplied": false,
+      "independentHeldOutFeatureResidual": {
+        "count": 10,
+        "medianPx": 8.53065714831071,
+        "p95Px": 10.10457595874465,
+        "perView": {
+          "3": {
+            "count": 5,
+            "medianPx": 8.050934251327828,
+            "p95Px": 9.315392346204067
+          },
+          "4": {
+            "count": 5,
+            "medianPx": 8.846358076025902,
+            "p95Px": 10.235087309159189
+          }
+        }
+      },
+      "sharedPriorHoldoutDeltaMedianPx": 0.0
+    },
+    {
+      "id": "v-guard-center",
+      "status": "unsupported",
+      "reasons": [
+        "fewer than two leave-one-view fits; camera/view uncertainty unresolved"
+      ],
+      "candidateAngleDeg": 82.6235953617078,
+      "measurementAngleDeg": null,
+      "initialDepthAngleDeg": 107.85550108754497,
+      "mesh": "guard-center.glb",
+      "meshAngleDeg": 82.62359536170864,
+      "panels": [
+        {
+          "panel": 1,
+          "observedExtentPoints": 10,
+          "widthNative": 0.554304646143525,
+          "hingeSpanNative": [
+            0.07925481763048757,
+            0.15748833337174437
+          ],
+          "photoColorFraction": 0.6964705882352941,
+          "normal": [
+            -0.3784726381751091,
+            0.45269468869303264,
+            -0.8073574059745109
+          ],
+          "polygonNative": [
+            [
+              -0.055095467944002614,
+              0.3811687999310852,
+              8.078497999214365
+            ],
+            [
+              0.06968002298300845,
+              0.7796593658369931,
+              8.24344409677125
+            ],
+            [
+              0.04951054122909526,
+              0.8768984818117497,
+              8.307422240679719
+            ],
+            [
+              0.02485635233444694,
+              0.8799032950177565,
+              8.320664453871526
+            ],
+            [
+              -0.1242865167269282,
+              0.3874632609880986,
+              8.11446272517687
+            ]
+          ]
+        },
+        {
+          "panel": 2,
+          "observedExtentPoints": 1733,
+          "widthNative": 0.7431326519596883,
+          "hingeSpanNative": [
+            -0.9015888262201999,
+            3.4016861849384523
+          ],
+          "photoColorFraction": 0.8587022437841115,
+          "normal": [
+            -0.3193972682938795,
+            -0.8225588088779693,
+            -0.4705129019949018
+          ],
+          "polygonNative": [
+            [
+              -2.9935101439969407,
+              0.6484828105309083,
+              9.605852771939293
+            ],
+            [
+              0.8123792935705967,
+              0.30225272335264963,
+              7.627594412319173
+            ],
+            [
+              0.8438086561862984,
+              0.3171135053786804,
+              7.580279408561335
+            ],
+            [
+              0.8402607583221827,
+              0.3370144780999767,
+              7.547896595111252
+            ],
+            [
+              0.7826087359259015,
+              0.41626215026087476,
+              7.448490240565554
+            ],
+            [
+              0.5225367287885739,
+              0.6472412520759339,
+              7.221232697208139
+            ],
+            [
+              0.41101341113407,
+              0.7100060179671844,
+              7.187211381335135
+            ],
+            [
+              -0.8101173071761931,
+              0.8392429320510298,
+              7.790214725862429
+            ],
+            [
+              -1.6965995374978602,
+              0.9258491704416302,
+              8.240577038065567
+            ],
+            [
+              -2.3990933493121855,
+              0.9374918746693225,
+              8.697095434595166
+            ],
+            [
+              -2.9118654102657637,
+              0.8188816076059282,
+              9.25253592180457
+            ],
+            [
+              -3.203187876010859,
+              0.7029829503128904,
+              9.652909770101676
+            ],
+            [
+              -3.2205958434308632,
+              0.6954822061549619,
+              9.677839714362523
+            ],
+            [
+              -3.2375641445060173,
+              0.6718013368782862,
+              9.730757575978737
+            ]
+          ]
+        }
+      ],
+      "originNative": [
+        0.014998837559144657,
+        0.37479216763443995,
+        8.042063770606822
+      ],
+      "hingeAxis": [
+        -0.8844169679368936,
+        0.0804573461562329,
+        0.4597099545091533
+      ],
+      "panelDirections": [
+        [
+          0.2730660890298988,
+          0.8880282283118113,
+          0.3699199599147105
+        ],
+        [
+          -0.3402822531836171,
+          0.562959697835247,
+          -0.7531828242741122
+        ]
+      ],
+      "planeNormals": [
+        [
+          -0.3784726381751091,
+          0.45269468869303264,
+          -0.8073574059745109
+        ],
+        [
+          -0.3193972682938795,
+          -0.8225588088779693,
+          -0.4705129019949018
+        ]
+      ],
+      "candidateGeometry": {
+        "groundClearanceNative": 0.6033434272916116,
+        "groundClearanceM": 0.7199822620606843,
+        "panelWidthsM": [
+          0.6614632644506657,
+          0.886795651642181
+        ]
+      },
+      "groundClearanceNative": null,
+      "groundClearanceM": null,
+      "panelWidthsM": null,
+      "sourceAssociations": [
+        {
+          "photo": 3,
+          "instance": 2,
+          "score": 0.8125,
+          "mutualProjection": 1.0
+        },
+        {
+          "photo": 1,
+          "instance": 4,
+          "score": 0.7305,
+          "mutualProjection": 0.26593406593406593
+        },
+        {
+          "photo": 2,
+          "instance": 3,
+          "score": 0.6484,
+          "mutualProjection": 0.2
+        },
+        {
+          "photo": 4,
+          "instance": 3,
+          "score": 0.8516,
+          "mutualProjection": 0.7450549450549451
+        }
+      ],
+      "support": [
+        {
+          "panel": 1,
+          "rgbTracks": 15,
+          "trainingTracks": 13,
+          "heldOutTracks": 2,
+          "sourcePhotos": [
+            3,
+            4
+          ],
+          "spatialSpreadRatio": 0.14143998441398312,
+          "heldOutResidual": {
+            "count": 4,
+            "medianPx": 0.5749509140774762,
+            "p95Px": 0.6510510680964268,
+            "perView": {
+              "3": {
+                "count": 2,
+                "medianPx": 0.5773767406175911,
+                "p95Px": 0.6452080492658975
+              },
+              "4": {
+                "count": 2,
+                "medianPx": 0.5749509140774762,
+                "p95Px": 0.6348027071628575
+              }
+            }
+          },
+          "medianParallaxDeg": 4.2799688980756265
+        },
+        {
+          "panel": 2,
+          "rgbTracks": 18,
+          "trainingTracks": 13,
+          "heldOutTracks": 5,
+          "sourcePhotos": [
+            3,
+            4
+          ],
+          "spatialSpreadRatio": 0.2974098051246775,
+          "heldOutResidual": {
+            "count": 10,
+            "medianPx": 1.19437403156658,
+            "p95Px": 2.057785162717024,
+            "perView": {
+              "3": {
+                "count": 5,
+                "medianPx": 1.1926485809422105,
+                "p95Px": 2.046721677602303
+              },
+              "4": {
+                "count": 5,
+                "medianPx": 1.1960994821909496,
+                "p95Px": 1.7704804130307716
+              }
+            }
+          },
+          "medianParallaxDeg": 4.278366253520424
+        }
+      ],
+      "trainingResidual": {
+        "count": 52,
+        "medianPx": 0.4765977432000958,
+        "p95Px": 1.3632704182484916,
+        "perView": {
+          "3": {
+            "count": 26,
+            "medianPx": 0.47745405833059484,
+            "p95Px": 1.3749116139574349
+          },
+          "4": {
+            "count": 26,
+            "medianPx": 0.47277224763715164,
+            "p95Px": 1.2803503140348083
+          }
+        }
+      },
+      "heldOutFeatureResidual": {
+        "count": 14,
+        "medianPx": 0.647098883866249,
+        "p95Px": 1.9978014920864007,
+        "perView": {
+          "3": {
+            "count": 7,
+            "medianPx": 0.6527448613379315,
+            "p95Px": 1.9737083055854905
+          },
+          "4": {
+            "count": 7,
+            "medianPx": 0.6414529063945665,
+            "p95Px": 1.7093055853047525
+          }
+        }
+      },
+      "leaveOneView": [
+        {
+          "photo": 1,
+          "status": "unsupported",
+          "angleDeg": null,
+          "excludedTrainingTracks": 0,
+          "trainingTracksAfterRetriangulation": 0,
+          "provenance": "Excluded view removed before triangulation, depth initialization, plane assignment and fitting; supplied remaining cameras fixed.",
+          "reason": "view has no observed training features; removing it is not an independent subset"
+        },
+        {
+          "photo": 2,
+          "status": "unsupported",
+          "angleDeg": null,
+          "excludedTrainingTracks": 0,
+          "trainingTracksAfterRetriangulation": 0,
+          "provenance": "Excluded view removed before triangulation, depth initialization, plane assignment and fitting; supplied remaining cameras fixed.",
+          "reason": "view has no observed training features; removing it is not an independent subset"
+        },
+        {
+          "photo": 3,
+          "status": "unsupported",
+          "angleDeg": null,
+          "excludedTrainingTracks": 26,
+          "trainingTracksAfterRetriangulation": 0,
+          "provenance": "Excluded view removed before triangulation, depth initialization, plane assignment and fitting; supplied remaining cameras fixed.",
+          "reason": "no training tracks triangulatable after excluding observed view"
+        },
+        {
+          "photo": 4,
+          "status": "unsupported",
+          "angleDeg": null,
+          "excludedTrainingTracks": 26,
+          "trainingTracksAfterRetriangulation": 0,
+          "provenance": "Excluded view removed before triangulation, depth initialization, plane assignment and fitting; supplied remaining cameras fixed.",
+          "reason": "no training tracks triangulatable after excluding observed view"
+        }
+      ],
+      "optimizer": {
+        "converged": true,
+        "functionEvaluations": 10,
+        "optimality": 1.8151086124879668e-05,
+        "cost": 28.632356869603697
+      },
+      "conditionalAngleRangeDeg": null,
+      "uncertaintyScope": "Independent-fit view-subset sensitivity conditional on fixed inferred cameras and feature associations; not an absolute confidence interval or uncertainty of the shared-angle fit.",
+      "geometryScope": "Two zero-thickness photo-colored sheets; boundary convex completion and hidden hinge extent are inferred; thickness unknown.",
+      "independentCandidateAngleDeg": 82.6235953617078
+    },
+    {
+      "id": "v-guard-right",
+      "status": "unsupported",
+      "reasons": [
+        "Two candidate planes are nearly parallel"
+      ],
+      "mesh": null,
+      "measurementAngleDeg": null,
+      "groundClearanceNative": null,
+      "groundClearanceM": null,
+      "panelWidthsM": null,
+      "candidateGeometry": {}
+    }
+  ],
+  "sourceImageResolution": "raw resized to max 1800",
+  "association": {
+    "anchorPhoto": 3,
+    "candidateInstancesPerPhoto": {
+      "1": 3,
+      "2": 2,
+      "3": 3,
+      "4": 3
+    },
+    "associationBasis": "mutual source-pointmap reprojection into independent SAM instance masks"
+  },
+  "anchor": {
+    "assumedHeightM": 0.2,
+    "assumedWidthM": 0.2,
+    "scope": "whole component: red cap, yellow body, gray lower housing; mounting bracket excluded",
+    "status": "provisional whole-component dimension hypothesis",
+    "nativeHeight": 0.16759952545629753,
+    "nativeWidth": 0.20976605899025014,
+    "mPerNative": 1.193320801210449,
+    "views": [
+      {
+        "photo": 2,
+        "boxRaw": [
+          2629,
+          2283,
+          2765,
+          2419
+        ],
+        "grayHousingEdgeContrast": 48.125,
+        "redPixels": 1491,
+        "yellowPixels": 7178,
+        "nativeHeight": 0.1557563983918922,
+        "nativeWidth": 0.1520118305002165
+      },
+      {
+        "photo": 3,
+        "boxRaw": [
+          2626,
+          2089,
+          2725,
+          2199
+        ],
+        "grayHousingEdgeContrast": 68.09375,
+        "redPixels": 990,
+        "yellowPixels": 4860,
+        "nativeHeight": 0.16759952545629753,
+        "nativeWidth": 0.24586310918753407
+      },
+      {
+        "photo": 4,
+        "boxRaw": [
+          2771,
+          2213,
+          2883,
+          2327
+        ],
+        "grayHousingEdgeContrast": 68.625,
+        "redPixels": 1055,
+        "yellowPixels": 5419,
+        "nativeHeight": 0.16897503859512497,
+        "nativeWidth": 0.20976605899025014
+      }
+    ],
+    "assumptions": [
+      "Reference identity and supplied external dimensions require physical confirmation.",
+      "Component is upright; curved cap and housing are represented by a shared vertical front-plane envelope.",
+      "Gray housing bottom is an automatic luminance edge; multiview depth and silhouette errors remain."
+    ],
+    "centerNative": [
+      1.769273281097412,
+      0.1966770589351654,
+      3.652231454849243
+    ],
+    "normal": [
+      0.5741429924964905,
+      0.08753462880849838,
+      -0.8140623569488525
+    ],
+    "offset": 1.9457976818084717,
+    "relativeWidthResidual": 0.2515910079050179,
+    "relativeHeightSpread": 0.07887039159117189,
+    "relativeWidthSpread": 0.44740926696668193,
+    "frontPlaneResidualP95Native": 0.08919787406921387
+  },
+  "floor": {
+    "normal": [
+      0.006940489634871483,
+      -0.9947531223297119,
+      -0.10206897556781769
+    ],
+    "offset": 2.4402709007263184,
+    "supportPoints": 9303,
+    "residualP95Native": 0.031029582023620588,
+    "sourcePhotos": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "method": "automatic lower-image unsegmented horizontal plane consensus",
+    "status": "observed fit; floor identity inferred from orientation and lower-image support",
+    "displayExtent": "fitted structural footprint plus six percent margin; plane fit unchanged"
+  },
+  "sharedPrior": {
+    "appliesTo": [
+      "left",
+      "right"
+    ],
+    "source": "user same-specification prior",
+    "optimizer": {
+      "converged": false,
+      "reason": "left/right independent fits unavailable"
+    },
+    "equalityIsAccuracyEvidence": false,
+    "holdoutAcceptance": "Each board must pass independent support gates and median may worsen by at most max(0.25 canonical px, 20 percent).",
+    "supportedByCurrentEvidence": false
+  },
+  "limitations": [
+    "No real angle or metric ground truth supplied.",
+    "Camera calibration, SAM boundaries, repeated-stripe correspondences and source depth are uncertain.",
+    "Button height determines inherited global scale; its width remains an independent hypothesis check. Reference scale is not re-estimated after camera changes.",
+    "Ground reference is inherited in original gauge and is not re-fitted.",
+    "Holdout tracks never enter optimization; assignments use initialization. Leave-view subsets re-triangulate and initialize after excluding that view, but supplied cameras and feature identities remain fixed.",
+    "Guard rigidity across photos is assumed, not established. Robot/cart motion is possible; residuals alone cannot distinguish object motion from camera, correspondence or depth errors."
+  ],
+  "wallSeconds": 2.449
+}
