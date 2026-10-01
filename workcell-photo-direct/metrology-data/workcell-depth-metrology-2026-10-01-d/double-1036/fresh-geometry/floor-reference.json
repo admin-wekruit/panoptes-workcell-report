@@ -1,0 +1,1 @@
+{"normal": [-0.023418346419930458, -0.9747766852378845, 0.22195053100585938], "offset": 0.8838889598846436, "supportPoints": 2499, "residualP95Native": 0.03446846082806587, "sourcePhotos": [1, 2, 3, 4], "method": "automatic lower-image unsegmented horizontal plane consensus", "status": "observed fit; floor identity inferred from orientation and lower-image support"}

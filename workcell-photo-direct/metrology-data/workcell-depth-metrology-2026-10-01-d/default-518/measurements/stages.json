@@ -1,0 +1,26 @@
+{
+  "freshGeometry": {
+    "status": "completed",
+    "seconds": 9.608820440999999
+  },
+  "sourceIdentity": {
+    "status": "completed",
+    "seconds": 1.427009624
+  },
+  "originalMetrology": {
+    "status": "completed",
+    "seconds": 10.002940338999998
+  },
+  "cameraTracks": {
+    "status": "completed",
+    "seconds": 17.023141887
+  },
+  "jointButton": {
+    "status": "completed",
+    "seconds": 85.312541622
+  },
+  "jointMetrology": {
+    "status": "completed",
+    "seconds": 11.231408582
+  }
+}

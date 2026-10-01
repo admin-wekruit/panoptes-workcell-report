@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "status": "unsupported",
+  "units": "native",
+  "worldFrame": "saved joint-fit MapAnything native; use its fitted cameras only",
+  "modelFile": "reference-candidate.glb",
+  "metricScaleMPerNative": null,
+  "candidateScaleForPreviewOnly": 0.6545407333648128,
+  "previewOnly": true,
+  "measurementStatus": "unsupported",
+  "reason": "Joint source/shape fit, identifiability, or independent whole-button holdout failed; see diagnostics",
+  "knownDimensions": {
+    "wholeComponentHeightM": 0.1,
+    "mainBodyDiameterM": 0.085,
+    "redActuatorDiameterM": 0.04
+  },
+  "jointCameraSha256": "81703631397299d1875ce2cbb9b6497120c0b82edff526d874fdb03936a010fb",
+  "sourceHash": "343990b6ade0730c28b9760df06098ac3cef4ca529d8e47546f1f8d622c76be8",
+  "shapeAssumptions": [
+    "Red actuator is modeled as a finite cylinder; the observed rounded cap is not an exact CAD shape.",
+    "Yellow body is a fitted frustum with the supplied maximum diameter.",
+    "Gray housing is an elliptic cylinder inferred from its hypothesized bottom rim and fitted height; unseen side shape is not measured.",
+    "The gray bottom may include a mounting lip. Endpoint identity remains unverified even when projection checks pass."
+  ],
+  "displayScope": "Standalone candidate only; do not overlay geometry reconstructed with different cameras.",
+  "parts": [
+    {
+      "id": "gray-housing",
+      "geometryStatus": "shape_hypothesis"
+    },
+    {
+      "id": "yellow-body",
+      "geometryStatus": "shape_hypothesis"
+    },
+    {
+      "id": "red-actuator",
+      "geometryStatus": "shape_hypothesis"
+    }
+  ],
+  "baseNative": [
+    1.9672428508884896,
+    0.2976373891722224,
+    3.6908164256187375
+  ],
+  "axisNative": [
+    0.0240597908466304,
+    -0.9997103954056034,
+    -0.0005017792230870025
+  ],
+  "boundsNative": [
+    [
+      1.903293468496302,
+      0.1441674789589259,
+      3.5560259465092474
+    ],
+    [
+      2.0330495166202236,
+      0.2987689741038769,
+      3.825587537432038
+    ]
+  ],
+  "modelSha256": "a3b3ef66f9cab6938f5b7e194dd431f03d9ab4b5ac929cda6a1038ee89dcd2d3",
+  "modelSizeBytes": 11504,
+  "knownDimensionScope": "Supplied constraints enforced in candidate, not new measurements.",
+  "referenceGeometryIdentifiable": true
+}

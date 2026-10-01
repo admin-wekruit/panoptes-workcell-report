@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "fenceIdentity": {
+    "planeIndex": 0,
+    "sourcePhotos": [
+      1,
+      3,
+      4
+    ],
+    "matchedRawEdges": 176,
+    "method": "same frozen original-image line segments, independent of depth/world frame"
+  },
+  "seconds": 134.615192164,
+  "reference": {
+    "objectId": "emergency-button",
+    "features": {
+      "wholeComponentHeightM": 0.1,
+      "mainBodyDiameterM": 0.085,
+      "redActuatorDiameterM": 0.04
+    },
+    "scope": "whole component: red cap, yellow body, gray lower housing; mounting bracket excluded",
+    "scopeStatus": "confirmed"
+  },
+  "reused": "original-image segmentation and target IDs only; no old native geometry or mesh",
+  "freshFrames": {
+    "frame_0001.json.gz": "a3352fb9c29393552176cf0e011299a582af331ee701af01c0b99b201cf06476",
+    "frame_0002.json.gz": "d869e569a42918843266825ff0965d036e97aac041867e2a9d51fe223b726553",
+    "frame_0003.json.gz": "63847096715842c56e5118a1adffd2edd21b62afb39d4643fc2e04022b092e01",
+    "frame_0004.json.gz": "6b8108a1b826f89288f747e609245819e63379b16d64df2d69dd58ccb276bcb6"
+  }
+}

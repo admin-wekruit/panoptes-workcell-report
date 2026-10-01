@@ -1,0 +1,7 @@
+{
+  "freshGeometry": {
+    "status": "failed",
+    "seconds": 11.273913236999999,
+    "error": "ValueError: No image-supported paired fence edges; cannot fabricate a fence model"
+  }
+}

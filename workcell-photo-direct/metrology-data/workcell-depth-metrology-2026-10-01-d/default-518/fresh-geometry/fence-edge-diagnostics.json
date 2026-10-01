@@ -1,0 +1,88 @@
+{
+  "fenceInputPoints": 47146,
+  "planeCount": 2,
+  "planeSupportPoints": [
+    17750,
+    9228
+  ],
+  "sourceStencil": "five raw-pixel normal offsets at (-2,-1,0,1,2) * max(raw HW)/518; exact saved affine",
+  "photos": [
+    {
+      "photo": 1,
+      "detectedSegments": 5606,
+      "rawNeighborhoodHalfWidthPx": 15.567567567567568,
+      "proposalsBeforeCap": 244,
+      "proposals": 244,
+      "pairedBeams": 33,
+      "unpairedProposals": 178,
+      "rejected": {
+        "short": 4188,
+        "outsideMask": 1017,
+        "outsideRaster": 0,
+        "depthSupport": 13,
+        "neighborhoodSupport": 0,
+        "planeSupport": 136,
+        "intersection": 0,
+        "orientationOrLength": 8
+      }
+    },
+    {
+      "photo": 2,
+      "detectedSegments": 6313,
+      "rawNeighborhoodHalfWidthPx": 15.567567567567568,
+      "proposalsBeforeCap": 250,
+      "proposals": 250,
+      "pairedBeams": 38,
+      "unpairedProposals": 174,
+      "rejected": {
+        "short": 4752,
+        "outsideMask": 1059,
+        "outsideRaster": 0,
+        "depthSupport": 9,
+        "neighborhoodSupport": 0,
+        "planeSupport": 241,
+        "intersection": 0,
+        "orientationOrLength": 2
+      }
+    },
+    {
+      "photo": 3,
+      "detectedSegments": 5628,
+      "rawNeighborhoodHalfWidthPx": 15.567567567567568,
+      "proposalsBeforeCap": 284,
+      "proposals": 284,
+      "pairedBeams": 33,
+      "unpairedProposals": 218,
+      "rejected": {
+        "short": 4332,
+        "outsideMask": 867,
+        "outsideRaster": 0,
+        "depthSupport": 10,
+        "neighborhoodSupport": 0,
+        "planeSupport": 132,
+        "intersection": 0,
+        "orientationOrLength": 3
+      }
+    },
+    {
+      "photo": 4,
+      "detectedSegments": 6267,
+      "rawNeighborhoodHalfWidthPx": 15.567567567567568,
+      "proposalsBeforeCap": 377,
+      "proposals": 377,
+      "pairedBeams": 27,
+      "unpairedProposals": 323,
+      "rejected": {
+        "short": 4739,
+        "outsideMask": 1023,
+        "outsideRaster": 0,
+        "depthSupport": 8,
+        "neighborhoodSupport": 0,
+        "planeSupport": 107,
+        "intersection": 0,
+        "orientationOrLength": 13
+      }
+    }
+  ],
+  "pairedBeams": 131
+}

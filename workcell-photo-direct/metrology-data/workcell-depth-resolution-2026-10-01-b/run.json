@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "runId": "depth-1ae110ae66114a7e960d597559a9c314",
+  "modelId": "facebook/map-anything",
+  "codeRevision": "3d10cf7a3016fc0f9bb13a071ee66c47b10be0d9",
+  "artifactVolume": "panoptes-fb-layers",
+  "cloudRunPath": "/v/layers/workcell-depth-resolution/depth-1ae110ae66114a7e960d597559a9c314",
+  "volumeRunPath": "workcell-depth-resolution/depth-1ae110ae66114a7e960d597559a9c314",
+  "status": "failed",
+  "inputSha256": [
+    "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac",
+    "6cd81ae4ae783c37d0a1129e39acb0d7064c46d9b51524130406642f8c7a3bea",
+    "0a8d4b8884867bf9f1836193db2fae0350a99e9e6b242eb9e01e20fda7c59438",
+    "e73931b6cdf68775ddafbc949c392c0ea2908f4dec671a4935e4c09361ae66ec"
+  ],
+  "control": "same originals, cached model revision, seed and inference flags; custom gradient uses fixed raw-pixel footprint; upstream mask_edges remains raster-dependent, so this tests the resolution pipeline rather than pure neural output",
+  "geometryStatus": "new independent native worlds; no transferred old geometry or metric claims",
+  "branches": {
+    "default-518": {
+      "gpu": 0,
+      "requestedSizeWH": null,
+      "cloudFramesPath": "/v/layers/workcell-depth-resolution/depth-1ae110ae66114a7e960d597559a9c314/default-518",
+      "volumeFramesPath": "workcell-depth-resolution/depth-1ae110ae66114a7e960d597559a9c314/default-518",
+      "frameGlob": "frame_*.json.gz",
+      "status": "failed",
+      "returncode": 1,
+      "wallSeconds": 9.657053104,
+      "logTail": "e\n  File \"<frozen importlib._bootstrap_external>\", line 1073, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1130, in get_data\nFileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/torch/hub/facebookresearch_dinov2_main/hubconf.py'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/repo/scripts/workcell_map_worker.py\", line 97, in <module>\n    run(args.images, args.out, fixed_size=args.fixed_size, model_revision=args.model_revision)\n  File \"/repo/scripts/workcell_map_worker.py\", line 27, in run\n    model = MapAnything.from_pretrained(MODEL_ID, **options).to(\"cuda\")\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py\", line 89, in _inner_fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/huggingface_hub/hub_mixin.py\", line 550, in from_pretrained\n    instance = cls._from_pretrained(\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/mapanything/models/mapanything/model.py\", line 104, in _from_pretrained\n    return super()._from_pretrained(**kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/huggingface_hub/hub_mixin.py\", line 766, in _from_pretrained\n    model = cls(**model_kwargs)\n            ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/mapanything/models/mapanything/model.py\", line 181, in __init__\n    self.encoder = encoder_factory(**encoder_config_copy)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/uniception/models/encoders/__init__.py\", line 117, in encoder_factory\n    return encoder_class(**kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/uniception/models/encoders/dinov2.py\", line 98, in __init__\n    self.model = torch.hub.load(\n                 ^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/torch/hub.py\", line 570, in load\n    model = _load_local(repo_or_dir, model, *args, **kwargs)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/torch/hub.py\", line 596, in _load_local\n    hub_module = _import_module(MODULE_HUBCONF, hubconf_path)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/torch/hub.py\", line 108, in _import_module\n    spec.loader.exec_module(module)\n  File \"<frozen importlib._bootstrap_external>\", line 936, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1073, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1130, in get_data\nFileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/torch/hub/facebookresearch_dinov2_main/hubconf.py'\n"
+    },
+    "double-1036": {
+      "gpu": 1,
+      "requestedSizeWH": [
+        784,
+        1036
+      ],
+      "cloudFramesPath": "/v/layers/workcell-depth-resolution/depth-1ae110ae66114a7e960d597559a9c314/double-1036",
+      "volumeFramesPath": "workcell-depth-resolution/depth-1ae110ae66114a7e960d597559a9c314/double-1036",
+      "frameGlob": "frame_*.json.gz",
+      "status": "failed",
+      "returncode": 1,
+      "wallSeconds": 9.756047236999999,
+      "logTail": "ternal>\", line 940, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n  File \"/root/.cache/torch/hub/facebookresearch_dinov2_main/hubconf.py\", line 9, in <module>\nModuleNotFoundError: No module named 'dinov2.hub.cell_dino'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/repo/scripts/workcell_map_worker.py\", line 97, in <module>\n    run(args.images, args.out, fixed_size=args.fixed_size, model_revision=args.model_revision)\n  File \"/repo/scripts/workcell_map_worker.py\", line 27, in run\n    model = MapAnything.from_pretrained(MODEL_ID, **options).to(\"cuda\")\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py\", line 89, in _inner_fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/huggingface_hub/hub_mixin.py\", line 550, in from_pretrained\n    instance = cls._from_pretrained(\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/mapanything/models/mapanything/model.py\", line 104, in _from_pretrained\n    return super()._from_pretrained(**kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/huggingface_hub/hub_mixin.py\", line 766, in _from_pretrained\n    model = cls(**model_kwargs)\n            ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/mapanything/models/mapanything/model.py\", line 181, in __init__\n    self.encoder = encoder_factory(**encoder_config_copy)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/uniception/models/encoders/__init__.py\", line 117, in encoder_factory\n    return encoder_class(**kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/uniception/models/encoders/dinov2.py\", line 98, in __init__\n    self.model = torch.hub.load(\n                 ^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/torch/hub.py\", line 570, in load\n    model = _load_local(repo_or_dir, model, *args, **kwargs)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/torch/hub.py\", line 596, in _load_local\n    hub_module = _import_module(MODULE_HUBCONF, hubconf_path)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/mapanything/lib/python3.11/site-packages/torch/hub.py\", line 108, in _import_module\n    spec.loader.exec_module(module)\n  File \"<frozen importlib._bootstrap_external>\", line 936, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1073, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1130, in get_data\nFileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/torch/hub/facebookresearch_dinov2_main/hubconf.py'\n"
+    }
+  },
+  "implementationSha256": {
+    "scripts/workcell_map_worker.py": "bf2fd1738c7b5bc174e98e4671b765e37dbf0e2590e23d401abf898f01583ef6",
+    "modal_apps/mapanything_app.py": "0751939d55e07f7226f4ac1c8a746ceb4f2950b6949448671bb8383fae72588e",
+    "modal_apps/workcell_depth_resolution.py": "d80fa9b6f0cffceb9d474221cd11f4493fdfc7d4a3c90eb85e1a7dd67f43c7b9"
+  },
+  "modelRevision": "a1d87e9086706fb9974f3be5a3e3a0ca5401c5aa",
+  "containerWallSeconds": 12.083029941,
+  "files": [
+    {
+      "path": "default-518/worker.log",
+      "bytes": 4074,
+      "sha256": "9d5b63f5bdfcc6e05019491c52ea2d2ac4d427b7cfc0e0ea4fcdb6a28d392679"
+    },
+    {
+      "path": "double-1036/worker.log",
+      "bytes": 4041,
+      "sha256": "ec96e784f80a346d729870951d0073a79530d6a45beb61ec6de0a6981dd15de0"
+    },
+    {
+      "path": "source-1.jpg",
+      "bytes": 4994078,
+      "sha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac"
+    },
+    {
+      "path": "source-2.jpg",
+      "bytes": 5065705,
+      "sha256": "6cd81ae4ae783c37d0a1129e39acb0d7064c46d9b51524130406642f8c7a3bea"
+    },
+    {
+      "path": "source-3.jpg",
+      "bytes": 4951187,
+      "sha256": "0a8d4b8884867bf9f1836193db2fae0350a99e9e6b242eb9e01e20fda7c59438"
+    },
+    {
+      "path": "source-4.jpg",
+      "bytes": 4542054,
+      "sha256": "e73931b6cdf68775ddafbc949c392c0ea2908f4dec671a4935e4c09361ae66ec"
+    }
+  ]
+}

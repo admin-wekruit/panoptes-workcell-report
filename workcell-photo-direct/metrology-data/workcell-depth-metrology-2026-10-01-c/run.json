@@ -1,0 +1,25 @@
+{
+  "records": {
+    "double-1036": {
+      "returncode": 1,
+      "seconds": 14.584297208999999
+    },
+    "default-518": {
+      "returncode": 0,
+      "seconds": 105.16432593399999
+    },
+    "cached_original": {
+      "returncode": 0,
+      "seconds": 17.705908284999992
+    },
+    "cached_joint_button": {
+      "returncode": 0,
+      "seconds": 58.125601811999985
+    },
+    "cached_joint_metrology": {
+      "returncode": 0,
+      "seconds": 35.67604687900001
+    }
+  },
+  "containerWallSeconds": 227.863900343
+}
