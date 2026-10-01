@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "coordinateSystem": "unchanged MapAnything native world; all meshes and cameras scale together",
   "anchor": {
-    "assumedHeightM": 0.2,
-    "assumedWidthM": 0.2,
+    "assumedHeightM": 0.1,
+    "assumedWidthM": 0.1251591007905018,
     "scope": "whole component: red cap, yellow body, gray lower housing; mounting bracket excluded",
-    "status": "provisional whole-component dimension hypothesis",
+    "status": "user measured height; photo geometry remains conditional",
     "nativeHeight": 0.16759952545629753,
     "nativeWidth": 0.20976605899025014,
-    "mPerNative": 1.193320801210449,
+    "mPerNative": 0.5966604006052245,
     "views": [
       {
         "photo": 2,
@@ -54,9 +54,9 @@
       }
     ],
     "assumptions": [
-      "Reference identity and supplied external dimensions require physical confirmation.",
-      "Component is upright; curved cap and housing are represented by a shared vertical front-plane envelope.",
-      "Gray housing bottom is an automatic luminance edge; multiview depth and silhouette errors remain."
+      "Supplied whole height is mapped to the saved red/yellow/gray envelope; scope status is recorded in calibration.reference.",
+      "Source camera, depth, floor, center and orientation remain photo-derived and unrefitted.",
+      "Observed whole-envelope width is distinct from main-body diameter; inspect the retained projection residuals."
     ],
     "centerNative": [
       1.769273281097412,
@@ -69,7 +69,7 @@
       -0.8140623569488525
     ],
     "offset": 1.9457976818084717,
-    "relativeWidthResidual": 0.2515910079050179,
+    "relativeWidthResidual": null,
     "relativeHeightSpread": 0.07887039159117189,
     "relativeWidthSpread": 0.44740926696668193,
     "frontPlaneResidualP95Native": 0.08919787406921387
@@ -10248,5 +10248,103 @@
     "opencv": "4.11.0",
     "numpy": "1.26.4"
   },
-  "wallSeconds": 14.356
+  "wallSeconds": 14.356,
+  "calibration": {
+    "schemaVersion": 1,
+    "primaryAxis": "wholeComponentHeight",
+    "reference": {
+      "objectId": "emergency-button",
+      "scope": "whole component: red cap, yellow body, gray lower housing; mounting bracket excluded",
+      "scopeStatus": "pending_confirmation",
+      "provenance": {
+        "kind": "user_supplied_standard_dimensions",
+        "date": "2026-10-01",
+        "statement": "Red actuator diameter 4 cm; main circular body's maximum diameter 8.5 cm; component height 10 cm.",
+        "scopeNote": "Whether the supplied 10 cm includes the gray lower housing is awaiting confirmation."
+      },
+      "features": {
+        "wholeComponentHeightM": 0.1,
+        "mainBodyDiameterM": 0.085,
+        "redActuatorDiameterM": 0.04
+      }
+    },
+    "nativeToMeters": 0.5966604006052245,
+    "groundTruthUsedForCalibration": false,
+    "observedEnvelope": {
+      "heightNative": 0.16759952545629753,
+      "widthNative": 0.20976605899025014,
+      "heightM": 0.1,
+      "widthM": 0.1251591007905018
+    },
+    "diagnostics": {
+      "envelopeMinusMainDiameterM": 0.04015910079050179,
+      "relativeEnvelopeMinusMainDiameter": 0.4724600093000211,
+      "widthComparisonIsSameFeature": false,
+      "note": "Observed whole-envelope width and known main-body diameter are different features; their difference is diagnostic, not diameter measurement error.",
+      "projectionByPhoto": [
+        {
+          "photo": 2,
+          "coordinateSpace": "canonical image pixels",
+          "observedBBox": [
+            340.36111111111114,
+            293.1316964285715,
+            357.99074074074076,
+            310.73883928571433
+          ],
+          "modelProjectedBBox": [
+            344.02593081373715,
+            292.27213538700227,
+            361.78220091234897,
+            312.8202668350477
+          ],
+          "bboxIoU": 0.572633656364225,
+          "centerOffsetPx": 3.777865380267864,
+          "note": "Projected rendering envelope versus observed whole-component box; not a part-segmentation accuracy score."
+        },
+        {
+          "photo": 3,
+          "coordinateSpace": "canonical image pixels",
+          "observedBBox": [
+            339.97222222222223,
+            268.01562500000006,
+            352.80555555555554,
+            282.2566964285715
+          ],
+          "modelProjectedBBox": [
+            339.29156918726704,
+            265.6551296161931,
+            354.35105084073865,
+            282.9555614108329
+          ],
+          "bboxIoU": 0.7014798058944154,
+          "centerOffsetPx": 0.9366119406029261,
+          "note": "Projected rendering envelope versus observed whole-component box; not a part-segmentation accuracy score."
+        },
+        {
+          "photo": 4,
+          "coordinateSpace": "canonical image pixels",
+          "observedBBox": [
+            358.76851851851853,
+            284.0691964285715,
+            373.28703703703707,
+            298.82812500000006
+          ],
+          "modelProjectedBBox": [
+            354.861636148562,
+            280.8327831053014,
+            369.800293770071,
+            298.2881895827814
+          ],
+          "bboxIoU": 0.4929977605272045,
+          "centerOffsetPx": 4.1510995491782285,
+          "note": "Projected rendering envelope versus observed whole-component box; not a part-segmentation accuracy score."
+        }
+      ]
+    },
+    "renderingAssumptions": [
+      "Part heights use gray/yellow/red fractions 0.32/0.43/0.25 of the supplied whole height.",
+      "Gray-base width and depth use 0.8 and 0.45 of the main-body diameter.",
+      "Reference center and orientation are the saved photo-derived values; no pixel refit."
+    ]
+  }
 }
