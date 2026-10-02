@@ -1,0 +1,34 @@
+{
+  "status": "unsupported",
+  "reason": "No single incremental model registered all four source images with sufficient points",
+  "models": [
+    {
+      "model": 0,
+      "registeredImages": [
+        "photo-1.png",
+        "photo-2.png"
+      ],
+      "points": 76,
+      "meanReprojectionErrorControlPx": 0.4628089131864764
+    },
+    {
+      "model": 1,
+      "registeredImages": [
+        "photo-3.png",
+        "photo-4.png"
+      ],
+      "points": 771,
+      "meanReprojectionErrorControlPx": 0.278117104804249
+    }
+  ],
+  "initialPoseSource": "None; incremental mapping from matched RGB images",
+  "initialIntrinsicsSource": "Same DB SIMPLE_PINHOLE focal/principal point initialization as the neural-pose control",
+  "camerasFile": null,
+  "tracksFile": null,
+  "version": "4.2.0",
+  "seconds": 3.7043196560000027,
+  "maxSeconds": 180,
+  "databaseSha256": "4d0a426af9b9579976e7f4b6cc2cdb92349d28bfbc7e3e9e82e5da2887a74c70",
+  "sourceMetadataSha256": "2469b1488c217b292201385324981975e00c74ccffcc0cc7990d51ac5b39514d",
+  "officialApi": "https://colmap.github.io/pycolmap/pycolmap.html#pycolmap.incremental_mapping"
+}

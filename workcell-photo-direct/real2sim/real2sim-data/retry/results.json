@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "records": {
+    "textures": {
+      "status": "completed",
+      "seconds": 11.975055783999998,
+      "resultStatus": null
+    },
+    "post-faces": {
+      "status": "completed",
+      "seconds": 41.252417659,
+      "resultStatus": null
+    }
+  },
+  "wallSeconds": 41.256014858,
+  "scope": "Cached upstream geometry; includes controlled fitting and texture experiments, not a fresh full photo-to-model runtime.",
+  "groundTruthUsedForFitting": false
+}

@@ -1,0 +1,11 @@
+{
+  "numThreads": 8,
+  "minModelSize": 4,
+  "refineFocalLength": true,
+  "refinePrincipalPoint": false,
+  "refineExtraParams": false,
+  "ignoreTwoViewTracks": false,
+  "inputReconstruction": null,
+  "otherOptions": "pycolmap defaults",
+  "version": "4.2.0"
+}

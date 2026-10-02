@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "route": "existing-guard-photo-texture",
+  "geometryUnchanged": true,
+  "newModelCalls": 0,
+  "geometryOptimizationCalls": 0,
+  "objects": [
+    {
+      "id": "v-guard-left",
+      "mesh": "guard-left.glb",
+      "geometryUnchanged": true,
+      "sourceMeshSha256": "5cf2e23c6624db0afc07310f7f47d822b6abae8d7c63768eea083c22a812119c",
+      "texturedMeshSha256": "738b5e84218ea5f29160496b243f50b114862bee5dc373badab9c79d38752154",
+      "panels": [
+        {
+          "node": "v-guard-left-panel-2",
+          "texture": "guard-left-panel-1-texture.png",
+          "geometryUnchanged": true,
+          "textureSize": [
+            513,
+            293
+          ],
+          "photoTexelFraction": 0.5918331250147395,
+          "sourcePhotos": [
+            1
+          ],
+          "views": [
+            {
+              "photo": 1,
+              "facing": 0.48369351584003234,
+              "side": -2.6968171659052858,
+              "projectedAreaRawPx": 38027.31931527874,
+              "sharpness": 1371.363037109375,
+              "score": 25772.294906464387,
+              "selectedTexels": 50191
+            },
+            {
+              "photo": 3,
+              "facing": 0.4997761686609077,
+              "side": -2.9495753802090543,
+              "projectedAreaRawPx": 35729.57103748442,
+              "sharpness": 851.105712890625,
+              "score": 15535.131203024073,
+              "selectedTexels": 0
+            },
+            {
+              "photo": 4,
+              "facing": 0.46787587206821196,
+              "side": -3.0638786233308557,
+              "projectedAreaRawPx": 26752.44034922672,
+              "sharpness": 705.8719482421875,
+              "score": 9033.434588904205,
+              "selectedTexels": 0
+            },
+            {
+              "photo": 2,
+              "facing": 0.35501224089376354,
+              "side": -2.40235673561539,
+              "projectedAreaRawPx": 16871.957606340104,
+              "sharpness": 1105.7926025390625,
+              "score": 6768.511233871556,
+              "selectedTexels": 0
+            }
+          ],
+          "sourceSelection": "one highest-ranked photo with nonzero visible support per planar sheet; no cross-view gap filling",
+          "unsupportedTexels": "original linear vertex colors interpolated and encoded to sRGB on unchanged triangles",
+          "visibility": "eroded instance masks and supplied occluder polygons; conditional on segmentation and camera accuracy",
+          "reverseSide": "same double-sided display material, not independently observed reverse-face appearance"
+        },
+        {
+          "node": "v-guard-left-panel-1",
+          "texture": "guard-left-panel-2-texture.png",
+          "geometryUnchanged": true,
+          "textureSize": [
+            509,
+            513
+          ],
+          "photoTexelFraction": 0.5581997815762071,
+          "sourcePhotos": [
+            2
+          ],
+          "views": [
+            {
+              "photo": 2,
+              "facing": 0.6199698485127504,
+              "side": 4.37985101208253,
+              "projectedAreaRawPx": 89326.72897407708,
+              "sharpness": 1127.2857666015625,
+              "score": 59335.734075277214,
+              "selectedTexels": 131868
+            },
+            {
+              "photo": 1,
+              "facing": 0.3756921078721962,
+              "side": 2.2387387446436584,
+              "projectedAreaRawPx": 85798.11447111414,
+              "sharpness": 1082.5596923828125,
+              "score": 33167.12804756282,
+              "selectedTexels": 0
+            },
+            {
+              "photo": 3,
+              "facing": 0.3685612258710882,
+              "side": 2.318692642047772,
+              "projectedAreaRawPx": 76251.91188200818,
+              "sharpness": 1021.5684204101562,
+              "score": 27289.65014446932,
+              "selectedTexels": 0
+            },
+            {
+              "photo": 4,
+              "facing": 0.4303975505326451,
+              "side": 2.978129809112554,
+              "projectedAreaRawPx": 72708.77587737188,
+              "sharpness": 622.0214233398438,
+              "score": 18514.194211188333,
+              "selectedTexels": 0
+            }
+          ],
+          "sourceSelection": "one highest-ranked photo with nonzero visible support per planar sheet; no cross-view gap filling",
+          "unsupportedTexels": "original linear vertex colors interpolated and encoded to sRGB on unchanged triangles",
+          "visibility": "eroded instance masks and supplied occluder polygons; conditional on segmentation and camera accuracy",
+          "reverseSide": "same double-sided display material, not independently observed reverse-face appearance"
+        }
+      ]
+    },
+    {
+      "id": "v-guard-right",
+      "mesh": "guard-right.glb",
+      "geometryUnchanged": true,
+      "sourceMeshSha256": "042ba8c6e3108f747f8b0eb0fd6ab14a75a9ddec1c4052e667d31ea84959f147",
+      "texturedMeshSha256": "19dbab5f6cbeb3feca0a7e7fb4ba93388add2559624f9ffb0ac397a00efd3996",
+      "panels": [
+        {
+          "node": "v-guard-right-panel-2",
+          "texture": "guard-right-panel-1-texture.png",
+          "geometryUnchanged": true,
+          "textureSize": [
+            512,
+            135
+          ],
+          "photoTexelFraction": 0.6932862080777256,
+          "sourcePhotos": [
+            3
+          ],
+          "views": [
+            {
+              "photo": 3,
+              "facing": 0.2089370878734364,
+              "side": 1.3339036472901848,
+              "projectedAreaRawPx": 19516.387272181753,
+              "sharpness": 964.7991333007812,
+              "score": 4788.976510919191,
+              "selectedTexels": 44527
+            },
+            {
+              "photo": 4,
+              "facing": 0.23500339136351173,
+              "side": 1.5837035303832996,
+              "projectedAreaRawPx": 22288.14326444206,
+              "sharpness": 651.4850463867188,
+              "score": 4155.846653784038,
+              "selectedTexels": 0
+            },
+            {
+              "photo": 1,
+              "facing": 0.19472402119935842,
+              "side": 1.1765870095617104,
+              "projectedAreaRawPx": 21008.88493058406,
+              "sharpness": 821.3544921875,
+              "score": 4090.9345545979318,
+              "selectedTexels": 0
+            }
+          ],
+          "sourceSelection": "one highest-ranked photo with nonzero visible support per planar sheet; no cross-view gap filling",
+          "unsupportedTexels": "original linear vertex colors interpolated and encoded to sRGB on unchanged triangles",
+          "visibility": "eroded instance masks and supplied occluder polygons; conditional on segmentation and camera accuracy",
+          "reverseSide": "same double-sided display material, not independently observed reverse-face appearance"
+        },
+        {
+          "node": "v-guard-right-panel-1",
+          "texture": "guard-right-panel-2-texture.png",
+          "geometryUnchanged": true,
+          "textureSize": [
+            512,
+            305
+          ],
+          "photoTexelFraction": 0.5039801732149832,
+          "sourcePhotos": [
+            1
+          ],
+          "views": [
+            {
+              "photo": 1,
+              "facing": 0.4166657356718208,
+              "side": -2.545544056960091,
+              "projectedAreaRawPx": 102446.37957571002,
+              "sharpness": 936.2450561523438,
+              "score": 54222.179020764626,
+              "selectedTexels": 74834
+            },
+            {
+              "photo": 3,
+              "facing": 0.41957199000984824,
+              "side": -2.7085105722947067,
+              "projectedAreaRawPx": 89189.88736255717,
+              "sharpness": 736.8372802734375,
+              "score": 37421.57852946233,
+              "selectedTexels": 0
+            },
+            {
+              "photo": 4,
+              "facing": 0.3288098927637228,
+              "side": -2.242399915820101,
+              "projectedAreaRawPx": 71051.98985277185,
+              "sharpness": 627.2959594726562,
+              "score": 19894.122719817155,
+              "selectedTexels": 0
+            }
+          ],
+          "sourceSelection": "one highest-ranked photo with nonzero visible support per planar sheet; no cross-view gap filling",
+          "unsupportedTexels": "original linear vertex colors interpolated and encoded to sRGB on unchanged triangles",
+          "visibility": "eroded instance masks and supplied occluder polygons; conditional on segmentation and camera accuracy",
+          "reverseSide": "same double-sided display material, not independently observed reverse-face appearance"
+        }
+      ]
+    }
+  ],
+  "association": {
+    "anchorPhoto": 3,
+    "candidateInstancesPerPhoto": {
+      "1": 3,
+      "2": 2,
+      "3": 3,
+      "4": 3
+    },
+    "associationBasis": "mutual source-pointmap reprojection into independent SAM instance masks"
+  },
+  "scope": "left/right planar sheets only; center model not modified",
+  "sourcePhotos": [
+    {
+      "photo": 1,
+      "name": "source-1.jpg",
+      "sha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac"
+    },
+    {
+      "photo": 2,
+      "name": "source-2.jpg",
+      "sha256": "6cd81ae4ae783c37d0a1129e39acb0d7064c46d9b51524130406642f8c7a3bea"
+    },
+    {
+      "photo": 3,
+      "name": "source-3.jpg",
+      "sha256": "0a8d4b8884867bf9f1836193db2fae0350a99e9e6b242eb9e01e20fda7c59438"
+    },
+    {
+      "photo": 4,
+      "name": "source-4.jpg",
+      "sha256": "e73931b6cdf68775ddafbc949c392c0ea2908f4dec671a4935e4c09361ae66ec"
+    }
+  ],
+  "limitations": [
+    "Appearance experiment only; unchanged geometry retains its existing errors.",
+    "Visibility is conditional on instance masks, supplied planar occluders and existing cameras.",
+    "Unsupported texels preserve the original vertex-color appearance; reverse sides are not reconstructed."
+  ],
+  "wallSeconds": 11.966896965
+}

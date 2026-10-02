@@ -226900,5 +226900,11 @@
         "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
       }
     ]
+  },
+  "experiment": {
+    "title": "Real2sim：细节与相机对照实验",
+    "summary": "可旋转的护板原图纹理前后对照，以及光幕原图边缘诊断。相机与按钮标定未通过，新纹理仍有接缝；本轮没有证明测量更准，主场景几何保持原结果。",
+    "reportURL": "real2sim/real2sim.html",
+    "timingLabel": "此前完整计算"
   }
 }

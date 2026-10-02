@@ -1,0 +1,10 @@
+{
+  "events": [
+    {
+      "type": "container_preemption",
+      "observedAt": "2026-10-02T03:59:33.304386+00:00",
+      "automaticRestart": true,
+      "billing": "Exact failed-attempt GPU duration unavailable; full call window retained as a separate estimate, not invoice."
+    }
+  ]
+}

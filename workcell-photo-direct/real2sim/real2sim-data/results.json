@@ -1,0 +1,38 @@
+{
+  "status": "partial",
+  "records": {
+    "textures": {
+      "status": "completed",
+      "seconds": 14.273102322,
+      "resultStatus": null
+    },
+    "camera-control": {
+      "status": "completed",
+      "seconds": 22.967190926999997,
+      "resultStatus": "completed"
+    },
+    "independent-poses": {
+      "status": "completed",
+      "seconds": 3.733460386000001,
+      "resultStatus": "unsupported"
+    },
+    "post-faces": {
+      "status": "failed",
+      "seconds": 90.593896778,
+      "error": "TypeError: Object of type float32 is not JSON serializable"
+    },
+    "old-selection": {
+      "status": "completed",
+      "seconds": 244.03821916699997,
+      "resultStatus": "unsupported"
+    },
+    "balanced-selection": {
+      "status": "completed",
+      "seconds": 244.79241001900002,
+      "resultStatus": "unsupported"
+    }
+  },
+  "wallSeconds": 267.767914602,
+  "scope": "Cached upstream geometry; includes controlled fitting and texture experiments, not a fresh full photo-to-model runtime.",
+  "groundTruthUsedForFitting": false
+}
