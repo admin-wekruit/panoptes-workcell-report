@@ -227010,9 +227010,9 @@
     ]
   },
   "experiment": {
-    "title": "物理下沿：原图与模型错位检查",
-    "summary": "橙色四边形是拟合前的模型底面投影；绿色短线是原图下沿候选。已修左右漏项、边缘提取和逐图换边问题；新物理下沿仍未稳定验证，主模型尚未替换。",
-    "reportURL": "bottom-boundaries/",
+    "title": "光幕实体模型与同一地面卡尺",
+    "summary": "新导出两侧光幕封闭外形候选：条件估计右 24.51 cm、左 24.11 cm。可旋转、单独选择并对照四张原图；厚度与跨视角精度仍有未验证部分，主场景未替换。",
+    "reportURL": "housing-boundaries/",
     "timingLabel": "此前完整计算"
   },
   "measurementUpdate": {

@@ -1,0 +1,29 @@
+{
+  "sourceCommit": "e8586bb",
+  "reportBuiltFromRun": "workcell-housing-2026-10-02-g",
+  "checkedAt": "2026-10-02T22:38:53.421697+00:00",
+  "checks": [
+    "GLB visible lower-edge vertex readback equals fitted measurement",
+    "both caliper feet on the same fitted ground",
+    "native floor matches frozen input manifest SHA-256",
+    "local browser loads 4 contextual models and 2 calipers",
+    "local browser selects each light curtain with 1 model and 1 caliper",
+    "local browser drag and wheel interaction verified",
+    "no browser console errors observed",
+    "relative HTML resource links resolve"
+  ],
+  "limitations": [
+    "conditional button scale; physical metric calibration remains unvalidated",
+    "extruded thickness and hidden surfaces are shape hypotheses",
+    "left thickness search reached its lower bound",
+    "main report models remain unchanged"
+  ],
+  "modelSha256": {
+    "post-box-2-volume-candidate.glb": "9db171e6ff78d2e6c44359a8cb7b98e7f14377f255799dfa51452eedc95f9243",
+    "post-box-1-housing-candidate.glb": "44c8c5a6119000a7b07f563b77dd4fd60ff710e03d2d3fe49911187999207f0e",
+    "fence-fitted.glb": "45baae0efacaec2c10948d7834abb15a042aef4f38e10a83066df5090db53da6",
+    "post-box-2-housing-candidate.glb": "c1802e6bc428c829c927c7f758dda33b5212be10b387521f1e8c7beefb038ba9",
+    "post-box-1-volume-candidate.glb": "f8bb5efd87e1b42bd4b3dda717d00ea5cb446ae5b29e20263a37fa46eee49e85",
+    "floor-fitted.glb": "660d96a4917abbeaee4c6be82617f80c274762b78c57216f7046cb3e29ec35ae"
+  }
+}

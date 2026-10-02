@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "status": "unsupported",
+  "modelUpdates": 0,
+  "items": [
+    {
+      "id": "post-box-1",
+      "status": "unsupported",
+      "reason": "Complete-face candidate did not pass convergence, data-only identifiability, observed-boundary or held-out projection gates; see fitGate",
+      "modelUpdated": false
+    },
+    {
+      "id": "post-box-2",
+      "status": "unsupported",
+      "reason": "Complete-face candidate did not pass convergence, data-only identifiability, observed-boundary or held-out projection gates; see fitGate",
+      "modelUpdated": false
+    }
+  ],
+  "sourceFiles": {
+    "geometry.json": "a0c901c0a823a8d0004707d75763b888573222e65d953d935974406a4db0a200",
+    "objects.json": "31b2ff11721d933b094abda7adb83b20bff412d9238450ba7ca6601595c904f9",
+    "posts.glb": "6a690909125ca06754b0263f2a5e9c1c25d047815b596110afdabc73a3c48926",
+    "sam3.json": "b098f3585bb8aba684bca3b072c75bcebc2a92b8fc4bdb0f4819ee3bba545f72"
+  },
+  "ground": {
+    "normal": [
+      0.007714318910697278,
+      -0.9941897817991617,
+      -0.10736464525102953
+    ],
+    "offset": 2.4435176430733963
+  },
+  "physicalValidation": "none",
+  "acceptedForPhysicalUse": false,
+  "mPerNative": null
+}

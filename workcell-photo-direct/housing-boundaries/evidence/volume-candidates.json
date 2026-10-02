@@ -1,0 +1,1964 @@
+{
+  "schemaVersion": 1,
+  "ground": {
+    "normal": [
+      0.007714319042861462,
+      -0.9941897988319397,
+      -0.10736464709043503
+    ],
+    "offset": 2.4435176849365234,
+    "supportPoints": 11474,
+    "residualP95Native": 0.027687382698059083,
+    "sourcePhotos": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "method": "local source pointmap support with original cameras",
+    "status": "conditional local floor fit; concrete-floor semantic identity unverified",
+    "displayExtent": "existing fitted footprint projected onto the physical-clearance ground plane"
+  },
+  "units": "native",
+  "mPerNative": null,
+  "physicalValidation": "none",
+  "previewOnly": true,
+  "baselineModified": false,
+  "sourceFiles": {
+    "geometry.json": "a0c901c0a823a8d0004707d75763b888573222e65d953d935974406a4db0a200",
+    "objects.json": "31b2ff11721d933b094abda7adb83b20bff412d9238450ba7ca6601595c904f9",
+    "posts.glb": "6a690909125ca06754b0263f2a5e9c1c25d047815b596110afdabc73a3c48926",
+    "sam3.json": "b098f3585bb8aba684bca3b072c75bcebc2a92b8fc4bdb0f4819ee3bba545f72"
+  },
+  "items": [
+    {
+      "id": "post-box-1",
+      "status": "visual_volume_hypothesis",
+      "physicalValidation": "none",
+      "previewOnly": true,
+      "model": {
+        "file": "post-box-1-volume-candidate.glb",
+        "sha256": "f8bb5efd87e1b42bd4b3dda717d00ea5cb446ae5b29e20263a37fa46eee49e85",
+        "nodes": [
+          "post-box-1-closed-extrusion-hypothesis"
+        ]
+      },
+      "thicknessNative": 0.01970709509614759,
+      "extrusionSign": -1,
+      "before": {
+        "views": [
+          {
+            "photo": 1,
+            "iou": 0.7783624407690982,
+            "sourcePixels": 265020,
+            "projectedPixels": 261530,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 13.34166431427002,
+            "sourceBoundaryP95Px": 33.0,
+            "modelBoundaryMedianPx": 13.0,
+            "modelBoundaryP95Px": 22.090721130371094,
+            "symmetricBoundaryMeanPx": 14.604196548461914
+          },
+          {
+            "photo": 2,
+            "iou": 0.4946480875600166,
+            "sourcePixels": 165104,
+            "projectedPixels": 305891,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 38.0,
+            "sourceBoundaryP95Px": 63.0,
+            "modelBoundaryMedianPx": 38.63935852050781,
+            "modelBoundaryP95Px": 120.10398864746094,
+            "symmetricBoundaryMeanPx": 34.02758026123047
+          },
+          {
+            "photo": 3,
+            "iou": 0.6564781078116849,
+            "sourcePixels": 206230,
+            "projectedPixels": 197028,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 21.840330123901367,
+            "sourceBoundaryP95Px": 29.068883895874023,
+            "modelBoundaryMedianPx": 21.587032318115234,
+            "modelBoundaryP95Px": 29.0,
+            "symmetricBoundaryMeanPx": 20.904565811157227
+          },
+          {
+            "photo": 4,
+            "iou": 0.8157572073278794,
+            "sourcePixels": 193944,
+            "projectedPixels": 158509,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 10.0,
+            "sourceBoundaryP95Px": 20.84009552001953,
+            "modelBoundaryMedianPx": 10.0,
+            "modelBoundaryP95Px": 16.0,
+            "symmetricBoundaryMeanPx": 8.904512405395508
+          }
+        ],
+        "meanIoU": 0.6863114608671698,
+        "medianIoU": 0.7174202742903916
+      },
+      "after": {
+        "views": [
+          {
+            "photo": 1,
+            "iou": 0.7373422214779028,
+            "sourcePixels": 265020,
+            "projectedPixels": 212181,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 11.401754379272461,
+            "sourceBoundaryP95Px": 38.0,
+            "modelBoundaryMedianPx": 11.0,
+            "modelBoundaryP95Px": 36.12478256225586,
+            "symmetricBoundaryMeanPx": 15.927605628967285
+          },
+          {
+            "photo": 2,
+            "iou": 0.6962814964751867,
+            "sourcePixels": 165104,
+            "projectedPixels": 223738,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 4.0,
+            "sourceBoundaryP95Px": 41.0,
+            "modelBoundaryMedianPx": 4.0,
+            "modelBoundaryP95Px": 107.8043212890625,
+            "symmetricBoundaryMeanPx": 15.574426651000977
+          },
+          {
+            "photo": 3,
+            "iou": 0.6149324618736384,
+            "sourcePixels": 206230,
+            "projectedPixels": 164397,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 19.0,
+            "sourceBoundaryP95Px": 39.0,
+            "modelBoundaryMedianPx": 18.027755737304688,
+            "modelBoundaryP95Px": 38.63935852050781,
+            "symmetricBoundaryMeanPx": 21.9821720123291
+          },
+          {
+            "photo": 4,
+            "iou": 0.8510080944886733,
+            "sourcePixels": 193944,
+            "projectedPixels": 167134,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 3.0,
+            "sourceBoundaryP95Px": 22.0,
+            "modelBoundaryMedianPx": 3.0,
+            "modelBoundaryP95Px": 21.0,
+            "symmetricBoundaryMeanPx": 7.206696033477783
+          }
+        ],
+        "meanIoU": 0.7248910685788503,
+        "medianIoU": 0.7168118589765448
+      },
+      "sourceFaceSha256": "44c8c5a6119000a7b07f563b77dd4fd60ff710e03d2d3fe49911187999207f0e",
+      "sourceFaceCornersNative": [
+        [
+          1.5332756042480469,
+          1.6970924139022827,
+          3.818737268447876
+        ],
+        [
+          1.6418225765228271,
+          1.698927879333496,
+          3.804563283920288
+        ],
+        [
+          1.6535122394561768,
+          -0.9349423050880432,
+          3.5530176162719727
+        ],
+        [
+          1.5449652671813965,
+          -0.9367777705192566,
+          3.5671916007995605
+        ]
+      ],
+      "sourceFaceGateAccepted": false,
+      "sourceFaceFitGate": {
+        "accepted": false,
+        "converged": true,
+        "parameterCount": 8,
+        "jacobianRank": 8,
+        "orientationMode": "free",
+        "sameSourceAssignmentLocked": true,
+        "orientationScope": "Free rigid rectangular surface orientation from source RGB boundaries; ground excluded from the fitting residual",
+        "modelLongAxisNative": [
+          0.00441807940086705,
+          -0.9954607207946413,
+          -0.09507067859977017
+        ],
+        "angleFromGroundNormalDeg": 0.7329031196016507,
+        "rankSource": "source_reprojection_without_priors",
+        "jacobianSingularValues": [
+          6563.267608787822,
+          3252.948090783427,
+          2648.044421728182,
+          1827.674177356369,
+          1169.2070406227397,
+          279.4205651057389,
+          210.1866902620831,
+          33.003547916501795
+        ],
+        "sourceViews": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "reprojectionByPhoto": [
+          {
+            "photo": 1,
+            "rmsRawPx": 13.506748939918808,
+            "maxRawPx": 25.65241809781849,
+            "thresholdRawPx": 7.724137931034482
+          },
+          {
+            "photo": 2,
+            "rmsRawPx": 3.218622260366561,
+            "maxRawPx": 11.048310602077741,
+            "thresholdRawPx": 7.724137931034482
+          },
+          {
+            "photo": 3,
+            "rmsRawPx": 4.978759490833687,
+            "maxRawPx": 8.157418996723372,
+            "thresholdRawPx": 7.724137931034482
+          },
+          {
+            "photo": 4,
+            "rmsRawPx": 2.3490311251617646,
+            "maxRawPx": 11.259858954884175,
+            "thresholdRawPx": 7.724137931034482
+          }
+        ],
+        "leaveOnePhotoOut": [
+          {
+            "photo": 1,
+            "converged": true,
+            "parameterCount": 8,
+            "jacobianRank": 8,
+            "maxRawPx": 33.29257735458185,
+            "rmsRawPx": 17.95421683056012,
+            "thresholdRawPx": 15.448275862068964,
+            "heightNative": 0.35318567734119366,
+            "identityPolicy": "full-fit complete face and left/right orientation held fixed; no held-out reassociation"
+          },
+          {
+            "photo": 2,
+            "converged": true,
+            "parameterCount": 8,
+            "jacobianRank": 8,
+            "maxRawPx": 47.78767433477917,
+            "rmsRawPx": 23.26740674528781,
+            "thresholdRawPx": 15.448275862068964,
+            "heightNative": 0.38839657027122243,
+            "identityPolicy": "full-fit complete face and left/right orientation held fixed; no held-out reassociation"
+          },
+          {
+            "photo": 3,
+            "converged": true,
+            "parameterCount": 8,
+            "jacobianRank": 8,
+            "maxRawPx": 31.289222501028714,
+            "rmsRawPx": 19.46101057112094,
+            "thresholdRawPx": 15.448275862068964,
+            "heightNative": 0.35216227712002324,
+            "identityPolicy": "full-fit complete face and left/right orientation held fixed; no held-out reassociation"
+          },
+          {
+            "photo": 4,
+            "converged": true,
+            "parameterCount": 8,
+            "jacobianRank": 8,
+            "maxRawPx": 15.974217849820345,
+            "rmsRawPx": 7.887884117618041,
+            "thresholdRawPx": 15.448275862068964,
+            "heightNative": 0.3640451137333698,
+            "identityPolicy": "full-fit complete face and left/right orientation held fixed; no held-out reassociation"
+          }
+        ],
+        "observableHeldOutViews": 4,
+        "sourcePixelTransforms": {
+          "1": [
+            [
+              0.12962962962962962,
+              0.0,
+              -0.4351851851851852
+            ],
+            [
+              0.0,
+              0.12946428571428573,
+              -2.435267857142857
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "2": [
+            [
+              0.12962962962962962,
+              0.0,
+              -0.4351851851851852
+            ],
+            [
+              0.0,
+              0.12946428571428573,
+              -2.435267857142857
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "3": [
+            [
+              0.12962962962962962,
+              0.0,
+              -0.4351851851851852
+            ],
+            [
+              0.0,
+              0.12946428571428573,
+              -2.435267857142857
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "4": [
+            [
+              0.12962962962962962,
+              0.0,
+              -0.4351851851851852
+            ],
+            [
+              0.0,
+              0.12946428571428573,
+              -2.435267857142857
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "thresholdPolicy": "Declared before optimization: max(3, spectral_norm(inv(raw_to_canonical)[:2,:2])) raw pixels for every observed edge; twice that for held-out fits. Every held-out training fit must remain identifiable.",
+        "crossViewIdentity": "one complete observed face anchors named boundaries; other views supply only actually observed fragments; missing boundaries contribute no residual",
+        "search": {
+          "generatedStarts": 1908,
+          "evaluatedStarts": 12,
+          "maxStarts": 12,
+          "scope": "Complete-face RGB stereo or pointmap-only initializations; each source anchor represented; bounded non-exhaustive search"
+        },
+        "surfaceAlternatives": [],
+        "terminalPartAmbiguity": {
+          "resolved": false,
+          "supportedAssignments": 0,
+          "scope": "Selected visible-face terminal, not a proven unique whole-housing minimum; stepped front/wing identity remains explicit."
+        },
+        "leaveOneOutMeaning": "Fixed-association leave-one-photo-out stability, initialized from the full fit; not independent held-out part selection.",
+        "exportedModelReprojectionByPhoto": [
+          {
+            "photo": 1,
+            "rmsRawPx": 13.506761486615,
+            "maxRawPx": 25.652449288213816,
+            "thresholdRawPx": 7.724137931034482
+          },
+          {
+            "photo": 2,
+            "rmsRawPx": 3.2186294818946886,
+            "maxRawPx": 11.04831092461283,
+            "thresholdRawPx": 7.724137931034482
+          },
+          {
+            "photo": 3,
+            "rmsRawPx": 4.978745322911949,
+            "maxRawPx": 8.157406072212595,
+            "thresholdRawPx": 7.724137931034482
+          },
+          {
+            "photo": 4,
+            "rmsRawPx": 2.3490301316920177,
+            "maxRawPx": 11.259837327282124,
+            "thresholdRawPx": 7.724137931034482
+          }
+        ]
+      },
+      "sourceObservations": [
+        {
+          "photo": 1,
+          "source": "SAM: yellow safety post; instance 1",
+          "samRleSha256": "7f2dca35d2724812f606954c0f920e09670c19eecf84d93c5bf4e9aea07e8981"
+        },
+        {
+          "photo": 2,
+          "source": "SAM: yellow safety post; instance 0",
+          "samRleSha256": "9d015b32f8d4635c2a28867c5c0f3d14271cba3c620c1d0cab270e4689620f46"
+        },
+        {
+          "photo": 3,
+          "source": "SAM: yellow safety post; instance 0",
+          "samRleSha256": "f61ab055615b8b8ddf3f5f518cf1e6a7475f522cec1badc2c2060b3ee4340e02"
+        },
+        {
+          "photo": 4,
+          "source": "SAM: yellow safety post; instance 0",
+          "samRleSha256": "572d55ce729f51839971c86a5a46ab4d271908ec0a3d6c77698eb24799c53600"
+        }
+      ],
+      "visibleLowerEdgeVertices": [
+        0,
+        1
+      ],
+      "geometryScope": "Closed extrusion hypothesis of the selected visible face. Thickness, rear face and end caps are assumptions; no claim of complete physical housing reconstruction.",
+      "appearanceScope": "Uniform yellow display material on the hypothesized prism; no unseen texture synthesized",
+      "visibleLowerEdgeHeightNative": 0.3581165112582432,
+      "hypotheticalVolumeMinimumHeightNative": 0.3578835666903779,
+      "minimumHeightScope": "The volume minimum includes invented rear geometry and is not a physical clearance measurement",
+      "thicknessIdentifiable": false,
+      "searchTrials": [
+        {
+          "thicknessNative": 0.002189677232905288,
+          "extrusionSign": -1,
+          "meanIoU": 0.7205249769508704
+        },
+        {
+          "thicknessNative": 0.002189677232905288,
+          "extrusionSign": 1,
+          "meanIoU": 0.7187162128615322
+        },
+        {
+          "thicknessNative": 0.004379354465810576,
+          "extrusionSign": -1,
+          "meanIoU": 0.7217569386308569
+        },
+        {
+          "thicknessNative": 0.004379354465810576,
+          "extrusionSign": 1,
+          "meanIoU": 0.7185901823829218
+        },
+        {
+          "thicknessNative": 0.006569031698715863,
+          "extrusionSign": -1,
+          "meanIoU": 0.7232230752926624
+        },
+        {
+          "thicknessNative": 0.006569031698715863,
+          "extrusionSign": 1,
+          "meanIoU": 0.71784941344241
+        },
+        {
+          "thicknessNative": 0.008758708931621152,
+          "extrusionSign": -1,
+          "meanIoU": 0.723945856091667
+        },
+        {
+          "thicknessNative": 0.008758708931621152,
+          "extrusionSign": 1,
+          "meanIoU": 0.7172189348915505
+        },
+        {
+          "thicknessNative": 0.01094838616452644,
+          "extrusionSign": -1,
+          "meanIoU": 0.7253628258384601
+        },
+        {
+          "thicknessNative": 0.01094838616452644,
+          "extrusionSign": 1,
+          "meanIoU": 0.7166491020505535
+        },
+        {
+          "thicknessNative": 0.013138063397431728,
+          "extrusionSign": -1,
+          "meanIoU": 0.7264761777829577
+        },
+        {
+          "thicknessNative": 0.013138063397431728,
+          "extrusionSign": 1,
+          "meanIoU": 0.7162885120668007
+        },
+        {
+          "thicknessNative": 0.015327740630337015,
+          "extrusionSign": -1,
+          "meanIoU": 0.7283955324987014
+        },
+        {
+          "thicknessNative": 0.015327740630337015,
+          "extrusionSign": 1,
+          "meanIoU": 0.7154213758780597
+        },
+        {
+          "thicknessNative": 0.017517417863242304,
+          "extrusionSign": -1,
+          "meanIoU": 0.7303541333875978
+        },
+        {
+          "thicknessNative": 0.017517417863242304,
+          "extrusionSign": 1,
+          "meanIoU": 0.7142610707016742
+        },
+        {
+          "thicknessNative": 0.01970709509614759,
+          "extrusionSign": -1,
+          "meanIoU": 0.7314868293108439
+        },
+        {
+          "thicknessNative": 0.01970709509614759,
+          "extrusionSign": 1,
+          "meanIoU": 0.7133014353156957
+        },
+        {
+          "thicknessNative": 0.021896772329052877,
+          "extrusionSign": -1,
+          "meanIoU": 0.7313129637137638
+        },
+        {
+          "thicknessNative": 0.021896772329052877,
+          "extrusionSign": 1,
+          "meanIoU": 0.7123685852589088
+        },
+        {
+          "thicknessNative": 0.024086449561958167,
+          "extrusionSign": -1,
+          "meanIoU": 0.7311241918470872
+        },
+        {
+          "thicknessNative": 0.024086449561958167,
+          "extrusionSign": 1,
+          "meanIoU": 0.7117233702479195
+        },
+        {
+          "thicknessNative": 0.026276126794863453,
+          "extrusionSign": -1,
+          "meanIoU": 0.7306907512725577
+        },
+        {
+          "thicknessNative": 0.026276126794863453,
+          "extrusionSign": 1,
+          "meanIoU": 0.7112952702958146
+        },
+        {
+          "thicknessNative": 0.028465804027768746,
+          "extrusionSign": -1,
+          "meanIoU": 0.7304660412785347
+        },
+        {
+          "thicknessNative": 0.028465804027768746,
+          "extrusionSign": 1,
+          "meanIoU": 0.7106261733898922
+        },
+        {
+          "thicknessNative": 0.030655481260674036,
+          "extrusionSign": -1,
+          "meanIoU": 0.7295737461836727
+        },
+        {
+          "thicknessNative": 0.030655481260674036,
+          "extrusionSign": 1,
+          "meanIoU": 0.7097734766148223
+        },
+        {
+          "thicknessNative": 0.03284515849357932,
+          "extrusionSign": -1,
+          "meanIoU": 0.7292078126798509
+        },
+        {
+          "thicknessNative": 0.03284515849357932,
+          "extrusionSign": 1,
+          "meanIoU": 0.7089732825079933
+        },
+        {
+          "thicknessNative": 0.03503483572648461,
+          "extrusionSign": -1,
+          "meanIoU": 0.7285466963518137
+        },
+        {
+          "thicknessNative": 0.03503483572648461,
+          "extrusionSign": 1,
+          "meanIoU": 0.7081212260693583
+        },
+        {
+          "thicknessNative": 0.037224512959389895,
+          "extrusionSign": -1,
+          "meanIoU": 0.7281787599720957
+        },
+        {
+          "thicknessNative": 0.037224512959389895,
+          "extrusionSign": 1,
+          "meanIoU": 0.7068360069078639
+        },
+        {
+          "thicknessNative": 0.03941419019229519,
+          "extrusionSign": -1,
+          "meanIoU": 0.7274362115081272
+        },
+        {
+          "thicknessNative": 0.03941419019229519,
+          "extrusionSign": 1,
+          "meanIoU": 0.7058480276991523
+        },
+        {
+          "thicknessNative": 0.041603867425200475,
+          "extrusionSign": -1,
+          "meanIoU": 0.7270023580729427
+        },
+        {
+          "thicknessNative": 0.041603867425200475,
+          "extrusionSign": 1,
+          "meanIoU": 0.7050892014447094
+        },
+        {
+          "thicknessNative": 0.04379354465810576,
+          "extrusionSign": -1,
+          "meanIoU": 0.7262499881999277
+        },
+        {
+          "thicknessNative": 0.04379354465810576,
+          "extrusionSign": 1,
+          "meanIoU": 0.7039667982176476
+        },
+        {
+          "thicknessNative": 0.045983221891011054,
+          "extrusionSign": -1,
+          "meanIoU": 0.7256054778969555
+        },
+        {
+          "thicknessNative": 0.045983221891011054,
+          "extrusionSign": 1,
+          "meanIoU": 0.7033516046737389
+        },
+        {
+          "thicknessNative": 0.048172899123916334,
+          "extrusionSign": -1,
+          "meanIoU": 0.724533249981676
+        },
+        {
+          "thicknessNative": 0.048172899123916334,
+          "extrusionSign": 1,
+          "meanIoU": 0.7024883187186561
+        },
+        {
+          "thicknessNative": 0.05036257635682163,
+          "extrusionSign": -1,
+          "meanIoU": 0.7235374257345708
+        },
+        {
+          "thicknessNative": 0.05036257635682163,
+          "extrusionSign": 1,
+          "meanIoU": 0.7017842268543311
+        },
+        {
+          "thicknessNative": 0.05255225358972691,
+          "extrusionSign": -1,
+          "meanIoU": 0.7224976700805319
+        },
+        {
+          "thicknessNative": 0.05255225358972691,
+          "extrusionSign": 1,
+          "meanIoU": 0.7011751032531943
+        },
+        {
+          "thicknessNative": 0.0547419308226322,
+          "extrusionSign": -1,
+          "meanIoU": 0.7220614346301486
+        },
+        {
+          "thicknessNative": 0.0547419308226322,
+          "extrusionSign": 1,
+          "meanIoU": 0.7004594267485021
+        },
+        {
+          "thicknessNative": 0.05693160805553749,
+          "extrusionSign": -1,
+          "meanIoU": 0.7208479053619065
+        },
+        {
+          "thicknessNative": 0.05693160805553749,
+          "extrusionSign": 1,
+          "meanIoU": 0.6998099486956066
+        },
+        {
+          "thicknessNative": 0.05912128528844278,
+          "extrusionSign": -1,
+          "meanIoU": 0.719704128272519
+        },
+        {
+          "thicknessNative": 0.05912128528844278,
+          "extrusionSign": 1,
+          "meanIoU": 0.6990181380089291
+        },
+        {
+          "thicknessNative": 0.06131096252134807,
+          "extrusionSign": -1,
+          "meanIoU": 0.7186880564803759
+        },
+        {
+          "thicknessNative": 0.06131096252134807,
+          "extrusionSign": 1,
+          "meanIoU": 0.6983991352200002
+        },
+        {
+          "thicknessNative": 0.06350063975425337,
+          "extrusionSign": -1,
+          "meanIoU": 0.7181874534494139
+        },
+        {
+          "thicknessNative": 0.06350063975425337,
+          "extrusionSign": 1,
+          "meanIoU": 0.6974215976341128
+        },
+        {
+          "thicknessNative": 0.06569031698715863,
+          "extrusionSign": -1,
+          "meanIoU": 0.7169176196081244
+        },
+        {
+          "thicknessNative": 0.06569031698715863,
+          "extrusionSign": 1,
+          "meanIoU": 0.6968973127659921
+        },
+        {
+          "thicknessNative": 0.06787999422006392,
+          "extrusionSign": -1,
+          "meanIoU": 0.7157054992814358
+        },
+        {
+          "thicknessNative": 0.06787999422006392,
+          "extrusionSign": 1,
+          "meanIoU": 0.696028466186982
+        },
+        {
+          "thicknessNative": 0.07006967145296922,
+          "extrusionSign": -1,
+          "meanIoU": 0.7151002841352768
+        },
+        {
+          "thicknessNative": 0.07006967145296922,
+          "extrusionSign": 1,
+          "meanIoU": 0.694729575497592
+        },
+        {
+          "thicknessNative": 0.07225934868587451,
+          "extrusionSign": -1,
+          "meanIoU": 0.7141688662246384
+        },
+        {
+          "thicknessNative": 0.07225934868587451,
+          "extrusionSign": 1,
+          "meanIoU": 0.6935049675652434
+        },
+        {
+          "thicknessNative": 0.07444902591877979,
+          "extrusionSign": -1,
+          "meanIoU": 0.7134004284292996
+        },
+        {
+          "thicknessNative": 0.07444902591877979,
+          "extrusionSign": 1,
+          "meanIoU": 0.6918007777679321
+        },
+        {
+          "thicknessNative": 0.07663870315168508,
+          "extrusionSign": -1,
+          "meanIoU": 0.7128174656780853
+        },
+        {
+          "thicknessNative": 0.07663870315168508,
+          "extrusionSign": 1,
+          "meanIoU": 0.6900047357643355
+        },
+        {
+          "thicknessNative": 0.07882838038459038,
+          "extrusionSign": -1,
+          "meanIoU": 0.7119515624879506
+        },
+        {
+          "thicknessNative": 0.07882838038459038,
+          "extrusionSign": 1,
+          "meanIoU": 0.6883241254909509
+        },
+        {
+          "thicknessNative": 0.08101805761749566,
+          "extrusionSign": -1,
+          "meanIoU": 0.7109948874483766
+        },
+        {
+          "thicknessNative": 0.08101805761749566,
+          "extrusionSign": 1,
+          "meanIoU": 0.6867697539378625
+        },
+        {
+          "thicknessNative": 0.08320773485040095,
+          "extrusionSign": -1,
+          "meanIoU": 0.7101057340312943
+        },
+        {
+          "thicknessNative": 0.08320773485040095,
+          "extrusionSign": 1,
+          "meanIoU": 0.6849297888078545
+        },
+        {
+          "thicknessNative": 0.08539741208330623,
+          "extrusionSign": -1,
+          "meanIoU": 0.7091399832007317
+        },
+        {
+          "thicknessNative": 0.08539741208330623,
+          "extrusionSign": 1,
+          "meanIoU": 0.6833845249727117
+        },
+        {
+          "thicknessNative": 0.08758708931621152,
+          "extrusionSign": -1,
+          "meanIoU": 0.7084376815733043
+        },
+        {
+          "thicknessNative": 0.08758708931621152,
+          "extrusionSign": 1,
+          "meanIoU": 0.682309529451456
+        },
+        {
+          "thicknessNative": 0.08977676654911682,
+          "extrusionSign": -1,
+          "meanIoU": 0.7076155262622216
+        },
+        {
+          "thicknessNative": 0.08977676654911682,
+          "extrusionSign": 1,
+          "meanIoU": 0.6809956254594467
+        },
+        {
+          "thicknessNative": 0.09196644378202211,
+          "extrusionSign": -1,
+          "meanIoU": 0.7067786209285911
+        },
+        {
+          "thicknessNative": 0.09196644378202211,
+          "extrusionSign": 1,
+          "meanIoU": 0.6796797780478419
+        },
+        {
+          "thicknessNative": 0.09415612101492739,
+          "extrusionSign": -1,
+          "meanIoU": 0.7059652347532469
+        },
+        {
+          "thicknessNative": 0.09415612101492739,
+          "extrusionSign": 1,
+          "meanIoU": 0.6783749033995963
+        },
+        {
+          "thicknessNative": 0.09634579824783267,
+          "extrusionSign": -1,
+          "meanIoU": 0.7053570863500345
+        },
+        {
+          "thicknessNative": 0.09634579824783267,
+          "extrusionSign": 1,
+          "meanIoU": 0.6767088414434377
+        },
+        {
+          "thicknessNative": 0.09853547548073796,
+          "extrusionSign": -1,
+          "meanIoU": 0.7045999259724431
+        },
+        {
+          "thicknessNative": 0.09853547548073796,
+          "extrusionSign": 1,
+          "meanIoU": 0.6751992831243946
+        },
+        {
+          "thicknessNative": 0.10072515271364325,
+          "extrusionSign": -1,
+          "meanIoU": 0.704095779816121
+        },
+        {
+          "thicknessNative": 0.10072515271364325,
+          "extrusionSign": 1,
+          "meanIoU": 0.673500621212477
+        },
+        {
+          "thicknessNative": 0.10291482994654855,
+          "extrusionSign": -1,
+          "meanIoU": 0.7032822385445898
+        },
+        {
+          "thicknessNative": 0.10291482994654855,
+          "extrusionSign": 1,
+          "meanIoU": 0.671703328032457
+        },
+        {
+          "thicknessNative": 0.10510450717945383,
+          "extrusionSign": -1,
+          "meanIoU": 0.7025653551044877
+        },
+        {
+          "thicknessNative": 0.10510450717945383,
+          "extrusionSign": 1,
+          "meanIoU": 0.6697272286165517
+        },
+        {
+          "thicknessNative": 0.1072941844123591,
+          "extrusionSign": -1,
+          "meanIoU": 0.7019678161833938
+        },
+        {
+          "thicknessNative": 0.1072941844123591,
+          "extrusionSign": 1,
+          "meanIoU": 0.6682454262445192
+        },
+        {
+          "thicknessNative": 0.1094838616452644,
+          "extrusionSign": -1,
+          "meanIoU": 0.701201278082227
+        },
+        {
+          "thicknessNative": 0.1094838616452644,
+          "extrusionSign": 1,
+          "meanIoU": 0.6667841536683019
+        }
+      ],
+      "searchWinner": {
+        "thicknessNative": 0.01970709509614759,
+        "extrusionSign": -1,
+        "meanIoU": 0.7314868293108439
+      },
+      "searchAtBound": false,
+      "equalScoreHypotheses": [
+        {
+          "thicknessNative": 0.01970709509614759,
+          "extrusionSign": -1,
+          "meanIoU": 0.7314868293108439
+        }
+      ],
+      "views": [
+        {
+          "photo": 1,
+          "overlay": "post-box-1-volume-photo-1.jpg",
+          "legend": "cyan: closed extrusion projection; pink: exact same-instance SAM; silhouette mismatch includes occlusion and mask errors"
+        },
+        {
+          "photo": 2,
+          "overlay": "post-box-1-volume-photo-2.jpg",
+          "legend": "cyan: closed extrusion projection; pink: exact same-instance SAM; silhouette mismatch includes occlusion and mask errors"
+        },
+        {
+          "photo": 3,
+          "overlay": "post-box-1-volume-photo-3.jpg",
+          "legend": "cyan: closed extrusion projection; pink: exact same-instance SAM; silhouette mismatch includes occlusion and mask errors"
+        },
+        {
+          "photo": 4,
+          "overlay": "post-box-1-volume-photo-4.jpg",
+          "legend": "cyan: closed extrusion projection; pink: exact same-instance SAM; silhouette mismatch includes occlusion and mask errors"
+        }
+      ]
+    },
+    {
+      "id": "post-box-2",
+      "status": "visual_volume_hypothesis",
+      "physicalValidation": "none",
+      "previewOnly": true,
+      "model": {
+        "file": "post-box-2-volume-candidate.glb",
+        "sha256": "9db171e6ff78d2e6c44359a8cb7b98e7f14377f255799dfa51452eedc95f9243",
+        "nodes": [
+          "post-box-2-closed-extrusion-hypothesis"
+        ]
+      },
+      "thicknessNative": 0.003003792185223195,
+      "extrusionSign": -1,
+      "before": {
+        "views": [
+          {
+            "photo": 1,
+            "iou": 0.39869535311164483,
+            "sourcePixels": 253289,
+            "projectedPixels": 490954,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 59.004234313964844,
+            "sourceBoundaryP95Px": 99.0,
+            "modelBoundaryMedianPx": 65.96209716796875,
+            "modelBoundaryP95Px": 113.0,
+            "symmetricBoundaryMeanPx": 59.3950309753418
+          },
+          {
+            "photo": 2,
+            "iou": 0.8489732414453409,
+            "sourcePixels": 175022,
+            "projectedPixels": 195760,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 8.0,
+            "sourceBoundaryP95Px": 17.0,
+            "modelBoundaryMedianPx": 8.0,
+            "modelBoundaryP95Px": 15.0,
+            "symmetricBoundaryMeanPx": 8.530937194824219
+          },
+          {
+            "photo": 3,
+            "iou": 0.5761592887766643,
+            "sourcePixels": 250935,
+            "projectedPixels": 408229,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 33.0,
+            "sourceBoundaryP95Px": 65.6201171875,
+            "modelBoundaryMedianPx": 30.805843353271484,
+            "modelBoundaryP95Px": 66.0,
+            "symmetricBoundaryMeanPx": 36.685218811035156
+          },
+          {
+            "photo": 4,
+            "iou": 0.5276611253025906,
+            "sourcePixels": 163729,
+            "projectedPixels": 293170,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 22.360679626464844,
+            "sourceBoundaryP95Px": 54.037025451660156,
+            "modelBoundaryMedianPx": 22.0,
+            "modelBoundaryP95Px": 102.0754165649414,
+            "symmetricBoundaryMeanPx": 30.83428382873535
+          }
+        ],
+        "meanIoU": 0.5878722521590602,
+        "medianIoU": 0.5519102070396275
+      },
+      "after": {
+        "views": [
+          {
+            "photo": 1,
+            "iou": 0.5184862878434775,
+            "sourcePixels": 253289,
+            "projectedPixels": 310323,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 35.0,
+            "sourceBoundaryP95Px": 43.0,
+            "modelBoundaryMedianPx": 35.0,
+            "modelBoundaryP95Px": 43.0,
+            "symmetricBoundaryMeanPx": 33.407432556152344
+          },
+          {
+            "photo": 2,
+            "iou": 0.9329617656894438,
+            "sourcePixels": 175022,
+            "projectedPixels": 171790,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 2.8284270763397217,
+            "sourceBoundaryP95Px": 8.0,
+            "modelBoundaryMedianPx": 2.8284270763397217,
+            "modelBoundaryP95Px": 8.25817584991455,
+            "symmetricBoundaryMeanPx": 3.2811548709869385
+          },
+          {
+            "photo": 3,
+            "iou": 0.9465072152787748,
+            "sourcePixels": 250935,
+            "projectedPixels": 250713,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 2.0,
+            "sourceBoundaryP95Px": 7.211102485656738,
+            "modelBoundaryMedianPx": 2.0,
+            "modelBoundaryP95Px": 7.071067810058594,
+            "symmetricBoundaryMeanPx": 2.857997417449951
+          },
+          {
+            "photo": 4,
+            "iou": 0.5605889405452962,
+            "sourcePixels": 163729,
+            "projectedPixels": 198131,
+            "imageShape": [
+              4032,
+              3024
+            ],
+            "sourceBoundaryMedianPx": 14.0,
+            "sourceBoundaryP95Px": 23.0,
+            "modelBoundaryMedianPx": 14.0,
+            "modelBoundaryP95Px": 82.56512451171875,
+            "symmetricBoundaryMeanPx": 18.9744873046875
+          }
+        ],
+        "meanIoU": 0.739636052339248,
+        "medianIoU": 0.74677535311737
+      },
+      "sourceFaceSha256": "c1802e6bc428c829c927c7f758dda33b5212be10b387521f1e8c7beefb038ba9",
+      "sourceFaceCornersNative": [
+        [
+          -1.288538932800293,
+          1.745809555053711,
+          3.2167017459869385
+        ],
+        [
+          -1.2163102626800537,
+          1.7325599193572998,
+          3.34771466255188
+        ],
+        [
+          -1.169630527496338,
+          -0.9300102591514587,
+          3.0527074337005615
+        ],
+        [
+          -1.2418591976165771,
+          -0.9167605638504028,
+          2.92169451713562
+        ]
+      ],
+      "sourceFaceGateAccepted": false,
+      "sourceFaceFitGate": {
+        "accepted": false,
+        "converged": true,
+        "parameterCount": 8,
+        "jacobianRank": 8,
+        "orientationMode": "free",
+        "sameSourceAssignmentLocked": true,
+        "orientationScope": "Free rigid rectangular surface orientation from source RGB boundaries; ground excluded from the fitting residual",
+        "modelLongAxisNative": [
+          0.017422559235146996,
+          -0.993766993450554,
+          -0.11010729838636674
+        ],
+        "angleFromGroundNormalDeg": 0.5785219648383294,
+        "rankSource": "source_reprojection_without_priors",
+        "jacobianSingularValues": [
+          5242.948699275811,
+          4008.3756781621073,
+          1596.7657882542735,
+          1197.7149337570636,
+          800.0913051744869,
+          315.50265073793656,
+          206.59173136161604,
+          51.94162747769452
+        ],
+        "sourceViews": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "reprojectionByPhoto": [
+          {
+            "photo": 1,
+            "rmsRawPx": 33.69078035870401,
+            "maxRawPx": 43.083712171137634,
+            "thresholdRawPx": 7.724137931034482
+          },
+          {
+            "photo": 2,
+            "rmsRawPx": 3.422577975976176,
+            "maxRawPx": 14.767489237170645,
+            "thresholdRawPx": 7.724137931034482
+          },
+          {
+            "photo": 3,
+            "rmsRawPx": 4.168166845697265,
+            "maxRawPx": 11.645982674994103,
+            "thresholdRawPx": 7.724137931034482
+          },
+          {
+            "photo": 4,
+            "rmsRawPx": 9.062306281078806,
+            "maxRawPx": 12.998719434660245,
+            "thresholdRawPx": 7.724137931034482
+          }
+        ],
+        "leaveOnePhotoOut": [
+          {
+            "photo": 1,
+            "converged": true,
+            "parameterCount": 8,
+            "jacobianRank": 8,
+            "maxRawPx": 50.622243889991275,
+            "rmsRawPx": 38.92352459062979,
+            "thresholdRawPx": 15.448275862068964,
+            "heightNative": 0.3566450857126191,
+            "identityPolicy": "full-fit complete face and left/right orientation held fixed; no held-out reassociation"
+          },
+          {
+            "photo": 2,
+            "converged": true,
+            "parameterCount": 8,
+            "jacobianRank": 8,
+            "maxRawPx": 46.82197221245607,
+            "rmsRawPx": 40.547089690834824,
+            "thresholdRawPx": 15.448275862068964,
+            "heightNative": 0.3977190622528872,
+            "identityPolicy": "full-fit complete face and left/right orientation held fixed; no held-out reassociation"
+          },
+          {
+            "photo": 3,
+            "converged": true,
+            "parameterCount": 8,
+            "jacobianRank": 8,
+            "maxRawPx": 35.773442103480875,
+            "rmsRawPx": 22.935126503839808,
+            "thresholdRawPx": 15.448275862068964,
+            "heightNative": 0.3780743714317545,
+            "identityPolicy": "full-fit complete face and left/right orientation held fixed; no held-out reassociation"
+          },
+          {
+            "photo": 4,
+            "converged": true,
+            "parameterCount": 8,
+            "jacobianRank": 8,
+            "maxRawPx": 24.926515298484386,
+            "rmsRawPx": 17.923578444648193,
+            "thresholdRawPx": 15.448275862068964,
+            "heightNative": 0.3542129718521285,
+            "identityPolicy": "full-fit complete face and left/right orientation held fixed; no held-out reassociation"
+          }
+        ],
+        "observableHeldOutViews": 4,
+        "sourcePixelTransforms": {
+          "1": [
+            [
+              0.12962962962962962,
+              0.0,
+              -0.4351851851851852
+            ],
+            [
+              0.0,
+              0.12946428571428573,
+              -2.435267857142857
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "2": [
+            [
+              0.12962962962962962,
+              0.0,
+              -0.4351851851851852
+            ],
+            [
+              0.0,
+              0.12946428571428573,
+              -2.435267857142857
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "3": [
+            [
+              0.12962962962962962,
+              0.0,
+              -0.4351851851851852
+            ],
+            [
+              0.0,
+              0.12946428571428573,
+              -2.435267857142857
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "4": [
+            [
+              0.12962962962962962,
+              0.0,
+              -0.4351851851851852
+            ],
+            [
+              0.0,
+              0.12946428571428573,
+              -2.435267857142857
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "thresholdPolicy": "Declared before optimization: max(3, spectral_norm(inv(raw_to_canonical)[:2,:2])) raw pixels for every observed edge; twice that for held-out fits. Every held-out training fit must remain identifiable.",
+        "crossViewIdentity": "one complete observed face anchors named boundaries; other views supply only actually observed fragments; missing boundaries contribute no residual",
+        "search": {
+          "generatedStarts": 427,
+          "evaluatedStarts": 12,
+          "maxStarts": 12,
+          "scope": "Complete-face RGB stereo or pointmap-only initializations; each source anchor represented; bounded non-exhaustive search"
+        },
+        "surfaceAlternatives": [],
+        "terminalPartAmbiguity": {
+          "resolved": false,
+          "supportedAssignments": 0,
+          "scope": "Selected visible-face terminal, not a proven unique whole-housing minimum; stepped front/wing identity remains explicit."
+        },
+        "leaveOneOutMeaning": "Fixed-association leave-one-photo-out stability, initialized from the full fit; not independent held-out part selection.",
+        "exportedModelReprojectionByPhoto": [
+          {
+            "photo": 1,
+            "rmsRawPx": 33.69077733213727,
+            "maxRawPx": 43.08370348252135,
+            "thresholdRawPx": 7.724137931034482
+          },
+          {
+            "photo": 2,
+            "rmsRawPx": 3.422592552006882,
+            "maxRawPx": 14.767494812554915,
+            "thresholdRawPx": 7.724137931034482
+          },
+          {
+            "photo": 3,
+            "rmsRawPx": 4.168157765412302,
+            "maxRawPx": 11.64594575229267,
+            "thresholdRawPx": 7.724137931034482
+          },
+          {
+            "photo": 4,
+            "rmsRawPx": 9.062309707026248,
+            "maxRawPx": 12.998739687722816,
+            "thresholdRawPx": 7.724137931034482
+          }
+        ]
+      },
+      "sourceObservations": [
+        {
+          "photo": 1,
+          "source": "SAM: yellow safety post; instance 0",
+          "samRleSha256": "a5985b6058ca3537465a76d97135fb12fc3ea3fae2f5509baaf11bf86e5860e4"
+        },
+        {
+          "photo": 2,
+          "source": "SAM: yellow safety post; instance 1",
+          "samRleSha256": "1dbaecdc2194068b1c68bc0657e7cd28cbef50523b1106a5bdce9432d4894f3a"
+        },
+        {
+          "photo": 3,
+          "source": "SAM: yellow safety post; instance 1",
+          "samRleSha256": "0fd951430ca1af3602be0d77bd36699dd9b6001d0d8a813e3be0a1883ef053c4"
+        },
+        {
+          "photo": 4,
+          "source": "SAM: yellow safety post; instance 1",
+          "samRleSha256": "0152ba70bfd4e7745ea543944b0522456cccd4977bd54346cd7111cc0d0383ad"
+        }
+      ],
+      "visibleLowerEdgeVertices": [
+        0,
+        1
+      ],
+      "geometryScope": "Closed extrusion hypothesis of the selected visible face. Thickness, rear face and end caps are assumptions; no claim of complete physical housing reconstruction.",
+      "appearanceScope": "Uniform yellow display material on the hypothesized prism; no unseen texture synthesized",
+      "visibleLowerEdgeHeightNative": 0.35221507248636863,
+      "hypotheticalVolumeMinimumHeightNative": 0.35221507248636863,
+      "minimumHeightScope": "The volume minimum includes invented rear geometry and is not a physical clearance measurement",
+      "thicknessIdentifiable": false,
+      "searchTrials": [
+        {
+          "thicknessNative": 0.003003792185223195,
+          "extrusionSign": -1,
+          "meanIoU": 0.7344271962972628
+        },
+        {
+          "thicknessNative": 0.003003792185223195,
+          "extrusionSign": 1,
+          "meanIoU": 0.7313317786475361
+        },
+        {
+          "thicknessNative": 0.00600758437044639,
+          "extrusionSign": -1,
+          "meanIoU": 0.7322345795683347
+        },
+        {
+          "thicknessNative": 0.00600758437044639,
+          "extrusionSign": 1,
+          "meanIoU": 0.7279949469960931
+        },
+        {
+          "thicknessNative": 0.009011376555669585,
+          "extrusionSign": -1,
+          "meanIoU": 0.7288531234041129
+        },
+        {
+          "thicknessNative": 0.009011376555669585,
+          "extrusionSign": 1,
+          "meanIoU": 0.7248257125789535
+        },
+        {
+          "thicknessNative": 0.01201516874089278,
+          "extrusionSign": -1,
+          "meanIoU": 0.7257074328797133
+        },
+        {
+          "thicknessNative": 0.01201516874089278,
+          "extrusionSign": 1,
+          "meanIoU": 0.721299149701197
+        },
+        {
+          "thicknessNative": 0.015018960926115977,
+          "extrusionSign": -1,
+          "meanIoU": 0.7229667642722544
+        },
+        {
+          "thicknessNative": 0.015018960926115977,
+          "extrusionSign": 1,
+          "meanIoU": 0.7180980714420521
+        },
+        {
+          "thicknessNative": 0.018022753111339173,
+          "extrusionSign": -1,
+          "meanIoU": 0.7197748309017231
+        },
+        {
+          "thicknessNative": 0.018022753111339173,
+          "extrusionSign": 1,
+          "meanIoU": 0.7151593474774887
+        },
+        {
+          "thicknessNative": 0.021026545296562366,
+          "extrusionSign": -1,
+          "meanIoU": 0.7174863830725376
+        },
+        {
+          "thicknessNative": 0.021026545296562366,
+          "extrusionSign": 1,
+          "meanIoU": 0.7118782251208408
+        },
+        {
+          "thicknessNative": 0.02403033748178556,
+          "extrusionSign": -1,
+          "meanIoU": 0.7146217306286511
+        },
+        {
+          "thicknessNative": 0.02403033748178556,
+          "extrusionSign": 1,
+          "meanIoU": 0.7079855034389441
+        },
+        {
+          "thicknessNative": 0.027034129667008758,
+          "extrusionSign": -1,
+          "meanIoU": 0.7116919816198128
+        },
+        {
+          "thicknessNative": 0.027034129667008758,
+          "extrusionSign": 1,
+          "meanIoU": 0.7044512804961096
+        },
+        {
+          "thicknessNative": 0.03003792185223195,
+          "extrusionSign": -1,
+          "meanIoU": 0.7082688336545602
+        },
+        {
+          "thicknessNative": 0.03003792185223195,
+          "extrusionSign": 1,
+          "meanIoU": 0.7011653025077744
+        },
+        {
+          "thicknessNative": 0.03304171403745515,
+          "extrusionSign": -1,
+          "meanIoU": 0.7039513731037736
+        },
+        {
+          "thicknessNative": 0.03304171403745515,
+          "extrusionSign": 1,
+          "meanIoU": 0.697394144665276
+        },
+        {
+          "thicknessNative": 0.03604550622267834,
+          "extrusionSign": -1,
+          "meanIoU": 0.6994754704487414
+        },
+        {
+          "thicknessNative": 0.03604550622267834,
+          "extrusionSign": 1,
+          "meanIoU": 0.6935129770214264
+        },
+        {
+          "thicknessNative": 0.03904929840790154,
+          "extrusionSign": -1,
+          "meanIoU": 0.6946011563825207
+        },
+        {
+          "thicknessNative": 0.03904929840790154,
+          "extrusionSign": 1,
+          "meanIoU": 0.690412797985339
+        },
+        {
+          "thicknessNative": 0.04205309059312474,
+          "extrusionSign": -1,
+          "meanIoU": 0.6895868562353156
+        },
+        {
+          "thicknessNative": 0.04205309059312474,
+          "extrusionSign": 1,
+          "meanIoU": 0.6876263613318123
+        },
+        {
+          "thicknessNative": 0.045056882778347934,
+          "extrusionSign": -1,
+          "meanIoU": 0.6836430900026149
+        },
+        {
+          "thicknessNative": 0.045056882778347934,
+          "extrusionSign": 1,
+          "meanIoU": 0.6833305159453211
+        },
+        {
+          "thicknessNative": 0.04806067496357112,
+          "extrusionSign": -1,
+          "meanIoU": 0.6781085274724954
+        },
+        {
+          "thicknessNative": 0.04806067496357112,
+          "extrusionSign": 1,
+          "meanIoU": 0.6789684985877296
+        },
+        {
+          "thicknessNative": 0.05106446714879432,
+          "extrusionSign": -1,
+          "meanIoU": 0.6723028320780831
+        },
+        {
+          "thicknessNative": 0.05106446714879432,
+          "extrusionSign": 1,
+          "meanIoU": 0.6742034434833487
+        },
+        {
+          "thicknessNative": 0.05406825933401752,
+          "extrusionSign": -1,
+          "meanIoU": 0.6663099013265317
+        },
+        {
+          "thicknessNative": 0.05406825933401752,
+          "extrusionSign": 1,
+          "meanIoU": 0.6677839518966895
+        },
+        {
+          "thicknessNative": 0.05707205151924071,
+          "extrusionSign": -1,
+          "meanIoU": 0.660822133581483
+        },
+        {
+          "thicknessNative": 0.05707205151924071,
+          "extrusionSign": 1,
+          "meanIoU": 0.6611952683309931
+        },
+        {
+          "thicknessNative": 0.06007584370446391,
+          "extrusionSign": -1,
+          "meanIoU": 0.6555538103195617
+        },
+        {
+          "thicknessNative": 0.06007584370446391,
+          "extrusionSign": 1,
+          "meanIoU": 0.6556288002073268
+        },
+        {
+          "thicknessNative": 0.06307963588968711,
+          "extrusionSign": -1,
+          "meanIoU": 0.6502851353734527
+        },
+        {
+          "thicknessNative": 0.06307963588968711,
+          "extrusionSign": 1,
+          "meanIoU": 0.6499917278835228
+        },
+        {
+          "thicknessNative": 0.0660834280749103,
+          "extrusionSign": -1,
+          "meanIoU": 0.6452956427220006
+        },
+        {
+          "thicknessNative": 0.0660834280749103,
+          "extrusionSign": 1,
+          "meanIoU": 0.6442587956575071
+        },
+        {
+          "thicknessNative": 0.06908722026013349,
+          "extrusionSign": -1,
+          "meanIoU": 0.6402030232067576
+        },
+        {
+          "thicknessNative": 0.06908722026013349,
+          "extrusionSign": 1,
+          "meanIoU": 0.6382297908672668
+        },
+        {
+          "thicknessNative": 0.07209101244535669,
+          "extrusionSign": -1,
+          "meanIoU": 0.635234839872512
+        },
+        {
+          "thicknessNative": 0.07209101244535669,
+          "extrusionSign": 1,
+          "meanIoU": 0.6328452805730618
+        },
+        {
+          "thicknessNative": 0.07509480463057988,
+          "extrusionSign": -1,
+          "meanIoU": 0.6302131043683824
+        },
+        {
+          "thicknessNative": 0.07509480463057988,
+          "extrusionSign": 1,
+          "meanIoU": 0.6276372549140051
+        },
+        {
+          "thicknessNative": 0.07809859681580308,
+          "extrusionSign": -1,
+          "meanIoU": 0.6257460657460993
+        },
+        {
+          "thicknessNative": 0.07809859681580308,
+          "extrusionSign": 1,
+          "meanIoU": 0.6224329961616103
+        },
+        {
+          "thicknessNative": 0.08110238900102627,
+          "extrusionSign": -1,
+          "meanIoU": 0.6213413632726508
+        },
+        {
+          "thicknessNative": 0.08110238900102627,
+          "extrusionSign": 1,
+          "meanIoU": 0.6171065702907264
+        },
+        {
+          "thicknessNative": 0.08410618118624948,
+          "extrusionSign": -1,
+          "meanIoU": 0.6166656608370219
+        },
+        {
+          "thicknessNative": 0.08410618118624948,
+          "extrusionSign": 1,
+          "meanIoU": 0.6118703261834827
+        },
+        {
+          "thicknessNative": 0.08710997337147268,
+          "extrusionSign": -1,
+          "meanIoU": 0.6118136848488098
+        },
+        {
+          "thicknessNative": 0.08710997337147268,
+          "extrusionSign": 1,
+          "meanIoU": 0.6069962303330285
+        },
+        {
+          "thicknessNative": 0.09011376555669585,
+          "extrusionSign": -1,
+          "meanIoU": 0.6074648942918337
+        },
+        {
+          "thicknessNative": 0.09011376555669585,
+          "extrusionSign": 1,
+          "meanIoU": 0.6019665553669972
+        },
+        {
+          "thicknessNative": 0.09311755774191906,
+          "extrusionSign": -1,
+          "meanIoU": 0.6024479414736458
+        },
+        {
+          "thicknessNative": 0.09311755774191906,
+          "extrusionSign": 1,
+          "meanIoU": 0.5970105540041463
+        },
+        {
+          "thicknessNative": 0.09612134992714225,
+          "extrusionSign": -1,
+          "meanIoU": 0.5984226161793306
+        },
+        {
+          "thicknessNative": 0.09612134992714225,
+          "extrusionSign": 1,
+          "meanIoU": 0.5925077525205993
+        },
+        {
+          "thicknessNative": 0.09912514211236545,
+          "extrusionSign": -1,
+          "meanIoU": 0.5941468736654788
+        },
+        {
+          "thicknessNative": 0.09912514211236545,
+          "extrusionSign": 1,
+          "meanIoU": 0.5880051821608961
+        },
+        {
+          "thicknessNative": 0.10212893429758864,
+          "extrusionSign": -1,
+          "meanIoU": 0.5902136856094325
+        },
+        {
+          "thicknessNative": 0.10212893429758864,
+          "extrusionSign": 1,
+          "meanIoU": 0.5831835100178324
+        },
+        {
+          "thicknessNative": 0.10513272648281184,
+          "extrusionSign": -1,
+          "meanIoU": 0.5861541208971799
+        },
+        {
+          "thicknessNative": 0.10513272648281184,
+          "extrusionSign": 1,
+          "meanIoU": 0.578541512690251
+        },
+        {
+          "thicknessNative": 0.10813651866803504,
+          "extrusionSign": -1,
+          "meanIoU": 0.5820514852069987
+        },
+        {
+          "thicknessNative": 0.10813651866803504,
+          "extrusionSign": 1,
+          "meanIoU": 0.5740399924399858
+        },
+        {
+          "thicknessNative": 0.11114031085325822,
+          "extrusionSign": -1,
+          "meanIoU": 0.5782052296088382
+        },
+        {
+          "thicknessNative": 0.11114031085325822,
+          "extrusionSign": 1,
+          "meanIoU": 0.5698575170170355
+        },
+        {
+          "thicknessNative": 0.11414410303848142,
+          "extrusionSign": -1,
+          "meanIoU": 0.5744321532422665
+        },
+        {
+          "thicknessNative": 0.11414410303848142,
+          "extrusionSign": 1,
+          "meanIoU": 0.5655348098977567
+        },
+        {
+          "thicknessNative": 0.11714789522370461,
+          "extrusionSign": -1,
+          "meanIoU": 0.5708591083686192
+        },
+        {
+          "thicknessNative": 0.11714789522370461,
+          "extrusionSign": 1,
+          "meanIoU": 0.5612726975623604
+        },
+        {
+          "thicknessNative": 0.12015168740892782,
+          "extrusionSign": -1,
+          "meanIoU": 0.5671843665726259
+        },
+        {
+          "thicknessNative": 0.12015168740892782,
+          "extrusionSign": 1,
+          "meanIoU": 0.5568846938856122
+        },
+        {
+          "thicknessNative": 0.12315547959415102,
+          "extrusionSign": -1,
+          "meanIoU": 0.5632435613189306
+        },
+        {
+          "thicknessNative": 0.12315547959415102,
+          "extrusionSign": 1,
+          "meanIoU": 0.5527779062055396
+        },
+        {
+          "thicknessNative": 0.12615927177937422,
+          "extrusionSign": -1,
+          "meanIoU": 0.5597764566579158
+        },
+        {
+          "thicknessNative": 0.12615927177937422,
+          "extrusionSign": 1,
+          "meanIoU": 0.5487275669659305
+        },
+        {
+          "thicknessNative": 0.1291630639645974,
+          "extrusionSign": -1,
+          "meanIoU": 0.55639136831495
+        },
+        {
+          "thicknessNative": 0.1291630639645974,
+          "extrusionSign": 1,
+          "meanIoU": 0.5448870503822744
+        },
+        {
+          "thicknessNative": 0.1321668561498206,
+          "extrusionSign": -1,
+          "meanIoU": 0.5530241439340604
+        },
+        {
+          "thicknessNative": 0.1321668561498206,
+          "extrusionSign": 1,
+          "meanIoU": 0.5407353451090174
+        },
+        {
+          "thicknessNative": 0.1351706483350438,
+          "extrusionSign": -1,
+          "meanIoU": 0.5495973428908515
+        },
+        {
+          "thicknessNative": 0.1351706483350438,
+          "extrusionSign": 1,
+          "meanIoU": 0.5370245831182446
+        },
+        {
+          "thicknessNative": 0.13817444052026698,
+          "extrusionSign": -1,
+          "meanIoU": 0.5462897064019777
+        },
+        {
+          "thicknessNative": 0.13817444052026698,
+          "extrusionSign": 1,
+          "meanIoU": 0.5330351476450689
+        },
+        {
+          "thicknessNative": 0.14117823270549018,
+          "extrusionSign": -1,
+          "meanIoU": 0.54331014536017
+        },
+        {
+          "thicknessNative": 0.14117823270549018,
+          "extrusionSign": 1,
+          "meanIoU": 0.5294016823027625
+        },
+        {
+          "thicknessNative": 0.14418202489071338,
+          "extrusionSign": -1,
+          "meanIoU": 0.5401351988333613
+        },
+        {
+          "thicknessNative": 0.14418202489071338,
+          "extrusionSign": 1,
+          "meanIoU": 0.5254842375222787
+        },
+        {
+          "thicknessNative": 0.14718581707593656,
+          "extrusionSign": -1,
+          "meanIoU": 0.5369333671872056
+        },
+        {
+          "thicknessNative": 0.14718581707593656,
+          "extrusionSign": 1,
+          "meanIoU": 0.5219584418917571
+        },
+        {
+          "thicknessNative": 0.15018960926115976,
+          "extrusionSign": -1,
+          "meanIoU": 0.5339805734118475
+        },
+        {
+          "thicknessNative": 0.15018960926115976,
+          "extrusionSign": 1,
+          "meanIoU": 0.5183807023309736
+        }
+      ],
+      "searchWinner": {
+        "thicknessNative": 0.003003792185223195,
+        "extrusionSign": -1,
+        "meanIoU": 0.7344271962972628
+      },
+      "searchAtBound": true,
+      "equalScoreHypotheses": [
+        {
+          "thicknessNative": 0.003003792185223195,
+          "extrusionSign": -1,
+          "meanIoU": 0.7344271962972628
+        }
+      ],
+      "views": [
+        {
+          "photo": 1,
+          "overlay": "post-box-2-volume-photo-1.jpg",
+          "legend": "cyan: closed extrusion projection; pink: exact same-instance SAM; silhouette mismatch includes occlusion and mask errors"
+        },
+        {
+          "photo": 2,
+          "overlay": "post-box-2-volume-photo-2.jpg",
+          "legend": "cyan: closed extrusion projection; pink: exact same-instance SAM; silhouette mismatch includes occlusion and mask errors"
+        },
+        {
+          "photo": 3,
+          "overlay": "post-box-2-volume-photo-3.jpg",
+          "legend": "cyan: closed extrusion projection; pink: exact same-instance SAM; silhouette mismatch includes occlusion and mask errors"
+        },
+        {
+          "photo": 4,
+          "overlay": "post-box-2-volume-photo-4.jpg",
+          "legend": "cyan: closed extrusion projection; pink: exact same-instance SAM; silhouette mismatch includes occlusion and mask errors"
+        }
+      ]
+    }
+  ],
+  "method": "Fixed observed face, bounded thickness and signed normal extrusion; four-view same-instance SAM silhouettes",
+  "shapeAssumption": "Closed rectangular prism; unseen thickness and rear surface are hypotheses, not reconstructed physical housing detail",
+  "metricScope": "Full original image, raw pixels, projected amodal silhouette versus the visible same-instance SAM mask. No ROI crop, no dilation, no exclusion of mismatch, no scene-occlusion correction.",
+  "searchPolicy": {
+    "thicknessToVisibleWidth": [
+      0.02,
+      1.0
+    ],
+    "samplesPerSign": 50,
+    "signs": [
+      -1,
+      1
+    ],
+    "objective": "maximum mean full-canonical-image SAM IoU across all four views",
+    "boundsMeaning": "Explicit shape hypothesis relative to visible-face width, not measured thickness or a metric dimension"
+  },
+  "wallSeconds": 10.858446094000001
+}

@@ -1,0 +1,56 @@
+{
+  "ground": {
+    "normal": [
+      0.007714319042861462,
+      -0.9941897988319397,
+      -0.10736464709043503
+    ],
+    "offset": 2.4435176849365234,
+    "supportPoints": 11474,
+    "residualP95Native": 0.027687382698059083,
+    "sourcePhotos": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "method": "local source pointmap support with original cameras",
+    "status": "conditional local floor fit; concrete-floor semantic identity unverified",
+    "displayExtent": "existing fitted footprint projected onto the physical-clearance ground plane"
+  },
+  "conditionalMPerNative": 0.6844702474893984,
+  "objects": {
+    "post-box-1": {
+      "pointNative": [
+        1.5332756042480469,
+        1.6970924139022827,
+        3.818737268447876
+      ],
+      "footNative": [
+        1.5305129792730146,
+        2.053128190088792,
+        3.8571863206376533
+      ],
+      "label": "右侧光幕 24.51 cm（条件估计）",
+      "heightNative": 0.35811651125824273,
+      "modelFile": "post-box-1-volume-candidate.glb",
+      "modelSha256": "f8bb5efd87e1b42bd4b3dda717d00ea5cb446ae5b29e20263a37fa46eee49e85"
+    },
+    "post-box-2": {
+      "pointNative": [
+        -1.2163102626800537,
+        1.7325599193572998,
+        3.34771466255188
+      ],
+      "footNative": [
+        -1.219027362074368,
+        2.0827285454188984,
+        3.3855301088614445
+      ],
+      "label": "左侧光幕 24.11 cm（条件估计）",
+      "heightNative": 0.35221507248636863,
+      "modelFile": "post-box-2-volume-candidate.glb",
+      "modelSha256": "9db171e6ff78d2e6c44359a8cb7b98e7f14377f255799dfa51452eedc95f9243"
+    }
+  }
+}
