@@ -18648,12 +18648,13 @@
       },
       "representation": "image-supported primitive",
       "notes": [
-        "Cross-view links require projected mesh support inside the instance mask. Primitive thickness is assumed."
+        "Cross-view links require projected mesh support inside the instance mask. Primitive thickness is assumed.",
+        "Axis is constrained perpendicular to the inferred ground for display; it is not a measured physical axis."
       ],
       "modelDimensionsNative": [
-        0.09610795974731445,
-        2.5988335013389587,
-        0.1600050926208496
+        0.1310521364212036,
+        2.6090016961097717,
+        0.46283936500549316
       ]
     },
     {
@@ -20324,12 +20325,13 @@
       },
       "representation": "image-supported primitive",
       "notes": [
-        "Cross-view links require projected mesh support inside the instance mask. Primitive thickness is assumed."
+        "Cross-view links require projected mesh support inside the instance mask. Primitive thickness is assumed.",
+        "Axis is constrained perpendicular to the inferred ground for display; it is not a measured physical axis."
       ],
       "modelDimensionsNative": [
-        0.14840936660766602,
-        2.561028003692627,
-        0.1026601791381836
+        0.19376838207244873,
+        2.572475492954254,
+        0.40101051330566406
       ]
     },
     {
@@ -21552,12 +21554,13 @@
       },
       "representation": "image-supported primitive",
       "notes": [
-        "Cross-view links require projected mesh support inside the instance mask. Primitive thickness is assumed."
+        "Cross-view links require projected mesh support inside the instance mask. Primitive thickness is assumed.",
+        "Axis is constrained perpendicular to the inferred ground for display; it is not a measured physical axis."
       ],
       "modelDimensionsNative": [
-        0.2810177206993103,
-        1.4477576613426208,
-        0.2810177803039551
+        0.2493346929550171,
+        1.47406804561615,
+        0.39311885833740234
       ]
     },
     {
@@ -22348,12 +22351,13 @@
       },
       "representation": "image-supported primitive",
       "notes": [
-        "Cross-view links require projected mesh support inside the instance mask. Primitive thickness is assumed."
+        "Cross-view links require projected mesh support inside the instance mask. Primitive thickness is assumed.",
+        "Axis is constrained perpendicular to the inferred ground for display; it is not a measured physical axis."
       ],
       "modelDimensionsNative": [
-        0.2907884120941162,
-        1.4575477838516235,
-        0.2907886505126953
+        0.2862215042114258,
+        1.4906108379364014,
+        0.43105125427246094
       ]
     },
     {
@@ -44043,8 +44047,8 @@
       },
       "representation": "parametric component; image-supported position/envelope",
       "notes": [
-        "Three supplied dimensions constrain one perspective-fit 3D button; component heights and gray housing shape are fitted nuisance parameters.",
-        "Saved scene cameras stay fixed. Unsupported candidates are visual hypotheses and do not establish a metric scale."
+        "The failed 3D calibration candidate is diagnostic only and does not replace the main model.",
+        "The main button retains its image-supported envelope display; part-height proportions and unseen thickness are rendering assumptions, not measured dimensions."
       ],
       "referenceGeometry": {
         "features": {
@@ -44067,8 +44071,8 @@
           "widthM": null
         },
         "renderingAssumptions": [
-          "Three supplied dimensions constrain one perspective-fit 3D button; component heights and gray housing shape are fitted nuisance parameters.",
-          "Saved scene cameras stay fixed. Unsupported candidates are visual hypotheses and do not establish a metric scale."
+          "The failed 3D calibration candidate is diagnostic only and does not replace the main model.",
+          "The main button retains its image-supported envelope display; part-height proportions and unseen thickness are rendering assumptions, not measured dimensions."
         ]
       }
     },

@@ -1,0 +1,914 @@
+{
+  "status": "candidate_found",
+  "source": "/Users/adam/Desktop/panoptes-public/research-notes/workcell-oneshot-correct-2026-10-01-b",
+  "scope": "Only replay saved RGB edge candidates against saved cameras. No GPU, no altered contours, no metric scale and no evaluation truth. Not a new full report or accepted physical measurement.",
+  "seconds": 3.5538259169552475,
+  "before": {
+    "pointNative": [
+      0.6988282594300514,
+      0.7264296217197475,
+      1.624659661653335
+    ],
+    "endsNative": [
+      [
+        0.6889254610986552,
+        0.7264068362126177,
+        1.6241983653646879
+      ],
+      [
+        2.200802237872016,
+        0.7298855376789783,
+        1.6946252409485518
+      ]
+    ],
+    "sharedEndsNative": [
+      [
+        0.698167429615599,
+        0.7264281012058538,
+        1.6246288786028646
+      ],
+      [
+        0.6994890892445039,
+        0.7264311422336411,
+        1.6246904447038055
+      ]
+    ],
+    "sharedSegmentsNative": [
+      [
+        [
+          0.698167429615599,
+          0.7264281012058539,
+          1.6246288786028646
+        ],
+        [
+          0.6994890892445038,
+          0.7264311422336411,
+          1.6246904447038055
+        ]
+      ]
+    ],
+    "visibleSegmentsNativeByPhoto": {
+      "1": [
+        [
+          [
+            0.698167429615599,
+            0.7264281012058539,
+            1.6246288786028646
+          ],
+          [
+            0.7052369023786588,
+            0.726444367468849,
+            1.6249581917363
+          ]
+        ]
+      ],
+      "3": [
+        [
+          [
+            0.6889254610986552,
+            0.7264068362126177,
+            1.6241983653646879
+          ],
+          [
+            0.6994890892445038,
+            0.7264311422336411,
+            1.6246904447038055
+          ]
+        ]
+      ],
+      "2": [
+        [
+          [
+            2.1835778568450435,
+            0.7298459058250758,
+            1.6938228876362769
+          ],
+          [
+            2.200802237872016,
+            0.7298855376789783,
+            1.6946252409485518
+          ]
+        ]
+      ]
+    },
+    "unobservedGapSegmentsNative": [
+      [
+        [
+          0.7052369023786588,
+          0.726444367468849,
+          1.6249581917363
+        ],
+        [
+          2.1835778568450435,
+          0.7298459058250758,
+          1.6938228876362769
+        ]
+      ]
+    ],
+    "envelopeScope": "endsNative spans the fitted line envelope; only listed visible/shared segments are observed",
+    "method": "three-parameter horizontal line fit to raw visible-endpoint projection-line residuals; origin-nearest gauge",
+    "axisNative": [
+      0.9989141631979401,
+      0.002298417581161094,
+      0.04653183683437632
+    ],
+    "reprojectionErrorsRawPx": [
+      0.5935547905679958,
+      0.22007389408968347,
+      1.7224526721142706
+    ],
+    "maxReprojectionErrorRawPx": 1.7224526721142706,
+    "condition": 38.41572203875061,
+    "sourcePhotos": [
+      1,
+      2,
+      3
+    ],
+    "observations": [
+      {
+        "photo": 1,
+        "rawEnds": [
+          [
+            2807.4049012087944,
+            3363.894515449424
+          ],
+          [
+            2820.030766331768,
+            3362.5322293436893
+          ]
+        ],
+        "uv": [
+          [
+            363.4876723789178,
+            433.06893280372014
+          ],
+          [
+            365.12435859856254,
+            432.8925654061027
+          ]
+        ],
+        "sourceSegmentIndex": 221,
+        "faceSideIds": [
+          21,
+          67
+        ],
+        "faceWidthRawPx": 17.324722968754543,
+        "faceSideEdgesRaw": [
+          [
+            [
+              2807.8018188476562,
+              3360.081787109375
+            ],
+            [
+              2809.0352172851562,
+              3350.079833984375
+            ]
+          ],
+          [
+            [
+              2825.0317993164062,
+              3358.700439453125
+            ],
+            [
+              2843.6644439697266,
+              3011.194091796875
+            ]
+          ]
+        ],
+        "faceWidthBasis": "locally observed fragments of supported collinear RGB sides at this terminal segment",
+        "aboveColorFraction": 1.0,
+        "belowColorFraction": 0.0,
+        "belowInstanceFraction": 0.0,
+        "obstructionFraction": 0.0,
+        "sideEndContactRawPx": 0.178439661860466,
+        "sideEndAxialGapRawPx": 3.8465006351470947,
+        "visibleLengthRawPx": 12.69914559947938,
+        "bodyWidthRawPx": 145.81594601273537,
+        "score": 0.7330071379717022,
+        "position": 2219.495849609375,
+        "rawSegments": [
+          [
+            [
+              2807.4067993164062,
+              3363.912109375
+            ],
+            [
+              2820.0288696289062,
+              3362.5146484375
+            ]
+          ]
+        ],
+        "uvSegments": [
+          [
+            [
+              363.48791842990454,
+              433.07121058872775
+            ],
+            [
+              365.124112729673,
+              432.8902893066407
+            ]
+          ]
+        ],
+        "sourceSegments": [
+          {
+            "segmentIndex": 221,
+            "rawEnds": [
+              [
+                2807.4067993164062,
+                3363.912109375
+              ],
+              [
+                2820.0288696289062,
+                3362.5146484375
+              ]
+            ]
+          }
+        ],
+        "fragmentCount": 1,
+        "lineOriginRaw": [
+          2813.7177734375,
+          3363.21337890625
+        ],
+        "lineDirectionRaw": [
+          0.9942294955253601,
+          -0.10727383941411972
+        ],
+        "visibleIntervalsRawPx": [
+          [
+            -6.349512116787082,
+            6.3496334826922975
+          ]
+        ],
+        "gapIntervalsRawPx": [],
+        "spanAccepted": true,
+        "supportScope": "Only rawSegments are observed; rawEnds is the collinear envelope and may span gaps."
+      },
+      {
+        "photo": 3,
+        "rawEnds": [
+          [
+            2400.5708568690984,
+            3141.36719683095
+          ],
+          [
+            2415.6634966572374,
+            3140.5917886472935
+          ]
+        ],
+        "uv": [
+          [
+            310.7499258904387,
+            404.25959244686413
+          ],
+          [
+            312.70637919630855,
+            404.15920478023
+          ]
+        ],
+        "sourceSegmentIndex": 1031,
+        "faceSideIds": [
+          104,
+          657
+        ],
+        "faceWidthRawPx": 36.41636549611036,
+        "faceSideEdgesRaw": [
+          [
+            [
+              2404.9450759887695,
+              3026.154541015625
+            ],
+            [
+              2402.3571701049805,
+              3076.085205078125
+            ]
+          ],
+          [
+            [
+              2441.8101959228516,
+              3019.87158203125
+            ],
+            [
+              2438.593193054199,
+              3081.1495361328125
+            ]
+          ]
+        ],
+        "faceWidthBasis": "locally observed fragments of supported collinear RGB sides at this terminal segment",
+        "aboveColorFraction": 1.0,
+        "belowColorFraction": 0.0,
+        "belowInstanceFraction": 0.0,
+        "obstructionFraction": 0.0,
+        "sideEndContactRawPx": 0.012636661529541016,
+        "sideEndAxialGapRawPx": 44.08160400390625,
+        "visibleLengthRawPx": 15.112545177885295,
+        "bodyWidthRawPx": 126.43107014894485,
+        "score": 0.41499323098290714,
+        "position": 1926.4327392578125,
+        "rawSegments": [
+          [
+            [
+              2415.6625747680664,
+              3140.5738525390625
+            ],
+            [
+              2400.5717849731445,
+              3141.38525390625
+            ]
+          ]
+        ],
+        "uvSegments": [
+          [
+            [
+              312.7062596921568,
+              404.15688269478943
+            ],
+            [
+              310.75004620022247,
+              404.26193019321994
+            ]
+          ]
+        ],
+        "sourceSegments": [
+          {
+            "segmentIndex": 1031,
+            "rawEnds": [
+              [
+                2415.6625747680664,
+                3140.5738525390625
+              ],
+              [
+                2400.5717849731445,
+                3141.38525390625
+              ]
+            ]
+          }
+        ],
+        "fragmentCount": 1,
+        "lineOriginRaw": [
+          2408.1171875,
+          3140.9794921875
+        ],
+        "lineDirectionRaw": [
+          0.9986828565597534,
+          -0.05130890756845474
+        ],
+        "visibleIntervalsRawPx": [
+          [
+            -7.556283339935362,
+            7.556261837949933
+          ]
+        ],
+        "gapIntervalsRawPx": [],
+        "spanAccepted": true,
+        "supportScope": "Only rawSegments are observed; rawEnds is the collinear envelope and may span gaps."
+      },
+      {
+        "photo": 2,
+        "rawEnds": [
+          [
+            2589.9288247189734,
+            3607.320691548819
+          ],
+          [
+            2625.153487668254,
+            3613.550365566629
+          ]
+        ],
+        "uv": [
+          [
+            335.29632913023727,
+            464.58392881658824
+          ],
+          [
+            339.86248914218106,
+            465.3904491135368
+          ]
+        ],
+        "sourceSegmentIndex": 192,
+        "faceSideIds": [
+          88,
+          142
+        ],
+        "faceWidthRawPx": 55.03982140321796,
+        "faceSideEdgesRaw": [
+          [
+            [
+              2589.7348861694336,
+              3543.876953125
+            ],
+            [
+              2588.4787063598633,
+              3448.8603515625
+            ]
+          ],
+          [
+            [
+              2644.5209197998047,
+              3551.357666015625
+            ],
+            [
+              2640.7753143310547,
+              3357.607666015625
+            ]
+          ]
+        ],
+        "faceWidthBasis": "locally observed fragments of supported collinear RGB sides at this terminal segment",
+        "aboveColorFraction": 1.0,
+        "belowColorFraction": 0.0,
+        "belowInstanceFraction": 0.0,
+        "obstructionFraction": 0.0,
+        "sideEndContactRawPx": 0.5117980241775513,
+        "sideEndAxialGapRawPx": 9.48469066619873,
+        "visibleLengthRawPx": 35.771297714956745,
+        "bodyWidthRawPx": 103.32359926402569,
+        "score": 0.6499166749270255,
+        "position": 2315.535400390625,
+        "rawSegments": [
+          [
+            [
+              2589.9288482666016,
+              3607.320556640625
+            ],
+            [
+              2625.1534576416016,
+              3613.550537109375
+            ]
+          ]
+        ],
+        "uvSegments": [
+          [
+            [
+              335.2963321827076,
+              464.5839113507953
+            ],
+            [
+              339.8624852498372,
+              465.39047132219594
+            ]
+          ]
+        ],
+        "sourceSegments": [
+          {
+            "segmentIndex": 192,
+            "rawEnds": [
+              [
+                2589.9288482666016,
+                3607.320556640625
+              ],
+              [
+                2625.1534576416016,
+                3613.550537109375
+              ]
+            ]
+          }
+        ],
+        "fragmentCount": 1,
+        "lineOriginRaw": [
+          2607.541259765625,
+          3610.435546875
+        ],
+        "lineDirectionRaw": [
+          0.9847186207771301,
+          0.17415286600589752
+        ],
+        "visibleIntervalsRawPx": [
+          [
+            -17.885754036774415,
+            17.88554367818233
+          ]
+        ],
+        "gapIntervalsRawPx": [],
+        "spanAccepted": true,
+        "supportScope": "Only rawSegments are observed; rawEnds is the collinear envelope and may span gaps."
+      }
+    ],
+    "pixelSensitivityPointsNative": [
+      [
+        0.698167429615599,
+        0.7264281012058539,
+        1.6246288786028646
+      ],
+      [
+        0.6994890892445038,
+        0.7264311422336411,
+        1.6246904447038055
+      ],
+      [
+        0.6847789911968013,
+        0.713228930075997,
+        1.5933431805847185
+      ],
+      [
+        0.688065262941876,
+        0.7132362779862016,
+        1.593498332969399
+      ],
+      [
+        0.68102557630422,
+        0.7086297047250779,
+        1.584826076733099
+      ],
+      [
+        0.6848769702721483,
+        0.708638727903515,
+        1.5850039189412028
+      ],
+      [
+        0.698109458714392,
+        0.7263694247382335,
+        1.624493949582187
+      ],
+      [
+        0.6994399970156284,
+        0.7263723567841274,
+        1.6245571837769137
+      ],
+      [
+        0.6982253126042652,
+        0.7264866904530719,
+        1.624763597592301
+      ],
+      [
+        0.6995381082864858,
+        0.7264898385488382,
+        1.6248235151672628
+      ]
+    ]
+  },
+  "after": {
+    "pointNative": [
+      0.6932510138897441,
+      0.7203100661698728,
+      1.6106978605291515
+    ],
+    "endsNative": [
+      [
+        0.6993873615426828,
+        0.7202629573071004,
+        1.6115772485412254
+      ],
+      [
+        0.6836000461410623,
+        0.7203841568409051,
+        1.6093147991670662
+      ]
+    ],
+    "sharedEndsNative": [
+      [
+        0.6943755354663902,
+        0.7203014331954009,
+        1.6108590135227157
+      ],
+      [
+        0.692126492313098,
+        0.7203186991443448,
+        1.6105367075355874
+      ]
+    ],
+    "sharedSegmentsNative": [
+      [
+        [
+          0.6943755354663902,
+          0.7203014331954009,
+          1.6108590135227157
+        ],
+        [
+          0.6921264923130979,
+          0.7203186991443448,
+          1.6105367075355874
+        ]
+      ]
+    ],
+    "visibleSegmentsNativeByPhoto": {
+      "1": [
+        [
+          [
+            0.6993873615426828,
+            0.7202629573071003,
+            1.6115772485412254
+          ],
+          [
+            0.6921264923130979,
+            0.7203186991443448,
+            1.6105367075355874
+          ]
+        ]
+      ],
+      "3": [
+        [
+          [
+            0.6943755354663902,
+            0.7203014331954009,
+            1.6108590135227157
+          ],
+          [
+            0.6836000461410622,
+            0.7203841568409051,
+            1.6093147991670662
+          ]
+        ]
+      ]
+    },
+    "unobservedGapSegmentsNative": [],
+    "envelopeScope": "endsNative spans the fitted line envelope; only listed visible/shared segments are observed",
+    "method": "three-parameter horizontal line fit to raw visible-endpoint projection-line residuals; origin-nearest gauge",
+    "axisNative": [
+      -0.9898583264830495,
+      0.007599162026629756,
+      -0.14185466586851936
+    ],
+    "reprojectionErrorsRawPx": [
+      0.21746234645747414,
+      0.19413044979038832
+    ],
+    "maxReprojectionErrorRawPx": 0.21746234645747414,
+    "condition": 38.77004791885263,
+    "sourcePhotos": [
+      1,
+      3
+    ],
+    "observations": [
+      {
+        "photo": 1,
+        "rawEnds": [
+          [
+            2807.4049012087944,
+            3363.894515449424
+          ],
+          [
+            2820.030766331768,
+            3362.5322293436893
+          ]
+        ],
+        "uv": [
+          [
+            363.4876723789178,
+            433.06893280372014
+          ],
+          [
+            365.12435859856254,
+            432.8925654061027
+          ]
+        ],
+        "sourceSegmentIndex": 221,
+        "faceSideIds": [
+          21,
+          67
+        ],
+        "faceWidthRawPx": 17.324722968754543,
+        "faceSideEdgesRaw": [
+          [
+            [
+              2807.8018188476562,
+              3360.081787109375
+            ],
+            [
+              2809.0352172851562,
+              3350.079833984375
+            ]
+          ],
+          [
+            [
+              2825.0317993164062,
+              3358.700439453125
+            ],
+            [
+              2843.6644439697266,
+              3011.194091796875
+            ]
+          ]
+        ],
+        "faceWidthBasis": "locally observed fragments of supported collinear RGB sides at this terminal segment",
+        "aboveColorFraction": 1.0,
+        "belowColorFraction": 0.0,
+        "belowInstanceFraction": 0.0,
+        "obstructionFraction": 0.0,
+        "sideEndContactRawPx": 0.178439661860466,
+        "sideEndAxialGapRawPx": 3.8465006351470947,
+        "visibleLengthRawPx": 12.69914559947938,
+        "bodyWidthRawPx": 145.81594601273537,
+        "score": 0.7330071379717022,
+        "position": 2219.495849609375,
+        "rawSegments": [
+          [
+            [
+              2807.4067993164062,
+              3363.912109375
+            ],
+            [
+              2820.0288696289062,
+              3362.5146484375
+            ]
+          ]
+        ],
+        "uvSegments": [
+          [
+            [
+              363.48791842990454,
+              433.07121058872775
+            ],
+            [
+              365.124112729673,
+              432.8902893066407
+            ]
+          ]
+        ],
+        "sourceSegments": [
+          {
+            "segmentIndex": 221,
+            "rawEnds": [
+              [
+                2807.4067993164062,
+                3363.912109375
+              ],
+              [
+                2820.0288696289062,
+                3362.5146484375
+              ]
+            ]
+          }
+        ],
+        "fragmentCount": 1,
+        "lineOriginRaw": [
+          2813.7177734375,
+          3363.21337890625
+        ],
+        "lineDirectionRaw": [
+          0.9942294955253601,
+          -0.10727383941411972
+        ],
+        "visibleIntervalsRawPx": [
+          [
+            -6.349512116787082,
+            6.3496334826922975
+          ]
+        ],
+        "gapIntervalsRawPx": [],
+        "spanAccepted": true,
+        "supportScope": "Only rawSegments are observed; rawEnds is the collinear envelope and may span gaps."
+      },
+      {
+        "photo": 3,
+        "rawEnds": [
+          [
+            2400.5708568690984,
+            3141.36719683095
+          ],
+          [
+            2415.6634966572374,
+            3140.5917886472935
+          ]
+        ],
+        "uv": [
+          [
+            310.7499258904387,
+            404.25959244686413
+          ],
+          [
+            312.70637919630855,
+            404.15920478023
+          ]
+        ],
+        "sourceSegmentIndex": 1031,
+        "faceSideIds": [
+          104,
+          657
+        ],
+        "faceWidthRawPx": 36.41636549611036,
+        "faceSideEdgesRaw": [
+          [
+            [
+              2404.9450759887695,
+              3026.154541015625
+            ],
+            [
+              2402.3571701049805,
+              3076.085205078125
+            ]
+          ],
+          [
+            [
+              2441.8101959228516,
+              3019.87158203125
+            ],
+            [
+              2438.593193054199,
+              3081.1495361328125
+            ]
+          ]
+        ],
+        "faceWidthBasis": "locally observed fragments of supported collinear RGB sides at this terminal segment",
+        "aboveColorFraction": 1.0,
+        "belowColorFraction": 0.0,
+        "belowInstanceFraction": 0.0,
+        "obstructionFraction": 0.0,
+        "sideEndContactRawPx": 0.012636661529541016,
+        "sideEndAxialGapRawPx": 44.08160400390625,
+        "visibleLengthRawPx": 15.112545177885295,
+        "bodyWidthRawPx": 126.43107014894485,
+        "score": 0.41499323098290714,
+        "position": 1926.4327392578125,
+        "rawSegments": [
+          [
+            [
+              2415.6625747680664,
+              3140.5738525390625
+            ],
+            [
+              2400.5717849731445,
+              3141.38525390625
+            ]
+          ]
+        ],
+        "uvSegments": [
+          [
+            [
+              312.7062596921568,
+              404.15688269478943
+            ],
+            [
+              310.75004620022247,
+              404.26193019321994
+            ]
+          ]
+        ],
+        "sourceSegments": [
+          {
+            "segmentIndex": 1031,
+            "rawEnds": [
+              [
+                2415.6625747680664,
+                3140.5738525390625
+              ],
+              [
+                2400.5717849731445,
+                3141.38525390625
+              ]
+            ]
+          }
+        ],
+        "fragmentCount": 1,
+        "lineOriginRaw": [
+          2408.1171875,
+          3140.9794921875
+        ],
+        "lineDirectionRaw": [
+          0.9986828565597534,
+          -0.05130890756845474
+        ],
+        "visibleIntervalsRawPx": [
+          [
+            -7.556283339935362,
+            7.556261837949933
+          ]
+        ],
+        "gapIntervalsRawPx": [],
+        "spanAccepted": true,
+        "supportScope": "Only rawSegments are observed; rawEnds is the collinear envelope and may span gaps."
+      }
+    ],
+    "pixelSensitivityPointsNative": [
+      [
+        0.6943755354663902,
+        0.7203014331954009,
+        1.6108590135227157
+      ],
+      [
+        0.6921264923130979,
+        0.7203186991443448,
+        1.6105367075355874
+      ],
+      [
+        0.7045772205419422,
+        0.7320801299872909,
+        1.638716558420762
+      ],
+      [
+        0.7041489843533324,
+        0.7320834189950336,
+        1.6386551748653815
+      ],
+      [
+        0.6845175170544846,
+        0.7089195279991578,
+        1.5839399127690803
+      ],
+      [
+        0.680509050313911,
+        0.7089502878086297,
+        1.5833655958515582
+      ],
+      [
+        0.6817206851095572,
+        0.704776551793232,
+        1.5765137538555323
+      ],
+      [
+        0.6771937262686379,
+        0.7048113631341395,
+        1.5758644440205987
+      ]
+    ]
+  }
+}

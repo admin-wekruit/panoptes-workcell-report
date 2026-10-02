@@ -87865,13 +87865,13 @@
             310.73883928571433
           ],
           "modelProjectedBBox": [
-            342.03622931036176,
-            294.3582178745553,
-            358.1945875537225,
-            311.493827595042
+            338.72784248494906,
+            291.41185876543506,
+            367.33024604326414,
+            313.2594576852517
           ],
-          "bboxIoU": 0.8018042207392501,
-          "centerOffsetPx": 1.3653653748711105,
+          "bboxIoU": 0.49673622461784167,
+          "centerOffsetPx": 3.8738654306740554,
           "note": "Projected rendering envelope versus observed whole-component box; not a part-segmentation accuracy score."
         },
         {
@@ -87884,13 +87884,13 @@
             282.2566964285715
           ],
           "modelProjectedBBox": [
-            342.22710017447196,
-            267.6362643299882,
-            354.09469708755387,
-            282.5389574748034
+            336.79304960855774,
+            264.79489495258673,
+            356.64172225495173,
+            283.50668318034246
           ],
-          "bboxIoU": 0.720906320940104,
-          "centerOffsetPx": 1.7726747051890297,
+          "bboxIoU": 0.49207961773863335,
+          "centerOffsetPx": 1.0386855113562714,
           "note": "Projected rendering envelope versus observed whole-component box; not a part-segmentation accuracy score."
         },
         {
@@ -87903,20 +87903,20 @@
             298.82812500000006
           ],
           "modelProjectedBBox": [
-            356.82923530061765,
-            282.78722500109177,
-            368.95679916520305,
-            297.5914710813644
+            351.26919935710254,
+            280.0408938105947,
+            373.2976605473388,
+            298.8124248701587
           ],
-          "bboxIoU": 0.5380571859027371,
-          "centerOffsetPx": 3.3782528150186715,
+          "bboxIoU": 0.5173586395757658,
+          "centerOffsetPx": 4.255423621079899,
           "note": "Projected rendering envelope versus observed whole-component box; not a part-segmentation accuracy score."
         }
       ]
     },
     "renderingAssumptions": [
-      "Three supplied dimensions constrain one perspective-fit 3D button; component heights and gray housing shape are fitted nuisance parameters.",
-      "Saved scene cameras stay fixed. Unsupported candidates are visual hypotheses and do not establish a metric scale."
+      "The failed 3D calibration candidate is diagnostic only and does not replace the main model.",
+      "The main button retains its image-supported envelope display; part-height proportions and unseen thickness are rendering assumptions, not measured dimensions."
     ]
   }
 }

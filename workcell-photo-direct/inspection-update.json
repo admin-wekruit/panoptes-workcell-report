@@ -1,0 +1,26 @@
+{
+  "baseline": "/Users/adam/Desktop/panoptes-public/research-notes/workcell-oneshot-correct-2026-10-01-b",
+  "type": "cached-output-inspection-not-new-inference",
+  "gpuCalls": 0,
+  "additionalGpuSpendUsd": 0,
+  "originalOneShotSeconds": 366.93,
+  "modelCorrectionSeconds": 0.9212708330014721,
+  "changes": [
+    "reject unsupported button candidate from main model",
+    "align post display prior with actual floor normal",
+    "preserve frozen source observations for inspection"
+  ],
+  "pointCloudExportSeconds": 2.263,
+  "pointCloudAssetBytes": 16958556,
+  "cloudRepresentations": 101,
+  "objectRecords": 52,
+  "tests": [
+    "raw pointmap export geometry/color/projection contract",
+    "unsupported reference candidate gate",
+    "ground-normal model-axis check",
+    "finite edge support regression",
+    "existing metrology check",
+    "frontend typecheck/build",
+    "browser rotation/photo switch/point selection/model overlay"
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "scope": "Photo4 right yellow housing, post-box-1. Saved RGB is visibly bounded at the bottom. These are raw-pixel and native-unit diagnostics; none establish a physical centimetre measurement.",
+  "source": "/Users/adam/Desktop/panoptes-public/research-notes/workcell-oneshot-correct-2026-10-01-b",
+  "currentModel": "/Users/adam/Desktop/panoptes-public/research-notes/workcell-pointcloud-inspection-2026-10-01",
+  "savedGround": {
+    "normal": [
+      0.007714319042861462,
+      -0.9941897988319397,
+      -0.10736464709043503
+    ],
+    "offset": 2.4435176849365234
+  },
+  "pointmap": {
+    "maskReconstruction": "Saved canonical object polygons, exactly 3261 points; no SAM re-warp",
+    "maskPoints": 3261,
+    "validPoints": 3261,
+    "heightPercentilesNative": {
+      "min": 0.14657386541830153,
+      "p1": 0.30740607611513465,
+      "p2": 0.3577018865097532,
+      "p5": 0.46890128907781525,
+      "p50": 1.7845779750976087,
+      "p98": 2.9648728969518405,
+      "max": 3.071670444558504
+    },
+    "bottomCanonicalRow": 432,
+    "bottomCanonicalPixels": [
+      [
+        343,
+        432
+      ],
+      [
+        344,
+        432
+      ],
+      [
+        345,
+        432
+      ],
+      [
+        346,
+        432
+      ],
+      [
+        347,
+        432
+      ]
+    ],
+    "bottomRawPixels": [
+      [
+        2649.3571428571427,
+        3355.6379310344823
+      ],
+      [
+        2657.0714285714284,
+        3355.6379310344823
+      ],
+      [
+        2664.785714285714,
+        3355.6379310344823
+      ],
+      [
+        2672.5,
+        3355.6379310344823
+      ],
+      [
+        2680.214285714286,
+        3355.6379310344823
+      ]
+    ],
+    "bottomNativePoints": [
+      [
+        1.6214027404785156,
+        1.8347281217575073,
+        4.018741130828857
+      ],
+      [
+        1.62629234790802,
+        1.8250463008880615,
+        3.997560739517212
+      ],
+      [
+        1.6303075551986694,
+        1.813294529914856,
+        3.9705593585968018
+      ],
+      [
+        1.6357057094573975,
+        1.8059231042861938,
+        3.955662250518799
+      ],
+      [
+        1.6419543027877808,
+        1.7964091300964355,
+        3.933290481567383
+      ]
+    ],
+    "bottomHeightNative": [
+      0.20048699743288978,
+      0.21242431020552877,
+      0.22703776934883635,
+      0.2360074313473577,
+      0.24791626815394308
+    ],
+    "bottomDepthZNative": [
+      4.5537285804748535,
+      4.532171726226807,
+      4.505040168762207,
+      4.489569187164307,
+      4.466614723205566
+    ],
+    "bottomConf": [
+      1.0000478029251099,
+      1.000040888786316,
+      1.0000289678573608,
+      1.0000206232070923,
+      1.000017762184143
+    ]
+  },
+  "oldDisplayPrimitive": {
+    "file": "/Users/adam/Desktop/panoptes-public/research-notes/workcell-oneshot-correct-2026-10-01-b/posts.glb",
+    "minimumGroundHeightNative": 0.3644800619479813,
+    "bottomCornerHeightsNative": [
+      0.3644800619479813,
+      0.3652214694120306,
+      0.3816589522498912,
+      0.3824003597139405
+    ],
+    "bottomCornersNative": [
+      [
+        1.5636762380599976,
+        1.6911261081695557,
+        3.816898822784424
+      ],
+      [
+        1.659784197807312,
+        1.6911261081695557,
+        3.816898822784424
+      ],
+      [
+        1.5636762380599976,
+        1.6911261081695557,
+        3.656893730163574
+      ],
+      [
+        1.659784197807312,
+        1.6911261081695557,
+        3.656893730163574
+      ]
+    ],
+    "bottomCornersRawPhoto4": [
+      [
+        2634.8772803405004,
+        3312.822684450641
+      ],
+      [
+        2706.8840400279164,
+        3316.3908066384643
+      ],
+      [
+        2657.7712238929134,
+        3360.1521196335257
+      ],
+      [
+        2732.5745566034007,
+        3364.0298812617525
+      ]
+    ]
+  },
+  "currentDisplayPrimitive": {
+    "file": "/Users/adam/Desktop/panoptes-public/research-notes/workcell-pointcloud-inspection-2026-10-01/posts.glb",
+    "minimumGroundHeightNative": 0.36101867033812285,
+    "bottomCornerHeightsNative": [
+      0.36101867033812285,
+      0.3610186775709896,
+      0.3610187463071939,
+      0.36101875354006063
+    ],
+    "bottomCornersNative": [
+      [
+        1.6560263633728027,
+        1.6789861917495728,
+        3.968188762664795
+      ],
+      [
+        1.6371861696243286,
+        1.6975735425949097,
+        3.794717311859131
+      ],
+      [
+        1.5639008283615112,
+        1.6772112846374512,
+        3.978004217147827
+      ],
+      [
+        1.545060634613037,
+        1.695798635482788,
+        3.804532766342163
+      ]
+    ],
+    "bottomCornersRawPhoto4": [
+      [
+        2681.3668473120706,
+        3265.848965041574
+      ],
+      [
+        2693.3539543078487,
+        3326.5958622853527
+      ],
+      [
+        2613.4268555829553,
+        3258.88810425026
+      ],
+      [
+        2622.7203234555,
+        3319.0230593845217
+      ]
+    ]
+  },
+  "sourceRgbCandidates": [
+    {
+      "rawEnds": [
+        [
+          2625.3778335248235,
+          3318.698303334092
+        ],
+        [
+          2641.6516823227175,
+          3318.065360024348
+        ]
+      ],
+      "sourceSegmentIndex": 289,
+      "nearestCanonicalPixels": [
+        [
+          340,
+          427
+        ],
+        [
+          342,
+          427
+        ]
+      ],
+      "inSavedInstanceMask": [
+        true,
+        true
+      ],
+      "validDepth": [
+        true,
+        true
+      ],
+      "pointmapHeightToSavedFloorNative": [
+        0.23091096215504425,
+        0.30858652600356073
+      ]
+    },
+    {
+      "rawEnds": [
+        [
+          2651.6245699299134,
+          3354.9114194289846
+        ],
+        [
+          2666.638302064742,
+          3355.1725680192217
+        ]
+      ],
+      "sourceSegmentIndex": 319,
+      "nearestCanonicalPixels": [
+        [
+          343,
+          432
+        ],
+        [
+          345,
+          432
+        ]
+      ],
+      "inSavedInstanceMask": [
+        true,
+        true
+      ],
+      "validDepth": [
+        true,
+        true
+      ],
+      "pointmapHeightToSavedFloorNative": [
+        0.20048699743288978,
+        0.22703776934883635
+      ]
+    },
+    {
+      "rawEnds": [
+        [
+          2662.8718190126565,
+          3372.5561837680266
+        ],
+        [
+          2674.139346766436,
+          3372.9169586919256
+        ]
+      ],
+      "sourceSegmentIndex": 492,
+      "nearestCanonicalPixels": [
+        [
+          345,
+          434
+        ],
+        [
+          346,
+          434
+        ]
+      ],
+      "inSavedInstanceMask": [
+        false,
+        false
+      ],
+      "validDepth": [
+        true,
+        true
+      ],
+      "pointmapHeightToSavedFloorNative": [
+        0.1691149024109424,
+        0.17328872152929886
+      ]
+    }
+  ],
+  "rgbRejectionCounts": {
+    "tooShort": 3,
+    "outsideBodyAcross": 46,
+    "notTransverse": 406,
+    "span": 0,
+    "notNearColorEnd": 132,
+    "insufficientColorAbove": 0,
+    "colorContinuesBelow": 0,
+    "occluded": 0,
+    "noSideEndContact": 0,
+    "lowerColorContinuation": 0,
+    "innerEndcapSeam": 0,
+    "samMaskContinuesBelow": 0,
+    "faceWidthUnsupported": 2,
+    "insufficientVisibleSpan": 0,
+    "combinedCollinearFragments": 0,
+    "accepted": 3
+  },
+  "oldPhysicalEdge": {
+    "status": "unsupported",
+    "sourcePhotos": [
+      1,
+      2,
+      3
+    ],
+    "pointNative": [
+      0.6988282594300514,
+      0.7264296217197475,
+      1.624659661653335
+    ],
+    "reprojectionMaxRawPx": 1.7224526721142706,
+    "unobservedGapLengthsNative": [
+      1.479947936400861
+    ],
+    "localFloor": {
+      "objectId": "post-box-1",
+      "status": "unsupported",
+      "reason": "Insufficient nearby floor support",
+      "supportPoints": 0
+    },
+    "footNative": [
+      0.6868535631418714,
+      2.2696793664701667,
+      1.7913184469398067
+    ],
+    "nearestSavedFloorEvidenceNative": 1.826169706047792,
+    "scope": "Stored sampled floor evidence only; not rerun local-floor acceptance"
+  },
+  "replayedConnectedEdge": {
+    "sourcePhotos": [
+      1,
+      3
+    ],
+    "pointNative": [
+      0.6932510138897441,
+      0.7203100661698728,
+      1.6106978605291515
+    ],
+    "reprojectionMaxRawPx": 0.21746234645747414,
+    "footNative": [
+      0.6812181517987528,
+      2.271055981026117,
+      1.778166172989295
+    ],
+    "nearestSavedFloorEvidenceNative": 1.8405350507376663,
+    "scope": "Stored sampled floor evidence only; not rerun local-floor acceptance",
+    "status": "candidate only; disconnected third view is fixed but the remaining pair is still away from source instance support"
+  },
+  "visibleBottomPointFloor": {
+    "footNative": [
+      1.6285561134111328,
+      2.039013164151028,
+      3.9949351885791393
+    ],
+    "nearestSavedFloorEvidenceNative": 0.015354133993307427,
+    "scope": "Stored sampled floor evidence only; not rerun local-floor acceptance"
+  },
+  "findings": [
+    "The displayed primitive uses 2/98 point-cloud quantiles, not the RGB terminal edge; its bottom is higher than the last visible pixel row.",
+    "Ground-axis correction makes the box bottom level with the displayed floor but preserves the quantile truncation.",
+    "Photo4 detector has three visible end candidates and zero occlusion rejections; failure was not absence of a visible source bottom.",
+    "Finite support connectivity fixed an unrelated third-view vote; the remaining two-view line still fails object-location/local-floor support.",
+    "Every saved photo4 instance point is marked valid; this mask does not bound metric depth accuracy or edge bleed."
+  ]
+}

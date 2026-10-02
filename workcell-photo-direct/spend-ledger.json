@@ -1,0 +1,30 @@
+{
+  "hardware": "one ephemeral 2 x A100-80GB container",
+  "mode": "ephemeral modal run",
+  "actualBilledUsd": null,
+  "runs": [
+    {
+      "stage": "one-container",
+      "wallSeconds": 359.55,
+      "runIds": [
+        "ap-M8Wz5AtWUHQU0VYsDg8n05"
+      ],
+      "returncode": 0,
+      "result": "/Users/adam/Desktop/panoptes-public/research-notes/workcell-oneshot-correct-2026-10-01-b"
+    }
+  ],
+  "estimate": {
+    "usdPerSecond": 0.0017752,
+    "functionWindowEstimateUsd": 0.556,
+    "callWindowEstimateUsd": 0.623,
+    "rateSource": "https://modal.com/pricing",
+    "rateCheckedDate": "2026-09-30",
+    "basis": "reserved-resource list-rate estimates, not invoice amounts; call window includes possible scheduling time"
+  },
+  "cachedInspectionUpdate": {
+    "gpuCalls": 0,
+    "additionalGpuSpendUsd": 0,
+    "newInference": false,
+    "record": "inspection-update.json"
+  }
+}
