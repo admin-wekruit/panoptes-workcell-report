@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "status": "conditional_model_estimate",
+  "mPerNative": null,
+  "scope": "Actual displayed model endpoints against the current saved floor; does not certify physical dimensions",
+  "ground": {
+    "normal": [
+      0.007714318910697278,
+      -0.9941897817991617,
+      -0.10736464525102953
+    ],
+    "offset": 2.4435176430733963
+  },
+  "sceneTransformNative": [
+    [
+      -0.10736464525102955,
+      0.1059237040021903,
+      -0.9885610764543469,
+      0.0
+    ],
+    [
+      0.9941897817991621,
+      0.01915324245634978,
+      -0.1059237040021903,
+      0.0
+    ],
+    [
+      0.007714318910697404,
+      -0.9941897817991621,
+      -0.10736464525102955,
+      2.4435176430733963
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "objects": [
+    {
+      "objectId": "post-box-1",
+      "node": "box-1",
+      "status": "conditional_model_estimate",
+      "provenance": "Displayed upright primitive, bottom-face center; source depth percentile envelope",
+      "heightNative": 0.36101870575400374,
+      "pointNative": [
+        1.60054349899292,
+        1.6873924136161804,
+        3.886360764503479
+      ],
+      "footNative": [
+        1.5977584855640063,
+        2.0463135219151694,
+        3.9251214097757434
+      ],
+      "pointReportNative": [
+        -3.8350119112702923,
+        1.211905300775842,
+        0.3610187057540033
+      ],
+      "footReportNative": [
+        -3.835011911270292,
+        1.2119053007758416,
+        -6.661338147750939e-16
+      ],
+      "bottomFaceVerticesNative": [
+        [
+          1.6371861696243286,
+          1.6975735425949097,
+          3.794717311859131
+        ],
+        [
+          1.6560263633728027,
+          1.6789861917495728,
+          3.968188762664795
+        ],
+        [
+          1.545060634613037,
+          1.695798635482788,
+          3.804532766342163
+        ],
+        [
+          1.5639008283615112,
+          1.6772112846374512,
+          3.978004217147827
+        ]
+      ],
+      "bottomFaceHeightRangeNative": [
+        0.36101866415303574,
+        0.36101874735497175
+      ],
+      "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty"
+    },
+    {
+      "objectId": "fence-0",
+      "node": "section-0-continued-3",
+      "status": "conditional_model_estimate",
+      "provenance": "Displayed inferred continuation of observed lower rail; nearest point to curtain bottom center along bottom-face centerline",
+      "heightNative": 0.271016399163873,
+      "pointNative": [
+        1.6865511536598206,
+        1.7750712633132935,
+        3.918926239013672
+      ],
+      "footNative": [
+        1.6844604467266415,
+        2.044512998062019,
+        3.9480238185671124
+      ],
+      "pointReportNative": [
+        -3.86715178461695,
+        1.2956431107860196,
+        0.2710163991638722
+      ],
+      "footReportNative": [
+        -3.86715178461695,
+        1.2956431107860193,
+        -1.0547118733938987e-15
+      ],
+      "bottomFaceVerticesNative": [
+        [
+          1.679719090461731,
+          1.7751847505569458,
+          3.9173550605773926
+        ],
+        [
+          1.6933832168579102,
+          1.7749577760696411,
+          3.920497417449951
+        ],
+        [
+          1.4536018371582031,
+          1.6729143857955933,
+          4.893182754516602
+        ],
+        [
+          1.4672659635543823,
+          1.672687292098999,
+          4.89632511138916
+        ]
+      ],
+      "bottomFaceHeightRangeNative": [
+        0.26617577807492676,
+        0.2710195556069781
+      ],
+      "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty",
+      "bottomCenterlineEndsNative": [
+        [
+          1.6865511536598206,
+          1.7750712633132935,
+          3.918926239013672
+        ],
+        [
+          1.4604339003562927,
+          1.6728008389472961,
+          4.894753932952881
+        ]
+      ],
+      "closestAlongRailFraction": 0.0
+    }
+  ],
+  "lightMinusFenceNative": 0.09000230659013075,
+  "sign": "light_higher",
+  "sourceFiles": {
+    "posts.glb": "6a690909125ca06754b0263f2a5e9c1c25d047815b596110afdabc73a3c48926",
+    "fence-fitted.glb": "45baae0efacaec2c10948d7834abb15a042aef4f38e10a83066df5090db53da6",
+    "physical-clearances.json": "d524121bbaf5ee17ea52b4d31861a256c9913dfbf277c4f93ebf92f82c40b052"
+  }
+}

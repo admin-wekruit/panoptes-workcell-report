@@ -1,0 +1,667 @@
+{
+  "schemaVersion": 1,
+  "status": "conditional_unvalidated",
+  "metricCalibrationAccepted": false,
+  "mPerNative": null,
+  "recommendedConditionalMPerNative": 0.6844702474893979,
+  "recommendationScope": "For photo 4 endpoint estimates only: same-photo 8.5 cm circular body with raw inferred surface depth as axis-depth proxy. Show 4 cm actuator alternative; never publish as accepted centimetre calibration.",
+  "recommendationSelection": "Photo 4 is the requested endpoint view. The main body has a wider frozen raw silhouette and more pointmap support than the red actuator; selection uses no clearance evaluation.",
+  "recommendedFeature": "mainBodyDiameterM",
+  "recommendedPhoto": 4,
+  "independentPhoto4CrosscheckMPerNative": 0.6737564970412281,
+  "photo4CrosscheckDifferenceOverMean": 0.015776085239541125,
+  "reference": {
+    "objectId": "emergency-button",
+    "features": {
+      "wholeComponentHeightM": 0.1,
+      "mainBodyDiameterM": 0.085,
+      "redActuatorDiameterM": 0.04
+    },
+    "scope": "whole component: red cap, yellow body, gray lower housing; mounting bracket excluded",
+    "scopeStatus": "confirmed"
+  },
+  "sources": [
+    {
+      "photo": 2,
+      "sourceSha256": "6cd81ae4ae783c37d0a1129e39acb0d7064c46d9b51524130406642f8c7a3bea",
+      "frameSha256": "683238673045c3e119454b0388703a89ec14bee680bdd4b533b08adbdaa3247e",
+      "canonicalShapeHW": [
+        518,
+        392
+      ],
+      "K": [
+        [
+          392.4802551269531,
+          0.0,
+          195.7842254638672
+        ],
+        [
+          0.0,
+          392.6773376464844,
+          259.02099609375
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "cameraPoseC2W": [
+        [
+          0.8140810132026672,
+          -0.004974960349500179,
+          -0.580730140209198,
+          2.640547037124634
+        ],
+        [
+          -0.023833945393562317,
+          0.9988346695899963,
+          -0.04196774214506149,
+          -0.003822278929874301
+        ],
+        [
+          0.5802621245384216,
+          0.04800622910261154,
+          0.8130137324333191,
+          0.06997819244861603
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inputToCanonicalPixelCentres": [
+        [
+          0.12962962962962962,
+          0.0,
+          -0.4351851851851852
+        ],
+        [
+          0.0,
+          0.12946428571428573,
+          -2.435267857142857
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "photo": 3,
+      "sourceSha256": "0a8d4b8884867bf9f1836193db2fae0350a99e9e6b242eb9e01e20fda7c59438",
+      "frameSha256": "a2cb5cf6a5e78afeb01fc7ff98e1e78d62d044749aa941de7f656a67fed6d01e",
+      "canonicalShapeHW": [
+        518,
+        392
+      ],
+      "K": [
+        [
+          389.0364685058594,
+          0.0,
+          195.88412475585938
+        ],
+        [
+          0.0,
+          388.3739013671875,
+          258.8451232910156
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "cameraPoseC2W": [
+        [
+          0.9986673593521118,
+          0.011425862088799477,
+          0.050327882170677185,
+          -0.01870776154100895
+        ],
+        [
+          -0.01342385821044445,
+          0.9991277456283569,
+          0.039542172104120255,
+          -0.10301773995161057
+        ],
+        [
+          -0.04983218014240265,
+          -0.040165070444345474,
+          0.9979496598243713,
+          -0.33633971214294434
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inputToCanonicalPixelCentres": [
+        [
+          0.12962962962962962,
+          0.0,
+          -0.4351851851851852
+        ],
+        [
+          0.0,
+          0.12946428571428573,
+          -2.435267857142857
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "photo": 4,
+      "sourceSha256": "e73931b6cdf68775ddafbc949c392c0ea2908f4dec671a4935e4c09361ae66ec",
+      "frameSha256": "7b1f3f0b39f5d9cf6417452cfc9a0f41f400f066a8b4391b16fd36b6973b3ca1",
+      "canonicalShapeHW": [
+        518,
+        392
+      ],
+      "K": [
+        [
+          404.3907165527344,
+          0.0,
+          195.7549591064453
+        ],
+        [
+          0.0,
+          403.0458068847656,
+          258.5035705566406
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "cameraPoseC2W": [
+        [
+          0.9867463111877441,
+          -0.015433479100465775,
+          -0.16153478622436523,
+          0.7483806610107422
+        ],
+        [
+          0.013391457498073578,
+          0.9998161792755127,
+          -0.01372255478054285,
+          -0.08894146233797073
+        ],
+        [
+          0.16171687841415405,
+          0.011377493850886822,
+          0.9867715835571289,
+          -0.7656993865966797
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inputToCanonicalPixelCentres": [
+        [
+          0.12962962962962962,
+          0.0,
+          -0.4351851851851852
+        ],
+        [
+          0.0,
+          0.12946428571428573,
+          -2.435267857142857
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "geometrySha256": "523b92965ea0df39571f3726b74e6a4a63a99e93c304d2084796da3d6f2f1592",
+  "referenceInputSha256": "9b0227aeca3215a45a8c638fdd1218b8359291443214f7fc9ee8b616ae20358c",
+  "sourceContourSha256": "6940fb3f57112af4bfa997590696ffc6918c0fa4adcbbb9a314fe072f713bf6f",
+  "uprightAxisNative": [
+    0.007714318910697278,
+    -0.9941897817991617,
+    -0.10736464525102953
+  ],
+  "uprightAxisSource": "runB geometry.floor.normal; inferred, not gravity measured",
+  "groundClearanceEvaluationRead": false,
+  "evaluationDistancesUsedForSelection": false,
+  "baseline": {
+    "status": "conditional_unvalidated",
+    "conditionalMPerNative": 0.5964517394154266,
+    "feature": "wholeComponentHeightM",
+    "knownDimensionM": 0.1,
+    "nativeValue": 0.16765815805652357,
+    "method": "known whole-component height / saved planar association height envelope",
+    "assumptions": [
+      "The saved plane-projected envelope is treated as the physical 10 cm axial height.",
+      "This assumption is false for a general curved solid under oblique viewing; retained only as the historical conditional baseline."
+    ],
+    "byPhoto": [
+      {
+        "photo": 2,
+        "nativeEnvelopeHeight": 0.15578041978599455,
+        "conditionalMPerNative": 0.6419291984023175
+      },
+      {
+        "photo": 3,
+        "nativeEnvelopeHeight": 0.16765815805652357,
+        "conditionalMPerNative": 0.5964517394154266
+      },
+      {
+        "photo": 4,
+        "nativeEnvelopeHeight": 0.16902315208350416,
+        "conditionalMPerNative": 0.5916349255550271
+      }
+    ],
+    "observedPhotoScaleRange": [
+      0.5916349255550271,
+      0.6419291984023175
+    ],
+    "rangeScope": "Across-photo sensitivity only, not an accuracy bound or confidence interval."
+  },
+  "independentCircularCandidates": [
+    {
+      "feature": "mainBodyDiameterM",
+      "knownDimensionM": 0.085,
+      "status": "conditional_unvalidated",
+      "method": "Independent multi-photo upright-circle tangent fit to frozen accepted hulls",
+      "assumptions": [
+        "Maximum radius silhouette is visible and circular.",
+        "Circle axis follows estimated floor normal.",
+        "Original native cameras are correct."
+      ],
+      "nativeDiameter": 0.12399793001825792,
+      "conditionalMPerNative": 0.6854953142160057,
+      "maxFitErrorRawPx": 18.9726326525039,
+      "condition": 3.6028374086723622,
+      "leaveOnePhotoOut": [
+        {
+          "heldOutPhoto": 2,
+          "nativeDiameter": 0.12902522959693527,
+          "conditionalMPerNative": 0.6587858844780463,
+          "heldOutMaxErrorRawPx": 117.09069311440837,
+          "condition": 10.577309023212203
+        },
+        {
+          "heldOutPhoto": 3,
+          "nativeDiameter": 0.12299823022071196,
+          "conditionalMPerNative": 0.6910668539496323,
+          "heldOutMaxErrorRawPx": 42.57598171270312,
+          "condition": 4.177036228107926
+        },
+        {
+          "heldOutPhoto": 4,
+          "nativeDiameter": 0.12450309285953658,
+          "conditionalMPerNative": 0.6827139635470449,
+          "heldOutMaxErrorRawPx": 31.084737889454882,
+          "condition": 3.029290493258052
+        }
+      ],
+      "leaveOnePhotoScaleRange": [
+        0.6587858844780463,
+        0.6910668539496323
+      ]
+    },
+    {
+      "feature": "redActuatorDiameterM",
+      "knownDimensionM": 0.04,
+      "status": "conditional_unvalidated",
+      "method": "Independent multi-photo upright-circle tangent fit to frozen accepted hulls",
+      "assumptions": [
+        "Maximum radius silhouette is visible and circular.",
+        "Circle axis follows estimated floor normal.",
+        "Original native cameras are correct."
+      ],
+      "nativeDiameter": 0.05934972753597138,
+      "conditionalMPerNative": 0.6739710805876291,
+      "maxFitErrorRawPx": 18.894631777484282,
+      "condition": 3.601939049324703,
+      "leaveOnePhotoOut": [
+        {
+          "heldOutPhoto": 2,
+          "nativeDiameter": 0.06282089308297213,
+          "conditionalMPerNative": 0.6367308396454836,
+          "heldOutMaxErrorRawPx": 118.37185263706937,
+          "condition": 10.574598832100053
+        },
+        {
+          "heldOutPhoto": 3,
+          "nativeDiameter": 0.05762832383388429,
+          "conditionalMPerNative": 0.6941031308719204,
+          "heldOutMaxErrorRawPx": 42.060564021188696,
+          "condition": 4.17608509851683
+        },
+        {
+          "heldOutPhoto": 4,
+          "nativeDiameter": 0.059835468871949946,
+          "conditionalMPerNative": 0.6684998171502832,
+          "heldOutMaxErrorRawPx": 30.983502632292566,
+          "condition": 3.0285019153732553
+        }
+      ],
+      "leaveOnePhotoScaleRange": [
+        0.6367308396454836,
+        0.6941031308719204
+      ]
+    }
+  ],
+  "singlePhotoCandidates": [
+    {
+      "photo": 2,
+      "feature": "mainBodyDiameterM",
+      "knownDimensionM": 0.085,
+      "supportPixelCount": 135,
+      "frozenHullRawBounds": [
+        [
+          2646.0,
+          2317.0
+        ],
+        [
+          2767.0,
+          2384.0
+        ]
+      ],
+      "tangentPixelsRaw": [
+        [
+          2767.0,
+          2357.0
+        ],
+        [
+          2646.0,
+          2373.0
+        ]
+      ],
+      "planeProjectedNativeWidth": 0.13634675240150296,
+      "planeProjectedConditionalMPerNative": 0.6234105213573319,
+      "rawSupportNativeWidth": 0.10076274559139708,
+      "rawSupportWidthConditionalMPerNative": 0.8435657395113411,
+      "depthAnchoredNativeDiameter": 0.12749770284145143,
+      "depthAnchoredConditionalMPerNative": 0.6666786781696056,
+      "depthAnchoredScaleSensitivityP05P95": [
+        0.6523388458725558,
+        0.6702192565086601
+      ],
+      "depthAnchorMethod": "Single-photo upright circle tangencies; circle-axis depth assumed equal to median visible raw point depth.",
+      "depthRangeScope": "Surface-depth percentile perturbation; excludes camera error, wrong pixels, axis tilt and unknown surface-to-axis depth bias."
+    },
+    {
+      "photo": 3,
+      "feature": "mainBodyDiameterM",
+      "knownDimensionM": 0.085,
+      "supportPixelCount": 99,
+      "frozenHullRawBounds": [
+        [
+          2627.0,
+          2115.0
+        ],
+        [
+          2723.0,
+          2170.0
+        ]
+      ],
+      "tangentPixelsRaw": [
+        [
+          2723.0,
+          2168.0
+        ],
+        [
+          2627.0,
+          2150.0
+        ]
+      ],
+      "planeProjectedNativeWidth": 0.24343630300518937,
+      "planeProjectedConditionalMPerNative": 0.34916731379291466,
+      "rawSupportNativeWidth": 0.39124209611574035,
+      "rawSupportWidthConditionalMPerNative": 0.21725678510539068,
+      "depthAnchoredNativeDiameter": 0.12346930174978894,
+      "depthAnchoredConditionalMPerNative": 0.6884302316073097,
+      "depthAnchoredScaleSensitivityP05P95": [
+        0.6614181358775159,
+        0.6965688695581097
+      ],
+      "depthAnchorMethod": "Single-photo upright circle tangencies; circle-axis depth assumed equal to median visible raw point depth.",
+      "depthRangeScope": "Surface-depth percentile perturbation; excludes camera error, wrong pixels, axis tilt and unknown surface-to-axis depth bias."
+    },
+    {
+      "photo": 4,
+      "feature": "mainBodyDiameterM",
+      "knownDimensionM": 0.085,
+      "supportPixelCount": 107,
+      "frozenHullRawBounds": [
+        [
+          2772.0,
+          2238.0
+        ],
+        [
+          2873.0,
+          2296.0
+        ]
+      ],
+      "tangentPixelsRaw": [
+        [
+          2873.0,
+          2292.0
+        ],
+        [
+          2772.0,
+          2274.0
+        ]
+      ],
+      "planeProjectedNativeWidth": 0.1911776068333415,
+      "planeProjectedConditionalMPerNative": 0.44461274208803386,
+      "rawSupportNativeWidth": 0.20971595034554902,
+      "rawSupportWidthConditionalMPerNative": 0.40531013430282953,
+      "depthAnchoredNativeDiameter": 0.1241836300581007,
+      "depthAnchoredConditionalMPerNative": 0.6844702474893979,
+      "depthAnchoredScaleSensitivityP05P95": [
+        0.6752377310726584,
+        0.6909826251652811
+      ],
+      "depthAnchorMethod": "Single-photo upright circle tangencies; circle-axis depth assumed equal to median visible raw point depth.",
+      "depthRangeScope": "Surface-depth percentile perturbation; excludes camera error, wrong pixels, axis tilt and unknown surface-to-axis depth bias."
+    },
+    {
+      "photo": 2,
+      "feature": "redActuatorDiameterM",
+      "knownDimensionM": 0.04,
+      "supportPixelCount": 42,
+      "frozenHullRawBounds": [
+        [
+          2677.0,
+          2282.0
+        ],
+        [
+          2733.0,
+          2318.0
+        ]
+      ],
+      "tangentPixelsRaw": [
+        [
+          2733.0,
+          2288.0
+        ],
+        [
+          2677.0,
+          2296.0
+        ]
+      ],
+      "planeProjectedNativeWidth": 0.06304250397077782,
+      "planeProjectedConditionalMPerNative": 0.6344925642316057,
+      "rawSupportNativeWidth": 0.05660204988260409,
+      "rawSupportWidthConditionalMPerNative": 0.7066881867876217,
+      "depthAnchoredNativeDiameter": 0.058973390685947064,
+      "depthAnchoredConditionalMPerNative": 0.6782720059800075,
+      "depthAnchoredScaleSensitivityP05P95": [
+        0.6754293277703387,
+        0.6805699590873608
+      ],
+      "depthAnchorMethod": "Single-photo upright circle tangencies; circle-axis depth assumed equal to median visible raw point depth.",
+      "depthRangeScope": "Surface-depth percentile perturbation; excludes camera error, wrong pixels, axis tilt and unknown surface-to-axis depth bias."
+    },
+    {
+      "photo": 3,
+      "feature": "redActuatorDiameterM",
+      "knownDimensionM": 0.04,
+      "supportPixelCount": 30,
+      "frozenHullRawBounds": [
+        [
+          2656.0,
+          2089.0
+        ],
+        [
+          2704.0,
+          2118.0
+        ]
+      ],
+      "tangentPixelsRaw": [
+        [
+          2704.0,
+          2099.0
+        ],
+        [
+          2656.0,
+          2089.0
+        ]
+      ],
+      "planeProjectedNativeWidth": 0.12148277947106534,
+      "planeProjectedConditionalMPerNative": 0.32926477459735076,
+      "rawSupportNativeWidth": 0.0911324316960167,
+      "rawSupportWidthConditionalMPerNative": 0.4389216797530967,
+      "depthAnchoredNativeDiameter": 0.06231171590098887,
+      "depthAnchoredConditionalMPerNative": 0.6419338550002153,
+      "depthAnchoredScaleSensitivityP05P95": [
+        0.6361375785794332,
+        0.6456040035483728
+      ],
+      "depthAnchorMethod": "Single-photo upright circle tangencies; circle-axis depth assumed equal to median visible raw point depth.",
+      "depthRangeScope": "Surface-depth percentile perturbation; excludes camera error, wrong pixels, axis tilt and unknown surface-to-axis depth bias."
+    },
+    {
+      "photo": 4,
+      "feature": "redActuatorDiameterM",
+      "knownDimensionM": 0.04,
+      "supportPixelCount": 33,
+      "frozenHullRawBounds": [
+        [
+          2799.0,
+          2214.0
+        ],
+        [
+          2847.0,
+          2240.0
+        ]
+      ],
+      "tangentPixelsRaw": [
+        [
+          2847.0,
+          2224.0
+        ],
+        [
+          2799.0,
+          2214.0
+        ]
+      ],
+      "planeProjectedNativeWidth": 0.09070336855383321,
+      "planeProjectedConditionalMPerNative": 0.44099795451653667,
+      "rawSupportNativeWidth": 0.06287836387162704,
+      "rawSupportWidthConditionalMPerNative": 0.6361488680218257,
+      "depthAnchoredNativeDiameter": 0.05936862972848237,
+      "depthAnchoredConditionalMPerNative": 0.6737564970412281,
+      "depthAnchoredScaleSensitivityP05P95": [
+        0.6717566145138574,
+        0.6786589183391523
+      ],
+      "depthAnchorMethod": "Single-photo upright circle tangencies; circle-axis depth assumed equal to median visible raw point depth.",
+      "depthRangeScope": "Surface-depth percentile perturbation; excludes camera error, wrong pixels, axis tilt and unknown surface-to-axis depth bias."
+    }
+  ],
+  "independentFeatureConsistency": [
+    {
+      "features": [
+        "wholeComponentHeightM",
+        "mainBodyDiameterM"
+      ],
+      "scalesMPerNative": [
+        0.5964517394154266,
+        0.6854953142160057
+      ],
+      "differenceOverMean": 0.1389192705710289
+    },
+    {
+      "features": [
+        "wholeComponentHeightM",
+        "redActuatorDiameterM"
+      ],
+      "scalesMPerNative": [
+        0.5964517394154266,
+        0.6739710805876291
+      ],
+      "differenceOverMean": 0.12203707293610491
+    },
+    {
+      "features": [
+        "mainBodyDiameterM",
+        "redActuatorDiameterM"
+      ],
+      "scalesMPerNative": [
+        0.6854953142160057,
+        0.6739710805876291
+      ],
+      "differenceOverMean": 0.016954054432572002
+    }
+  ],
+  "existingThreeDimensionJointFit": {
+    "status": "unsupported",
+    "mPerNative": null,
+    "candidateMPerNative": 0.7403554477417608,
+    "reason": "Joint source/shape fit, identifiability, or independent whole-button holdout failed; see diagnostics",
+    "fitMaxErrorByPhotoRawPx": {
+      "2": 14.325066835874168,
+      "3": 16.37090526957445,
+      "4": 24.215451197471793
+    },
+    "heldOut": [
+      {
+        "photo": 2,
+        "candidateMPerNative": 0.6869007723461076,
+        "maxErrorRawPx": 120.86929493513571,
+        "toleranceRawPx": 4.0,
+        "status": "unsupported"
+      },
+      {
+        "photo": 3,
+        "candidateMPerNative": 0.7308605950157253,
+        "maxErrorRawPx": 44.640182403892595,
+        "toleranceRawPx": 4.0,
+        "status": "unsupported"
+      },
+      {
+        "photo": 4,
+        "candidateMPerNative": 0.7145528636033847,
+        "maxErrorRawPx": 34.56940613383995,
+        "toleranceRawPx": 4.0,
+        "status": "unsupported"
+      }
+    ]
+  },
+  "limits": [
+    "Raw pointmaps are inferred depth, not ground truth.",
+    "Three feature dimensions cannot currently agree under the existing cameras and shape assumptions.",
+    "No uncertainty interval here includes all systematic reconstruction error."
+  ]
+}

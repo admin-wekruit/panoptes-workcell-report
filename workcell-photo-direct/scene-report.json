@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "revision": {
-    "id": "workcell-pointcloud-inspection-2026-10-01",
+    "id": "workcell-endpoint-estimate-2026-10-01",
     "projectId": "workcell-photo",
     "branchId": "oneshot",
     "parentRevisionId": null,
     "sourceRevisionId": null,
-    "createdAt": "2026-10-02T02:01:21.641707+00:00",
-    "documentSha256": "f888290a713471fca58961ab1ac2d74abd698b08732122ec618bf8df31c6448d",
+    "createdAt": "2026-10-02T02:28:25.110919+00:00",
+    "documentSha256": "e56d0c23b2ed300fb1f22cc9db05ff0c3e84bd1fe952d3b29847daaef83bcf92",
     "label": "四张照片 oneshot",
     "document": {
       "schemaVersion": 1,
-      "captureId": "workcell-pointcloud-inspection-2026-10-01",
+      "captureId": "workcell-endpoint-estimate-2026-10-01",
       "target": "scene",
       "coordinateFrames": [
         {
@@ -223958,7 +223958,7 @@
     "modelSeconds": 62.605831041
   },
   "bendAnalysis": {
-    "revisionId": "workcell-pointcloud-inspection-2026-10-01",
+    "revisionId": "workcell-endpoint-estimate-2026-10-01",
     "algorithm": "same-mesh-two-surface-interior-bend-v2",
     "items": [
       {
@@ -224266,7 +224266,7 @@
             -2.2668453543345772,
             1.5143937635299074
           ],
-          "revisionId": "workcell-pointcloud-inspection-2026-10-01"
+          "revisionId": "workcell-endpoint-estimate-2026-10-01"
         }
       },
       {
@@ -224580,10 +224580,272 @@
             0.14861830181050054,
             1.4632854290810526
           ],
-          "revisionId": "workcell-pointcloud-inspection-2026-10-01"
+          "revisionId": "workcell-endpoint-estimate-2026-10-01"
         }
       }
     ]
+  },
+  "endpointEstimation": {
+    "status": "conditional_unvalidated",
+    "photo": 4,
+    "method": "读取当前 GLB 的光幕底面中心，以及紧邻它的围栏底面中心线；围栏此段为模型推断延伸。沿同一地面法向测量。",
+    "scale": {
+      "mPerNative": 0.6844702474893979,
+      "source": "照片 4 的按钮主体直径 8.5 cm；红帽 4 cm 独立交叉检查。地面方向和参考表面深度仍为推断值。"
+    },
+    "endpoints": [
+      {
+        "objectId": "post-box-1",
+        "node": "box-1",
+        "status": "conditional_model_estimate",
+        "provenance": "Displayed upright primitive, bottom-face center; source depth percentile envelope",
+        "heightNative": 0.36101870575400374,
+        "pointNative": [
+          -3.8350119112702923,
+          1.2119053007758427,
+          0.36101870575400374
+        ],
+        "footNative": [
+          -3.8350119112702923,
+          1.2119053007758425,
+          0.0
+        ],
+        "pointReportNative": [
+          -3.8350119112702923,
+          1.211905300775842,
+          0.3610187057540033
+        ],
+        "footReportNative": [
+          -3.835011911270292,
+          1.2119053007758416,
+          -6.661338147750939e-16
+        ],
+        "bottomFaceVerticesNative": [
+          [
+            1.6371861696243286,
+            1.6975735425949097,
+            3.794717311859131
+          ],
+          [
+            1.6560263633728027,
+            1.6789861917495728,
+            3.968188762664795
+          ],
+          [
+            1.545060634613037,
+            1.695798635482788,
+            3.804532766342163
+          ],
+          [
+            1.5639008283615112,
+            1.6772112846374512,
+            3.978004217147827
+          ]
+        ],
+        "bottomFaceHeightRangeNative": [
+          0.36101866415303574,
+          0.36101874735497175
+        ],
+        "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty",
+        "label": "光幕底端",
+        "estimateCm": 24.710656287574505,
+        "rangeCm": [
+          24.377345174812117,
+          24.94576530356737
+        ]
+      },
+      {
+        "objectId": "fence-0",
+        "node": "section-0-continued-3",
+        "status": "conditional_model_estimate",
+        "provenance": "Displayed inferred continuation of observed lower rail; nearest point to curtain bottom center along bottom-face centerline",
+        "heightNative": 0.271016399163873,
+        "pointNative": [
+          -3.8671517846169507,
+          1.2956431107860205,
+          0.271016399163873
+        ],
+        "footNative": [
+          -3.8671517846169503,
+          1.2956431107860205,
+          0.0
+        ],
+        "pointReportNative": [
+          -3.86715178461695,
+          1.2956431107860196,
+          0.2710163991638722
+        ],
+        "footReportNative": [
+          -3.86715178461695,
+          1.2956431107860193,
+          -1.0547118733938987e-15
+        ],
+        "bottomFaceVerticesNative": [
+          [
+            1.679719090461731,
+            1.7751847505569458,
+            3.9173550605773926
+          ],
+          [
+            1.6933832168579102,
+            1.7749577760696411,
+            3.920497417449951
+          ],
+          [
+            1.4536018371582031,
+            1.6729143857955933,
+            4.893182754516602
+          ],
+          [
+            1.4672659635543823,
+            1.672687292098999,
+            4.89632511138916
+          ]
+        ],
+        "bottomFaceHeightRangeNative": [
+          0.26617577807492676,
+          0.2710195556069781
+        ],
+        "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty",
+        "bottomCenterlineEndsNative": [
+          [
+            1.6865511536598206,
+            1.7750712633132935,
+            3.918926239013672
+          ],
+          [
+            1.4604339003562927,
+            1.6728008389472961,
+            4.894753932952881
+          ]
+        ],
+        "closestAlongRailFraction": 0.0,
+        "label": "邻近围栏下沿",
+        "estimateCm": 18.55026618093816,
+        "rangeCm": [
+          18.300049845489553,
+          18.726762295709463
+        ]
+      }
+    ],
+    "difference": {
+      "valueNative": 0.09000230659013075,
+      "valueCm": 6.1603901066363465,
+      "rangeCm": [
+        6.077295329322566,
+        6.219003007857903
+      ],
+      "description": "光幕底端高度减去邻近围栏下沿高度。"
+    },
+    "scaleEvidence": {
+      "status": "conditional_unvalidated",
+      "acceptedMPerNative": null,
+      "conditionalMPerNative": 0.6844702474893979,
+      "rangeMPerNative": [
+        0.6752377310726584,
+        0.6909826251652811
+      ],
+      "method": "Same-photo upright circular silhouette tangencies; inferred visible surface depth substitutes for unobserved axis depth.",
+      "selection": "Use the larger 8.5 cm body as the reference; independently cross-check the 4 cm actuator. No evaluation clearance is used.",
+      "primary": {
+        "photo": 4,
+        "feature": "mainBodyDiameterM",
+        "knownDimensionM": 0.085,
+        "nativeDiameter": 0.1241836300581007,
+        "conditionalMPerNative": 0.6844702474893979,
+        "rangeMPerNative": [
+          0.6752377310726584,
+          0.6909826251652811
+        ],
+        "supportPixelCount": 107,
+        "rawHullBounds": [
+          [
+            2772.0,
+            2238.0
+          ],
+          [
+            2873.0,
+            2296.0
+          ]
+        ],
+        "tangentPixelsRaw": [
+          [
+            2873.0,
+            2292.0
+          ],
+          [
+            2772.0,
+            2274.0
+          ]
+        ]
+      },
+      "redCrosscheck": {
+        "photo": 4,
+        "feature": "redActuatorDiameterM",
+        "knownDimensionM": 0.04,
+        "nativeDiameter": 0.05936862972848237,
+        "conditionalMPerNative": 0.6737564970412281,
+        "rangeMPerNative": [
+          0.6717566145138574,
+          0.6786589183391523
+        ],
+        "supportPixelCount": 33,
+        "rawHullBounds": [
+          [
+            2799.0,
+            2214.0
+          ],
+          [
+            2847.0,
+            2240.0
+          ]
+        ],
+        "tangentPixelsRaw": [
+          [
+            2847.0,
+            2224.0
+          ],
+          [
+            2799.0,
+            2214.0
+          ]
+        ]
+      },
+      "crosscheckDifferenceOverMean": 0.015776085239541125,
+      "legacyHeightEnvelope": {
+        "conditionalMPerNative": 0.5964517394154266,
+        "nativeHeight": 0.16765815805652357,
+        "knownDimensionM": 0.1,
+        "scope": "Historical planar association envelope, not measured axial height; comparison only."
+      },
+      "source": {
+        "photo": 4,
+        "frameSha256": "7b1f3f0b39f5d9cf6417452cfc9a0f41f400f066a8b4391b16fd36b6973b3ca1",
+        "recordedPhotoSha256": "e73931b6cdf68775ddafbc949c392c0ea2908f4dec671a4935e4c09361ae66ec",
+        "sourceContourSha256": "6940fb3f57112af4bfa997590696ffc6918c0fa4adcbbb9a314fe072f713bf6f",
+        "referenceInputSha256": "9b0227aeca3215a45a8c638fdd1218b8359291443214f7fc9ee8b616ae20358c"
+      },
+      "axisNative": [
+        0.007714318910697278,
+        -0.9941897817991617,
+        -0.10736464525102953
+      ],
+      "rangeScope": "5th/95th percentile surface-depth sensitivity only, not a confidence interval or accuracy bound.",
+      "assumptions": [
+        "Circle axis follows the inferred ground normal; this orientation is unverified.",
+        "Full maximum-radius circular silhouette is visible and the named component dimensions correspond to it.",
+        "Raw pointmap depth and native camera geometry are correct locally.",
+        "Visible surface depth is substituted for circle-axis depth; the missing surface-to-axis offset is a primary systematic error.",
+        "The failed three-dimension joint calibration remains unsupported; this result does not validate centimetre measurements."
+      ]
+    },
+    "sourceFiles": {
+      "posts.glb": "6a690909125ca06754b0263f2a5e9c1c25d047815b596110afdabc73a3c48926",
+      "fence-fitted.glb": "45baae0efacaec2c10948d7834abb15a042aef4f38e10a83066df5090db53da6",
+      "physical-clearances.json": "d524121bbaf5ee17ea52b4d31861a256c9913dfbf277c4f93ebf92f82c40b052"
+    },
+    "rangeMeaning": "仅为固定模型端点在标尺表面深度第 5/95 百分位下的敏感性；不包含模型、地面或轴心深度系统误差。",
+    "groundTruthUsedForEstimation": false
   },
   "measurementEvaluation": {
     "schemaVersion": 1,

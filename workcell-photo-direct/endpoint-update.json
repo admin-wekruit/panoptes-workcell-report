@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-01",
+  "kind": "cached_model_endpoint_estimate",
+  "newInference": false,
+  "gpuCalls": 0,
+  "additionalGpuSpendUsd": 0,
+  "cachedReportBuildSeconds": 3.224375333,
+  "originalOneShotSeconds": 366.93,
+  "originalRun": "workcell-oneshot-correct-2026-10-01-b",
+  "geometrySource": "workcell-pointcloud-inspection-2026-10-01",
+  "conditionalScaleReference": "Photo4 main circular body diameter 0.085m; red diameter 0.04m cross-check",
+  "physicalAccuracyValidated": false,
+  "groundTruthUsedForEstimation": false
+}
