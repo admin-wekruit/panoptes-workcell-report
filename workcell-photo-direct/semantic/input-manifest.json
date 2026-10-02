@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "objects.json": "31b2ff11721d933b094abda7adb83b20bff412d9238450ba7ca6601595c904f9",
+    "scene-report.json": "9745a68d79765104827236228eff55068ccaf5e76ec8b1795956192f704ab60d",
+    "photo-1.png": "6de905f352df2f86dd494bfdb1ef5e804967f37f0ced0055cf9099e755295905",
+    "photo-2.png": "483034185ebab35b0aaecf3ae037321ecd7bc9563f58838e32d258d0b0d660fb",
+    "photo-3.png": "397ced20181422b4eec618c951f34e67a1892c1a26f8f74eaa50f2a8e29a02cf",
+    "photo-4.png": "2ba27b3727cb2b3099121ee1fa8dc60e80cd1d8893cef3a699d313a0b1f2e30c",
+    "frame_0001.json.gz": "d61cd9a3e87e757cca3e6ce42c404cef310b3dd1f1baa85ff6d74066501509b9",
+    "frame_0002.json.gz": "683238673045c3e119454b0388703a89ec14bee680bdd4b533b08adbdaa3247e",
+    "frame_0003.json.gz": "a2cb5cf6a5e78afeb01fc7ff98e1e78d62d044749aa941de7f656a67fed6d01e",
+    "frame_0004.json.gz": "7b1f3f0b39f5d9cf6417452cfc9a0f41f400f066a8b4391b16fd36b6973b3ca1",
+    "protocol.json": "0a45759b5d5b7490a10f547f88c5bffdbca290f7c4b4caa95d1a95c62510a3af"
+  }
+}

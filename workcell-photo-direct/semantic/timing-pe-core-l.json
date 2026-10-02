@@ -1,0 +1,19 @@
+{
+  "encoder": "pe-core-l",
+  "modelId": "timm/PE-Core-L-14-336",
+  "device": "NVIDIA A100-SXM4-80GB",
+  "observationCount": 97,
+  "photoCount": 4,
+  "textTemplates": [
+    "a photo of {}.",
+    "a photo of {} in a workplace."
+  ],
+  "loadSeconds": 29.6861,
+  "plainSeconds": 0.7525,
+  "maskedSeconds": 0.3245,
+  "globalSeconds": 0.1242,
+  "classTextSeconds": 0.3199,
+  "queryTextSeconds": 0.0665,
+  "peakAllocatedGiB": 2.6004,
+  "totalSeconds": 32.0225
+}

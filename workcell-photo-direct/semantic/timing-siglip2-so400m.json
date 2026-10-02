@@ -1,0 +1,19 @@
+{
+  "encoder": "siglip2-so400m",
+  "modelId": "google/siglip2-so400m-patch16-384",
+  "device": "NVIDIA A100-SXM4-80GB",
+  "observationCount": 97,
+  "photoCount": 4,
+  "textTemplates": [
+    "a photo of {}.",
+    "a photo of {} in a workplace."
+  ],
+  "loadSeconds": 22.9232,
+  "plainSeconds": 3.6833,
+  "maskedSeconds": 0.4412,
+  "globalSeconds": 0.2143,
+  "classTextSeconds": 0.3856,
+  "queryTextSeconds": 0.0729,
+  "peakAllocatedGiB": 3.5794,
+  "totalSeconds": 28.4608
+}
