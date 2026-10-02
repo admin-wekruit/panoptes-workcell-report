@@ -1,0 +1,15 @@
+{
+  "mode": "ephemeral modal run",
+  "hardware": "2 x A100-80GB; 16 CPU; 80 GiB",
+  "actualBilledUsd": null,
+  "status": "failed",
+  "usdPerSecond": 0.0017751999999999998,
+  "rateSource": "https://modal.com/pricing",
+  "rateCheckedDate": "2026-10-02",
+  "estimateBasis": "reserved-resource list rate; call window includes scheduling; build time excluded; not invoice",
+  "functionSeconds": 600.493828388,
+  "callSeconds": 611.8651010422036,
+  "estimateUsd": 1.0659966441543776,
+  "callWindowEstimateUsd": 1.0861829273701198,
+  "error": "RuntimeError"
+}
