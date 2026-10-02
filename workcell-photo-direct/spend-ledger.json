@@ -1,44 +1,7 @@
 {
-  "hardware": "one ephemeral 2 x A100-80GB container",
-  "mode": "ephemeral modal run",
+  "scope": "ground-caliper cached replay",
+  "gpuRuns": [],
+  "additionalGpuSpendUsd": 0,
   "actualBilledUsd": null,
-  "runs": [
-    {
-      "stage": "one-container",
-      "wallSeconds": 359.55,
-      "runIds": [
-        "ap-M8Wz5AtWUHQU0VYsDg8n05"
-      ],
-      "returncode": 0,
-      "result": "/Users/adam/Desktop/panoptes-public/research-notes/workcell-oneshot-correct-2026-10-01-b"
-    }
-  ],
-  "estimate": {
-    "usdPerSecond": 0.0017752,
-    "functionWindowEstimateUsd": 0.556,
-    "callWindowEstimateUsd": 0.623,
-    "rateSource": "https://modal.com/pricing",
-    "rateCheckedDate": "2026-09-30",
-    "basis": "reserved-resource list-rate estimates, not invoice amounts; call window includes possible scheduling time"
-  },
-  "cachedInspectionUpdate": {
-    "gpuCalls": 0,
-    "additionalGpuSpendUsd": 0,
-    "newInference": false,
-    "record": "inspection-update.json"
-  },
-  "cachedEndpointUpdate": {
-    "date": "2026-10-01",
-    "kind": "cached_model_endpoint_estimate",
-    "newInference": false,
-    "gpuCalls": 0,
-    "additionalGpuSpendUsd": 0,
-    "cachedReportBuildSeconds": 3.224375333,
-    "originalOneShotSeconds": 366.93,
-    "originalRun": "workcell-oneshot-correct-2026-10-01-b",
-    "geometrySource": "workcell-pointcloud-inspection-2026-10-01",
-    "conditionalScaleReference": "Photo4 main circular body diameter 0.085m; red diameter 0.04m cross-check",
-    "physicalAccuracyValidated": false,
-    "groundTruthUsedForEstimation": false
-  }
+  "note": "No new inference; historical full oneshot remains 366.93 s."
 }

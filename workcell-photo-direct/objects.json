@@ -11758,7 +11758,7 @@
     },
     {
       "id": "v-guard-left",
-      "label": "左侧折弯护板",
+      "label": "\u5de6\u4fa7\u6298\u5f2f\u62a4\u677f",
       "kind": "folded guard board",
       "model": {
         "file": "guard-left.glb",
@@ -13621,13 +13621,13 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "用户同角先验 + 源照片轮廓拟合的双片模型；实物夹角不可唯一确定",
+      "representation": "\u7528\u6237\u540c\u89d2\u5148\u9a8c + \u6e90\u7167\u7247\u8f6e\u5ed3\u62df\u5408\u7684\u53cc\u7247\u6a21\u578b\uff1b\u5b9e\u7269\u5939\u89d2\u4e0d\u53ef\u552f\u4e00\u786e\u5b9a",
       "notes": [
-        "模型共用 62.01° 参数；相等由用户同规格先验施加，不是独立测量结果。",
-        "离散角度敏感性检查中，60.00°、62.01° 也通过照片贴合检查；这些点不是连续区间或统计置信区间。",
-        "原生成护板总成的分片只初始化姿态和轮廓；最终两片平面按源照片分割轮廓重新拟合，并保留照片颜色。",
-        "源照片相机和世界坐标保持原解；未知板厚以双面可见的零厚度平面表示。",
-        "模型仅通过相对 A1 的照片贴合门槛；个别视图可能下降，详见实验页逐图对照。厘米和角度物理精度未验证。"
+        "\u6a21\u578b\u5171\u7528 62.01\u00b0 \u53c2\u6570\uff1b\u76f8\u7b49\u7531\u7528\u6237\u540c\u89c4\u683c\u5148\u9a8c\u65bd\u52a0\uff0c\u4e0d\u662f\u72ec\u7acb\u6d4b\u91cf\u7ed3\u679c\u3002",
+        "\u79bb\u6563\u89d2\u5ea6\u654f\u611f\u6027\u68c0\u67e5\u4e2d\uff0c60.00\u00b0\u300162.01\u00b0 \u4e5f\u901a\u8fc7\u7167\u7247\u8d34\u5408\u68c0\u67e5\uff1b\u8fd9\u4e9b\u70b9\u4e0d\u662f\u8fde\u7eed\u533a\u95f4\u6216\u7edf\u8ba1\u7f6e\u4fe1\u533a\u95f4\u3002",
+        "\u539f\u751f\u6210\u62a4\u677f\u603b\u6210\u7684\u5206\u7247\u53ea\u521d\u59cb\u5316\u59ff\u6001\u548c\u8f6e\u5ed3\uff1b\u6700\u7ec8\u4e24\u7247\u5e73\u9762\u6309\u6e90\u7167\u7247\u5206\u5272\u8f6e\u5ed3\u91cd\u65b0\u62df\u5408\uff0c\u5e76\u4fdd\u7559\u7167\u7247\u989c\u8272\u3002",
+        "\u6e90\u7167\u7247\u76f8\u673a\u548c\u4e16\u754c\u5750\u6807\u4fdd\u6301\u539f\u89e3\uff1b\u672a\u77e5\u677f\u539a\u4ee5\u53cc\u9762\u53ef\u89c1\u7684\u96f6\u539a\u5ea6\u5e73\u9762\u8868\u793a\u3002",
+        "\u6a21\u578b\u4ec5\u901a\u8fc7\u76f8\u5bf9 A1 \u7684\u7167\u7247\u8d34\u5408\u95e8\u69db\uff1b\u4e2a\u522b\u89c6\u56fe\u53ef\u80fd\u4e0b\u964d\uff0c\u8be6\u89c1\u5b9e\u9a8c\u9875\u9010\u56fe\u5bf9\u7167\u3002\u5398\u7c73\u548c\u89d2\u5ea6\u7269\u7406\u7cbe\u5ea6\u672a\u9a8c\u8bc1\u3002"
       ],
       "structuralModel": {
         "source": "structural-result.json",
@@ -13648,7 +13648,7 @@
     },
     {
       "id": "v-guard-center",
-      "label": "中间折弯护板",
+      "label": "\u4e2d\u95f4\u6298\u5f2f\u62a4\u677f",
       "kind": "folded guard board",
       "model": {
         "file": "guard-center.glb",
@@ -15482,7 +15482,7 @@
     },
     {
       "id": "v-guard-right",
-      "label": "右侧折弯护板",
+      "label": "\u53f3\u4fa7\u6298\u5f2f\u62a4\u677f",
       "kind": "folded guard board",
       "model": {
         "file": "guard-right.glb",
@@ -16721,13 +16721,13 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "用户同角先验 + 源照片轮廓拟合的双片模型；实物夹角不可唯一确定",
+      "representation": "\u7528\u6237\u540c\u89d2\u5148\u9a8c + \u6e90\u7167\u7247\u8f6e\u5ed3\u62df\u5408\u7684\u53cc\u7247\u6a21\u578b\uff1b\u5b9e\u7269\u5939\u89d2\u4e0d\u53ef\u552f\u4e00\u786e\u5b9a",
       "notes": [
-        "模型共用 62.01° 参数；相等由用户同规格先验施加，不是独立测量结果。",
-        "离散角度敏感性检查中，60.00°、62.01° 也通过照片贴合检查；这些点不是连续区间或统计置信区间。",
-        "原生成护板总成的分片只初始化姿态和轮廓；最终两片平面按源照片分割轮廓重新拟合，并保留照片颜色。",
-        "源照片相机和世界坐标保持原解；未知板厚以双面可见的零厚度平面表示。",
-        "模型仅通过相对 A1 的照片贴合门槛；个别视图可能下降，详见实验页逐图对照。厘米和角度物理精度未验证。"
+        "\u6a21\u578b\u5171\u7528 62.01\u00b0 \u53c2\u6570\uff1b\u76f8\u7b49\u7531\u7528\u6237\u540c\u89c4\u683c\u5148\u9a8c\u65bd\u52a0\uff0c\u4e0d\u662f\u72ec\u7acb\u6d4b\u91cf\u7ed3\u679c\u3002",
+        "\u79bb\u6563\u89d2\u5ea6\u654f\u611f\u6027\u68c0\u67e5\u4e2d\uff0c60.00\u00b0\u300162.01\u00b0 \u4e5f\u901a\u8fc7\u7167\u7247\u8d34\u5408\u68c0\u67e5\uff1b\u8fd9\u4e9b\u70b9\u4e0d\u662f\u8fde\u7eed\u533a\u95f4\u6216\u7edf\u8ba1\u7f6e\u4fe1\u533a\u95f4\u3002",
+        "\u539f\u751f\u6210\u62a4\u677f\u603b\u6210\u7684\u5206\u7247\u53ea\u521d\u59cb\u5316\u59ff\u6001\u548c\u8f6e\u5ed3\uff1b\u6700\u7ec8\u4e24\u7247\u5e73\u9762\u6309\u6e90\u7167\u7247\u5206\u5272\u8f6e\u5ed3\u91cd\u65b0\u62df\u5408\uff0c\u5e76\u4fdd\u7559\u7167\u7247\u989c\u8272\u3002",
+        "\u6e90\u7167\u7247\u76f8\u673a\u548c\u4e16\u754c\u5750\u6807\u4fdd\u6301\u539f\u89e3\uff1b\u672a\u77e5\u677f\u539a\u4ee5\u53cc\u9762\u53ef\u89c1\u7684\u96f6\u539a\u5ea6\u5e73\u9762\u8868\u793a\u3002",
+        "\u6a21\u578b\u4ec5\u901a\u8fc7\u76f8\u5bf9 A1 \u7684\u7167\u7247\u8d34\u5408\u95e8\u69db\uff1b\u4e2a\u522b\u89c6\u56fe\u53ef\u80fd\u4e0b\u964d\uff0c\u8be6\u89c1\u5b9e\u9a8c\u9875\u9010\u56fe\u5bf9\u7167\u3002\u5398\u7c73\u548c\u89d2\u5ea6\u7269\u7406\u7cbe\u5ea6\u672a\u9a8c\u8bc1\u3002"
       ],
       "structuralModel": {
         "source": "structural-result.json",
@@ -32291,7 +32291,7 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         },
         "groundClearance": {
-          "valueNative": 0.2865387171763838,
+          "valueNative": 0.26508241312255976,
           "status": "conditional-model-estimate",
           "source": "geometry.json lower observed rail to modeled floor; provisional scale; not globally lowest rail"
         }

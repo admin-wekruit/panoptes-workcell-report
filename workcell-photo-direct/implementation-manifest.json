@@ -1,0 +1,31 @@
+{
+  "source": "workcell-endpoint-estimate-2026-10-01",
+  "output": "workcell-ground-caliper-2026-10-02",
+  "modelInferenceRepeated": false,
+  "gpuRuns": 0,
+  "additionalGpuSpendUsd": 0,
+  "packagingSeconds": 3.052731208037585,
+  "export": "workcell-conditional.glb",
+  "modelScale": 0.6844702474893979,
+  "sourceModelsUnchanged": true,
+  "changedClearanceCaches": [
+    {
+      "id": "fence-plane-0-lower-rail",
+      "before": 0.2865387171763838,
+      "after": 0.26508241312255976
+    }
+  ],
+  "maxReexportVertexDeltaNative": 1.1641532182693481e-10,
+  "sourceCommit": "254a689",
+  "validation": {
+    "caliper": [
+      "point_ground",
+      "point_distance",
+      "region_ground"
+    ],
+    "browserGlbScaleRatioVerified": 2,
+    "exportColorPrimitives": 52,
+    "typescriptAndPythonChecks": "passed",
+    "adversarialReview": "no remaining confirmed P1/P2"
+  }
+}
