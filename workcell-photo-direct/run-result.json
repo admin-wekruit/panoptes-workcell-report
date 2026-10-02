@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "run": "workcell-oneshot-correct-2026-10-01-b",
+  "inputPhotos": 4,
+  "objectModels": 52,
+  "oneShotSeconds": 366.93,
+  "timing": {
+    "wallSecondsIncludingColdStart": 350.81286291591823,
+    "containerWallSeconds": 313.415656654
+  },
+  "stageTiming": {
+    "geometrySeconds": 40.141503024,
+    "owlSeconds": 10.858991565999993,
+    "segmentationSeconds": 39.574437777,
+    "cartMaskSeconds": 2.5617488930000007,
+    "prepareSeconds": 8.518076335000003,
+    "modelSeconds": 62.605831041,
+    "metricTailSeconds": 154.75567396
+  },
+  "metricScaleStatus": "unsupported",
+  "metricScaleMPerNative": null,
+  "accuracyTargetMet": false,
+  "fitMaximumErrorRawPxByPhoto": {
+    "2": 14.325066835874168,
+    "3": 16.37090526957445,
+    "4": 24.215451197471793
+  },
+  "heldOutMaximumErrorRawPxByPhoto": {
+    "2": 120.86929493513571,
+    "3": 44.640182403892595,
+    "4": 34.56940613383995
+  },
+  "physicalEdges": [
+    {
+      "id": "fence-0",
+      "status": "conditional",
+      "reason": "Visible source edge and inferred local floor; camera and semantic systematic errors remain unbounded",
+      "sourcePhotos": [
+        3,
+        4
+      ],
+      "heightNative": 0.27146041836945756
+    },
+    {
+      "id": "post-box-1",
+      "status": "unsupported",
+      "reason": "No sufficiently supported local floor",
+      "sourcePhotos": [],
+      "heightNative": null
+    },
+    {
+      "id": "post-box-2",
+      "status": "unsupported",
+      "reason": "No common RGB end edge has stable multiview reprojection support",
+      "sourcePhotos": [],
+      "heightNative": null
+    }
+  ],
+  "costEstimate": {
+    "usdPerSecond": 0.0017752,
+    "functionWindowEstimateUsd": 0.556,
+    "callWindowEstimateUsd": 0.623,
+    "rateSource": "https://modal.com/pricing",
+    "rateCheckedDate": "2026-09-30",
+    "basis": "reserved-resource list-rate estimates, not invoice amounts; call window includes possible scheduling time"
+  },
+  "actualBilledUsd": null,
+  "modelFile": "workcell-native.glb",
+  "modelsArePhysicallyValidated": false,
+  "fullRunScope": "Original four JPEG images; MapAnything, SAM, OWLv2, RecGen, fixed-camera 3D ruler, physical edges, A4 and complete report.",
+  "sourceCommit": "d276f85",
+  "uiValidation": {
+    "loadedObjectModels": 52,
+    "splitDraggedFromPercent": 50,
+    "splitDraggedToPercent": 64,
+    "selection": "fence-0",
+    "orbitAndZoom": true,
+    "nativeGroundLine": true,
+    "browserDownloadEvent": "not confirmed; IAB event timed out without visible export error; downloadable backend GLB exists"
+  }
+}

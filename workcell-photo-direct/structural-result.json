@@ -7,11 +7,11 @@
       "mesh": "guard-left.glb",
       "status": "prior-constrained-model",
       "measurementAngleDeg": null,
-      "modelAngleDeg": 104.27020938894461,
-      "meshAngleReadbackDeg": 104.27020985480334,
+      "modelAngleDeg": 62.014976557899985,
+      "meshAngleReadbackDeg": 62.014976660471625,
       "photoColorFractionPerPanel": [
-        0.9905882352941177,
-        0.8282352941176471
+        0.9875222816399287,
+        0.964349376114082
       ],
       "nodes": [
         "v-guard-left-panel-2",
@@ -19,158 +19,168 @@
       ],
       "fittedBendAnnotation": {
         "supported": true,
-        "angleDeg": 104.27021162020122
+        "angleDeg": 62.014976474282896
       },
       "doubleSided": true,
       "sourceFit": {
         "views": [
           {
             "photo": 1,
-            "iou": 0.6745725317153889,
-            "sourceBoundaryMedianPx": 1.399999976158142
+            "iou": 0.7088186356073212,
+            "sourceBoundaryMedianPx": 1.0
           },
           {
             "photo": 2,
-            "iou": 0.7265491756679932,
+            "iou": 0.7473560517038778,
             "sourceBoundaryMedianPx": 1.0
           },
           {
             "photo": 3,
-            "iou": 0.785063752276867,
+            "iou": 0.7945783132530121,
             "sourceBoundaryMedianPx": 1.0
           },
           {
             "photo": 4,
-            "iou": 0.7251864601262191,
+            "iou": 0.7642980935875217,
             "sourceBoundaryMedianPx": 1.0
           }
         ],
-        "meanIoU": 0.7278429799466171,
-        "medianIoU": 0.7258678178971061
+        "meanIoU": 0.7537627735379331,
+        "medianIoU": 0.7558270726456997
       },
       "a1SourceFit": {
         "views": [
           {
             "photo": 1,
-            "iou": 0.5808383233532934,
-            "sourceBoundaryMedianPx": 2.799999952316284
+            "iou": 0.558202490525176,
+            "sourceBoundaryMedianPx": 3.098449945449829
           },
           {
             "photo": 2,
-            "iou": 0.5969151670951157,
-            "sourceBoundaryMedianPx": 2.0
+            "iou": 0.6137566137566137,
+            "sourceBoundaryMedianPx": 3.098449945449829
           },
           {
             "photo": 3,
-            "iou": 0.7269349845201238,
-            "sourceBoundaryMedianPx": 1.7000000476837158
+            "iou": 0.7680973734785393,
+            "sourceBoundaryMedianPx": 1.0
           },
           {
             "photo": 4,
-            "iou": 0.7624407582938388,
-            "sourceBoundaryMedianPx": 1.0
+            "iou": 0.7166180758017493,
+            "sourceBoundaryMedianPx": 2.0
           }
         ],
-        "meanIoU": 0.6667823083155929,
-        "medianIoU": 0.6619250758076198
+        "meanIoU": 0.6641686383905195,
+        "medianIoU": 0.6651873447791815
       },
       "analyticInitialSourceFit": {
         "views": [
           {
             "photo": 1,
-            "iou": 0.5717391304347826,
-            "sourceBoundaryMedianPx": 2.799999952316284
+            "iou": 0.5563380281690141,
+            "sourceBoundaryMedianPx": 3.196899890899658
           },
           {
             "photo": 2,
-            "iou": 0.5940236991241628,
-            "sourceBoundaryMedianPx": 2.0
+            "iou": 0.6086032926181625,
+            "sourceBoundaryMedianPx": 3.0
           },
           {
             "photo": 3,
-            "iou": 0.7015931372549019,
-            "sourceBoundaryMedianPx": 2.0
+            "iou": 0.7538265306122449,
+            "sourceBoundaryMedianPx": 1.399999976158142
           },
           {
             "photo": 4,
-            "iou": 0.7504466944609887,
-            "sourceBoundaryMedianPx": 1.0
+            "iou": 0.7208211143695015,
+            "sourceBoundaryMedianPx": 1.399999976158142
           }
         ],
-        "meanIoU": 0.654450665318709,
-        "medianIoU": 0.6478084181895323
+        "meanIoU": 0.6598972414422307,
+        "medianIoU": 0.664712203493832
       },
       "candidateGeometry": {
         "originNative": [
-          -1.7838005701438153,
-          0.4145766902418415,
-          5.369969393640713
+          -1.7963712952678628,
+          0.40032163206305793,
+          5.327209033190075
         ],
         "rotationVector": [
-          -2.4680294547727613,
-          -1.2620847968566653,
-          -0.5344923844367155
+          -2.4704011959897825,
+          -1.237521641960277,
+          -0.5691446913576265
         ],
         "panelPolygonsNative": [
           [
             [
-              -1.4303316367803114,
-              0.7735447441772244,
-              6.19086366528153
+              -1.448285493141915,
+              0.7498956126925281,
+              6.120973902541905
             ],
             [
-              -1.2654263174571825,
-              1.1686669360577915,
-              5.401564564379995
+              -1.41120373983641,
+              0.8068435893781677,
+              6.096164611284598
             ],
             [
-              -1.7109379261661282,
-              0.5895698047490814,
-              5.019108867825333
+              -1.252444586857445,
+              1.1570590502877915,
+              5.399458395003281
             ],
             [
-              -1.8593291453998524,
-              0.23318084874045658,
-              5.733667362610037
+              -1.7150709888928384,
+              0.5771902539702642,
+              4.98416851080392
             ],
             [
-              -1.660952109379767,
-              0.47813352134809634,
-              5.9704316836524
+              -1.8804794871194792,
+              0.21734446202286847,
+              5.682097216964461
+            ],
+            [
+              -1.7048301692591366,
+              0.4278120886460419,
+              5.8935832622256665
             ]
           ],
           [
             [
-              -1.8566632141215025,
-              0.23958357573460165,
-              5.720829919456094
+              -1.410602045168936,
+              0.5167574085703733,
+              5.030940500284732
             ],
             [
-              -1.8172856174307723,
-              0.20199255915448452,
-              5.701418343709314
+              -1.7150805686750674,
+              0.5771694131769564,
+              4.9842089319738605
             ],
             [
-              -1.6041775904607938,
-              0.060252998648491665,
-              5.516905107737039
+              -1.8776620218606581,
+              0.22347385094915953,
+              5.67020913440629
             ],
             [
-              -1.479806728997248,
-              0.3376403909944513,
-              4.945460331030327
+              -1.8124514891496473,
+              0.21969155594028597,
+              5.663351302697115
             ],
             [
-              -1.7109379261661282,
-              0.5895698047490814,
-              5.019108867825333
+              -1.5227337290642373,
+              0.24366320967777957,
+              5.557771689478138
+            ],
+            [
+              -1.3976097608594205,
+              0.4986541126360876,
+              5.061533576184366
             ]
           ]
         ],
         "widthHeightScales": [
-          1.5355355211075334,
-          1.7999999999999998,
-          0.65
+          1.5934669905900711,
+          1.6682968336476154,
+          0.6845752994516178
         ]
       },
       "meshRole": "prior-constrained-model"
@@ -180,11 +190,11 @@
       "mesh": "guard-right.glb",
       "status": "prior-constrained-model",
       "measurementAngleDeg": null,
-      "modelAngleDeg": 104.27020938894461,
-      "meshAngleReadbackDeg": 104.27020969485953,
+      "modelAngleDeg": 62.014976557899985,
+      "meshAngleReadbackDeg": 62.01497699456206,
       "photoColorFractionPerPanel": [
-        0.8988235294117647,
-        0.9929411764705882
+        0.9273356401384083,
+        0.9480968858131488
       ],
       "nodes": [
         "v-guard-right-panel-2",
@@ -192,143 +202,133 @@
       ],
       "fittedBendAnnotation": {
         "supported": true,
-        "angleDeg": 104.27020912883961
+        "angleDeg": 62.01497680897802
       },
       "doubleSided": true,
       "sourceFit": {
         "views": [
           {
             "photo": 1,
-            "iou": 0.5368294635708567,
-            "sourceBoundaryMedianPx": 1.399999976158142
+            "iou": 0.6482889733840305,
+            "sourceBoundaryMedianPx": 2.196899890899658
           },
           {
             "photo": 3,
-            "iou": 0.71172868582195,
-            "sourceBoundaryMedianPx": 1.399999976158142
+            "iou": 0.6092843326885881,
+            "sourceBoundaryMedianPx": 2.196899890899658
           },
           {
             "photo": 4,
-            "iou": 0.7762753534111863,
+            "iou": 0.7812879708383961,
             "sourceBoundaryMedianPx": 1.0
           }
         ],
-        "meanIoU": 0.6749445009346643,
-        "medianIoU": 0.71172868582195
+        "meanIoU": 0.679620425637005,
+        "medianIoU": 0.6482889733840305
       },
       "a1SourceFit": {
         "views": [
           {
             "photo": 1,
-            "iou": 0.5034965034965035,
-            "sourceBoundaryMedianPx": 2.0
+            "iou": 0.4477249044807225,
+            "sourceBoundaryMedianPx": 4.0
           },
           {
             "photo": 3,
-            "iou": 0.6686390532544378,
-            "sourceBoundaryMedianPx": 2.196899890899658
+            "iou": 0.6418098031001257,
+            "sourceBoundaryMedianPx": 3.098449945449829
           },
           {
             "photo": 4,
-            "iou": 0.7716359575656058,
-            "sourceBoundaryMedianPx": 1.0
+            "iou": 0.7086258776328987,
+            "sourceBoundaryMedianPx": 2.0
           }
         ],
-        "meanIoU": 0.6479238381055157,
-        "medianIoU": 0.6686390532544378
+        "meanIoU": 0.5993868617379157,
+        "medianIoU": 0.6418098031001257
       },
       "analyticInitialSourceFit": {
         "views": [
           {
             "photo": 1,
-            "iou": 0.5267523849025301,
-            "sourceBoundaryMedianPx": 2.196899890899658
+            "iou": 0.48785190898573083,
+            "sourceBoundaryMedianPx": 4.0
           },
           {
             "photo": 3,
-            "iou": 0.6359813084112149,
-            "sourceBoundaryMedianPx": 2.799999952316284
+            "iou": 0.6003505696757231,
+            "sourceBoundaryMedianPx": 3.396899938583374
           },
           {
             "photo": 4,
-            "iou": 0.7643852210781344,
-            "sourceBoundaryMedianPx": 1.0
+            "iou": 0.746268656716418,
+            "sourceBoundaryMedianPx": 1.399999976158142
           }
         ],
-        "meanIoU": 0.6423729714639598,
-        "medianIoU": 0.6359813084112149
+        "meanIoU": 0.6114903784592906,
+        "medianIoU": 0.6003505696757231
       },
       "candidateGeometry": {
         "originNative": [
-          1.0629168437757213,
-          0.5091242721135915,
-          6.858202231186545
+          1.1197591499692905,
+          0.34862205341065006,
+          5.98745603996911
         ],
         "rotationVector": [
-          -0.1053662323109742,
-          -0.11700901756231852,
-          2.4583180530894295
+          -0.04271859043329529,
+          -0.33053325467778394,
+          2.2708529729142115
         ],
         "panelPolygonsNative": [
           [
             [
-              0.7377593894476381,
-              0.9728810295964746,
-              5.447164488263486
+              1.031445281753539,
+              0.2064166193907651,
+              6.602879948483748
             ],
             [
-              0.44810353379130874,
-              0.8152019456191792,
-              8.168381261001329
+              1.208073018185042,
+              0.490827487430535,
+              5.372032131454471
             ],
             [
-              0.575066274784428,
-              0.705122028391309,
-              8.224501840169703
+              0.722843692876406,
+              1.037184848907976,
+              5.428486425636863
             ],
             [
-              0.9150318103742621,
-              0.42872834654691117,
-              8.246779732342517
-            ],
-            [
-              1.2108018771771805,
-              0.5895201976802718,
-              5.4696247300305725
+              0.5309265861508373,
+              0.7713562698824346,
+              6.657690228627244
             ]
           ],
           [
             [
-              1.2108018771771805,
-              0.5895201976802718,
-              5.4696247300305725
+              1.031445281753539,
+              0.2064166193907651,
+              6.602879948483748
             ],
             [
-              1.0783245069326972,
-              0.29938895690875633,
-              5.444842081316467
+              1.208073018185042,
+              0.490827487430535,
+              5.372032131454471
             ],
             [
-              0.7901845295608377,
-              0.14255404979724878,
-              8.149242438807233
+              0.8942956557156582,
+              0.42363915574951044,
+              5.312950379078537
             ],
             [
-              0.7953079709016909,
-              0.16550944077846644,
-              8.218458847498415
-            ],
-            [
-              0.9150318103742621,
-              0.42872834654691117,
-              8.246779732342517
+              0.73076901345081,
+              0.1427340381821734,
+              6.542674293162017
             ]
           ]
         ],
         "widthHeightScales": [
-          1.120227374052089,
+          1.3682987511190932,
           1.7999999999999998,
-          1.4499999999999158
+          0.6500001256298462
         ]
       },
       "meshRole": "prior-constrained-model"
@@ -341,7 +341,7 @@
     "passed": true,
     "reasons": []
   },
-  "sharedAngleDeg": 104.27020938894461,
+  "sharedAngleDeg": 62.014976557899985,
   "fitGateCriteria": {
     "maximumMeanIoUDrop": 0.02,
     "maximumMedianIoUDrop": 0.02,
@@ -365,8 +365,8 @@
     "source": "exact root/a1 meshes; model surfaces and convex outlines only",
     "commonInitialAngleSource": "left A1 model angle; not an average or measured prior",
     "a1ModelAnglesDeg": {
-      "left": 144.31628366135593,
-      "right": 140.9023731892958
+      "left": 144.42131873683508,
+      "right": 143.62678482490716
     }
   },
   "optimizedVariables": "one common theta plus independent rigid pose, two panel widths and hinge-height scale per board",
@@ -376,48 +376,48 @@
       "views": [
         {
           "photo": 1,
-          "iou": 0.5808383233532934,
-          "sourceBoundaryMedianPx": 2.799999952316284
+          "iou": 0.558202490525176,
+          "sourceBoundaryMedianPx": 3.098449945449829
         },
         {
           "photo": 2,
-          "iou": 0.5969151670951157,
-          "sourceBoundaryMedianPx": 2.0
+          "iou": 0.6137566137566137,
+          "sourceBoundaryMedianPx": 3.098449945449829
         },
         {
           "photo": 3,
-          "iou": 0.7269349845201238,
-          "sourceBoundaryMedianPx": 1.7000000476837158
+          "iou": 0.7680973734785393,
+          "sourceBoundaryMedianPx": 1.0
         },
         {
           "photo": 4,
-          "iou": 0.7624407582938388,
-          "sourceBoundaryMedianPx": 1.0
+          "iou": 0.7166180758017493,
+          "sourceBoundaryMedianPx": 2.0
         }
       ],
-      "meanIoU": 0.6667823083155929,
-      "medianIoU": 0.6619250758076198
+      "meanIoU": 0.6641686383905195,
+      "medianIoU": 0.6651873447791815
     },
     "right": {
       "views": [
         {
           "photo": 1,
-          "iou": 0.5034965034965035,
-          "sourceBoundaryMedianPx": 2.0
+          "iou": 0.4477249044807225,
+          "sourceBoundaryMedianPx": 4.0
         },
         {
           "photo": 3,
-          "iou": 0.6686390532544378,
-          "sourceBoundaryMedianPx": 2.196899890899658
+          "iou": 0.6418098031001257,
+          "sourceBoundaryMedianPx": 3.098449945449829
         },
         {
           "photo": 4,
-          "iou": 0.7716359575656058,
-          "sourceBoundaryMedianPx": 1.0
+          "iou": 0.7086258776328987,
+          "sourceBoundaryMedianPx": 2.0
         }
       ],
-      "meanIoU": 0.6479238381055157,
-      "medianIoU": 0.6686390532544378
+      "meanIoU": 0.5993868617379157,
+      "medianIoU": 0.6418098031001257
     }
   },
   "analyticInitialSourceFit": {
@@ -425,48 +425,48 @@
       "views": [
         {
           "photo": 1,
-          "iou": 0.5717391304347826,
-          "sourceBoundaryMedianPx": 2.799999952316284
+          "iou": 0.5563380281690141,
+          "sourceBoundaryMedianPx": 3.196899890899658
         },
         {
           "photo": 2,
-          "iou": 0.5940236991241628,
-          "sourceBoundaryMedianPx": 2.0
+          "iou": 0.6086032926181625,
+          "sourceBoundaryMedianPx": 3.0
         },
         {
           "photo": 3,
-          "iou": 0.7015931372549019,
-          "sourceBoundaryMedianPx": 2.0
+          "iou": 0.7538265306122449,
+          "sourceBoundaryMedianPx": 1.399999976158142
         },
         {
           "photo": 4,
-          "iou": 0.7504466944609887,
-          "sourceBoundaryMedianPx": 1.0
+          "iou": 0.7208211143695015,
+          "sourceBoundaryMedianPx": 1.399999976158142
         }
       ],
-      "meanIoU": 0.654450665318709,
-      "medianIoU": 0.6478084181895323
+      "meanIoU": 0.6598972414422307,
+      "medianIoU": 0.664712203493832
     },
     "right": {
       "views": [
         {
           "photo": 1,
-          "iou": 0.5267523849025301,
-          "sourceBoundaryMedianPx": 2.196899890899658
+          "iou": 0.48785190898573083,
+          "sourceBoundaryMedianPx": 4.0
         },
         {
           "photo": 3,
-          "iou": 0.6359813084112149,
-          "sourceBoundaryMedianPx": 2.799999952316284
+          "iou": 0.6003505696757231,
+          "sourceBoundaryMedianPx": 3.396899938583374
         },
         {
           "photo": 4,
-          "iou": 0.7643852210781344,
-          "sourceBoundaryMedianPx": 1.0
+          "iou": 0.746268656716418,
+          "sourceBoundaryMedianPx": 1.399999976158142
         }
       ],
-      "meanIoU": 0.6423729714639598,
-      "medianIoU": 0.6359813084112149
+      "meanIoU": 0.6114903784592906,
+      "medianIoU": 0.6003505696757231
     }
   },
   "finalSourceFit": {
@@ -474,235 +474,232 @@
       "views": [
         {
           "photo": 1,
-          "iou": 0.6745725317153889,
-          "sourceBoundaryMedianPx": 1.399999976158142
+          "iou": 0.7088186356073212,
+          "sourceBoundaryMedianPx": 1.0
         },
         {
           "photo": 2,
-          "iou": 0.7265491756679932,
+          "iou": 0.7473560517038778,
           "sourceBoundaryMedianPx": 1.0
         },
         {
           "photo": 3,
-          "iou": 0.785063752276867,
+          "iou": 0.7945783132530121,
           "sourceBoundaryMedianPx": 1.0
         },
         {
           "photo": 4,
-          "iou": 0.7251864601262191,
+          "iou": 0.7642980935875217,
           "sourceBoundaryMedianPx": 1.0
         }
       ],
-      "meanIoU": 0.7278429799466171,
-      "medianIoU": 0.7258678178971061
+      "meanIoU": 0.7537627735379331,
+      "medianIoU": 0.7558270726456997
     },
     "right": {
       "views": [
         {
           "photo": 1,
-          "iou": 0.5368294635708567,
-          "sourceBoundaryMedianPx": 1.399999976158142
+          "iou": 0.6482889733840305,
+          "sourceBoundaryMedianPx": 2.196899890899658
         },
         {
           "photo": 3,
-          "iou": 0.71172868582195,
-          "sourceBoundaryMedianPx": 1.399999976158142
+          "iou": 0.6092843326885881,
+          "sourceBoundaryMedianPx": 2.196899890899658
         },
         {
           "photo": 4,
-          "iou": 0.7762753534111863,
+          "iou": 0.7812879708383961,
           "sourceBoundaryMedianPx": 1.0
         }
       ],
-      "meanIoU": 0.6749445009346643,
-      "medianIoU": 0.71172868582195
+      "meanIoU": 0.679620425637005,
+      "medianIoU": 0.6482889733840305
     }
   },
   "multistarts": [
     {
       "converged": true,
-      "evaluations": 20,
-      "residualRmsPx": 3.540257515308105,
-      "cost": 3692.067893198221,
-      "commonAngleDeg": 170.80278596306542,
-      "startAngleDeg": 144.31628366135593,
-      "seconds": 11.223948557,
+      "evaluations": 29,
+      "residualRmsPx": 3.4116020517971037,
+      "cost": 3498.5382819609067,
+      "commonAngleDeg": 174.99999999999997,
+      "startAngleDeg": 144.42131873683508,
+      "seconds": 35.68594698300001,
       "sourceFit": {
         "left": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.6397139713971397,
-              "sourceBoundaryMedianPx": 1.399999976158142
+              "iou": 0.6412459720730398,
+              "sourceBoundaryMedianPx": 2.196899890899658
             },
             {
               "photo": 2,
-              "iou": 0.718005540166205,
+              "iou": 0.7345918933925597,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 3,
-              "iou": 0.7969924812030075,
+              "iou": 0.8177247014456317,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 4,
-              "iou": 0.7401032702237521,
-              "sourceBoundaryMedianPx": 1.399999976158142
+              "iou": 0.7399887196841511,
+              "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.7237038157475261,
-          "medianIoU": 0.7290544051949785
+          "meanIoU": 0.7333878216488455,
+          "medianIoU": 0.7372903065383554
         },
         "right": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.5208944281524927,
+              "iou": 0.521770947676546,
               "sourceBoundaryMedianPx": 1.399999976158142
             },
             {
               "photo": 3,
-              "iou": 0.6109285127362366,
+              "iou": 0.6036511156186612,
               "sourceBoundaryMedianPx": 2.799999952316284
             },
             {
               "photo": 4,
-              "iou": 0.7352185089974294,
+              "iou": 0.7372488408037094,
               "sourceBoundaryMedianPx": 0.0
             }
           ],
-          "meanIoU": 0.6223471499620529,
-          "medianIoU": 0.6109285127362366
+          "meanIoU": 0.6208903013663055,
+          "medianIoU": 0.6036511156186612
         }
       },
       "fitGate": {
         "passed": false,
         "reasons": [
-          "right: mean IoU worsens by more than 0.02",
           "right: median IoU worsens by more than 0.02"
         ]
+      }
+    },
+    {
+      "converged": true,
+      "evaluations": 19,
+      "residualRmsPx": 3.543466020528754,
+      "cost": 3679.4726574671167,
+      "commonAngleDeg": 62.014976557899985,
+      "startAngleDeg": 50.0,
+      "seconds": 23.620030234000012,
+      "sourceFit": {
+        "left": {
+          "views": [
+            {
+              "photo": 1,
+              "iou": 0.7088186356073212,
+              "sourceBoundaryMedianPx": 1.0
+            },
+            {
+              "photo": 2,
+              "iou": 0.7473560517038778,
+              "sourceBoundaryMedianPx": 1.0
+            },
+            {
+              "photo": 3,
+              "iou": 0.7945783132530121,
+              "sourceBoundaryMedianPx": 1.0
+            },
+            {
+              "photo": 4,
+              "iou": 0.7642980935875217,
+              "sourceBoundaryMedianPx": 1.0
+            }
+          ],
+          "meanIoU": 0.7537627735379331,
+          "medianIoU": 0.7558270726456997
+        },
+        "right": {
+          "views": [
+            {
+              "photo": 1,
+              "iou": 0.6482889733840305,
+              "sourceBoundaryMedianPx": 2.196899890899658
+            },
+            {
+              "photo": 3,
+              "iou": 0.6092843326885881,
+              "sourceBoundaryMedianPx": 2.196899890899658
+            },
+            {
+              "photo": 4,
+              "iou": 0.7812879708383961,
+              "sourceBoundaryMedianPx": 1.0
+            }
+          ],
+          "meanIoU": 0.679620425637005,
+          "medianIoU": 0.6482889733840305
+        }
+      },
+      "fitGate": {
+        "passed": true,
+        "reasons": []
       }
     },
     {
       "converged": true,
       "evaluations": 22,
-      "residualRmsPx": 3.5484549474168317,
-      "cost": 3660.5677559644955,
-      "commonAngleDeg": 61.59267001470519,
-      "startAngleDeg": 50.0,
-      "seconds": 11.789546116,
+      "residualRmsPx": 4.214663661555254,
+      "cost": 3934.0322289900273,
+      "commonAngleDeg": 77.93586051540737,
+      "startAngleDeg": 90.0,
+      "seconds": 22.961203003999998,
       "sourceFit": {
         "left": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.6947483588621444,
+              "iou": 0.721357063403782,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 2,
-              "iou": 0.753562945368171,
+              "iou": 0.7382510410469958,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 3,
-              "iou": 0.7960048426150121,
+              "iou": 0.7816775728732898,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 4,
-              "iou": 0.7650462962962963,
+              "iou": 0.756140350877193,
               "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.7523406107854059,
-          "medianIoU": 0.7593046208322336
+          "meanIoU": 0.7493565070503151,
+          "medianIoU": 0.7471956959620945
         },
         "right": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.6417061611374407,
-              "sourceBoundaryMedianPx": 2.098449945449829
+              "iou": 0.5120126033871603,
+              "sourceBoundaryMedianPx": 2.799999952316284
             },
             {
               "photo": 3,
-              "iou": 0.6149341142020498,
+              "iou": 0.7061545580749653,
               "sourceBoundaryMedianPx": 2.196899890899658
             },
             {
               "photo": 4,
-              "iou": 0.7828467153284672,
-              "sourceBoundaryMedianPx": 1.0
+              "iou": 0.7776497695852534,
+              "sourceBoundaryMedianPx": 0.0
             }
           ],
-          "meanIoU": 0.6798289968893192,
-          "medianIoU": 0.6417061611374407
-        }
-      },
-      "fitGate": {
-        "passed": false,
-        "reasons": [
-          "right: median IoU worsens by more than 0.02"
-        ]
-      }
-    },
-    {
-      "converged": true,
-      "evaluations": 16,
-      "residualRmsPx": 3.5596534114833744,
-      "cost": 3484.0494654049526,
-      "commonAngleDeg": 104.27020938894461,
-      "startAngleDeg": 90.0,
-      "seconds": 8.911117831000002,
-      "sourceFit": {
-        "left": {
-          "views": [
-            {
-              "photo": 1,
-              "iou": 0.6745725317153889,
-              "sourceBoundaryMedianPx": 1.399999976158142
-            },
-            {
-              "photo": 2,
-              "iou": 0.7265491756679932,
-              "sourceBoundaryMedianPx": 1.0
-            },
-            {
-              "photo": 3,
-              "iou": 0.785063752276867,
-              "sourceBoundaryMedianPx": 1.0
-            },
-            {
-              "photo": 4,
-              "iou": 0.7251864601262191,
-              "sourceBoundaryMedianPx": 1.0
-            }
-          ],
-          "meanIoU": 0.7278429799466171,
-          "medianIoU": 0.7258678178971061
-        },
-        "right": {
-          "views": [
-            {
-              "photo": 1,
-              "iou": 0.5368294635708567,
-              "sourceBoundaryMedianPx": 1.399999976158142
-            },
-            {
-              "photo": 3,
-              "iou": 0.71172868582195,
-              "sourceBoundaryMedianPx": 1.399999976158142
-            },
-            {
-              "photo": 4,
-              "iou": 0.7762753534111863,
-              "sourceBoundaryMedianPx": 1.0
-            }
-          ],
-          "meanIoU": 0.6749445009346643,
-          "medianIoU": 0.71172868582195
+          "meanIoU": 0.6652723103491264,
+          "medianIoU": 0.7061545580749653
         }
       },
       "fitGate": {
@@ -713,129 +710,127 @@
     {
       "converged": true,
       "evaluations": 31,
-      "residualRmsPx": 3.5340679657436773,
-      "cost": 3692.320768406677,
-      "commonAngleDeg": 170.96472662851318,
+      "residualRmsPx": 3.411472492297129,
+      "cost": 3498.538623677123,
+      "commonAngleDeg": 174.99999999999997,
       "startAngleDeg": 130.0,
-      "seconds": 17.061291763999996,
+      "seconds": 45.269256918999986,
       "sourceFit": {
         "left": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.6382513661202186,
-              "sourceBoundaryMedianPx": 1.399999976158142
+              "iou": 0.6463215258855586,
+              "sourceBoundaryMedianPx": 1.7000000476837158
             },
             {
               "photo": 2,
-              "iou": 0.7185595567867036,
+              "iou": 0.7345918933925597,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 3,
-              "iou": 0.7958672510958046,
+              "iou": 0.8177247014456317,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 4,
-              "iou": 0.73760092272203,
-              "sourceBoundaryMedianPx": 1.399999976158142
+              "iou": 0.7404063205417607,
+              "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.7225697741811892,
-          "medianIoU": 0.7280802397543669
+          "meanIoU": 0.7347611103163777,
+          "medianIoU": 0.7374991069671601
         },
         "right": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.5208944281524927,
+              "iou": 0.521770947676546,
               "sourceBoundaryMedianPx": 1.399999976158142
             },
             {
               "photo": 3,
-              "iou": 0.611088295687885,
+              "iou": 0.6036511156186612,
               "sourceBoundaryMedianPx": 2.799999952316284
             },
             {
               "photo": 4,
-              "iou": 0.7352185089974294,
+              "iou": 0.7372488408037094,
               "sourceBoundaryMedianPx": 0.0
             }
           ],
-          "meanIoU": 0.6224004109459357,
-          "medianIoU": 0.611088295687885
+          "meanIoU": 0.6208903013663055,
+          "medianIoU": 0.6036511156186612
         }
       },
       "fitGate": {
         "passed": false,
         "reasons": [
-          "right: mean IoU worsens by more than 0.02",
           "right: median IoU worsens by more than 0.02"
         ]
       }
     },
     {
       "converged": true,
-      "evaluations": 20,
-      "residualRmsPx": 3.540260731747463,
-      "cost": 3692.068806779768,
-      "commonAngleDeg": 170.79698713428695,
+      "evaluations": 32,
+      "residualRmsPx": 3.4124777971033544,
+      "cost": 3498.4502632466647,
+      "commonAngleDeg": 174.99999999999997,
       "startAngleDeg": 165.0,
-      "seconds": 9.177668213000004,
+      "seconds": 51.346336893,
       "sourceFit": {
         "left": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.6397139713971397,
-              "sourceBoundaryMedianPx": 1.399999976158142
+              "iou": 0.6460369163952225,
+              "sourceBoundaryMedianPx": 1.7000000476837158
             },
             {
               "photo": 2,
-              "iou": 0.718005540166205,
+              "iou": 0.7386934673366834,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 3,
-              "iou": 0.7969924812030075,
+              "iou": 0.8231974921630094,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 4,
-              "iou": 0.7401032702237521,
-              "sourceBoundaryMedianPx": 1.399999976158142
+              "iou": 0.7316657191586129,
+              "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.7237038157475261,
-          "medianIoU": 0.7290544051949785
+          "meanIoU": 0.7348983987633821,
+          "medianIoU": 0.7351795932476481
         },
         "right": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.5208944281524927,
+              "iou": 0.521770947676546,
               "sourceBoundaryMedianPx": 1.399999976158142
             },
             {
               "photo": 3,
-              "iou": 0.6109285127362366,
+              "iou": 0.6036511156186612,
               "sourceBoundaryMedianPx": 2.799999952316284
             },
             {
               "photo": 4,
-              "iou": 0.7352185089974294,
+              "iou": 0.7372488408037094,
               "sourceBoundaryMedianPx": 0.0
             }
           ],
-          "meanIoU": 0.6223471499620529,
-          "medianIoU": 0.6109285127362366
+          "meanIoU": 0.6208903013663055,
+          "medianIoU": 0.6036511156186612
         }
       },
       "fitGate": {
         "passed": false,
         "reasons": [
-          "right: mean IoU worsens by more than 0.02",
           "right: median IoU worsens by more than 0.02"
         ]
       }
@@ -848,9 +843,9 @@
       "imageCompatible": false,
       "optimizer": {
         "converged": true,
-        "evaluations": 16,
-        "residualRmsPx": 4.279614014021587,
-        "cost": 4113.915460466765,
+        "evaluations": 24,
+        "residualRmsPx": 3.838409309076404,
+        "cost": 4068.7903994678327,
         "commonAngleDeg": 29.999999999999996
       },
       "sourceFit": {
@@ -858,60 +853,60 @@
           "views": [
             {
               "photo": 1,
-              "iou": 0.6773303916161059,
+              "iou": 0.6655719759168035,
               "sourceBoundaryMedianPx": 1.399999976158142
             },
             {
               "photo": 2,
-              "iou": 0.735144312393888,
+              "iou": 0.7420273348519362,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 3,
-              "iou": 0.8097893432465924,
+              "iou": 0.8121890547263682,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 4,
-              "iou": 0.7429718875502008,
+              "iou": 0.7364517969195664,
               "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.7413089837016967,
-          "medianIoU": 0.7390580999720444
+          "meanIoU": 0.7390600406036686,
+          "medianIoU": 0.7392395658857513
         },
         "right": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.5317589576547231,
-              "sourceBoundaryMedianPx": 2.4984498023986816
-            },
-            {
-              "photo": 3,
-              "iou": 0.6995283018867925,
+              "iou": 0.6306844281120808,
               "sourceBoundaryMedianPx": 2.196899890899658
             },
             {
+              "photo": 3,
+              "iou": 0.6244624940277114,
+              "sourceBoundaryMedianPx": 2.799999952316284
+            },
+            {
               "photo": 4,
-              "iou": 0.8294902912621359,
+              "iou": 0.7991606714628298,
               "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.6869258502678838,
-          "medianIoU": 0.6995283018867925
+          "meanIoU": 0.6847691978675406,
+          "medianIoU": 0.6306844281120808
         }
       }
     },
     {
       "angleDeg": 60.0,
       "status": "fit",
-      "imageCompatible": false,
+      "imageCompatible": true,
       "optimizer": {
         "converged": true,
-        "evaluations": 19,
-        "residualRmsPx": 3.5406691813094495,
-        "cost": 3661.5316524625878,
+        "evaluations": 7,
+        "residualRmsPx": 3.5374779167051873,
+        "cost": 3679.128252786249,
         "commonAngleDeg": 59.99999999999999
       },
       "sourceFit": {
@@ -919,17 +914,78 @@
           "views": [
             {
               "photo": 1,
-              "iou": 0.6953424657534246,
+              "iou": 0.7078713968957872,
               "sourceBoundaryMedianPx": 1.2000000476837158
             },
             {
               "photo": 2,
-              "iou": 0.7538461538461538,
+              "iou": 0.7453271028037384,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 3,
-              "iou": 0.8012121212121213,
+              "iou": 0.7955502104630187,
+              "sourceBoundaryMedianPx": 1.0
+            },
+            {
+              "photo": 4,
+              "iou": 0.7638568129330254,
+              "sourceBoundaryMedianPx": 1.0
+            }
+          ],
+          "meanIoU": 0.7531513807738924,
+          "medianIoU": 0.754591957868382
+        },
+        "right": {
+          "views": [
+            {
+              "photo": 1,
+              "iou": 0.6521327014218009,
+              "sourceBoundaryMedianPx": 2.196899890899658
+            },
+            {
+              "photo": 3,
+              "iou": 0.613846903949293,
+              "sourceBoundaryMedianPx": 2.196899890899658
+            },
+            {
+              "photo": 4,
+              "iou": 0.7772367620206938,
+              "sourceBoundaryMedianPx": 1.0
+            }
+          ],
+          "meanIoU": 0.6810721224639292,
+          "medianIoU": 0.6521327014218009
+        }
+      }
+    },
+    {
+      "angleDeg": 62.014976557899985,
+      "status": "fit",
+      "imageCompatible": true,
+      "optimizer": {
+        "converged": true,
+        "evaluations": 4,
+        "residualRmsPx": 3.5433836497815943,
+        "cost": 3679.468826824332,
+        "commonAngleDeg": 62.014976557899985
+      },
+      "sourceFit": {
+        "left": {
+          "views": [
+            {
+              "photo": 1,
+              "iou": 0.709211986681465,
+              "sourceBoundaryMedianPx": 1.0
+            },
+            {
+              "photo": 2,
+              "iou": 0.7473560517038778,
+              "sourceBoundaryMedianPx": 1.0
+            },
+            {
+              "photo": 3,
+              "iou": 0.7939759036144578,
               "sourceBoundaryMedianPx": 1.0
             },
             {
@@ -938,29 +994,29 @@
               "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.7535302834120526,
-          "medianIoU": 0.7587832733413322
+          "meanIoU": 0.7535660837090777,
+          "medianIoU": 0.7555382222701943
         },
         "right": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.6534278959810875,
-              "sourceBoundaryMedianPx": 2.0
+              "iou": 0.6482889733840305,
+              "sourceBoundaryMedianPx": 2.196899890899658
             },
             {
               "photo": 3,
-              "iou": 0.6156479217603912,
+              "iou": 0.6092843326885881,
               "sourceBoundaryMedianPx": 2.196899890899658
             },
             {
               "photo": 4,
-              "iou": 0.7806963958460599,
+              "iou": 0.7812879708383961,
               "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.6832574045291796,
-          "medianIoU": 0.6534278959810875
+          "meanIoU": 0.679620425637005,
+          "medianIoU": 0.6482889733840305
         }
       }
     },
@@ -970,9 +1026,9 @@
       "imageCompatible": false,
       "optimizer": {
         "converged": true,
-        "evaluations": 9,
-        "residualRmsPx": 3.673210077154986,
-        "cost": 3605.658769973026,
+        "evaluations": 17,
+        "residualRmsPx": 3.5448604377456703,
+        "cost": 3610.711138473256,
         "commonAngleDeg": 90.0
       },
       "sourceFit": {
@@ -980,121 +1036,60 @@
           "views": [
             {
               "photo": 1,
-              "iou": 0.6908292147171884,
+              "iou": 0.7018221976808393,
               "sourceBoundaryMedianPx": 1.399999976158142
             },
             {
               "photo": 2,
-              "iou": 0.7382230172927847,
+              "iou": 0.7407185628742515,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 3,
-              "iou": 0.7850692354003612,
+              "iou": 0.7810826888756692,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 4,
-              "iou": 0.7389048991354467,
+              "iou": 0.7463893703061814,
               "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.7382565916364452,
-          "medianIoU": 0.7385639582141157
+          "meanIoU": 0.7425032049342354,
+          "medianIoU": 0.7435539665902164
         },
         "right": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.53314696485623,
-              "sourceBoundaryMedianPx": 1.798449993133545
+              "iou": 0.576417419884963,
+              "sourceBoundaryMedianPx": 1.7000000476837158
             },
             {
               "photo": 3,
-              "iou": 0.6859925788497218,
-              "sourceBoundaryMedianPx": 2.0
+              "iou": 0.6104129263913824,
+              "sourceBoundaryMedianPx": 2.196899890899658
             },
             {
               "photo": 4,
-              "iou": 0.7539489671931956,
+              "iou": 0.7200236266981689,
               "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.6576961702997158,
-          "medianIoU": 0.6859925788497218
-        }
-      }
-    },
-    {
-      "angleDeg": 104.27020938894461,
-      "status": "fit",
-      "imageCompatible": true,
-      "optimizer": {
-        "converged": true,
-        "evaluations": 2,
-        "residualRmsPx": 3.5595778203088297,
-        "cost": 3484.049320661073,
-        "commonAngleDeg": 104.27020938894461
-      },
-      "sourceFit": {
-        "left": {
-          "views": [
-            {
-              "photo": 1,
-              "iou": 0.6745725317153889,
-              "sourceBoundaryMedianPx": 1.399999976158142
-            },
-            {
-              "photo": 2,
-              "iou": 0.7265491756679932,
-              "sourceBoundaryMedianPx": 1.0
-            },
-            {
-              "photo": 3,
-              "iou": 0.785063752276867,
-              "sourceBoundaryMedianPx": 1.0
-            },
-            {
-              "photo": 4,
-              "iou": 0.7251864601262191,
-              "sourceBoundaryMedianPx": 1.0
-            }
-          ],
-          "meanIoU": 0.7278429799466171,
-          "medianIoU": 0.7258678178971061
-        },
-        "right": {
-          "views": [
-            {
-              "photo": 1,
-              "iou": 0.5368294635708567,
-              "sourceBoundaryMedianPx": 1.399999976158142
-            },
-            {
-              "photo": 3,
-              "iou": 0.71172868582195,
-              "sourceBoundaryMedianPx": 1.399999976158142
-            },
-            {
-              "photo": 4,
-              "iou": 0.7762753534111863,
-              "sourceBoundaryMedianPx": 1.0
-            }
-          ],
-          "meanIoU": 0.6749445009346643,
-          "medianIoU": 0.71172868582195
+          "meanIoU": 0.6356179909915047,
+          "medianIoU": 0.6104129263913824
         }
       }
     },
     {
       "angleDeg": 120.0,
       "status": "fit",
-      "imageCompatible": true,
+      "imageCompatible": false,
       "optimizer": {
         "converged": true,
-        "evaluations": 13,
-        "residualRmsPx": 3.595261821651603,
-        "cost": 3590.0328025449994,
+        "evaluations": 26,
+        "residualRmsPx": 3.625017370053426,
+        "cost": 3757.4343705060774,
         "commonAngleDeg": 119.99999999999999
       },
       "sourceFit": {
@@ -1102,60 +1097,60 @@
           "views": [
             {
               "photo": 1,
-              "iou": 0.6147672552166934,
-              "sourceBoundaryMedianPx": 2.0
+              "iou": 0.6252676659528907,
+              "sourceBoundaryMedianPx": 1.399999976158142
             },
             {
               "photo": 2,
-              "iou": 0.6926293779404077,
+              "iou": 0.7137425312330256,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 3,
-              "iou": 0.8119551681195517,
+              "iou": 0.8013613861386139,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 4,
-              "iou": 0.7312320916905444,
+              "iou": 0.723526044647968,
               "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.7126459732417993,
-          "medianIoU": 0.711930734815476
+          "meanIoU": 0.7159744069931245,
+          "medianIoU": 0.7186342879404968
         },
         "right": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.5318483782727628,
-              "sourceBoundaryMedianPx": 1.0
+              "iou": 0.49130595634480206,
+              "sourceBoundaryMedianPx": 2.9000000953674316
             },
             {
               "photo": 3,
-              "iou": 0.7513002364066194,
-              "sourceBoundaryMedianPx": 1.399999976158142
+              "iou": 0.6607605877268798,
+              "sourceBoundaryMedianPx": 2.4984498023986816
             },
             {
               "photo": 4,
-              "iou": 0.8001215066828675,
+              "iou": 0.7860752386299832,
               "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.6944233737874166,
-          "medianIoU": 0.7513002364066194
+          "meanIoU": 0.6460472609005551,
+          "medianIoU": 0.6607605877268798
         }
       }
     },
     {
       "angleDeg": 150.0,
       "status": "fit",
-      "imageCompatible": true,
+      "imageCompatible": false,
       "optimizer": {
         "converged": true,
-        "evaluations": 16,
-        "residualRmsPx": 3.5322147806986384,
-        "cost": 3556.8970023040865,
+        "evaluations": 22,
+        "residualRmsPx": 3.4952327732622384,
+        "cost": 3576.335327652475,
         "commonAngleDeg": 150.0
       },
       "sourceFit": {
@@ -1163,60 +1158,60 @@
           "views": [
             {
               "photo": 1,
-              "iou": 0.6318622174381054,
-              "sourceBoundaryMedianPx": 2.0
+              "iou": 0.6392199349945829,
+              "sourceBoundaryMedianPx": 1.7000000476837158
             },
             {
               "photo": 2,
-              "iou": 0.720892274211099,
+              "iou": 0.7304492512479202,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 3,
-              "iou": 0.8320707070707071,
+              "iou": 0.8266583229036295,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 4,
-              "iou": 0.7370203160270881,
+              "iou": 0.7338983050847457,
               "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.73046137868675,
-          "medianIoU": 0.7289562951190935
+          "meanIoU": 0.7325564535577196,
+          "medianIoU": 0.7321737781663329
         },
         "right": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.5045696877380046,
-              "sourceBoundaryMedianPx": 1.399999976158142
+              "iou": 0.5109461966604824,
+              "sourceBoundaryMedianPx": 2.0
             },
             {
               "photo": 3,
-              "iou": 0.7580419580419581,
-              "sourceBoundaryMedianPx": 1.0
+              "iou": 0.6293794850147741,
+              "sourceBoundaryMedianPx": 2.4984498023986816
             },
             {
               "photo": 4,
-              "iou": 0.8206650831353919,
+              "iou": 0.7555673382820784,
               "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.6944255763051181,
-          "medianIoU": 0.7580419580419581
+          "meanIoU": 0.6319643399857783,
+          "medianIoU": 0.6293794850147741
         }
       }
     },
     {
       "angleDeg": 174.0,
       "status": "fit",
-      "imageCompatible": true,
+      "imageCompatible": false,
       "optimizer": {
         "converged": true,
-        "evaluations": 14,
-        "residualRmsPx": 3.4501448600363194,
-        "cost": 3565.0111070353446,
+        "evaluations": 23,
+        "residualRmsPx": 3.414656590467935,
+        "cost": 3494.5587845452433,
         "commonAngleDeg": 174.0
       },
       "sourceFit": {
@@ -1224,48 +1219,48 @@
           "views": [
             {
               "photo": 1,
-              "iou": 0.6186974789915967,
-              "sourceBoundaryMedianPx": 2.098449945449829
+              "iou": 0.6379217996786288,
+              "sourceBoundaryMedianPx": 2.0
             },
             {
               "photo": 2,
-              "iou": 0.7113624124932687,
+              "iou": 0.7271727172717272,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 3,
-              "iou": 0.8253275109170306,
+              "iou": 0.8351231838281743,
               "sourceBoundaryMedianPx": 1.0
             },
             {
               "photo": 4,
-              "iou": 0.7235457063711911,
+              "iou": 0.7312008978675645,
               "sourceBoundaryMedianPx": 1.0
             }
           ],
-          "meanIoU": 0.7197332771932717,
-          "medianIoU": 0.7174540594322298
+          "meanIoU": 0.7328546496615237,
+          "medianIoU": 0.7291868075696458
         },
         "right": {
           "views": [
             {
               "photo": 1,
-              "iou": 0.5013323182337267,
-              "sourceBoundaryMedianPx": 2.0
-            },
-            {
-              "photo": 3,
-              "iou": 0.7379629629629629,
+              "iou": 0.5186950146627566,
               "sourceBoundaryMedianPx": 1.399999976158142
             },
             {
+              "photo": 3,
+              "iou": 0.6053702196908055,
+              "sourceBoundaryMedianPx": 2.799999952316284
+            },
+            {
               "photo": 4,
-              "iou": 0.8111239860950173,
-              "sourceBoundaryMedianPx": 1.0
+              "iou": 0.7381443298969073,
+              "sourceBoundaryMedianPx": 0.0
             }
           ],
-          "meanIoU": 0.6834730890972357,
-          "medianIoU": 0.7379629629629629
+          "meanIoU": 0.6207365214168231,
+          "medianIoU": 0.6053702196908055
         }
       }
     }
@@ -1274,19 +1269,17 @@
     "kind": "conditional profile sensitivity; not a statistical confidence interval",
     "profileComplete": true,
     "imageCompatibleProfileAnglesDeg": [
-      104.27020938894461,
-      120.0,
-      150.0,
-      174.0
+      60.0,
+      62.014976557899985
     ],
-    "ambiguous": true,
+    "ambiguous": false,
     "scope": "Finite masks/cameras and bounded template poses/dimensions can admit additional untested shapes."
   },
   "overlays": [
-    "overlay-1.jpg",
-    "overlay-2.jpg",
-    "overlay-3.jpg",
-    "overlay-4.jpg"
+    "structural-overlay-1.jpg",
+    "structural-overlay-2.jpg",
+    "structural-overlay-3.jpg",
+    "structural-overlay-4.jpg"
   ],
   "overlayLegend": "green: source mask; magenta: A1; cyan: prior-constrained candidate",
   "limitations": [
@@ -1296,5 +1289,9 @@
     "Masks describe visible segmentation and may contain occlusion or association error; no stripe is interpreted as a crease.",
     "Zero-thickness planar sheets; source-colored visible regions and gray unseen regions; no absolute accuracy claim."
   ],
-  "wallSeconds": 44.042727202
+  "wallSeconds": 143.53652250099998,
+  "initializerModels": {
+    "left": "guard-left-initializer.glb",
+    "right": "guard-right-initializer.glb"
+  }
 }
