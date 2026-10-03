@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate_models_installed",
+  "modelUpdates": 2,
+  "items": [
+    {
+      "id": "post-box-1",
+      "status": "candidate_model",
+      "modelFile": "post-box-1-volume-candidate.glb",
+      "modelSha256": "f8bb5efd87e1b42bd4b3dda717d00ea5cb446ae5b29e20263a37fa46eee49e85",
+      "heightNative": 0.3581165112582432,
+      "sourceFaceGateAccepted": false,
+      "acceptedForPhysicalUse": false
+    },
+    {
+      "id": "post-box-2",
+      "status": "candidate_model",
+      "modelFile": "post-box-2-volume-candidate.glb",
+      "modelSha256": "9db171e6ff78d2e6c44359a8cb7b98e7f14377f255799dfa51452eedc95f9243",
+      "heightNative": 0.35221507248636863,
+      "sourceFaceGateAccepted": false,
+      "acceptedForPhysicalUse": false
+    }
+  ],
+  "sourceFiles": {
+    "geometry.json": "a0c901c0a823a8d0004707d75763b888573222e65d953d935974406a4db0a200",
+    "objects.json": "31b2ff11721d933b094abda7adb83b20bff412d9238450ba7ca6601595c904f9",
+    "posts.glb": "6a690909125ca06754b0263f2a5e9c1c25d047815b596110afdabc73a3c48926",
+    "sam3.json": "b098f3585bb8aba684bca3b072c75bcebc2a92b8fc4bdb0f4819ee3bba545f72"
+  },
+  "ground": {
+    "normal": [
+      0.007714318910697278,
+      -0.9941897817991617,
+      -0.10736464525102953
+    ],
+    "offset": 2.4435176430733963
+  },
+  "physicalValidation": "none",
+  "acceptedForPhysicalUse": false,
+  "mPerNative": null
+}

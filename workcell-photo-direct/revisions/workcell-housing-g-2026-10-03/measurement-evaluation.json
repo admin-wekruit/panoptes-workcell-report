@@ -1,0 +1,2054 @@
+{
+  "schemaVersion": 1,
+  "scaleMPerNative": null,
+  "groundTruthUsedForCalibration": false,
+  "comparisons": [
+    {
+      "objectId": "fence-0",
+      "label": "安全围栏 1",
+      "method": "multiview physical lower edge",
+      "estimateNative": 0.27146041836945756,
+      "estimateM": null,
+      "rangeNative": [
+        0.2311106588658545,
+        0.3122462241851762
+      ],
+      "rangeM": null,
+      "byPhoto": {},
+      "byPhotoMethod": "independently supported physical edge observations",
+      "sourcePhotos": [
+        3,
+        4
+      ],
+      "groundTruthM": 0.2,
+      "signedErrorM": null,
+      "absoluteErrorM": null,
+      "relativeError": null,
+      "source": "多视角实体底边到同一拟合地面的垂直距离。",
+      "target": {
+        "objectId": "fence-0",
+        "feature": "fence bottom to ground",
+        "groundTruthM": 0.2,
+        "provenance": "User independently supplied fence bottom distance on 2026-10-01.",
+        "associationStatus": "Recognized lower rail; exact physical endpoint correspondence unconfirmed."
+      },
+      "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
+    },
+    {
+      "objectId": "post-box-1",
+      "label": "黄色光幕立柱 1",
+      "method": "multiview physical lower edge",
+      "estimateNative": null,
+      "estimateM": null,
+      "rangeNative": null,
+      "rangeM": null,
+      "byPhoto": {},
+      "byPhotoMethod": "independently supported physical edge observations",
+      "sourcePhotos": [],
+      "groundTruthM": 0.24,
+      "signedErrorM": null,
+      "absoluteErrorM": null,
+      "relativeError": null,
+      "source": "No sufficiently supported local floor",
+      "target": {
+        "objectId": "post-box-1",
+        "feature": "light-curtain housing bottom to ground",
+        "groundTruthM": 0.24,
+        "provenance": "User independently supplied light-curtain bottom distance on 2026-10-01.",
+        "associationStatus": "Yellow light-curtain housing mask; exact physical endpoint correspondence unconfirmed."
+      },
+      "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
+    },
+    {
+      "objectId": "post-box-2",
+      "label": "黄色光幕立柱 2",
+      "method": "multiview physical lower edge",
+      "estimateNative": null,
+      "estimateM": null,
+      "rangeNative": null,
+      "rangeM": null,
+      "byPhoto": {},
+      "byPhotoMethod": "independently supported physical edge observations",
+      "sourcePhotos": [],
+      "groundTruthM": 0.24,
+      "signedErrorM": null,
+      "absoluteErrorM": null,
+      "relativeError": null,
+      "source": "No common RGB end edge has stable multiview reprojection support",
+      "target": {
+        "objectId": "post-box-2",
+        "feature": "light-curtain housing bottom to ground",
+        "groundTruthM": 0.24,
+        "provenance": "User independently supplied light-curtain bottom distance on 2026-10-01.",
+        "associationStatus": "Yellow light-curtain housing mask; exact physical endpoint correspondence unconfirmed."
+      },
+      "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
+    }
+  ],
+  "objectEstimates": [
+    {
+      "objectId": "robot",
+      "label": "工业机器人",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 4.321307902865291,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 4.351276412400312,
+            "valueM": null
+          },
+          "3": {
+            "valueNative": 3.0776858587625,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 2.702748443202112,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": true,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "cart",
+      "label": "载料运输车",
+      "visibleHeight": {
+        "medianNative": 1.6239239622908481,
+        "medianM": null,
+        "rangeNative": [
+          1.5433769747931654,
+          1.8482806515903811
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 1.8482806515903811,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 1.5433769747931654,
+            "valueM": null
+          },
+          "3": {
+            "valueNative": 1.6527194714175706,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 1.5951284531641257,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "v-guard-left",
+      "label": "左侧折弯护板 1",
+      "visibleHeight": {
+        "medianNative": 0.9205550308322892,
+        "medianM": null,
+        "rangeNative": [
+          0.8392788932981314,
+          0.9543942321093746
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "3": {
+            "valueNative": 0.8392788932981314,
+            "valueM": null
+          },
+          "1": {
+            "valueNative": 0.9162470863381439,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.9248629753264346,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 0.9543942321093746,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "v-guard-center",
+      "label": "中间折弯护板 2",
+      "visibleHeight": {
+        "medianNative": 0.5132292688779958,
+        "medianM": null,
+        "rangeNative": [
+          0.49269640906701107,
+          0.5337621286889805
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "3": {
+            "valueNative": 0.5337621286889805,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 0.49269640906701107,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "v-guard-right",
+      "label": "右侧折弯护板 3",
+      "visibleHeight": {
+        "medianNative": 0.8448371614452539,
+        "medianM": null,
+        "rangeNative": [
+          0.7275606869116659,
+          0.8466249602186977
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "3": {
+            "valueNative": 0.7275606869116659,
+            "valueM": null
+          },
+          "1": {
+            "valueNative": 0.8448371614452539,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 0.8466249602186977,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "post-box-1",
+      "label": "黄色光幕立柱 1",
+      "visibleHeight": {
+        "medianNative": 2.8934515414550575,
+        "medianM": null,
+        "rangeNative": [
+          2.800089720214493,
+          3.9477999345740806
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 2.860130540261118,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 3.9477999345740806,
+            "valueM": null
+          },
+          "3": {
+            "valueNative": 2.800089720214493,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 2.9267725426489966,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "post-box-2",
+      "label": "黄色光幕立柱 2",
+      "visibleHeight": {
+        "medianNative": 2.867159741564235,
+        "medianM": null,
+        "rangeNative": [
+          2.82750139455928,
+          2.9264594252708824
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 2.9264594252708824,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 2.82750139455928,
+            "valueM": null
+          },
+          "3": {
+            "valueNative": 2.8534666986673005,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 2.8808527844611698,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "post-cylinder-1",
+      "label": "黑色防撞柱 1",
+      "visibleHeight": {
+        "medianNative": 1.508435930947947,
+        "medianM": null,
+        "rangeNative": [
+          1.4281305508615516,
+          1.5342625447177687
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 1.4281305508615516,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 1.514997029625056,
+            "valueM": null
+          },
+          "3": {
+            "valueNative": 1.5342625447177687,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 1.501874832270838,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "post-cylinder-2",
+      "label": "黑色防撞柱 2",
+      "visibleHeight": {
+        "medianNative": 1.5177901324068421,
+        "medianM": null,
+        "rangeNative": [
+          1.5138454638446643,
+          1.52173480096902
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "3": {
+            "valueNative": 1.5138454638446643,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 1.52173480096902,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "fence-0",
+      "label": "安全围栏 1",
+      "visibleHeight": {
+        "medianNative": 3.8627538549247906,
+        "medianM": null,
+        "rangeNative": [
+          0.06596174669162913,
+          3.9259054465606704
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 3.8740440014402284,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.06596174669162913,
+            "valueM": null
+          },
+          "3": {
+            "valueNative": 3.851463708409353,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 3.9259054465606704,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "fence-1",
+      "label": "安全围栏 2",
+      "visibleHeight": {
+        "medianNative": 3.9818970262285784,
+        "medianM": null,
+        "rangeNative": [
+          3.8867764485155636,
+          4.077017603941593
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 3.8867764485155636,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 4.077017603941593,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor",
+      "label": "地面参考面",
+      "visibleHeight": {
+        "medianNative": 0.06262408067747272,
+        "medianM": null,
+        "rangeNative": [
+          0.04210346422513922,
+          0.06280625432387721
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.04210346422513922,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.06280533777304464,
+            "valueM": null
+          },
+          "3": {
+            "valueNative": 0.062442823581900786,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 0.06280625432387721,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "emergency-button",
+      "label": "红黄急停按钮",
+      "visibleHeight": {
+        "medianNative": 0.1743595715619347,
+        "medianM": null,
+        "rangeNative": [
+          0.15337529935278832,
+          0.17701747949557567
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.1743595715619347,
+            "valueM": null
+          },
+          "3": {
+            "valueNative": 0.15337529935278832,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 0.17701747949557567,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2,
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "work-platform-1",
+      "label": "平台/护板可见表面 1",
+      "visibleHeight": {
+        "medianNative": 0.3802897157352103,
+        "medianM": null,
+        "rangeNative": [
+          0.3461432239668971,
+          0.4144362075035235
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.4144362075035235,
+            "valueM": null
+          },
+          "3": {
+            "valueNative": 0.3461432239668971,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          3
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "signal-light-2",
+      "label": "信号灯 1",
+      "visibleHeight": {
+        "medianNative": 0.3526627129957147,
+        "medianM": null,
+        "rangeNative": [
+          0.33478920591742645,
+          0.370536220074003
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.33478920591742645,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 0.370536220074003,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "signal-light-3",
+      "label": "信号灯 2",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.3588907970435975,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "signal-light-4",
+      "label": "信号灯 3",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.46685289430298793,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "signal-light-5",
+      "label": "信号灯 4",
+      "visibleHeight": {
+        "medianNative": 0.38857104993103386,
+        "medianM": null,
+        "rangeNative": [
+          0.3738567175224272,
+          0.4032853823396405
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "3": {
+            "valueNative": 0.4032853823396405,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 0.3738567175224272,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "signal-light-6",
+      "label": "信号灯 5",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "3": {
+            "valueNative": 0.3267490271277167,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          3
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "sign-7",
+      "label": "标识牌 1",
+      "visibleHeight": {
+        "medianNative": 0.8711171477343368,
+        "medianM": null,
+        "rangeNative": [
+          0.7789189534517221,
+          0.9191476139197776
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.8711171477343368,
+            "valueM": null
+          },
+          "3": {
+            "valueNative": 0.9191476139197776,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 0.7789189534517221,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          3,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "sign-8",
+      "label": "标识牌 2",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.5163119727544161,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "sign-9",
+      "label": "标识牌 3",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "3": {
+            "valueNative": 0.2061091132202828,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          3
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "sign-10",
+      "label": "标识牌 4",
+      "visibleHeight": {
+        "medianNative": 1.609790960221252,
+        "medianM": null,
+        "rangeNative": [
+          0.2934222196437388,
+          2.926159700798765
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "4": {
+            "valueNative": 0.2934222196437388,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 2.926159700798765,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "sign-11",
+      "label": "标识牌 5",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "3": {
+            "valueNative": 3.649298848662102,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          3
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "cable-tray-12",
+      "label": "线缆托架 1",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "3": {
+            "valueNative": 2.96609962639465,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          3
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "sign-13",
+      "label": "标识牌 6",
+      "visibleHeight": {
+        "medianNative": 0.8821326660188686,
+        "medianM": null,
+        "rangeNative": [
+          0.8796883715624784,
+          0.8845769604752589
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.8796883715624784,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 0.8845769604752589,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "sign-14",
+      "label": "标识牌 7",
+      "visibleHeight": {
+        "medianNative": 0.22479936296471245,
+        "medianM": null,
+        "rangeNative": [
+          0.2197609038602334,
+          0.2298378220691915
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.2197609038602334,
+            "valueM": null
+          },
+          "4": {
+            "valueNative": 0.2298378220691915,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2,
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-15",
+      "label": "地面标线 1",
+      "visibleHeight": {
+        "medianNative": 0.024048759853589674,
+        "medianM": null,
+        "rangeNative": [
+          0.02197909115733676,
+          0.026118428549842587
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.026118428549842587,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.02197909115733676,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-16",
+      "label": "地面标线 2",
+      "visibleHeight": {
+        "medianNative": 0.008220326053548721,
+        "medianM": null,
+        "rangeNative": [
+          0.007545983252046362,
+          0.00889466885505108
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.007545983252046362,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.00889466885505108,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-17",
+      "label": "地面标线 3",
+      "visibleHeight": {
+        "medianNative": 0.010936901869105231,
+        "medianM": null,
+        "rangeNative": [
+          0.008828785448511844,
+          0.013045018289698618
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.008828785448511844,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.013045018289698618,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-18",
+      "label": "地面标线 4",
+      "visibleHeight": {
+        "medianNative": 0.00830836665272816,
+        "medianM": null,
+        "rangeNative": [
+          0.007313224877291802,
+          0.00930350842816452
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.00930350842816452,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.007313224877291802,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-19",
+      "label": "地面标线 5",
+      "visibleHeight": {
+        "medianNative": 0.010227991735807018,
+        "medianM": null,
+        "rangeNative": [
+          0.008847980589654192,
+          0.011608002881959845
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.011608002881959845,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.008847980589654192,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-20",
+      "label": "地面标线 6",
+      "visibleHeight": {
+        "medianNative": 0.01478845840726728,
+        "medianM": null,
+        "rangeNative": [
+          0.013944963916000752,
+          0.015631952898533807
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.015631952898533807,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.013944963916000752,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-21",
+      "label": "地面标线 7",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.0115578035167343,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-22",
+      "label": "地面标线 8",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.00806743211017169,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-23",
+      "label": "地面标线 9",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.010255843858640645,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-24",
+      "label": "地面标线 10",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.007728046578122871,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-25",
+      "label": "地面标线 11",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.011036073607410657,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-26",
+      "label": "地面标线 12",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.020154873200826984,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-27",
+      "label": "地面标线 13",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "3": {
+            "valueNative": 0.05903804909895172,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          3
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-28",
+      "label": "地面标线 14",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "3": {
+            "valueNative": 0.03746679276806564,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          3
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-29",
+      "label": "地面标线 15",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "4": {
+            "valueNative": 0.056236584722310745,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-30",
+      "label": "地面标线 16",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "4": {
+            "valueNative": 0.1680290194419296,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-31",
+      "label": "地面标线 17",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "4": {
+            "valueNative": 0.015401861421269203,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-32",
+      "label": "地面标线 18",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "4": {
+            "valueNative": 0.008092502450035788,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-33",
+      "label": "地面标线 19",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "4": {
+            "valueNative": 0.014997835457997155,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-34",
+      "label": "地面标线 20",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "4": {
+            "valueNative": 0.015114768527747291,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-35",
+      "label": "地面标线 21",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "4": {
+            "valueNative": 0.024620837940933615,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-36",
+      "label": "地面标线 22",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "4": {
+            "valueNative": 0.014097369731962406,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-37",
+      "label": "地面标线 23",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "4": {
+            "valueNative": 0.026356706801879515,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-38",
+      "label": "地面标线 24",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "4": {
+            "valueNative": 0.02061186830758288,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "floor-marking-39",
+      "label": "地面标线 25",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "4": {
+            "valueNative": 0.023935925491454846,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          4
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    }
+  ]
+}

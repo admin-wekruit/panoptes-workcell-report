@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 2,
+  "status": "conditional_model_estimate",
+  "mPerNative": null,
+  "scope": "Actual displayed model endpoints against the current saved floor; does not certify physical dimensions",
+  "ground": {
+    "normal": [
+      0.007714318910697278,
+      -0.9941897817991617,
+      -0.10736464525102953
+    ],
+    "offset": 2.4435176430733963
+  },
+  "sceneTransformNative": [
+    [
+      -0.10736464525102955,
+      0.1059237040021903,
+      -0.9885610764543469,
+      0.0
+    ],
+    [
+      0.9941897817991621,
+      0.01915324245634978,
+      -0.1059237040021903,
+      0.0
+    ],
+    [
+      0.007714318910697404,
+      -0.9941897817991621,
+      -0.10736464525102955,
+      2.4435176430733963
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "objects": [
+    {
+      "objectId": "post-box-1",
+      "node": "post-box-1-closed-extrusion-hypothesis",
+      "status": "conditional_model_estimate",
+      "provenance": "Lowest vertex of the visible lower edge read from an unaccepted visual candidate GLB (strict source-face gate failed); same inferred floor; not a physical measurement",
+      "heightNative": 0.3581165112582432,
+      "modelFile": "post-box-1-volume-candidate.glb",
+      "modelSha256": "f8bb5efd87e1b42bd4b3dda717d00ea5cb446ae5b29e20263a37fa46eee49e85",
+      "pointNative": [
+        1.5332756042480469,
+        1.6970924139022827,
+        3.818737268447876
+      ],
+      "footNative": [
+        1.5305129792730146,
+        2.0531281900887928,
+        3.8571863206376538
+      ],
+      "pointReportNative": [
+        -3.759912301600766,
+        1.1523769648144409,
+        0.3581165112582424
+      ],
+      "footReportNative": [
+        -3.759912301600766,
+        1.1523769648144406,
+        -9.992007221626409e-16
+      ],
+      "bottomFaceVerticesNative": [
+        [
+          1.5332756042480469,
+          1.6970924139022827,
+          3.818737268447876
+        ],
+        [
+          1.6418225765228271,
+          1.698927879333496,
+          3.804563283920288
+        ]
+      ],
+      "bottomFaceHeightRangeNative": [
+        0.3581165112582432,
+        0.3586508610632011
+      ],
+      "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty",
+      "modelEvidence": {
+        "partId": "housing_visible_lower_edge",
+        "modelFile": "post-box-1-volume-candidate.glb",
+        "modelSha256": "f8bb5efd87e1b42bd4b3dda717d00ea5cb446ae5b29e20263a37fa46eee49e85",
+        "vertices": [
+          {
+            "node": "post-box-1-closed-extrusion-hypothesis",
+            "vertexIndex": 0
+          },
+          {
+            "node": "post-box-1-closed-extrusion-hypothesis",
+            "vertexIndex": 1
+          }
+        ],
+        "pointsNative": [
+          [
+            1.5332756042480469,
+            1.6970924139022827,
+            3.818737268447876
+          ],
+          [
+            1.6418225765228271,
+            1.698927879333496,
+            3.804563283920288
+          ]
+        ],
+        "measurementScope": "visible_face_lower_terminal",
+        "wholeHousingMinimumVerified": false,
+        "terminalPartAmbiguity": {
+          "resolved": false,
+          "supportedAssignments": 0,
+          "scope": "Selected visible-face terminal, not a proven unique whole-housing minimum; stepped front/wing identity remains explicit."
+        },
+        "candidateStatus": "visual_volume_hypothesis",
+        "sourceFaceGateAccepted": false,
+        "acceptedForPhysicalUse": false,
+        "physicalValidation": "none",
+        "geometryScope": "Closed extrusion hypothesis of the selected visible face. Thickness, rear face and end caps are assumptions; no claim of complete physical housing reconstruction.",
+        "thicknessIdentifiable": false,
+        "searchAtBound": false,
+        "sourceObservations": [
+          {
+            "photo": 1,
+            "source": "SAM: yellow safety post; instance 1",
+            "samRleSha256": "7f2dca35d2724812f606954c0f920e09670c19eecf84d93c5bf4e9aea07e8981"
+          },
+          {
+            "photo": 2,
+            "source": "SAM: yellow safety post; instance 0",
+            "samRleSha256": "9d015b32f8d4635c2a28867c5c0f3d14271cba3c620c1d0cab270e4689620f46"
+          },
+          {
+            "photo": 3,
+            "source": "SAM: yellow safety post; instance 0",
+            "samRleSha256": "f61ab055615b8b8ddf3f5f518cf1e6a7475f522cec1badc2c2060b3ee4340e02"
+          },
+          {
+            "photo": 4,
+            "source": "SAM: yellow safety post; instance 0",
+            "samRleSha256": "572d55ce729f51839971c86a5a46ab4d271908ec0a3d6c77698eb24799c53600"
+          }
+        ]
+      },
+      "terminalBinding": "modelTerminal",
+      "measurementScope": "visible_face_lower_terminal",
+      "wholeHousingMinimumVerified": false,
+      "terminalPartAmbiguity": {
+        "resolved": false,
+        "supportedAssignments": 0,
+        "scope": "Selected visible-face terminal, not a proven unique whole-housing minimum; stepped front/wing identity remains explicit."
+      },
+      "id": "post-box-1:terminal",
+      "modelVerticalExtentNative": 2.6464314074695126,
+      "adjacencyLimitNative": 0.6616078518673781,
+      "pairingStatus": "paired",
+      "pairedEndpointId": "fence-0:near:post-box-1"
+    },
+    {
+      "objectId": "post-box-2",
+      "node": "post-box-2-closed-extrusion-hypothesis",
+      "status": "conditional_model_estimate",
+      "provenance": "Lowest vertex of the visible lower edge read from an unaccepted visual candidate GLB (strict source-face gate failed); same inferred floor; not a physical measurement",
+      "heightNative": 0.35221507248636863,
+      "modelFile": "post-box-2-volume-candidate.glb",
+      "modelSha256": "9db171e6ff78d2e6c44359a8cb7b98e7f14377f255799dfa51452eedc95f9243",
+      "pointNative": [
+        -1.2163102626800537,
+        1.7325599193572998,
+        3.34771466255188
+      ],
+      "footNative": [
+        -1.219027362074368,
+        2.0827285454188984,
+        3.3855301088614445
+      ],
+      "pointReportNative": [
+        -2.9953125265423948,
+        -1.5306614314482976,
+        0.3522150724863677
+      ],
+      "footReportNative": [
+        -2.995312526542395,
+        -1.5306614314482978,
+        -1.0547118733938987e-15
+      ],
+      "bottomFaceVerticesNative": [
+        [
+          -1.288538932800293,
+          1.745809555053711,
+          3.2167017459869385
+        ],
+        [
+          -1.2163102626800537,
+          1.7325599193572998,
+          3.34771466255188
+        ]
+      ],
+      "bottomFaceHeightRangeNative": [
+        0.35221507248636863,
+        0.35255138037892975
+      ],
+      "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty",
+      "modelEvidence": {
+        "partId": "housing_visible_lower_edge",
+        "modelFile": "post-box-2-volume-candidate.glb",
+        "modelSha256": "9db171e6ff78d2e6c44359a8cb7b98e7f14377f255799dfa51452eedc95f9243",
+        "vertices": [
+          {
+            "node": "post-box-2-closed-extrusion-hypothesis",
+            "vertexIndex": 0
+          },
+          {
+            "node": "post-box-2-closed-extrusion-hypothesis",
+            "vertexIndex": 1
+          }
+        ],
+        "pointsNative": [
+          [
+            -1.288538932800293,
+            1.745809555053711,
+            3.2167017459869385
+          ],
+          [
+            -1.2163102626800537,
+            1.7325599193572998,
+            3.34771466255188
+          ]
+        ],
+        "measurementScope": "visible_face_lower_terminal",
+        "wholeHousingMinimumVerified": false,
+        "terminalPartAmbiguity": {
+          "resolved": false,
+          "supportedAssignments": 0,
+          "scope": "Selected visible-face terminal, not a proven unique whole-housing minimum; stepped front/wing identity remains explicit."
+        },
+        "candidateStatus": "visual_volume_hypothesis",
+        "sourceFaceGateAccepted": false,
+        "acceptedForPhysicalUse": false,
+        "physicalValidation": "none",
+        "geometryScope": "Closed extrusion hypothesis of the selected visible face. Thickness, rear face and end caps are assumptions; no claim of complete physical housing reconstruction.",
+        "thicknessIdentifiable": false,
+        "searchAtBound": true,
+        "sourceObservations": [
+          {
+            "photo": 1,
+            "source": "SAM: yellow safety post; instance 0",
+            "samRleSha256": "a5985b6058ca3537465a76d97135fb12fc3ea3fae2f5509baaf11bf86e5860e4"
+          },
+          {
+            "photo": 2,
+            "source": "SAM: yellow safety post; instance 1",
+            "samRleSha256": "1dbaecdc2194068b1c68bc0657e7cd28cbef50523b1106a5bdce9432d4894f3a"
+          },
+          {
+            "photo": 3,
+            "source": "SAM: yellow safety post; instance 1",
+            "samRleSha256": "0fd951430ca1af3602be0d77bd36699dd9b6001d0d8a813e3be0a1883ef053c4"
+          },
+          {
+            "photo": 4,
+            "source": "SAM: yellow safety post; instance 1",
+            "samRleSha256": "0152ba70bfd4e7745ea543944b0522456cccd4977bd54346cd7111cc0d0383ad"
+          }
+        ]
+      },
+      "terminalBinding": "modelTerminal",
+      "measurementScope": "visible_face_lower_terminal",
+      "wholeHousingMinimumVerified": false,
+      "terminalPartAmbiguity": {
+        "resolved": false,
+        "supportedAssignments": 0,
+        "scope": "Selected visible-face terminal, not a proven unique whole-housing minimum; stepped front/wing identity remains explicit."
+      },
+      "id": "post-box-2:terminal",
+      "modelVerticalExtentNative": 2.679499305282473,
+      "adjacencyLimitNative": 0.6698748263206182,
+      "pairingStatus": "paired",
+      "pairedEndpointId": "fence-1:near:post-box-2"
+    },
+    {
+      "objectId": "fence-0",
+      "node": "section-0-continued-3",
+      "status": "conditional_model_estimate",
+      "provenance": "Displayed lower rail member; nearest point to the paired curtain terminal along its bottom-face centerline",
+      "heightNative": 0.271016399163873,
+      "modelFile": "fence-fitted.glb",
+      "modelSha256": "45baae0efacaec2c10948d7834abb15a042aef4f38e10a83066df5090db53da6",
+      "pointNative": [
+        1.6865511536598206,
+        1.7750712633132935,
+        3.918926239013672
+      ],
+      "footNative": [
+        1.6844604467266415,
+        2.044512998062019,
+        3.9480238185671124
+      ],
+      "pointReportNative": [
+        -3.86715178461695,
+        1.2956431107860196,
+        0.2710163991638722
+      ],
+      "footReportNative": [
+        -3.86715178461695,
+        1.2956431107860193,
+        -1.0547118733938987e-15
+      ],
+      "bottomFaceVerticesNative": [
+        [
+          1.679719090461731,
+          1.7751847505569458,
+          3.9173550605773926
+        ],
+        [
+          1.6933832168579102,
+          1.7749577760696411,
+          3.920497417449951
+        ],
+        [
+          1.4536018371582031,
+          1.6729143857955933,
+          4.893182754516602
+        ],
+        [
+          1.4672659635543823,
+          1.672687292098999,
+          4.89632511138916
+        ]
+      ],
+      "bottomFaceHeightRangeNative": [
+        0.26617577807492676,
+        0.2710195556069781
+      ],
+      "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty",
+      "id": "fence-0:near:post-box-1",
+      "bottomCenterlineEndsNative": [
+        [
+          1.6865511536598206,
+          1.7750712633132935,
+          3.918926239013672
+        ],
+        [
+          1.4604339003562927,
+          1.6728008389472961,
+          4.894753932952881
+        ]
+      ],
+      "closestAlongRailFraction": 0.0,
+      "pairedObjectId": "post-box-1",
+      "horizontalOffsetNative": 0.1789566855390662,
+      "measurementScope": "model_lower_rail_near_curtain"
+    },
+    {
+      "objectId": "fence-1",
+      "node": "section-1-continued-45",
+      "status": "conditional_model_estimate",
+      "provenance": "Displayed lower rail member; nearest point to the paired curtain terminal along its bottom-face centerline",
+      "heightNative": 0.35564240638614164,
+      "modelFile": "fence-fitted.glb",
+      "modelSha256": "45baae0efacaec2c10948d7834abb15a042aef4f38e10a83066df5090db53da6",
+      "pointNative": [
+        -1.4056954383850098,
+        1.725373387336731,
+        3.3687314987182617
+      ],
+      "footNative": [
+        -1.4084389773260402,
+        2.078949433740298,
+        3.406914919516132
+      ],
+      "pointReportNative": [
+        -2.9965169046118802,
+        -1.7213100644817645,
+        0.3556424063861407
+      ],
+      "footReportNative": [
+        -2.9965169046118807,
+        -1.7213100644817647,
+        -1.0547118733938987e-15
+      ],
+      "bottomFaceVerticesNative": [
+        [
+          -1.4145467281341553,
+          1.725496530532837,
+          3.3669278621673584
+        ],
+        [
+          -1.3968441486358643,
+          1.725250244140625,
+          3.370535135269165
+        ],
+        [
+          -2.3309407234191895,
+          1.2583708763122559,
+          7.832092761993408
+        ],
+        [
+          -2.3132383823394775,
+          1.258124589920044,
+          7.835700511932373
+        ]
+      ],
+      "bottomFaceHeightRangeNative": [
+        0.33358076718986585,
+        0.35564534380542856
+      ],
+      "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty",
+      "id": "fence-1:near:post-box-2",
+      "bottomCenterlineEndsNative": [
+        [
+          -1.4056954383850098,
+          1.725373387336731,
+          3.3687314987182617
+        ],
+        [
+          -2.3220895528793335,
+          1.25824773311615,
+          7.833896636962891
+        ]
+      ],
+      "closestAlongRailFraction": 0.0,
+      "pairedObjectId": "post-box-2",
+      "horizontalOffsetNative": 0.1906524371836451,
+      "measurementScope": "model_lower_rail_near_curtain"
+    }
+  ],
+  "curtainMinusRail": [
+    {
+      "minuendId": "post-box-1:terminal",
+      "subtrahendId": "fence-0:near:post-box-1",
+      "valueNative": 0.08710011209437019
+    },
+    {
+      "minuendId": "post-box-2:terminal",
+      "subtrahendId": "fence-1:near:post-box-2",
+      "valueNative": -0.0034273338997730107
+    }
+  ],
+  "pairingRule": {
+    "adjacentFraction": 0.25,
+    "rule": "Each curtain pairs with the lower-rail member horizontally nearest its terminal, only within adjacentFraction x the curtain model vertical extent; otherwise it stays unpaired"
+  },
+  "sourceFiles": {
+    "fence-fitted.glb": "45baae0efacaec2c10948d7834abb15a042aef4f38e10a83066df5090db53da6",
+    "geometry.json": "a0c901c0a823a8d0004707d75763b888573222e65d953d935974406a4db0a200",
+    "objects.json": "c73b94055f6ba3db579fda2cb27b0b21907eb8123332ca05fde3df2c5a0e3efe",
+    "physical-clearances.json": "d524121bbaf5ee17ea52b4d31861a256c9913dfbf277c4f93ebf92f82c40b052",
+    "post-box-1-volume-candidate.glb": "f8bb5efd87e1b42bd4b3dda717d00ea5cb446ae5b29e20263a37fa46eee49e85",
+    "post-box-2-volume-candidate.glb": "9db171e6ff78d2e6c44359a8cb7b98e7f14377f255799dfa51452eedc95f9243"
+  }
+}

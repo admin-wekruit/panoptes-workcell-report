@@ -708,26 +708,6 @@
         "candidateTopics": [
           "候选：机械臂运动范围与人员接近区域"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "4 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -737,7 +717,8 @@
           "equipment_operation_context",
           "stopping_performance_and_detection_zone"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -965,26 +946,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "4 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -993,7 +954,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -1225,26 +1187,6 @@
         "candidateTopics": [
           "候选：护板覆盖范围与被防护危险源"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "4 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -1253,7 +1195,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -1465,26 +1408,6 @@
         "candidateTopics": [
           "候选：护板覆盖范围与被防护危险源"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -1493,7 +1416,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -1714,26 +1638,6 @@
         "candidateTopics": [
           "候选：护板覆盖范围与被防护危险源"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "3 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -1742,7 +1646,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -1976,32 +1881,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "4 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          },
-          {
-            "label": "光幕底端离地模型估计",
-            "value": "24.71 cm",
-            "status": "conditional_model_estimate; snapshot, not physically verified",
-            "source": "scene-report.json#endpointEstimation"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -2010,7 +1889,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -2244,26 +2124,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "4 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -2272,7 +2132,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -2508,26 +2369,6 @@
         "candidateTopics": [
           "候选：防撞设施与通行区域"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "4 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -2536,7 +2377,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -2750,26 +2592,6 @@
         "candidateTopics": [
           "候选：防撞设施与通行区域"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -2778,7 +2600,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -3008,32 +2831,6 @@
         "candidateTopics": [
           "候选：光电保护装置的检测区与危险源关系"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "4 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          },
-          {
-            "label": "邻近围栏下沿离地模型估计",
-            "value": "18.55 cm",
-            "status": "conditional_model_estimate; snapshot, not physically verified",
-            "source": "scene-report.json#endpointEstimation"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -3043,7 +2840,8 @@
           "equipment_operation_context",
           "stopping_performance_and_detection_zone"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -3255,26 +3053,6 @@
         "candidateTopics": [
           "候选：光电保护装置的检测区与危险源关系"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -3284,7 +3062,8 @@
           "equipment_operation_context",
           "stopping_performance_and_detection_zone"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -3518,26 +3297,6 @@
           "候选：护板覆盖范围与被防护危险源",
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "4 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -3546,7 +3305,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -3771,26 +3531,6 @@
         "candidateTopics": [
           "候选：急停装置的身份、位置与可达性"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "3 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -3799,7 +3539,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -4013,26 +3754,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -4041,7 +3762,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -4255,26 +3977,6 @@
         "candidateTopics": [
           "候选：状态指示的含义与运行模式"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -4283,7 +3985,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -4486,26 +4189,6 @@
         "candidateTopics": [
           "候选：状态指示的含义与运行模式"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -4514,7 +4197,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -4717,26 +4401,6 @@
         "candidateTopics": [
           "候选：状态指示的含义与运行模式"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -4745,7 +4409,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -4959,26 +4624,6 @@
         "candidateTopics": [
           "候选：状态指示的含义与运行模式"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -4987,7 +4632,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -5190,26 +4836,6 @@
         "candidateTopics": [
           "候选：状态指示的含义与运行模式"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -5218,7 +4844,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -5437,26 +5064,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "3 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -5465,7 +5072,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -5669,26 +5277,6 @@
           "候选：光电保护装置的检测区与危险源关系",
           "候选：标牌内容、适用设备与位置"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -5698,7 +5286,8 @@
           "equipment_operation_context",
           "stopping_performance_and_detection_zone"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -5899,26 +5488,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -5927,7 +5496,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -6137,26 +5707,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -6165,7 +5715,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -6368,26 +5919,6 @@
         "candidateTopics": [
           "候选：状态指示的含义与运行模式"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -6396,7 +5927,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -6597,26 +6129,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -6625,7 +6137,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -6839,26 +6352,6 @@
         "candidateTopics": [
           "候选：标牌内容、适用设备与位置"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -6867,7 +6360,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -7082,26 +6576,6 @@
           "候选：护板覆盖范围与被防护危险源",
           "候选：标牌内容、适用设备与位置"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -7110,7 +6584,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -7328,26 +6803,6 @@
         "candidateTopics": [
           "候选：护板覆盖范围与被防护危险源"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -7356,7 +6811,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -7572,26 +7028,6 @@
           "候选：护板覆盖范围与被防护危险源",
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -7600,7 +7036,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -7815,26 +7252,6 @@
           "候选：护板覆盖范围与被防护危险源",
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -7843,7 +7260,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -8058,26 +7476,6 @@
           "候选：护板覆盖范围与被防护危险源",
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -8086,7 +7484,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -8302,26 +7701,6 @@
         "candidateTopics": [
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -8330,7 +7709,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -8545,26 +7925,6 @@
           "候选：护板覆盖范围与被防护危险源",
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "2 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -8573,7 +7933,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -8777,26 +8138,6 @@
           "候选：护板覆盖范围与被防护危险源",
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -8805,7 +8146,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -9009,26 +8351,6 @@
           "候选：护板覆盖范围与被防护危险源",
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -9037,7 +8359,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -9243,26 +8566,6 @@
           "候选：护板覆盖范围与被防护危险源",
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -9271,7 +8574,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -9477,26 +8781,6 @@
           "候选：护板覆盖范围与被防护危险源",
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -9505,7 +8789,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -9709,26 +8994,6 @@
           "候选：护板覆盖范围与被防护危险源",
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -9737,7 +9002,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -9941,26 +9207,6 @@
           "候选：护板覆盖范围与被防护危险源",
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -9969,7 +9215,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -10178,26 +9425,6 @@
         "candidateTopics": [
           "候选：护板覆盖范围与被防护危险源"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -10206,7 +9433,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -10411,26 +9639,6 @@
         "candidateTopics": [
           "候选：护板覆盖范围与被防护危险源"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -10439,7 +9647,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -10648,26 +9857,6 @@
         "candidateTopics": [
           "候选：护板覆盖范围与被防护危险源"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -10676,7 +9865,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -10879,26 +10069,6 @@
         "candidateTopics": [
           "候选：护板覆盖范围与被防护危险源"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -10907,7 +10077,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -11111,26 +10282,6 @@
         "candidateTopics": [
           "候选：标线含义与通道用途"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -11139,7 +10290,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -11340,26 +10492,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -11368,7 +10500,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -11571,26 +10704,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -11599,7 +10712,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -11803,26 +10917,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -11831,7 +10925,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -12032,26 +11127,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -12060,7 +11135,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -12265,26 +11341,6 @@
         "candidateTopics": [
           "候选：护板覆盖范围与被防护危险源"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -12293,7 +11349,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -12497,26 +11554,6 @@
         "candidateTopics": [
           "候选：护板覆盖范围与被防护危险源"
         ],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -12525,7 +11562,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -12726,26 +11764,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -12754,7 +11772,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     },
     {
@@ -12957,26 +11976,6 @@
         "applicability": "unknown",
         "machineResult": null,
         "candidateTopics": [],
-        "facts": [
-          {
-            "label": "照片支持",
-            "value": "1 个观察",
-            "status": "source_linked",
-            "source": "workcell-ground-caliper-2026-10-02"
-          },
-          {
-            "label": "测量地面",
-            "value": "共用 workcell-floor 坐标系，Z=0",
-            "status": "inferred_ground",
-            "source": "scene-report.json"
-          },
-          {
-            "label": "真实尺度验证",
-            "value": "尚未通过；模型卡尺使用条件比例",
-            "status": "conditional_unvalidated",
-            "source": "modelMeasurementScale"
-          }
-        ],
         "missingEvidence": [
           "applicability_confirmation",
           "verified_metric_scale",
@@ -12985,7 +11984,8 @@
           "functional_identity",
           "equipment_operation_context"
         ],
-        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied"
+        "candidateBasis": "Top-1 multiview predictions from each encoder; candidate inspection topics only, no policy clause applied",
+        "spatialFacts": "Derived on the page from this revision's measurements; no value copied here"
       }
     }
   ],
@@ -19354,5 +18354,28 @@
       "availableGeometryPairs": 3469,
       "geometryGatedPairs": 188
     }
-  ]
+  ],
+  "binding": {
+    "revisionId": "workcell-main-2026-10-03",
+    "documentSha256": "bd47ece13e689d633b0d6ca18ef6e575a20209d85af9f5cf702f2a27b4765a02",
+    "experimentRevisionId": "workcell-ground-caliper-2026-10-02",
+    "reuse": "reused on a revision with identical semantic inputs",
+    "verified": [
+      "photo bytes",
+      "catalog observation set",
+      "absolute observation polygons equal to the experiment's own record",
+      "observation masks rebuilt pixel-identically from this revision's polygons",
+      "supported and sampled point counts",
+      "rigid floor transform",
+      "scene observation links"
+    ],
+    "framesProof": {
+      "frame_0001.json.gz": "replayed; transformed valid points equal the published capture cloud bit for bit",
+      "frame_0002.json.gz": "replayed; transformed valid points equal the published capture cloud bit for bit",
+      "frame_0003.json.gz": "replayed; transformed valid points equal the published capture cloud bit for bit",
+      "frame_0004.json.gz": "replayed; transformed valid points equal the published capture cloud bit for bit"
+    },
+    "maxCropResampleDifference": 6,
+    "notInputs": "Model GLBs, representations, ground clearances and scale are not experiment inputs; spatial facts come from this revision"
+  }
 }

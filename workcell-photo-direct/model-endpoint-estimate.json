@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "status": "conditional_model_estimate",
   "mPerNative": null,
   "scope": "Actual displayed model endpoints against the current saved floor; does not certify physical dimensions",
@@ -44,6 +44,8 @@
       "status": "conditional_model_estimate",
       "provenance": "Displayed upright primitive, bottom-face center; source depth percentile envelope",
       "heightNative": 0.36101870575400374,
+      "modelFile": "posts.glb",
+      "modelSha256": "6a690909125ca06754b0263f2a5e9c1c25d047815b596110afdabc73a3c48926",
       "pointNative": [
         1.60054349899292,
         1.6873924136161804,
@@ -90,14 +92,84 @@
         0.36101866415303574,
         0.36101874735497175
       ],
-      "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty"
+      "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty",
+      "measurementScope": "model_bottom_face_center",
+      "id": "post-box-1:terminal",
+      "modelVerticalExtentNative": 2.6037679824415476,
+      "adjacencyLimitNative": 0.6509419956103869,
+      "pairingStatus": "paired",
+      "pairedEndpointId": "fence-0:near:post-box-1"
+    },
+    {
+      "objectId": "post-box-2",
+      "node": "box-2",
+      "status": "conditional_model_estimate",
+      "provenance": "Displayed upright primitive, bottom-face center; source depth percentile envelope",
+      "heightNative": 0.41557279326281105,
+      "modelFile": "posts.glb",
+      "modelSha256": "6a690909125ca06754b0263f2a5e9c1c25d047815b596110afdabc73a3c48926",
+      "pointNative": [
+        -1.274298071861267,
+        1.6729894578456879,
+        3.3050496578216553
+      ],
+      "footNative": [
+        -1.2775039329191056,
+        2.08614768250131,
+        3.3496674833462965
+      ],
+      "pointReportNative": [
+        -2.953219646910159,
+        -1.5849340509654517,
+        0.4155727932628101
+      ],
+      "footReportNative": [
+        -2.953219646910159,
+        -1.5849340509654521,
+        -1.2212453270876722e-15
+      ],
+      "bottomFaceVerticesNative": [
+        [
+          -1.1990126371383667,
+          1.6803115606307983,
+          3.24265718460083
+        ],
+        [
+          -1.1873375177383423,
+          1.6687930822372437,
+          3.35015606880188
+        ],
+        [
+          -1.361258625984192,
+          1.6771857738494873,
+          3.2599432468414307
+        ],
+        [
+          -1.3495835065841675,
+          1.6656674146652222,
+          3.3674421310424805
+        ]
+      ],
+      "bottomFaceHeightRangeNative": [
+        0.415572755099042,
+        0.415572851136917
+      ],
+      "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty",
+      "measurementScope": "model_bottom_face_center",
+      "id": "post-box-2:terminal",
+      "modelVerticalExtentNative": 2.5727798161954842,
+      "adjacencyLimitNative": 0.6431949540488711,
+      "pairingStatus": "paired",
+      "pairedEndpointId": "fence-1:near:post-box-2"
     },
     {
       "objectId": "fence-0",
       "node": "section-0-continued-3",
       "status": "conditional_model_estimate",
-      "provenance": "Displayed inferred continuation of observed lower rail; nearest point to curtain bottom center along bottom-face centerline",
+      "provenance": "Displayed lower rail member; nearest point to the paired curtain terminal along its bottom-face centerline",
       "heightNative": 0.271016399163873,
+      "modelFile": "fence-fitted.glb",
+      "modelSha256": "45baae0efacaec2c10948d7834abb15a042aef4f38e10a83066df5090db53da6",
       "pointNative": [
         1.6865511536598206,
         1.7750712633132935,
@@ -145,6 +217,7 @@
         0.2710195556069781
       ],
       "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty",
+      "id": "fence-0:near:post-box-1",
       "bottomCenterlineEndsNative": [
         [
           1.6865511536598206,
@@ -157,14 +230,106 @@
           4.894753932952881
         ]
       ],
-      "closestAlongRailFraction": 0.0
+      "closestAlongRailFraction": 0.0,
+      "pairedObjectId": "post-box-1",
+      "horizontalOffsetNative": 0.08969388097322947,
+      "measurementScope": "model_lower_rail_near_curtain"
+    },
+    {
+      "objectId": "fence-1",
+      "node": "section-1-continued-45",
+      "status": "conditional_model_estimate",
+      "provenance": "Displayed lower rail member; nearest point to the paired curtain terminal along its bottom-face centerline",
+      "heightNative": 0.35564240638614164,
+      "modelFile": "fence-fitted.glb",
+      "modelSha256": "45baae0efacaec2c10948d7834abb15a042aef4f38e10a83066df5090db53da6",
+      "pointNative": [
+        -1.4056954383850098,
+        1.725373387336731,
+        3.3687314987182617
+      ],
+      "footNative": [
+        -1.4084389773260402,
+        2.078949433740298,
+        3.406914919516132
+      ],
+      "pointReportNative": [
+        -2.9965169046118802,
+        -1.7213100644817645,
+        0.3556424063861407
+      ],
+      "footReportNative": [
+        -2.9965169046118807,
+        -1.7213100644817647,
+        -1.0547118733938987e-15
+      ],
+      "bottomFaceVerticesNative": [
+        [
+          -1.4145467281341553,
+          1.725496530532837,
+          3.3669278621673584
+        ],
+        [
+          -1.3968441486358643,
+          1.725250244140625,
+          3.370535135269165
+        ],
+        [
+          -2.3309407234191895,
+          1.2583708763122559,
+          7.832092761993408
+        ],
+        [
+          -2.3132383823394775,
+          1.258124589920044,
+          7.835700511932373
+        ]
+      ],
+      "bottomFaceHeightRangeNative": [
+        0.33358076718986585,
+        0.35564534380542856
+      ],
+      "rangeMeaning": "Actual mesh bottom-face extent, not physical measurement uncertainty",
+      "id": "fence-1:near:post-box-2",
+      "bottomCenterlineEndsNative": [
+        [
+          -1.4056954383850098,
+          1.725373387336731,
+          3.3687314987182617
+        ],
+        [
+          -2.3220895528793335,
+          1.25824773311615,
+          7.833896636962891
+        ]
+      ],
+      "closestAlongRailFraction": 0.0,
+      "pairedObjectId": "post-box-2",
+      "horizontalOffsetNative": 0.1430841346449381,
+      "measurementScope": "model_lower_rail_near_curtain"
     }
   ],
-  "lightMinusFenceNative": 0.09000230659013075,
-  "sign": "light_higher",
+  "curtainMinusRail": [
+    {
+      "minuendId": "post-box-1:terminal",
+      "subtrahendId": "fence-0:near:post-box-1",
+      "valueNative": 0.09000230659013075
+    },
+    {
+      "minuendId": "post-box-2:terminal",
+      "subtrahendId": "fence-1:near:post-box-2",
+      "valueNative": 0.059930386876669406
+    }
+  ],
+  "pairingRule": {
+    "adjacentFraction": 0.25,
+    "rule": "Each curtain pairs with the lower-rail member horizontally nearest its terminal, only within adjacentFraction x the curtain model vertical extent; otherwise it stays unpaired"
+  },
   "sourceFiles": {
-    "posts.glb": "6a690909125ca06754b0263f2a5e9c1c25d047815b596110afdabc73a3c48926",
     "fence-fitted.glb": "45baae0efacaec2c10948d7834abb15a042aef4f38e10a83066df5090db53da6",
-    "physical-clearances.json": "d524121bbaf5ee17ea52b4d31861a256c9913dfbf277c4f93ebf92f82c40b052"
+    "geometry.json": "a0c901c0a823a8d0004707d75763b888573222e65d953d935974406a4db0a200",
+    "objects.json": "31b2ff11721d933b094abda7adb83b20bff412d9238450ba7ca6601595c904f9",
+    "physical-clearances.json": "d524121bbaf5ee17ea52b4d31861a256c9913dfbf277c4f93ebf92f82c40b052",
+    "posts.glb": "6a690909125ca06754b0263f2a5e9c1c25d047815b596110afdabc73a3c48926"
   }
 }
