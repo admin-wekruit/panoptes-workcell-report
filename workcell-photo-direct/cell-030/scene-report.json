@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "revision": {
-    "id": "workcell-cell030-2026-10-04d",
+    "id": "workcell-cell030-2026-10-04e",
     "projectId": "workcell-photo",
     "branchId": "oneshot",
     "parentRevisionId": null,
     "sourceRevisionId": null,
-    "createdAt": "2026-10-04T17:18:49.357415+00:00",
-    "documentSha256": "a0f7be735bfaec42a3a9100b36072a37ae9af4d5936ad370f99f1a50979baf99",
+    "createdAt": "2026-10-04T17:24:03.283715+00:00",
+    "documentSha256": "ab344dbab4c00a5c14fc685e0b23e62f306007bd8a91364fc0a61575f402bd0f",
     "label": "主模型",
     "document": {
       "schemaVersion": 1,
-      "captureId": "workcell-cell030-2026-10-04d",
+      "captureId": "workcell-cell030-2026-10-04e",
       "target": "scene",
       "coordinateFrames": [
         {
@@ -324740,7 +324740,7 @@
     "modelSeconds": 59.061845155000015
   },
   "bendAnalysis": {
-    "revisionId": "workcell-cell030-2026-10-04d",
+    "revisionId": "workcell-cell030-2026-10-04e",
     "algorithm": "same-mesh-two-surface-interior-bend-v2",
     "items": [
       {
@@ -334015,8 +334015,8 @@
       }
     ],
     "binding": {
-      "revisionId": "workcell-cell030-2026-10-04d",
-      "documentSha256": "a0f7be735bfaec42a3a9100b36072a37ae9af4d5936ad370f99f1a50979baf99",
+      "revisionId": "workcell-cell030-2026-10-04e",
+      "documentSha256": "ab344dbab4c00a5c14fc685e0b23e62f306007bd8a91364fc0a61575f402bd0f",
       "experimentRevisionId": "workcell-oneshot-2026-10-04-cell030-v2",
       "reuse": "reused on a revision with identical semantic inputs",
       "verified": [
@@ -334039,8 +334039,8 @@
   "policyEvidence": {
     "schemaVersion": 1,
     "engine": "policy-evidence-v1",
-    "revisionId": "workcell-cell030-2026-10-04d",
-    "documentSha256": "a0f7be735bfaec42a3a9100b36072a37ae9af4d5936ad370f99f1a50979baf99",
+    "revisionId": "workcell-cell030-2026-10-04e",
+    "documentSha256": "ab344dbab4c00a5c14fc685e0b23e62f306007bd8a91364fc0a61575f402bd0f",
     "ruleSet": {
       "file": "docs/policies/workcell_v2.md",
       "sha256": "2f97a26288d1ac4c6fbf86bc9d2834859d1da7116274791974f0e0935f13c68c",
@@ -334186,16 +334186,16 @@
   "measurementUpdate": {
     "kind": "oneshot-revisions",
     "modelInferenceRepeated": false,
-    "revisionBuildSeconds": 4.2,
+    "revisionBuildSeconds": 4.51,
     "sourceRevisionId": null
   },
   "revisionChoices": [
     {
-      "id": "workcell-cell030-2026-10-04d",
+      "id": "workcell-cell030-2026-10-04e",
       "label": "主模型",
       "branchId": "oneshot",
       "status": "main",
-      "documentSha256": "a0f7be735bfaec42a3a9100b36072a37ae9af4d5936ad370f99f1a50979baf99",
+      "documentSha256": "ab344dbab4c00a5c14fc685e0b23e62f306007bd8a91364fc0a61575f402bd0f",
       "parentRevisionId": null,
       "url": "scene-report.json"
     }

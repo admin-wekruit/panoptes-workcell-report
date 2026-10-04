@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "revision": {
-    "id": "workcell-cell090-2026-10-04d",
+    "id": "workcell-cell090-2026-10-04e",
     "projectId": "workcell-photo",
     "branchId": "oneshot",
     "parentRevisionId": null,
     "sourceRevisionId": null,
-    "createdAt": "2026-10-04T17:18:44.493079+00:00",
-    "documentSha256": "74b4c43f6de8fc95f24d12116ee913e1dfa33845fb99327848dccebda87a11e8",
+    "createdAt": "2026-10-04T17:23:51.790110+00:00",
+    "documentSha256": "c25cf9e8a0860cbd3b3232d74c1bfaf09112a2025fec46be6c30426a25806d04",
     "label": "主模型",
     "document": {
       "schemaVersion": 1,
-      "captureId": "workcell-cell090-2026-10-04d",
+      "captureId": "workcell-cell090-2026-10-04e",
       "target": "scene",
       "coordinateFrames": [
         {
@@ -37696,8 +37696,8 @@
           "id": "asset-v-guard-left",
           "kind": "geometry",
           "mediaType": "model/gltf-binary",
-          "sizeBytes": 231340,
-          "sha256": "87fa3dd54b792d34ee894bcd95a3dca94cf3a8a058433e634724042ecf059b0f",
+          "sizeBytes": 197440,
+          "sha256": "ad2587ec15783baca851c58539fb19fe99e3d97db51422965cae5a3f04be411a",
           "metadata": {
             "name": "entity-v-guard-left.glb"
           }
@@ -37792,8 +37792,8 @@
           "id": "asset-v-guard-right",
           "kind": "geometry",
           "mediaType": "model/gltf-binary",
-          "sizeBytes": 443484,
-          "sha256": "e311a4f9f98b757dac6f395014af4ae634755c6f0e479f4e2ac85c83bc61a911",
+          "sizeBytes": 376568,
+          "sha256": "f95eabc3d7e0858c8dbbd503672e175fc531c428028ac0e92b4ef5b4b1c93e77",
           "metadata": {
             "name": "entity-v-guard-right.glb"
           }
@@ -289563,13 +289563,13 @@
     "modelSeconds": 69.78930781199999
   },
   "bendAnalysis": {
-    "revisionId": "workcell-cell090-2026-10-04d",
+    "revisionId": "workcell-cell090-2026-10-04e",
     "algorithm": "same-mesh-two-surface-interior-bend-v2",
     "items": [
       {
         "status": "measured",
         "entityId": "v-guard-left",
-        "inputSha256": "d7e85ced1d88b89a2a8078a3933f7e31a408a62ff2cb45364c39b8ba33caf26c",
+        "inputSha256": "8e474dbd9acd227d3666a930e1218bc84923637a2d86a2fdf1017c3cf22619da",
         "result": {
           "kind": "bend",
           "coordinateFrameId": "workcell-floor",
@@ -289579,7 +289579,7 @@
               "entityId": "v-guard-left",
               "representationId": "rep-v-guard-left",
               "assetId": "asset-v-guard-left",
-              "assetSha256": "87fa3dd54b792d34ee894bcd95a3dca94cf3a8a058433e634724042ecf059b0f",
+              "assetSha256": "ad2587ec15783baca851c58539fb19fe99e3d97db51422965cae5a3f04be411a",
               "placementState": "unconfirmed",
               "qualityStatus": null
             }
@@ -289871,7 +289871,7 @@
             -2.824305429544696,
             1.549105677406593
           ],
-          "revisionId": "workcell-cell090-2026-10-04d"
+          "revisionId": "workcell-cell090-2026-10-04e"
         }
       },
       {
@@ -289883,7 +289883,7 @@
       {
         "status": "measured",
         "entityId": "v-guard-right",
-        "inputSha256": "2c350dd230bbb565722e1fc7b81dee835f4e81ef8f745b4e88a4e7018ecd34fc",
+        "inputSha256": "ed96ac5aa2931c4df1becbb1ba86fd311424d3eb89c1a4ccb24e4cf164302c43",
         "result": {
           "kind": "bend",
           "coordinateFrameId": "workcell-floor",
@@ -289893,7 +289893,7 @@
               "entityId": "v-guard-right",
               "representationId": "rep-v-guard-right",
               "assetId": "asset-v-guard-right",
-              "assetSha256": "e311a4f9f98b757dac6f395014af4ae634755c6f0e479f4e2ac85c83bc61a911",
+              "assetSha256": "f95eabc3d7e0858c8dbbd503672e175fc531c428028ac0e92b4ef5b4b1c93e77",
               "placementState": "unconfirmed",
               "qualityStatus": null
             }
@@ -290185,7 +290185,7 @@
             -0.5493022608158251,
             1.5689877566565142
           ],
-          "revisionId": "workcell-cell090-2026-10-04d"
+          "revisionId": "workcell-cell090-2026-10-04e"
         }
       }
     ]
@@ -300256,8 +300256,8 @@
       }
     ],
     "binding": {
-      "revisionId": "workcell-cell090-2026-10-04d",
-      "documentSha256": "74b4c43f6de8fc95f24d12116ee913e1dfa33845fb99327848dccebda87a11e8",
+      "revisionId": "workcell-cell090-2026-10-04e",
+      "documentSha256": "c25cf9e8a0860cbd3b3232d74c1bfaf09112a2025fec46be6c30426a25806d04",
       "experimentRevisionId": "workcell-oneshot-2026-10-04-cell090-v2",
       "reuse": "reused on a revision with identical semantic inputs",
       "verified": [
@@ -300280,8 +300280,8 @@
   "policyEvidence": {
     "schemaVersion": 1,
     "engine": "policy-evidence-v1",
-    "revisionId": "workcell-cell090-2026-10-04d",
-    "documentSha256": "74b4c43f6de8fc95f24d12116ee913e1dfa33845fb99327848dccebda87a11e8",
+    "revisionId": "workcell-cell090-2026-10-04e",
+    "documentSha256": "c25cf9e8a0860cbd3b3232d74c1bfaf09112a2025fec46be6c30426a25806d04",
     "ruleSet": {
       "file": "docs/policies/workcell_v2.md",
       "sha256": "2f97a26288d1ac4c6fbf86bc9d2834859d1da7116274791974f0e0935f13c68c",
@@ -300434,16 +300434,16 @@
   "measurementUpdate": {
     "kind": "oneshot-revisions",
     "modelInferenceRepeated": false,
-    "revisionBuildSeconds": 4.29,
+    "revisionBuildSeconds": 4.6,
     "sourceRevisionId": null
   },
   "revisionChoices": [
     {
-      "id": "workcell-cell090-2026-10-04d",
+      "id": "workcell-cell090-2026-10-04e",
       "label": "主模型",
       "branchId": "oneshot",
       "status": "main",
-      "documentSha256": "74b4c43f6de8fc95f24d12116ee913e1dfa33845fb99327848dccebda87a11e8",
+      "documentSha256": "c25cf9e8a0860cbd3b3232d74c1bfaf09112a2025fec46be6c30426a25806d04",
       "parentRevisionId": null,
       "url": "scene-report.json"
     }
