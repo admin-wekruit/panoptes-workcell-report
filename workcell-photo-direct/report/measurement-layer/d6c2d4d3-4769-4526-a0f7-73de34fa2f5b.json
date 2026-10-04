@@ -4,10 +4,12 @@
  "revisionId": "f5f4b1d4-bb55-4c13-ba02-b44e706340f2",
  "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
  "scale": {
-  "nativeToMeters": 1.33933,
+  "nativeToMeters": 1.28601,
   "status": "operator_anchored",
-  "source": "急停红钮直径 4 cm · 三台相机三角化",
-  "alternativeBodyDiameter8cm": 1.29036
+  "source": "急停红钮 4 cm + 黄色本体 8 cm 联合 · 三台相机 · 台阶模型亚像素测边",
+  "uncertaintyRelative": 0.0167,
+  "redOnly": 1.30764,
+  "yellowOnly": 1.26473
  },
  "ground": {
   "normal": [
@@ -27,16 +29,16 @@
  "models": {
   "33e5c934-cbae-5053-9b71-8c7bf63a072c": {
    "representation": {
-    "id": "estop-spec-facbe1242e78",
+    "id": "estop-spec-418ba73cfa97",
     "kind": "primitive",
     "assetId": null,
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
     "transform": {
      "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
      "position": [
-      -0.19053921943336546,
-      -0.09217480894452175,
-      0.9096721271845549
+      -0.18994864609218617,
+      -0.09142544022934629,
+      0.9104614697262189
      ],
      "quaternion": [
       0.7106629447977066,
@@ -52,22 +54,22 @@
     },
     "primitive": {
      "kind": "cylinder",
-     "radius": 0.029865764112793212,
-     "height": 0.07466441028198303,
+     "radius": 0.031104066172339254,
+     "height": 0.07776016543084814,
      "segments": 64
     },
     "placementState": "unconfirmed",
     "placementReason": "requires_alignment_confirmation",
     "bounds": {
      "min": [
-      -0.029865764112793212,
-      -0.029865764112793212,
-      -0.03733220514099152
+      -0.031104066172339254,
+      -0.031104066172339254,
+      -0.03888008271542407
      ],
      "max": [
-      0.029865764112793212,
-      0.029865764112793212,
-      0.03733220514099152
+      0.031104066172339254,
+      0.031104066172339254,
+      0.03888008271542407
      ]
     },
     "sourceRefs": [
@@ -84,36 +86,44 @@
   "33e5c934-cbae-5053-9b71-8c7bf63a072c": [
    {
     "label": "规格（参照物）",
-    "text": "最大直径 8 cm · 红钮直径 4 cm · 高 10 cm",
+    "text": "红钮直径 4 cm · 黄色本体最大直径 8 cm · 高 10 cm",
     "kind": "specification"
    },
    {
     "label": "照片实测 · 红钮直径",
-    "text": "4.0 cm（标定基准）",
+    "text": "3.93 cm（规格 4）",
+    "kind": "measured"
+   },
+   {
+    "label": "照片实测 · 黄色本体最大直径",
+    "text": "8.13 cm（规格 8）",
+    "kind": "measured"
+   },
+   {
+    "label": "照片里 黄 ÷ 红",
+    "text": "2.07（规格 2.00）；三台相机一致，两种测边方法一致",
+    "kind": "measured"
+   },
+   {
+    "label": "尺度",
+    "text": "两项联合：1 原生单位 = 128.6 cm，尺度不确定度 ±1.7%",
     "kind": "anchor"
    },
    {
-    "label": "照片实测 · 本体最大直径",
-    "text": "8.3 cm（三台相机 8.2 / 8.2 / 8.4）",
-    "kind": "measured",
-    "valueM": 0.083
-   },
-   {
-    "label": "照片实测 · 支架以上可见高度",
-    "text": "约 8.8 cm（10 cm 含支架下方看不到的部分）",
-    "kind": "measured",
-    "valueM": 0.088
+    "label": "支架以上可见高度",
+    "text": "约 8.5 cm（10 cm 含支架下方看不到的部分）",
+    "kind": "measured"
    },
    {
     "label": "原生成模型（已替换）",
-    "text": "11.2 × 13.1 × 18.0 cm：网格连同支架和标牌一起生成，尺寸偏大",
+    "text": "10.7 × 12.6 × 17.3 cm：网格连同支架和标牌一起生成，尺寸偏大",
     "kind": "note"
    }
   ],
   "169518d8-4f3a-5f67-a565-3180539acad3": [
    {
     "label": "光幕外壳下端离地",
-    "text": "20.0 cm（相机 1 / 3 各 20.0 / 20.0；相机 2 被防撞柱遮挡）",
+    "text": "19.2 cm（相机 1 / 3 各 19.2 / 19.2；相机 2 被防撞柱遮挡）",
     "kind": "measured",
     "valueM": 0.2,
     "method": "三视角铅垂直线三角化；地面按两视角平面扫描修正"
@@ -122,7 +132,7 @@
   "5163a9b0-0bb6-5bb5-a9bc-927cb94f8d08": [
    {
     "label": "光幕外壳下端离地",
-    "text": "18.9 cm（相机 1 / 2 各 18.9 / 19.0；相机 3 被防撞柱遮挡）",
+    "text": "18.1 cm（相机 1 / 2 各 18.1 / 18.2；相机 3 被防撞柱遮挡）",
     "kind": "measured",
     "valueM": 0.18900000000000003,
     "method": "三视角铅垂直线三角化；地面按两视角平面扫描修正"
