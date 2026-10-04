@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "revision": {
-    "id": "workcell-cell030-2026-10-04b",
+    "id": "workcell-cell030-2026-10-04c",
     "projectId": "workcell-photo",
     "branchId": "oneshot",
     "parentRevisionId": null,
     "sourceRevisionId": null,
-    "createdAt": "2026-10-04T02:21:51.622187+00:00",
-    "documentSha256": "28bfd4f9e04f0af4d0765164adbd4e2f2354534a0bfe735881954e3ae048fa0b",
+    "createdAt": "2026-10-04T03:58:14.650999+00:00",
+    "documentSha256": "dba0bc1664d7e0c2bfb28598d58c33a0b6532d7bf29784739946e42a33122e6b",
     "label": "主模型",
     "document": {
       "schemaVersion": 1,
-      "captureId": "workcell-cell030-2026-10-04b",
+      "captureId": "workcell-cell030-2026-10-04c",
       "target": "scene",
       "coordinateFrames": [
         {
@@ -34591,9 +34591,9 @@
               "transform": {
                 "coordinateFrameId": "workcell-floor",
                 "position": [
-                  -6.2982258894554946,
-                  -2.54292597736485,
-                  0.9364402607213962
+                  -5.694876671559196,
+                  -2.314478323472728,
+                  1.1531870041141283
                 ],
                 "quaternion": [
                   0,
@@ -34609,26 +34609,27 @@
               },
               "bounds": {
                 "min": [
-                  -1.344789397893404,
-                  -0.4021323092001716,
-                  -0.5121336996196
+                  -0.7109857750997577,
+                  -0.5564316844724542,
+                  -0.46554674173742794
                 ],
                 "max": [
-                  1.344789397893404,
-                  0.4021323092001712,
-                  0.5121336996196
+                  0.7109857750997577,
+                  0.556431684472454,
+                  0.46554674173742794
                 ]
               },
               "placementState": "unconfirmed",
               "placementReason": "requires_alignment_confirmation",
               "placementNote": "Automatic current-photo geometry; physical accuracy not independently verified",
               "sourceValidity": "current",
-              "sourceKind": "source-mask partition of the generated guard; unchanged source triangles",
+              "sourceKind": "folded plate fitted to this board's photo support (2 faces); photo texture",
               "sourceRefs": [
                 {
-                  "file": "guard-left.glb",
+                  "file": "guard-plates.glb",
                   "nodes": [
-                    "geometry_0"
+                    "v-guard-left-face-1",
+                    "v-guard-left-face-2"
                   ]
                 }
               ]
@@ -34736,9 +34737,9 @@
           "currentModelTransform": {
             "coordinateFrameId": "workcell-floor",
             "position": [
-              -6.2982258894554946,
-              -2.54292597736485,
-              0.9364402607213962
+              -5.694876671559196,
+              -2.314478323472728,
+              1.1531870041141283
             ],
             "quaternion": [
               0,
@@ -34913,9 +34914,9 @@
               "transform": {
                 "coordinateFrameId": "workcell-floor",
                 "position": [
-                  -7.500324169084666,
-                  -1.4670097739890138,
-                  1.0600809825078432
+                  -8.312143682191778,
+                  -1.4600785447501767,
+                  1.3001124480516792
                 ],
                 "quaternion": [
                   0,
@@ -34931,26 +34932,26 @@
               },
               "bounds": {
                 "min": [
-                  -1.0802815515226074,
-                  -1.5697460652196331,
-                  -0.43361072656730393
+                  -0.334503163017402,
+                  -1.1996449529788853,
+                  -0.2550083773553198
                 ],
                 "max": [
-                  1.0802815515226074,
-                  1.5697460652196333,
-                  0.4336107265673037
+                  0.33450316301740113,
+                  1.1996449529788855,
+                  0.25500837735531956
                 ]
               },
               "placementState": "unconfirmed",
               "placementReason": "requires_alignment_confirmation",
               "placementNote": "Automatic current-photo geometry; physical accuracy not independently verified",
               "sourceValidity": "current",
-              "sourceKind": "source-mask partition of the generated guard; unchanged source triangles",
+              "sourceKind": "folded plate fitted to this board's photo support (1 face); photo texture",
               "sourceRefs": [
                 {
-                  "file": "guard-center.glb",
+                  "file": "guard-plates.glb",
                   "nodes": [
-                    "geometry_0"
+                    "v-guard-center-face-1"
                   ]
                 }
               ]
@@ -35009,9 +35010,9 @@
           "currentModelTransform": {
             "coordinateFrameId": "workcell-floor",
             "position": [
-              -7.500324169084666,
-              -1.4670097739890138,
-              1.0600809825078432
+              -8.312143682191778,
+              -1.4600785447501767,
+              1.3001124480516792
             ],
             "quaternion": [
               0,
@@ -35059,9 +35060,9 @@
               "transform": {
                 "coordinateFrameId": "workcell-floor",
                 "position": [
-                  -6.907262958443617,
-                  0.16469448297540193,
-                  0.9797226247378892
+                  -5.856137661556611,
+                  0.2737009655173237,
+                  1.1603962570181898
                 ],
                 "quaternion": [
                   0,
@@ -35077,26 +35078,26 @@
               },
               "bounds": {
                 "min": [
-                  -1.2994002166261271,
-                  -0.44085308996131944,
-                  -0.5170627840693869
+                  -0.48176698317027,
+                  -0.3934619267100859,
+                  -0.40724381837608925
                 ],
                 "max": [
-                  1.2994002166261263,
-                  0.44085308996131944,
-                  0.5170627840693869
+                  0.48176698317027,
+                  0.39346192671008595,
+                  0.40724381837608936
                 ]
               },
               "placementState": "unconfirmed",
               "placementReason": "requires_alignment_confirmation",
               "placementNote": "Automatic current-photo geometry; physical accuracy not independently verified",
               "sourceValidity": "current",
-              "sourceKind": "source-mask partition of the generated guard; unchanged source triangles",
+              "sourceKind": "folded plate fitted to this board's photo support (1 face); photo texture",
               "sourceRefs": [
                 {
-                  "file": "guard-right.glb",
+                  "file": "guard-plates.glb",
                   "nodes": [
-                    "geometry_0"
+                    "v-guard-right-face-1"
                   ]
                 }
               ]
@@ -35155,9 +35156,9 @@
           "currentModelTransform": {
             "coordinateFrameId": "workcell-floor",
             "position": [
-              -6.907262958443617,
-              0.16469448297540193,
-              0.9797226247378892
+              -5.856137661556611,
+              0.2737009655173237,
+              1.1603962570181898
             ],
             "quaternion": [
               0,
@@ -40205,8 +40206,8 @@
           "id": "asset-v-guard-left",
           "kind": "geometry",
           "mediaType": "model/gltf-binary",
-          "sizeBytes": 1741724,
-          "sha256": "8a64201a3c5d4197a035a0b3ee4aa1cd73e6ab72fdf53de1eb8ae548f878f225",
+          "sizeBytes": 195468,
+          "sha256": "657fa1e078fa3dc387ccd7ee6dae4351e2d56e55906944923942ec55e2082001",
           "metadata": {
             "name": "entity-v-guard-left.glb"
           }
@@ -40234,8 +40235,8 @@
           "id": "asset-v-guard-center",
           "kind": "geometry",
           "mediaType": "model/gltf-binary",
-          "sizeBytes": 848296,
-          "sha256": "1ba71e5c37d0c3d4b75369cb76e18d3bf5d1d088c4fc153214ced7ca82cd392b",
+          "sizeBytes": 22152,
+          "sha256": "926c64e8feaaa312ee13284903729d0d983c997c0fcb4fee418186a9768dd9de",
           "metadata": {
             "name": "entity-v-guard-center.glb"
           }
@@ -40263,8 +40264,8 @@
           "id": "asset-v-guard-right",
           "kind": "geometry",
           "mediaType": "model/gltf-binary",
-          "sizeBytes": 1899996,
-          "sha256": "0a0ab89b470ad4f183398bbaa298092d66851090ecd3be805aba85a752662b33",
+          "sizeBytes": 200756,
+          "sha256": "2a2c81e3b8aae99505dcdd6e04f7275a7c66ecd4a6ddc4b16551d51e9d3f42f7",
           "metadata": {
             "name": "entity-v-guard-right.glb"
           }
@@ -48511,9 +48512,10 @@
       "label": "左侧折弯护板 1",
       "kind": "folded guard board",
       "model": {
-        "file": "guard-left.glb",
+        "file": "guard-plates.glb",
         "nodes": [
-          "geometry_0"
+          "v-guard-left-face-1",
+          "v-guard-left-face-2"
         ]
       },
       "observations": [
@@ -49622,11 +49624,57 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "source-mask partition of the generated guard; unchanged source triangles",
+      "representation": "folded plate fitted to this board's photo support (2 faces); photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
       ],
+      "recgenGuard": {
+        "model": {
+          "file": "guard-left.glb",
+          "nodes": [
+            "geometry_0"
+          ]
+        },
+        "representation": "source-mask partition of the generated guard; unchanged source triangles"
+      },
+      "guardPlates": {
+        "objectId": "v-guard-left",
+        "supportPoints": 2066,
+        "photos": [
+          1,
+          2
+        ],
+        "faces": [
+          {
+            "normal": [
+              -0.80744,
+              0.58385,
+              -0.08454
+            ],
+            "inlierFraction": 0.728
+          },
+          {
+            "normal": [
+              -0.59719,
+              0.52604,
+              0.60551
+            ],
+            "inlierFraction": 0.2328
+          }
+        ],
+        "foldBetweenFaceNormalsDeg": 42.43,
+        "toleranceNative": 0.0655,
+        "iouByPhoto": {
+          "1": 0.4455,
+          "2": 0.4078
+        },
+        "recgenPartIouByPhoto": {
+          "1": 0.5635,
+          "2": 0.352
+        },
+        "kept": true
+      },
       "visibleHeightByPhoto": {
         "1": 0.8336793645881599,
         "2": 0.9016519851530034
@@ -49653,51 +49701,51 @@
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
       },
       "modelBoxFloor": {
-        "lengthNative": 2.688336,
-        "widthNative": 0.33048,
-        "heightNative": 1.024267,
-        "bottomNative": 0.424307,
-        "topNative": 1.448574,
+        "lengthNative": 1.473876,
+        "widthNative": 0.740833,
+        "heightNative": 0.931093,
+        "bottomNative": 0.68764,
+        "topNative": 1.618734,
         "cornersNative": [
           [
-            -5.022158,
-            -2.062507,
-            0.424307
+            -5.200563,
+            -1.588364,
+            0.68764
           ],
           [
-            -7.647838,
-            -2.639529,
-            0.424307
+            -6.405862,
+            -2.436636,
+            0.68764
           ],
           [
-            -7.576904,
-            -2.962307,
-            0.424307
+            -5.979485,
+            -3.04247,
+            0.68764
           ],
           [
-            -4.951224,
-            -2.385284,
-            0.424307
+            -4.774186,
+            -2.194198,
+            0.68764
           ],
           [
-            -5.022158,
-            -2.062507,
-            1.448574
+            -5.200563,
+            -1.588364,
+            1.618734
           ],
           [
-            -7.647838,
-            -2.639529,
-            1.448574
+            -6.405862,
+            -2.436636,
+            1.618734
           ],
           [
-            -7.576904,
-            -2.962307,
-            1.448574
+            -5.979485,
+            -3.04247,
+            1.618734
           ],
           [
-            -4.951224,
-            -2.385284,
-            1.448574
+            -4.774186,
+            -2.194198,
+            1.618734
           ]
         ],
         "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
@@ -49708,9 +49756,9 @@
       "label": "中间折弯护板 2",
       "kind": "folded guard board",
       "model": {
-        "file": "guard-center.glb",
+        "file": "guard-plates.glb",
         "nodes": [
-          "geometry_0"
+          "v-guard-center-face-1"
         ]
       },
       "observations": [
@@ -50437,11 +50485,46 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "source-mask partition of the generated guard; unchanged source triangles",
+      "representation": "folded plate fitted to this board's photo support (1 face); photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
       ],
+      "recgenGuard": {
+        "model": {
+          "file": "guard-center.glb",
+          "nodes": [
+            "geometry_0"
+          ]
+        },
+        "representation": "source-mask partition of the generated guard; unchanged source triangles"
+      },
+      "guardPlates": {
+        "objectId": "v-guard-center",
+        "supportPoints": 693,
+        "photos": [
+          1
+        ],
+        "faces": [
+          {
+            "normal": [
+              0.14495,
+              -0.01218,
+              -0.98936
+            ],
+            "inlierFraction": 1.0
+          }
+        ],
+        "foldBetweenFaceNormalsDeg": null,
+        "toleranceNative": 0.1035,
+        "iouByPhoto": {
+          "1": 0.4015
+        },
+        "recgenPartIouByPhoto": {
+          "1": 0.0672
+        },
+        "kept": true
+      },
       "visibleHeightByPhoto": {
         "1": 0.5710801935734442
       },
@@ -50464,51 +50547,51 @@
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
       },
       "modelBoxFloor": {
-        "lengthNative": 3.062646,
-        "widthNative": 1.536353,
-        "heightNative": 0.867221,
-        "bottomNative": 0.62647,
-        "topNative": 1.493692,
+        "lengthNative": 2.49038,
+        "widthNative": 0.046556,
+        "heightNative": 0.510017,
+        "bottomNative": 1.045104,
+        "topNative": 1.555121,
         "cornersNative": [
           [
-            -7.082619,
-            0.282373,
-            0.62647
+            -8.601575,
+            -0.24877,
+            1.045104
           ],
           [
-            -8.582338,
-            -0.051131,
-            0.62647
+            -8.646646,
+            -0.260433,
+            1.045104
           ],
           [
-            -7.917513,
-            -3.040747,
-            0.62647
+            -8.02271,
+            -2.671387,
+            1.045104
           ],
           [
-            -6.417795,
-            -2.707243,
-            0.62647
+            -7.97764,
+            -2.659724,
+            1.045104
           ],
           [
-            -7.082619,
-            0.282373,
-            1.493692
+            -8.601575,
+            -0.24877,
+            1.555121
           ],
           [
-            -8.582338,
-            -0.051131,
-            1.493692
+            -8.646646,
+            -0.260433,
+            1.555121
           ],
           [
-            -7.917513,
-            -3.040747,
-            1.493692
+            -8.02271,
+            -2.671387,
+            1.555121
           ],
           [
-            -6.417795,
-            -2.707243,
-            1.493692
+            -7.97764,
+            -2.659724,
+            1.555121
           ]
         ],
         "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
@@ -50519,9 +50602,9 @@
       "label": "右侧折弯护板 3",
       "kind": "folded guard board",
       "model": {
-        "file": "guard-right.glb",
+        "file": "guard-plates.glb",
         "nodes": [
-          "geometry_0"
+          "v-guard-right-face-1"
         ]
       },
       "observations": [
@@ -50918,11 +51001,46 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "source-mask partition of the generated guard; unchanged source triangles",
+      "representation": "folded plate fitted to this board's photo support (1 face); photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
       ],
+      "recgenGuard": {
+        "model": {
+          "file": "guard-right.glb",
+          "nodes": [
+            "geometry_0"
+          ]
+        },
+        "representation": "source-mask partition of the generated guard; unchanged source triangles"
+      },
+      "guardPlates": {
+        "objectId": "v-guard-right",
+        "supportPoints": 1380,
+        "photos": [
+          1
+        ],
+        "faces": [
+          {
+            "normal": [
+              -0.71177,
+              -0.57746,
+              -0.39989
+            ],
+            "inlierFraction": 0.9746
+          }
+        ],
+        "foldBetweenFaceNormalsDeg": null,
+        "toleranceNative": 0.0706,
+        "iouByPhoto": {
+          "1": 0.7353
+        },
+        "recgenPartIouByPhoto": {
+          "1": 0.5729
+        },
+        "kept": true
+      },
       "visibleHeightByPhoto": {
         "1": 0.8385432098554082
       },
@@ -50945,51 +51063,51 @@
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
       },
       "modelBoxFloor": {
-        "lengthNative": 2.709326,
-        "widthNative": 0.309247,
-        "heightNative": 1.034126,
-        "bottomNative": 0.46266,
-        "topNative": 1.496785,
+        "lengthNative": 0.785153,
+        "widthNative": 0.560153,
+        "heightNative": 0.814488,
+        "bottomNative": 0.753152,
+        "topNative": 1.56764,
         "cornersNative": [
           [
-            -5.610501,
-            0.610244,
-            0.46266
+            -5.719649,
+            0.736227,
+            0.753152
           ],
           [
-            -8.254618,
-            0.019402,
-            0.46266
+            -6.337905,
+            0.252258,
+            0.753152
           ],
           [
-            -8.187178,
-            -0.282403,
-            0.46266
+            -5.992626,
+            -0.188825,
+            0.753152
           ],
           [
-            -5.543061,
-            0.30844,
-            0.46266
+            -5.374371,
+            0.295144,
+            0.753152
           ],
           [
-            -5.610501,
-            0.610244,
-            1.496785
+            -5.719649,
+            0.736227,
+            1.56764
           ],
           [
-            -8.254618,
-            0.019402,
-            1.496785
+            -6.337905,
+            0.252258,
+            1.56764
           ],
           [
-            -8.187178,
-            -0.282403,
-            1.496785
+            -5.992626,
+            -0.188825,
+            1.56764
           ],
           [
-            -5.543061,
-            0.30844,
-            1.496785
+            -5.374371,
+            0.295144,
+            1.56764
           ]
         ],
         "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
@@ -85186,72 +85304,184 @@
     "contacts": {
       "rule": "contacts, not interpenetration: under 6% of an object inside a gantry member is mounting contact; a structural member >= 90% inside and parallel is the same physical member (one model stays); otherwise the member shifts aside (gantry IoU drop <= 0.03) and lamps slide toward their camera",
       "duplicates": [],
-      "members": [
-        {
-          "member": "gantry-post-3",
-          "overlaps": {
-            "post-box-1": 0.1931
-          },
-          "insideSamplesBefore": 774,
-          "iouBefore": {
-            "1": 0.5185,
-            "2": 0.4515
-          },
-          "kept": true,
-          "shiftNative": [
-            0.00116,
-            -0.00887,
-            0.07446
-          ],
-          "iouAfter": {
-            "1": 0.5143,
-            "2": 0.4418
-          }
-        }
-      ],
-      "lamps": [
-        {
-          "lamp": "signal-light-2",
-          "inside": [
-            "gantry-post-1"
-          ],
-          "photo": 2,
-          "scaleAboutCamera": 0.965,
-          "kept": true,
-          "checks": {
-            "2": {
-              "iou": 0.6575,
-              "depthP50Relative": 0.0356
-            }
-          },
-          "movedNative": 0.1842
-        },
-        {
-          "lamp": "signal-light-4",
-          "inside": [
-            "gantry-post-3"
-          ],
-          "photo": 2,
-          "scaleAboutCamera": 0.985,
-          "kept": true,
-          "checks": {
-            "2": {
-              "iou": 0.9077,
-              "depthP50Relative": 0.0171
-            }
-          },
-          "movedNative": 0.0624
-        }
-      ],
+      "members": [],
+      "lamps": [],
       "contacts": [
         {
           "member": "gantry-post-2",
           "object": "v-guard-left",
-          "insideFraction": 0.0362
+          "insideFraction": 0.0399
         }
       ],
       "unresolved": [],
-      "status": "resolved"
+      "status": "resolved",
+      "earlierPasses": [
+        {
+          "rule": "contacts, not interpenetration: under 6% of an object inside a gantry member is mounting contact; a structural member >= 90% inside and parallel is the same physical member (one model stays); otherwise the member shifts aside (gantry IoU drop <= 0.03) and lamps slide toward their camera",
+          "duplicates": [],
+          "members": [
+            {
+              "member": "gantry-post-3",
+              "overlaps": {
+                "post-box-1": 0.1931
+              },
+              "insideSamplesBefore": 774,
+              "iouBefore": {
+                "1": 0.5185,
+                "2": 0.4515
+              },
+              "kept": true,
+              "shiftNative": [
+                0.00116,
+                -0.00887,
+                0.07446
+              ],
+              "iouAfter": {
+                "1": 0.5143,
+                "2": 0.4418
+              }
+            }
+          ],
+          "lamps": [
+            {
+              "lamp": "signal-light-2",
+              "inside": [
+                "gantry-post-1"
+              ],
+              "photo": 2,
+              "scaleAboutCamera": 0.965,
+              "kept": true,
+              "checks": {
+                "2": {
+                  "iou": 0.6575,
+                  "depthP50Relative": 0.0356
+                }
+              },
+              "movedNative": 0.1842
+            },
+            {
+              "lamp": "signal-light-4",
+              "inside": [
+                "gantry-post-3"
+              ],
+              "photo": 2,
+              "scaleAboutCamera": 0.985,
+              "kept": true,
+              "checks": {
+                "2": {
+                  "iou": 0.9077,
+                  "depthP50Relative": 0.0171
+                }
+              },
+              "movedNative": 0.0624
+            }
+          ],
+          "contacts": [
+            {
+              "member": "gantry-post-2",
+              "object": "v-guard-left",
+              "insideFraction": 0.0362
+            }
+          ],
+          "unresolved": [],
+          "status": "resolved"
+        }
+      ]
+    },
+    "guardPlates": {
+      "rule": "RANSAC faces (tolerance 0.012 x median depth; a second face holds >= 20% and turns >= 15 deg; a strip faces its camera); 1-99 % rectangles clipped at the fold; they replace the RecGen part when their mean silhouette IoU >= 0.35 and >= the part's - 0.05",
+      "boards": [
+        {
+          "objectId": "v-guard-left",
+          "supportPoints": 2066,
+          "photos": [
+            1,
+            2
+          ],
+          "faces": [
+            {
+              "normal": [
+                -0.80744,
+                0.58385,
+                -0.08454
+              ],
+              "inlierFraction": 0.728
+            },
+            {
+              "normal": [
+                -0.59719,
+                0.52604,
+                0.60551
+              ],
+              "inlierFraction": 0.2328
+            }
+          ],
+          "foldBetweenFaceNormalsDeg": 42.43,
+          "toleranceNative": 0.0655,
+          "iouByPhoto": {
+            "1": 0.4455,
+            "2": 0.4078
+          },
+          "recgenPartIouByPhoto": {
+            "1": 0.5635,
+            "2": 0.352
+          },
+          "kept": true
+        },
+        {
+          "objectId": "v-guard-center",
+          "supportPoints": 693,
+          "photos": [
+            1
+          ],
+          "faces": [
+            {
+              "normal": [
+                0.14495,
+                -0.01218,
+                -0.98936
+              ],
+              "inlierFraction": 1.0
+            }
+          ],
+          "foldBetweenFaceNormalsDeg": null,
+          "toleranceNative": 0.1035,
+          "iouByPhoto": {
+            "1": 0.4015
+          },
+          "recgenPartIouByPhoto": {
+            "1": 0.0672
+          },
+          "kept": true
+        },
+        {
+          "objectId": "v-guard-right",
+          "supportPoints": 1380,
+          "photos": [
+            1
+          ],
+          "faces": [
+            {
+              "normal": [
+                -0.71177,
+                -0.57746,
+                -0.39989
+              ],
+              "inlierFraction": 0.9746
+            }
+          ],
+          "foldBetweenFaceNormalsDeg": null,
+          "toleranceNative": 0.0706,
+          "iouByPhoto": {
+            "1": 0.7353
+          },
+          "recgenPartIouByPhoto": {
+            "1": 0.5729
+          },
+          "kept": true
+        }
+      ],
+      "status": "plates"
     }
   },
   "geometry": {
@@ -324475,25 +324705,25 @@
     "modelSeconds": 59.061845155000015
   },
   "bendAnalysis": {
-    "revisionId": "workcell-cell030-2026-10-04b",
+    "revisionId": "workcell-cell030-2026-10-04c",
     "algorithm": "same-mesh-two-surface-interior-bend-v2",
     "items": [
       {
-        "status": "unsupported",
+        "status": "failed",
         "entityId": "v-guard-left",
-        "inputSha256": "e76134b87d80188ae49fcfe630c364a05e8eeeeb638c176d3cb690871ef65fce",
-        "reason": "measurement_no_stable_bend"
+        "inputSha256": "88b6e35eb52d864401d8af0da07a70c276f7cf069419429a73bc4febd2e7e811",
+        "reason": "unsupported_pbr_texture_channel"
       },
       {
         "status": "unsupported",
         "entityId": "v-guard-center",
-        "inputSha256": "3f0a266a4fa6fd49e39f8fb1dc4cca93d2f9306b70afd4f53f981643951bc257",
+        "inputSha256": "7843d8745127f484ec02d60830e1a657713c1bc08250ddc0fa7b81cf1e3bb038",
         "reason": "measurement_no_stable_bend"
       },
       {
         "status": "unsupported",
         "entityId": "v-guard-right",
-        "inputSha256": "ebcdc5d6316ee1cbfeba69805b611ec77e7dac77895e0eed356518ea5120f62f",
+        "inputSha256": "a35ab11546f1a1097454b49571e5ab3ce47eebe0d0b672a7cd7c9c5b12053831",
         "reason": "measurement_no_stable_bend"
       }
     ]
@@ -324766,7 +324996,7 @@
     "sourceFiles": {
       "fence-fitted.glb": "e77ba4170ef3873c751ec216e44d32d6836a6089385ec29efb2faedb6b918696",
       "geometry.json": "47e1c1daef9d0e489e0e53bc115503d5e66aeb9e9c7c3d4d4c90bd4a2956e1b6",
-      "objects.json": "3f84587499b70e8ab62fdd15dd9b50d6f402786c16d64d58f29d8de8431a53c6",
+      "objects.json": "2c728d0113cd04faae067cb463e751a8633c97597efa78f68b0d81b8dd50a005",
       "physical-clearances.json": "61d73044e1b3969369bc2cc40e4bb78aa076feb775beb40b274e116f8c9d4bdd",
       "posts.glb": "59b8502efa8ea08141822226fd85ab9611184fb93dd3af37a62c3f8d33f30db5"
     },
@@ -333750,8 +333980,8 @@
       }
     ],
     "binding": {
-      "revisionId": "workcell-cell030-2026-10-04b",
-      "documentSha256": "28bfd4f9e04f0af4d0765164adbd4e2f2354534a0bfe735881954e3ae048fa0b",
+      "revisionId": "workcell-cell030-2026-10-04c",
+      "documentSha256": "dba0bc1664d7e0c2bfb28598d58c33a0b6532d7bf29784739946e42a33122e6b",
       "experimentRevisionId": "workcell-oneshot-2026-10-04-cell030-v2",
       "reuse": "reused on a revision with identical semantic inputs",
       "verified": [
@@ -333774,8 +334004,8 @@
   "policyEvidence": {
     "schemaVersion": 1,
     "engine": "policy-evidence-v1",
-    "revisionId": "workcell-cell030-2026-10-04b",
-    "documentSha256": "28bfd4f9e04f0af4d0765164adbd4e2f2354534a0bfe735881954e3ae048fa0b",
+    "revisionId": "workcell-cell030-2026-10-04c",
+    "documentSha256": "dba0bc1664d7e0c2bfb28598d58c33a0b6532d7bf29784739946e42a33122e6b",
     "ruleSet": {
       "file": "docs/policies/workcell_v2.md",
       "sha256": "2f97a26288d1ac4c6fbf86bc9d2834859d1da7116274791974f0e0935f13c68c",
@@ -333921,23 +334151,23 @@
   "measurementUpdate": {
     "kind": "oneshot-revisions",
     "modelInferenceRepeated": false,
-    "revisionBuildSeconds": 4.66,
+    "revisionBuildSeconds": 4.04,
     "sourceRevisionId": null
   },
   "revisionChoices": [
     {
-      "id": "workcell-cell030-2026-10-04b",
+      "id": "workcell-cell030-2026-10-04c",
       "label": "主模型",
       "branchId": "oneshot",
       "status": "main",
-      "documentSha256": "28bfd4f9e04f0af4d0765164adbd4e2f2354534a0bfe735881954e3ae048fa0b",
+      "documentSha256": "dba0bc1664d7e0c2bfb28598d58c33a0b6532d7bf29784739946e42a33122e6b",
       "parentRevisionId": null,
       "url": "scene-report.json"
     }
   ],
   "experiment": {
     "title": "四张照片是两个工位：本页是 BL4-BOR1-030（原照片 1–2）",
-    "summary": "原照片 3–4 是另一个同款工位 BL4-BOR1-090，报告在上一级目录。本页只用本工位两张照片：一个场景，每个物体一个多视角模型；白色钢架龙门架（4 立柱、2 横梁、2 斜撑）由两张照片拟合，信号灯是 RecGen 模型并立正放置；挂在龙门架上的灯、光幕只接触不穿插。点选任何物体会显示模型的长 × 宽 × 高和离地高度。本工位没有可用标尺，保持 native 单位，不借用其他工位的比例；没有物理验证。",
+    "summary": "原照片 3–4 是另一个同款工位 BL4-BOR1-090，报告在上一级目录。本页只用本工位两张照片：一个场景，每个物体一个多视角模型；白色钢架龙门架由两张照片拟合；信号灯是 RecGen 模型并立正放置；V 型护板（左、中、右三块）是按每块板自己的照片点云拟合的平板，左板带 42° 折边；挂在龙门架上的灯、光幕只接触不穿插。点选任何物体会显示模型的长 × 宽 × 高和离地高度。本工位没有可用标尺，所有尺寸为原生单位；没有物理验证。",
     "reportURL": "../cells-2026-10-04/",
     "timingLabel": "完整流程"
   }

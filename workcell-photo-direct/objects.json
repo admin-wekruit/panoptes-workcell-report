@@ -5439,9 +5439,9 @@
       "label": "左侧折弯护板",
       "kind": "folded guard board",
       "model": {
-        "file": "guard-left.glb",
+        "file": "guard-plates.glb",
         "nodes": [
-          "geometry_0"
+          "v-guard-left-face-1"
         ]
       },
       "observations": [
@@ -6208,20 +6208,58 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "source-mask partition of the generated guard; unchanged source triangles",
+      "representation": "folded plate fitted to this board's photo support (1 face); photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
-      ]
+      ],
+      "recgenGuard": {
+        "model": {
+          "file": "guard-left.glb",
+          "nodes": [
+            "geometry_0"
+          ]
+        },
+        "representation": "source-mask partition of the generated guard; unchanged source triangles"
+      },
+      "guardPlates": {
+        "objectId": "v-guard-left",
+        "supportPoints": 2668,
+        "photos": [
+          1,
+          2
+        ],
+        "faces": [
+          {
+            "normal": [
+              -0.56404,
+              0.43995,
+              0.69879
+            ],
+            "inlierFraction": 0.9198
+          }
+        ],
+        "foldBetweenFaceNormalsDeg": null,
+        "toleranceNative": 0.0705,
+        "iouByPhoto": {
+          "1": 0.6222,
+          "2": 0.7463
+        },
+        "recgenPartIouByPhoto": {
+          "1": 0.7143,
+          "2": 0.6446
+        },
+        "kept": true
+      }
     },
     {
       "id": "v-guard-center",
       "label": "中间折弯护板",
       "kind": "folded guard board",
       "model": {
-        "file": "guard-center.glb",
+        "file": "guard-plates.glb",
         "nodes": [
-          "geometry_0"
+          "v-guard-center-face-1"
         ]
       },
       "observations": [
@@ -7940,20 +7978,58 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "source-mask partition of the generated guard; unchanged source triangles",
+      "representation": "folded plate fitted to this board's photo support (1 face); photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
-      ]
+      ],
+      "recgenGuard": {
+        "model": {
+          "file": "guard-center.glb",
+          "nodes": [
+            "geometry_0"
+          ]
+        },
+        "representation": "source-mask partition of the generated guard; unchanged source triangles"
+      },
+      "guardPlates": {
+        "objectId": "v-guard-center",
+        "supportPoints": 4512,
+        "photos": [
+          1,
+          2
+        ],
+        "faces": [
+          {
+            "normal": [
+              0.22738,
+              -0.02207,
+              -0.97356
+            ],
+            "inlierFraction": 1.0
+          }
+        ],
+        "foldBetweenFaceNormalsDeg": null,
+        "toleranceNative": 0.0756,
+        "iouByPhoto": {
+          "1": 0.6157,
+          "2": 0.6178
+        },
+        "recgenPartIouByPhoto": {
+          "1": 0.4844,
+          "2": 0.4218
+        },
+        "kept": true
+      }
     },
     {
       "id": "v-guard-right",
       "label": "右侧折弯护板",
       "kind": "folded guard board",
       "model": {
-        "file": "guard-right.glb",
+        "file": "guard-plates.glb",
         "nodes": [
-          "geometry_0"
+          "v-guard-right-face-1"
         ]
       },
       "observations": [
@@ -8799,11 +8875,49 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "source-mask partition of the generated guard; unchanged source triangles",
+      "representation": "folded plate fitted to this board's photo support (1 face); photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
-      ]
+      ],
+      "recgenGuard": {
+        "model": {
+          "file": "guard-right.glb",
+          "nodes": [
+            "geometry_0"
+          ]
+        },
+        "representation": "source-mask partition of the generated guard; unchanged source triangles"
+      },
+      "guardPlates": {
+        "objectId": "v-guard-right",
+        "supportPoints": 2576,
+        "photos": [
+          1,
+          2
+        ],
+        "faces": [
+          {
+            "normal": [
+              -0.13456,
+              -0.36931,
+              -0.91951
+            ],
+            "inlierFraction": 0.9057
+          }
+        ],
+        "foldBetweenFaceNormalsDeg": null,
+        "toleranceNative": 0.0752,
+        "iouByPhoto": {
+          "1": 0.658,
+          "2": 0.6529
+        },
+        "recgenPartIouByPhoto": {
+          "1": 0.5463,
+          "2": 0.5628
+        },
+        "kept": true
+      }
     },
     {
       "id": "post-box-1",
@@ -38363,72 +38477,187 @@
     ],
     "contacts": {
       "rule": "contacts, not interpenetration: under 6% of an object inside a gantry member is mounting contact; a structural member >= 90% inside and parallel is the same physical member (one model stays); otherwise the member shifts aside (gantry IoU drop <= 0.03) and lamps slide toward their camera",
-      "duplicates": [
-        {
-          "object": "fence-1",
-          "node": "section-1-continued-36",
-          "sameAs": "gantry-post-1"
-        }
-      ],
-      "members": [
+      "duplicates": [],
+      "members": [],
+      "lamps": [],
+      "contacts": [
         {
           "member": "gantry-post-1",
-          "overlaps": {
-            "post-box-2": 0.0921
-          },
-          "insideSamplesBefore": 369,
-          "iouBefore": {
-            "1": 0.6331,
-            "2": 0.5599
-          },
-          "kept": true,
-          "shiftNative": [
-            -0.01638,
-            -0.00188,
-            0.01132
-          ],
-          "iouAfter": {
-            "1": 0.6033,
-            "2": 0.584
-          }
-        }
-      ],
-      "lamps": [
-        {
-          "lamp": "signal-light-2",
-          "inside": [
-            "gantry-post-2"
-          ],
-          "photo": 2,
-          "scaleAboutCamera": 0.9875,
-          "kept": true,
-          "checks": {
-            "1": {
-              "iou": 0.7425,
-              "depthP50Relative": 0.0222
-            },
-            "2": {
-              "iou": 0.7627,
-              "depthP50Relative": 0.0141
-            }
-          },
-          "movedNative": 0.0619
-        }
-      ],
-      "contacts": [
+          "object": "fence-1",
+          "insideFraction": 0.0106
+        },
         {
           "member": "gantry-post-2",
           "object": "emergency-button",
           "insideFraction": 0.0559
-        },
-        {
-          "member": "gantry-post-1",
-          "object": "fence-1",
-          "insideFraction": 0.0205
         }
       ],
       "unresolved": [],
-      "status": "resolved"
+      "status": "resolved",
+      "earlierPasses": [
+        {
+          "rule": "contacts, not interpenetration: under 6% of an object inside a gantry member is mounting contact; a structural member >= 90% inside and parallel is the same physical member (one model stays); otherwise the member shifts aside (gantry IoU drop <= 0.03) and lamps slide toward their camera",
+          "duplicates": [
+            {
+              "object": "fence-1",
+              "node": "section-1-continued-36",
+              "sameAs": "gantry-post-1"
+            }
+          ],
+          "members": [
+            {
+              "member": "gantry-post-1",
+              "overlaps": {
+                "post-box-2": 0.0921
+              },
+              "insideSamplesBefore": 369,
+              "iouBefore": {
+                "1": 0.6331,
+                "2": 0.5599
+              },
+              "kept": true,
+              "shiftNative": [
+                -0.01638,
+                -0.00188,
+                0.01132
+              ],
+              "iouAfter": {
+                "1": 0.6033,
+                "2": 0.584
+              }
+            }
+          ],
+          "lamps": [
+            {
+              "lamp": "signal-light-2",
+              "inside": [
+                "gantry-post-2"
+              ],
+              "photo": 2,
+              "scaleAboutCamera": 0.9875,
+              "kept": true,
+              "checks": {
+                "1": {
+                  "iou": 0.7425,
+                  "depthP50Relative": 0.0222
+                },
+                "2": {
+                  "iou": 0.7627,
+                  "depthP50Relative": 0.0141
+                }
+              },
+              "movedNative": 0.0619
+            }
+          ],
+          "contacts": [
+            {
+              "member": "gantry-post-2",
+              "object": "emergency-button",
+              "insideFraction": 0.0559
+            },
+            {
+              "member": "gantry-post-1",
+              "object": "fence-1",
+              "insideFraction": 0.0205
+            }
+          ],
+          "unresolved": [],
+          "status": "resolved"
+        }
+      ]
+    },
+    "guardPlates": {
+      "rule": "RANSAC faces (tolerance 0.012 x median depth; a second face holds >= 20% and turns >= 15 deg; a strip faces its camera); 1-99 % rectangles clipped at the fold; they replace the RecGen part when their mean silhouette IoU >= 0.35 and >= the part's - 0.05",
+      "boards": [
+        {
+          "objectId": "v-guard-left",
+          "supportPoints": 2668,
+          "photos": [
+            1,
+            2
+          ],
+          "faces": [
+            {
+              "normal": [
+                -0.56404,
+                0.43995,
+                0.69879
+              ],
+              "inlierFraction": 0.9198
+            }
+          ],
+          "foldBetweenFaceNormalsDeg": null,
+          "toleranceNative": 0.0705,
+          "iouByPhoto": {
+            "1": 0.6222,
+            "2": 0.7463
+          },
+          "recgenPartIouByPhoto": {
+            "1": 0.7143,
+            "2": 0.6446
+          },
+          "kept": true
+        },
+        {
+          "objectId": "v-guard-center",
+          "supportPoints": 4512,
+          "photos": [
+            1,
+            2
+          ],
+          "faces": [
+            {
+              "normal": [
+                0.22738,
+                -0.02207,
+                -0.97356
+              ],
+              "inlierFraction": 1.0
+            }
+          ],
+          "foldBetweenFaceNormalsDeg": null,
+          "toleranceNative": 0.0756,
+          "iouByPhoto": {
+            "1": 0.6157,
+            "2": 0.6178
+          },
+          "recgenPartIouByPhoto": {
+            "1": 0.4844,
+            "2": 0.4218
+          },
+          "kept": true
+        },
+        {
+          "objectId": "v-guard-right",
+          "supportPoints": 2576,
+          "photos": [
+            1,
+            2
+          ],
+          "faces": [
+            {
+              "normal": [
+                -0.13456,
+                -0.36931,
+                -0.91951
+              ],
+              "inlierFraction": 0.9057
+            }
+          ],
+          "foldBetweenFaceNormalsDeg": null,
+          "toleranceNative": 0.0752,
+          "iouByPhoto": {
+            "1": 0.658,
+            "2": 0.6529
+          },
+          "recgenPartIouByPhoto": {
+            "1": 0.5463,
+            "2": 0.5628
+          },
+          "kept": true
+        }
+      ],
+      "status": "plates"
     }
   }
 }
