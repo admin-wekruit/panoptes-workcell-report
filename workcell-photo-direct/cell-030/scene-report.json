@@ -6,7 +6,7 @@
     "branchId": "oneshot",
     "parentRevisionId": null,
     "sourceRevisionId": null,
-    "createdAt": "2026-10-04T02:17:32.412108+00:00",
+    "createdAt": "2026-10-04T02:21:51.622187+00:00",
     "documentSha256": "28bfd4f9e04f0af4d0765164adbd4e2f2354534a0bfe735881954e3ae048fa0b",
     "label": "主模型",
     "document": {
@@ -333921,7 +333921,7 @@
   "measurementUpdate": {
     "kind": "oneshot-revisions",
     "modelInferenceRepeated": false,
-    "revisionBuildSeconds": 5.17,
+    "revisionBuildSeconds": 4.66,
     "sourceRevisionId": null
   },
   "revisionChoices": [
