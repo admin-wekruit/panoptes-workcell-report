@@ -24849,7 +24849,7 @@
           },
           "2": {
             "iou": 0.6575,
-            "depthP50Relative": 0.0044,
+            "depthP50Relative": 0.0356,
             "boundary": 0.00223,
             "maskPixels": 211,
             "visibleModelPixels": 210,
@@ -24891,7 +24891,23 @@
         "glb": "scene-signal-light-2.glb",
         "generationSeconds": 2.602587839999984,
         "modelLoadSeconds": 35.544274005999995,
-        "placementSeconds": 5.902
+        "placementSeconds": 5.902,
+        "contactResolution": {
+          "lamp": "signal-light-2",
+          "inside": [
+            "gantry-post-1"
+          ],
+          "photo": 2,
+          "scaleAboutCamera": 0.965,
+          "kept": true,
+          "checks": {
+            "2": {
+              "iou": 0.6575,
+              "depthP50Relative": 0.0356
+            }
+          },
+          "movedNative": 0.1842
+        }
       }
     },
     {
@@ -25418,7 +25434,7 @@
           },
           "2": {
             "iou": 0.9077,
-            "depthP50Relative": 0.0043,
+            "depthP50Relative": 0.0171,
             "boundary": 0.001,
             "maskPixels": 719,
             "visibleModelPixels": 687,
@@ -25460,7 +25476,23 @@
         "glb": "scene-signal-light-4.glb",
         "generationSeconds": 2.523169604000003,
         "modelLoadSeconds": 35.048104093000006,
-        "placementSeconds": 6.455
+        "placementSeconds": 6.455,
+        "contactResolution": {
+          "lamp": "signal-light-4",
+          "inside": [
+            "gantry-post-3"
+          ],
+          "photo": 2,
+          "scaleAboutCamera": 0.985,
+          "kept": true,
+          "checks": {
+            "2": {
+              "iou": 0.9077,
+              "depthP50Relative": 0.0171
+            }
+          },
+          "movedNative": 0.0624
+        }
       }
     },
     {
@@ -41906,12 +41938,12 @@
         },
         "validation": {
           "1": {
-            "iou": 0.5185,
-            "iouVisible": 0.5322,
-            "iouAllPromptInstances": 0.4767,
+            "iou": 0.5143,
+            "iouVisible": 0.5261,
+            "iouAllPromptInstances": 0.4731,
             "maskPixels": 17983,
-            "modelPixels": 31205,
-            "visibleModelPixels": 29338,
+            "modelPixels": 31472,
+            "visibleModelPixels": 29699,
             "depth": {
               "pixels": 16148,
               "medianRelative": 0.0512,
@@ -41920,16 +41952,16 @@
             }
           },
           "2": {
-            "iou": 0.4515,
-            "iouVisible": 0.5229,
-            "iouAllPromptInstances": 0.3982,
+            "iou": 0.4418,
+            "iouVisible": 0.5103,
+            "iouAllPromptInstances": 0.3899,
             "maskPixels": 15368,
-            "modelPixels": 25083,
-            "visibleModelPixels": 20602,
+            "modelPixels": 24986,
+            "visibleModelPixels": 20507,
             "depth": {
-              "pixels": 11882,
-              "medianRelative": 0.0219,
-              "within5Percent": 0.9282,
+              "pixels": 11772,
+              "medianRelative": 0.0144,
+              "within5Percent": 0.9333,
               "within10Percent": 0.9974
             }
           }
@@ -42050,7 +42082,30 @@
             "singleView": false
           }
         ]
-      }
+      },
+      "contactResolution": [
+        {
+          "member": "gantry-post-3",
+          "overlaps": {
+            "post-box-1": 0.1931
+          },
+          "insideSamplesBefore": 774,
+          "iouBefore": {
+            "1": 0.5185,
+            "2": 0.4515
+          },
+          "kept": true,
+          "shiftNative": [
+            0.00116,
+            -0.00887,
+            0.07446
+          ],
+          "iouAfter": {
+            "1": 0.5143,
+            "2": 0.4418
+          }
+        }
+      ]
     }
   ],
   "coverage": {
@@ -42195,6 +42250,76 @@
         "accepted": true,
         "reasons": []
       }
-    ]
+    ],
+    "contacts": {
+      "rule": "contacts, not interpenetration: under 6% of an object inside a gantry member is mounting contact; a structural member >= 90% inside and parallel is the same physical member (one model stays); otherwise the member shifts aside (gantry IoU drop <= 0.03) and lamps slide toward their camera",
+      "duplicates": [],
+      "members": [
+        {
+          "member": "gantry-post-3",
+          "overlaps": {
+            "post-box-1": 0.1931
+          },
+          "insideSamplesBefore": 774,
+          "iouBefore": {
+            "1": 0.5185,
+            "2": 0.4515
+          },
+          "kept": true,
+          "shiftNative": [
+            0.00116,
+            -0.00887,
+            0.07446
+          ],
+          "iouAfter": {
+            "1": 0.5143,
+            "2": 0.4418
+          }
+        }
+      ],
+      "lamps": [
+        {
+          "lamp": "signal-light-2",
+          "inside": [
+            "gantry-post-1"
+          ],
+          "photo": 2,
+          "scaleAboutCamera": 0.965,
+          "kept": true,
+          "checks": {
+            "2": {
+              "iou": 0.6575,
+              "depthP50Relative": 0.0356
+            }
+          },
+          "movedNative": 0.1842
+        },
+        {
+          "lamp": "signal-light-4",
+          "inside": [
+            "gantry-post-3"
+          ],
+          "photo": 2,
+          "scaleAboutCamera": 0.985,
+          "kept": true,
+          "checks": {
+            "2": {
+              "iou": 0.9077,
+              "depthP50Relative": 0.0171
+            }
+          },
+          "movedNative": 0.0624
+        }
+      ],
+      "contacts": [
+        {
+          "member": "gantry-post-2",
+          "object": "v-guard-left",
+          "insideFraction": 0.0362
+        }
+      ],
+      "unresolved": [],
+      "status": "resolved"
+    }
   }
 }

@@ -8671,8 +8671,8 @@
     }
   ],
   "binding": {
-    "revisionId": "workcell-cell090-2026-10-04",
-    "documentSha256": "7047e3db47dda1beec256b46ff3de18f687cd7c13776cc25941d0c21b395f0fd",
+    "revisionId": "workcell-cell090-2026-10-04b",
+    "documentSha256": "cb5337bcb3b4db6ea5f839a026151c7520eea8261654e1f068f50f987c50c7e1",
     "experimentRevisionId": "workcell-oneshot-2026-10-04-cell090-v2",
     "reuse": "reused on a revision with identical semantic inputs",
     "verified": [

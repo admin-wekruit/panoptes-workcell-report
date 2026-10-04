@@ -18288,7 +18288,6 @@
       "model": {
         "file": "fence-fitted.glb",
         "nodes": [
-          "section-1-continued-36",
           "section-1-continued-37",
           "section-1-continued-38",
           "section-1-continued-39",
@@ -19210,7 +19209,14 @@
         "Independent view observations may overlap. Floor/rail pointmap bias is not a confidence interval.",
         "Observed screen surfaces are separate optional fence-surface.glb, not part of the primary structural model."
       ],
-      "geometryPlaneIndex": 1
+      "geometryPlaneIndex": 1,
+      "contactResolution": [
+        {
+          "object": "fence-1",
+          "node": "section-1-continued-36",
+          "sameAs": "gantry-post-1"
+        }
+      ]
     },
     {
       "id": "floor",
@@ -27613,8 +27619,8 @@
         },
         "sourceChecks": {
           "1": {
-            "iou": 0.7514,
-            "depthP50Relative": 0.0093,
+            "iou": 0.7425,
+            "depthP50Relative": 0.0222,
             "boundary": 0.00181,
             "maskPixels": 339,
             "visibleModelPixels": 295,
@@ -27622,7 +27628,7 @@
           },
           "2": {
             "iou": 0.7627,
-            "depthP50Relative": 0.0026,
+            "depthP50Relative": 0.0141,
             "boundary": 0.00184,
             "maskPixels": 360,
             "visibleModelPixels": 301,
@@ -27667,7 +27673,27 @@
         "glb": "scene-signal-light-2.glb",
         "generationSeconds": 3.2979741659999604,
         "modelLoadSeconds": 43.96418201200004,
-        "placementSeconds": 12.966
+        "placementSeconds": 12.966,
+        "contactResolution": {
+          "lamp": "signal-light-2",
+          "inside": [
+            "gantry-post-2"
+          ],
+          "photo": 2,
+          "scaleAboutCamera": 0.9875,
+          "kept": true,
+          "checks": {
+            "1": {
+              "iou": 0.7425,
+              "depthP50Relative": 0.0222
+            },
+            "2": {
+              "iou": 0.7627,
+              "depthP50Relative": 0.0141
+            }
+          },
+          "movedNative": 0.0619
+        }
       }
     },
     {
@@ -38054,30 +38080,30 @@
         },
         "validation": {
           "1": {
-            "iou": 0.6331,
-            "iouVisible": 0.6489,
-            "iouAllPromptInstances": 0.514,
+            "iou": 0.6033,
+            "iouVisible": 0.6169,
+            "iouAllPromptInstances": 0.4908,
             "maskPixels": 11116,
-            "modelPixels": 14519,
-            "visibleModelPixels": 13187,
+            "modelPixels": 14331,
+            "visibleModelPixels": 12999,
             "depth": {
-              "pixels": 9548,
+              "pixels": 9185,
               "medianRelative": 0.006,
-              "within5Percent": 0.9987,
+              "within5Percent": 0.9995,
               "within10Percent": 0.9999
             }
           },
           "2": {
-            "iou": 0.5599,
-            "iouVisible": 0.6076,
-            "iouAllPromptInstances": 0.5158,
+            "iou": 0.584,
+            "iouVisible": 0.6352,
+            "iouAllPromptInstances": 0.5373,
             "maskPixels": 10763,
-            "modelPixels": 15792,
-            "visibleModelPixels": 14345,
+            "modelPixels": 15765,
+            "visibleModelPixels": 14309,
             "depth": {
-              "pixels": 9470,
-              "medianRelative": 0.0123,
-              "within5Percent": 0.999,
+              "pixels": 9719,
+              "medianRelative": 0.0106,
+              "within5Percent": 0.9991,
               "within10Percent": 1.0
             }
           }
@@ -38125,7 +38151,30 @@
             "singleView": false
           }
         ]
-      }
+      },
+      "contactResolution": [
+        {
+          "member": "gantry-post-1",
+          "overlaps": {
+            "post-box-2": 0.0921
+          },
+          "insideSamplesBefore": 369,
+          "iouBefore": {
+            "1": 0.6331,
+            "2": 0.5599
+          },
+          "kept": true,
+          "shiftNative": [
+            -0.01638,
+            -0.00188,
+            0.01132
+          ],
+          "iouAfter": {
+            "1": 0.6033,
+            "2": 0.584
+          }
+        }
+      ]
     }
   ],
   "coverage": {
@@ -38311,6 +38360,75 @@
         "accepted": true,
         "reasons": []
       }
-    ]
+    ],
+    "contacts": {
+      "rule": "contacts, not interpenetration: under 6% of an object inside a gantry member is mounting contact; a structural member >= 90% inside and parallel is the same physical member (one model stays); otherwise the member shifts aside (gantry IoU drop <= 0.03) and lamps slide toward their camera",
+      "duplicates": [
+        {
+          "object": "fence-1",
+          "node": "section-1-continued-36",
+          "sameAs": "gantry-post-1"
+        }
+      ],
+      "members": [
+        {
+          "member": "gantry-post-1",
+          "overlaps": {
+            "post-box-2": 0.0921
+          },
+          "insideSamplesBefore": 369,
+          "iouBefore": {
+            "1": 0.6331,
+            "2": 0.5599
+          },
+          "kept": true,
+          "shiftNative": [
+            -0.01638,
+            -0.00188,
+            0.01132
+          ],
+          "iouAfter": {
+            "1": 0.6033,
+            "2": 0.584
+          }
+        }
+      ],
+      "lamps": [
+        {
+          "lamp": "signal-light-2",
+          "inside": [
+            "gantry-post-2"
+          ],
+          "photo": 2,
+          "scaleAboutCamera": 0.9875,
+          "kept": true,
+          "checks": {
+            "1": {
+              "iou": 0.7425,
+              "depthP50Relative": 0.0222
+            },
+            "2": {
+              "iou": 0.7627,
+              "depthP50Relative": 0.0141
+            }
+          },
+          "movedNative": 0.0619
+        }
+      ],
+      "contacts": [
+        {
+          "member": "gantry-post-2",
+          "object": "emergency-button",
+          "insideFraction": 0.0559
+        },
+        {
+          "member": "gantry-post-1",
+          "object": "fence-1",
+          "insideFraction": 0.0205
+        }
+      ],
+      "unresolved": [],
+      "status": "resolved"
+    }
   }
 }

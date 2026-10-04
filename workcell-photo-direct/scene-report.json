@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "revision": {
-    "id": "workcell-cell090-2026-10-04",
+    "id": "workcell-cell090-2026-10-04b",
     "projectId": "workcell-photo",
     "branchId": "oneshot",
     "parentRevisionId": null,
     "sourceRevisionId": null,
-    "createdAt": "2026-10-04T01:50:33.732439+00:00",
-    "documentSha256": "7047e3db47dda1beec256b46ff3de18f687cd7c13776cc25941d0c21b395f0fd",
+    "createdAt": "2026-10-04T02:17:26.923749+00:00",
+    "documentSha256": "cb5337bcb3b4db6ea5f839a026151c7520eea8261654e1f068f50f987c50c7e1",
     "label": "主模型",
     "document": {
       "schemaVersion": 1,
-      "captureId": "workcell-cell090-2026-10-04",
+      "captureId": "workcell-cell090-2026-10-04b",
       "target": "scene",
       "coordinateFrames": [
         {
@@ -33949,9 +33949,9 @@
               "transform": {
                 "coordinateFrameId": "workcell-floor",
                 "position": [
-                  -4.371010407251197,
-                  -2.5368308828366657,
-                  2.1262632486339155
+                  -4.38624846833477,
+                  -2.54324469092298,
+                  2.1264307837969105
                 ],
                 "quaternion": [
                   0,
@@ -33967,14 +33967,14 @@
               },
               "bounds": {
                 "min": [
-                  -1.105236510037109,
-                  -0.49807902063217213,
-                  -1.7946485851586387
+                  -1.0899984489535361,
+                  -0.49166521254585804,
+                  -1.794481049995644
                 ],
                 "max": [
-                  1.1052365100371095,
-                  0.49807902063217213,
-                  1.794648585158639
+                  1.0899984489535366,
+                  0.4916652125458585,
+                  1.7944810499956438
                 ]
               },
               "placementState": "unconfirmed",
@@ -33986,7 +33986,6 @@
                 {
                   "file": "fence-fitted.glb",
                   "nodes": [
-                    "section-1-continued-36",
                     "section-1-continued-37",
                     "section-1-continued-38",
                     "section-1-continued-39",
@@ -34050,9 +34049,9 @@
           "currentModelTransform": {
             "coordinateFrameId": "workcell-floor",
             "position": [
-              -4.371010407251197,
-              -2.5368308828366657,
-              2.1262632486339155
+              -4.38624846833477,
+              -2.54324469092298,
+              2.1264307837969105
             ],
             "quaternion": [
               0,
@@ -34744,9 +34743,9 @@
               "transform": {
                 "coordinateFrameId": "workcell-floor",
                 "position": [
-                  -4.45453781945217,
-                  1.100670649468818,
-                  4.398466926988059
+                  -4.39674486702774,
+                  1.097141860519855,
+                  4.3765992144737265
                 ],
                 "quaternion": [
                   0,
@@ -34762,14 +34761,14 @@
               },
               "bounds": {
                 "min": [
-                  -0.043514462974228785,
-                  -0.045318660145976075,
-                  -0.15247041973938735
+                  -0.04297055629245339,
+                  -0.044752164785434756,
+                  -0.1505645854757649
                 ],
                 "max": [
-                  0.0435144629742279,
-                  0.045318660145976075,
-                  0.15247041973938646
+                  0.04297055629245339,
+                  0.044752164785434534,
+                  0.1505645854757658
                 ]
               },
               "placementState": "unconfirmed",
@@ -34889,9 +34888,9 @@
           "currentModelTransform": {
             "coordinateFrameId": "workcell-floor",
             "position": [
-              -4.45453781945217,
-              1.100670649468818,
-              4.398466926988059
+              -4.39674486702774,
+              1.097141860519855,
+              4.3765992144737265
             ],
             "quaternion": [
               0,
@@ -36991,9 +36990,9 @@
               "transform": {
                 "coordinateFrameId": "workcell-floor",
                 "position": [
-                  -3.9889644502948567,
-                  -0.5788147533299078,
-                  2.3882242550776747
+                  -3.9934807936850083,
+                  -0.5877367981618818,
+                  2.388224258994294
                 ],
                 "quaternion": [
                   0,
@@ -37009,14 +37008,14 @@
               },
               "bounds": {
                 "min": [
-                  -0.7719942860098037,
-                  -1.6708369810194927,
-                  -2.388224377948871
+                  -0.7674779426196521,
+                  -1.6797590258514665,
+                  -2.388224374032252
                 ],
                 "max": [
-                  0.7719942860098041,
-                  1.6708369810194927,
-                  2.3882243779488714
+                  0.7674779426196521,
+                  1.6797590258514665,
+                  2.388224374032252
                 ]
               },
               "placementState": "unconfirmed",
@@ -37334,9 +37333,9 @@
           "currentModelTransform": {
             "coordinateFrameId": "workcell-floor",
             "position": [
-              -3.9889644502948567,
-              -0.5788147533299078,
-              2.3882242550776747
+              -3.9934807936850083,
+              -0.5877367981618818,
+              2.388224258994294
             ],
             "quaternion": [
               0,
@@ -38058,8 +38057,8 @@
           "id": "asset-fence-1",
           "kind": "geometry",
           "mediaType": "model/gltf-binary",
-          "sizeBytes": 2576,
-          "sha256": "998611902cd36f1a7fcb07765cf73884449b9d3e2c368cfb39c50e306b964f9d",
+          "sizeBytes": 2308,
+          "sha256": "7c40d5e6e7e0170f32c4f0575c2fe7d336a0a8fbdad989fd14769aa8b9b4bf48",
           "metadata": {
             "name": "entity-fence-1.glb"
           }
@@ -38202,8 +38201,8 @@
           "id": "asset-signal-light-2",
           "kind": "geometry",
           "mediaType": "model/gltf-binary",
-          "sizeBytes": 492352,
-          "sha256": "59241aa20b033412e1685f5d873646f765d4e63685001b85b4a14741af744aa6",
+          "sizeBytes": 492396,
+          "sha256": "e2acecbd6e288dbbe4cde60289673d2f4e55ce4eac455af2dee9895558101ea1",
           "metadata": {
             "name": "entity-signal-light-2.glb"
           }
@@ -38787,7 +38786,7 @@
           "kind": "geometry",
           "mediaType": "model/gltf-binary",
           "sizeBytes": 1760,
-          "sha256": "51e312afb97ef0e20c253488c55d26c437fe5e541029dd7cd6eed6bedc009924",
+          "sha256": "7863060000dc6bb67d1116a0cdd75396955f2ee5ef27d100ecf3414621a43621",
           "metadata": {
             "name": "entity-gantry.glb"
           }
@@ -40753,6 +40752,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 1.831993,
+        "widthNative": 1.613165,
+        "heightNative": 2.676402,
+        "bottomNative": 1.465927,
+        "topNative": 4.142328,
+        "cornersNative": [
+          [
+            -9.524662,
+            -1.477507,
+            1.465927
+          ],
+          [
+            -10.459351,
+            -2.792293,
+            1.465927
+          ],
+          [
+            -8.966213,
+            -3.853772,
+            1.465927
+          ],
+          [
+            -8.031525,
+            -2.538986,
+            1.465927
+          ],
+          [
+            -9.524662,
+            -1.477507,
+            4.142328
+          ],
+          [
+            -10.459351,
+            -2.792293,
+            4.142328
+          ],
+          [
+            -8.966213,
+            -3.853772,
+            4.142328
+          ],
+          [
+            -8.031525,
+            -2.538986,
+            4.142328
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -44369,6 +44418,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 2.728062,
+        "widthNative": 2.567947,
+        "heightNative": 1.814848,
+        "bottomNative": -0.009932,
+        "topNative": 1.804916,
+        "cornersNative": [
+          [
+            -6.086015,
+            -0.071462,
+            -0.009932
+          ],
+          [
+            -8.567248,
+            -1.205397,
+            -0.009932
+          ],
+          [
+            -7.499866,
+            -3.541001,
+            -0.009932
+          ],
+          [
+            -5.018633,
+            -2.407067,
+            -0.009932
+          ],
+          [
+            -6.086015,
+            -0.071462,
+            1.804916
+          ],
+          [
+            -8.567248,
+            -1.205397,
+            1.804916
+          ],
+          [
+            -7.499866,
+            -3.541001,
+            1.804916
+          ],
+          [
+            -5.018633,
+            -2.407067,
+            1.804916
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -45174,6 +45273,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.941127,
+        "widthNative": 0.827562,
+        "heightNative": 1.068985,
+        "bottomNative": 0.809148,
+        "topNative": 1.878133,
+        "cornersNative": [
+          [
+            -5.63616,
+            -2.086284,
+            0.809148
+          ],
+          [
+            -6.406748,
+            -2.626575,
+            0.809148
+          ],
+          [
+            -5.931653,
+            -3.304177,
+            0.809148
+          ],
+          [
+            -5.161065,
+            -2.763885,
+            0.809148
+          ],
+          [
+            -5.63616,
+            -2.086284,
+            1.878133
+          ],
+          [
+            -6.406748,
+            -2.626575,
+            1.878133
+          ],
+          [
+            -5.931653,
+            -3.304177,
+            1.878133
+          ],
+          [
+            -5.161065,
+            -2.763885,
+            1.878133
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -46931,6 +47080,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 2.752303,
+        "widthNative": 0.907128,
+        "heightNative": 0.952726,
+        "bottomNative": 0.922831,
+        "topNative": 1.875557,
+        "cornersNative": [
+          [
+            -6.762729,
+            -0.414002,
+            0.922831
+          ],
+          [
+            -7.513786,
+            -0.92272,
+            0.922831
+          ],
+          [
+            -5.970295,
+            -3.201493,
+            0.922831
+          ],
+          [
+            -5.219237,
+            -2.692775,
+            0.922831
+          ],
+          [
+            -6.762729,
+            -0.414002,
+            1.875557
+          ],
+          [
+            -7.513786,
+            -0.92272,
+            1.875557
+          ],
+          [
+            -5.970295,
+            -3.201493,
+            1.875557
+          ],
+          [
+            -5.219237,
+            -2.692775,
+            1.875557
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -47815,6 +48014,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 1.26551,
+        "widthNative": 0.944566,
+        "heightNative": 1.03445,
+        "bottomNative": 0.666331,
+        "topNative": 1.700781,
+        "cornersNative": [
+          [
+            -7.066468,
+            0.054202,
+            0.666331
+          ],
+          [
+            -7.865239,
+            -0.44995,
+            0.666331
+          ],
+          [
+            -7.189786,
+            -1.520127,
+            0.666331
+          ],
+          [
+            -6.391016,
+            -1.015976,
+            0.666331
+          ],
+          [
+            -7.066468,
+            0.054202,
+            1.700781
+          ],
+          [
+            -7.865239,
+            -0.44995,
+            1.700781
+          ],
+          [
+            -7.189786,
+            -1.520127,
+            1.700781
+          ],
+          [
+            -6.391016,
+            -1.015976,
+            1.700781
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -48739,6 +48988,56 @@
           1,
           2
         ]
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.149169,
+        "widthNative": 0.124024,
+        "heightNative": 2.64565,
+        "bottomNative": 0.376728,
+        "topNative": 3.022377,
+        "cornersNative": [
+          [
+            -4.268679,
+            0.912971,
+            0.376728
+          ],
+          [
+            -4.417848,
+            0.912971,
+            0.376728
+          ],
+          [
+            -4.417848,
+            0.788947,
+            0.376728
+          ],
+          [
+            -4.268679,
+            0.788947,
+            0.376728
+          ],
+          [
+            -4.268679,
+            0.912971,
+            3.022377
+          ],
+          [
+            -4.417848,
+            0.912971,
+            3.022377
+          ],
+          [
+            -4.417848,
+            0.788947,
+            3.022377
+          ],
+          [
+            -4.268679,
+            0.788947,
+            3.022377
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -49649,6 +49948,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "No common RGB end edge has stable multiview reprojection support"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.149442,
+        "widthNative": 0.085873,
+        "heightNative": 2.673753,
+        "bottomNative": 0.416452,
+        "topNative": 3.090205,
+        "cornersNative": [
+          [
+            -3.285043,
+            -1.919265,
+            0.416452
+          ],
+          [
+            -3.370916,
+            -1.919265,
+            0.416452
+          ],
+          [
+            -3.370916,
+            -2.068707,
+            0.416452
+          ],
+          [
+            -3.285043,
+            -2.068707,
+            0.416452
+          ],
+          [
+            -3.285043,
+            -1.919265,
+            3.090205
+          ],
+          [
+            -3.370916,
+            -1.919265,
+            3.090205
+          ],
+          [
+            -3.370916,
+            -2.068707,
+            3.090205
+          ],
+          [
+            -3.285043,
+            -2.068707,
+            3.090205
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -50327,6 +50676,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.189823,
+        "widthNative": 0.189823,
+        "heightNative": 1.504525,
+        "bottomNative": 0.000774,
+        "topNative": 1.505299,
+        "cornersNative": [
+          [
+            -2.72124,
+            -1.327931,
+            0.000774
+          ],
+          [
+            -2.888649,
+            -1.417413,
+            0.000774
+          ],
+          [
+            -2.799167,
+            -1.584822,
+            0.000774
+          ],
+          [
+            -2.631758,
+            -1.49534,
+            0.000774
+          ],
+          [
+            -2.72124,
+            -1.327931,
+            1.505299
+          ],
+          [
+            -2.888649,
+            -1.417413,
+            1.505299
+          ],
+          [
+            -2.799167,
+            -1.584822,
+            1.505299
+          ],
+          [
+            -2.631758,
+            -1.49534,
+            1.505299
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -51149,6 +51548,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.282161,
+        "widthNative": 0.282161,
+        "heightNative": 1.496513,
+        "bottomNative": -0.017374,
+        "topNative": 1.479138,
+        "cornersNative": [
+          [
+            -3.783757,
+            1.169242,
+            -0.017374
+          ],
+          [
+            -3.962758,
+            0.951128,
+            -0.017374
+          ],
+          [
+            -3.744644,
+            0.772127,
+            -0.017374
+          ],
+          [
+            -3.565644,
+            0.990241,
+            -0.017374
+          ],
+          [
+            -3.783757,
+            1.169242,
+            1.479138
+          ],
+          [
+            -3.962758,
+            0.951128,
+            1.479138
+          ],
+          [
+            -3.744644,
+            0.772127,
+            1.479138
+          ],
+          [
+            -3.565644,
+            0.990241,
+            1.479138
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -57454,6 +57903,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "Same physical rail face is unverified; bottomEdge retains experimental multiview geometry"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 4.354502,
+        "widthNative": 0.048888,
+        "heightNative": 3.638194,
+        "bottomNative": 0.28608,
+        "topNative": 3.924274,
+        "cornersNative": [
+          [
+            -4.45521,
+            0.922434,
+            0.28608
+          ],
+          [
+            -8.43903,
+            -0.83565,
+            0.28608
+          ],
+          [
+            -8.419292,
+            -0.880376,
+            0.28608
+          ],
+          [
+            -4.435472,
+            0.877707,
+            0.28608
+          ],
+          [
+            -4.45521,
+            0.922434,
+            3.924274
+          ],
+          [
+            -8.43903,
+            -0.83565,
+            3.924274
+          ],
+          [
+            -8.419292,
+            -0.880376,
+            3.924274
+          ],
+          [
+            -4.435472,
+            0.877707,
+            3.924274
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -57463,7 +57962,6 @@
       "model": {
         "file": "fence-fitted.glb",
         "nodes": [
-          "section-1-continued-36",
           "section-1-continued-37",
           "section-1-continued-38",
           "section-1-continued-39",
@@ -58386,6 +58884,13 @@
         "Observed screen surfaces are separate optional fence-surface.glb, not part of the primary structural model."
       ],
       "geometryPlaneIndex": 1,
+      "contactResolution": [
+        {
+          "object": "fence-1",
+          "node": "section-1-continued-36",
+          "sameAs": "gantry-post-1"
+        }
+      ],
       "visibleHeightByPhoto": {
         "2": 4.132410212376165
       },
@@ -58406,6 +58911,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "No source-only association point for this object"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 2.376597,
+        "widthNative": 0.047955,
+        "heightNative": 3.588962,
+        "bottomNative": 0.33195,
+        "topNative": 3.920912,
+        "cornersNative": [
+          [
+            -3.30417,
+            -2.051579,
+            0.33195
+          ],
+          [
+            -5.48728,
+            -2.990859,
+            0.33195
+          ],
+          [
+            -5.468327,
+            -3.03491,
+            0.33195
+          ],
+          [
+            -3.285218,
+            -2.09563,
+            0.33195
+          ],
+          [
+            -3.30417,
+            -2.051579,
+            3.920912
+          ],
+          [
+            -5.48728,
+            -2.990859,
+            3.920912
+          ],
+          [
+            -5.468327,
+            -3.03491,
+            3.920912
+          ],
+          [
+            -3.285218,
+            -2.09563,
+            3.920912
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -65895,6 +66450,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 5.4726,
+        "widthNative": 4.171991,
+        "heightNative": 0.0,
+        "bottomNative": 0.0,
+        "topNative": 0.0,
+        "cornersNative": [
+          [
+            -3.474756,
+            1.234644,
+            0.0
+          ],
+          [
+            -8.895077,
+            0.480003,
+            0.0
+          ],
+          [
+            -8.319782,
+            -3.652133,
+            0.0
+          ],
+          [
+            -2.899462,
+            -2.897492,
+            0.0
+          ],
+          [
+            -3.474756,
+            1.234644,
+            0.0
+          ],
+          [
+            -8.895077,
+            0.480003,
+            0.0
+          ],
+          [
+            -8.319782,
+            -3.652133,
+            0.0
+          ],
+          [
+            -2.899462,
+            -2.897492,
+            0.0
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -66304,6 +66909,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.358864,
+        "widthNative": 0.309194,
+        "heightNative": 0.190597,
+        "bottomNative": 1.803472,
+        "topNative": 1.994069,
+        "cornersNative": [
+          [
+            -4.3882,
+            1.272018,
+            1.803472
+          ],
+          [
+            -4.548305,
+            1.007504,
+            1.803472
+          ],
+          [
+            -4.241298,
+            0.82168,
+            1.803472
+          ],
+          [
+            -4.081193,
+            1.086194,
+            1.803472
+          ],
+          [
+            -4.3882,
+            1.272018,
+            1.994069
+          ],
+          [
+            -4.548305,
+            1.007504,
+            1.994069
+          ],
+          [
+            -4.241298,
+            0.82168,
+            1.994069
+          ],
+          [
+            -4.081193,
+            1.086194,
+            1.994069
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -66854,8 +67509,8 @@
         },
         "sourceChecks": {
           "1": {
-            "iou": 0.7514,
-            "depthP50Relative": 0.0093,
+            "iou": 0.7425,
+            "depthP50Relative": 0.0222,
             "boundary": 0.00181,
             "maskPixels": 339,
             "visibleModelPixels": 295,
@@ -66863,7 +67518,7 @@
           },
           "2": {
             "iou": 0.7627,
-            "depthP50Relative": 0.0026,
+            "depthP50Relative": 0.0141,
             "boundary": 0.00184,
             "maskPixels": 360,
             "visibleModelPixels": 301,
@@ -66908,7 +67563,27 @@
         "glb": "scene-signal-light-2.glb",
         "generationSeconds": 3.2979741659999604,
         "modelLoadSeconds": 43.96418201200004,
-        "placementSeconds": 12.966
+        "placementSeconds": 12.966,
+        "contactResolution": {
+          "lamp": "signal-light-2",
+          "inside": [
+            "gantry-post-2"
+          ],
+          "photo": 2,
+          "scaleAboutCamera": 0.9875,
+          "kept": true,
+          "checks": {
+            "1": {
+              "iou": 0.7425,
+              "depthP50Relative": 0.0222
+            },
+            "2": {
+              "iou": 0.7627,
+              "depthP50Relative": 0.0141
+            }
+          },
+          "movedNative": 0.0619
+        }
       },
       "visibleHeightByPhoto": {
         "1": 0.40520205103597395,
@@ -66934,6 +67609,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.081791,
+        "widthNative": 0.079543,
+        "heightNative": 0.301129,
+        "bottomNative": 4.226035,
+        "topNative": 4.527164,
+        "cornersNative": [
+          [
+            -4.37767,
+            1.150396,
+            4.226035
+          ],
+          [
+            -4.450877,
+            1.113919,
+            4.226035
+          ],
+          [
+            -4.415402,
+            1.042724,
+            4.226035
+          ],
+          [
+            -4.342196,
+            1.079202,
+            4.226035
+          ],
+          [
+            -4.37767,
+            1.150396,
+            4.527164
+          ],
+          [
+            -4.450877,
+            1.113919,
+            4.527164
+          ],
+          [
+            -4.415402,
+            1.042724,
+            4.527164
+          ],
+          [
+            -4.342196,
+            1.079202,
+            4.527164
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -67279,6 +68004,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.095537,
+        "widthNative": 0.088886,
+        "heightNative": 0.372263,
+        "bottomNative": 4.263057,
+        "topNative": 4.635321,
+        "cornersNative": [
+          [
+            -3.175029,
+            -1.989636,
+            4.263057
+          ],
+          [
+            -3.187703,
+            -2.077614,
+            4.263057
+          ],
+          [
+            -3.093142,
+            -2.091236,
+            4.263057
+          ],
+          [
+            -3.080468,
+            -2.003258,
+            4.263057
+          ],
+          [
+            -3.175029,
+            -1.989636,
+            4.635321
+          ],
+          [
+            -3.187703,
+            -2.077614,
+            4.635321
+          ],
+          [
+            -3.093142,
+            -2.091236,
+            4.635321
+          ],
+          [
+            -3.080468,
+            -2.003258,
+            4.635321
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -67599,6 +68374,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.214314,
+        "widthNative": 0.029804,
+        "heightNative": 0.21945,
+        "bottomNative": 3.904676,
+        "topNative": 4.124126,
+        "cornersNative": [
+          [
+            -4.984763,
+            1.009628,
+            3.904676
+          ],
+          [
+            -5.014312,
+            1.005729,
+            3.904676
+          ],
+          [
+            -4.986272,
+            0.793257,
+            3.904676
+          ],
+          [
+            -4.956723,
+            0.797157,
+            3.904676
+          ],
+          [
+            -4.984763,
+            1.009628,
+            4.124126
+          ],
+          [
+            -5.014312,
+            1.005729,
+            4.124126
+          ],
+          [
+            -4.986272,
+            0.793257,
+            4.124126
+          ],
+          [
+            -4.956723,
+            0.797157,
+            4.124126
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -67875,6 +68700,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.712462,
+        "widthNative": 0.018787,
+        "heightNative": 0.241646,
+        "bottomNative": 4.630998,
+        "topNative": 4.872645,
+        "cornersNative": [
+          [
+            -3.83991,
+            -0.249024,
+            4.630998
+          ],
+          [
+            -3.857546,
+            -0.255501,
+            4.630998
+          ],
+          [
+            -3.611909,
+            -0.924279,
+            4.630998
+          ],
+          [
+            -3.594273,
+            -0.917802,
+            4.630998
+          ],
+          [
+            -3.83991,
+            -0.249024,
+            4.872645
+          ],
+          [
+            -3.857546,
+            -0.255501,
+            4.872645
+          ],
+          [
+            -3.611909,
+            -0.924279,
+            4.872645
+          ],
+          [
+            -3.594273,
+            -0.917802,
+            4.872645
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -68299,6 +69174,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.702014,
+        "widthNative": 0.010774,
+        "heightNative": 0.199625,
+        "bottomNative": 4.4618,
+        "topNative": 4.661426,
+        "cornersNative": [
+          [
+            -4.255157,
+            0.900089,
+            4.4618
+          ],
+          [
+            -4.265862,
+            0.898869,
+            4.4618
+          ],
+          [
+            -4.186381,
+            0.201369,
+            4.4618
+          ],
+          [
+            -4.175676,
+            0.202589,
+            4.4618
+          ],
+          [
+            -4.255157,
+            0.900089,
+            4.661426
+          ],
+          [
+            -4.265862,
+            0.898869,
+            4.661426
+          ],
+          [
+            -4.186381,
+            0.201369,
+            4.661426
+          ],
+          [
+            -4.175676,
+            0.202589,
+            4.661426
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -69056,6 +69981,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 4.20085,
+        "widthNative": 0.735608,
+        "heightNative": 1.295116,
+        "bottomNative": 4.664026,
+        "topNative": 5.959142,
+        "cornersNative": [
+          [
+            -4.774304,
+            1.057148,
+            4.664026
+          ],
+          [
+            -8.849245,
+            0.036371,
+            4.664026
+          ],
+          [
+            -8.670498,
+            -0.677189,
+            4.664026
+          ],
+          [
+            -4.595556,
+            0.343587,
+            4.664026
+          ],
+          [
+            -4.774304,
+            1.057148,
+            5.959142
+          ],
+          [
+            -8.849245,
+            0.036371,
+            5.959142
+          ],
+          [
+            -8.670498,
+            -0.677189,
+            5.959142
+          ],
+          [
+            -4.595556,
+            0.343587,
+            5.959142
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -69372,6 +70347,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.968019,
+        "widthNative": 0.013468,
+        "heightNative": 1.047332,
+        "bottomNative": 1.73066,
+        "topNative": 2.777992,
+        "cornersNative": [
+          [
+            -3.543751,
+            -2.07215,
+            1.73066
+          ],
+          [
+            -4.413574,
+            -2.496968,
+            1.73066
+          ],
+          [
+            -4.407663,
+            -2.50907,
+            1.73066
+          ],
+          [
+            -3.53784,
+            -2.084253,
+            1.73066
+          ],
+          [
+            -3.543751,
+            -2.07215,
+            2.777992
+          ],
+          [
+            -4.413574,
+            -2.496968,
+            2.777992
+          ],
+          [
+            -4.407663,
+            -2.50907,
+            2.777992
+          ],
+          [
+            -3.53784,
+            -2.084253,
+            2.777992
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -69663,6 +70688,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 0.195425,
+        "widthNative": 0.01713,
+        "heightNative": 0.205008,
+        "bottomNative": 1.961828,
+        "topNative": 2.166836,
+        "cornersNative": [
+          [
+            -4.33092,
+            1.102449,
+            1.961828
+          ],
+          [
+            -4.347,
+            1.096543,
+            1.961828
+          ],
+          [
+            -4.279623,
+            0.9131,
+            1.961828
+          ],
+          [
+            -4.263543,
+            0.919006,
+            1.961828
+          ],
+          [
+            -4.33092,
+            1.102449,
+            2.166836
+          ],
+          [
+            -4.347,
+            1.096543,
+            2.166836
+          ],
+          [
+            -4.279623,
+            0.9131,
+            2.166836
+          ],
+          [
+            -4.263543,
+            0.919006,
+            2.166836
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -73053,6 +74128,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 1.724888,
+        "widthNative": 0.18705,
+        "heightNative": 0.0,
+        "bottomNative": 0.003,
+        "topNative": 0.003,
+        "cornersNative": [
+          [
+            -3.883198,
+            0.328449,
+            0.003
+          ],
+          [
+            -4.056719,
+            0.258604,
+            0.003
+          ],
+          [
+            -3.412645,
+            -1.341524,
+            0.003
+          ],
+          [
+            -3.239124,
+            -1.271679,
+            0.003
+          ],
+          [
+            -3.883198,
+            0.328449,
+            0.003
+          ],
+          [
+            -4.056719,
+            0.258604,
+            0.003
+          ],
+          [
+            -3.412645,
+            -1.341524,
+            0.003
+          ],
+          [
+            -3.239124,
+            -1.271679,
+            0.003
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     },
     {
@@ -77508,30 +78633,30 @@
         },
         "validation": {
           "1": {
-            "iou": 0.6331,
-            "iouVisible": 0.6489,
-            "iouAllPromptInstances": 0.514,
+            "iou": 0.6033,
+            "iouVisible": 0.6169,
+            "iouAllPromptInstances": 0.4908,
             "maskPixels": 11116,
-            "modelPixels": 14519,
-            "visibleModelPixels": 13187,
+            "modelPixels": 14331,
+            "visibleModelPixels": 12999,
             "depth": {
-              "pixels": 9548,
+              "pixels": 9185,
               "medianRelative": 0.006,
-              "within5Percent": 0.9987,
+              "within5Percent": 0.9995,
               "within10Percent": 0.9999
             }
           },
           "2": {
-            "iou": 0.5599,
-            "iouVisible": 0.6076,
-            "iouAllPromptInstances": 0.5158,
+            "iou": 0.584,
+            "iouVisible": 0.6352,
+            "iouAllPromptInstances": 0.5373,
             "maskPixels": 10763,
-            "modelPixels": 15792,
-            "visibleModelPixels": 14345,
+            "modelPixels": 15765,
+            "visibleModelPixels": 14309,
             "depth": {
-              "pixels": 9470,
-              "medianRelative": 0.0123,
-              "within5Percent": 0.999,
+              "pixels": 9719,
+              "medianRelative": 0.0106,
+              "within5Percent": 0.9991,
               "within10Percent": 1.0
             }
           }
@@ -77580,6 +78705,29 @@
           }
         ]
       },
+      "contactResolution": [
+        {
+          "member": "gantry-post-1",
+          "overlaps": {
+            "post-box-2": 0.0921
+          },
+          "insideSamplesBefore": 369,
+          "iouBefore": {
+            "1": 0.6331,
+            "2": 0.5599
+          },
+          "kept": true,
+          "shiftNative": [
+            -0.01638,
+            -0.00188,
+            0.01132
+          ],
+          "iouAfter": {
+            "1": 0.6033,
+            "2": 0.584
+          }
+        }
+      ],
       "visibleHeightByPhoto": {
         "1": 2.407583291091016,
         "2": 0.3814185748914294
@@ -77604,6 +78752,56 @@
         "feature": null,
         "source": "多视角实体底边到同一拟合地面的垂直距离。",
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
+      },
+      "modelBoxFloor": {
+        "lengthNative": 3.574343,
+        "widthNative": 0.326396,
+        "heightNative": 4.776449,
+        "bottomNative": -0.0,
+        "topNative": 4.776449,
+        "cornersNative": [
+          [
+            -4.470197,
+            1.137572,
+            -0.0
+          ],
+          [
+            -4.770272,
+            1.009162,
+            -0.0
+          ],
+          [
+            -3.364064,
+            -2.276945,
+            -0.0
+          ],
+          [
+            -3.063989,
+            -2.148535,
+            -0.0
+          ],
+          [
+            -4.470197,
+            1.137572,
+            4.776449
+          ],
+          [
+            -4.770272,
+            1.009162,
+            4.776449
+          ],
+          [
+            -3.364064,
+            -2.276945,
+            4.776449
+          ],
+          [
+            -3.063989,
+            -2.148535,
+            4.776449
+          ]
+        ],
+        "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
       }
     }
   ],
@@ -77790,7 +78988,76 @@
         "accepted": true,
         "reasons": []
       }
-    ]
+    ],
+    "contacts": {
+      "rule": "contacts, not interpenetration: under 6% of an object inside a gantry member is mounting contact; a structural member >= 90% inside and parallel is the same physical member (one model stays); otherwise the member shifts aside (gantry IoU drop <= 0.03) and lamps slide toward their camera",
+      "duplicates": [
+        {
+          "object": "fence-1",
+          "node": "section-1-continued-36",
+          "sameAs": "gantry-post-1"
+        }
+      ],
+      "members": [
+        {
+          "member": "gantry-post-1",
+          "overlaps": {
+            "post-box-2": 0.0921
+          },
+          "insideSamplesBefore": 369,
+          "iouBefore": {
+            "1": 0.6331,
+            "2": 0.5599
+          },
+          "kept": true,
+          "shiftNative": [
+            -0.01638,
+            -0.00188,
+            0.01132
+          ],
+          "iouAfter": {
+            "1": 0.6033,
+            "2": 0.584
+          }
+        }
+      ],
+      "lamps": [
+        {
+          "lamp": "signal-light-2",
+          "inside": [
+            "gantry-post-2"
+          ],
+          "photo": 2,
+          "scaleAboutCamera": 0.9875,
+          "kept": true,
+          "checks": {
+            "1": {
+              "iou": 0.7425,
+              "depthP50Relative": 0.0222
+            },
+            "2": {
+              "iou": 0.7627,
+              "depthP50Relative": 0.0141
+            }
+          },
+          "movedNative": 0.0619
+        }
+      ],
+      "contacts": [
+        {
+          "member": "gantry-post-2",
+          "object": "emergency-button",
+          "insideFraction": 0.0559
+        },
+        {
+          "member": "gantry-post-1",
+          "object": "fence-1",
+          "insideFraction": 0.0205
+        }
+      ],
+      "unresolved": [],
+      "status": "resolved"
+    }
   },
   "geometry": {
     "schemaVersion": 1,
@@ -288008,7 +289275,7 @@
     "modelSeconds": 69.78930781199999
   },
   "bendAnalysis": {
-    "revisionId": "workcell-cell090-2026-10-04",
+    "revisionId": "workcell-cell090-2026-10-04b",
     "algorithm": "same-mesh-two-surface-interior-bend-v2",
     "items": [
       {
@@ -288457,7 +289724,7 @@
         "railPart": "lower_envelope_hypothesis",
         "representationId": "rep-fence-1",
         "assetId": "asset-fence-1",
-        "assetSha256": "998611902cd36f1a7fcb07765cf73884449b9d3e2c368cfb39c50e306b964f9d",
+        "assetSha256": "7c40d5e6e7e0170f32c4f0575c2fe7d336a0a8fbdad989fd14769aa8b9b4bf48",
         "sidePhotoColumn": 65.81752288853744,
         "side": "left",
         "label": "左侧光幕旁围栏下包络假设"
@@ -288498,7 +289765,7 @@
     "sourceFiles": {
       "fence-fitted.glb": "fcfc8665964eb1e4dcbb5612d7c36206a63534820c27be9d3ead6f5cae61b144",
       "geometry.json": "042a2e9363e16d94fb7e8b509743d24661941808747b0c3219c12f23aa01d29b",
-      "objects.json": "173cacc1ba054895f80985a400fcd28e32f03e2189a8730ef8dd3127b7316d3e",
+      "objects.json": "0e0f700cf98db97e775ee11386531e9d3c8337e6161636e74f95f214ec1085b4",
       "physical-clearances.json": "8ce68fc223ed7c7d15579ebb528923807c4d19c7319e3964f922725e17514d6b",
       "posts.glb": "fc6993d82781183eb9469f1e6d3803a0f7d811c18972eba903394ea0b5259d89"
     },
@@ -298097,8 +299364,8 @@
       }
     ],
     "binding": {
-      "revisionId": "workcell-cell090-2026-10-04",
-      "documentSha256": "7047e3db47dda1beec256b46ff3de18f687cd7c13776cc25941d0c21b395f0fd",
+      "revisionId": "workcell-cell090-2026-10-04b",
+      "documentSha256": "cb5337bcb3b4db6ea5f839a026151c7520eea8261654e1f068f50f987c50c7e1",
       "experimentRevisionId": "workcell-oneshot-2026-10-04-cell090-v2",
       "reuse": "reused on a revision with identical semantic inputs",
       "verified": [
@@ -298121,8 +299388,8 @@
   "policyEvidence": {
     "schemaVersion": 1,
     "engine": "policy-evidence-v1",
-    "revisionId": "workcell-cell090-2026-10-04",
-    "documentSha256": "7047e3db47dda1beec256b46ff3de18f687cd7c13776cc25941d0c21b395f0fd",
+    "revisionId": "workcell-cell090-2026-10-04b",
+    "documentSha256": "cb5337bcb3b4db6ea5f839a026151c7520eea8261654e1f068f50f987c50c7e1",
     "ruleSet": {
       "file": "docs/policies/workcell_v2.md",
       "sha256": "2f97a26288d1ac4c6fbf86bc9d2834859d1da7116274791974f0e0935f13c68c",
@@ -298275,23 +299542,23 @@
   "measurementUpdate": {
     "kind": "oneshot-revisions",
     "modelInferenceRepeated": false,
-    "revisionBuildSeconds": 4.39,
+    "revisionBuildSeconds": 4.73,
     "sourceRevisionId": null
   },
   "revisionChoices": [
     {
-      "id": "workcell-cell090-2026-10-04",
+      "id": "workcell-cell090-2026-10-04b",
       "label": "主模型",
       "branchId": "oneshot",
       "status": "main",
-      "documentSha256": "7047e3db47dda1beec256b46ff3de18f687cd7c13776cc25941d0c21b395f0fd",
+      "documentSha256": "cb5337bcb3b4db6ea5f839a026151c7520eea8261654e1f068f50f987c50c7e1",
       "parentRevisionId": null,
       "url": "scene-report.json"
     }
   ],
   "experiment": {
     "title": "四张照片是两个工位：本页是 BL4-BOR1-090（原照片 3–4）",
-    "summary": "原照片 1–2 是另一个同款工位 BL4-BOR1-030（顶牌、机器人铭牌、小车都不同），报告在 cell-030/。本页只用本工位两张照片：一个场景，每个物体一个多视角模型，点选物体不换模型；入口龙门架由两张照片拟合，信号灯是 RecGen 模型并立正放置。尺度是本工位急停按钮的条件比例，未验证。20/24 cm 开发检查值当初是为四张照片提供的，无法确认属于哪个工位，本页不相减；没有物理验证。",
+    "summary": "原照片 1–2 是另一个同款工位 BL4-BOR1-030，报告在 cell-030/。本页只用本工位两张照片：一个场景，每个物体一个多视角模型；龙门架由两张照片拟合，信号灯是 RecGen 模型并立正放置；挂在龙门架上的灯、光幕、围栏只接触不穿插（同一根立柱只建一次）。点选任何物体会显示模型的长 × 宽 × 高和离地高度。尺度是本工位急停按钮的条件比例，未验证；20/24 cm 开发检查值不相减；没有物理验证。",
     "reportURL": "cells-2026-10-04/",
     "timingLabel": "完整流程"
   }
