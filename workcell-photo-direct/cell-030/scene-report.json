@@ -6,8 +6,8 @@
     "branchId": "oneshot",
     "parentRevisionId": null,
     "sourceRevisionId": null,
-    "createdAt": "2026-10-04T01:36:55.464754+00:00",
-    "documentSha256": "bacb38577e1701148db79494973886a3561b0faca6540aa207ae2c102855cfd7",
+    "createdAt": "2026-10-04T01:50:38.623123+00:00",
+    "documentSha256": "d47d97b8a187e0a0efcb12fb598052b4cbd39b6b73db5be0af8889f3e4a9aa6f",
     "label": "主模型",
     "document": {
       "schemaVersion": 1,
@@ -22,22 +22,9 @@
             "nativeToMeters": null,
             "sourceRefs": [
               {
-                "kind": "user_measured_reference",
-                "primaryAxis": "joint3DReference",
-                "objectId": "emergency-button",
-                "scope": "whole component: red cap, yellow body, gray lower housing; mounting bracket excluded",
-                "scopeStatus": "confirmed",
-                "provenance": {
-                  "kind": "user_supplied_standard_dimensions",
-                  "date": "2026-10-01",
-                  "statement": "Red actuator diameter 4 cm; main circular body's maximum diameter 8.5 cm; component height 10 cm.",
-                  "scopeNote": "User confirmed the whole-component height is correct on 2026-10-01; 10 cm remains the supplied total extent, not a fitted result."
-                },
-                "features": {
-                  "wholeComponentHeightM": 0.1,
-                  "mainBodyDiameterM": 0.085,
-                  "redActuatorDiameterM": 0.04
-                }
+                "kind": "user_dimension_hypothesis",
+                "heightM": 0.1,
+                "widthM": 0.085
               }
             ]
           },
@@ -66588,11 +66575,6 @@
       "notes": [
         "One RecGen model per lamp; overexposed lamps make pale colours; stood upright on the fitted floor normal when every view still passes (recgenModel.upright)."
       ],
-      "modelDimensionsNative": [
-        0.16779612816537348,
-        0.28364312270362246,
-        0.14919989597204442
-      ],
       "recgenModel": {
         "kind": "scene-signal-light-2",
         "objectId": "signal-light-2",
@@ -67175,11 +67157,6 @@
       "representation": "RecGen model from every view of this lamp, placed by a multi-view similarity fit against every photo",
       "notes": [
         "One RecGen model per lamp; overexposed lamps make pale colours; stood upright on the fitted floor normal when every view still passes (recgenModel.upright)."
-      ],
-      "modelDimensionsNative": [
-        0.1345286583617611,
-        0.3922910568985001,
-        0.15728468521764327
       ],
       "semanticAliases": [],
       "recgenModel": {
@@ -323333,48 +323310,6 @@
           "legend": "magenta: named circular silhouettes/tangencies; gray: end-edge candidates; colored: selected visible edge and floor foot; blue filled: actual floor-fit inliers; red hollow: rejected floor-fit samples"
         }
       ]
-    },
-    "calibration": {
-      "schemaVersion": 1,
-      "primaryAxis": "joint3DReference",
-      "reference": {
-        "objectId": "emergency-button",
-        "scope": "whole component: red cap, yellow body, gray lower housing; mounting bracket excluded",
-        "scopeStatus": "confirmed",
-        "provenance": {
-          "kind": "user_supplied_standard_dimensions",
-          "date": "2026-10-01",
-          "statement": "Red actuator diameter 4 cm; main circular body's maximum diameter 8.5 cm; component height 10 cm.",
-          "scopeNote": "User confirmed the whole-component height is correct on 2026-10-01; 10 cm remains the supplied total extent, not a fitted result."
-        },
-        "features": {
-          "wholeComponentHeightM": 0.1,
-          "mainBodyDiameterM": 0.085,
-          "redActuatorDiameterM": 0.04
-        }
-      },
-      "status": "unsupported",
-      "nativeToMeters": null,
-      "groundTruthUsedForCalibration": false,
-      "observedEnvelope": {
-        "heightNative": null,
-        "widthNative": null,
-        "heightM": null,
-        "widthM": null
-      },
-      "diagnostics": {
-        "referenceFit": {
-          "status": "unsupported",
-          "mPerNative": null,
-          "reason": "Complete named three-dimension reference and source support are required"
-        },
-        "envelopeUsedForCalibration": false,
-        "projectionByPhoto": []
-      },
-      "renderingAssumptions": [
-        "The failed 3D calibration candidate is diagnostic only and does not replace the main model.",
-        "The main button retains its image-supported envelope display; part-height proportions and unseen thickness are rendering assumptions, not measured dimensions."
-      ]
     }
   },
   "sceneTransformNative": [
@@ -323421,19 +323356,19 @@
       {
         "status": "unsupported",
         "entityId": "v-guard-left",
-        "inputSha256": "906c80ad508df18c1ee1e0978e315090d091153477f2353b52bfd210cc77d254",
+        "inputSha256": "e76134b87d80188ae49fcfe630c364a05e8eeeeb638c176d3cb690871ef65fce",
         "reason": "measurement_no_stable_bend"
       },
       {
         "status": "unsupported",
         "entityId": "v-guard-center",
-        "inputSha256": "a934b7f6dd3cd5d96fa60d64a164e5d117772c1f713c17ea0ed61084d8266207",
+        "inputSha256": "3f0a266a4fa6fd49e39f8fb1dc4cca93d2f9306b70afd4f53f981643951bc257",
         "reason": "measurement_no_stable_bend"
       },
       {
         "status": "unsupported",
         "entityId": "v-guard-right",
-        "inputSha256": "9c1e3468fdf98ef55d58c6cee4c8d72f3a3af63ac3a8026a8960271112cde817",
+        "inputSha256": "ebcdc5d6316ee1cbfeba69805b611ec77e7dac77895e0eed356518ea5120f62f",
         "reason": "measurement_no_stable_bend"
       }
     ]
@@ -323717,84 +323652,24 @@
     "schemaVersion": 1,
     "scaleMPerNative": null,
     "groundTruthUsedForCalibration": false,
-    "comparisons": [
+    "comparisons": [],
+    "absentTargets": [
       {
         "objectId": "fence-0",
-        "label": "安全围栏 1",
-        "method": "multiview physical lower edge",
-        "estimateNative": null,
-        "estimateM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "byPhotoMethod": "independently supported physical edge observations",
-        "sourcePhotos": [],
-        "groundTruthM": 0.2,
-        "signedErrorM": null,
-        "absoluteErrorM": null,
-        "relativeError": null,
-        "source": "No source-only association point for this object",
-        "target": {
-          "objectId": "fence-0",
-          "feature": "fence bottom to ground",
-          "groundTruthM": 0.2,
-          "provenance": "User independently supplied fence bottom distance on 2026-10-01.",
-          "associationStatus": "Recognized lower rail; exact physical endpoint correspondence unconfirmed."
-        },
-        "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
+        "feature": "fence bottom to ground",
+        "reason": "检查值是为另一组照片提供的，对象 ID 只是每个场景内的序号名，无法确认是同一工位的同一物体，因此不相减。"
       },
       {
         "objectId": "post-box-1",
-        "label": "黄色光幕立柱 1",
-        "method": "multiview physical lower edge",
-        "estimateNative": null,
-        "estimateM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "byPhotoMethod": "independently supported physical edge observations",
-        "sourcePhotos": [],
-        "groundTruthM": 0.24,
-        "signedErrorM": null,
-        "absoluteErrorM": null,
-        "relativeError": null,
-        "source": "No common RGB end edge has stable multiview reprojection support",
-        "target": {
-          "objectId": "post-box-1",
-          "feature": "light-curtain housing bottom to ground",
-          "groundTruthM": 0.24,
-          "provenance": "User independently supplied light-curtain bottom distance on 2026-10-01.",
-          "associationStatus": "Yellow light-curtain housing mask; exact physical endpoint correspondence unconfirmed."
-        },
-        "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
+        "feature": "light-curtain housing bottom to ground",
+        "reason": "检查值是为另一组照片提供的，对象 ID 只是每个场景内的序号名，无法确认是同一工位的同一物体，因此不相减。"
       },
       {
         "objectId": "post-box-2",
-        "label": "黄色光幕立柱 2",
-        "method": "multiview physical lower edge",
-        "estimateNative": null,
-        "estimateM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "byPhotoMethod": "independently supported physical edge observations",
-        "sourcePhotos": [],
-        "groundTruthM": 0.24,
-        "signedErrorM": null,
-        "absoluteErrorM": null,
-        "relativeError": null,
-        "source": "No common RGB end edge has stable multiview reprojection support",
-        "target": {
-          "objectId": "post-box-2",
-          "feature": "light-curtain housing bottom to ground",
-          "groundTruthM": 0.24,
-          "provenance": "User independently supplied light-curtain bottom distance on 2026-10-01.",
-          "associationStatus": "Yellow light-curtain housing mask; exact physical endpoint correspondence unconfirmed."
-        },
-        "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
+        "feature": "light-curtain housing bottom to ground",
+        "reason": "检查值是为另一组照片提供的，对象 ID 只是每个场景内的序号名，无法确认是同一工位的同一物体，因此不相减。"
       }
     ],
-    "absentTargets": [],
     "objectEstimates": [
       {
         "objectId": "robot",
@@ -332751,7 +332626,7 @@
     ],
     "binding": {
       "revisionId": "workcell-cell030-2026-10-04",
-      "documentSha256": "bacb38577e1701148db79494973886a3561b0faca6540aa207ae2c102855cfd7",
+      "documentSha256": "d47d97b8a187e0a0efcb12fb598052b4cbd39b6b73db5be0af8889f3e4a9aa6f",
       "experimentRevisionId": "workcell-oneshot-2026-10-04-cell030-v2",
       "reuse": "reused on a revision with identical semantic inputs",
       "verified": [
@@ -332775,7 +332650,7 @@
     "schemaVersion": 1,
     "engine": "policy-evidence-v1",
     "revisionId": "workcell-cell030-2026-10-04",
-    "documentSha256": "bacb38577e1701148db79494973886a3561b0faca6540aa207ae2c102855cfd7",
+    "documentSha256": "d47d97b8a187e0a0efcb12fb598052b4cbd39b6b73db5be0af8889f3e4a9aa6f",
     "ruleSet": {
       "file": "docs/policies/workcell_v2.md",
       "sha256": "2f97a26288d1ac4c6fbf86bc9d2834859d1da7116274791974f0e0935f13c68c",
@@ -332921,7 +332796,7 @@
   "measurementUpdate": {
     "kind": "oneshot-revisions",
     "modelInferenceRepeated": false,
-    "revisionBuildSeconds": 4.48,
+    "revisionBuildSeconds": 4.38,
     "sourceRevisionId": null
   },
   "revisionChoices": [
@@ -332930,14 +332805,14 @@
       "label": "主模型",
       "branchId": "oneshot",
       "status": "main",
-      "documentSha256": "bacb38577e1701148db79494973886a3561b0faca6540aa207ae2c102855cfd7",
+      "documentSha256": "d47d97b8a187e0a0efcb12fb598052b4cbd39b6b73db5be0af8889f3e4a9aa6f",
       "parentRevisionId": null,
       "url": "scene-report.json"
     }
   ],
   "experiment": {
     "title": "四张照片是两个工位：本页是 BL4-BOR1-030（原照片 1–2）",
-    "summary": "原照片 3–4 是另一个同款工位 BL4-BOR1-090（顶牌、机器人铭牌、小车都不同），报告在上一级目录。本页只用本工位两张照片：一个场景，每个物体一个多视角模型，点选物体不换模型；白色钢架龙门架（4 立柱、2 横梁、2 斜撑）由两张照片拟合，信号灯是 RecGen 模型并立正放置。本工位照片里没有可用的标尺，保持 native 单位，不借用其他工位的比例；没有物理验证。",
+    "summary": "原照片 3–4 是另一个同款工位 BL4-BOR1-090（顶牌、机器人铭牌、小车都不同），报告在上一级目录。本页只用本工位两张照片：一个场景，每个物体一个多视角模型，点选物体不换模型；白色钢架龙门架（4 立柱、2 横梁、2 斜撑）由两张照片拟合，信号灯是 RecGen 模型并立正放置。本工位照片里没有可用的标尺，保持 native 单位，不借用其他工位的比例；20/24 cm 开发检查值不相减；没有物理验证。",
     "reportURL": "../cells-2026-10-04/",
     "timingLabel": "完整流程"
   }

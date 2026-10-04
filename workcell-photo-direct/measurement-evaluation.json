@@ -2,90 +2,24 @@
   "schemaVersion": 1,
   "scaleMPerNative": null,
   "groundTruthUsedForCalibration": false,
-  "comparisons": [
+  "comparisons": [],
+  "absentTargets": [
     {
       "objectId": "fence-0",
-      "label": "安全围栏 1",
-      "method": "multiview physical lower edge",
-      "estimateNative": null,
-      "estimateM": null,
-      "rangeNative": null,
-      "rangeM": null,
-      "byPhoto": {},
-      "byPhotoMethod": "independently supported physical edge observations",
-      "sourcePhotos": [],
-      "groundTruthM": 0.2,
-      "signedErrorM": null,
-      "absoluteErrorM": null,
-      "relativeError": null,
-      "source": "Same physical rail face is unverified; bottomEdge retains experimental multiview geometry",
-      "target": {
-        "objectId": "fence-0",
-        "feature": "fence bottom to ground",
-        "groundTruthM": 0.2,
-        "provenance": "User independently supplied fence bottom distance on 2026-10-01.",
-        "associationStatus": "Recognized lower rail; exact physical endpoint correspondence unconfirmed."
-      },
-      "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
+      "feature": "fence bottom to ground",
+      "reason": "检查值是为另一组照片提供的，对象 ID 只是每个场景内的序号名，无法确认是同一工位的同一物体，因此不相减。"
     },
     {
       "objectId": "post-box-1",
-      "label": "黄色光幕立柱 1",
-      "method": "multiview physical lower edge",
-      "estimateNative": 0.5063478136476189,
-      "estimateM": null,
-      "rangeNative": [
-        0.4535455622192324,
-        0.5589873064823434
-      ],
-      "rangeM": null,
-      "byPhoto": {},
-      "byPhotoMethod": "independently supported physical edge observations",
-      "sourcePhotos": [
-        1,
-        2
-      ],
-      "groundTruthM": 0.24,
-      "signedErrorM": null,
-      "absoluteErrorM": null,
-      "relativeError": null,
-      "source": "多视角实体底边到同一拟合地面的垂直距离。",
-      "target": {
-        "objectId": "post-box-1",
-        "feature": "light-curtain housing bottom to ground",
-        "groundTruthM": 0.24,
-        "provenance": "User independently supplied light-curtain bottom distance on 2026-10-01.",
-        "associationStatus": "Yellow light-curtain housing mask; exact physical endpoint correspondence unconfirmed."
-      },
-      "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
+      "feature": "light-curtain housing bottom to ground",
+      "reason": "检查值是为另一组照片提供的，对象 ID 只是每个场景内的序号名，无法确认是同一工位的同一物体，因此不相减。"
     },
     {
       "objectId": "post-box-2",
-      "label": "黄色光幕立柱 2",
-      "method": "multiview physical lower edge",
-      "estimateNative": null,
-      "estimateM": null,
-      "rangeNative": null,
-      "rangeM": null,
-      "byPhoto": {},
-      "byPhotoMethod": "independently supported physical edge observations",
-      "sourcePhotos": [],
-      "groundTruthM": 0.24,
-      "signedErrorM": null,
-      "absoluteErrorM": null,
-      "relativeError": null,
-      "source": "No common RGB end edge has stable multiview reprojection support",
-      "target": {
-        "objectId": "post-box-2",
-        "feature": "light-curtain housing bottom to ground",
-        "groundTruthM": 0.24,
-        "provenance": "User independently supplied light-curtain bottom distance on 2026-10-01.",
-        "associationStatus": "Yellow light-curtain housing mask; exact physical endpoint correspondence unconfirmed."
-      },
-      "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
+      "feature": "light-curtain housing bottom to ground",
+      "reason": "检查值是为另一组照片提供的，对象 ID 只是每个场景内的序号名，无法确认是同一工位的同一物体，因此不相减。"
     }
   ],
-  "absentTargets": [],
   "objectEstimates": [
     {
       "objectId": "robot",

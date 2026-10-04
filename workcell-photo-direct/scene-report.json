@@ -6,7 +6,7 @@
     "branchId": "oneshot",
     "parentRevisionId": null,
     "sourceRevisionId": null,
-    "createdAt": "2026-10-04T01:30:46.084716+00:00",
+    "createdAt": "2026-10-04T01:50:33.732439+00:00",
     "documentSha256": "7047e3db47dda1beec256b46ff3de18f687cd7c13776cc25941d0c21b395f0fd",
     "label": "主模型",
     "document": {
@@ -66808,11 +66808,6 @@
       "notes": [
         "One RecGen model per lamp; overexposed lamps make pale colours; stood upright on the fitted floor normal when every view still passes (recgenModel.upright)."
       ],
-      "modelDimensionsNative": [
-        0.10378074097581291,
-        0.29114462768409055,
-        0.11037991985158557
-      ],
       "recgenModel": {
         "kind": "scene-signal-light-2",
         "objectId": "signal-light-2",
@@ -67184,11 +67179,6 @@
       "representation": "RecGen model from every view of this lamp, placed by a multi-view similarity fit against every photo",
       "notes": [
         "One RecGen model per lamp; overexposed lamps make pale colours; stood upright on the fitted floor normal when every view still passes (recgenModel.upright)."
-      ],
-      "modelDimensionsNative": [
-        0.12924864577822692,
-        0.3291086306756843,
-        0.10470581008602586
       ],
       "recgenModel": {
         "kind": "scene-signal-light-4",
@@ -288519,90 +288509,24 @@
     "schemaVersion": 1,
     "scaleMPerNative": null,
     "groundTruthUsedForCalibration": false,
-    "comparisons": [
+    "comparisons": [],
+    "absentTargets": [
       {
         "objectId": "fence-0",
-        "label": "安全围栏 1",
-        "method": "multiview physical lower edge",
-        "estimateNative": null,
-        "estimateM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "byPhotoMethod": "independently supported physical edge observations",
-        "sourcePhotos": [],
-        "groundTruthM": 0.2,
-        "signedErrorM": null,
-        "absoluteErrorM": null,
-        "relativeError": null,
-        "source": "Same physical rail face is unverified; bottomEdge retains experimental multiview geometry",
-        "target": {
-          "objectId": "fence-0",
-          "feature": "fence bottom to ground",
-          "groundTruthM": 0.2,
-          "provenance": "User independently supplied fence bottom distance on 2026-10-01.",
-          "associationStatus": "Recognized lower rail; exact physical endpoint correspondence unconfirmed."
-        },
-        "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
+        "feature": "fence bottom to ground",
+        "reason": "检查值是为另一组照片提供的，对象 ID 只是每个场景内的序号名，无法确认是同一工位的同一物体，因此不相减。"
       },
       {
         "objectId": "post-box-1",
-        "label": "黄色光幕立柱 1",
-        "method": "multiview physical lower edge",
-        "estimateNative": 0.5063478136476189,
-        "estimateM": null,
-        "rangeNative": [
-          0.4535455622192324,
-          0.5589873064823434
-        ],
-        "rangeM": null,
-        "byPhoto": {},
-        "byPhotoMethod": "independently supported physical edge observations",
-        "sourcePhotos": [
-          1,
-          2
-        ],
-        "groundTruthM": 0.24,
-        "signedErrorM": null,
-        "absoluteErrorM": null,
-        "relativeError": null,
-        "source": "多视角实体底边到同一拟合地面的垂直距离。",
-        "target": {
-          "objectId": "post-box-1",
-          "feature": "light-curtain housing bottom to ground",
-          "groundTruthM": 0.24,
-          "provenance": "User independently supplied light-curtain bottom distance on 2026-10-01.",
-          "associationStatus": "Yellow light-curtain housing mask; exact physical endpoint correspondence unconfirmed."
-        },
-        "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
+        "feature": "light-curtain housing bottom to ground",
+        "reason": "检查值是为另一组照片提供的，对象 ID 只是每个场景内的序号名，无法确认是同一工位的同一物体，因此不相减。"
       },
       {
         "objectId": "post-box-2",
-        "label": "黄色光幕立柱 2",
-        "method": "multiview physical lower edge",
-        "estimateNative": null,
-        "estimateM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "byPhotoMethod": "independently supported physical edge observations",
-        "sourcePhotos": [],
-        "groundTruthM": 0.24,
-        "signedErrorM": null,
-        "absoluteErrorM": null,
-        "relativeError": null,
-        "source": "No common RGB end edge has stable multiview reprojection support",
-        "target": {
-          "objectId": "post-box-2",
-          "feature": "light-curtain housing bottom to ground",
-          "groundTruthM": 0.24,
-          "provenance": "User independently supplied light-curtain bottom distance on 2026-10-01.",
-          "associationStatus": "Yellow light-curtain housing mask; exact physical endpoint correspondence unconfirmed."
-        },
-        "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
+        "feature": "light-curtain housing bottom to ground",
+        "reason": "检查值是为另一组照片提供的，对象 ID 只是每个场景内的序号名，无法确认是同一工位的同一物体，因此不相减。"
       }
     ],
-    "absentTargets": [],
     "objectEstimates": [
       {
         "objectId": "robot",
@@ -298351,7 +298275,7 @@
   "measurementUpdate": {
     "kind": "oneshot-revisions",
     "modelInferenceRepeated": false,
-    "revisionBuildSeconds": 4.48,
+    "revisionBuildSeconds": 4.39,
     "sourceRevisionId": null
   },
   "revisionChoices": [
@@ -298367,7 +298291,7 @@
   ],
   "experiment": {
     "title": "四张照片是两个工位：本页是 BL4-BOR1-090（原照片 3–4）",
-    "summary": "原照片 1–2 是另一个同款工位 BL4-BOR1-030（顶牌、机器人铭牌、小车都不同），报告在 cell-030/。本页只用本工位两张照片：一个场景，每个物体一个多视角模型，点选物体不换模型；入口龙门架由两张照片拟合，信号灯是 RecGen 模型并立正放置。尺度是本工位急停按钮的条件比例，未验证；没有物理验证。",
+    "summary": "原照片 1–2 是另一个同款工位 BL4-BOR1-030（顶牌、机器人铭牌、小车都不同），报告在 cell-030/。本页只用本工位两张照片：一个场景，每个物体一个多视角模型，点选物体不换模型；入口龙门架由两张照片拟合，信号灯是 RecGen 模型并立正放置。尺度是本工位急停按钮的条件比例，未验证。20/24 cm 开发检查值当初是为四张照片提供的，无法确认属于哪个工位，本页不相减；没有物理验证。",
     "reportURL": "cells-2026-10-04/",
     "timingLabel": "完整流程"
   }
