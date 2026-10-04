@@ -8,8 +8,8 @@
   "status": "completed",
   "scope": "incremental semantic experiment; cached reconstruction; no generative VLM",
   "estimateBasis": "requested-resource list rate; excludes build, load before function, storage, egress and teardown; not invoice",
-  "functionSeconds": 42.111433832,
-  "estimateUsd": 0.06585554468383488,
-  "callSeconds": 55.27262558299117,
-  "callWindowEstimateUsd": 0.0864375427917049
+  "functionSeconds": 39.895880157,
+  "estimateUsd": 0.062390773224722876,
+  "callSeconds": 54.57380370795727,
+  "callWindowEstimateUsd": 0.0853446971906519
 }

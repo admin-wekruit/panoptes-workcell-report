@@ -1,15 +1,11 @@
 {
   "sha256": {
-    "objects.json": "b4d6a2cac2e3578e1e138787f44cdbe48ff75a9ce5f402a266db9850656406cf",
-    "scene-report.json": "74f8b9b5e94e0a32e27b22a06c2d8256d486d41c2c6fcd068a59f32e17e81f06",
-    "photo-1.png": "6de905f352df2f86dd494bfdb1ef5e804967f37f0ced0055cf9099e755295905",
-    "photo-2.png": "483034185ebab35b0aaecf3ae037321ecd7bc9563f58838e32d258d0b0d660fb",
-    "photo-3.png": "397ced20181422b4eec618c951f34e67a1892c1a26f8f74eaa50f2a8e29a02cf",
-    "photo-4.png": "2ba27b3727cb2b3099121ee1fa8dc60e80cd1d8893cef3a699d313a0b1f2e30c",
-    "frame_0001.json.gz": "52714019cb0c986be543d76648beeac02df4d5d1641d7d9654eb09c5f66bef4e",
-    "frame_0002.json.gz": "67122fee8ea99b69b8376df615a7c0cdec6517b17d871a4627d65b9938c3d7ef",
-    "frame_0003.json.gz": "76bf48b725e7830d6a46e747c39bf475f9945d023d0307428d1d4a4b09de6db0",
-    "frame_0004.json.gz": "e0b85dfb1a53335292387b6650cbf9c8d4739b3c5702d76b286323f325708769",
-    "protocol.json": "151cef01c1f42e2f24827f7fe1cae2069a92c4fd8de395d7631b2d2a54f4e413"
+    "objects.json": "173cacc1ba054895f80985a400fcd28e32f03e2189a8730ef8dd3127b7316d3e",
+    "scene-report.json": "a3cf42ea2933680fdec39980270b610c87995dd8f114aca8b4eea2a3226333d8",
+    "photo-1.png": "397ced20181422b4eec618c951f34e67a1892c1a26f8f74eaa50f2a8e29a02cf",
+    "photo-2.png": "2ba27b3727cb2b3099121ee1fa8dc60e80cd1d8893cef3a699d313a0b1f2e30c",
+    "frame_0001.json.gz": "a083a876ca9eacd0ec8399c0e0bb29e6bb4daa1bf4a9eeeab8a8ad786737f2af",
+    "frame_0002.json.gz": "ee1175476e385fca931e09914a726076efd6d6a4db72853a381c25dfcea61a8b",
+    "protocol.json": "e6ddd68cf5119b7bdb1375da4556ef1abd21088b3fa7b9a1a8ccb3cef669e43b"
   }
 }

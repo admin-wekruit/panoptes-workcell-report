@@ -1,11 +1,69 @@
 {
-  "method": "A4 shared-angle structural fit to source silhouettes",
-  "result": "structural-result.json",
-  "initialization": "guard-placement-initializer.json",
-  "coordinateSystem": "unchanged source MapAnything world and cameras",
-  "optimizedVariables": "one common theta plus independent rigid pose, two panel widths and hinge-height scale per board",
-  "prior": "User supplied same-angle specification for left and right; exact equality is imposed, never accuracy evidence.",
-  "sharedModelAngleDeg": 104.27020938894461,
-  "measurementAngleDeg": null,
-  "centerPolicy": "unchanged A1; excluded from this objective and all shared parameters"
+  "seconds": 2.318,
+  "evaluations": 148,
+  "loss_before": 0.5122,
+  "loss_after": 0.4202,
+  "iou_before": [
+    0.527,
+    0.533
+  ],
+  "iou_after": [
+    0.61,
+    0.645
+  ],
+  "moved": true,
+  "generationViews": [
+    1,
+    2
+  ],
+  "refineViews": [
+    1,
+    2
+  ],
+  "transform": [
+    [
+      1.04383115945337,
+      0.03647269969651639,
+      -0.3132674150074791,
+      1.8864827394411345
+    ],
+    [
+      -0.019325573792177385,
+      1.0884811507862793,
+      0.062333996783196066,
+      -0.4240296697207589
+    ],
+    [
+      0.314790808833777,
+      -0.05411790031230077,
+      1.0426064550509706,
+      0.3109612806744889
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "sourceChecks": [
+    {
+      "photo": 1,
+      "targetPixels": 1558,
+      "iou": 0.6100762066045724,
+      "boundary": 0.00824381669976076,
+      "p50": 0.022029703482985497,
+      "loss": 0.4284411302779346
+    },
+    {
+      "photo": 2,
+      "targetPixels": 1476,
+      "iou": 0.6449207828518173,
+      "boundary": 0.006934869703638968,
+      "p50": 0.04299996420741081,
+      "loss": 0.41194892076287143
+    }
+  ],
+  "sourceCheckScope": "half-resolution SAM mask of every photo; the model is hidden only where scene depth is in front of it outside the mask",
+  "basis": "shape-preserving similarity alignment to source masks and estimated depth; not surveyed physical accuracy"
 }

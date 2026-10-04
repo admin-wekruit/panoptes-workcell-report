@@ -32,18 +32,18 @@
       "objectId": "post-box-1",
       "label": "黄色光幕立柱 1",
       "method": "multiview physical lower edge",
-      "estimateNative": 0.37800335637964944,
+      "estimateNative": 0.5063478136476189,
       "estimateM": null,
       "rangeNative": [
-        0.3315043069830604,
-        0.4059248670837478
+        0.4535455622192324,
+        0.5589873064823434
       ],
       "rangeM": null,
       "byPhoto": {},
       "byPhotoMethod": "independently supported physical edge observations",
       "sourcePhotos": [
-        3,
-        4
+        1,
+        2
       ],
       "groundTruthM": 0.24,
       "signedErrorM": null,
@@ -85,38 +85,32 @@
       "limitation": "Metric result requires accepted 3D reference scale and independently supported physical lower edge."
     }
   ],
+  "absentTargets": [],
   "objectEstimates": [
     {
       "objectId": "robot",
       "label": "工业机器人",
       "visibleHeight": {
-        "medianNative": null,
+        "medianNative": 2.874268389766167,
         "medianM": null,
-        "rangeNative": null,
+        "rangeNative": [
+          2.747385348347538,
+          3.0011514311847964
+        ],
         "rangeM": null,
         "byPhoto": {
           "1": {
-            "valueNative": 4.320778488605416,
+            "valueNative": 3.0011514311847964,
             "valueM": null
           },
           "2": {
-            "valueNative": 4.3498393102428485,
-            "valueM": null
-          },
-          "3": {
-            "valueNative": 3.072024200335969,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 2.6990869636226815,
+            "valueNative": 2.747385348347538,
             "valueM": null
           }
         },
         "sourcePhotos": [
           1,
-          2,
-          3,
-          4
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -130,43 +124,33 @@
         "method": "median of valid saved per-photo visible support; at least two views"
       },
       "physicalDimensionsUnknown": true,
-      "poseDependent": true,
+      "poseDependent": false,
       "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
     },
     {
       "objectId": "cart",
       "label": "载料运输车",
       "visibleHeight": {
-        "medianNative": 1.6188726232750168,
+        "medianNative": 1.7043945212738327,
         "medianM": null,
         "rangeNative": [
-          1.5316367471614432,
-          1.8502697381873676
+          1.6976683460489408,
+          1.7111206964987244
         ],
         "rangeM": null,
         "byPhoto": {
           "1": {
-            "valueNative": 1.8502697381873676,
+            "valueNative": 1.7111206964987244,
             "valueM": null
           },
           "2": {
-            "valueNative": 1.5316367471614432,
-            "valueM": null
-          },
-          "3": {
-            "valueNative": 1.6472043051079415,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 1.5905409414420921,
+            "valueNative": 1.6976683460489408,
             "valueM": null
           }
         },
         "sourcePhotos": [
           1,
-          2,
-          3,
-          4
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -187,36 +171,26 @@
       "objectId": "v-guard-left",
       "label": "左侧折弯护板 1",
       "visibleHeight": {
-        "medianNative": 0.916730557704624,
+        "medianNative": 1.0258747325158888,
         "medianM": null,
         "rangeNative": [
-          0.8351349300155063,
-          0.9506253362199958
+          0.944498646017241,
+          1.1072508190145367
         ],
         "rangeM": null,
         "byPhoto": {
-          "3": {
-            "valueNative": 0.8351349300155063,
-            "valueM": null
-          },
           "1": {
-            "valueNative": 0.9110826219110991,
+            "valueNative": 0.944498646017241,
             "valueM": null
           },
           "2": {
-            "valueNative": 0.9223784934981488,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 0.9506253362199958,
+            "valueNative": 1.1072508190145367,
             "valueM": null
           }
         },
         "sourcePhotos": [
           1,
-          2,
-          3,
-          4
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -237,26 +211,26 @@
       "objectId": "v-guard-center",
       "label": "中间折弯护板 2",
       "visibleHeight": {
-        "medianNative": 0.5116577314263079,
+        "medianNative": 0.5619321384570004,
         "medianM": null,
         "rangeNative": [
-          0.49220589495655265,
-          0.5311095678960631
+          0.5430507100579692,
+          0.5808135668560315
         ],
         "rangeM": null,
         "byPhoto": {
-          "3": {
-            "valueNative": 0.5311095678960631,
+          "1": {
+            "valueNative": 0.5808135668560315,
             "valueM": null
           },
-          "4": {
-            "valueNative": 0.49220589495655265,
+          "2": {
+            "valueNative": 0.5430507100579692,
             "valueM": null
           }
         },
         "sourcePhotos": [
-          3,
-          4
+          1,
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -277,31 +251,26 @@
       "objectId": "v-guard-right",
       "label": "右侧折弯护板 3",
       "visibleHeight": {
-        "medianNative": 0.8426421070060706,
+        "medianNative": 0.881028637874902,
         "medianM": null,
         "rangeNative": [
-          0.7214986929958639,
-          0.8429655311356616
+          0.8391853172324444,
+          0.9228719585173597
         ],
         "rangeM": null,
         "byPhoto": {
-          "3": {
-            "valueNative": 0.7214986929958639,
-            "valueM": null
-          },
           "1": {
-            "valueNative": 0.8429655311356616,
+            "valueNative": 0.8391853172324444,
             "valueM": null
           },
-          "4": {
-            "valueNative": 0.8426421070060706,
+          "2": {
+            "valueNative": 0.9228719585173597,
             "valueM": null
           }
         },
         "sourcePhotos": [
           1,
-          3,
-          4
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -322,36 +291,26 @@
       "objectId": "post-box-1",
       "label": "黄色光幕立柱 1",
       "visibleHeight": {
-        "medianNative": 2.889461593138771,
+        "medianNative": 2.9009128738237484,
         "medianM": null,
         "rangeNative": [
-          2.7985828679468696,
-          3.909705230460575
+          2.8421921613186667,
+          2.9596335863288297
         ],
         "rangeM": null,
         "byPhoto": {
           "1": {
-            "valueNative": 2.853689543440223,
+            "valueNative": 2.8421921613186667,
             "valueM": null
           },
           "2": {
-            "valueNative": 3.909705230460575,
-            "valueM": null
-          },
-          "3": {
-            "valueNative": 2.7985828679468696,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 2.925233642837318,
+            "valueNative": 2.9596335863288297,
             "valueM": null
           }
         },
         "sourcePhotos": [
           1,
-          2,
-          3,
-          4
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -372,36 +331,26 @@
       "objectId": "post-box-2",
       "label": "黄色光幕立柱 2",
       "visibleHeight": {
-        "medianNative": 2.8652607929250533,
+        "medianNative": 2.9875830431017327,
         "medianM": null,
         "rangeNative": [
-          2.837783161486607,
-          2.9232623577167143
+          2.949436867373768,
+          3.0257292188296976
         ],
         "rangeM": null,
         "byPhoto": {
           "1": {
-            "valueNative": 2.9232623577167143,
+            "valueNative": 2.949436867373768,
             "valueM": null
           },
           "2": {
-            "valueNative": 2.837783161486607,
-            "valueM": null
-          },
-          "3": {
-            "valueNative": 2.8518377232086385,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 2.878683862641468,
+            "valueNative": 3.0257292188296976,
             "valueM": null
           }
         },
         "sourcePhotos": [
           1,
-          2,
-          3,
-          4
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -422,36 +371,26 @@
       "objectId": "post-cylinder-1",
       "label": "黑色防撞柱 1",
       "visibleHeight": {
-        "medianNative": 1.5186655402390554,
+        "medianNative": 1.5577085084749953,
         "medianM": null,
         "rangeNative": [
-          1.42990398121555,
-          1.5352035670854358
+          1.5364662271091234,
+          1.5789507898408672
         ],
         "rangeM": null,
         "byPhoto": {
           "1": {
-            "valueNative": 1.42990398121555,
+            "valueNative": 1.5789507898408672,
             "valueM": null
           },
           "2": {
-            "valueNative": 1.5352035670854358,
-            "valueM": null
-          },
-          "3": {
-            "valueNative": 1.5345527641039873,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 1.5027783163741235,
+            "valueNative": 1.5364662271091234,
             "valueM": null
           }
         },
         "sourcePhotos": [
           1,
-          2,
-          3,
-          4
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -472,31 +411,26 @@
       "objectId": "post-cylinder-2",
       "label": "黑色防撞柱 2",
       "visibleHeight": {
-        "medianNative": 1.5140689097146445,
+        "medianNative": 1.5386351684748965,
         "medianM": null,
         "rangeNative": [
-          1.4044551926430506,
-          1.5219623447005595
+          1.5375361874486781,
+          1.539734149501115
         ],
         "rangeM": null,
         "byPhoto": {
+          "1": {
+            "valueNative": 1.539734149501115,
+            "valueM": null
+          },
           "2": {
-            "valueNative": 1.4044551926430506,
-            "valueM": null
-          },
-          "3": {
-            "valueNative": 1.5140689097146445,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 1.5219623447005595,
+            "valueNative": 1.5375361874486781,
             "valueM": null
           }
         },
         "sourcePhotos": [
-          2,
-          3,
-          4
+          1,
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -517,31 +451,26 @@
       "objectId": "fence-0",
       "label": "安全围栏 1",
       "visibleHeight": {
-        "medianNative": 3.863975752521375,
+        "medianNative": 3.9288975329540703,
         "medianM": null,
         "rangeNative": [
-          3.855020891401378,
-          3.936419009027394
+          3.920658784124045,
+          3.9371362817840954
         ],
         "rangeM": null,
         "byPhoto": {
           "1": {
-            "valueNative": 3.863975752521375,
+            "valueNative": 3.920658784124045,
             "valueM": null
           },
-          "3": {
-            "valueNative": 3.855020891401378,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 3.936419009027394,
+          "2": {
+            "valueNative": 3.9371362817840954,
             "valueM": null
           }
         },
         "sourcePhotos": [
           1,
-          3,
-          4
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -562,233 +491,13 @@
       "objectId": "fence-1",
       "label": "安全围栏 2",
       "visibleHeight": {
-        "medianNative": 3.976237355512521,
-        "medianM": null,
-        "rangeNative": [
-          3.8787859342104194,
-          4.073688776814622
-        ],
-        "rangeM": null,
-        "byPhoto": {
-          "2": {
-            "valueNative": 3.8787859342104194,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 4.073688776814622,
-            "valueM": null
-          }
-        },
-        "sourcePhotos": [
-          2,
-          4
-        ],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "lowerEdge": {
-        "medianNative": null,
-        "medianM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "sourcePhotos": [],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "physicalDimensionsUnknown": true,
-      "poseDependent": false,
-      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
-    },
-    {
-      "objectId": "floor",
-      "label": "地面参考面",
-      "visibleHeight": {
-        "medianNative": 0.05530673637217842,
-        "medianM": null,
-        "rangeNative": [
-          0.05520115552085203,
-          0.05531413966964793
-        ],
-        "rangeM": null,
-        "byPhoto": {
-          "1": {
-            "valueNative": 0.05531413966964793,
-            "valueM": null
-          },
-          "2": {
-            "valueNative": 0.05520115552085203,
-            "valueM": null
-          },
-          "3": {
-            "valueNative": 0.05530295040284505,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 0.05531052234151179,
-            "valueM": null
-          }
-        },
-        "sourcePhotos": [
-          1,
-          2,
-          3,
-          4
-        ],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "lowerEdge": {
-        "medianNative": null,
-        "medianM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "sourcePhotos": [],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "physicalDimensionsUnknown": true,
-      "poseDependent": false,
-      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
-    },
-    {
-      "objectId": "emergency-button",
-      "label": "红黄急停按钮",
-      "visibleHeight": {
-        "medianNative": 0.17484740305840812,
-        "medianM": null,
-        "rangeNative": [
-          0.15322487643063687,
-          0.17853205268138017
-        ],
-        "rangeM": null,
-        "byPhoto": {
-          "2": {
-            "valueNative": 0.17484740305840812,
-            "valueM": null
-          },
-          "3": {
-            "valueNative": 0.15322487643063687,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 0.17853205268138017,
-            "valueM": null
-          }
-        },
-        "sourcePhotos": [
-          2,
-          3,
-          4
-        ],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "lowerEdge": {
-        "medianNative": null,
-        "medianM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "sourcePhotos": [],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "physicalDimensionsUnknown": true,
-      "poseDependent": false,
-      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
-    },
-    {
-      "objectId": "signal-light-2",
-      "label": "信号灯 1",
-      "visibleHeight": {
-        "medianNative": 0.3523024144271336,
-        "medianM": null,
-        "rangeNative": [
-          0.33433466881715335,
-          0.3702701600371139
-        ],
-        "rangeM": null,
-        "byPhoto": {
-          "2": {
-            "valueNative": 0.33433466881715335,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 0.3702701600371139,
-            "valueM": null
-          }
-        },
-        "sourcePhotos": [
-          2,
-          4
-        ],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "lowerEdge": {
-        "medianNative": null,
-        "medianM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "sourcePhotos": [],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "physicalDimensionsUnknown": true,
-      "poseDependent": false,
-      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
-    },
-    {
-      "objectId": "signal-light-4",
-      "label": "信号灯 2",
-      "visibleHeight": {
-        "medianNative": 0.40245406258427274,
-        "medianM": null,
-        "rangeNative": [
-          0.373197699344594,
-          0.46641915545979074
-        ],
-        "rangeM": null,
-        "byPhoto": {
-          "2": {
-            "valueNative": 0.46641915545979074,
-            "valueM": null
-          },
-          "3": {
-            "valueNative": 0.40245406258427274,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 0.373197699344594,
-            "valueM": null
-          }
-        },
-        "sourcePhotos": [
-          2,
-          3,
-          4
-        ],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "lowerEdge": {
-        "medianNative": null,
-        "medianM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "sourcePhotos": [],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "physicalDimensionsUnknown": true,
-      "poseDependent": false,
-      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
-    },
-    {
-      "objectId": "sign-8",
-      "label": "标识牌 1",
-      "visibleHeight": {
         "medianNative": null,
         "medianM": null,
         "rangeNative": null,
         "rangeM": null,
         "byPhoto": {
           "2": {
-            "valueNative": 0.5163040898969267,
+            "valueNative": 4.132410212376165,
             "valueM": null
           }
         },
@@ -811,7 +520,191 @@
       "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
     },
     {
-      "objectId": "sign-9",
+      "objectId": "floor",
+      "label": "地面参考面",
+      "visibleHeight": {
+        "medianNative": 0.06277286607572852,
+        "medianM": null,
+        "rangeNative": [
+          0.06275924019045354,
+          0.0627864919610035
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.06275924019045354,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.0627864919610035,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "emergency-button",
+      "label": "红黄急停按钮",
+      "visibleHeight": {
+        "medianNative": 0.16595057204411734,
+        "medianM": null,
+        "rangeNative": [
+          0.15660166476555515,
+          0.17529947932267953
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.15660166476555515,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.17529947932267953,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "signal-light-2",
+      "label": "信号灯 1",
+      "visibleHeight": {
+        "medianNative": 0.38188952050596625,
+        "medianM": null,
+        "rangeNative": [
+          0.35857698997595855,
+          0.40520205103597395
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.40520205103597395,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.35857698997595855,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "signal-light-4",
+      "label": "信号灯 2",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "2": {
+            "valueNative": 0.3564902454496435,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "sign-5",
+      "label": "标识牌 1",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 0.20418027070174372,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "sign-7",
       "label": "标识牌 2",
       "visibleHeight": {
         "medianNative": null,
@@ -819,13 +712,77 @@
         "rangeNative": null,
         "rangeM": null,
         "byPhoto": {
-          "3": {
-            "valueNative": 0.20570849698046811,
+          "2": {
+            "valueNative": 0.2503742415296868,
             "valueM": null
           }
         },
         "sourcePhotos": [
-          3
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "sign-8",
+      "label": "标识牌 3",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 2.4077693981892585,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "cable-tray-9",
+      "label": "线缆托架 1",
+      "visibleHeight": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 1.8420934066263674,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -844,28 +801,20 @@
     },
     {
       "objectId": "sign-10",
-      "label": "标识牌 3",
+      "label": "标识牌 4",
       "visibleHeight": {
-        "medianNative": 1.602138054015376,
+        "medianNative": null,
         "medianM": null,
-        "rangeNative": [
-          0.2929785812302028,
-          2.911297526800549
-        ],
+        "rangeNative": null,
         "rangeM": null,
         "byPhoto": {
           "2": {
-            "valueNative": 2.911297526800549,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 0.2929785812302028,
+            "valueNative": 0.9315914184860599,
             "valueM": null
           }
         },
         "sourcePhotos": [
-          2,
-          4
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -884,92 +833,20 @@
     },
     {
       "objectId": "sign-11",
-      "label": "标识牌 4",
-      "visibleHeight": {
-        "medianNative": null,
-        "medianM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {
-          "3": {
-            "valueNative": 3.6164506969701997,
-            "valueM": null
-          }
-        },
-        "sourcePhotos": [
-          3
-        ],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "lowerEdge": {
-        "medianNative": null,
-        "medianM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "sourcePhotos": [],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "physicalDimensionsUnknown": true,
-      "poseDependent": false,
-      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
-    },
-    {
-      "objectId": "cable-tray-12",
-      "label": "线缆托架 1",
-      "visibleHeight": {
-        "medianNative": null,
-        "medianM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {
-          "3": {
-            "valueNative": 2.934360407840472,
-            "valueM": null
-          }
-        },
-        "sourcePhotos": [
-          3
-        ],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "lowerEdge": {
-        "medianNative": null,
-        "medianM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "sourcePhotos": [],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "physicalDimensionsUnknown": true,
-      "poseDependent": false,
-      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
-    },
-    {
-      "objectId": "sign-13",
       "label": "标识牌 5",
       "visibleHeight": {
-        "medianNative": 0.880944784542774,
+        "medianNative": null,
         "medianM": null,
-        "rangeNative": [
-          0.878349463308255,
-          0.8835401057772929
-        ],
+        "rangeNative": null,
         "rangeM": null,
         "byPhoto": {
           "2": {
-            "valueNative": 0.878349463308255,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 0.8835401057772929,
+            "valueNative": 0.22298799145325215,
             "valueM": null
           }
         },
         "sourcePhotos": [
-          2,
-          4
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -987,79 +864,29 @@
       "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
     },
     {
-      "objectId": "sign-14",
-      "label": "标识牌 6",
-      "visibleHeight": {
-        "medianNative": 0.2247134447459654,
-        "medianM": null,
-        "rangeNative": [
-          0.21952761591593067,
-          0.22989927357600015
-        ],
-        "rangeM": null,
-        "byPhoto": {
-          "2": {
-            "valueNative": 0.21952761591593067,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 0.22989927357600015,
-            "valueM": null
-          }
-        },
-        "sourcePhotos": [
-          2,
-          4
-        ],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "lowerEdge": {
-        "medianNative": null,
-        "medianM": null,
-        "rangeNative": null,
-        "rangeM": null,
-        "byPhoto": {},
-        "sourcePhotos": [],
-        "method": "median of valid saved per-photo visible support; at least two views"
-      },
-      "physicalDimensionsUnknown": true,
-      "poseDependent": false,
-      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
-    },
-    {
-      "objectId": "floor-marking-15",
+      "objectId": "floor-marking-12",
       "label": "地面标线 1",
       "visibleHeight": {
-        "medianNative": 0.022229726845698128,
+        "medianNative": 0.03874596866500868,
         "medianM": null,
         "rangeNative": [
-          0.01611953350596318,
-          0.038073951871314016
+          0.033432178315675465,
+          0.04405975901434189
         ],
         "rangeM": null,
         "byPhoto": {
           "1": {
-            "valueNative": 0.01611953350596318,
+            "valueNative": 0.033432178315675465,
             "valueM": null
           },
           "2": {
-            "valueNative": 0.020798922940147957,
-            "valueM": null
-          },
-          "3": {
-            "valueNative": 0.038073951871314016,
-            "valueM": null
-          },
-          "4": {
-            "valueNative": 0.0236605307512483,
+            "valueNative": 0.04405975901434189,
             "valueM": null
           }
         },
         "sourcePhotos": [
           1,
-          2,
-          3,
-          4
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },
@@ -1077,7 +904,7 @@
       "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
     },
     {
-      "objectId": "floor-marking-30",
+      "objectId": "floor-marking-14",
       "label": "地面标线 2",
       "visibleHeight": {
         "medianNative": null,
@@ -1085,13 +912,53 @@
         "rangeNative": null,
         "rangeM": null,
         "byPhoto": {
-          "4": {
-            "valueNative": 0.17109285539164887,
+          "2": {
+            "valueNative": 0.15076715669561302,
             "valueM": null
           }
         },
         "sourcePhotos": [
-          4
+          2
+        ],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "lowerEdge": {
+        "medianNative": null,
+        "medianM": null,
+        "rangeNative": null,
+        "rangeM": null,
+        "byPhoto": {},
+        "sourcePhotos": [],
+        "method": "median of valid saved per-photo visible support; at least two views"
+      },
+      "physicalDimensionsUnknown": true,
+      "poseDependent": false,
+      "limitation": "Visible support only; occluded full extent and physical endpoint association remain unconfirmed."
+    },
+    {
+      "objectId": "gantry",
+      "label": "入口龙门架",
+      "visibleHeight": {
+        "medianNative": 1.3945009329912228,
+        "medianM": null,
+        "rangeNative": [
+          0.3814185748914294,
+          2.407583291091016
+        ],
+        "rangeM": null,
+        "byPhoto": {
+          "1": {
+            "valueNative": 2.407583291091016,
+            "valueM": null
+          },
+          "2": {
+            "valueNative": 0.3814185748914294,
+            "valueM": null
+          }
+        },
+        "sourcePhotos": [
+          1,
+          2
         ],
         "method": "median of valid saved per-photo visible support; at least two views"
       },

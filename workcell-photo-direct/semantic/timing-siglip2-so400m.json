@@ -2,18 +2,18 @@
   "encoder": "siglip2-so400m",
   "modelId": "google/siglip2-so400m-patch16-384",
   "device": "NVIDIA A100-SXM4-80GB",
-  "observationCount": 91,
-  "photoCount": 4,
+  "observationCount": 53,
+  "photoCount": 2,
   "textTemplates": [
     "a photo of {}.",
     "a photo of {} in a workplace."
   ],
-  "loadSeconds": 17.9339,
-  "plainSeconds": 1.6255,
-  "maskedSeconds": 0.2992,
-  "globalSeconds": 0.0835,
-  "classTextSeconds": 0.2944,
-  "queryTextSeconds": 0.0759,
-  "peakAllocatedGiB": 3.4894,
-  "totalSeconds": 21.0492
+  "loadSeconds": 18.4588,
+  "plainSeconds": 1.5096,
+  "maskedSeconds": 0.1864,
+  "globalSeconds": 0.0614,
+  "classTextSeconds": 0.3978,
+  "queryTextSeconds": 0.0976,
+  "peakAllocatedGiB": 2.9193,
+  "totalSeconds": 21.2316
 }

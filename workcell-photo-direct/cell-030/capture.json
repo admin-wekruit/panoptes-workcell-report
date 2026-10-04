@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "photoCount": 2,
+  "referencePhoto": 2,
+  "referenceRole": "left/right convention, post primitives and emergency-button scale reference",
+  "scope": "all photos show one physical scene; MapAnything fuses them into one world",
+  "sources": [
+    {
+      "photo": 1,
+      "name": "image_01.jpg",
+      "sha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac"
+    },
+    {
+      "photo": 2,
+      "name": "image_02.jpg",
+      "sha256": "6cd81ae4ae783c37d0a1129e39acb0d7064c46d9b51524130406642f8c7a3bea"
+    }
+  ]
+}

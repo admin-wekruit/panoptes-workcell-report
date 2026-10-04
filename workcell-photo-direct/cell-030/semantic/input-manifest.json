@@ -1,0 +1,11 @@
+{
+  "sha256": {
+    "objects.json": "d7f74e460fa8d8ec8fe6afaa61c45ae0cdab091a15a672c1ce47ba1948d3cdea",
+    "scene-report.json": "c8db0a2d64ce465098195cda69c8edb58ee5acb80d662f09b886abc1156f85d3",
+    "photo-1.png": "6de905f352df2f86dd494bfdb1ef5e804967f37f0ced0055cf9099e755295905",
+    "photo-2.png": "483034185ebab35b0aaecf3ae037321ecd7bc9563f58838e32d258d0b0d660fb",
+    "frame_0001.json.gz": "a40161a18a64e9ebc8e74fbd6492970fdf5b21e3156433108a7f9724c26de938",
+    "frame_0002.json.gz": "f89a98cab092d3759f9b131cba87feb6c9384172c9a9932aeb2dd7631fffe26e",
+    "protocol.json": "e6ddd68cf5119b7bdb1375da4556ef1abd21088b3fa7b9a1a8ccb3cef669e43b"
+  }
+}

@@ -2,18 +2,18 @@
   "encoder": "pe-core-l",
   "modelId": "timm/PE-Core-L-14-336",
   "device": "NVIDIA A100-SXM4-80GB",
-  "observationCount": 91,
-  "photoCount": 4,
+  "observationCount": 53,
+  "photoCount": 2,
   "textTemplates": [
     "a photo of {}.",
     "a photo of {} in a workplace."
   ],
-  "loadSeconds": 23.2745,
-  "plainSeconds": 0.8092,
-  "maskedSeconds": 0.3036,
-  "globalSeconds": 0.1391,
-  "classTextSeconds": 0.3416,
-  "queryTextSeconds": 0.0706,
-  "peakAllocatedGiB": 2.5174,
-  "totalSeconds": 25.7129
+  "loadSeconds": 23.8807,
+  "plainSeconds": 0.6993,
+  "maskedSeconds": 0.185,
+  "globalSeconds": 0.121,
+  "classTextSeconds": 0.4461,
+  "queryTextSeconds": 0.0991,
+  "peakAllocatedGiB": 2.5051,
+  "totalSeconds": 25.9531
 }

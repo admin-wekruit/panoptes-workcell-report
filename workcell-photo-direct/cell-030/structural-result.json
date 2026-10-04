@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "route": "shared-angle-silhouette-prior",
+  "objects": [],
+  "overlays": [],
+  "promotionAllowed": false,
+  "selected": false,
+  "status": "unsupported-initializer",
+  "fitGate": {
+    "passed": false,
+    "reasons": [
+      "A1 board has no stable two-face bend to initialize the shared-angle model: left: measurement_no_stable_bend; right: measurement_no_stable_bend"
+    ]
+  },
+  "centerPolicy": "unchanged A1",
+  "prior": "User supplied same-angle specification for left and right; not applied.",
+  "wallSeconds": 0.9974602039999922,
+  "initializerModels": {
+    "left": "guard-left-initializer.glb",
+    "right": "guard-right-initializer.glb"
+  }
+}

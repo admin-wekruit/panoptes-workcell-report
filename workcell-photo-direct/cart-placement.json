@@ -1,0 +1,69 @@
+{
+  "seconds": 2.236,
+  "evaluations": 139,
+  "loss_before": 0.2998,
+  "loss_after": 0.1724,
+  "iou_before": [
+    0.746,
+    0.736
+  ],
+  "iou_after": [
+    0.863,
+    0.875
+  ],
+  "moved": true,
+  "generationViews": [
+    1,
+    2
+  ],
+  "refineViews": [
+    1,
+    2
+  ],
+  "transform": [
+    [
+      0.9615553507493126,
+      -0.043564103516235075,
+      -0.09489168250778761,
+      0.5794492091088205
+    ],
+    [
+      0.028159325759983363,
+      0.9546275605880353,
+      -0.15291902438037508,
+      1.1643570703138424
+    ],
+    [
+      0.10054508887596225,
+      0.14926266957792683,
+      0.9503169448412256,
+      0.3140011503747367
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "sourceChecks": [
+    {
+      "photo": 1,
+      "targetPixels": 2663,
+      "iou": 0.8625730994152047,
+      "boundary": 0.0065220626624854835,
+      "p50": 0.03609141707420349,
+      "loss": 0.1865624429839698
+    },
+    {
+      "photo": 2,
+      "targetPixels": 2282,
+      "iou": 0.875,
+      "boundary": 0.004323679968196913,
+      "p50": 0.024683577939867973,
+      "loss": 0.1583309378762618
+    }
+  ],
+  "sourceCheckScope": "half-resolution SAM mask of every photo; the model is hidden only where scene depth is in front of it outside the mask",
+  "basis": "shape-preserving similarity alignment to source masks and estimated depth; not surveyed physical accuracy"
+}
