@@ -6,7 +6,7 @@
     "branchId": "oneshot",
     "parentRevisionId": null,
     "sourceRevisionId": null,
-    "createdAt": "2026-10-04T03:58:09.955542+00:00",
+    "createdAt": "2026-10-04T04:02:17.393741+00:00",
     "documentSha256": "4d3278eb321bf9a01222da0751bf1cf1e37f18bbd86909574bcd5b0eace91a46",
     "label": "主模型",
     "document": {
@@ -299771,7 +299771,7 @@
   "measurementUpdate": {
     "kind": "oneshot-revisions",
     "modelInferenceRepeated": false,
-    "revisionBuildSeconds": 3.97,
+    "revisionBuildSeconds": 4.05,
     "sourceRevisionId": null
   },
   "revisionChoices": [
@@ -299787,7 +299787,7 @@
   ],
   "experiment": {
     "title": "四张照片是两个工位：本页是 BL4-BOR1-090（原照片 3–4）",
-    "summary": "原照片 1–2 是另一个同款工位 BL4-BOR1-030，报告在 cell-030/。本页只用本工位两张照片：一个场景，每个物体一个多视角模型；龙门架由两张照片拟合；信号灯是 RecGen 模型并立正放置；V 型护板是按每块板自己的照片点云拟合的平板（带照片纹理）；挂在龙门架上的灯、光幕、围栏只接触不穿插。点选任何物体会显示模型的长 × 宽 × 高和离地高度。尺度是本工位急停按钮的条件比例，未验证；没有物理验证。",
+    "summary": "原照片 1–2 是另一个同款工位 BL4-BOR1-030，报告在 cell-030/。本页只用本工位两张照片：一个场景，每个物体一个多视角模型；龙门架由两张照片拟合；信号灯是 RecGen 模型并立正放置；V 型护板（左、中、右）是按每块板自己的照片点云拟合的平板（带照片纹理）；挂在龙门架上的灯、光幕、围栏只接触不穿插。点选任何物体会显示模型的长 × 宽 × 高和离地高度。尺度是本工位急停按钮的条件比例，未验证；没有物理验证。",
     "reportURL": "cells-2026-10-04/",
     "timingLabel": "完整流程"
   }

@@ -6877,8 +6877,7 @@
       "model": {
         "file": "guard-plates.glb",
         "nodes": [
-          "v-guard-left-face-1",
-          "v-guard-left-face-2"
+          "v-guard-left-face-1"
         ]
       },
       "observations": [
@@ -7987,7 +7986,7 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "folded plate fitted to this board's photo support (2 faces); photo texture",
+      "representation": "folded plate fitted to this board's photo support (1 face); photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
@@ -8016,21 +8015,13 @@
               -0.08454
             ],
             "inlierFraction": 0.728
-          },
-          {
-            "normal": [
-              -0.59719,
-              0.52604,
-              0.60551
-            ],
-            "inlierFraction": 0.2328
           }
         ],
-        "foldBetweenFaceNormalsDeg": 42.43,
+        "foldBetweenFaceNormalsDeg": null,
         "toleranceNative": 0.0655,
         "iouByPhoto": {
-          "1": 0.4455,
-          "2": 0.4078
+          "1": 0.5171,
+          "2": 0.5024
         },
         "recgenPartIouByPhoto": {
           "1": 0.5635,
@@ -42377,7 +42368,7 @@
         {
           "member": "gantry-post-2",
           "object": "v-guard-left",
-          "insideFraction": 0.0399
+          "insideFraction": 0.0442
         }
       ],
       "unresolved": [],
@@ -42473,21 +42464,13 @@
                 -0.08454
               ],
               "inlierFraction": 0.728
-            },
-            {
-              "normal": [
-                -0.59719,
-                0.52604,
-                0.60551
-              ],
-              "inlierFraction": 0.2328
             }
           ],
-          "foldBetweenFaceNormalsDeg": 42.43,
+          "foldBetweenFaceNormalsDeg": null,
           "toleranceNative": 0.0655,
           "iouByPhoto": {
-            "1": 0.4455,
-            "2": 0.4078
+            "1": 0.5171,
+            "2": 0.5024
           },
           "recgenPartIouByPhoto": {
             "1": 0.5635,
