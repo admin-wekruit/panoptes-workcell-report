@@ -57,7 +57,7 @@
      "segments": 64
     },
     "placementState": "unconfirmed",
-    "placementReason": "reference_object_specification",
+    "placementReason": "requires_alignment_confirmation",
     "bounds": {
      "min": [
       -0.029865764112793212,
