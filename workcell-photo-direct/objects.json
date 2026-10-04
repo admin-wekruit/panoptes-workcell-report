@@ -5441,7 +5441,9 @@
       "model": {
         "file": "guard-plates.glb",
         "nodes": [
-          "v-guard-left-face-1"
+          "v-guard-left-face-1",
+          "v-guard-left-face-2",
+          "v-guard-left-face-3"
         ]
       },
       "observations": [
@@ -6208,7 +6210,7 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "folded plate fitted to this board's photo support (1 face); photo texture",
+      "representation": "plate fitted to this board's photo support (3 faces), joined to its neighbours where the photos allow; photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
@@ -6242,11 +6244,11 @@
         "foldBetweenFaceNormalsDeg": null,
         "toleranceNative": 0.0705,
         "iouByPhoto": {
-          "1": 0.6222,
-          "2": 0.7463
+          "1": 0.627,
+          "2": 0.7578
         },
         "recgenPartIouByPhoto": {
-          "1": 0.7143,
+          "1": 0.7182,
           "2": 0.6446
         },
         "kept": true
@@ -7978,7 +7980,7 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "folded plate fitted to this board's photo support (1 face); photo texture",
+      "representation": "plate fitted to this board's photo support (1 face), joined to its neighbours where the photos allow; photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
@@ -8012,12 +8014,12 @@
         "foldBetweenFaceNormalsDeg": null,
         "toleranceNative": 0.0756,
         "iouByPhoto": {
-          "1": 0.6157,
-          "2": 0.6178
+          "1": 0.6231,
+          "2": 0.6202
         },
         "recgenPartIouByPhoto": {
-          "1": 0.4844,
-          "2": 0.4218
+          "1": 0.5452,
+          "2": 0.4836
         },
         "kept": true
       }
@@ -8029,7 +8031,9 @@
       "model": {
         "file": "guard-plates.glb",
         "nodes": [
-          "v-guard-right-face-1"
+          "v-guard-right-face-1",
+          "v-guard-right-face-2",
+          "v-guard-right-face-3"
         ]
       },
       "observations": [
@@ -8875,7 +8879,7 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "folded plate fitted to this board's photo support (1 face); photo texture",
+      "representation": "plate fitted to this board's photo support (3 faces), joined to its neighbours where the photos allow; photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
@@ -8909,12 +8913,12 @@
         "foldBetweenFaceNormalsDeg": null,
         "toleranceNative": 0.0752,
         "iouByPhoto": {
-          "1": 0.658,
-          "2": 0.6529
+          "1": 0.6962,
+          "2": 0.6428
         },
         "recgenPartIouByPhoto": {
-          "1": 0.5463,
-          "2": 0.5628
+          "1": 0.692,
+          "2": 0.7302
         },
         "kept": true
       }
@@ -38563,11 +38567,31 @@
           ],
           "unresolved": [],
           "status": "resolved"
+        },
+        {
+          "rule": "contacts, not interpenetration: under 6% of an object inside a gantry member is mounting contact; a structural member >= 90% inside and parallel is the same physical member (one model stays); otherwise the member shifts aside (gantry IoU drop <= 0.03) and lamps slide toward their camera",
+          "duplicates": [],
+          "members": [],
+          "lamps": [],
+          "contacts": [
+            {
+              "member": "gantry-post-1",
+              "object": "fence-1",
+              "insideFraction": 0.0106
+            },
+            {
+              "member": "gantry-post-2",
+              "object": "emergency-button",
+              "insideFraction": 0.0559
+            }
+          ],
+          "unresolved": [],
+          "status": "resolved"
         }
       ]
     },
     "guardPlates": {
-      "rule": "RANSAC faces (tolerance 0.012 x median depth; a second face holds >= 20% and turns >= 15 deg; a strip faces its camera); 1-99 % rectangles clipped at the fold; they replace the RecGen part when their mean silhouette IoU >= 0.35 and >= the part's - 0.05",
+      "rule": "RANSAC faces (tolerance 0.012 x median depth; a second face holds >= 20%, turns >= 15 deg and is seen by two photos when two see the board; a strip faces its camera); one bent sheet: centre band and wings joined at the lines where their planes meet, one shared bottom and top edge, wing widths from their own support; a one-photo board keeps its outline but its distance (scale about its camera, 1 +- 0.25) is fitted to all masks; faces replace the RecGen parts when their occlusion-aware mean IoU >= 0.35 and >= the parts - 0.05",
       "boards": [
         {
           "objectId": "v-guard-left",
@@ -38589,11 +38613,11 @@
           "foldBetweenFaceNormalsDeg": null,
           "toleranceNative": 0.0705,
           "iouByPhoto": {
-            "1": 0.6222,
-            "2": 0.7463
+            "1": 0.627,
+            "2": 0.7578
           },
           "recgenPartIouByPhoto": {
-            "1": 0.7143,
+            "1": 0.7182,
             "2": 0.6446
           },
           "kept": true
@@ -38618,12 +38642,12 @@
           "foldBetweenFaceNormalsDeg": null,
           "toleranceNative": 0.0756,
           "iouByPhoto": {
-            "1": 0.6157,
-            "2": 0.6178
+            "1": 0.6231,
+            "2": 0.6202
           },
           "recgenPartIouByPhoto": {
-            "1": 0.4844,
-            "2": 0.4218
+            "1": 0.5452,
+            "2": 0.4836
           },
           "kept": true
         },
@@ -38647,16 +38671,47 @@
           "foldBetweenFaceNormalsDeg": null,
           "toleranceNative": 0.0752,
           "iouByPhoto": {
-            "1": 0.658,
-            "2": 0.6529
+            "1": 0.6962,
+            "2": 0.6428
           },
           "recgenPartIouByPhoto": {
-            "1": 0.5463,
-            "2": 0.5628
+            "1": 0.692,
+            "2": 0.7302
           },
           "kept": true
         }
       ],
+      "assembly": {
+        "status": "assembled",
+        "meanIou": 0.3617,
+        "scaleAboutCamera": {}
+      },
+      "candidates": {
+        "scores": {
+          "assembled sheet": 0.3617,
+          "plates with bridges": 0.6612
+        },
+        "joints": [
+          {
+            "boards": [
+              "v-guard-left",
+              "v-guard-center"
+            ],
+            "gapNative": 0.0369
+          },
+          {
+            "boards": [
+              "v-guard-center",
+              "v-guard-right"
+            ],
+            "gapNative": 0.1699
+          }
+        ],
+        "chosen": "plates with bridges",
+        "meanIouAllBoards": 0.6612,
+        "recgenMeanIouAllBoards": 0.6356,
+        "kept": true
+      },
       "status": "plates"
     }
   }

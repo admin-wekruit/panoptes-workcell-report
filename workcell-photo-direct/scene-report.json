@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "revision": {
-    "id": "workcell-cell090-2026-10-04c",
+    "id": "workcell-cell090-2026-10-04d",
     "projectId": "workcell-photo",
     "branchId": "oneshot",
     "parentRevisionId": null,
     "sourceRevisionId": null,
-    "createdAt": "2026-10-04T04:02:17.393741+00:00",
-    "documentSha256": "4d3278eb321bf9a01222da0751bf1cf1e37f18bbd86909574bcd5b0eace91a46",
+    "createdAt": "2026-10-04T17:18:44.493079+00:00",
+    "documentSha256": "74b4c43f6de8fc95f24d12116ee913e1dfa33845fb99327848dccebda87a11e8",
     "label": "主模型",
     "document": {
       "schemaVersion": 1,
-      "captureId": "workcell-cell090-2026-10-04c",
+      "captureId": "workcell-cell090-2026-10-04d",
       "target": "scene",
       "coordinateFrames": [
         {
@@ -31335,8 +31335,8 @@
                 "coordinateFrameId": "workcell-floor",
                 "position": [
                   -5.435493637935635,
-                  -2.592881671119682,
-                  1.2379533397570266
+                  -2.5928816711196814,
+                  1.2904390901093332
                 ],
                 "quaternion": [
                   0,
@@ -31353,25 +31353,27 @@
               "bounds": {
                 "min": [
                   -0.26141329457324236,
-                  -0.4017200496003861,
-                  -0.4292686328344265
+                  -0.40172004960038654,
+                  -0.48175438318673314
                 ],
                 "max": [
                   0.26141329457324236,
                   0.40172004960038654,
-                  0.4292686328344266
+                  0.481754383186733
                 ]
               },
               "placementState": "unconfirmed",
               "placementReason": "requires_alignment_confirmation",
               "placementNote": "Automatic current-photo geometry; physical accuracy not independently verified",
               "sourceValidity": "current",
-              "sourceKind": "folded plate fitted to this board's photo support (1 face); photo texture",
+              "sourceKind": "plate fitted to this board's photo support (3 faces), joined to its neighbours where the photos allow; photo texture",
               "sourceRefs": [
                 {
                   "file": "guard-plates.glb",
                   "nodes": [
-                    "v-guard-left-face-1"
+                    "v-guard-left-face-1",
+                    "v-guard-left-face-2",
+                    "v-guard-left-face-3"
                   ]
                 }
               ]
@@ -31480,8 +31482,8 @@
             "coordinateFrameId": "workcell-floor",
             "position": [
               -5.435493637935635,
-              -2.592881671119682,
-              1.2379533397570266
+              -2.5928816711196814,
+              1.2904390901093332
             ],
             "quaternion": [
               0,
@@ -31689,7 +31691,7 @@
               "placementReason": "requires_alignment_confirmation",
               "placementNote": "Automatic current-photo geometry; physical accuracy not independently verified",
               "sourceValidity": "current",
-              "sourceKind": "folded plate fitted to this board's photo support (1 face); photo texture",
+              "sourceKind": "plate fitted to this board's photo support (1 face), joined to its neighbours where the photos allow; photo texture",
               "sourceRefs": [
                 {
                   "file": "guard-plates.glb",
@@ -31980,9 +31982,9 @@
               "transform": {
                 "coordinateFrameId": "workcell-floor",
                 "position": [
-                  -6.1882500464830255,
-                  -0.31794767171967503,
-                  1.354398415159993
+                  -6.258100074610585,
+                  -0.3179476717196751,
+                  1.4014028638164941
                 ],
                 "quaternion": [
                   0,
@@ -31998,26 +32000,28 @@
               },
               "bounds": {
                 "min": [
-                  -0.21816096569090426,
-                  -0.4554051719022109,
-                  -0.39188613760767
+                  -0.28801099381846473,
+                  -0.45540517190221097,
+                  -0.4388905862641711
                 ],
                 "max": [
-                  0.21816096569090515,
-                  0.4554051719022109,
-                  0.3918861376076699
+                  0.28801099381846473,
+                  0.45540517190221097,
+                  0.438890586264171
                 ]
               },
               "placementState": "unconfirmed",
               "placementReason": "requires_alignment_confirmation",
               "placementNote": "Automatic current-photo geometry; physical accuracy not independently verified",
               "sourceValidity": "current",
-              "sourceKind": "folded plate fitted to this board's photo support (1 face); photo texture",
+              "sourceKind": "plate fitted to this board's photo support (3 faces), joined to its neighbours where the photos allow; photo texture",
               "sourceRefs": [
                 {
                   "file": "guard-plates.glb",
                   "nodes": [
-                    "v-guard-right-face-1"
+                    "v-guard-right-face-1",
+                    "v-guard-right-face-2",
+                    "v-guard-right-face-3"
                   ]
                 }
               ]
@@ -32125,9 +32129,9 @@
           "currentModelTransform": {
             "coordinateFrameId": "workcell-floor",
             "position": [
-              -6.1882500464830255,
-              -0.31794767171967503,
-              1.354398415159993
+              -6.258100074610585,
+              -0.3179476717196751,
+              1.4014028638164941
             ],
             "quaternion": [
               0,
@@ -37692,8 +37696,8 @@
           "id": "asset-v-guard-left",
           "kind": "geometry",
           "mediaType": "model/gltf-binary",
-          "sizeBytes": 153304,
-          "sha256": "227ec53378eaab67e12de529a4c853bb2d067d668cf61f95a89ae670277609c0",
+          "sizeBytes": 231340,
+          "sha256": "87fa3dd54b792d34ee894bcd95a3dca94cf3a8a058433e634724042ecf059b0f",
           "metadata": {
             "name": "entity-v-guard-left.glb"
           }
@@ -37788,8 +37792,8 @@
           "id": "asset-v-guard-right",
           "kind": "geometry",
           "mediaType": "model/gltf-binary",
-          "sizeBytes": 247068,
-          "sha256": "782d8a1e3a1985d171c09c087625e458a2f8240b263037141722dfb1e367dc2b",
+          "sizeBytes": 443484,
+          "sha256": "e311a4f9f98b757dac6f395014af4ae634755c6f0e479f4e2ac85c83bc61a911",
           "metadata": {
             "name": "entity-v-guard-right.glb"
           }
@@ -44477,7 +44481,9 @@
       "model": {
         "file": "guard-plates.glb",
         "nodes": [
-          "v-guard-left-face-1"
+          "v-guard-left-face-1",
+          "v-guard-left-face-2",
+          "v-guard-left-face-3"
         ]
       },
       "observations": [
@@ -45244,7 +45250,7 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "folded plate fitted to this board's photo support (1 face); photo texture",
+      "representation": "plate fitted to this board's photo support (3 faces), joined to its neighbours where the photos allow; photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
@@ -45278,11 +45284,11 @@
         "foldBetweenFaceNormalsDeg": null,
         "toleranceNative": 0.0705,
         "iouByPhoto": {
-          "1": 0.6222,
-          "2": 0.7463
+          "1": 0.627,
+          "2": 0.7578
         },
         "recgenPartIouByPhoto": {
-          "1": 0.7143,
+          "1": 0.7182,
           "2": 0.6446
         },
         "kept": true
@@ -45315,9 +45321,9 @@
       "modelBoxFloor": {
         "lengthNative": 0.762432,
         "widthNative": 0.495217,
-        "heightNative": 0.858537,
+        "heightNative": 0.963509,
         "bottomNative": 0.808685,
-        "topNative": 1.667222,
+        "topNative": 1.772193,
         "cornersNative": [
           [
             -5.64823,
@@ -45342,22 +45348,22 @@
           [
             -5.64823,
             -2.191161,
-            1.667222
+            1.772193
           ],
           [
             -5.716013,
             -2.950575,
-            1.667222
+            1.772193
           ],
           [
             -5.222758,
             -2.994601,
-            1.667222
+            1.772193
           ],
           [
             -5.154974,
             -2.235188,
-            1.667222
+            1.772193
           ]
         ],
         "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
@@ -47089,7 +47095,7 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "folded plate fitted to this board's photo support (1 face); photo texture",
+      "representation": "plate fitted to this board's photo support (1 face), joined to its neighbours where the photos allow; photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
@@ -47123,12 +47129,12 @@
         "foldBetweenFaceNormalsDeg": null,
         "toleranceNative": 0.0756,
         "iouByPhoto": {
-          "1": 0.6157,
-          "2": 0.6178
+          "1": 0.6231,
+          "2": 0.6202
         },
         "recgenPartIouByPhoto": {
-          "1": 0.4844,
-          "2": 0.4218
+          "1": 0.5452,
+          "2": 0.4836
         },
         "kept": true
       },
@@ -47215,7 +47221,9 @@
       "model": {
         "file": "guard-plates.glb",
         "nodes": [
-          "v-guard-right-face-1"
+          "v-guard-right-face-1",
+          "v-guard-right-face-2",
+          "v-guard-right-face-3"
         ]
       },
       "observations": [
@@ -48061,7 +48069,7 @@
           "source": "Visible geometry does not establish complete physical dimensions."
         }
       },
-      "representation": "folded plate fitted to this board's photo support (1 face); photo texture",
+      "representation": "plate fitted to this board's photo support (3 faces), joined to its neighbours where the photos allow; photo texture",
       "notes": [
         "Each board contains its own two adjoining sheet faces; bend means their interior angle (flat = 180 degrees).",
         "Triangle ownership is recorded in guard-partition.json; model-derived angles are not surveyed physical measurements."
@@ -48095,12 +48103,12 @@
         "foldBetweenFaceNormalsDeg": null,
         "toleranceNative": 0.0752,
         "iouByPhoto": {
-          "1": 0.658,
-          "2": 0.6529
+          "1": 0.6962,
+          "2": 0.6428
         },
         "recgenPartIouByPhoto": {
-          "1": 0.5463,
-          "2": 0.5628
+          "1": 0.692,
+          "2": 0.7302
         },
         "kept": true
       },
@@ -48130,51 +48138,51 @@
         "reason": "没有跨照片确认的实体底边；离地距离未知。"
       },
       "modelBoxFloor": {
-        "lengthNative": 0.841329,
-        "widthNative": 0.353102,
-        "heightNative": 0.783772,
+        "lengthNative": 0.832139,
+        "widthNative": 0.460909,
+        "heightNative": 0.877781,
         "bottomNative": 0.962512,
-        "topNative": 1.746285,
+        "topNative": 1.840293,
         "cornersNative": [
           [
-            -6.161137,
+            -6.161138,
             0.137457,
             0.962512
           ],
           [
-            -6.494272,
-            0.020401,
+            -6.623429,
+            -0.554454,
             0.962512
           ],
           [
-            -6.215363,
-            -0.773353,
+            -6.24019,
+            -0.810511,
             0.962512
           ],
           [
-            -5.882228,
-            -0.656296,
+            -5.777898,
+            -0.118599,
             0.962512
           ],
           [
-            -6.161137,
+            -6.161138,
             0.137457,
-            1.746285
+            1.840293
           ],
           [
-            -6.494272,
-            0.020401,
-            1.746285
+            -6.623429,
+            -0.554454,
+            1.840293
           ],
           [
-            -6.215363,
-            -0.773353,
-            1.746285
+            -6.24019,
+            -0.810511,
+            1.840293
           ],
           [
-            -5.882228,
-            -0.656296,
-            1.746285
+            -5.777898,
+            -0.118599,
+            1.840293
           ]
         ],
         "method": "oriented footprint rectangle x vertical range of the displayed model in the floor frame"
@@ -79191,11 +79199,31 @@
           ],
           "unresolved": [],
           "status": "resolved"
+        },
+        {
+          "rule": "contacts, not interpenetration: under 6% of an object inside a gantry member is mounting contact; a structural member >= 90% inside and parallel is the same physical member (one model stays); otherwise the member shifts aside (gantry IoU drop <= 0.03) and lamps slide toward their camera",
+          "duplicates": [],
+          "members": [],
+          "lamps": [],
+          "contacts": [
+            {
+              "member": "gantry-post-1",
+              "object": "fence-1",
+              "insideFraction": 0.0106
+            },
+            {
+              "member": "gantry-post-2",
+              "object": "emergency-button",
+              "insideFraction": 0.0559
+            }
+          ],
+          "unresolved": [],
+          "status": "resolved"
         }
       ]
     },
     "guardPlates": {
-      "rule": "RANSAC faces (tolerance 0.012 x median depth; a second face holds >= 20% and turns >= 15 deg; a strip faces its camera); 1-99 % rectangles clipped at the fold; they replace the RecGen part when their mean silhouette IoU >= 0.35 and >= the part's - 0.05",
+      "rule": "RANSAC faces (tolerance 0.012 x median depth; a second face holds >= 20%, turns >= 15 deg and is seen by two photos when two see the board; a strip faces its camera); one bent sheet: centre band and wings joined at the lines where their planes meet, one shared bottom and top edge, wing widths from their own support; a one-photo board keeps its outline but its distance (scale about its camera, 1 +- 0.25) is fitted to all masks; faces replace the RecGen parts when their occlusion-aware mean IoU >= 0.35 and >= the parts - 0.05",
       "boards": [
         {
           "objectId": "v-guard-left",
@@ -79217,11 +79245,11 @@
           "foldBetweenFaceNormalsDeg": null,
           "toleranceNative": 0.0705,
           "iouByPhoto": {
-            "1": 0.6222,
-            "2": 0.7463
+            "1": 0.627,
+            "2": 0.7578
           },
           "recgenPartIouByPhoto": {
-            "1": 0.7143,
+            "1": 0.7182,
             "2": 0.6446
           },
           "kept": true
@@ -79246,12 +79274,12 @@
           "foldBetweenFaceNormalsDeg": null,
           "toleranceNative": 0.0756,
           "iouByPhoto": {
-            "1": 0.6157,
-            "2": 0.6178
+            "1": 0.6231,
+            "2": 0.6202
           },
           "recgenPartIouByPhoto": {
-            "1": 0.4844,
-            "2": 0.4218
+            "1": 0.5452,
+            "2": 0.4836
           },
           "kept": true
         },
@@ -79275,16 +79303,47 @@
           "foldBetweenFaceNormalsDeg": null,
           "toleranceNative": 0.0752,
           "iouByPhoto": {
-            "1": 0.658,
-            "2": 0.6529
+            "1": 0.6962,
+            "2": 0.6428
           },
           "recgenPartIouByPhoto": {
-            "1": 0.5463,
-            "2": 0.5628
+            "1": 0.692,
+            "2": 0.7302
           },
           "kept": true
         }
       ],
+      "assembly": {
+        "status": "assembled",
+        "meanIou": 0.3617,
+        "scaleAboutCamera": {}
+      },
+      "candidates": {
+        "scores": {
+          "assembled sheet": 0.3617,
+          "plates with bridges": 0.6612
+        },
+        "joints": [
+          {
+            "boards": [
+              "v-guard-left",
+              "v-guard-center"
+            ],
+            "gapNative": 0.0369
+          },
+          {
+            "boards": [
+              "v-guard-center",
+              "v-guard-right"
+            ],
+            "gapNative": 0.1699
+          }
+        ],
+        "chosen": "plates with bridges",
+        "meanIouAllBoards": 0.6612,
+        "recgenMeanIouAllBoards": 0.6356,
+        "kept": true
+      },
       "status": "plates"
     }
   },
@@ -289504,26 +289563,630 @@
     "modelSeconds": 69.78930781199999
   },
   "bendAnalysis": {
-    "revisionId": "workcell-cell090-2026-10-04c",
+    "revisionId": "workcell-cell090-2026-10-04d",
     "algorithm": "same-mesh-two-surface-interior-bend-v2",
     "items": [
       {
-        "status": "unsupported",
+        "status": "measured",
         "entityId": "v-guard-left",
-        "inputSha256": "7b854c60335574bea3f53e39e147c1435c99f182ca7da0af3091ff32950f089e",
-        "reason": "measurement_no_stable_bend"
+        "inputSha256": "d7e85ced1d88b89a2a8078a3933f7e31a408a62ff2cb45364c39b8ba33caf26c",
+        "result": {
+          "kind": "bend",
+          "coordinateFrameId": "workcell-floor",
+          "source": "model_inference",
+          "references": [
+            {
+              "entityId": "v-guard-left",
+              "representationId": "rep-v-guard-left",
+              "assetId": "asset-v-guard-left",
+              "assetSha256": "87fa3dd54b792d34ee894bcd95a3dca94cf3a8a058433e634724042ecf059b0f",
+              "placementState": "unconfirmed",
+              "qualityStatus": null
+            }
+          ],
+          "lines": [
+            {
+              "points": [
+                [
+                  -4.909614271372318,
+                  -2.6869989431693972,
+                  0.8230705528216296
+                ],
+                [
+                  -5.558833373812781,
+                  -2.10334661889921,
+                  0.7877556623871176
+                ],
+                [
+                  -5.9613732902971694,
+                  -2.498764189065908,
+                  1.6528360580927939
+                ],
+                [
+                  -5.312154187856707,
+                  -3.0824165133360952,
+                  1.6881509485273059
+                ],
+                [
+                  -4.909614271372318,
+                  -2.6869989431693972,
+                  0.8230705528216296
+                ]
+              ],
+              "color": "#e36b23"
+            },
+            {
+              "points": [
+                [
+                  -5.583224394682076,
+                  -2.3490761911574145,
+                  0.8358191283327385
+                ],
+                [
+                  -5.6691455235455726,
+                  -2.1403530395243715,
+                  1.0262232335149823
+                ],
+                [
+                  -5.696906943933469,
+                  -2.7365211462268713,
+                  1.667221984243858
+                ],
+                [
+                  -5.610985815069973,
+                  -2.9452442978599143,
+                  1.4768178790616142
+                ],
+                [
+                  -5.583224394682076,
+                  -2.3490761911574145,
+                  0.8358191283327385
+                ]
+              ],
+              "color": "#168bba"
+            },
+            {
+              "points": [
+                [
+                  -5.696906919976698,
+                  -2.7365212095901432,
+                  1.6672219356663627
+                ],
+                [
+                  -5.648230158336505,
+                  -2.191161497396334,
+                  0.9798740732428199
+                ]
+              ],
+              "color": "#b56ce2"
+            },
+            {
+              "points": [
+                [
+                  -5.5456991029212555,
+                  -2.7902311800696764,
+                  1.5791404316378923
+                ],
+                [
+                  -5.694473081894688,
+                  -2.7092532239804528,
+                  1.6328545425451855
+                ],
+                [
+                  -5.6434037314172185,
+                  -2.844326566704895,
+                  1.5293004724678034
+                ]
+              ],
+              "color": "#edbe38"
+            },
+            {
+              "points": [
+                [
+                  -5.5456991029212555,
+                  -2.7902311800696764,
+                  1.5791404316378923
+                ],
+                [
+                  -5.547857357295452,
+                  -2.79270109196128,
+                  1.5770278953932013
+                ],
+                [
+                  -5.550086287618515,
+                  -2.795130777899859,
+                  1.5749422703223988
+                ],
+                [
+                  -5.552384819437031,
+                  -2.797519066657978,
+                  1.572884561798757
+                ],
+                [
+                  -5.5547518447462645,
+                  -2.799864806963667,
+                  1.5708557617384078
+                ],
+                [
+                  -5.557186222524268,
+                  -2.8021668680553895,
+                  1.5688568481221903
+                ],
+                [
+                  -5.5596867792819085,
+                  -2.8044241402271277,
+                  1.5668887845242154
+                ],
+                [
+                  -5.562252309628549,
+                  -2.806635535363312,
+                  1.564952519647377
+                ],
+                [
+                  -5.56488157685311,
+                  -2.808799987463349,
+                  1.5630489868660307
+                ],
+                [
+                  -5.567573313520212,
+                  -2.810916453155482,
+                  1.561179103776061
+                ],
+                [
+                  -5.570326222081157,
+                  -2.812983912199752,
+                  1.5593437717525556
+                ],
+                [
+                  -5.573138975499397,
+                  -2.815001367979799,
+                  1.5575438755152993
+                ],
+                [
+                  -5.57601021789024,
+                  -2.816967847983282,
+                  1.555780282702294
+                ],
+                [
+                  -5.5789385651744485,
+                  -2.818882404270677,
+                  1.5540538434515168
+                ],
+                [
+                  -5.581922605745433,
+                  -2.8207441139322307,
+                  1.5523653899911107
+                ],
+                [
+                  -5.584960901149715,
+                  -2.822552079532847,
+                  1.55071573623821
+                ],
+                [
+                  -5.5880519867803375,
+                  -2.824305429544696,
+                  1.549105677406593
+                ],
+                [
+                  -5.591194372582869,
+                  -2.8260033187673317,
+                  1.5475359896233492
+                ],
+                [
+                  -5.5943865437736875,
+                  -2.827644928735121,
+                  1.546007429554749
+                ],
+                [
+                  -5.597626961570181,
+                  -2.8292294681117838,
+                  1.5445207340414933
+                ],
+                [
+                  -5.600914063932511,
+                  -2.830756173071855,
+                  1.5430766197435197
+                ],
+                [
+                  -5.6042462663166,
+                  -2.8322243076688873,
+                  1.541675782794538
+                ],
+                [
+                  -5.607621962437949,
+                  -2.833633164190212,
+                  1.5403188984664598
+                ],
+                [
+                  -5.611039525045956,
+                  -2.834982063498092,
+                  1.5390066208438833
+                ],
+                [
+                  -5.614497306708321,
+                  -2.8362703553570983,
+                  1.5377395825087943
+                ],
+                [
+                  -5.617993640605196,
+                  -2.837497418747557,
+                  1.536518394235629
+                ],
+                [
+                  -5.6215268413326696,
+                  -2.8386626621649094,
+                  1.5353436446968522
+                ],
+                [
+                  -5.625095205715215,
+                  -2.8397655239048474,
+                  1.5342159001791877
+                ],
+                [
+                  -5.628697013626704,
+                  -2.840805472334081,
+                  1.5331357043106404
+                ],
+                [
+                  -5.632330528819592,
+                  -2.841782006146614,
+                  1.5321035777984413
+                ],
+                [
+                  -5.635993999761877,
+                  -2.8426946546053955,
+                  1.5311200181780409
+                ],
+                [
+                  -5.639685660481415,
+                  -2.8435429777692383,
+                  1.5301854995732729
+                ],
+                [
+                  -5.643403731417218,
+                  -2.844326566704895,
+                  1.5293004724678034
+                ]
+              ],
+              "color": "#86e342"
+            }
+          ],
+          "quality": {
+            "surfaceFits": [
+              {
+                "areaFraction": 0.7812668398980175,
+                "rmsResidualNative": 4.315159003208849e-08
+              },
+              {
+                "areaFraction": 0.18856786074553306,
+                "rmsResidualNative": 0.0
+              }
+            ]
+          },
+          "unit": "deg",
+          "value": 40.25565361224505,
+          "method": "same-mesh-two-surface-interior-bend-v2",
+          "labelPoint": [
+            -5.5880519867803375,
+            -2.824305429544696,
+            1.549105677406593
+          ],
+          "revisionId": "workcell-cell090-2026-10-04d"
+        }
       },
       {
         "status": "unsupported",
         "entityId": "v-guard-center",
-        "inputSha256": "9d963df744687637c164368b08ae82cbb6aedf999772c85803e951940f38f78f",
+        "inputSha256": "d7a37f8cfdec2e96e599eb25ebcdfec1de89da4bfdfda79fb9b6f24a6dfe3c8a",
         "reason": "measurement_no_stable_bend"
       },
       {
-        "status": "unsupported",
+        "status": "measured",
         "entityId": "v-guard-right",
-        "inputSha256": "8cadb5822be838064f608240f6d7833497662a14ddc36585de09437c3fcc6c62",
-        "reason": "measurement_no_stable_bend"
+        "inputSha256": "2c350dd230bbb565722e1fc7b81dee835f4e81ef8f745b4e88a4e7018ecd34fc",
+        "result": {
+          "kind": "bend",
+          "coordinateFrameId": "workcell-floor",
+          "source": "model_inference",
+          "references": [
+            {
+              "entityId": "v-guard-right",
+              "representationId": "rep-v-guard-right",
+              "assetId": "asset-v-guard-right",
+              "assetSha256": "e311a4f9f98b757dac6f395014af4ae634755c6f0e479f4e2ac85c83bc61a911",
+              "placementState": "unconfirmed",
+              "qualityStatus": null
+            }
+          ],
+          "lines": [
+            {
+              "points": [
+                [
+                  -6.340783463435827,
+                  0.23124960201918113,
+                  1.649132030921518
+                ],
+                [
+                  -6.465253530008823,
+                  -0.6428868815493793,
+                  1.8333927516396953
+                ],
+                [
+                  -6.035716639392245,
+                  -0.8671449448344689,
+                  1.0596648028633788
+                ],
+                [
+                  -5.911246572819248,
+                  0.0069915387340914875,
+                  0.8754040821452016
+                ],
+                [
+                  -6.340783463435827,
+                  0.23124960201918113,
+                  1.649132030921518
+                ]
+              ],
+              "color": "#e36b23"
+            },
+            {
+              "points": [
+                [
+                  -6.562161460421185,
+                  -0.7791903107716621,
+                  1.4590395609956044
+                ],
+                [
+                  -6.425346568643768,
+                  -0.43383315144173384,
+                  1.2964981732502163
+                ],
+                [
+                  -6.406411019048584,
+                  -0.22964385242092467,
+                  1.74628454740452
+                ],
+                [
+                  -6.543225910826002,
+                  -0.5750010117508529,
+                  1.9088259351499082
+                ],
+                [
+                  -6.562161460421185,
+                  -0.7791903107716621,
+                  1.4590395609956044
+                ]
+              ],
+              "color": "#168bba"
+            },
+            {
+              "points": [
+                [
+                  -6.457891745465051,
+                  -0.35123161496817884,
+                  1.832701772838645
+                ],
+                [
+                  -6.406411018601142,
+                  -0.22964384981135483,
+                  1.7462845513426979
+                ]
+              ],
+              "color": "#b56ce2"
+            },
+            {
+              "points": [
+                [
+                  -6.33328451949854,
+                  -0.5575510506443415,
+                  1.6022368552616333
+                ],
+                [
+                  -6.455317709121855,
+                  -0.34515222671033763,
+                  1.8283809117638476
+                ],
+                [
+                  -6.486752224937478,
+                  -0.5284846733821205,
+                  1.5517085797856753
+                ]
+              ],
+              "color": "#edbe38"
+            },
+            {
+              "points": [
+                [
+                  -6.33328451949854,
+                  -0.5575510506443415,
+                  1.6022368552616333
+                ],
+                [
+                  -6.337816696521007,
+                  -0.557417368265224,
+                  1.5997250222968935
+                ],
+                [
+                  -6.3423772774463405,
+                  -0.5572323743413868,
+                  1.597268463065805
+                ],
+                [
+                  -6.346965159830445,
+                  -0.5569961135920143,
+                  1.5948677714004402
+                ],
+                [
+                  -6.351579234629552,
+                  -0.5567086431291876,
+                  1.5925235276278222
+                ],
+                [
+                  -6.356218386468319,
+                  -0.556370032444079,
+                  1.5902362984296416
+                ],
+                [
+                  -6.360881493909447,
+                  -0.5559803633901533,
+                  1.588006636705269
+                ],
+                [
+                  -6.365567429724769,
+                  -0.5555397301633815,
+                  1.5858350814381026
+                ],
+                [
+                  -6.370275061167745,
+                  -0.55504823927947,
+                  1.5837221575652771
+                ],
+                [
+                  -6.375003250247277,
+                  -0.5545060095481127,
+                  1.5816683758507692
+                ],
+                [
+                  -6.379750854002802,
+                  -0.5539131720442703,
+                  1.5796742327619289
+                ],
+                [
+                  -6.384516724780588,
+                  -0.5532698700764854,
+                  1.577740210349466
+                ],
+                [
+                  -6.389299710511152,
+                  -0.5525762591522402,
+                  1.5758667761309242
+                ],
+                [
+                  -6.3940986549877605,
+                  -0.5518325069403646,
+                  1.5740543829776652
+                ],
+                [
+                  -6.398912398145918,
+                  -0.5510387932305059,
+                  1.5723034690053945
+                ],
+                [
+                  -6.403739776343796,
+                  -0.5501953098896667,
+                  1.5706144574682557
+                ],
+                [
+                  -6.4085796226435265,
+                  -0.5493022608158251,
+                  1.5689877566565142
+                ],
+                [
+                  -6.413430767093281,
+                  -0.5483598618886455,
+                  1.5674237597978604
+                ],
+                [
+                  -6.418292037010097,
+                  -0.5473683409172928,
+                  1.5659228449623548
+                ],
+                [
+                  -6.423162257263349,
+                  -0.5463279375853642,
+                  1.5644853749710332
+                ],
+                [
+                  -6.428040250558815,
+                  -0.5452389033929493,
+                  1.563111697308204
+                ],
+                [
+                  -6.432924837723272,
+                  -0.5441015015958339,
+                  1.5618021440374465
+                ],
+                [
+                  -6.437814837989541,
+                  -0.5429160071418626,
+                  1.560557031721343
+                ],
+                [
+                  -6.442709069281913,
+                  -0.5416827066044752,
+                  1.5593766613449531
+                ],
+                [
+                  -6.447606348501902,
+                  -0.5404018981134311,
+                  1.558261318243056
+                ],
+                [
+                  -6.452505491814236,
+                  -0.539073891282743,
+                  1.5572112720311762
+                ],
+                [
+                  -6.457405314933028,
+                  -0.5376990071358316,
+                  1.5562267765404076
+                ],
+                [
+                  -6.46230463340806,
+                  -0.5362775780279246,
+                  1.5553080697560557
+                ],
+                [
+                  -6.467202262911106,
+                  -0.5348099475657142,
+                  1.5544553737601063
+                ],
+                [
+                  -6.472097019522216,
+                  -0.5332964705242973,
+                  1.5536688946775428
+                ],
+                [
+                  -6.476987720015917,
+                  -0.5317375127614132,
+                  1.5529488226265173
+                ],
+                [
+                  -6.481873182147234,
+                  -0.530133451129005,
+                  1.5522953316723953
+                ],
+                [
+                  -6.486752224937478,
+                  -0.5284846733821205,
+                  1.5517085797856753
+                ]
+              ],
+              "color": "#86e342"
+            }
+          ],
+          "quality": {
+            "surfaceFits": [
+              {
+                "areaFraction": 0.699007109147685,
+                "rmsResidualNative": 5.097182018722074e-08
+              },
+              {
+                "areaFraction": 0.15897487764422047,
+                "rmsResidualNative": 0.0
+              }
+            ]
+          },
+          "unit": "deg",
+          "value": 28.506584776588554,
+          "method": "same-mesh-two-surface-interior-bend-v2",
+          "labelPoint": [
+            -6.4085796226435265,
+            -0.5493022608158251,
+            1.5689877566565142
+          ],
+          "revisionId": "workcell-cell090-2026-10-04d"
+        }
       }
     ]
   },
@@ -289994,7 +290657,7 @@
     "sourceFiles": {
       "fence-fitted.glb": "fcfc8665964eb1e4dcbb5612d7c36206a63534820c27be9d3ead6f5cae61b144",
       "geometry.json": "042a2e9363e16d94fb7e8b509743d24661941808747b0c3219c12f23aa01d29b",
-      "objects.json": "d4b5849aeac6a9178a437c8f26b5130f6e61335dfed7572bea01e0f7ccfa7ff7",
+      "objects.json": "f3f0a0b354b910c9fe3e68409ff49bac2b6295c6708d87dc83429040b0339739",
       "physical-clearances.json": "8ce68fc223ed7c7d15579ebb528923807c4d19c7319e3964f922725e17514d6b",
       "posts.glb": "fc6993d82781183eb9469f1e6d3803a0f7d811c18972eba903394ea0b5259d89"
     },
@@ -299593,8 +300256,8 @@
       }
     ],
     "binding": {
-      "revisionId": "workcell-cell090-2026-10-04c",
-      "documentSha256": "4d3278eb321bf9a01222da0751bf1cf1e37f18bbd86909574bcd5b0eace91a46",
+      "revisionId": "workcell-cell090-2026-10-04d",
+      "documentSha256": "74b4c43f6de8fc95f24d12116ee913e1dfa33845fb99327848dccebda87a11e8",
       "experimentRevisionId": "workcell-oneshot-2026-10-04-cell090-v2",
       "reuse": "reused on a revision with identical semantic inputs",
       "verified": [
@@ -299617,8 +300280,8 @@
   "policyEvidence": {
     "schemaVersion": 1,
     "engine": "policy-evidence-v1",
-    "revisionId": "workcell-cell090-2026-10-04c",
-    "documentSha256": "4d3278eb321bf9a01222da0751bf1cf1e37f18bbd86909574bcd5b0eace91a46",
+    "revisionId": "workcell-cell090-2026-10-04d",
+    "documentSha256": "74b4c43f6de8fc95f24d12116ee913e1dfa33845fb99327848dccebda87a11e8",
     "ruleSet": {
       "file": "docs/policies/workcell_v2.md",
       "sha256": "2f97a26288d1ac4c6fbf86bc9d2834859d1da7116274791974f0e0935f13c68c",
@@ -299771,23 +300434,23 @@
   "measurementUpdate": {
     "kind": "oneshot-revisions",
     "modelInferenceRepeated": false,
-    "revisionBuildSeconds": 4.05,
+    "revisionBuildSeconds": 4.29,
     "sourceRevisionId": null
   },
   "revisionChoices": [
     {
-      "id": "workcell-cell090-2026-10-04c",
+      "id": "workcell-cell090-2026-10-04d",
       "label": "主模型",
       "branchId": "oneshot",
       "status": "main",
-      "documentSha256": "4d3278eb321bf9a01222da0751bf1cf1e37f18bbd86909574bcd5b0eace91a46",
+      "documentSha256": "74b4c43f6de8fc95f24d12116ee913e1dfa33845fb99327848dccebda87a11e8",
       "parentRevisionId": null,
       "url": "scene-report.json"
     }
   ],
   "experiment": {
     "title": "四张照片是两个工位：本页是 BL4-BOR1-090（原照片 3–4）",
-    "summary": "原照片 1–2 是另一个同款工位 BL4-BOR1-030，报告在 cell-030/。本页只用本工位两张照片：一个场景，每个物体一个多视角模型；龙门架由两张照片拟合；信号灯是 RecGen 模型并立正放置；V 型护板（左、中、右）是按每块板自己的照片点云拟合的平板（带照片纹理）；挂在龙门架上的灯、光幕、围栏只接触不穿插。点选任何物体会显示模型的长 × 宽 × 高和离地高度。尺度是本工位急停按钮的条件比例，未验证；没有物理验证。",
+    "summary": "原照片 1–2 是另一个同款工位 BL4-BOR1-030，报告在 cell-030/。本页只用本工位两张照片：一个场景，每个物体一个多视角模型；龙门架由两张照片拟合；信号灯是 RecGen 模型并立正放置；V 型护板是一整张折弯板（三块用连接条接上，每块按自己的照片点云拟合并贴照片）；挂在龙门架上的灯、光幕、围栏只接触不穿插。点选任何物体会显示模型的长 × 宽 × 高和离地高度。每次发布前都过回归闸门：任何物体的照片吻合度都不能变差。尺度是本工位急停按钮的条件比例，未验证；没有物理验证。",
     "reportURL": "cells-2026-10-04/",
     "timingLabel": "完整流程"
   }
