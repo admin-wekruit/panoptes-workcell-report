@@ -1,1 +1,0 @@
-import{n as e}from"./PolicyPage-CA_6Na4r.js";export{e as Function};
