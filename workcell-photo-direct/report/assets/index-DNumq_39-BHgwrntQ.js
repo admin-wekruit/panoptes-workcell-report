@@ -1,0 +1,1 @@
+import{n as e}from"./PolicyPage-CmoADSZY.js";export{e as Function};
