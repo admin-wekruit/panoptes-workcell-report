@@ -198,6 +198,11 @@
     ],
     "3063b686-c5f1-5479-9d8c-45b49f91a80b": [
       {
+        "label": "显示平滑（高 / 中置信度、不需复核的物体）",
+        "kind": "note",
+        "text": "显示模型平滑：Taubin 20 次，只动顶点位置（43737 面，顶点数不变）；包围盒变化 ≤ 0.14 cm，模型最低点变化 +0.00 cm，各照片轮廓 IoU ≥ 0.988"
+      },
+      {
         "label": "模型（许可干净版）",
         "kind": "note",
         "text": "地面标线：照片 1 的掩码像素射线落到报告地面（抬高 0.3 cm 以免与地面重叠）"
@@ -548,6 +553,59 @@
           "indexByteOffset": 864
         }
       }
+    },
+    {
+      "id": "layer-d216456e40b24bfa198ff7d2",
+      "url": "measurement-layer/smooth-3063b686.bin",
+      "kind": "generated_mesh",
+      "sha256": "d216456e40b24bfa198ff7d200ab690eec982144d023e2af60de8723c2b775a8",
+      "sizeBytes": 1336068,
+      "mediaType": "application/octet-stream",
+      "format": "panoptes-mesh-v1",
+      "byteLayout": {
+        "stride": 9,
+        "indexType": "uint32",
+        "byteOffset": 0,
+        "indexCount": 131211,
+        "vertexCount": 22534,
+        "indexByteOffset": 811224
+      },
+      "bounds": {
+        "min": [
+          -0.16900810157667576,
+          0.37620710716750566,
+          0.6631755238498529
+        ],
+        "max": [
+          0.15784799635684071,
+          0.3810474740601731,
+          0.7685690045830772
+        ]
+      },
+      "metadata": {
+        "kind": "generated_mesh",
+        "bounds": {
+          "min": [
+            -0.16900810157667576,
+            0.37620710716750566,
+            0.6631755238498529
+          ],
+          "max": [
+            0.15784799635684071,
+            0.3810474740601731,
+            0.7685690045830772
+          ]
+        },
+        "format": "panoptes-mesh-v1",
+        "byteLayout": {
+          "stride": 9,
+          "indexType": "uint32",
+          "byteOffset": 0,
+          "indexCount": 131211,
+          "vertexCount": 22534,
+          "indexByteOffset": 811224
+        }
+      }
     }
   ],
   "models": {
@@ -616,6 +674,71 @@
         ]
       },
       "note": "模型不可信：显示为测量盒（模型炸开：W 方向 0.20 m，超过测量盒 3 倍）"
+    },
+    "3063b686-c5f1-5479-9d8c-45b49f91a80b": {
+      "representation": {
+        "id": "rep-layer-d216456e40b24bfa198ff7d2",
+        "kind": "generated_mesh",
+        "assetId": "layer-d216456e40b24bfa198ff7d2",
+        "coordinateFrameId": "6fd09151-10af-58df-b3a2-25ee772c25bb",
+        "transform": {
+          "coordinateFrameId": "6fd09151-10af-58df-b3a2-25ee772c25bb",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "quaternion": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "primitive": null,
+        "placementState": "unconfirmed",
+        "placementReason": "imported_proposal",
+        "bounds": {
+          "min": [
+            -0.16900810157667576,
+            0.37620710716750566,
+            0.6631755238498529
+          ],
+          "max": [
+            0.15784799635684071,
+            0.3810474740601731,
+            0.7685690045830772
+          ]
+        },
+        "placementSource": {
+          "type": "measurement_layer_smoothed",
+          "sourceRepresentationId": "d0e3c6ed-5a46-5dbe-a696-bbc701cf2c60",
+          "sourceAssetId": "f894516e-2b72-4e2e-a157-c91bba2600c1",
+          "smoothedFrom": {
+            "representationId": "d0e3c6ed-5a46-5dbe-a696-bbc701cf2c60",
+            "assetId": "f894516e-2b72-4e2e-a157-c91bba2600c1",
+            "placementSource": null
+          },
+          "method": "displayed mesh; Taubin 20 iterations (lambda 0.5, mu -0.53, positions only; vertices, faces and colours unchanged); accepted: box moved 0.14 cm (<= 0.5), lowest point (0.5th percentile) moved +0.00 cm (<= 0.3), silhouette IoU >= 0.988 in every photo (>= 0.98)"
+        },
+        "sourceRefs": [
+          {
+            "role": "measurement_layer",
+            "method": "taubin-smoothing-v2",
+            "imageIds": [
+              "8a2c7df1-395e-4441-8c34-cf0d9ab79aed",
+              "47b74c4c-373c-43f8-b1af-97e110fe75f4",
+              "a73a5f2a-d0e9-4d4c-800c-610e0bdc7f94"
+            ]
+          }
+        ]
+      },
+      "note": "显示模型平滑：Taubin 20 次，只动顶点位置（43737 面，顶点数不变）；包围盒变化 ≤ 0.14 cm，模型最低点变化 +0.00 cm，各照片轮廓 IoU ≥ 0.988"
     }
   },
   "pipelines": {
@@ -1216,6 +1339,10 @@
         {
           "label": "明显错误检查 G1–G8（显示的模型）",
           "text": "无明显错误。"
+        },
+        {
+          "label": "显示平滑",
+          "text": "显示模型平滑：Taubin 20 次，只动顶点位置（43737 面，顶点数不变）；包围盒变化 ≤ 0.14 cm，模型最低点变化 +0.00 cm，各照片轮廓 IoU ≥ 0.988（workcell_smooth_models.py）"
         },
         {
           "label": "测量（统一地面）",
