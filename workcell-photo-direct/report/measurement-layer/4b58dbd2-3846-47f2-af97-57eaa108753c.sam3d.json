@@ -418,10 +418,10 @@
  "revisionId": "997bf52b-1eff-4b73-9414-e7fa858121c4",
  "assets": [
   {
-   "id": "sam3d-a7c10309eec264afb7457f0c",
+   "id": "sam3d-11700fe24c7beeccd4adfe03",
    "url": "measurement-layer/sam3d-27d00998.bin",
    "kind": "generated_mesh",
-   "sha256": "a7c10309eec264afb7457f0c966d770f881a32ee3ec29ff870c7b7c765a41f6a",
+   "sha256": "11700fe24c7beeccd4adfe032b532c830c94c13d20dc3a4bdc8ea09b81d553d6",
    "sizeBytes": 2400468,
    "mediaType": "application/octet-stream",
    "format": "panoptes-mesh-v1",
@@ -432,13 +432,50 @@
     "indexCount": 240000,
     "vertexCount": 40013,
     "indexByteOffset": 1440468
+   },
+   "bounds": {
+    "min": [
+     -0.23124683410008096,
+     -0.2759952662110216,
+     -0.2656882717583298
+    ],
+    "max": [
+     0.23124683410008096,
+     0.27599526621102155,
+     0.26568827175832976
+    ]
+   },
+   "metadata": {
+    "kind": "generated_mesh",
+    "bounds": {
+     "min": [
+      -0.23124683410008096,
+      -0.2759952662110216,
+      -0.2656882717583298
+     ],
+     "max": [
+      0.23124683410008096,
+      0.27599526621102155,
+      0.26568827175832976
+     ]
+    },
+    "format": "panoptes-mesh-v1",
+    "byteLayout": {
+     "stride": 9,
+     "indexType": "uint32",
+     "byteOffset": 0,
+     "indexCount": 240000,
+     "vertexCount": 40013,
+     "indexByteOffset": 1440468
+    },
+    "entityId": "27d00998-2702-547e-97b2-d200cd92264a"
    }
   },
   {
-   "id": "sam3d-24865772565c50e2e6e2427e",
+   "id": "sam3d-334765083367ae6ac0822f3b",
    "url": "measurement-layer/sam3d-da0a50da.bin",
    "kind": "generated_mesh",
-   "sha256": "24865772565c50e2e6e2427e78e2c776641d6257a66cb5c81632567ef6a5a785",
+   "sha256": "334765083367ae6ac0822f3b9414b009044a2829fb7981e0d6ebc114f47701c6",
    "sizeBytes": 2400144,
    "mediaType": "application/octet-stream",
    "format": "panoptes-mesh-v1",
@@ -449,13 +486,50 @@
     "indexCount": 240000,
     "vertexCount": 40004,
     "indexByteOffset": 1440144
+   },
+   "bounds": {
+    "min": [
+     -0.20634727272826894,
+     -0.2454843957724899,
+     -0.25205115979958714
+    ],
+    "max": [
+     0.20634727272826897,
+     0.2454843957724899,
+     0.25205115979958714
+    ]
+   },
+   "metadata": {
+    "kind": "generated_mesh",
+    "bounds": {
+     "min": [
+      -0.20634727272826894,
+      -0.2454843957724899,
+      -0.25205115979958714
+     ],
+     "max": [
+      0.20634727272826897,
+      0.2454843957724899,
+      0.25205115979958714
+     ]
+    },
+    "format": "panoptes-mesh-v1",
+    "byteLayout": {
+     "stride": 9,
+     "indexType": "uint32",
+     "byteOffset": 0,
+     "indexCount": 240000,
+     "vertexCount": 40004,
+     "indexByteOffset": 1440144
+    },
+    "entityId": "da0a50da-6459-5471-b25b-d299129c354a"
    }
   },
   {
-   "id": "sam3d-a3617cfcdf39c7ffc30685f3",
+   "id": "sam3d-143a3bbc92a18ea5aa84b1e9",
    "url": "measurement-layer/sam3d-ce9516a5.bin",
    "kind": "generated_mesh",
-   "sha256": "a3617cfcdf39c7ffc30685f3b0da97146f65c70fb7a579070a68b70488f2c562",
+   "sha256": "143a3bbc92a18ea5aa84b1e9fb39fea16a5d337928f070ea269fdba05dd050de",
    "sizeBytes": 2404704,
    "mediaType": "application/octet-stream",
    "format": "panoptes-mesh-v1",
@@ -466,13 +540,50 @@
     "indexCount": 239997,
     "vertexCount": 40131,
     "indexByteOffset": 1444716
+   },
+   "bounds": {
+    "min": [
+     -1.2073106150547184,
+     -1.3102446619004149,
+     -0.8067589236434682
+    ],
+    "max": [
+     1.2073106150547184,
+     1.3102446619004149,
+     0.8067589236434682
+    ]
+   },
+   "metadata": {
+    "kind": "generated_mesh",
+    "bounds": {
+     "min": [
+      -1.2073106150547184,
+      -1.3102446619004149,
+      -0.8067589236434682
+     ],
+     "max": [
+      1.2073106150547184,
+      1.3102446619004149,
+      0.8067589236434682
+     ]
+    },
+    "format": "panoptes-mesh-v1",
+    "byteLayout": {
+     "stride": 9,
+     "indexType": "uint32",
+     "byteOffset": 0,
+     "indexCount": 239997,
+     "vertexCount": 40131,
+     "indexByteOffset": 1444716
+    },
+    "entityId": "ce9516a5-a385-5ecb-b6f5-3d543f3ec941"
    }
   },
   {
-   "id": "sam3d-2b0526e20d13f8244b3e224f",
+   "id": "sam3d-436552904939864e2bf814fd",
    "url": "measurement-layer/sam3d-d5780205.bin",
    "kind": "generated_mesh",
-   "sha256": "2b0526e20d13f8244b3e224fd0dceec7d5d9df5dfb254812d03f3cc1f977e8a1",
+   "sha256": "436552904939864e2bf814fd4c4527e3f04a93f8b61cbba0bf0a4ac7b02e5db2",
    "sizeBytes": 2399568,
    "mediaType": "application/octet-stream",
    "format": "panoptes-mesh-v1",
@@ -483,13 +594,50 @@
     "indexCount": 240000,
     "vertexCount": 39988,
     "indexByteOffset": 1439568
+   },
+   "bounds": {
+    "min": [
+     -0.5566637145517652,
+     -0.6422544607364,
+     -0.7311497457833745
+    ],
+    "max": [
+     0.5566637145517654,
+     0.6422544607364005,
+     0.7311497457833744
+    ]
+   },
+   "metadata": {
+    "kind": "generated_mesh",
+    "bounds": {
+     "min": [
+      -0.5566637145517652,
+      -0.6422544607364,
+      -0.7311497457833745
+     ],
+     "max": [
+      0.5566637145517654,
+      0.6422544607364005,
+      0.7311497457833744
+     ]
+    },
+    "format": "panoptes-mesh-v1",
+    "byteLayout": {
+     "stride": 9,
+     "indexType": "uint32",
+     "byteOffset": 0,
+     "indexCount": 240000,
+     "vertexCount": 39988,
+     "indexByteOffset": 1439568
+    },
+    "entityId": "d5780205-5e83-5f09-8e90-fe5450d96315"
    }
   },
   {
-   "id": "sam3d-bcec7c8c7e3f85ce096f1188",
+   "id": "sam3d-75a8bc7af36e3b3e9d62b7c2",
    "url": "measurement-layer/sam3d-929b5b7e.bin",
    "kind": "generated_mesh",
-   "sha256": "bcec7c8c7e3f85ce096f11888cb11598241a7db66ec3ab7f491eff78fbf4e45d",
+   "sha256": "75a8bc7af36e3b3e9d62b7c28ec76a8387ac384cb0b6a04dcc395cef8b24fbcc",
    "sizeBytes": 2396220,
    "mediaType": "application/octet-stream",
    "format": "panoptes-mesh-v1",
@@ -500,13 +648,50 @@
     "indexCount": 240000,
     "vertexCount": 39895,
     "indexByteOffset": 1436220
+   },
+   "bounds": {
+    "min": [
+     -1.229849714199272,
+     -1.3773818912711076,
+     -0.8688674187622198
+    ],
+    "max": [
+     1.229849714199272,
+     1.3773818912711076,
+     0.8688674187622197
+    ]
+   },
+   "metadata": {
+    "kind": "generated_mesh",
+    "bounds": {
+     "min": [
+      -1.229849714199272,
+      -1.3773818912711076,
+      -0.8688674187622198
+     ],
+     "max": [
+      1.229849714199272,
+      1.3773818912711076,
+      0.8688674187622197
+     ]
+    },
+    "format": "panoptes-mesh-v1",
+    "byteLayout": {
+     "stride": 9,
+     "indexType": "uint32",
+     "byteOffset": 0,
+     "indexCount": 240000,
+     "vertexCount": 39895,
+     "indexByteOffset": 1436220
+    },
+    "entityId": "929b5b7e-17cb-5e05-bbf9-7767114ddd1e"
    }
   },
   {
-   "id": "sam3d-9dec357338c4efa62853207e",
+   "id": "sam3d-48276d76864caa34247d78a2",
    "url": "measurement-layer/sam3d-a719e41c.bin",
    "kind": "generated_mesh",
-   "sha256": "9dec357338c4efa62853207ec8286a5f0d0e5da838fdecfaf87679f916b9ecb0",
+   "sha256": "48276d76864caa34247d78a2e377f47a53d3a36fca19499f91973bda157b76f5",
    "sizeBytes": 2385312,
    "mediaType": "application/octet-stream",
    "format": "panoptes-mesh-v1",
@@ -517,13 +702,50 @@
     "indexCount": 240000,
     "vertexCount": 39592,
     "indexByteOffset": 1425312
+   },
+   "bounds": {
+    "min": [
+     -0.8379287688688117,
+     -0.8352519079381693,
+     -0.6285188484095586
+    ],
+    "max": [
+     0.8379287688688118,
+     0.8352519079381691,
+     0.6285188484095586
+    ]
+   },
+   "metadata": {
+    "kind": "generated_mesh",
+    "bounds": {
+     "min": [
+      -0.8379287688688117,
+      -0.8352519079381693,
+      -0.6285188484095586
+     ],
+     "max": [
+      0.8379287688688118,
+      0.8352519079381691,
+      0.6285188484095586
+     ]
+    },
+    "format": "panoptes-mesh-v1",
+    "byteLayout": {
+     "stride": 9,
+     "indexType": "uint32",
+     "byteOffset": 0,
+     "indexCount": 240000,
+     "vertexCount": 39592,
+     "indexByteOffset": 1425312
+    },
+    "entityId": "a719e41c-bc9f-5963-b9f8-2caa031a8c09"
    }
   },
   {
-   "id": "sam3d-dd1fd84a14db6afe5a70d51b",
+   "id": "sam3d-0d86bff94c8d6a8ceb3c5bef",
    "url": "measurement-layer/sam3d-0bc9608d.bin",
    "kind": "generated_mesh",
-   "sha256": "dd1fd84a14db6afe5a70d51b4b6035faaf726cc0967743dc8429735b4e547e0e",
+   "sha256": "0d86bff94c8d6a8ceb3c5bef5ef512a77377bb9462a09bab11c01b5852cea5cb",
    "sizeBytes": 1296,
    "mediaType": "application/octet-stream",
    "format": "panoptes-mesh-v1",
@@ -534,13 +756,50 @@
     "indexCount": 108,
     "vertexCount": 24,
     "indexByteOffset": 864
+   },
+   "bounds": {
+    "min": [
+     -0.8898231927278947,
+     -0.8467827445898555,
+     -0.8030558139750079
+    ],
+    "max": [
+     0.8898231927278948,
+     0.8467827445898553,
+     0.8030558139750079
+    ]
+   },
+   "metadata": {
+    "kind": "generated_mesh",
+    "bounds": {
+     "min": [
+      -0.8898231927278947,
+      -0.8467827445898555,
+      -0.8030558139750079
+     ],
+     "max": [
+      0.8898231927278948,
+      0.8467827445898553,
+      0.8030558139750079
+     ]
+    },
+    "format": "panoptes-mesh-v1",
+    "byteLayout": {
+     "stride": 9,
+     "indexType": "uint32",
+     "byteOffset": 0,
+     "indexCount": 108,
+     "vertexCount": 24,
+     "indexByteOffset": 864
+    },
+    "entityId": "0bc9608d-041f-516b-892d-cee0eb174aeb"
    }
   },
   {
-   "id": "sam3d-306e3c177cb3f1e4279343f1",
+   "id": "sam3d-abdf0d3cc056ccbf63b11554",
    "url": "measurement-layer/sam3d-5163a9b0.bin",
    "kind": "generated_mesh",
-   "sha256": "306e3c177cb3f1e4279343f1d85ef86479a113c83b8799e42f799e5dfffe6ef0",
+   "sha256": "abdf0d3cc056ccbf63b11554dc18392f63f7daddf5ca9f7b4ff976bf913a70e0",
    "sizeBytes": 1579464,
    "mediaType": "application/octet-stream",
    "format": "panoptes-mesh-v1",
@@ -551,13 +810,50 @@
     "indexCount": 157932,
     "vertexCount": 26326,
     "indexByteOffset": 947736
+   },
+   "bounds": {
+    "min": [
+     -0.33124995823390624,
+     -0.4005300544038063,
+     -0.4235121850663959
+    ],
+    "max": [
+     0.3312499582339061,
+     0.4005300544038062,
+     0.4235121850663959
+    ]
+   },
+   "metadata": {
+    "kind": "generated_mesh",
+    "bounds": {
+     "min": [
+      -0.33124995823390624,
+      -0.4005300544038063,
+      -0.4235121850663959
+     ],
+     "max": [
+      0.3312499582339061,
+      0.4005300544038062,
+      0.4235121850663959
+     ]
+    },
+    "format": "panoptes-mesh-v1",
+    "byteLayout": {
+     "stride": 9,
+     "indexType": "uint32",
+     "byteOffset": 0,
+     "indexCount": 157932,
+     "vertexCount": 26326,
+     "indexByteOffset": 947736
+    },
+    "entityId": "5163a9b0-0bb6-5bb5-a9bc-927cb94f8d08"
    }
   },
   {
-   "id": "sam3d-5b27b373c1c7413df9fce6a7",
+   "id": "sam3d-34bed3927ff450b836d34bdb",
    "url": "measurement-layer/sam3d-169518d8.bin",
    "kind": "generated_mesh",
-   "sha256": "5b27b373c1c7413df9fce6a713130ad7d29d2660c596b795a2f1406f13ca32fc",
+   "sha256": "34bed3927ff450b836d34bdb9eebe92ef36351350ae3138a747a33bc3913a3a1",
    "sizeBytes": 2358792,
    "mediaType": "application/octet-stream",
    "format": "panoptes-mesh-v1",
@@ -568,13 +864,50 @@
     "indexCount": 235872,
     "vertexCount": 39314,
     "indexByteOffset": 1415304
+   },
+   "bounds": {
+    "min": [
+     -0.33409797205696057,
+     -0.42259427081941175,
+     -0.4231804985670389
+    ],
+    "max": [
+     0.33409797205696057,
+     0.42259427081941175,
+     0.4231804985670389
+    ]
+   },
+   "metadata": {
+    "kind": "generated_mesh",
+    "bounds": {
+     "min": [
+      -0.33409797205696057,
+      -0.42259427081941175,
+      -0.4231804985670389
+     ],
+     "max": [
+      0.33409797205696057,
+      0.42259427081941175,
+      0.4231804985670389
+     ]
+    },
+    "format": "panoptes-mesh-v1",
+    "byteLayout": {
+     "stride": 9,
+     "indexType": "uint32",
+     "byteOffset": 0,
+     "indexCount": 235872,
+     "vertexCount": 39314,
+     "indexByteOffset": 1415304
+    },
+    "entityId": "169518d8-4f3a-5f67-a565-3180539acad3"
    }
   },
   {
-   "id": "sam3d-b4b8491b49456819598b1292",
+   "id": "sam3d-fe181c8dcb43571b6a406771",
    "url": "measurement-layer/sam3d-5a62a2d3.bin",
    "kind": "generated_mesh",
-   "sha256": "b4b8491b49456819598b12926af03c0c688b87a9f6ac6981acf2fbfc6ff8e14e",
+   "sha256": "fe181c8dcb43571b6a406771dae64352ed2ff18c1116b498e091fba019d2d3e4",
    "sizeBytes": 2411832,
    "mediaType": "application/octet-stream",
    "format": "panoptes-mesh-v1",
@@ -585,22 +918,74 @@
     "indexCount": 239997,
     "vertexCount": 40329,
     "indexByteOffset": 1451844
+   },
+   "bounds": {
+    "min": [
+     -0.795188111021025,
+     -0.89100665879341,
+     -0.7248591903183168
+    ],
+    "max": [
+     0.795188111021025,
+     0.89100665879341,
+     0.7248591903183169
+    ]
+   },
+   "metadata": {
+    "kind": "generated_mesh",
+    "bounds": {
+     "min": [
+      -0.795188111021025,
+      -0.89100665879341,
+      -0.7248591903183168
+     ],
+     "max": [
+      0.795188111021025,
+      0.89100665879341,
+      0.7248591903183169
+     ]
+    },
+    "format": "panoptes-mesh-v1",
+    "byteLayout": {
+     "stride": 9,
+     "indexType": "uint32",
+     "byteOffset": 0,
+     "indexCount": 239997,
+     "vertexCount": 40329,
+     "indexByteOffset": 1451844
+    },
+    "entityId": "5a62a2d3-0216-512d-b384-3eadd69d3e9e"
    }
   }
  ],
  "models": {
   "27d00998-2702-547e-97b2-d200cd92264a": {
    "representation": {
-    "id": "rep-sam3d-a7c10309eec264afb7457f0c",
+    "id": "rep-sam3d-11700fe24c7beeccd4adfe03",
     "kind": "generated_mesh",
-    "assetId": "sam3d-a7c10309eec264afb7457f0c",
+    "assetId": "sam3d-11700fe24c7beeccd4adfe03",
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "primitive": null,
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.23124683410008096,
+      -0.2759952662110216,
+      -0.2656882717583298
+     ],
+     "max": [
+      0.23124683410008096,
+      0.27599526621102155,
+      0.26568827175832976
+     ]
+    },
     "transform": {
      "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
      "position": [
-      0.0,
-      0.0,
-      0.0
+      0.9006987179816252,
+      0.6519015899383863,
+      0.26461351804515765
      ],
      "quaternion": [
       0.0,
@@ -619,16 +1004,31 @@
   },
   "da0a50da-6459-5471-b25b-d299129c354a": {
    "representation": {
-    "id": "rep-sam3d-24865772565c50e2e6e2427e",
+    "id": "rep-sam3d-334765083367ae6ac0822f3b",
     "kind": "generated_mesh",
-    "assetId": "sam3d-24865772565c50e2e6e2427e",
+    "assetId": "sam3d-334765083367ae6ac0822f3b",
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "primitive": null,
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.20634727272826894,
+      -0.2454843957724899,
+      -0.25205115979958714
+     ],
+     "max": [
+      0.20634727272826897,
+      0.2454843957724899,
+      0.25205115979958714
+     ]
+    },
     "transform": {
      "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
      "position": [
-      0.0,
-      0.0,
-      0.0
+      0.22775459500065648,
+      0.1588013989553744,
+      1.1996413676884767
      ],
      "quaternion": [
       0.0,
@@ -647,16 +1047,31 @@
   },
   "ce9516a5-a385-5ecb-b6f5-3d543f3ec941": {
    "representation": {
-    "id": "rep-sam3d-a3617cfcdf39c7ffc30685f3",
+    "id": "rep-sam3d-143a3bbc92a18ea5aa84b1e9",
     "kind": "generated_mesh",
-    "assetId": "sam3d-a3617cfcdf39c7ffc30685f3",
+    "assetId": "sam3d-143a3bbc92a18ea5aa84b1e9",
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "primitive": null,
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -1.2073106150547184,
+      -1.3102446619004149,
+      -0.8067589236434682
+     ],
+     "max": [
+      1.2073106150547184,
+      1.3102446619004149,
+      0.8067589236434682
+     ]
+    },
     "transform": {
      "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
      "position": [
-      0.0,
-      0.0,
-      0.0
+      -1.127364422935853,
+      0.6264009190798356,
+      0.7297228031629648
      ],
      "quaternion": [
       0.0,
@@ -675,16 +1090,31 @@
   },
   "d5780205-5e83-5f09-8e90-fe5450d96315": {
    "representation": {
-    "id": "rep-sam3d-2b0526e20d13f8244b3e224f",
+    "id": "rep-sam3d-436552904939864e2bf814fd",
     "kind": "generated_mesh",
-    "assetId": "sam3d-2b0526e20d13f8244b3e224f",
+    "assetId": "sam3d-436552904939864e2bf814fd",
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "primitive": null,
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.5566637145517652,
+      -0.6422544607364,
+      -0.7311497457833745
+     ],
+     "max": [
+      0.5566637145517654,
+      0.6422544607364005,
+      0.7311497457833744
+     ]
+    },
     "transform": {
      "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
      "position": [
-      0.0,
-      0.0,
-      0.0
+      -2.1783498652916036,
+      2.1216247990470887,
+      -0.3627133840319269
      ],
      "quaternion": [
       0.0,
@@ -703,16 +1133,31 @@
   },
   "929b5b7e-17cb-5e05-bbf9-7767114ddd1e": {
    "representation": {
-    "id": "rep-sam3d-bcec7c8c7e3f85ce096f1188",
+    "id": "rep-sam3d-75a8bc7af36e3b3e9d62b7c2",
     "kind": "generated_mesh",
-    "assetId": "sam3d-bcec7c8c7e3f85ce096f1188",
+    "assetId": "sam3d-75a8bc7af36e3b3e9d62b7c2",
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "primitive": null,
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -1.229849714199272,
+      -1.3773818912711076,
+      -0.8688674187622198
+     ],
+     "max": [
+      1.229849714199272,
+      1.3773818912711076,
+      0.8688674187622197
+     ]
+    },
     "transform": {
      "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
      "position": [
-      0.0,
-      0.0,
-      0.0
+      -0.42584843224719393,
+      1.3198323793619344,
+      -0.6152132384294275
      ],
      "quaternion": [
       0.0,
@@ -731,16 +1176,31 @@
   },
   "a719e41c-bc9f-5963-b9f8-2caa031a8c09": {
    "representation": {
-    "id": "rep-sam3d-9dec357338c4efa62853207e",
+    "id": "rep-sam3d-48276d76864caa34247d78a2",
     "kind": "generated_mesh",
-    "assetId": "sam3d-9dec357338c4efa62853207e",
+    "assetId": "sam3d-48276d76864caa34247d78a2",
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "primitive": null,
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.8379287688688117,
+      -0.8352519079381693,
+      -0.6285188484095586
+     ],
+     "max": [
+      0.8379287688688118,
+      0.8352519079381691,
+      0.6285188484095586
+     ]
+    },
     "transform": {
      "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
      "position": [
-      0.0,
-      0.0,
-      0.0
+      -0.7264534459084271,
+      1.7612896943979814,
+      0.4424637976288973
      ],
      "quaternion": [
       0.0,
@@ -759,16 +1219,31 @@
   },
   "0bc9608d-041f-516b-892d-cee0eb174aeb": {
    "representation": {
-    "id": "rep-sam3d-dd1fd84a14db6afe5a70d51b",
+    "id": "rep-sam3d-0d86bff94c8d6a8ceb3c5bef",
     "kind": "generated_mesh",
-    "assetId": "sam3d-dd1fd84a14db6afe5a70d51b",
+    "assetId": "sam3d-0d86bff94c8d6a8ceb3c5bef",
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "primitive": null,
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.8898231927278947,
+      -0.8467827445898555,
+      -0.8030558139750079
+     ],
+     "max": [
+      0.8898231927278948,
+      0.8467827445898553,
+      0.8030558139750079
+     ]
+    },
     "transform": {
      "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
      "position": [
-      0.0,
-      0.0,
-      0.0
+      -0.7540628693011718,
+      1.478117926166982,
+      0.23512978157246062
      ],
      "quaternion": [
       0.0,
@@ -787,16 +1262,31 @@
   },
   "5163a9b0-0bb6-5bb5-a9bc-927cb94f8d08": {
    "representation": {
-    "id": "rep-sam3d-306e3c177cb3f1e4279343f1",
+    "id": "rep-sam3d-abdf0d3cc056ccbf63b11554",
     "kind": "generated_mesh",
-    "assetId": "sam3d-306e3c177cb3f1e4279343f1",
+    "assetId": "sam3d-abdf0d3cc056ccbf63b11554",
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "primitive": null,
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.33124995823390624,
+      -0.4005300544038063,
+      -0.4235121850663959
+     ],
+     "max": [
+      0.3312499582339061,
+      0.4005300544038062,
+      0.4235121850663959
+     ]
+    },
     "transform": {
      "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
      "position": [
-      0.0,
-      0.0,
-      0.0
+      0.5663517044616309,
+      0.5414699086815213,
+      -0.13731807524364112
      ],
      "quaternion": [
       0.0,
@@ -815,16 +1305,31 @@
   },
   "169518d8-4f3a-5f67-a565-3180539acad3": {
    "representation": {
-    "id": "rep-sam3d-5b27b373c1c7413df9fce6a7",
+    "id": "rep-sam3d-34bed3927ff450b836d34bdb",
     "kind": "generated_mesh",
-    "assetId": "sam3d-5b27b373c1c7413df9fce6a7",
+    "assetId": "sam3d-34bed3927ff450b836d34bdb",
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "primitive": null,
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.33409797205696057,
+      -0.42259427081941175,
+      -0.4231804985670389
+     ],
+     "max": [
+      0.33409797205696057,
+      0.42259427081941175,
+      0.4231804985670389
+     ]
+    },
     "transform": {
      "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
      "position": [
-      0.0,
-      0.0,
-      0.0
+      -0.16018728534876667,
+      0.072541232405057,
+      0.938502528730168
      ],
      "quaternion": [
       0.0,
@@ -847,6 +1352,20 @@
     "kind": "primitive",
     "assetId": null,
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.06671798819604824,
+      -0.46698703742583647,
+      -0.5747622491271451
+     ],
+     "max": [
+      0.06671798819604824,
+      0.46698703742583647,
+      0.5747622491271451
+     ]
+    },
     "primitive": {
      "kind": "box",
      "dimensions": [
@@ -890,6 +1409,20 @@
     "kind": "primitive",
     "assetId": null,
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.02282252859620065,
+      -0.05610376280122239,
+      -0.08133684808049703
+     ],
+     "max": [
+      0.02282252859620065,
+      0.05610376280122239,
+      0.08133684808049703
+     ]
+    },
     "primitive": {
      "kind": "box",
      "dimensions": [
@@ -933,6 +1466,20 @@
     "kind": "primitive",
     "assetId": null,
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.06992405412168265,
+      -0.06889712031996822,
+      -0.2823912384425084
+     ],
+     "max": [
+      0.06992405412168265,
+      0.06889712031996822,
+      0.2823912384425084
+     ]
+    },
     "primitive": {
      "kind": "box",
      "dimensions": [
@@ -976,6 +1523,20 @@
     "kind": "primitive",
     "assetId": null,
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.5847932753244531,
+      -0.3938538580570912,
+      -0.10384833710468813
+     ],
+     "max": [
+      0.5847932753244531,
+      0.3938538580570912,
+      0.10384833710468813
+     ]
+    },
     "primitive": {
      "kind": "box",
      "dimensions": [
@@ -1019,6 +1580,20 @@
     "kind": "primitive",
     "assetId": null,
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.16504537289756688,
+      -0.6021337314639854,
+      -0.14642187852349514
+     ],
+     "max": [
+      0.16504537289756688,
+      0.6021337314639854,
+      0.14642187852349514
+     ]
+    },
     "primitive": {
      "kind": "box",
      "dimensions": [
@@ -1062,6 +1637,20 @@
     "kind": "primitive",
     "assetId": null,
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.18724582234974843,
+      -0.5957574202377897,
+      -0.1557530656837816
+     ],
+     "max": [
+      0.18724582234974843,
+      0.5957574202377897,
+      0.1557530656837816
+     ]
+    },
     "primitive": {
      "kind": "box",
      "dimensions": [
@@ -1105,6 +1694,20 @@
     "kind": "primitive",
     "assetId": null,
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.024922045707265108,
+      -0.025310845172277042,
+      -0.09342851144236826
+     ],
+     "max": [
+      0.024922045707265108,
+      0.025310845172277042,
+      0.09342851144236826
+     ]
+    },
     "primitive": {
      "kind": "box",
      "dimensions": [
@@ -1148,6 +1751,20 @@
     "kind": "primitive",
     "assetId": null,
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.007037270316716044,
+      -0.12519342773384343,
+      -0.20777443410237864
+     ],
+     "max": [
+      0.007037270316716044,
+      0.12519342773384343,
+      0.20777443410237864
+     ]
+    },
     "primitive": {
      "kind": "box",
      "dimensions": [
@@ -1187,16 +1804,31 @@
   },
   "5a62a2d3-0216-512d-b384-3eadd69d3e9e": {
    "representation": {
-    "id": "rep-sam3d-b4b8491b49456819598b1292",
+    "id": "rep-sam3d-fe181c8dcb43571b6a406771",
     "kind": "generated_mesh",
-    "assetId": "sam3d-b4b8491b49456819598b1292",
+    "assetId": "sam3d-fe181c8dcb43571b6a406771",
     "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
+    "primitive": null,
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.795188111021025,
+      -0.89100665879341,
+      -0.7248591903183168
+     ],
+     "max": [
+      0.795188111021025,
+      0.89100665879341,
+      0.7248591903183169
+     ]
+    },
     "transform": {
      "coordinateFrameId": "087588e9-61f3-5cf4-82e3-849b1b23a416",
      "position": [
-      0.0,
-      0.0,
-      0.0
+      -0.5562650901547241,
+      1.478795716988765,
+      -0.6404743960244652
      ],
      "quaternion": [
       0.0,
