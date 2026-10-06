@@ -362,6 +362,70 @@
     ]
    },
    "note": "左折板按两张照片实测平面校正（沿照片 2 视线移到实测平面，倾角 41°），只保留照片看到的表面；右折板只有照片 1 看到，保持原样（未验证）"
+  },
+  "606109af-16fe-52f0-ba67-7172e995db34": {
+   "representation": {
+    "id": "rep-layer-d667476fb5af41b38db2527b",
+    "kind": "generated_mesh",
+    "assetId": "layer-d667476fb5af41b38db2527b",
+    "coordinateFrameId": "cac8ed8d-e98c-52db-ad71-eebf2de78126",
+    "transform": {
+     "coordinateFrameId": "cac8ed8d-e98c-52db-ad71-eebf2de78126",
+     "position": [
+      0.5072363072080819,
+      0.7717343075489627,
+      -0.25776382686836863
+     ],
+     "quaternion": [
+      0.8444714548422336,
+      -0.330054188516074,
+      -0.13386429100153477,
+      0.4000156824354438
+     ],
+     "scale": [
+      1.344395194545724,
+      1.0155862079895663,
+      1.4187931886397247
+     ]
+    },
+    "primitive": null,
+    "placementState": "unconfirmed",
+    "placementReason": "imported_proposal",
+    "bounds": {
+     "min": [
+      -0.043774906351022325,
+      -0.053002572233506934,
+      -0.501063720471552
+     ],
+     "max": [
+      0.054803514814541494,
+      0.05150267217098427,
+      0.5003940463992026
+     ]
+    },
+    "placementSource": {
+     "type": "measurement_layer_smoothed",
+     "sourceRepresentationId": "37bf74f0-2ed3-56fb-988e-e32f2d789bfa",
+     "sourceAssetId": "7b473431-25a0-4608-aedc-826a8fdec9db",
+     "smoothedFrom": {
+      "representationId": "37bf74f0-2ed3-56fb-988e-e32f2d789bfa",
+      "assetId": "7b473431-25a0-4608-aedc-826a8fdec9db",
+      "placementSource": null
+     },
+     "method": "displayed mesh; Taubin 20 iterations (lambda 0.5, mu -0.53, positions only; vertices, faces and colours unchanged); accepted: box moved 0.08 cm (<= 0.5), lowest point (0.5th percentile) moved -0.02 cm (<= 0.3), silhouette IoU >= 0.991 in every photo (>= 0.98)"
+    },
+    "sourceRefs": [
+     {
+      "role": "measurement_layer",
+      "method": "taubin-smoothing-v2",
+      "imageIds": [
+       "a077743d-5ae3-467a-9847-c7bf108642d1",
+       "bcd2cdb4-0579-4194-8956-6682fd149448"
+      ]
+     }
+    ]
+   },
+   "note": "显示模型平滑：Taubin 20 次，只动顶点位置（59828 面，顶点数不变）；包围盒变化 ≤ 0.08 cm，模型最低点变化 -0.02 cm，各照片轮廓 IoU ≥ 0.991"
   }
  },
  "assets": [
@@ -417,6 +481,1193 @@
      "indexByteOffset": 990936
     }
    }
+  },
+  {
+   "id": "layer-d667476fb5af41b38db2527b",
+   "url": "measurement-layer/smooth-606109af.bin",
+   "kind": "generated_mesh",
+   "sha256": "d667476fb5af41b38db2527b9af57fb05ae18b211aa5364c6b469d07054ffef2",
+   "sizeBytes": 1794912,
+   "mediaType": "application/octet-stream",
+   "format": "panoptes-mesh-v1",
+   "byteLayout": {
+    "stride": 9,
+    "indexType": "uint32",
+    "byteOffset": 0,
+    "indexCount": 179484,
+    "vertexCount": 29916,
+    "indexByteOffset": 1076976
+   },
+   "bounds": {
+    "min": [
+     -0.043774906351022325,
+     -0.053002572233506934,
+     -0.501063720471552
+    ],
+    "max": [
+     0.054803514814541494,
+     0.05150267217098427,
+     0.5003940463992026
+    ]
+   },
+   "metadata": {
+    "kind": "generated_mesh",
+    "bounds": {
+     "min": [
+      -0.043774906351022325,
+      -0.053002572233506934,
+      -0.501063720471552
+     ],
+     "max": [
+      0.054803514814541494,
+      0.05150267217098427,
+      0.5003940463992026
+     ]
+    },
+    "format": "panoptes-mesh-v1",
+    "byteLayout": {
+     "stride": 9,
+     "indexType": "uint32",
+     "byteOffset": 0,
+     "indexCount": 179484,
+     "vertexCount": 29916,
+     "indexByteOffset": 1076976
+    }
+   }
   }
- ]
+ ],
+ "boxes": {
+  "dd0565a0-0f41-527e-b274-9ebbde2f4811": {
+   "label": "载料小车",
+   "centerNative": [
+    -1.08083,
+    1.815982,
+    0.648212
+   ],
+   "axes": [
+    [
+     -0.399814,
+     -0.500397,
+     0.767953
+    ],
+    [
+     -0.784456,
+     0.62017,
+     -0.004304
+    ],
+    [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.784456,
+     -0.62017,
+     0.004304
+    ],
+    "back": [
+     -0.784456,
+     0.62017,
+     -0.004304
+    ],
+    "left": [
+     0.399814,
+     0.500397,
+     -0.767953
+    ],
+    "right": [
+     -0.399814,
+     -0.500397,
+     0.767953
+    ],
+    "bottom": [
+     0.474107,
+     0.604146,
+     0.640492
+    ],
+    "top": [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   },
+   "sizeM": [
+    1.3303,
+    1.6534,
+    0.9476
+   ],
+   "bottomM": 0.059,
+   "topM": 1.0066,
+   "floorContact": false,
+   "snapNote": null,
+   "dims": {
+    "L": {
+     "valueM": 1.3303,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "W": {
+     "valueM": 1.6534,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "H": {
+     "valueM": 0.9476,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.059,
+     "sigmaCm": null,
+     "confidence": "low"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（34 px）：尺寸取模型，先修掩码"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（34 px）：尺寸取模型，先修掩码"
+    },
+    "left": {
+     "photos": [
+      1
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（34 px）：尺寸取模型，先修掩码"
+    },
+    "right": {
+     "photos": [],
+     "status": "occluded",
+     "confidence": "low",
+     "need": "掩码与盒子不符（34 px）：尺寸取模型，先修掩码"
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（34 px）：尺寸取模型，先修掩码"
+    },
+    "top": {
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（34 px）：尺寸取模型，先修掩码"
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "掩码与盒子不符（34 px）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低",
+    "图层：需要第三个角度区分深度（或纹理是重复图案）"
+   ],
+   "confidence": "low",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 7 vertices) in 2 photo(s) (1, 2), occlusion-aware; yaw model; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "63e3d7f0-7789-5977-aafc-26ccbf206311": {
+   "label": "料车后方黄黑折叠防护板",
+   "centerNative": [
+    -1.220097,
+    1.826385,
+    0.693261
+   ],
+   "axes": [
+    [
+     -0.488752,
+     -0.424491,
+     0.762187
+    ],
+    [
+     -0.732355,
+     0.6744,
+     -0.094023
+    ],
+    [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.732355,
+     -0.6744,
+     0.094023
+    ],
+    "back": [
+     -0.732355,
+     0.6744,
+     -0.094023
+    ],
+    "left": [
+     0.488752,
+     0.424491,
+     -0.762187
+    ],
+    "right": [
+     -0.488752,
+     -0.424491,
+     0.762187
+    ],
+    "bottom": [
+     0.474107,
+     0.604146,
+     0.640492
+    ],
+    "top": [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   },
+   "sizeM": [
+    2.2015,
+    1.8058,
+    0.5387
+   ],
+   "bottomM": 0.298,
+   "topM": 0.8367,
+   "floorContact": false,
+   "snapNote": null,
+   "dims": {
+    "L": {
+     "valueM": 2.2015,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "W": {
+     "valueM": 1.8058,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "H": {
+     "valueM": 0.5387,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.298,
+     "sigmaCm": null,
+     "confidence": "low"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型，先修掩码"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型，先修掩码"
+    },
+    "left": {
+     "photos": [
+      1
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型，先修掩码"
+    },
+    "right": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型，先修掩码"
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型，先修掩码"
+    },
+    "top": {
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型，先修掩码"
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低",
+    "图层：需要第三个角度区分深度（或纹理是重复图案）",
+    "图层：右折板只有照片 1 看到，形状或深度未验证：需要第三个角度"
+   ],
+   "confidence": "low",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 8 vertices) in 2 photo(s) (1, 2), occlusion-aware; yaw model; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "606109af-16fe-52f0-ba67-7172e995db34": {
+   "label": "入口左侧黄色光幕立柱",
+   "centerNative": [
+    0.495506,
+    0.792876,
+    -0.261851
+   ],
+   "axes": [
+    [
+     -0.52152,
+     -0.393413,
+     0.757128
+    ],
+    [
+     -0.709394,
+     0.692989,
+     -0.128554
+    ],
+    [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.709394,
+     -0.692989,
+     0.128554
+    ],
+    "back": [
+     -0.709394,
+     0.692989,
+     -0.128554
+    ],
+    "left": [
+     0.52152,
+     0.393413,
+     -0.757128
+    ],
+    "right": [
+     -0.52152,
+     -0.393413,
+     0.757128
+    ],
+    "bottom": [
+     0.474107,
+     0.604146,
+     0.640492
+    ],
+    "top": [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   },
+   "sizeM": [
+    0.0694,
+    0.1454,
+    1.6103
+   ],
+   "bottomM": 0.2342,
+   "topM": 1.8445,
+   "floorContact": false,
+   "snapNote": null,
+   "dims": {
+    "L": {
+     "valueM": 0.0694,
+     "sigmaCm": 0.31,
+     "confidence": "medium"
+    },
+    "W": {
+     "valueM": 0.1454,
+     "sigmaCm": null,
+     "confidence": "unverified",
+     "source": "model"
+    },
+    "H": {
+     "valueM": 1.6103,
+     "sigmaCm": 0.49,
+     "confidence": "medium"
+    },
+    "bottom": {
+     "valueM": 0.2342,
+     "sigmaCm": 0.37,
+     "confidence": "medium"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen",
+     "confidence": "unverified",
+     "need": "进深需要侧面照片：从偏离前面法向 45–75° 的方向（侧面，前面的轮廓边在画面里）拍，≥ 10 px/cm（约 3.0 m 以内）"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "进深需要侧面照片：从偏离后面法向 45–75° 的方向（侧面，后面的轮廓边在画面里）拍，≥ 10 px/cm（约 3.0 m 以内）"
+    },
+    "left": {
+     "photos": [
+      1
+     ],
+     "status": "seen",
+     "confidence": "medium",
+     "need": "再要一张与照片 1 水平方向相差 ≥ 30° 的照片（≥ 10 px/cm）"
+    },
+    "right": {
+     "photos": [
+      2
+     ],
+     "status": "seen",
+     "confidence": "high",
+     "need": null
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "medium",
+     "need": "再要一张下沿清楚、与照片 1 水平方向相差 ≥ 30° 的照片（≥ 10 px/cm）；下沿离地 < 0.5 m：至少 1 张蹲下拍（手机离地 0.5–0.6 m，镜头放平，下沿在屏幕上不低于下面那条三分线）"
+    },
+    "top": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "high",
+     "need": null
+    }
+   },
+   "highlight": false,
+   "highlightReasons": [],
+   "confidence": "medium",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 9 vertices) in 2 photo(s) (1, 2), occlusion-aware; yaw model; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "736395e2-65dd-5933-a605-184ea5f2cbca": {
+   "label": "入口左侧黑色防撞柱",
+   "centerNative": [
+    0.961945,
+    0.867676,
+    0.140148
+   ],
+   "axes": [
+    [
+     -0.857083,
+     0.150137,
+     0.492816
+    ],
+    [
+     -0.201571,
+     0.782602,
+     -0.588984
+    ],
+    [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.201571,
+     -0.782602,
+     0.588984
+    ],
+    "back": [
+     -0.201571,
+     0.782602,
+     -0.588984
+    ],
+    "left": [
+     0.857083,
+     -0.150137,
+     -0.492816
+    ],
+    "right": [
+     -0.857083,
+     0.150137,
+     0.492816
+    ],
+    "bottom": [
+     0.474107,
+     0.604146,
+     0.640492
+    ],
+    "top": [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   },
+   "sizeM": [
+    0.1102,
+    0.1101,
+    0.9089
+   ],
+   "bottomM": 0.0,
+   "topM": 0.9089,
+   "floorContact": true,
+   "snapNote": "贴地：盒子上移 0.1 cm",
+   "dims": {
+    "L": {
+     "valueM": 0.1102,
+     "sigmaCm": 0.31,
+     "confidence": "high"
+    },
+    "W": {
+     "valueM": 0.1101,
+     "sigmaCm": 0.56,
+     "confidence": "high"
+    },
+    "H": {
+     "valueM": 0.9089,
+     "sigmaCm": 0.36,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.0,
+     "sigmaCm": 0.33,
+     "confidence": "low"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen",
+     "confidence": "high",
+     "need": null
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "high",
+     "need": null
+    },
+    "left": {
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen",
+     "confidence": "high",
+     "need": null
+    },
+    "right": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "high",
+     "need": null
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "下沿只有 9.9 px/cm（照片 2，3.0 m）：走近到约 3.0 m 以内（≥ 10 px/cm）；下沿离地 < 0.5 m：至少 1 张蹲下拍（手机离地 0.5–0.6 m，镜头放平，下沿在屏幕上不低于下面那条三分线）"
+    },
+    "top": {
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen",
+     "confidence": "high",
+     "need": null
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "confidence": "low",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 17 vertices) in 2 photo(s) (1, 2), occlusion-aware; yaw model; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "f4f0356d-5ba0-5e5c-8d0c-c339fca052a7": {
+   "label": "入口右侧安全围栏（仅照片 1）",
+   "centerNative": [
+    -1.109301,
+    0.366682,
+    0.906465
+   ],
+   "axes": [
+    [
+     -0.361307,
+     -0.529879,
+     0.767258
+    ],
+    [
+     -0.802919,
+     0.595177,
+     0.032937
+    ],
+    [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.802919,
+     -0.595177,
+     -0.032937
+    ],
+    "back": [
+     -0.802919,
+     0.595177,
+     0.032937
+    ],
+    "left": [
+     0.361307,
+     0.529879,
+     -0.767258
+    ],
+    "right": [
+     -0.361307,
+     -0.529879,
+     0.767258
+    ],
+    "bottom": [
+     0.474107,
+     0.604146,
+     0.640492
+    ],
+    "top": [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   },
+   "sizeM": [
+    0.0484,
+    2.1516,
+    2.4236
+   ],
+   "bottomM": 0.1291,
+   "topM": 2.5527,
+   "floorContact": false,
+   "snapNote": null,
+   "dims": {
+    "L": {
+     "valueM": 0.0484,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "W": {
+     "valueM": 2.1516,
+     "sigmaCm": null,
+     "confidence": "unverified",
+     "source": "model"
+    },
+    "H": {
+     "valueM": 2.4236,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.1291,
+     "sigmaCm": null,
+     "confidence": "unverified",
+     "source": "model"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [],
+     "status": "occluded",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（27 px）：尺寸取模型，先修掩码；照片 2 拍到了它但没有掩码：补掩码/点选（不需补拍）"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（27 px）：尺寸取模型，先修掩码"
+    },
+    "left": {
+     "photos": [
+      1
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（27 px）：尺寸取模型，先修掩码"
+    },
+    "right": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（27 px）：尺寸取模型，先修掩码"
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（27 px）：尺寸取模型，先修掩码；照片 2 拍到了它但没有掩码：补掩码/点选（不需补拍）"
+    },
+    "top": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（27 px）：尺寸取模型，先修掩码"
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "掩码与盒子不符（27 px）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度未验证",
+    "图层置信度未验证"
+   ],
+   "confidence": "unverified",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 11 vertices) in 1 photo(s) (1), occlusion-aware; yaw model; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "d72e25ef-33fe-53d2-be67-460c77b251d4": {
+   "label": "入口右侧黄色光幕立柱（装有急停）",
+   "centerNative": [
+    -0.091119,
+    -0.041818,
+    0.958363
+   ],
+   "axes": [
+    [
+     -0.720276,
+     -0.152249,
+     0.676774
+    ],
+    [
+     -0.506385,
+     0.782194,
+     -0.362969
+    ],
+    [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.506385,
+     -0.782194,
+     0.362969
+    ],
+    "back": [
+     -0.506385,
+     0.782194,
+     -0.362969
+    ],
+    "left": [
+     0.720276,
+     0.152249,
+     -0.676774
+    ],
+    "right": [
+     -0.720276,
+     -0.152249,
+     0.676774
+    ],
+    "bottom": [
+     0.474107,
+     0.604146,
+     0.640492
+    ],
+    "top": [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   },
+   "sizeM": [
+    0.0301,
+    0.0821,
+    1.619
+   ],
+   "bottomM": 0.2308,
+   "topM": 1.8498,
+   "floorContact": false,
+   "snapNote": null,
+   "dims": {
+    "L": {
+     "valueM": 0.0301,
+     "sigmaCm": 0.55,
+     "confidence": "high"
+    },
+    "W": {
+     "valueM": 0.0821,
+     "sigmaCm": 0.55,
+     "confidence": "medium"
+    },
+    "H": {
+     "valueM": 1.619,
+     "sigmaCm": 0.39,
+     "confidence": "high"
+    },
+    "bottom": {
+     "valueM": 0.2308,
+     "sigmaCm": 0.29,
+     "confidence": "high"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen",
+     "confidence": "medium",
+     "need": "再要一张与照片 1 水平方向相差 ≥ 30° 的照片（≥ 10 px/cm）"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "medium",
+     "need": "再要一张与照片 1 水平方向相差 ≥ 30° 的照片（≥ 10 px/cm）"
+    },
+    "left": {
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen",
+     "confidence": "high",
+     "need": null
+    },
+    "right": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "high",
+     "need": null
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "high",
+     "need": null
+    },
+    "top": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "high",
+     "need": null
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "图层：摆放轮廓吻合度偏低（0.46, 0.57）"
+   ],
+   "confidence": "high",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 9 vertices) in 2 photo(s) (1, 2), occlusion-aware; yaw model; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "2829f848-924e-50c0-a4de-72a75afbe878": {
+   "label": "入口右侧黑色防撞柱",
+   "centerNative": [
+    0.400606,
+    0.097439,
+    1.204635
+   ],
+   "axes": [
+    [
+     -0.704559,
+     -0.175942,
+     0.687489
+    ],
+    [
+     -0.528033,
+     0.777208,
+     -0.342241
+    ],
+    [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.528033,
+     -0.777208,
+     0.342241
+    ],
+    "back": [
+     -0.528033,
+     0.777208,
+     -0.342241
+    ],
+    "left": [
+     0.704559,
+     0.175942,
+     -0.687489
+    ],
+    "right": [
+     -0.704559,
+     -0.175942,
+     0.687489
+    ],
+    "bottom": [
+     0.474107,
+     0.604146,
+     0.640492
+    ],
+    "top": [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   },
+   "sizeM": [
+    0.0973,
+    0.2493,
+    0.8509
+   ],
+   "bottomM": 0.0841,
+   "topM": 0.935,
+   "floorContact": false,
+   "snapNote": null,
+   "dims": {
+    "L": {
+     "valueM": 0.0973,
+     "sigmaCm": 0.78,
+     "confidence": "medium"
+    },
+    "W": {
+     "valueM": 0.2493,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "H": {
+     "valueM": 0.8509,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.0841,
+     "sigmaCm": null,
+     "confidence": "unverified",
+     "source": "model"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      2
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "进深需要侧面照片：从偏离前面法向 45–75° 的方向（侧面，前面的轮廓边在画面里）拍，≥ 10 px/cm（约 3.0 m 以内）"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "进深需要侧面照片：从偏离后面法向 45–75° 的方向（侧面，后面的轮廓边在画面里）拍，≥ 10 px/cm（约 3.0 m 以内）"
+    },
+    "left": {
+     "photos": [
+      2
+     ],
+     "status": "seen",
+     "confidence": "medium",
+     "need": "再要一张与照片 2 水平方向相差 ≥ 30° 的照片（≥ 10 px/cm）"
+    },
+    "right": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "medium",
+     "need": "再要一张与照片 2 水平方向相差 ≥ 30° 的照片（≥ 10 px/cm）"
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "要拍清楚下沿：四周侧面的下边和它下面的地面都在画面里，前面没有东西挡（底面本身不用拍）；下沿离地 < 0.5 m：至少 1 张蹲下拍（手机离地 0.5–0.6 m，镜头放平，下沿在屏幕上不低于下面那条三分线）"
+    },
+    "top": {
+     "photos": [
+      2
+     ],
+     "status": "seen",
+     "confidence": "medium",
+     "need": "再要一张与照片 2 水平方向相差 ≥ 30° 的照片（≥ 10 px/cm）"
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "高度置信度低",
+    "离地高度未验证",
+    "图层置信度未验证"
+   ],
+   "confidence": "unverified",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 12 vertices) in 1 photo(s) (2), occlusion-aware; yaw model; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "9acbbc27-8f2a-5525-a780-76df41c83541": {
+   "label": "BOR1 00030 RB01 工业机器人",
+   "centerNative": [
+    -3.609157,
+    2.425929,
+    -0.132937
+   ],
+   "axes": [
+    [
+     -0.402503,
+     -0.498267,
+     0.767933
+    ],
+    [
+     -0.78308,
+     0.621882,
+     -0.006939
+    ],
+    [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.78308,
+     -0.621882,
+     0.006939
+    ],
+    "back": [
+     -0.78308,
+     0.621882,
+     -0.006939
+    ],
+    "left": [
+     0.402503,
+     0.498267,
+     -0.767933
+    ],
+    "right": [
+     -0.402503,
+     -0.498267,
+     0.767933
+    ],
+    "bottom": [
+     0.474107,
+     0.604146,
+     0.640492
+    ],
+    "top": [
+     -0.474107,
+     -0.604146,
+     -0.640492
+    ]
+   },
+   "sizeM": [
+    0.9327,
+    1.9306,
+    2.3232
+   ],
+   "bottomM": 0.8569,
+   "topM": 3.1801,
+   "floorContact": false,
+   "snapNote": null,
+   "dims": {
+    "L": {
+     "valueM": 0.9327,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "W": {
+     "valueM": 1.9306,
+     "sigmaCm": null,
+     "confidence": "unverified",
+     "source": "model"
+    },
+    "H": {
+     "valueM": 2.3232,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.8569,
+     "sigmaCm": null,
+     "confidence": "low"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（掩码覆盖仅 71%）：尺寸取模型，先修掩码"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（掩码覆盖仅 71%）：尺寸取模型，先修掩码"
+    },
+    "left": {
+     "photos": [
+      1
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 71%）：尺寸取模型，先修掩码"
+    },
+    "right": {
+     "photos": [],
+     "status": "occluded",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 71%）：尺寸取模型，先修掩码"
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 71%）：尺寸取模型，先修掩码"
+    },
+    "top": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 71%）：尺寸取模型，先修掩码"
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "掩码与盒子不符（掩码覆盖仅 71%）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低",
+    "图层置信度低",
+    "图层：照片最一致的深度与模型差 +20 cm（超过一个扫描步长）：深度需复核",
+    "图层：平面立体显示模型主平面偏 +19 cm、倾角差 27°：模型形状或位置需修正（条纹可能混叠，量级待第三视角确认）"
+   ],
+   "confidence": "low",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 11 vertices) in 2 photo(s) (1, 2), occlusion-aware; yaw cameras; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  }
+ }
 }
