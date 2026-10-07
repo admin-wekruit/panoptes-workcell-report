@@ -1,0 +1,1989 @@
+{
+ "schemaVersion": 1,
+ "publicationId": "32265011-026b-45df-88c8-1f1984a6fbb9",
+ "revisionId": "187d20dc-aee5-46df-9888-e8400354cd11",
+ "coordinateFrameId": "076fe2e5-2a28-5e80-9a03-50f0b2f6f306",
+ "scale": {
+  "nativeToMeters": 3.2371372068568487,
+  "status": "operator_anchored",
+  "source": "emergency stop (own fit in this geometry, photos 1-3)"
+ },
+ "ground": {
+  "normal": [
+   0.02062275218311034,
+   -0.9944689197976491,
+   -0.10298674501551675
+  ],
+  "offset": 0.4512803539160285,
+  "plane": [
+   0.02062275218311034,
+   -0.9944689197976491,
+   -0.10298674501551675,
+   0.4512803539160285
+  ],
+  "source": "geometry-licence-ab-fair maxInlier (primary): largest-consensus plane, 20 deg gate, cameras above, two SVD refits"
+ },
+ "variant": {
+  "id": "v2-mvs-recgen",
+  "label": "模块替换 v2-mvs-recgen：几何 MVS（RoMa + numpy LM BA，不含 GPL，可商用），补全 RecGen（TRI 非商用），组装 v2（地面接触罚项）",
+  "labelEn": "module swap v2-mvs-recgen: geometry mvs, completion RecGen, assembly v2 (floor-contact hinge)"
+ },
+ "labels": {
+  "259791c9-39a0-5005-aa6b-8cde5627983f": "左防撞柱",
+  "b288f2a8-6a13-5527-893c-7545031444c8": "右防撞柱",
+  "05a70335-0690-59fc-88c9-6d83f369b92c": "右围栏",
+  "b4f909f6-a36b-58c2-83c4-2d20a8983417": "机器人",
+  "d3af5989-44c0-5e97-850c-3103827d6ab8": "左围栏",
+  "fa1d2dce-8d13-5569-a03d-e2134520063b": "料车",
+  "6c4aa097-35fb-5425-a7c0-7fc03525e5db": "防护板",
+  "ac8249e6-3d05-5ff5-8bbc-1347b63af8e7": "左光幕",
+  "4bb32f3f-63b3-5a82-bd53-24e0387b5a27": "右光幕"
+ },
+ "labelsEn": {
+  "259791c9-39a0-5005-aa6b-8cde5627983f": "left bollard",
+  "b288f2a8-6a13-5527-893c-7545031444c8": "right bollard",
+  "05a70335-0690-59fc-88c9-6d83f369b92c": "right fence",
+  "b4f909f6-a36b-58c2-83c4-2d20a8983417": "robot",
+  "d3af5989-44c0-5e97-850c-3103827d6ab8": "left fence",
+  "fa1d2dce-8d13-5569-a03d-e2134520063b": "cart",
+  "6c4aa097-35fb-5425-a7c0-7fc03525e5db": "safety guard",
+  "ac8249e6-3d05-5ff5-8bbc-1347b63af8e7": "left light curtain",
+  "4bb32f3f-63b3-5a82-bd53-24e0387b5a27": "right light curtain"
+ },
+ "confidence": {
+  "259791c9-39a0-5005-aa6b-8cde5627983f": {
+   "level": "medium",
+   "label": "中",
+   "reasons": [],
+   "missing": []
+  },
+  "b288f2a8-6a13-5527-893c-7545031444c8": {
+   "level": "medium",
+   "label": "中",
+   "reasons": [],
+   "missing": []
+  },
+  "05a70335-0690-59fc-88c9-6d83f369b92c": {
+   "level": "low",
+   "label": "低",
+   "reasons": [
+    "掩码与盒子不符（33 px）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "missing": [
+    "与 4bb32f3f 互相穿插（较小者 11% 在对方体内）"
+   ]
+  },
+  "b4f909f6-a36b-58c2-83c4-2d20a8983417": {
+   "level": "unverified",
+   "label": "未验证",
+   "reasons": [
+    "掩码与盒子不符（掩码覆盖仅 60%）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度未验证"
+   ],
+   "missing": []
+  },
+  "d3af5989-44c0-5e97-850c-3103827d6ab8": {
+   "level": "low",
+   "label": "低",
+   "reasons": [
+    "掩码与盒子不符（50 px）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "missing": []
+  },
+  "fa1d2dce-8d13-5569-a03d-e2134520063b": {
+   "level": "low",
+   "label": "低",
+   "reasons": [
+    "掩码与盒子不符（27 px）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "missing": []
+  },
+  "6c4aa097-35fb-5425-a7c0-7fc03525e5db": {
+   "level": "low",
+   "label": "低",
+   "reasons": [
+    "掩码与盒子不符（掩码覆盖仅 76%）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "missing": []
+  },
+  "ac8249e6-3d05-5ff5-8bbc-1347b63af8e7": {
+   "level": "low",
+   "label": "低",
+   "reasons": [
+    "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "missing": [
+    "模型与照片掩码不符：IoU 0.15 / 0.14 / 0.13"
+   ]
+  },
+  "4bb32f3f-63b3-5a82-bd53-24e0387b5a27": {
+   "level": "low",
+   "label": "低",
+   "reasons": [
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "missing": [
+    "与 05a70335 互相穿插（较小者 11% 在对方体内）",
+    "模型与照片掩码不符：IoU 0.38 / 0.18 / 0.25"
+   ]
+  }
+ },
+ "facts": {
+  "259791c9-39a0-5005-aa6b-8cde5627983f": [
+   {
+    "label": "明显错误检查 G1–G8",
+    "kind": "check",
+    "text": "通过（无下沉、悬空、穿插、炸开、轮廓不符）"
+   },
+   {
+    "label": "组装",
+    "kind": "note",
+    "text": "轮廓 IoU 0.78 / 0.69 / 0.76（均 0.74），深度残差 p50 0.4%，组装后最低点 +6.8 cm"
+   }
+  ],
+  "b288f2a8-6a13-5527-893c-7545031444c8": [
+   {
+    "label": "明显错误检查 G1–G8",
+    "kind": "check",
+    "text": "通过（无下沉、悬空、穿插、炸开、轮廓不符）"
+   },
+   {
+    "label": "组装",
+    "kind": "note",
+    "text": "轮廓 IoU 0.72 / 0.88 / 0.79（均 0.80），深度残差 p50 1.0%，组装后最低点 +1.2 cm"
+   }
+  ],
+  "05a70335-0690-59fc-88c9-6d83f369b92c": [
+   {
+    "label": "明显错误检查 G1–G8",
+    "kind": "check",
+    "text": "与 4bb32f3f 互相穿插（较小者 11% 在对方体内）"
+   },
+   {
+    "label": "组装",
+    "kind": "note",
+    "text": "轮廓 IoU 0.82 / 0.82（均 0.82），深度残差 p50 5.4%，组装后最低点 +40.7 cm"
+   },
+   {
+    "label": "现场值（几何层评判器）",
+    "kind": "field",
+    "text": "右围栏下横杆：评判器 21.0 cm，现场 20 cm（误差 +1.0 cm）"
+   }
+  ],
+  "b4f909f6-a36b-58c2-83c4-2d20a8983417": [
+   {
+    "label": "明显错误检查 G1–G8",
+    "kind": "check",
+    "text": "通过（无下沉、悬空、穿插、炸开、轮廓不符）"
+   },
+   {
+    "label": "组装",
+    "kind": "note",
+    "text": "轮廓 IoU 0.71 / 0.71 / 0.76（均 0.73），深度残差 p50 2.1%，组装后最低点 +80.9 cm"
+   }
+  ],
+  "d3af5989-44c0-5e97-850c-3103827d6ab8": [
+   {
+    "label": "明显错误检查 G1–G8",
+    "kind": "check",
+    "text": "通过（无下沉、悬空、穿插、炸开、轮廓不符）"
+   },
+   {
+    "label": "组装",
+    "kind": "note",
+    "text": "轮廓 IoU 0.70 / 0.70（均 0.70），深度残差 p50 3.5%，组装后最低点 +9.0 cm"
+   }
+  ],
+  "fa1d2dce-8d13-5569-a03d-e2134520063b": [
+   {
+    "label": "明显错误检查 G1–G8",
+    "kind": "check",
+    "text": "通过（无下沉、悬空、穿插、炸开、轮廓不符）"
+   },
+   {
+    "label": "组装",
+    "kind": "note",
+    "text": "轮廓 IoU 0.72 / 0.80 / 0.81（均 0.78），深度残差 p50 1.9%，组装后最低点 +11.0 cm"
+   }
+  ],
+  "6c4aa097-35fb-5425-a7c0-7fc03525e5db": [
+   {
+    "label": "明显错误检查 G1–G8",
+    "kind": "check",
+    "text": "通过（无下沉、悬空、穿插、炸开、轮廓不符）"
+   },
+   {
+    "label": "组装",
+    "kind": "note",
+    "text": "轮廓 IoU 0.71 / 0.70 / 0.79（均 0.74），深度残差 p50 6.9%，组装后最低点 +43.4 cm"
+   }
+  ],
+  "ac8249e6-3d05-5ff5-8bbc-1347b63af8e7": [
+   {
+    "label": "明显错误检查 G1–G8",
+    "kind": "check",
+    "text": "模型与照片掩码不符：IoU 0.15 / 0.14 / 0.13"
+   },
+   {
+    "label": "组装",
+    "kind": "note",
+    "text": "轮廓 IoU 0.14 / 0.14 / 0.15（均 0.14），深度残差 p50 4.1%，组装后最低点 +2.8 cm"
+   },
+   {
+    "label": "现场值（几何层评判器）",
+    "kind": "field",
+    "text": "左罩壳下沿（半边被挡，不计分）：评判器 23.9 cm，现场 24 cm"
+   }
+  ],
+  "4bb32f3f-63b3-5a82-bd53-24e0387b5a27": [
+   {
+    "label": "明显错误检查 G1–G8",
+    "kind": "check",
+    "text": "与 05a70335 互相穿插（较小者 11% 在对方体内）；模型与照片掩码不符：IoU 0.38 / 0.18 / 0.25"
+   },
+   {
+    "label": "组装",
+    "kind": "note",
+    "text": "轮廓 IoU 0.66 / 0.42 / 0.64（均 0.57），深度残差 p50 5.0%，组装后最低点 +30.3 cm"
+   },
+   {
+    "label": "现场值（几何层评判器）",
+    "kind": "field",
+    "text": "右罩壳下沿：评判器 24.0 cm，现场 24 cm（误差 +0.0 cm）"
+   }
+  ]
+ },
+ "boxes": {
+  "259791c9-39a0-5005-aa6b-8cde5627983f": {
+   "label": "left front black bollard",
+   "centerNative": [
+    -0.206696,
+    0.251833,
+    0.574305
+   ],
+   "axes": [
+    [
+     0.828077,
+     -0.040731,
+     0.559132
+    ],
+    [
+     -0.560234,
+     -0.096812,
+     0.822657
+    ],
+    [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.560234,
+     0.096812,
+     -0.822657
+    ],
+    "back": [
+     -0.560234,
+     -0.096812,
+     0.822657
+    ],
+    "left": [
+     -0.828077,
+     0.040731,
+     -0.559132
+    ],
+    "right": [
+     0.828077,
+     -0.040731,
+     0.559132
+    ],
+    "bottom": [
+     -0.020623,
+     0.994469,
+     0.102987
+    ],
+    "top": [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   },
+   "sizeM": [
+    0.1116,
+    0.0648,
+    0.8898
+   ],
+   "bottomM": 0.0,
+   "topM": 0.8898,
+   "floorContact": true,
+   "snapNote": "贴地：盒子上移 1.2 cm",
+   "snapNoteEn": "on the floor: box moved up 1.2 cm",
+   "dims": {
+    "L": {
+     "valueM": 0.1116,
+     "sigmaCm": 0.24,
+     "confidence": "high"
+    },
+    "W": {
+     "valueM": 0.0648,
+     "sigmaCm": 1.77,
+     "confidence": "medium"
+    },
+    "H": {
+     "valueM": 0.8898,
+     "sigmaCm": 0.7,
+     "confidence": "medium"
+    },
+    "bottom": {
+     "valueM": 0.0,
+     "sigmaCm": 0.49,
+     "confidence": "high"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      2,
+      3
+     ],
+     "status": "seen",
+     "confidence": "high",
+     "need": null,
+     "needEn": null
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "medium",
+     "need": "照片 1、3 只差 10°：再要一张水平方向相差 ≥ 30° 的",
+     "needEn": "photos 1、3 only 10 deg apart: one more >= 30 deg to the side"
+    },
+    "left": {
+     "photos": [
+      1,
+      3
+     ],
+     "status": "seen",
+     "confidence": "high",
+     "need": null,
+     "needEn": null
+    },
+    "right": {
+     "photos": [
+      2
+     ],
+     "status": "seen",
+     "confidence": "high",
+     "need": null,
+     "needEn": null
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "high",
+     "need": null,
+     "needEn": null
+    },
+    "top": {
+     "photos": [
+      1,
+      2,
+      3
+     ],
+     "status": "seen",
+     "confidence": "medium",
+     "need": "照片 1、3 只差 10°：再要一张水平方向相差 ≥ 30° 的",
+     "needEn": "photos 1、3 only 10 deg apart: one more >= 30 deg to the side"
+    }
+   },
+   "highlight": false,
+   "highlightReasons": [],
+   "highlightReasonsEn": [],
+   "confidence": "medium",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 13 vertices) in 3 photo(s) (1, 2, 3), occlusion-aware; yaw plane; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "b288f2a8-6a13-5527-893c-7545031444c8": {
+   "label": "right front black bollard",
+   "centerNative": [
+    0.269959,
+    0.24766,
+    0.705642
+   ],
+   "axes": [
+    [
+     0.985869,
+     0.037356,
+     -0.163299
+    ],
+    [
+     0.166243,
+     -0.098164,
+     0.981187
+    ],
+    [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     -0.166243,
+     0.098164,
+     -0.981187
+    ],
+    "back": [
+     0.166243,
+     -0.098164,
+     0.981187
+    ],
+    "left": [
+     -0.985869,
+     -0.037356,
+     0.163299
+    ],
+    "right": [
+     0.985869,
+     0.037356,
+     -0.163299
+    ],
+    "bottom": [
+     -0.020623,
+     0.994469,
+     0.102987
+    ],
+    "top": [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   },
+   "sizeM": [
+    0.1163,
+    0.2388,
+    0.8927
+   ],
+   "bottomM": 0.0,
+   "topM": 0.8927,
+   "floorContact": true,
+   "snapNote": "贴地：盒子上移 2.7 cm",
+   "snapNoteEn": "on the floor: box moved up 2.7 cm",
+   "dims": {
+    "L": {
+     "valueM": 0.1163,
+     "sigmaCm": 0.24,
+     "confidence": "high"
+    },
+    "W": {
+     "valueM": 0.2388,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "H": {
+     "valueM": 0.8927,
+     "sigmaCm": 0.52,
+     "confidence": "medium"
+    },
+    "bottom": {
+     "valueM": 0.0,
+     "sigmaCm": 0.46,
+     "confidence": "medium"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      2,
+      3
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "进深需要侧面照片：从偏离前面法向 45–75° 的方向（侧面，前面的轮廓边在画面里）拍，≥ 10 px/cm（约 2.8 m 以内）",
+     "needEn": "depth needs a side photo: 45-75 deg off the front face normal (from the side, its outline edge in frame), >= 10 px/cm (within about 2.8 m)"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "进深需要侧面照片：从偏离后面法向 45–75° 的方向（侧面，后面的轮廓边在画面里）拍，≥ 10 px/cm（约 2.8 m 以内）",
+     "needEn": "depth needs a side photo: 45-75 deg off the back face normal (from the side, its outline edge in frame), >= 10 px/cm (within about 2.8 m)"
+    },
+    "left": {
+     "photos": [
+      1,
+      3
+     ],
+     "status": "seen",
+     "confidence": "high",
+     "need": null,
+     "needEn": null
+    },
+    "right": {
+     "photos": [
+      2
+     ],
+     "status": "seen",
+     "confidence": "high",
+     "need": null,
+     "needEn": null
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "medium",
+     "need": "照片 1、3 只差 11°：再要一张下沿清楚、水平方向相差 ≥ 30° 的照片；下沿离地 < 0.5 m：至少 1 张蹲下拍（手机离地 0.5–0.6 m，镜头放平，下沿在屏幕上不低于下面那条三分线）",
+     "needEn": "photos 1、3 only 11 deg apart: one more of the lower edge >= 30 deg to the side; the lower edge is below 0.5 m: crouch for at least one (phone 0.5-0.6 m above the floor, lens level, the edge not below the lower third line)"
+    },
+    "top": {
+     "photos": [
+      1,
+      2,
+      3
+     ],
+     "status": "seen",
+     "confidence": "high",
+     "need": null,
+     "needEn": null
+    }
+   },
+   "highlight": false,
+   "highlightReasons": [],
+   "highlightReasonsEn": [],
+   "confidence": "medium",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 15 vertices) in 3 photo(s) (1, 2, 3), occlusion-aware; yaw cameras; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "05a70335-0690-59fc-88c9-6d83f369b92c": {
+   "label": "right front safety fence panel",
+   "centerNative": [
+    0.212864,
+    -0.10206,
+    1.000386
+   ],
+   "axes": [
+    [
+     0.97651,
+     -0.002063,
+     0.215463
+    ],
+    [
+     -0.214484,
+     -0.105011,
+     0.971066
+    ],
+    [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.214484,
+     0.105011,
+     -0.971066
+    ],
+    "back": [
+     -0.214484,
+     -0.105011,
+     0.971066
+    ],
+    "left": [
+     -0.97651,
+     0.002063,
+     -0.215463
+    ],
+    "right": [
+     0.97651,
+     -0.002063,
+     0.215463
+    ],
+    "bottom": [
+     -0.020623,
+     0.994469,
+     0.102987
+    ],
+    "top": [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   },
+   "sizeM": [
+    0.3758,
+    1.6307,
+    2.13
+   ],
+   "bottomM": 0.4051,
+   "topM": 2.5351,
+   "floorContact": false,
+   "snapNote": null,
+   "snapNoteEn": null,
+   "dims": {
+    "L": {
+     "valueM": 0.3758,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "W": {
+     "valueM": 1.6307,
+     "sigmaCm": null,
+     "confidence": "unverified"
+    },
+    "H": {
+     "valueM": 2.13,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.4051,
+     "sigmaCm": null,
+     "confidence": "low"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      3
+     ],
+     "status": "seen",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（33 px）：尺寸取模型，先修掩码；照片 2 拍到了它但没有掩码：补掩码/点选（不需补拍）",
+     "needEn": "masks disagree with the box (33 px): the size is the model's; fix the masks first; photo 2 sees it but has no mask: add a mask/click (no new photo needed)"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（33 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (33 px): the size is the model's; fix the masks first"
+    },
+    "left": {
+     "photos": [
+      1,
+      3
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（33 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (33 px): the size is the model's; fix the masks first"
+    },
+    "right": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（33 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (33 px): the size is the model's; fix the masks first"
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（33 px）：尺寸取模型，先修掩码；照片 2 拍到了它但没有掩码：补掩码/点选（不需补拍）",
+     "needEn": "masks disagree with the box (33 px): the size is the model's; fix the masks first; photo 2 sees it but has no mask: add a mask/click (no new photo needed)"
+    },
+    "top": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（33 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (33 px): the size is the model's; fix the masks first"
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "掩码与盒子不符（33 px）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "highlightReasonsEn": [
+    "masks disagree with the box (33 px): the size is the model's",
+    "length low confidence",
+    "height low confidence",
+    "clearance low confidence"
+   ],
+   "confidence": "low",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 7 vertices) in 2 photo(s) (1, 3), occlusion-aware; yaw plane; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "b4f909f6-a36b-58c2-83c4-2d20a8983417": {
+   "label": "BOR1 00090 RB01 industrial robot",
+   "centerNative": [
+    -0.318561,
+    -0.301157,
+    1.968583
+   ],
+   "axes": [
+    [
+     0.974898,
+     -0.002839,
+     0.222634
+    ],
+    [
+     -0.221695,
+     -0.104993,
+     0.969447
+    ],
+    [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.221695,
+     0.104993,
+     -0.969447
+    ],
+    "back": [
+     -0.221695,
+     -0.104993,
+     0.969447
+    ],
+    "left": [
+     -0.974898,
+     0.002839,
+     -0.222634
+    ],
+    "right": [
+     0.974898,
+     -0.002839,
+     0.222634
+    ],
+    "bottom": [
+     -0.020623,
+     0.994469,
+     0.102987
+    ],
+    "top": [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   },
+   "sizeM": [
+    0.9188,
+    0.9831,
+    1.8785
+   ],
+   "bottomM": 0.8136,
+   "topM": 2.692,
+   "floorContact": false,
+   "snapNote": null,
+   "snapNoteEn": null,
+   "dims": {
+    "L": {
+     "valueM": 0.9188,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "W": {
+     "valueM": 0.9831,
+     "sigmaCm": null,
+     "confidence": "unverified"
+    },
+    "H": {
+     "valueM": 1.8785,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.8136,
+     "sigmaCm": null,
+     "confidence": "unverified"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      2,
+      3
+     ],
+     "status": "seen",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（掩码覆盖仅 60%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 60 %): the size is the model's; fix the masks first"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（掩码覆盖仅 60%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 60 %): the size is the model's; fix the masks first"
+    },
+    "left": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 60%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 60 %): the size is the model's; fix the masks first"
+    },
+    "right": {
+     "photos": [
+      2
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 60%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 60 %): the size is the model's; fix the masks first"
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（掩码覆盖仅 60%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 60 %): the size is the model's; fix the masks first"
+    },
+    "top": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 60%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 60 %): the size is the model's; fix the masks first"
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "掩码与盒子不符（掩码覆盖仅 60%）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度未验证"
+   ],
+   "highlightReasonsEn": [
+    "masks disagree with the box (mask coverage 60 %): the size is the model's",
+    "length low confidence",
+    "height low confidence",
+    "clearance unverified"
+   ],
+   "confidence": "unverified",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 11 vertices) in 3 photo(s) (1, 2, 3), occlusion-aware; yaw pi3x; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "d3af5989-44c0-5e97-850c-3103827d6ab8": {
+   "label": "left gate safety fence assembly",
+   "centerNative": [
+    -0.419218,
+    -0.073276,
+    0.976928
+   ],
+   "axes": [
+    [
+     0.955958,
+     -0.010551,
+     0.293313
+    ],
+    [
+     -0.292778,
+     -0.1045,
+     0.950453
+    ],
+    [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.292778,
+     0.1045,
+     -0.950453
+    ],
+    "back": [
+     -0.292778,
+     -0.1045,
+     0.950453
+    ],
+    "left": [
+     -0.955958,
+     0.010551,
+     -0.293313
+    ],
+    "right": [
+     0.955958,
+     -0.010551,
+     0.293313
+    ],
+    "bottom": [
+     -0.020623,
+     0.994469,
+     0.102987
+    ],
+    "top": [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   },
+   "sizeM": [
+    0.3604,
+    1.4713,
+    2.5061
+   ],
+   "bottomM": 0.09,
+   "topM": 2.5961,
+   "floorContact": false,
+   "snapNote": null,
+   "snapNoteEn": null,
+   "dims": {
+    "L": {
+     "valueM": 0.3604,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "W": {
+     "valueM": 1.4713,
+     "sigmaCm": null,
+     "confidence": "unverified"
+    },
+    "H": {
+     "valueM": 2.5061,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.09,
+     "sigmaCm": null,
+     "confidence": "low"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      2
+     ],
+     "status": "seen",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（50 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (50 px): the size is the model's; fix the masks first"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（50 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (50 px): the size is the model's; fix the masks first"
+    },
+    "left": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（50 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (50 px): the size is the model's; fix the masks first"
+    },
+    "right": {
+     "photos": [
+      2,
+      3
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（50 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (50 px): the size is the model's; fix the masks first"
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（50 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (50 px): the size is the model's; fix the masks first"
+    },
+    "top": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（50 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (50 px): the size is the model's; fix the masks first"
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "掩码与盒子不符（50 px）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "highlightReasonsEn": [
+    "masks disagree with the box (50 px): the size is the model's",
+    "length low confidence",
+    "height low confidence",
+    "clearance low confidence"
+   ],
+   "confidence": "low",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 10 vertices) in 2 photo(s) (2, 3), occlusion-aware; yaw plane; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "fa1d2dce-8d13-5569-a03d-e2134520063b": {
+   "label": "loaded material cart marked 0001 B",
+   "centerNative": [
+    -0.176181,
+    0.142718,
+    1.366706
+   ],
+   "axes": [
+    [
+     0.970592,
+     -0.004797,
+     0.240683
+    ],
+    [
+     -0.239846,
+     -0.104922,
+     0.965124
+    ],
+    [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.239846,
+     0.104922,
+     -0.965124
+    ],
+    "back": [
+     -0.239846,
+     -0.104922,
+     0.965124
+    ],
+    "left": [
+     -0.970592,
+     0.004797,
+     -0.240683
+    ],
+    "right": [
+     0.970592,
+     -0.004797,
+     0.240683
+    ],
+    "bottom": [
+     -0.020623,
+     0.994469,
+     0.102987
+    ],
+    "top": [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   },
+   "sizeM": [
+    1.2164,
+    1.7475,
+    0.8174
+   ],
+   "bottomM": 0.1253,
+   "topM": 0.9427,
+   "floorContact": false,
+   "snapNote": null,
+   "snapNoteEn": null,
+   "dims": {
+    "L": {
+     "valueM": 1.2164,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "W": {
+     "valueM": 1.7475,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "H": {
+     "valueM": 0.8174,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.1253,
+     "sigmaCm": null,
+     "confidence": "low"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      2,
+      3
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（27 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (27 px): the size is the model's; fix the masks first"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（27 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (27 px): the size is the model's; fix the masks first"
+    },
+    "left": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（27 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (27 px): the size is the model's; fix the masks first"
+    },
+    "right": {
+     "photos": [
+      2
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（27 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (27 px): the size is the model's; fix the masks first"
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（27 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (27 px): the size is the model's; fix the masks first"
+    },
+    "top": {
+     "photos": [
+      1,
+      2,
+      3
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（27 px）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (27 px): the size is the model's; fix the masks first"
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "掩码与盒子不符（27 px）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "highlightReasonsEn": [
+    "masks disagree with the box (27 px): the size is the model's",
+    "length low confidence",
+    "height low confidence",
+    "clearance low confidence"
+   ],
+   "confidence": "low",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 10 vertices) in 3 photo(s) (1, 2, 3), occlusion-aware; yaw plane; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "6c4aa097-35fb-5425-a7c0-7fc03525e5db": {
+   "label": "yellow-black folded safety guard behind cart",
+   "centerNative": [
+    -0.187461,
+    0.056622,
+    1.448229
+   ],
+   "axes": [
+    [
+     0.992958,
+     0.008354,
+     0.118172
+    ],
+    [
+     -0.116658,
+     -0.104699,
+     0.987638
+    ],
+    [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.116658,
+     0.104699,
+     -0.987638
+    ],
+    "back": [
+     -0.116658,
+     -0.104699,
+     0.987638
+    ],
+    "left": [
+     -0.992958,
+     -0.008354,
+     -0.118172
+    ],
+    "right": [
+     0.992958,
+     0.008354,
+     0.118172
+    ],
+    "bottom": [
+     -0.020623,
+     0.994469,
+     0.102987
+    ],
+    "top": [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   },
+   "sizeM": [
+    2.061,
+    1.7392,
+    0.6903
+   ],
+   "bottomM": 0.4381,
+   "topM": 1.1284,
+   "floorContact": false,
+   "snapNote": null,
+   "snapNoteEn": null,
+   "dims": {
+    "L": {
+     "valueM": 2.061,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "W": {
+     "valueM": 1.7392,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "H": {
+     "valueM": 0.6903,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.4381,
+     "sigmaCm": null,
+     "confidence": "low"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      2,
+      3
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 76%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 76 %): the size is the model's; fix the masks first"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 76%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 76 %): the size is the model's; fix the masks first"
+    },
+    "left": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 76%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 76 %): the size is the model's; fix the masks first"
+    },
+    "right": {
+     "photos": [],
+     "status": "occluded",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 76%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 76 %): the size is the model's; fix the masks first"
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 76%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 76 %): the size is the model's; fix the masks first"
+    },
+    "top": {
+     "photos": [
+      1,
+      2,
+      3
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 76%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 76 %): the size is the model's; fix the masks first"
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "掩码与盒子不符（掩码覆盖仅 76%）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "highlightReasonsEn": [
+    "masks disagree with the box (mask coverage 76 %): the size is the model's",
+    "length low confidence",
+    "height low confidence",
+    "clearance low confidence"
+   ],
+   "confidence": "low",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 6 vertices) in 3 photo(s) (1, 2, 3), occlusion-aware; yaw model; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "ac8249e6-3d05-5ff5-8bbc-1347b63af8e7": {
+   "label": "left yellow safety light curtain housing",
+   "centerNative": [
+    -0.260586,
+    0.085891,
+    0.667941
+   ],
+   "axes": [
+    [
+     0.988104,
+     0.004572,
+     0.153719
+    ],
+    [
+     -0.152398,
+     -0.104932,
+     0.982733
+    ],
+    [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     0.152398,
+     0.104932,
+     -0.982733
+    ],
+    "back": [
+     -0.152398,
+     -0.104932,
+     0.982733
+    ],
+    "left": [
+     -0.988104,
+     -0.004572,
+     -0.153719
+    ],
+    "right": [
+     0.988104,
+     0.004572,
+     0.153719
+    ],
+    "bottom": [
+     -0.020623,
+     0.994469,
+     0.102987
+    ],
+    "top": [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   },
+   "sizeM": [
+    0.5836,
+    0.8424,
+    1.8435
+   ],
+   "bottomM": 0.0225,
+   "topM": 1.866,
+   "floorContact": false,
+   "snapNote": null,
+   "snapNoteEn": null,
+   "dims": {
+    "L": {
+     "valueM": 0.5836,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "W": {
+     "valueM": 0.8424,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "H": {
+     "valueM": 1.8435,
+     "sigmaCm": null,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.0225,
+     "sigmaCm": null,
+     "confidence": "low"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      1,
+      2,
+      3
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 0 %): the size is the model's; fix the masks first"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 0 %): the size is the model's; fix the masks first"
+    },
+    "left": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 0 %): the size is the model's; fix the masks first"
+    },
+    "right": {
+     "photos": [
+      1,
+      2,
+      3
+     ],
+     "status": "seen",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 0 %): the size is the model's; fix the masks first"
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 0 %): the size is the model's; fix the masks first"
+    },
+    "top": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型，先修掩码",
+     "needEn": "masks disagree with the box (mask coverage 0 %): the size is the model's; fix the masks first"
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型",
+    "长度置信度低",
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "highlightReasonsEn": [
+    "masks disagree with the box (mask coverage 0 %): the size is the model's",
+    "length low confidence",
+    "height low confidence",
+    "clearance low confidence"
+   ],
+   "confidence": "low",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 9 vertices) in 3 photo(s) (1, 2, 3), occlusion-aware; yaw plane; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  },
+  "4bb32f3f-63b3-5a82-bd53-24e0387b5a27": {
+   "label": "right yellow safety light curtain housing",
+   "centerNative": [
+    0.263243,
+    0.061623,
+    0.760589
+   ],
+   "axes": [
+    [
+     0.87819,
+     0.067253,
+     -0.473561
+    ],
+    [
+     0.477868,
+     -0.080676,
+     0.874719
+    ],
+    [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   ],
+   "faceNormals": {
+    "front": [
+     -0.477868,
+     0.080676,
+     -0.874719
+    ],
+    "back": [
+     0.477868,
+     -0.080676,
+     0.874719
+    ],
+    "left": [
+     -0.87819,
+     -0.067253,
+     0.473561
+    ],
+    "right": [
+     0.87819,
+     0.067253,
+     -0.473561
+    ],
+    "bottom": [
+     -0.020623,
+     0.994469,
+     0.102987
+    ],
+    "top": [
+     0.020623,
+     -0.994469,
+     -0.102987
+    ]
+   },
+   "sizeM": [
+    0.0698,
+    0.0383,
+    1.5959
+   ],
+   "bottomM": 0.2285,
+   "topM": 1.8245,
+   "floorContact": false,
+   "snapNote": null,
+   "snapNoteEn": null,
+   "dims": {
+    "L": {
+     "valueM": 0.0698,
+     "sigmaCm": 0.48,
+     "confidence": "medium"
+    },
+    "W": {
+     "valueM": 0.0383,
+     "sigmaCm": null,
+     "confidence": "unverified"
+    },
+    "H": {
+     "valueM": 1.5959,
+     "sigmaCm": 0.59,
+     "confidence": "low"
+    },
+    "bottom": {
+     "valueM": 0.2285,
+     "sigmaCm": 0.49,
+     "confidence": "low"
+    }
+   },
+   "faces": {
+    "front": {
+     "photos": [
+      2
+     ],
+     "status": "seen",
+     "confidence": "unverified",
+     "need": "进深需要侧面照片：从偏离前面法向 45–75° 的方向（侧面，前面的轮廓边在画面里）拍，≥ 10 px/cm（约 2.8 m 以内）",
+     "needEn": "depth needs a side photo: 45-75 deg off the front face normal (from the side, its outline edge in frame), >= 10 px/cm (within about 2.8 m)"
+    },
+    "back": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "unverified",
+     "need": "进深需要侧面照片：从偏离后面法向 45–75° 的方向（侧面，后面的轮廓边在画面里）拍，≥ 10 px/cm（约 2.8 m 以内）",
+     "needEn": "depth needs a side photo: 45-75 deg off the back face normal (from the side, its outline edge in frame), >= 10 px/cm (within about 2.8 m)"
+    },
+    "left": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "medium",
+     "need": "照片 1、2、3 只差 28°：再要一张水平方向相差 ≥ 30° 的",
+     "needEn": "photos 1、2、3 only 28 deg apart: one more >= 30 deg to the side"
+    },
+    "right": {
+     "photos": [
+      2
+     ],
+     "status": "seen",
+     "confidence": "medium",
+     "need": "照片 1、2 只差 28°：再要一张水平方向相差 ≥ 30° 的",
+     "needEn": "photos 1、2 only 28 deg apart: one more >= 30 deg to the side"
+    },
+    "bottom": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "low",
+     "need": "下沿只有 9.7 px/cm（照片 1，2.8 m）：走近到约 2.8 m 以内（≥ 10 px/cm）；下沿离地 < 0.5 m：至少 1 张蹲下拍（手机离地 0.5–0.6 m，镜头放平，下沿在屏幕上不低于下面那条三分线）",
+     "needEn": "the lower edge has only 9.7 px/cm (photo 1, 2.8 m): within about 2.8 m (>= 10 px/cm); the lower edge is below 0.5 m: crouch for at least one (phone 0.5-0.6 m above the floor, lens level, the edge not below the lower third line)"
+    },
+    "top": {
+     "photos": [],
+     "status": "not_facing",
+     "confidence": "medium",
+     "need": "照片 1、2、3 只差 28°：再要一张水平方向相差 ≥ 30° 的",
+     "needEn": "photos 1、2、3 only 28 deg apart: one more >= 30 deg to the side"
+    }
+   },
+   "highlight": true,
+   "highlightReasons": [
+    "高度置信度低",
+    "离地高度置信度低"
+   ],
+   "highlightReasonsEn": [
+    "height low confidence",
+    "clearance low confidence"
+   ],
+   "confidence": "low",
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 10 vertices) in 3 photo(s) (1, 2, 3), occlusion-aware; yaw model; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)"
+  }
+ },
+ "pipelines": {
+  "259791c9-39a0-5005-aa6b-8cde5627983f": {
+   "stages": [
+    {
+     "label": "几何（S2）",
+     "text": "MVS（RoMa + numpy LM BA，不含 GPL，可商用）；尺度 = 本几何自己的急停拟合（1 原生单位 = 323.7 cm）"
+    },
+    {
+     "label": "补全（S4）",
+     "text": "RecGen（TRI 非商用）：全部照片联合生成，一个模型"
+    },
+    {
+     "label": "组装（S5），v2：加地面接触罚项",
+     "text": "同一组装（assemble_lucida_scene，9 自由度，全部照片轮廓 + 边界 + 深度 + 地面接触罚项）：轮廓 IoU 0.78 / 0.69 / 0.76（均 0.74），深度残差 p50 0.4%，组装后最低点 +6.8 cm；罚项终值 0.0000"
+    },
+    {
+     "label": "形状校验（S8）",
+     "text": "三照片光度一致性：一致（最佳深度 +0 cm）"
+    },
+    {
+     "label": "地面接触（S9）",
+     "text": "模型最低点 +6.8 cm：悬空"
+    },
+    {
+     "label": "盒子（S12）",
+     "text": "L×W×H 11×6×89 cm，离地 0.0 cm；置信度 长 高 / 宽 中 / 高 中 / 离地 高"
+    },
+    {
+     "label": "明显错误门 G1–G8（S14）",
+     "text": "通过"
+    }
+   ],
+   "caption": "原生成模型"
+  },
+  "b288f2a8-6a13-5527-893c-7545031444c8": {
+   "stages": [
+    {
+     "label": "几何（S2）",
+     "text": "MVS（RoMa + numpy LM BA，不含 GPL，可商用）；尺度 = 本几何自己的急停拟合（1 原生单位 = 323.7 cm）"
+    },
+    {
+     "label": "补全（S4）",
+     "text": "RecGen（TRI 非商用）：全部照片联合生成，一个模型"
+    },
+    {
+     "label": "组装（S5），v2：加地面接触罚项",
+     "text": "同一组装（assemble_lucida_scene，9 自由度，全部照片轮廓 + 边界 + 深度 + 地面接触罚项）：轮廓 IoU 0.72 / 0.88 / 0.79（均 0.80），深度残差 p50 1.0%，组装后最低点 +1.2 cm；罚项终值 0.0000"
+    },
+    {
+     "label": "形状校验（S8）",
+     "text": "三照片光度一致性：含糊（最佳深度 -21 cm）"
+    },
+    {
+     "label": "地面接触（S9）",
+     "text": "模型最低点 +1.2 cm：贴地"
+    },
+    {
+     "label": "盒子（S12）",
+     "text": "L×W×H 12×24×89 cm，离地 0.0 cm；置信度 长 高 / 宽 低 / 高 中 / 离地 中"
+    },
+    {
+     "label": "明显错误门 G1–G8（S14）",
+     "text": "通过"
+    }
+   ],
+   "caption": "原生成模型"
+  },
+  "05a70335-0690-59fc-88c9-6d83f369b92c": {
+   "stages": [
+    {
+     "label": "几何（S2）",
+     "text": "MVS（RoMa + numpy LM BA，不含 GPL，可商用）；尺度 = 本几何自己的急停拟合（1 原生单位 = 323.7 cm）"
+    },
+    {
+     "label": "补全（S4）",
+     "text": "RecGen（TRI 非商用）：全部照片联合生成，一个模型"
+    },
+    {
+     "label": "组装（S5），v2：加地面接触罚项",
+     "text": "同一组装（assemble_lucida_scene，9 自由度，全部照片轮廓 + 边界 + 深度 + 地面接触罚项）：轮廓 IoU 0.82 / 0.82（均 0.82），深度残差 p50 5.4%，组装后最低点 +40.7 cm；罚项终值 0.0000"
+    },
+    {
+     "label": "形状校验（S8）",
+     "text": "三照片光度一致性：深度偏差（最佳深度 -17 cm）"
+    },
+    {
+     "label": "地面接触（S9）",
+     "text": "模型最低点 +40.7 cm：离地（挂装）"
+    },
+    {
+     "label": "下沿实测（S11）",
+     "text": "bottom rail：无可靠值（two_view_rejected）"
+    },
+    {
+     "label": "下沿实测（S11）",
+     "text": "整体：无可靠值（two_view_rejected）"
+    },
+    {
+     "label": "盒子（S12）",
+     "text": "L×W×H 38×163×213 cm，离地 40.5 cm；置信度 长 低 / 宽 未验证 / 高 低 / 离地 低；掩码与盒子不符（33 px）：尺寸取模型；长度置信度低；高度置信度低；离地高度置信度低"
+    },
+    {
+     "label": "明显错误门 G1–G8（S14）",
+     "text": "与 4bb32f3f 互相穿插（较小者 11% 在对方体内）"
+    }
+   ],
+   "caption": "原生成模型"
+  },
+  "b4f909f6-a36b-58c2-83c4-2d20a8983417": {
+   "stages": [
+    {
+     "label": "几何（S2）",
+     "text": "MVS（RoMa + numpy LM BA，不含 GPL，可商用）；尺度 = 本几何自己的急停拟合（1 原生单位 = 323.7 cm）"
+    },
+    {
+     "label": "补全（S4）",
+     "text": "RecGen（TRI 非商用）：全部照片联合生成，一个模型"
+    },
+    {
+     "label": "组装（S5），v2：加地面接触罚项",
+     "text": "同一组装（assemble_lucida_scene，9 自由度，全部照片轮廓 + 边界 + 深度 + 地面接触罚项）：轮廓 IoU 0.71 / 0.71 / 0.76（均 0.73），深度残差 p50 2.1%，组装后最低点 +80.9 cm；罚项终值 0.0000"
+    },
+    {
+     "label": "形状校验（S8）",
+     "text": "三照片光度一致性：一致（最佳深度 -7 cm）"
+    },
+    {
+     "label": "地面接触（S9）",
+     "text": "模型最低点 +80.9 cm：离地（挂装）"
+    },
+    {
+     "label": "盒子（S12）",
+     "text": "L×W×H 92×98×188 cm，离地 81.4 cm；置信度 长 低 / 宽 未验证 / 高 低 / 离地 未验证；掩码与盒子不符（掩码覆盖仅 60%）：尺寸取模型；长度置信度低；高度置信度低；离地高度未验证"
+    },
+    {
+     "label": "明显错误门 G1–G8（S14）",
+     "text": "通过"
+    }
+   ],
+   "caption": "原生成模型"
+  },
+  "d3af5989-44c0-5e97-850c-3103827d6ab8": {
+   "stages": [
+    {
+     "label": "几何（S2）",
+     "text": "MVS（RoMa + numpy LM BA，不含 GPL，可商用）；尺度 = 本几何自己的急停拟合（1 原生单位 = 323.7 cm）"
+    },
+    {
+     "label": "补全（S4）",
+     "text": "RecGen（TRI 非商用）：全部照片联合生成，一个模型"
+    },
+    {
+     "label": "组装（S5），v2：加地面接触罚项",
+     "text": "同一组装（assemble_lucida_scene，9 自由度，全部照片轮廓 + 边界 + 深度 + 地面接触罚项）：轮廓 IoU 0.70 / 0.70（均 0.70），深度残差 p50 3.5%，组装后最低点 +9.0 cm；罚项终值 0.0000"
+    },
+    {
+     "label": "形状校验（S8）",
+     "text": "三照片光度一致性：无法判断（最佳深度 +4 cm）"
+    },
+    {
+     "label": "地面接触（S9）",
+     "text": "模型最低点 +9.0 cm：悬空"
+    },
+    {
+     "label": "下沿实测（S11）",
+     "text": "bottom rail：无可靠值（too_few_lines）"
+    },
+    {
+     "label": "下沿实测（S11）",
+     "text": "整体：无可靠值（two_view_rejected）"
+    },
+    {
+     "label": "盒子（S12）",
+     "text": "L×W×H 36×147×251 cm，离地 9.0 cm；置信度 长 低 / 宽 未验证 / 高 低 / 离地 低；掩码与盒子不符（50 px）：尺寸取模型；长度置信度低；高度置信度低；离地高度置信度低"
+    },
+    {
+     "label": "明显错误门 G1–G8（S14）",
+     "text": "通过"
+    }
+   ],
+   "caption": "原生成模型"
+  },
+  "fa1d2dce-8d13-5569-a03d-e2134520063b": {
+   "stages": [
+    {
+     "label": "几何（S2）",
+     "text": "MVS（RoMa + numpy LM BA，不含 GPL，可商用）；尺度 = 本几何自己的急停拟合（1 原生单位 = 323.7 cm）"
+    },
+    {
+     "label": "补全（S4）",
+     "text": "RecGen（TRI 非商用）：全部照片联合生成，一个模型"
+    },
+    {
+     "label": "组装（S5），v2：加地面接触罚项",
+     "text": "同一组装（assemble_lucida_scene，9 自由度，全部照片轮廓 + 边界 + 深度 + 地面接触罚项）：轮廓 IoU 0.72 / 0.80 / 0.81（均 0.78），深度残差 p50 1.9%，组装后最低点 +11.0 cm；罚项终值 0.0000"
+    },
+    {
+     "label": "形状校验（S8）",
+     "text": "三照片光度一致性：一致（最佳深度 -9 cm）"
+    },
+    {
+     "label": "地面接触（S9）",
+     "text": "模型最低点 +11.0 cm：悬空"
+    },
+    {
+     "label": "盒子（S12）",
+     "text": "L×W×H 122×175×82 cm，离地 12.5 cm；置信度 长 低 / 宽 低 / 高 低 / 离地 低；掩码与盒子不符（27 px）：尺寸取模型；长度置信度低；高度置信度低；离地高度置信度低"
+    },
+    {
+     "label": "明显错误门 G1–G8（S14）",
+     "text": "通过"
+    }
+   ],
+   "caption": "原生成模型"
+  },
+  "6c4aa097-35fb-5425-a7c0-7fc03525e5db": {
+   "stages": [
+    {
+     "label": "几何（S2）",
+     "text": "MVS（RoMa + numpy LM BA，不含 GPL，可商用）；尺度 = 本几何自己的急停拟合（1 原生单位 = 323.7 cm）"
+    },
+    {
+     "label": "补全（S4）",
+     "text": "RecGen（TRI 非商用）：全部照片联合生成，一个模型"
+    },
+    {
+     "label": "组装（S5），v2：加地面接触罚项",
+     "text": "同一组装（assemble_lucida_scene，9 自由度，全部照片轮廓 + 边界 + 深度 + 地面接触罚项）：轮廓 IoU 0.71 / 0.70 / 0.79（均 0.74），深度残差 p50 6.9%，组装后最低点 +43.4 cm；罚项终值 0.0000"
+    },
+    {
+     "label": "形状校验（S8）",
+     "text": "三照片光度一致性：深度偏差（最佳深度 +43 cm）"
+    },
+    {
+     "label": "地面接触（S9）",
+     "text": "模型最低点 +43.4 cm：离地（挂装）"
+    },
+    {
+     "label": "盒子（S12）",
+     "text": "L×W×H 206×174×69 cm，离地 43.8 cm；置信度 长 低 / 宽 低 / 高 低 / 离地 低；掩码与盒子不符（掩码覆盖仅 76%）：尺寸取模型；长度置信度低；高度置信度低；离地高度置信度低"
+    },
+    {
+     "label": "明显错误门 G1–G8（S14）",
+     "text": "通过"
+    }
+   ],
+   "caption": "原生成模型"
+  },
+  "ac8249e6-3d05-5ff5-8bbc-1347b63af8e7": {
+   "stages": [
+    {
+     "label": "几何（S2）",
+     "text": "MVS（RoMa + numpy LM BA，不含 GPL，可商用）；尺度 = 本几何自己的急停拟合（1 原生单位 = 323.7 cm）"
+    },
+    {
+     "label": "补全（S4）",
+     "text": "RecGen（TRI 非商用）：全部照片联合生成，一个模型"
+    },
+    {
+     "label": "组装（S5），v2：加地面接触罚项",
+     "text": "同一组装（assemble_lucida_scene，9 自由度，全部照片轮廓 + 边界 + 深度 + 地面接触罚项）：轮廓 IoU 0.14 / 0.14 / 0.15（均 0.14），深度残差 p50 4.1%，组装后最低点 +2.8 cm；罚项终值 0.0000"
+    },
+    {
+     "label": "形状校验（S8）",
+     "text": "三照片光度一致性：一致（最佳深度 +2 cm）"
+    },
+    {
+     "label": "地面接触（S9）",
+     "text": "模型最低点 +2.8 cm：贴地"
+    },
+    {
+     "label": "下沿实测（S11）",
+     "text": "yellow front plate：无可靠值（two_view_rejected）"
+    },
+    {
+     "label": "下沿实测（S11）",
+     "text": "整体：无可靠值（two_view_rejected）"
+    },
+    {
+     "label": "盒子（S12）",
+     "text": "L×W×H 58×84×184 cm，离地 2.2 cm；置信度 长 低 / 宽 低 / 高 低 / 离地 低；掩码与盒子不符（掩码覆盖仅 0%）：尺寸取模型；长度置信度低；高度置信度低；离地高度置信度低"
+    },
+    {
+     "label": "明显错误门 G1–G8（S14）",
+     "text": "模型与照片掩码不符：IoU 0.15 / 0.14 / 0.13"
+    }
+   ],
+   "caption": "原生成模型"
+  },
+  "4bb32f3f-63b3-5a82-bd53-24e0387b5a27": {
+   "stages": [
+    {
+     "label": "几何（S2）",
+     "text": "MVS（RoMa + numpy LM BA，不含 GPL，可商用）；尺度 = 本几何自己的急停拟合（1 原生单位 = 323.7 cm）"
+    },
+    {
+     "label": "补全（S4）",
+     "text": "RecGen（TRI 非商用）：全部照片联合生成，一个模型"
+    },
+    {
+     "label": "组装（S5），v2：加地面接触罚项",
+     "text": "同一组装（assemble_lucida_scene，9 自由度，全部照片轮廓 + 边界 + 深度 + 地面接触罚项）：轮廓 IoU 0.66 / 0.42 / 0.64（均 0.57），深度残差 p50 5.0%，组装后最低点 +30.3 cm；罚项终值 0.0000"
+    },
+    {
+     "label": "形状校验（S8）",
+     "text": "三照片光度一致性：无法判断（最佳深度 -14 cm）"
+    },
+    {
+     "label": "地面接触（S9）",
+     "text": "模型最低点 +30.3 cm：离地（挂装）"
+    },
+    {
+     "label": "下沿实测（S11）",
+     "text": "yellow front plate：无可靠值（two_view_rejected）"
+    },
+    {
+     "label": "下沿实测（S11）",
+     "text": "整体：无可靠值（two_view_rejected）"
+    },
+    {
+     "label": "盒子（S12）",
+     "text": "L×W×H 7×4×160 cm，离地 22.9 cm；置信度 长 中 / 宽 未验证 / 高 低 / 离地 低；高度置信度低；离地高度置信度低"
+    },
+    {
+     "label": "明显错误门 G1–G8（S14）",
+     "text": "与 05a70335 互相穿插（较小者 11% 在对方体内）；模型与照片掩码不符：IoU 0.38 / 0.18 / 0.25"
+    }
+   ],
+   "caption": "原生成模型"
+  }
+ },
+ "assets": []
+}
