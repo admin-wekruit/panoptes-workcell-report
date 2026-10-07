@@ -1,0 +1,1 @@
+import{n as e}from"./PolicyPage-CECI5ut6.js";export{e as Function};
