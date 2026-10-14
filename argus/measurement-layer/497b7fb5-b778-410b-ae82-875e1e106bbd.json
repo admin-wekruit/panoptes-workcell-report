@@ -1,0 +1,5544 @@
+{
+ "assets": [],
+ "boxes": {
+  "1f7e95c3-03b7-535a-85c9-b05069601181": {
+   "axes": [
+    [
+     0.754035,
+     -0.049562,
+     0.654962
+    ],
+    [
+     -0.656834,
+     -0.0556,
+     0.751983
+    ],
+    [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   ],
+   "bottomM": 0.0,
+   "capped": false,
+   "centerNative": [
+    -0.165248,
+    0.245727,
+    0.471713
+   ],
+   "confidence": "low",
+   "dims": {
+    "H": {
+     "confidence": "low",
+     "sigmaCm": 0.48,
+     "valueM": 0.9177
+    },
+    "L": {
+     "confidence": "high",
+     "sigmaCm": 0.31,
+     "valueM": 0.1128
+    },
+    "W": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 0.1894
+    },
+    "bottom": {
+     "confidence": "low",
+     "sigmaCm": 0.39,
+     "valueM": 0.0
+    }
+   },
+   "faceNormals": {
+    "back": [
+     -0.656834,
+     -0.0556,
+     0.751983
+    ],
+    "bottom": [
+     0.000854,
+     0.997222,
+     0.074478
+    ],
+    "front": [
+     0.656834,
+     0.0556,
+     -0.751983
+    ],
+    "left": [
+     -0.754035,
+     0.049562,
+     -0.654962
+    ],
+    "right": [
+     0.754035,
+     -0.049562,
+     0.654962
+    ],
+    "top": [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   },
+   "faces": {
+    "back": {
+     "confidence": "low",
+     "need": {
+      "code": "measurement.need.depth",
+      "params": {
+       "distance": "2.9",
+       "face": {
+        "code": "box.face.back"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "bottom": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.need.bottomLow",
+        "params": {
+         "distance": "2.9",
+         "photo": 2,
+         "range": "3.0",
+         "resolution": "9.8"
+        }
+       },
+       "second": {
+        "code": "measurement.need.crouch"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "front": {
+     "confidence": "low",
+     "need": {
+      "code": "measurement.need.depth",
+      "params": {
+       "distance": "2.9",
+       "face": {
+        "code": "box.face.front"
+       }
+      }
+     },
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen"
+    },
+    "left": {
+     "confidence": "high",
+     "need": null,
+     "photos": [
+      1
+     ],
+     "status": "seen"
+    },
+    "right": {
+     "confidence": "high",
+     "need": null,
+     "photos": [
+      2
+     ],
+     "status": "seen"
+    },
+    "top": {
+     "confidence": "high",
+     "need": null,
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen"
+    }
+   },
+   "floorContact": true,
+   "geometryValidated": false,
+   "highlight": true,
+   "highlightReasons": [
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    }
+   ],
+   "inputEvidence": {
+    "edgeSegmentsSha256": null,
+    "images": [],
+    "observationRefs": [
+     "1fc3c09f-2e82-5dc8-a543-09586c7cd298",
+     "d82f9028-d37b-52ce-b482-b1893b702eaf"
+    ],
+    "partMasksSha256": null,
+    "sourceRefs": [],
+    "status": "source_missing"
+   },
+   "inputSha256": "85eb1a0ab123f7f5b269b99817387ddcab4728c0fd864065b4b3751b53f55eb6",
+   "label": {
+    "code": "measurement.object.left_post"
+   },
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 19 vertices) in 2 photo(s) (1, 2), occlusion-aware; yaw cameras; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)",
+   "sizeM": [
+    0.1128,
+    0.1894,
+    0.9177
+   ],
+   "snapNote": {
+    "code": "measurement.snap.still"
+   },
+   "sourceRefs": [],
+   "sourceValidation": "source_missing",
+   "topM": 0.9177
+  },
+  "283a46db-b449-5ac7-bb74-1041b6c18e62": {
+   "axes": [
+    [
+     0.84479,
+     -0.040573,
+     0.533558
+    ],
+    [
+     -0.535097,
+     -0.062463,
+     0.842478
+    ],
+    [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   ],
+   "bottomM": 0.2573,
+   "capped": false,
+   "centerNative": [
+    -0.210844,
+    0.069182,
+    0.540096
+   ],
+   "confidence": "low",
+   "dims": {
+    "H": {
+     "confidence": "low",
+     "sigmaCm": 0.41,
+     "valueM": 1.6212
+    },
+    "L": {
+     "confidence": "low",
+     "sigmaCm": 0.35,
+     "valueM": 0.0511
+    },
+    "W": {
+     "confidence": "unverified",
+     "sigmaCm": null,
+     "valueM": 0.2005
+    },
+    "bottom": {
+     "confidence": "low",
+     "sigmaCm": 0.32,
+     "valueM": 0.2573
+    }
+   },
+   "faceNormals": {
+    "back": [
+     -0.535097,
+     -0.062463,
+     0.842478
+    ],
+    "bottom": [
+     0.000854,
+     0.997222,
+     0.074478
+    ],
+    "front": [
+     0.535097,
+     0.062463,
+     -0.842478
+    ],
+    "left": [
+     -0.84479,
+     0.040573,
+     -0.533558
+    ],
+    "right": [
+     0.84479,
+     -0.040573,
+     0.533558
+    ],
+    "top": [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   },
+   "faces": {
+    "back": {
+     "confidence": "unverified",
+     "need": {
+      "code": "measurement.need.depth",
+      "params": {
+       "distance": "2.9",
+       "face": {
+        "code": "box.face.back"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "bottom": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.need.bottomLow",
+        "params": {
+         "distance": "2.9",
+         "photo": 2,
+         "range": "3.1",
+         "resolution": "9.3"
+        }
+       },
+       "second": {
+        "code": "measurement.need.crouch"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "front": {
+     "confidence": "unverified",
+     "need": {
+      "code": "measurement.need.depth",
+      "params": {
+       "distance": "2.9",
+       "face": {
+        "code": "box.face.front"
+       }
+      }
+     },
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen"
+    },
+    "left": {
+     "confidence": "medium",
+     "need": {
+      "code": "measurement.need.second",
+      "params": {
+       "photos": "1"
+      }
+     },
+     "photos": [
+      1
+     ],
+     "status": "seen"
+    },
+    "right": {
+     "confidence": "low",
+     "need": {
+      "code": "measurement.need.low",
+      "params": {
+       "distance": "2.9",
+       "photo": 2,
+       "range": "2.9",
+       "resolution": "9.9"
+      }
+     },
+     "photos": [
+      2
+     ],
+     "status": "seen"
+    },
+    "top": {
+     "confidence": "medium",
+     "need": {
+      "code": "measurement.need.second",
+      "params": {
+       "photos": "1"
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    }
+   },
+   "floorContact": false,
+   "geometryValidated": false,
+   "highlight": true,
+   "highlightReasons": [
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.L"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    }
+   ],
+   "inputEvidence": {
+    "edgeSegmentsSha256": null,
+    "images": [],
+    "observationRefs": [
+     "c3cd96ca-4d98-5efc-97a2-27f26fca962c",
+     "a77b028f-ecd3-59ee-8bcb-eec35cc33a6c"
+    ],
+    "partMasksSha256": null,
+    "sourceRefs": [],
+    "status": "source_missing"
+   },
+   "inputSha256": "15a860d388021dc167258bc950924f1881629bbbf3169d81ca427f54978cc836",
+   "label": {
+    "code": "measurement.object.left_light_curtain"
+   },
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 14 vertices) in 2 photo(s) (1, 2), occlusion-aware; yaw pi3x; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)",
+   "sizeM": [
+    0.0511,
+    0.2005,
+    1.6212
+   ],
+   "snapNote": null,
+   "sourceRefs": [],
+   "sourceValidation": "source_missing",
+   "topM": 1.8785
+  },
+  "33c67ca1-10ed-5eb2-ad42-b7ac2e58a5b9": {
+   "axes": [
+    [
+     0.993283,
+     -0.009464,
+     0.115323
+    ],
+    [
+     -0.115708,
+     -0.073879,
+     0.990532
+    ],
+    [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   ],
+   "bottomM": 0.1628,
+   "capped": true,
+   "centerNative": [
+    0.256122,
+    -0.06492,
+    1.047323
+   ],
+   "confidence": "low",
+   "dims": {
+    "H": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 2.4909
+    },
+    "L": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 0.184
+    },
+    "W": {
+     "confidence": "unverified",
+     "sigmaCm": null,
+     "valueM": 2.6814
+    },
+    "bottom": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 0.1628
+    }
+   },
+   "faceNormals": {
+    "back": [
+     -0.115708,
+     -0.073879,
+     0.990532
+    ],
+    "bottom": [
+     0.000854,
+     0.997222,
+     0.074478
+    ],
+    "front": [
+     0.115708,
+     0.073879,
+     -0.990532
+    ],
+    "left": [
+     -0.993283,
+     0.009464,
+     -0.115323
+    ],
+    "right": [
+     0.993283,
+     -0.009464,
+     0.115323
+    ],
+    "top": [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   },
+   "faces": {
+    "back": {
+     "confidence": "unverified",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.residual",
+        "params": {
+         "residual": "39"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "bottom": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "message.join",
+        "params": {
+         "first": {
+          "code": "measurement.cap.residual",
+          "params": {
+           "residual": "39"
+          }
+         },
+         "second": {
+          "code": "measurement.need.fixMasks"
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.need.mask",
+        "params": {
+         "photos": "2"
+        }
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "front": {
+     "confidence": "unverified",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "message.join",
+        "params": {
+         "first": {
+          "code": "measurement.cap.residual",
+          "params": {
+           "residual": "39"
+          }
+         },
+         "second": {
+          "code": "measurement.need.fixMasks"
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.need.mask",
+        "params": {
+         "photos": "2"
+        }
+       }
+      }
+     },
+     "photos": [
+      1
+     ],
+     "status": "seen"
+    },
+    "left": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.residual",
+        "params": {
+         "residual": "39"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [
+      1
+     ],
+     "status": "seen"
+    },
+    "right": {
+     "confidence": "unverified",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "message.join",
+        "params": {
+         "first": {
+          "code": "measurement.cap.residual",
+          "params": {
+           "residual": "39"
+          }
+         },
+         "second": {
+          "code": "measurement.need.fixMasks"
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.need.mask",
+        "params": {
+         "photos": "2"
+        }
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "top": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.residual",
+        "params": {
+         "residual": "39"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    }
+   },
+   "floorContact": false,
+   "geometryValidated": false,
+   "highlight": true,
+   "highlightReasons": [
+    {
+     "code": "measurement.cap.residual",
+     "params": {
+      "residual": "39"
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.L"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    }
+   ],
+   "inputEvidence": {
+    "edgeSegmentsSha256": null,
+    "images": [],
+    "observationRefs": [
+     "0e40150e-2183-59c4-84e9-6793a0c601e9"
+    ],
+    "partMasksSha256": null,
+    "sourceRefs": [],
+    "status": "source_missing"
+   },
+   "inputSha256": "fbca89b5182f16046b18460952732f9ac7d3fbc56dcbc4fdce7ecc6d4d14c421",
+   "label": {
+    "code": "measurement.object.right_fence"
+   },
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 8 vertices) in 1 photo(s) (1), occlusion-aware; yaw plane; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)",
+   "sizeM": [
+    0.184,
+    2.6814,
+    2.4909
+   ],
+   "snapNote": null,
+   "sourceRefs": [],
+   "sourceValidation": "source_missing",
+   "topM": 2.6537
+  },
+  "33ea8411-0f00-58b9-af8e-0ee12dce1097": {
+   "axes": [
+    [
+     0.996885,
+     -0.006723,
+     0.078578
+    ],
+    [
+     -0.078861,
+     -0.074179,
+     0.994122
+    ],
+    [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   ],
+   "bottomM": 0.2599,
+   "capped": false,
+   "centerNative": [
+    0.284778,
+    0.061504,
+    0.6411
+   ],
+   "confidence": "medium",
+   "dims": {
+    "H": {
+     "confidence": "high",
+     "sigmaCm": 0.37,
+     "valueM": 1.6139
+    },
+    "L": {
+     "confidence": "medium",
+     "sigmaCm": 0.3,
+     "valueM": 0.0541
+    },
+    "W": {
+     "confidence": "unverified",
+     "sigmaCm": null,
+     "valueM": 0.1014
+    },
+    "bottom": {
+     "confidence": "high",
+     "sigmaCm": 0.27,
+     "valueM": 0.2599
+    }
+   },
+   "faceNormals": {
+    "back": [
+     -0.078861,
+     -0.074179,
+     0.994122
+    ],
+    "bottom": [
+     0.000854,
+     0.997222,
+     0.074478
+    ],
+    "front": [
+     0.078861,
+     0.074179,
+     -0.994122
+    ],
+    "left": [
+     -0.996885,
+     0.006723,
+     -0.078578
+    ],
+    "right": [
+     0.996885,
+     -0.006723,
+     0.078578
+    ],
+    "top": [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   },
+   "faces": {
+    "back": {
+     "confidence": "unverified",
+     "need": {
+      "code": "measurement.need.depth",
+      "params": {
+       "distance": "2.9",
+       "face": {
+        "code": "box.face.back"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "bottom": {
+     "confidence": "high",
+     "need": null,
+     "photos": [],
+     "status": "not_facing"
+    },
+    "front": {
+     "confidence": "unverified",
+     "need": {
+      "code": "measurement.need.depth",
+      "params": {
+       "distance": "2.9",
+       "face": {
+        "code": "box.face.front"
+       }
+      }
+     },
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen"
+    },
+    "left": {
+     "confidence": "medium",
+     "need": {
+      "code": "measurement.need.second",
+      "params": {
+       "photos": "1"
+      }
+     },
+     "photos": [
+      1
+     ],
+     "status": "seen"
+    },
+    "right": {
+     "confidence": "high",
+     "need": null,
+     "photos": [
+      2
+     ],
+     "status": "seen"
+    },
+    "top": {
+     "confidence": "high",
+     "need": null,
+     "photos": [],
+     "status": "not_facing"
+    }
+   },
+   "floorContact": false,
+   "geometryValidated": false,
+   "highlight": false,
+   "highlightReasons": [],
+   "inputEvidence": {
+    "edgeSegmentsSha256": null,
+    "images": [],
+    "observationRefs": [
+     "dc2e78b7-f807-5993-bdbb-cca67da55369",
+     "564b41bc-66b7-52bf-bbab-59259dd3fe3d"
+    ],
+    "partMasksSha256": null,
+    "sourceRefs": [],
+    "status": "source_missing"
+   },
+   "inputSha256": "7a4829244394337b353d3e32b8d5342cceaefb918d8477d1adb912d5f95e641c",
+   "label": {
+    "code": "measurement.object.right_light_curtain"
+   },
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 12 vertices) in 2 photo(s) (1, 2), occlusion-aware; yaw pi3x; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)",
+   "sizeM": [
+    0.0541,
+    0.1014,
+    1.6139
+   ],
+   "snapNote": null,
+   "sourceRefs": [],
+   "sourceValidation": "source_missing",
+   "topM": 1.8738
+  },
+  "3b648d48-e58c-57f8-abb1-1175b2491a9b": {
+   "axes": [
+    [
+     0.99908,
+     0.002343,
+     -0.042828
+    ],
+    [
+     0.042883,
+     -0.074446,
+     0.996303
+    ],
+    [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   ],
+   "bottomM": 0.9272,
+   "capped": true,
+   "centerNative": [
+    -0.275707,
+    -0.411277,
+    1.993791
+   ],
+   "confidence": "unverified",
+   "dims": {
+    "H": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 2.9235
+    },
+    "L": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 1.286
+    },
+    "W": {
+     "confidence": "unverified",
+     "sigmaCm": null,
+     "valueM": 1.0209
+    },
+    "bottom": {
+     "confidence": "unverified",
+     "sigmaCm": null,
+     "valueM": 0.9272
+    }
+   },
+   "faceNormals": {
+    "back": [
+     0.042883,
+     -0.074446,
+     0.996303
+    ],
+    "bottom": [
+     0.000854,
+     0.997222,
+     0.074478
+    ],
+    "front": [
+     -0.042883,
+     0.074446,
+     -0.996303
+    ],
+    "left": [
+     -0.99908,
+     -0.002343,
+     0.042828
+    ],
+    "right": [
+     0.99908,
+     0.002343,
+     -0.042828
+    ],
+    "top": [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   },
+   "faces": {
+    "back": {
+     "confidence": "unverified",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.coverage",
+        "params": {
+         "coverage": "67"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "bottom": {
+     "confidence": "unverified",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.coverage",
+        "params": {
+         "coverage": "67"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "front": {
+     "confidence": "unverified",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.coverage",
+        "params": {
+         "coverage": "67"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen"
+    },
+    "left": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.coverage",
+        "params": {
+         "coverage": "67"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "right": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.coverage",
+        "params": {
+         "coverage": "67"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [
+      1
+     ],
+     "status": "seen"
+    },
+    "top": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.coverage",
+        "params": {
+         "coverage": "67"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    }
+   },
+   "floorContact": false,
+   "geometryValidated": false,
+   "highlight": true,
+   "highlightReasons": [
+    {
+     "code": "measurement.cap.coverage",
+     "params": {
+      "coverage": "67"
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.L"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.unverified"
+      }
+     }
+    }
+   ],
+   "inputEvidence": {
+    "edgeSegmentsSha256": null,
+    "images": [],
+    "observationRefs": [
+     "7a9e41f5-e0d0-5ae9-a4df-991099d3e16d",
+     "431aa9ee-d127-5593-98ef-da3a2a1f132a"
+    ],
+    "partMasksSha256": null,
+    "sourceRefs": [],
+    "status": "source_missing"
+   },
+   "inputSha256": "762800859aa248d1f3c49ce143ce8b6e695a2b27e512c7ffac153cc421934ba2",
+   "label": {
+    "code": "measurement.object.robot"
+   },
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 10 vertices) in 2 photo(s) (1, 2), occlusion-aware; yaw model; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)",
+   "sizeM": [
+    1.286,
+    1.0209,
+    2.9235
+   ],
+   "snapNote": null,
+   "sourceRefs": [],
+   "sourceValidation": "source_missing",
+   "topM": 3.8507
+  },
+  "99035227-edbc-5149-b4e5-85dd6ed82ebf": {
+   "axes": [
+    [
+     0.967793,
+     -0.019574,
+     0.250985
+    ],
+    [
+     -0.251746,
+     -0.071865,
+     0.965122
+    ],
+    [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   ],
+   "bottomM": 0.3172,
+   "capped": true,
+   "centerNative": [
+    -0.30906,
+    0.145324,
+    1.061899
+   ],
+   "confidence": "low",
+   "dims": {
+    "H": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 0.6844
+    },
+    "L": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 0.5879
+    },
+    "W": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 1.3616
+    },
+    "bottom": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 0.3172
+    }
+   },
+   "faceNormals": {
+    "back": [
+     -0.251746,
+     -0.071865,
+     0.965122
+    ],
+    "bottom": [
+     0.000854,
+     0.997222,
+     0.074478
+    ],
+    "front": [
+     0.251746,
+     0.071865,
+     -0.965122
+    ],
+    "left": [
+     -0.967793,
+     0.019574,
+     -0.250985
+    ],
+    "right": [
+     0.967793,
+     -0.019574,
+     0.250985
+    ],
+    "top": [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   },
+   "faces": {
+    "back": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.coverage",
+        "params": {
+         "coverage": "0"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "bottom": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.coverage",
+        "params": {
+         "coverage": "0"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "front": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.coverage",
+        "params": {
+         "coverage": "0"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [
+      2
+     ],
+     "status": "seen"
+    },
+    "left": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.coverage",
+        "params": {
+         "coverage": "0"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "right": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.coverage",
+        "params": {
+         "coverage": "0"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [
+      2
+     ],
+     "status": "seen"
+    },
+    "top": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.coverage",
+        "params": {
+         "coverage": "0"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [
+      2
+     ],
+     "status": "seen"
+    }
+   },
+   "floorContact": false,
+   "geometryValidated": false,
+   "highlight": true,
+   "highlightReasons": [
+    {
+     "code": "measurement.cap.coverage",
+     "params": {
+      "coverage": "0"
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.L"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    }
+   ],
+   "inputEvidence": {
+    "edgeSegmentsSha256": null,
+    "images": [],
+    "observationRefs": [
+     "62c68b01-7232-555e-a0e7-1f048feffca6",
+     "dbc0750c-3c55-5c9e-8203-4302af36bddc"
+    ],
+    "partMasksSha256": null,
+    "sourceRefs": [],
+    "status": "source_missing"
+   },
+   "inputSha256": "e6889df7821cad38a3fb76932f1ef86f0bae46435afd04f903c8c7aa798167b1",
+   "label": {
+    "code": "measurement.object.guard"
+   },
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 7 vertices) in 2 photo(s) (1, 2), occlusion-aware; yaw pi3x; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)",
+   "sizeM": [
+    0.5879,
+    1.3616,
+    0.6844
+   ],
+   "snapNote": null,
+   "sourceRefs": [],
+   "sourceValidation": "source_missing",
+   "topM": 1.0015
+  },
+  "9bc4a50c-d59f-5257-bcd2-29bee4d0263d": {
+   "axes": [
+    [
+     0.974292,
+     -0.017609,
+     0.224601
+    ],
+    [
+     -0.225289,
+     -0.072372,
+     0.9716
+    ],
+    [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   ],
+   "bottomM": 0.2297,
+   "capped": false,
+   "centerNative": [
+    0.312155,
+    0.207385,
+    0.472473
+   ],
+   "confidence": "unverified",
+   "dims": {
+    "H": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 0.7274
+    },
+    "L": {
+     "confidence": "medium",
+     "sigmaCm": 0.52,
+     "valueM": 0.1014
+    },
+    "W": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 0.1118
+    },
+    "bottom": {
+     "confidence": "unverified",
+     "sigmaCm": null,
+     "valueM": 0.2297
+    }
+   },
+   "faceNormals": {
+    "back": [
+     -0.225289,
+     -0.072372,
+     0.9716
+    ],
+    "bottom": [
+     0.000854,
+     0.997222,
+     0.074478
+    ],
+    "front": [
+     0.225289,
+     0.072372,
+     -0.9716
+    ],
+    "left": [
+     -0.974292,
+     0.017609,
+     -0.224601
+    ],
+    "right": [
+     0.974292,
+     -0.017609,
+     0.224601
+    ],
+    "top": [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   },
+   "faces": {
+    "back": {
+     "confidence": "low",
+     "need": {
+      "code": "measurement.need.depth",
+      "params": {
+       "distance": "2.9",
+       "face": {
+        "code": "box.face.back"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "bottom": {
+     "confidence": "unverified",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.need.bottomUnverified"
+       },
+       "second": {
+        "code": "measurement.need.crouch"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "front": {
+     "confidence": "low",
+     "need": {
+      "code": "measurement.need.depth",
+      "params": {
+       "distance": "2.9",
+       "face": {
+        "code": "box.face.front"
+       }
+      }
+     },
+     "photos": [
+      2
+     ],
+     "status": "seen"
+    },
+    "left": {
+     "confidence": "medium",
+     "need": {
+      "code": "measurement.need.second",
+      "params": {
+       "photos": "2"
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "right": {
+     "confidence": "medium",
+     "need": {
+      "code": "measurement.need.second",
+      "params": {
+       "photos": "2"
+      }
+     },
+     "photos": [
+      2
+     ],
+     "status": "seen"
+    },
+    "top": {
+     "confidence": "medium",
+     "need": {
+      "code": "measurement.need.second",
+      "params": {
+       "photos": "2"
+      }
+     },
+     "photos": [
+      2
+     ],
+     "status": "seen"
+    }
+   },
+   "floorContact": false,
+   "geometryValidated": false,
+   "highlight": true,
+   "highlightReasons": [
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.unverified"
+      }
+     }
+    }
+   ],
+   "inputEvidence": {
+    "edgeSegmentsSha256": null,
+    "images": [],
+    "observationRefs": [
+     "444ce44c-e1c3-58c0-94f2-97e7966d3910"
+    ],
+    "partMasksSha256": null,
+    "sourceRefs": [],
+    "status": "source_missing"
+   },
+   "inputSha256": "42bad5d0ab2534d11e423e43d0dd6ff454e2d00db4ef372c879107961e692f3e",
+   "label": {
+    "code": "measurement.object.right_post"
+   },
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 19 vertices) in 1 photo(s) (2), occlusion-aware; yaw plane; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)",
+   "sizeM": [
+    0.1014,
+    0.1118,
+    0.7274
+   ],
+   "snapNote": null,
+   "sourceRefs": [],
+   "sourceValidation": "source_missing",
+   "topM": 0.9571
+  },
+  "c7776130-45f4-547b-a2dd-f183ed3f32f6": {
+   "axes": [
+    [
+     0.975135,
+     -0.017336,
+     0.220932
+    ],
+    [
+     -0.221609,
+     -0.072438,
+     0.972441
+    ],
+    [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   ],
+   "bottomM": 0.041,
+   "capped": true,
+   "centerNative": [
+    -0.120751,
+    0.156021,
+    1.285639
+   ],
+   "confidence": "low",
+   "dims": {
+    "H": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 1.0409
+    },
+    "L": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 1.3471
+    },
+    "W": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 2.5523
+    },
+    "bottom": {
+     "confidence": "low",
+     "sigmaCm": null,
+     "valueM": 0.041
+    }
+   },
+   "faceNormals": {
+    "back": [
+     -0.221609,
+     -0.072438,
+     0.972441
+    ],
+    "bottom": [
+     0.000854,
+     0.997222,
+     0.074478
+    ],
+    "front": [
+     0.221609,
+     0.072438,
+     -0.972441
+    ],
+    "left": [
+     -0.975135,
+     0.017336,
+     -0.220932
+    ],
+    "right": [
+     0.975135,
+     -0.017336,
+     0.220932
+    ],
+    "top": [
+     -0.000854,
+     -0.997222,
+     -0.074478
+    ]
+   },
+   "faces": {
+    "back": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.residual",
+        "params": {
+         "residual": "33"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "bottom": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.residual",
+        "params": {
+         "residual": "33"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "front": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.residual",
+        "params": {
+         "residual": "33"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen"
+    },
+    "left": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.residual",
+        "params": {
+         "residual": "33"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [],
+     "status": "not_facing"
+    },
+    "right": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.residual",
+        "params": {
+         "residual": "33"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [
+      2
+     ],
+     "status": "seen"
+    },
+    "top": {
+     "confidence": "low",
+     "need": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.cap.residual",
+        "params": {
+         "residual": "33"
+        }
+       },
+       "second": {
+        "code": "measurement.need.fixMasks"
+       }
+      }
+     },
+     "photos": [
+      1,
+      2
+     ],
+     "status": "seen"
+    }
+   },
+   "floorContact": false,
+   "geometryValidated": false,
+   "highlight": true,
+   "highlightReasons": [
+    {
+     "code": "measurement.cap.residual",
+     "params": {
+      "residual": "33"
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.L"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    }
+   ],
+   "inputEvidence": {
+    "edgeSegmentsSha256": null,
+    "images": [],
+    "observationRefs": [
+     "081ac9d9-0b74-5fc9-af49-bfbb8b769c42",
+     "36f3a5b7-43e9-5393-9454-f6eea8b5bed7"
+    ],
+    "partMasksSha256": null,
+    "sourceRefs": [],
+    "status": "source_missing"
+   },
+   "inputSha256": "c138f433671d37c7d2c6b1ada53d299878db9255148b960d148a7085201e4ca4",
+   "label": {
+    "code": "measurement.object.cart"
+   },
+   "method": "silhouette L1 fit of a gravity-aligned box (model footprint inside, 7 vertices) in 2 photo(s) (1, 2), occlusion-aware; yaw plane; prior displayed model surface; faces the photos do not pin keep the prior size; a capped fit keeps the displayed model's box; face and dimension confidence from the faces' outline edges (>= 80 % in frame and known, >= 10 px/cm at the straight-line distance; 'photos' / 'status' = the photos that see the face itself, not counted); object confidence = lowest of L, H, bottom (W is reported, not counted)",
+   "sizeM": [
+    1.3471,
+    2.5523,
+    1.0409
+   ],
+   "snapNote": null,
+   "sourceRefs": [],
+   "sourceValidation": "source_missing",
+   "topM": 1.0819
+  }
+ },
+ "classes": {
+  "1f7e95c3-03b7-535a-85c9-b05069601181": "bollard",
+  "283a46db-b449-5ac7-bb74-1041b6c18e62": "light_curtain",
+  "33c67ca1-10ed-5eb2-ad42-b7ac2e58a5b9": "fence",
+  "33ea8411-0f00-58b9-af8e-0ee12dce1097": "light_curtain",
+  "3b648d48-e58c-57f8-abb1-1175b2491a9b": "robot",
+  "99035227-edbc-5149-b4e5-85dd6ed82ebf": "guard",
+  "9bc4a50c-d59f-5257-bcd2-29bee4d0263d": "bollard",
+  "c7776130-45f4-547b-a2dd-f183ed3f32f6": "cart"
+ },
+ "coordinateFrameId": "9e131c81-8866-5faf-954d-7aefa2b1d3dd",
+ "geometryEngine": "geometry-engine-v2",
+ "geometryInputs": {
+  "1f7e95c3-03b7-535a-85c9-b05069601181": "85eb1a0ab123f7f5b269b99817387ddcab4728c0fd864065b4b3751b53f55eb6",
+  "283a46db-b449-5ac7-bb74-1041b6c18e62": "15a860d388021dc167258bc950924f1881629bbbf3169d81ca427f54978cc836",
+  "33c67ca1-10ed-5eb2-ad42-b7ac2e58a5b9": "fbca89b5182f16046b18460952732f9ac7d3fbc56dcbc4fdce7ecc6d4d14c421",
+  "33ea8411-0f00-58b9-af8e-0ee12dce1097": "7a4829244394337b353d3e32b8d5342cceaefb918d8477d1adb912d5f95e641c",
+  "378a893c-8a99-5862-9d2d-88f3983413ac": "c3ae411da3c93bec4580596207edb6d87cad50cb255cc8fd8bd5985c81afeb03",
+  "3b648d48-e58c-57f8-abb1-1175b2491a9b": "762800859aa248d1f3c49ce143ce8b6e695a2b27e512c7ffac153cc421934ba2",
+  "99035227-edbc-5149-b4e5-85dd6ed82ebf": "e6889df7821cad38a3fb76932f1ef86f0bae46435afd04f903c8c7aa798167b1",
+  "9bc4a50c-d59f-5257-bcd2-29bee4d0263d": "42bad5d0ab2534d11e423e43d0dd6ff454e2d00db4ef372c879107961e692f3e",
+  "c7776130-45f4-547b-a2dd-f183ed3f32f6": "c138f433671d37c7d2c6b1ada53d299878db9255148b960d148a7085201e4ca4",
+  "d5a479f0-2f19-5189-98f2-1dc6caf049e5": "d3c37152e5a5d5e20707e203e5ebc584f061fcee8712d75e27d0c09673fb353c"
+ },
+ "geometryTargets": [
+  {
+   "coordinateFrameId": "9e131c81-8866-5faf-954d-7aefa2b1d3dd",
+   "coverage": "visible_interval",
+   "entityId": "283a46db-b449-5ac7-bb74-1041b6c18e62",
+   "id": "7ec51da7555b3c1b3fb684571818a0168da399d130c54d989d5faac72455aab1",
+   "inputEvidence": null,
+   "inputSha256": "15a860d388021dc167258bc950924f1881629bbbf3169d81ca427f54978cc836",
+   "part": "housing_bottom",
+   "reasons": [
+    "target_source_unverified"
+   ],
+   "revisionId": "1691ba05-ed0b-5b47-8b59-5f6e4ab0b064",
+   "shape": "box",
+   "sourceRefs": [],
+   "sourceRevisionId": "ab54b3bc-f580-4d3c-a3e4-9da2de7b6f96",
+   "status": "rejected",
+   "target": "housing_bottom"
+  },
+  {
+   "coordinateFrameId": "9e131c81-8866-5faf-954d-7aefa2b1d3dd",
+   "coverage": "visible_interval",
+   "entityId": "33c67ca1-10ed-5eb2-ad42-b7ac2e58a5b9",
+   "id": "e8506f3cb55862818f966dd141141a3bd4ddf5ed9050ee8a6eb6a64fdb339a32",
+   "inputEvidence": {
+    "edgeSegmentsSha256": null,
+    "images": [
+     {
+      "imageId": "05551ad4-47b7-476e-b433-36c07262dc84",
+      "imageSha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac",
+      "imageSize": [
+       3024,
+       4032
+      ]
+     }
+    ],
+    "observationRefs": [
+     "0e40150e-2183-59c4-84e9-6793a0c601e9"
+    ],
+    "partMasksSha256": null,
+    "partRegionsSha256": {
+     "05551ad4-47b7-476e-b433-36c07262dc84": "6222b845f787724a1f8b89fdb328fa932fe38f895a5541443c05a88657577b65"
+    },
+    "sourceRefs": [
+     {
+      "assetId": "9af8db9c-e92a-4e0a-8a22-1708ce78481b",
+      "sha256": "37eef9ebf577cbb41526877172dacf22deed735add058a7dab0d6ad4d60001f2"
+     }
+    ],
+    "status": "matched"
+   },
+   "inputSha256": "fbca89b5182f16046b18460952732f9ac7d3fbc56dcbc4fdce7ecc6d4d14c421",
+   "part": "panel_bottom",
+   "reasons": [
+    "boundary_geometry_missing"
+   ],
+   "revisionId": "1691ba05-ed0b-5b47-8b59-5f6e4ab0b064",
+   "shape": "box",
+   "sourceRefs": [
+    {
+     "assetId": "9af8db9c-e92a-4e0a-8a22-1708ce78481b",
+     "sha256": "37eef9ebf577cbb41526877172dacf22deed735add058a7dab0d6ad4d60001f2"
+    }
+   ],
+   "sourceRevisionId": "ab54b3bc-f580-4d3c-a3e4-9da2de7b6f96",
+   "status": "rejected",
+   "target": "panel_bottom"
+  },
+  {
+   "coordinateFrameId": "9e131c81-8866-5faf-954d-7aefa2b1d3dd",
+   "coverage": "visible_interval",
+   "entityId": "33ea8411-0f00-58b9-af8e-0ee12dce1097",
+   "id": "6235458f166e8209dfbf3e04d8f2a053aca54f4b109945fff5012139abcfb752",
+   "inputEvidence": null,
+   "inputSha256": "7a4829244394337b353d3e32b8d5342cceaefb918d8477d1adb912d5f95e641c",
+   "part": "housing_bottom",
+   "reasons": [
+    "target_source_unverified"
+   ],
+   "revisionId": "1691ba05-ed0b-5b47-8b59-5f6e4ab0b064",
+   "shape": "box",
+   "sourceRefs": [],
+   "sourceRevisionId": "ab54b3bc-f580-4d3c-a3e4-9da2de7b6f96",
+   "status": "rejected",
+   "target": "housing_bottom"
+  }
+ ],
+ "geometryValidation": {
+  "1f7e95c3-03b7-535a-85c9-b05069601181": {
+   "inputSha256": "85eb1a0ab123f7f5b269b99817387ddcab4728c0fd864065b4b3751b53f55eb6",
+   "reasons": [
+    "unvalidated_dimension:W",
+    "unvalidated_dimension:H",
+    "unvalidated_dimension:bottom",
+    "report_gate:G1"
+   ],
+   "status": "rejected"
+  },
+  "283a46db-b449-5ac7-bb74-1041b6c18e62": {
+   "inputSha256": "15a860d388021dc167258bc950924f1881629bbbf3169d81ca427f54978cc836",
+   "reasons": [
+    "unvalidated_dimension:L",
+    "unvalidated_dimension:W",
+    "unvalidated_dimension:H",
+    "unvalidated_dimension:bottom",
+    "report_gate:G1"
+   ],
+   "status": "rejected"
+  },
+  "33c67ca1-10ed-5eb2-ad42-b7ac2e58a5b9": {
+   "inputSha256": "fbca89b5182f16046b18460952732f9ac7d3fbc56dcbc4fdce7ecc6d4d14c421",
+   "reasons": [
+    "model_prior_after_rejected_fit",
+    "unvalidated_dimension:L",
+    "unvalidated_dimension:W",
+    "unvalidated_dimension:H",
+    "unvalidated_dimension:bottom",
+    "report_gate:G1"
+   ],
+   "status": "rejected"
+  },
+  "33ea8411-0f00-58b9-af8e-0ee12dce1097": {
+   "inputSha256": "7a4829244394337b353d3e32b8d5342cceaefb918d8477d1adb912d5f95e641c",
+   "reasons": [
+    "unvalidated_dimension:W",
+    "model_gate:G6",
+    "model_gate:G7",
+    "report_gate:G1"
+   ],
+   "status": "rejected"
+  },
+  "3b648d48-e58c-57f8-abb1-1175b2491a9b": {
+   "inputSha256": "762800859aa248d1f3c49ce143ce8b6e695a2b27e512c7ffac153cc421934ba2",
+   "reasons": [
+    "model_prior_after_rejected_fit",
+    "unvalidated_dimension:L",
+    "unvalidated_dimension:W",
+    "unvalidated_dimension:H",
+    "unvalidated_dimension:bottom",
+    "report_gate:G1"
+   ],
+   "status": "rejected"
+  },
+  "99035227-edbc-5149-b4e5-85dd6ed82ebf": {
+   "inputSha256": "e6889df7821cad38a3fb76932f1ef86f0bae46435afd04f903c8c7aa798167b1",
+   "reasons": [
+    "model_prior_after_rejected_fit",
+    "unvalidated_dimension:L",
+    "unvalidated_dimension:W",
+    "unvalidated_dimension:H",
+    "unvalidated_dimension:bottom",
+    "model_gate:G5",
+    "report_gate:G1"
+   ],
+   "status": "rejected"
+  },
+  "9bc4a50c-d59f-5257-bcd2-29bee4d0263d": {
+   "inputSha256": "42bad5d0ab2534d11e423e43d0dd6ff454e2d00db4ef372c879107961e692f3e",
+   "reasons": [
+    "unvalidated_dimension:W",
+    "unvalidated_dimension:H",
+    "unvalidated_dimension:bottom",
+    "report_gate:G1"
+   ],
+   "status": "rejected"
+  },
+  "c7776130-45f4-547b-a2dd-f183ed3f32f6": {
+   "inputSha256": "c138f433671d37c7d2c6b1ada53d299878db9255148b960d148a7085201e4ca4",
+   "reasons": [
+    "model_prior_after_rejected_fit",
+    "unvalidated_dimension:L",
+    "unvalidated_dimension:W",
+    "unvalidated_dimension:H",
+    "unvalidated_dimension:bottom",
+    "report_gate:G1"
+   ],
+   "status": "rejected"
+  }
+ },
+ "ground": {
+  "normal": [
+   -0.0008542168556001946,
+   -0.9972222745874681,
+   -0.07447822084448531
+  ],
+  "offset": 0.4088711994501314,
+  "plane": [
+   -0.0008542168556001946,
+   -0.9972222745874681,
+   -0.07447822084448531,
+   0.4088711994501314
+  ],
+  "source": {
+   "code": "measurement.ground"
+  },
+  "sourceRefs": [
+   {
+    "assetId": "3e3a12df-879c-4925-b58d-6d1fceac6a2a"
+   }
+  ],
+  "uncertaintyM": 0.0028125858127222587,
+  "uncertaintySource": {
+   "floorSha256": "3b58de72bedf742f79b2025b365c5da4ca5eec7ebbf9109be00f823eb0cca941",
+   "statistic": "p95 distance of the floor points to the fitted plane x nativeToMeters"
+  }
+ },
+ "history": {
+  "boxes": {},
+  "sourceRevisionId": "ab54b3bc-f580-4d3c-a3e4-9da2de7b6f96"
+ },
+ "measurements": [
+  {
+   "args": [
+    "283a46db-b449-5ac7-bb74-1041b6c18e62"
+   ],
+   "evidence": {
+    "coordinateFrameId": "9e131c81-8866-5faf-954d-7aefa2b1d3dd",
+    "coverage": "visible_interval",
+    "inputEvidence": null,
+    "inputSha256": "15a860d388021dc167258bc950924f1881629bbbf3169d81ca427f54978cc836",
+    "method": null,
+    "part": "housing_bottom",
+    "reasons": [
+     "part_identity_unconfirmed",
+     "target_observation_missing"
+    ],
+    "revisionId": "1691ba05-ed0b-5b47-8b59-5f6e4ab0b064",
+    "sourceRefs": [
+     {
+      "assetId": "9af8db9c-e92a-4e0a-8a22-1708ce78481b",
+      "sha256": "37eef9ebf577cbb41526877172dacf22deed735add058a7dab0d6ad4d60001f2"
+     }
+    ],
+    "sourceRevisionId": "ab54b3bc-f580-4d3c-a3e4-9da2de7b6f96",
+    "status": "missing",
+    "target": "housing_bottom"
+   },
+   "flags": [
+    "untrusted"
+   ],
+   "pred": "housing_bottom_height",
+   "u": null,
+   "unit": "mm",
+   "value": null,
+   "views": []
+  },
+  {
+   "args": [
+    "283a46db-b449-5ac7-bb74-1041b6c18e62"
+   ],
+   "evidence": {
+    "coordinateFrameId": "9e131c81-8866-5faf-954d-7aefa2b1d3dd",
+    "coverage": "visible_interval",
+    "inputEvidence": null,
+    "inputSha256": "15a860d388021dc167258bc950924f1881629bbbf3169d81ca427f54978cc836",
+    "method": null,
+    "part": "lowest_beam",
+    "reasons": [
+     "target_observation_missing"
+    ],
+    "revisionId": "1691ba05-ed0b-5b47-8b59-5f6e4ab0b064",
+    "sourceRefs": [
+     {
+      "assetId": "9af8db9c-e92a-4e0a-8a22-1708ce78481b",
+      "sha256": "37eef9ebf577cbb41526877172dacf22deed735add058a7dab0d6ad4d60001f2"
+     }
+    ],
+    "sourceRevisionId": "ab54b3bc-f580-4d3c-a3e4-9da2de7b6f96",
+    "status": "missing",
+    "target": "lowest_beam"
+   },
+   "flags": [
+    "untrusted"
+   ],
+   "pred": "lowest_beam_height",
+   "u": null,
+   "unit": "mm",
+   "value": null,
+   "views": []
+  },
+  {
+   "args": [
+    "33c67ca1-10ed-5eb2-ad42-b7ac2e58a5b9"
+   ],
+   "evidence": {
+    "coordinateFrameId": "9e131c81-8866-5faf-954d-7aefa2b1d3dd",
+    "coverage": "visible_interval",
+    "geometryTargetId": "e8506f3cb55862818f966dd141141a3bd4ddf5ed9050ee8a6eb6a64fdb339a32",
+    "inputEvidence": {
+     "edgeSegmentsSha256": null,
+     "images": [
+      {
+       "imageId": "05551ad4-47b7-476e-b433-36c07262dc84",
+       "imageSha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac",
+       "imageSize": [
+        3024,
+        4032
+       ]
+      }
+     ],
+     "observationRefs": [
+      "0e40150e-2183-59c4-84e9-6793a0c601e9"
+     ],
+     "partMasksSha256": null,
+     "partRegionsSha256": {
+      "05551ad4-47b7-476e-b433-36c07262dc84": "6222b845f787724a1f8b89fdb328fa932fe38f895a5541443c05a88657577b65"
+     },
+     "sourceRefs": [
+      {
+       "assetId": "9af8db9c-e92a-4e0a-8a22-1708ce78481b",
+       "sha256": "37eef9ebf577cbb41526877172dacf22deed735add058a7dab0d6ad4d60001f2"
+      }
+     ],
+     "status": "matched"
+    },
+    "inputSha256": "fbca89b5182f16046b18460952732f9ac7d3fbc56dcbc4fdce7ecc6d4d14c421",
+    "method": "twoView",
+    "part": "panel_bottom",
+    "reasons": [
+     "boundary_geometry_missing",
+     "single_view_see_through",
+     "target_coverage_incomplete",
+     "height_range_missing",
+     "target_uncertainty_missing"
+    ],
+    "revisionId": "1691ba05-ed0b-5b47-8b59-5f6e4ab0b064",
+    "sourceRefs": [
+     {
+      "assetId": "9af8db9c-e92a-4e0a-8a22-1708ce78481b",
+      "sha256": "37eef9ebf577cbb41526877172dacf22deed735add058a7dab0d6ad4d60001f2"
+     }
+    ],
+    "sourceRevisionId": "ab54b3bc-f580-4d3c-a3e4-9da2de7b6f96",
+    "status": "rejected",
+    "target": "panel_bottom"
+   },
+   "flags": [
+    "untrusted"
+   ],
+   "pred": "floor_gap",
+   "u": null,
+   "unit": "mm",
+   "value": null,
+   "views": [
+    "05551ad4-47b7-476e-b433-36c07262dc84"
+   ]
+  },
+  {
+   "args": [
+    "33ea8411-0f00-58b9-af8e-0ee12dce1097"
+   ],
+   "evidence": {
+    "coordinateFrameId": "9e131c81-8866-5faf-954d-7aefa2b1d3dd",
+    "coverage": "visible_interval",
+    "inputEvidence": null,
+    "inputSha256": "7a4829244394337b353d3e32b8d5342cceaefb918d8477d1adb912d5f95e641c",
+    "method": null,
+    "part": "housing_bottom",
+    "reasons": [
+     "part_identity_unconfirmed",
+     "target_observation_missing"
+    ],
+    "revisionId": "1691ba05-ed0b-5b47-8b59-5f6e4ab0b064",
+    "sourceRefs": [
+     {
+      "assetId": "9af8db9c-e92a-4e0a-8a22-1708ce78481b",
+      "sha256": "37eef9ebf577cbb41526877172dacf22deed735add058a7dab0d6ad4d60001f2"
+     }
+    ],
+    "sourceRevisionId": "ab54b3bc-f580-4d3c-a3e4-9da2de7b6f96",
+    "status": "missing",
+    "target": "housing_bottom"
+   },
+   "flags": [
+    "untrusted"
+   ],
+   "pred": "housing_bottom_height",
+   "u": null,
+   "unit": "mm",
+   "value": null,
+   "views": []
+  },
+  {
+   "args": [
+    "33ea8411-0f00-58b9-af8e-0ee12dce1097"
+   ],
+   "evidence": {
+    "coordinateFrameId": "9e131c81-8866-5faf-954d-7aefa2b1d3dd",
+    "coverage": "visible_interval",
+    "inputEvidence": null,
+    "inputSha256": "7a4829244394337b353d3e32b8d5342cceaefb918d8477d1adb912d5f95e641c",
+    "method": null,
+    "part": "lowest_beam",
+    "reasons": [
+     "target_observation_missing"
+    ],
+    "revisionId": "1691ba05-ed0b-5b47-8b59-5f6e4ab0b064",
+    "sourceRefs": [
+     {
+      "assetId": "9af8db9c-e92a-4e0a-8a22-1708ce78481b",
+      "sha256": "37eef9ebf577cbb41526877172dacf22deed735add058a7dab0d6ad4d60001f2"
+     }
+    ],
+    "sourceRevisionId": "ab54b3bc-f580-4d3c-a3e4-9da2de7b6f96",
+    "status": "missing",
+    "target": "lowest_beam"
+   },
+   "flags": [
+    "untrusted"
+   ],
+   "pred": "lowest_beam_height",
+   "u": null,
+   "unit": "mm",
+   "value": null,
+   "views": []
+  }
+ ],
+ "publicationId": "497b7fb5-b778-410b-ae82-875e1e106bbd",
+ "revisionId": "1691ba05-ed0b-5b47-8b59-5f6e4ab0b064",
+ "scale": {
+  "nativeToMeters": 3.5616493184162774,
+  "sourceRefs": [
+   {
+    "edgeRule": "estop_cylinder.fit (cell030-sept-pipeline-2026-10-05), unchanged",
+    "features": [
+     {
+      "deviation": -0.014901586654645804,
+      "feature": "red lip 4 cm",
+      "measuredM": 0.03940393653381417,
+      "measuredNative": 0.011063395918870395,
+      "photo": "030 photo 2",
+      "specM": 0.04
+     },
+     {
+      "deviation": 0.01512700300068559,
+      "feature": "yellow body 8 cm",
+      "measuredM": 0.08121016024005485,
+      "measuredNative": 0.022801279120923043,
+      "photo": "030 photo 2",
+      "specM": 0.08
+     }
+    ],
+    "imageId": "05551ad4-47b7-476e-b433-36c07262dc84",
+    "kind": "reference_object",
+    "limit": 0.04,
+    "maxDeviation": 0.01512700300068559,
+    "method": "geometry-backbone-ab-2026-10-06 fair evaluator (fair_ab_modal.analyse -> estop_cylinder.fit, unchanged) on the GPL-free export bbab-export-030-mvs-fill (same e-stop / floor pixels as bbab-export-030-mvs-scipyba): e-stop axis triangulated in the the 030 point map (photo 2 box); red lip 4 cm + yellow body 8 cm sub-pixel symmetric widths per photo; joint = geometric mean of the six feature scales",
+    "object": "emergency stop (own fit in this geometry, photos 1-3)",
+    "passed": true,
+    "specification": {
+     "heightM": 0.1,
+     "redHeadDiameterM": 0.04,
+     "source": "user, 2026-10-04",
+     "yellowBodyMaxDiameterM": 0.08
+    }
+   }
+  ],
+  "status": "operator_anchored",
+  "uncertaintyRelative": 0.015014294827665723,
+  "uncertaintySource": "half the spread of the red-lip-only and yellow-body-only feature scales over the joint scale",
+  "source": {
+   "code": "measurement.scale"
+  }
+ },
+ "schemaVersion": 2,
+ "sourceRevisionId": "ab54b3bc-f580-4d3c-a3e4-9da2de7b6f96",
+ "variant": {
+  "id": "030-v2-mvs-fill-sam3d-parts",
+  "label": {
+   "code": "measurement.variant",
+   "params": {
+    "variant": "030-v2-mvs-fill-sam3d-parts",
+    "version": "2"
+   }
+  }
+ },
+ "labels": {
+  "c7776130-45f4-547b-a2dd-f183ed3f32f6": {
+   "code": "measurement.object.cart"
+  },
+  "99035227-edbc-5149-b4e5-85dd6ed82ebf": {
+   "code": "measurement.object.guard"
+  },
+  "283a46db-b449-5ac7-bb74-1041b6c18e62": {
+   "code": "measurement.object.left_light_curtain"
+  },
+  "1f7e95c3-03b7-535a-85c9-b05069601181": {
+   "code": "measurement.object.left_post"
+  },
+  "33c67ca1-10ed-5eb2-ad42-b7ac2e58a5b9": {
+   "code": "measurement.object.right_fence"
+  },
+  "33ea8411-0f00-58b9-af8e-0ee12dce1097": {
+   "code": "measurement.object.right_light_curtain"
+  },
+  "9bc4a50c-d59f-5257-bcd2-29bee4d0263d": {
+   "code": "measurement.object.right_post"
+  },
+  "3b648d48-e58c-57f8-abb1-1175b2491a9b": {
+   "code": "measurement.object.robot"
+  },
+  "378a893c-8a99-5862-9d2d-88f3983413ac": {
+   "code": "measurement.object.observed_floor"
+  }
+ },
+ "confidence": {
+  "c7776130-45f4-547b-a2dd-f183ed3f32f6": {
+   "level": "low",
+   "label": {
+    "code": "box.level.low"
+   },
+   "reasons": [
+    {
+     "code": "measurement.cap.residual",
+     "params": {
+      "residual": "33"
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.L"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    }
+   ],
+   "missing": [
+    {
+     "code": "geometry.unvalidated"
+    }
+   ]
+  },
+  "99035227-edbc-5149-b4e5-85dd6ed82ebf": {
+   "level": "low",
+   "label": {
+    "code": "box.level.low"
+   },
+   "reasons": [
+    {
+     "code": "measurement.cap.coverage",
+     "params": {
+      "coverage": "0"
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.L"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    }
+   ],
+   "missing": [
+    {
+     "code": "measurement.gate.G5",
+     "params": {
+      "values": "0.15 / 0.80"
+     }
+    },
+    {
+     "code": "geometry.unvalidated"
+    }
+   ]
+  },
+  "283a46db-b449-5ac7-bb74-1041b6c18e62": {
+   "level": "low",
+   "label": {
+    "code": "box.level.low"
+   },
+   "reasons": [
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.L"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    }
+   ],
+   "missing": [
+    {
+     "code": "geometry.unvalidated"
+    }
+   ]
+  },
+  "1f7e95c3-03b7-535a-85c9-b05069601181": {
+   "level": "low",
+   "label": {
+    "code": "box.level.low"
+   },
+   "reasons": [
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    }
+   ],
+   "missing": [
+    {
+     "code": "geometry.unvalidated"
+    }
+   ]
+  },
+  "33c67ca1-10ed-5eb2-ad42-b7ac2e58a5b9": {
+   "level": "low",
+   "label": {
+    "code": "box.level.low"
+   },
+   "reasons": [
+    {
+     "code": "measurement.cap.residual",
+     "params": {
+      "residual": "39"
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.L"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    }
+   ],
+   "missing": [
+    {
+     "code": "geometry.unvalidated"
+    }
+   ]
+  },
+  "33ea8411-0f00-58b9-af8e-0ee12dce1097": {
+   "level": "low",
+   "label": {
+    "code": "box.level.low"
+   },
+   "reasons": [],
+   "missing": [
+    {
+     "code": "measurement.gate.exploded",
+     "params": {
+      "axis": "L",
+      "size": "0.17",
+      "factor": 3
+     }
+    },
+    {
+     "code": "measurement.gate.G7",
+     "params": {
+      "dimension": {
+       "code": "box.dim.L"
+      },
+      "model": "13.3",
+      "box": "5.4",
+      "error": "+146"
+     }
+    },
+    {
+     "code": "geometry.unvalidated"
+    }
+   ]
+  },
+  "9bc4a50c-d59f-5257-bcd2-29bee4d0263d": {
+   "level": "low",
+   "label": {
+    "code": "box.level.low"
+   },
+   "reasons": [
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.unverified"
+      }
+     }
+    }
+   ],
+   "missing": [
+    {
+     "code": "geometry.unvalidated"
+    }
+   ]
+  },
+  "3b648d48-e58c-57f8-abb1-1175b2491a9b": {
+   "level": "low",
+   "label": {
+    "code": "box.level.low"
+   },
+   "reasons": [
+    {
+     "code": "measurement.cap.coverage",
+     "params": {
+      "coverage": "67"
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.L"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.H"
+      },
+      "level": {
+       "code": "box.level.low"
+      }
+     }
+    },
+    {
+     "code": "measurement.reason.dimension",
+     "params": {
+      "dimension": {
+       "code": "box.dim.bottom"
+      },
+      "level": {
+       "code": "box.level.unverified"
+      }
+     }
+    }
+   ],
+   "missing": [
+    {
+     "code": "geometry.unvalidated"
+    }
+   ]
+  }
+ },
+ "facts": {
+  "c7776130-45f4-547b-a2dd-f183ed3f32f6": [
+   {
+    "label": {
+     "code": "measurement.fact.gates"
+    },
+    "kind": "check",
+    "text": {
+     "code": "measurement.passedDetail"
+    }
+   },
+   {
+    "label": {
+     "code": "measurement.fact.assembly"
+    },
+    "kind": "note",
+    "text": {
+     "code": "message.join",
+     "params": {
+      "first": {
+       "code": "message.join",
+       "params": {
+        "first": {
+         "code": "measurement.iou",
+         "params": {
+          "values": "0.77 / 0.89",
+          "mean": "0.83"
+         }
+        },
+        "second": {
+         "code": "measurement.depthResidual",
+         "params": {
+          "depth": "1.2"
+         }
+        }
+       }
+      },
+      "second": {
+       "code": "measurement.lowest",
+       "params": {
+        "height": "+3.1"
+       }
+      }
+     }
+    }
+   }
+  ],
+  "99035227-edbc-5149-b4e5-85dd6ed82ebf": [
+   {
+    "label": {
+     "code": "measurement.fact.gates"
+    },
+    "kind": "check",
+    "text": {
+     "code": "measurement.gate.G5",
+     "params": {
+      "values": "0.15 / 0.80"
+     }
+    }
+   },
+   {
+    "label": {
+     "code": "measurement.fact.assembly"
+    },
+    "kind": "note",
+    "text": {
+     "code": "message.join",
+     "params": {
+      "first": {
+       "code": "message.join",
+       "params": {
+        "first": {
+         "code": "measurement.iou",
+         "params": {
+          "values": "0.15 / 0.80",
+          "mean": "0.47"
+         }
+        },
+        "second": {
+         "code": "measurement.depthResidual",
+         "params": {
+          "depth": "4.5"
+         }
+        }
+       }
+      },
+      "second": {
+       "code": "measurement.lowest",
+       "params": {
+        "height": "+31.5"
+       }
+      }
+     }
+    }
+   }
+  ],
+  "283a46db-b449-5ac7-bb74-1041b6c18e62": [
+   {
+    "label": {
+     "code": "measurement.fact.gates"
+    },
+    "kind": "check",
+    "text": {
+     "code": "measurement.passedDetail"
+    }
+   },
+   {
+    "label": {
+     "code": "measurement.fact.assembly"
+    },
+    "kind": "note",
+    "text": {
+     "code": "message.join",
+     "params": {
+      "first": {
+       "code": "message.join",
+       "params": {
+        "first": {
+         "code": "measurement.iou",
+         "params": {
+          "values": "0.72 / 0.90",
+          "mean": "0.81"
+         }
+        },
+        "second": {
+         "code": "measurement.depthResidual",
+         "params": {
+          "depth": "0.9"
+         }
+        }
+       }
+      },
+      "second": {
+       "code": "measurement.lowest",
+       "params": {
+        "height": "+26.5"
+       }
+      }
+     }
+    }
+   },
+   {
+    "label": {
+     "code": "measurement.fact.field"
+    },
+    "kind": "field",
+    "text": {
+     "code": "message.join",
+     "params": {
+      "first": {
+       "code": "measurement.field",
+       "params": {
+        "part": {
+         "code": "measurement.part.housingLeft"
+        },
+        "value": 23.6,
+        "field": 24
+       }
+      },
+      "second": {
+       "code": "measurement.field.error",
+       "params": {
+        "error": "-0.4"
+       }
+      }
+     }
+    }
+   }
+  ],
+  "1f7e95c3-03b7-535a-85c9-b05069601181": [
+   {
+    "label": {
+     "code": "measurement.fact.gates"
+    },
+    "kind": "check",
+    "text": {
+     "code": "measurement.passedDetail"
+    }
+   },
+   {
+    "label": {
+     "code": "measurement.fact.assembly"
+    },
+    "kind": "note",
+    "text": {
+     "code": "message.join",
+     "params": {
+      "first": {
+       "code": "message.join",
+       "params": {
+        "first": {
+         "code": "measurement.iou",
+         "params": {
+          "values": "0.91 / 0.86",
+          "mean": "0.89"
+         }
+        },
+        "second": {
+         "code": "measurement.depthResidual",
+         "params": {
+          "depth": "0.7"
+         }
+        }
+       }
+      },
+      "second": {
+       "code": "measurement.lowest",
+       "params": {
+        "height": "+1.2"
+       }
+      }
+     }
+    }
+   }
+  ],
+  "33c67ca1-10ed-5eb2-ad42-b7ac2e58a5b9": [
+   {
+    "label": {
+     "code": "measurement.fact.gates"
+    },
+    "kind": "check",
+    "text": {
+     "code": "measurement.passedDetail"
+    }
+   },
+   {
+    "label": {
+     "code": "measurement.fact.assembly"
+    },
+    "kind": "note",
+    "text": {
+     "code": "message.join",
+     "params": {
+      "first": {
+       "code": "message.join",
+       "params": {
+        "first": {
+         "code": "measurement.iou",
+         "params": {
+          "values": "0.77",
+          "mean": "0.77"
+         }
+        },
+        "second": {
+         "code": "measurement.depthResidual",
+         "params": {
+          "depth": "1.8"
+         }
+        }
+       }
+      },
+      "second": {
+       "code": "measurement.lowest",
+       "params": {
+        "height": "+16.2"
+       }
+      }
+     }
+    }
+   }
+  ],
+  "33ea8411-0f00-58b9-af8e-0ee12dce1097": [
+   {
+    "label": {
+     "code": "measurement.fact.gates"
+    },
+    "kind": "check",
+    "text": {
+     "code": "message.join",
+     "params": {
+      "first": {
+       "code": "measurement.gate.exploded",
+       "params": {
+        "axis": "L",
+        "size": "0.17",
+        "factor": 3
+       }
+      },
+      "second": {
+       "code": "measurement.gate.G7",
+       "params": {
+        "dimension": {
+         "code": "box.dim.L"
+        },
+        "model": "13.3",
+        "box": "5.4",
+        "error": "+146"
+       }
+      }
+     }
+    }
+   },
+   {
+    "label": {
+     "code": "measurement.fact.assembly"
+    },
+    "kind": "note",
+    "text": {
+     "code": "message.join",
+     "params": {
+      "first": {
+       "code": "message.join",
+       "params": {
+        "first": {
+         "code": "measurement.iou",
+         "params": {
+          "values": "0.88 / 0.62",
+          "mean": "0.75"
+         }
+        },
+        "second": {
+         "code": "measurement.depthResidual",
+         "params": {
+          "depth": "0.9"
+         }
+        }
+       }
+      },
+      "second": {
+       "code": "measurement.lowest",
+       "params": {
+        "height": "+27.0"
+       }
+      }
+     }
+    }
+   },
+   {
+    "label": {
+     "code": "measurement.fact.field"
+    },
+    "kind": "field",
+    "text": {
+     "code": "message.join",
+     "params": {
+      "first": {
+       "code": "measurement.field",
+       "params": {
+        "part": {
+         "code": "measurement.part.housingRight"
+        },
+        "value": 24.6,
+        "field": 24
+       }
+      },
+      "second": {
+       "code": "measurement.field.error",
+       "params": {
+        "error": "+0.6"
+       }
+      }
+     }
+    }
+   }
+  ],
+  "9bc4a50c-d59f-5257-bcd2-29bee4d0263d": [
+   {
+    "label": {
+     "code": "measurement.fact.gates"
+    },
+    "kind": "check",
+    "text": {
+     "code": "measurement.passedDetail"
+    }
+   },
+   {
+    "label": {
+     "code": "measurement.fact.assembly"
+    },
+    "kind": "note",
+    "text": {
+     "code": "message.join",
+     "params": {
+      "first": {
+       "code": "message.join",
+       "params": {
+        "first": {
+         "code": "measurement.iou",
+         "params": {
+          "values": "0.94",
+          "mean": "0.94"
+         }
+        },
+        "second": {
+         "code": "measurement.depthResidual",
+         "params": {
+          "depth": "0.9"
+         }
+        }
+       }
+      },
+      "second": {
+       "code": "measurement.lowest",
+       "params": {
+        "height": "+25.8"
+       }
+      }
+     }
+    }
+   }
+  ],
+  "3b648d48-e58c-57f8-abb1-1175b2491a9b": [
+   {
+    "label": {
+     "code": "measurement.fact.gates"
+    },
+    "kind": "check",
+    "text": {
+     "code": "measurement.passedDetail"
+    }
+   },
+   {
+    "label": {
+     "code": "measurement.fact.assembly"
+    },
+    "kind": "note",
+    "text": {
+     "code": "message.join",
+     "params": {
+      "first": {
+       "code": "message.join",
+       "params": {
+        "first": {
+         "code": "measurement.iou",
+         "params": {
+          "values": "0.71 / 0.53",
+          "mean": "0.62"
+         }
+        },
+        "second": {
+         "code": "measurement.depthResidual",
+         "params": {
+          "depth": "2.9"
+         }
+        }
+       }
+      },
+      "second": {
+       "code": "measurement.lowest",
+       "params": {
+        "height": "+92.7"
+       }
+      }
+     }
+    }
+   }
+  ]
+ },
+ "pipelines": {
+  "c7776130-45f4-547b-a2dd-f183ed3f32f6": {
+   "stages": [
+    {
+     "label": {
+      "code": "measurement.stage.geometry"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.geometry",
+        "params": {
+         "scale": "356.2"
+        }
+       },
+       "second": {
+        "code": "measurement.coverage",
+        "params": {
+         "coverage": "73"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.completion"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.completion"
+       },
+       "second": {
+        "code": "measurement.selected",
+        "params": {
+         "candidate": {
+          "code": "measurement.selection.unchanged"
+         },
+         "photo": "1"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.assembly"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.assembly",
+        "params": {
+         "result": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.iou",
+              "params": {
+               "values": "0.77 / 0.89",
+               "mean": "0.83"
+              }
+             },
+             "second": {
+              "code": "measurement.depthResidual",
+              "params": {
+               "depth": "1.2"
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.lowest",
+            "params": {
+             "height": "+3.1"
+            }
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.penalty",
+        "params": {
+         "penalty": "0.0000"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.shape"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.shape",
+        "params": {
+         "verdict": {
+          "code": "measurement.shape.ambiguous"
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.bestDepth",
+        "params": {
+         "depth": "+105"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.floor"
+     },
+     "text": {
+      "code": "measurement.floor",
+      "params": {
+       "height": "+3.1",
+       "status": {
+        "code": "measurement.floor.hovers"
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.box"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "message.join",
+        "params": {
+         "first": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.box",
+              "params": {
+               "length": "135",
+               "width": "255",
+               "height": "104",
+               "bottom": "4.1",
+               "confidence": {
+                "code": "message.join",
+                "params": {
+                 "first": {
+                  "code": "message.join",
+                  "params": {
+                   "first": {
+                    "code": "message.join",
+                    "params": {
+                     "first": {
+                      "code": "measurement.reason.dimension",
+                      "params": {
+                       "dimension": {
+                        "code": "box.dim.L"
+                       },
+                       "level": {
+                        "code": "box.level.low"
+                       }
+                      }
+                     },
+                     "second": {
+                      "code": "measurement.reason.dimension",
+                      "params": {
+                       "dimension": {
+                        "code": "box.dim.W"
+                       },
+                       "level": {
+                        "code": "box.level.low"
+                       }
+                      }
+                     }
+                    }
+                   },
+                   "second": {
+                    "code": "measurement.reason.dimension",
+                    "params": {
+                     "dimension": {
+                      "code": "box.dim.H"
+                     },
+                     "level": {
+                      "code": "box.level.low"
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "second": {
+                  "code": "measurement.reason.dimension",
+                  "params": {
+                   "dimension": {
+                    "code": "box.dim.bottom"
+                   },
+                   "level": {
+                    "code": "box.level.low"
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             },
+             "second": {
+              "code": "measurement.cap.residual",
+              "params": {
+               "residual": "33"
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.reason.dimension",
+            "params": {
+             "dimension": {
+              "code": "box.dim.L"
+             },
+             "level": {
+              "code": "box.level.low"
+             }
+            }
+           }
+          }
+         },
+         "second": {
+          "code": "measurement.reason.dimension",
+          "params": {
+           "dimension": {
+            "code": "box.dim.H"
+           },
+           "level": {
+            "code": "box.level.low"
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.reason.dimension",
+        "params": {
+         "dimension": {
+          "code": "box.dim.bottom"
+         },
+         "level": {
+          "code": "box.level.low"
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.gates"
+     },
+     "text": {
+      "code": "measurement.passed"
+     }
+    }
+   ],
+   "caption": {
+    "code": "measurement.caption"
+   },
+   "url": "measurement-layer/pipeline-c7776130.jpg"
+  },
+  "99035227-edbc-5149-b4e5-85dd6ed82ebf": {
+   "stages": [
+    {
+     "label": {
+      "code": "measurement.stage.geometry"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.geometry",
+        "params": {
+         "scale": "356.2"
+        }
+       },
+       "second": {
+        "code": "measurement.coverage",
+        "params": {
+         "coverage": "86"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.completion"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.completion"
+       },
+       "second": {
+        "code": "measurement.selected",
+        "params": {
+         "candidate": {
+          "code": "measurement.selection.measuredBox",
+          "params": {
+           "reasons": {
+            "code": "measurement.selection.silhouette",
+            "params": {
+             "photos": {
+              "code": "measurement.selection.photoIou",
+              "params": {
+               "photo": "1",
+               "iou": "0.15"
+              }
+             }
+            }
+           }
+          }
+         },
+         "photo": "2"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.assembly"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.assembly",
+        "params": {
+         "result": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.iou",
+              "params": {
+               "values": "0.15 / 0.80",
+               "mean": "0.47"
+              }
+             },
+             "second": {
+              "code": "measurement.depthResidual",
+              "params": {
+               "depth": "4.5"
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.lowest",
+            "params": {
+             "height": "+31.5"
+            }
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.penalty",
+        "params": {
+         "penalty": "0.0000"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.shape"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.shape",
+        "params": {
+         "verdict": {
+          "code": "measurement.shape.inconclusive"
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.bestDepth",
+        "params": {
+         "depth": "+0"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.floor"
+     },
+     "text": {
+      "code": "measurement.floor",
+      "params": {
+       "height": "+31.5",
+       "status": {
+        "code": "measurement.floor.above"
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.box"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "message.join",
+        "params": {
+         "first": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.box",
+              "params": {
+               "length": "59",
+               "width": "136",
+               "height": "68",
+               "bottom": "31.7",
+               "confidence": {
+                "code": "message.join",
+                "params": {
+                 "first": {
+                  "code": "message.join",
+                  "params": {
+                   "first": {
+                    "code": "message.join",
+                    "params": {
+                     "first": {
+                      "code": "measurement.reason.dimension",
+                      "params": {
+                       "dimension": {
+                        "code": "box.dim.L"
+                       },
+                       "level": {
+                        "code": "box.level.low"
+                       }
+                      }
+                     },
+                     "second": {
+                      "code": "measurement.reason.dimension",
+                      "params": {
+                       "dimension": {
+                        "code": "box.dim.W"
+                       },
+                       "level": {
+                        "code": "box.level.low"
+                       }
+                      }
+                     }
+                    }
+                   },
+                   "second": {
+                    "code": "measurement.reason.dimension",
+                    "params": {
+                     "dimension": {
+                      "code": "box.dim.H"
+                     },
+                     "level": {
+                      "code": "box.level.low"
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "second": {
+                  "code": "measurement.reason.dimension",
+                  "params": {
+                   "dimension": {
+                    "code": "box.dim.bottom"
+                   },
+                   "level": {
+                    "code": "box.level.low"
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             },
+             "second": {
+              "code": "measurement.cap.coverage",
+              "params": {
+               "coverage": "0"
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.reason.dimension",
+            "params": {
+             "dimension": {
+              "code": "box.dim.L"
+             },
+             "level": {
+              "code": "box.level.low"
+             }
+            }
+           }
+          }
+         },
+         "second": {
+          "code": "measurement.reason.dimension",
+          "params": {
+           "dimension": {
+            "code": "box.dim.H"
+           },
+           "level": {
+            "code": "box.level.low"
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.reason.dimension",
+        "params": {
+         "dimension": {
+          "code": "box.dim.bottom"
+         },
+         "level": {
+          "code": "box.level.low"
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.gates"
+     },
+     "text": {
+      "code": "measurement.gate.G5",
+      "params": {
+       "values": "0.15 / 0.80"
+      }
+     }
+    }
+   ],
+   "caption": {
+    "code": "measurement.caption"
+   },
+   "url": "measurement-layer/pipeline-99035227.jpg"
+  },
+  "283a46db-b449-5ac7-bb74-1041b6c18e62": {
+   "stages": [
+    {
+     "label": {
+      "code": "measurement.stage.geometry"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.geometry",
+        "params": {
+         "scale": "356.2"
+        }
+       },
+       "second": {
+        "code": "measurement.coverage",
+        "params": {
+         "coverage": "65"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.completion"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.completion"
+       },
+       "second": {
+        "code": "measurement.selected",
+        "params": {
+         "candidate": {
+          "code": "measurement.selection.unchanged"
+         },
+         "photo": "1"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.assembly"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.assembly",
+        "params": {
+         "result": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.iou",
+              "params": {
+               "values": "0.72 / 0.90",
+               "mean": "0.81"
+              }
+             },
+             "second": {
+              "code": "measurement.depthResidual",
+              "params": {
+               "depth": "0.9"
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.lowest",
+            "params": {
+             "height": "+26.5"
+            }
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.penalty",
+        "params": {
+         "penalty": "0.0000"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.shape"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.shape",
+        "params": {
+         "verdict": {
+          "code": "measurement.shape.inconclusive"
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.bestDepth",
+        "params": {
+         "depth": "+0"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.floor"
+     },
+     "text": {
+      "code": "measurement.floor",
+      "params": {
+       "height": "+26.5",
+       "status": {
+        "code": "measurement.floor.above"
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.lower"
+     },
+     "text": {
+      "code": "measurement.lower.unknown",
+      "params": {
+       "part": {
+        "code": "measurement.object.left_light_curtain"
+       },
+       "reason": {
+        "code": "measurement.lower.reason.two_view_rejected"
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.box"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "message.join",
+        "params": {
+         "first": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "measurement.box",
+            "params": {
+             "length": "5",
+             "width": "20",
+             "height": "162",
+             "bottom": "25.7",
+             "confidence": {
+              "code": "message.join",
+              "params": {
+               "first": {
+                "code": "message.join",
+                "params": {
+                 "first": {
+                  "code": "message.join",
+                  "params": {
+                   "first": {
+                    "code": "measurement.reason.dimension",
+                    "params": {
+                     "dimension": {
+                      "code": "box.dim.L"
+                     },
+                     "level": {
+                      "code": "box.level.low"
+                     }
+                    }
+                   },
+                   "second": {
+                    "code": "measurement.reason.dimension",
+                    "params": {
+                     "dimension": {
+                      "code": "box.dim.W"
+                     },
+                     "level": {
+                      "code": "box.level.unverified"
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "second": {
+                  "code": "measurement.reason.dimension",
+                  "params": {
+                   "dimension": {
+                    "code": "box.dim.H"
+                   },
+                   "level": {
+                    "code": "box.level.low"
+                   }
+                  }
+                 }
+                }
+               },
+               "second": {
+                "code": "measurement.reason.dimension",
+                "params": {
+                 "dimension": {
+                  "code": "box.dim.bottom"
+                 },
+                 "level": {
+                  "code": "box.level.low"
+                 }
+                }
+               }
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.reason.dimension",
+            "params": {
+             "dimension": {
+              "code": "box.dim.L"
+             },
+             "level": {
+              "code": "box.level.low"
+             }
+            }
+           }
+          }
+         },
+         "second": {
+          "code": "measurement.reason.dimension",
+          "params": {
+           "dimension": {
+            "code": "box.dim.H"
+           },
+           "level": {
+            "code": "box.level.low"
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.reason.dimension",
+        "params": {
+         "dimension": {
+          "code": "box.dim.bottom"
+         },
+         "level": {
+          "code": "box.level.low"
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.gates"
+     },
+     "text": {
+      "code": "measurement.passed"
+     }
+    }
+   ],
+   "caption": {
+    "code": "measurement.caption"
+   },
+   "url": "measurement-layer/pipeline-283a46db.jpg"
+  },
+  "1f7e95c3-03b7-535a-85c9-b05069601181": {
+   "stages": [
+    {
+     "label": {
+      "code": "measurement.stage.geometry"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.geometry",
+        "params": {
+         "scale": "356.2"
+        }
+       },
+       "second": {
+        "code": "measurement.coverage",
+        "params": {
+         "coverage": "78"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.completion"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.completion"
+       },
+       "second": {
+        "code": "measurement.selected",
+        "params": {
+         "candidate": {
+          "code": "measurement.selection.unchanged"
+         },
+         "photo": "1"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.assembly"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.assembly",
+        "params": {
+         "result": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.iou",
+              "params": {
+               "values": "0.91 / 0.86",
+               "mean": "0.89"
+              }
+             },
+             "second": {
+              "code": "measurement.depthResidual",
+              "params": {
+               "depth": "0.7"
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.lowest",
+            "params": {
+             "height": "+1.2"
+            }
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.penalty",
+        "params": {
+         "penalty": "0.0000"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.shape"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.shape",
+        "params": {
+         "verdict": {
+          "code": "measurement.shape.inconclusive"
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.bestDepth",
+        "params": {
+         "depth": "-2"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.floor"
+     },
+     "text": {
+      "code": "measurement.floor",
+      "params": {
+       "height": "+1.2",
+       "status": {
+        "code": "measurement.floor.on_floor"
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.box"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "message.join",
+        "params": {
+         "first": {
+          "code": "measurement.box",
+          "params": {
+           "length": "11",
+           "width": "19",
+           "height": "92",
+           "bottom": "0.0",
+           "confidence": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "message.join",
+              "params": {
+               "first": {
+                "code": "message.join",
+                "params": {
+                 "first": {
+                  "code": "measurement.reason.dimension",
+                  "params": {
+                   "dimension": {
+                    "code": "box.dim.L"
+                   },
+                   "level": {
+                    "code": "box.level.high"
+                   }
+                  }
+                 },
+                 "second": {
+                  "code": "measurement.reason.dimension",
+                  "params": {
+                   "dimension": {
+                    "code": "box.dim.W"
+                   },
+                   "level": {
+                    "code": "box.level.low"
+                   }
+                  }
+                 }
+                }
+               },
+               "second": {
+                "code": "measurement.reason.dimension",
+                "params": {
+                 "dimension": {
+                  "code": "box.dim.H"
+                 },
+                 "level": {
+                  "code": "box.level.low"
+                 }
+                }
+               }
+              }
+             },
+             "second": {
+              "code": "measurement.reason.dimension",
+              "params": {
+               "dimension": {
+                "code": "box.dim.bottom"
+               },
+               "level": {
+                "code": "box.level.low"
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         "second": {
+          "code": "measurement.reason.dimension",
+          "params": {
+           "dimension": {
+            "code": "box.dim.H"
+           },
+           "level": {
+            "code": "box.level.low"
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.reason.dimension",
+        "params": {
+         "dimension": {
+          "code": "box.dim.bottom"
+         },
+         "level": {
+          "code": "box.level.low"
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.gates"
+     },
+     "text": {
+      "code": "measurement.passed"
+     }
+    }
+   ],
+   "caption": {
+    "code": "measurement.caption"
+   },
+   "url": "measurement-layer/pipeline-1f7e95c3.jpg"
+  },
+  "33c67ca1-10ed-5eb2-ad42-b7ac2e58a5b9": {
+   "stages": [
+    {
+     "label": {
+      "code": "measurement.stage.geometry"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.geometry",
+        "params": {
+         "scale": "356.2"
+        }
+       },
+       "second": {
+        "code": "measurement.coverage",
+        "params": {
+         "coverage": "85"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.completion"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.completion"
+       },
+       "second": {
+        "code": "measurement.selected",
+        "params": {
+         "candidate": {
+          "code": "measurement.selection.unchanged"
+         },
+         "photo": "1"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.assembly"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.assembly",
+        "params": {
+         "result": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.iou",
+              "params": {
+               "values": "0.77",
+               "mean": "0.77"
+              }
+             },
+             "second": {
+              "code": "measurement.depthResidual",
+              "params": {
+               "depth": "1.8"
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.lowest",
+            "params": {
+             "height": "+16.2"
+            }
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.penalty",
+        "params": {
+         "penalty": "0.0000"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.shape"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.shape",
+        "params": {
+         "verdict": {
+          "code": "measurement.shape.inconclusive"
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.bestDepth",
+        "params": {
+         "depth": "-39"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.floor"
+     },
+     "text": {
+      "code": "measurement.floor",
+      "params": {
+       "height": "+16.2",
+       "status": {
+        "code": "measurement.floor.above"
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.lower"
+     },
+     "text": {
+      "code": "measurement.lower.unknown",
+      "params": {
+       "part": {
+        "code": "measurement.name",
+        "params": {
+         "name": "panel_bottom"
+        }
+       },
+       "reason": {
+        "code": "measurement.lower.reason.single_view_see_through"
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.lower"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.lower.unknown",
+        "params": {
+         "part": {
+          "code": "measurement.object.right_fence"
+         },
+         "reason": {
+          "code": "measurement.lower.reason.sigma_too_large"
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.lower.estimate",
+        "params": {
+         "value": "18.9",
+         "sigma": "15.5"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.box"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "message.join",
+        "params": {
+         "first": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.box",
+              "params": {
+               "length": "18",
+               "width": "268",
+               "height": "249",
+               "bottom": "16.3",
+               "confidence": {
+                "code": "message.join",
+                "params": {
+                 "first": {
+                  "code": "message.join",
+                  "params": {
+                   "first": {
+                    "code": "message.join",
+                    "params": {
+                     "first": {
+                      "code": "measurement.reason.dimension",
+                      "params": {
+                       "dimension": {
+                        "code": "box.dim.L"
+                       },
+                       "level": {
+                        "code": "box.level.low"
+                       }
+                      }
+                     },
+                     "second": {
+                      "code": "measurement.reason.dimension",
+                      "params": {
+                       "dimension": {
+                        "code": "box.dim.W"
+                       },
+                       "level": {
+                        "code": "box.level.unverified"
+                       }
+                      }
+                     }
+                    }
+                   },
+                   "second": {
+                    "code": "measurement.reason.dimension",
+                    "params": {
+                     "dimension": {
+                      "code": "box.dim.H"
+                     },
+                     "level": {
+                      "code": "box.level.low"
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "second": {
+                  "code": "measurement.reason.dimension",
+                  "params": {
+                   "dimension": {
+                    "code": "box.dim.bottom"
+                   },
+                   "level": {
+                    "code": "box.level.low"
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             },
+             "second": {
+              "code": "measurement.cap.residual",
+              "params": {
+               "residual": "39"
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.reason.dimension",
+            "params": {
+             "dimension": {
+              "code": "box.dim.L"
+             },
+             "level": {
+              "code": "box.level.low"
+             }
+            }
+           }
+          }
+         },
+         "second": {
+          "code": "measurement.reason.dimension",
+          "params": {
+           "dimension": {
+            "code": "box.dim.H"
+           },
+           "level": {
+            "code": "box.level.low"
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.reason.dimension",
+        "params": {
+         "dimension": {
+          "code": "box.dim.bottom"
+         },
+         "level": {
+          "code": "box.level.low"
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.gates"
+     },
+     "text": {
+      "code": "measurement.passed"
+     }
+    }
+   ],
+   "caption": {
+    "code": "measurement.caption"
+   },
+   "url": "measurement-layer/pipeline-33c67ca1.jpg"
+  },
+  "33ea8411-0f00-58b9-af8e-0ee12dce1097": {
+   "stages": [
+    {
+     "label": {
+      "code": "measurement.stage.geometry"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.geometry",
+        "params": {
+         "scale": "356.2"
+        }
+       },
+       "second": {
+        "code": "measurement.coverage",
+        "params": {
+         "coverage": "66"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.completion"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.completion"
+       },
+       "second": {
+        "code": "measurement.selected",
+        "params": {
+         "candidate": {
+          "code": "measurement.selection.unchanged"
+         },
+         "photo": "2"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.assembly"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.assembly",
+        "params": {
+         "result": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.iou",
+              "params": {
+               "values": "0.88 / 0.62",
+               "mean": "0.75"
+              }
+             },
+             "second": {
+              "code": "measurement.depthResidual",
+              "params": {
+               "depth": "0.9"
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.lowest",
+            "params": {
+             "height": "+27.0"
+            }
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.penalty",
+        "params": {
+         "penalty": "0.0000"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.shape"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.shape",
+        "params": {
+         "verdict": {
+          "code": "measurement.shape.inconclusive"
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.bestDepth",
+        "params": {
+         "depth": "-3"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.floor"
+     },
+     "text": {
+      "code": "measurement.floor",
+      "params": {
+       "height": "+27.0",
+       "status": {
+        "code": "measurement.floor.above"
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.lower"
+     },
+     "text": {
+      "code": "measurement.lower.value",
+      "params": {
+       "part": {
+        "code": "measurement.object.right_light_curtain"
+       },
+       "value": "28.3"
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.box"
+     },
+     "text": {
+      "code": "measurement.box",
+      "params": {
+       "length": "5",
+       "width": "10",
+       "height": "161",
+       "bottom": "26.0",
+       "confidence": {
+        "code": "message.join",
+        "params": {
+         "first": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.reason.dimension",
+              "params": {
+               "dimension": {
+                "code": "box.dim.L"
+               },
+               "level": {
+                "code": "box.level.medium"
+               }
+              }
+             },
+             "second": {
+              "code": "measurement.reason.dimension",
+              "params": {
+               "dimension": {
+                "code": "box.dim.W"
+               },
+               "level": {
+                "code": "box.level.unverified"
+               }
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.reason.dimension",
+            "params": {
+             "dimension": {
+              "code": "box.dim.H"
+             },
+             "level": {
+              "code": "box.level.high"
+             }
+            }
+           }
+          }
+         },
+         "second": {
+          "code": "measurement.reason.dimension",
+          "params": {
+           "dimension": {
+            "code": "box.dim.bottom"
+           },
+           "level": {
+            "code": "box.level.high"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.gates"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.gate.exploded",
+        "params": {
+         "axis": "L",
+         "size": "0.17",
+         "factor": 3
+        }
+       },
+       "second": {
+        "code": "measurement.gate.G7",
+        "params": {
+         "dimension": {
+          "code": "box.dim.L"
+         },
+         "model": "13.3",
+         "box": "5.4",
+         "error": "+146"
+        }
+       }
+      }
+     }
+    }
+   ],
+   "caption": {
+    "code": "measurement.caption"
+   },
+   "url": "measurement-layer/pipeline-33ea8411.jpg"
+  },
+  "9bc4a50c-d59f-5257-bcd2-29bee4d0263d": {
+   "stages": [
+    {
+     "label": {
+      "code": "measurement.stage.geometry"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.geometry",
+        "params": {
+         "scale": "356.2"
+        }
+       },
+       "second": {
+        "code": "measurement.coverage",
+        "params": {
+         "coverage": "74"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.completion"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.completion"
+       },
+       "second": {
+        "code": "measurement.selected",
+        "params": {
+         "candidate": {
+          "code": "measurement.selection.unchanged"
+         },
+         "photo": "2"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.assembly"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.assembly",
+        "params": {
+         "result": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.iou",
+              "params": {
+               "values": "0.94",
+               "mean": "0.94"
+              }
+             },
+             "second": {
+              "code": "measurement.depthResidual",
+              "params": {
+               "depth": "0.9"
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.lowest",
+            "params": {
+             "height": "+25.8"
+            }
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.penalty",
+        "params": {
+         "penalty": "0.0000"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.shape"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.shape",
+        "params": {
+         "verdict": {
+          "code": "measurement.shape.inconclusive"
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.bestDepth",
+        "params": {
+         "depth": "+38"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.floor"
+     },
+     "text": {
+      "code": "measurement.floor",
+      "params": {
+       "height": "+25.8",
+       "status": {
+        "code": "measurement.floor.above"
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.box"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "message.join",
+        "params": {
+         "first": {
+          "code": "measurement.box",
+          "params": {
+           "length": "10",
+           "width": "11",
+           "height": "73",
+           "bottom": "23.0",
+           "confidence": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "message.join",
+              "params": {
+               "first": {
+                "code": "message.join",
+                "params": {
+                 "first": {
+                  "code": "measurement.reason.dimension",
+                  "params": {
+                   "dimension": {
+                    "code": "box.dim.L"
+                   },
+                   "level": {
+                    "code": "box.level.medium"
+                   }
+                  }
+                 },
+                 "second": {
+                  "code": "measurement.reason.dimension",
+                  "params": {
+                   "dimension": {
+                    "code": "box.dim.W"
+                   },
+                   "level": {
+                    "code": "box.level.low"
+                   }
+                  }
+                 }
+                }
+               },
+               "second": {
+                "code": "measurement.reason.dimension",
+                "params": {
+                 "dimension": {
+                  "code": "box.dim.H"
+                 },
+                 "level": {
+                  "code": "box.level.low"
+                 }
+                }
+               }
+              }
+             },
+             "second": {
+              "code": "measurement.reason.dimension",
+              "params": {
+               "dimension": {
+                "code": "box.dim.bottom"
+               },
+               "level": {
+                "code": "box.level.unverified"
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         "second": {
+          "code": "measurement.reason.dimension",
+          "params": {
+           "dimension": {
+            "code": "box.dim.H"
+           },
+           "level": {
+            "code": "box.level.low"
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.reason.dimension",
+        "params": {
+         "dimension": {
+          "code": "box.dim.bottom"
+         },
+         "level": {
+          "code": "box.level.unverified"
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.gates"
+     },
+     "text": {
+      "code": "measurement.passed"
+     }
+    }
+   ],
+   "caption": {
+    "code": "measurement.caption"
+   },
+   "url": "measurement-layer/pipeline-9bc4a50c.jpg"
+  },
+  "3b648d48-e58c-57f8-abb1-1175b2491a9b": {
+   "stages": [
+    {
+     "label": {
+      "code": "measurement.stage.geometry"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.geometry",
+        "params": {
+         "scale": "356.2"
+        }
+       },
+       "second": {
+        "code": "measurement.coverage",
+        "params": {
+         "coverage": "75"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.completion"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.completion"
+       },
+       "second": {
+        "code": "measurement.selected",
+        "params": {
+         "candidate": {
+          "code": "measurement.selection.unchanged"
+         },
+         "photo": "1"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.assembly"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.assembly",
+        "params": {
+         "result": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.iou",
+              "params": {
+               "values": "0.71 / 0.53",
+               "mean": "0.62"
+              }
+             },
+             "second": {
+              "code": "measurement.depthResidual",
+              "params": {
+               "depth": "2.9"
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.lowest",
+            "params": {
+             "height": "+92.7"
+            }
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.penalty",
+        "params": {
+         "penalty": "0.0000"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.shape"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "measurement.shape",
+        "params": {
+         "verdict": {
+          "code": "measurement.shape.ok"
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.bestDepth",
+        "params": {
+         "depth": "-7"
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.floor"
+     },
+     "text": {
+      "code": "measurement.floor",
+      "params": {
+       "height": "+92.7",
+       "status": {
+        "code": "measurement.floor.above"
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.box"
+     },
+     "text": {
+      "code": "message.join",
+      "params": {
+       "first": {
+        "code": "message.join",
+        "params": {
+         "first": {
+          "code": "message.join",
+          "params": {
+           "first": {
+            "code": "message.join",
+            "params": {
+             "first": {
+              "code": "measurement.box",
+              "params": {
+               "length": "129",
+               "width": "102",
+               "height": "292",
+               "bottom": "92.7",
+               "confidence": {
+                "code": "message.join",
+                "params": {
+                 "first": {
+                  "code": "message.join",
+                  "params": {
+                   "first": {
+                    "code": "message.join",
+                    "params": {
+                     "first": {
+                      "code": "measurement.reason.dimension",
+                      "params": {
+                       "dimension": {
+                        "code": "box.dim.L"
+                       },
+                       "level": {
+                        "code": "box.level.low"
+                       }
+                      }
+                     },
+                     "second": {
+                      "code": "measurement.reason.dimension",
+                      "params": {
+                       "dimension": {
+                        "code": "box.dim.W"
+                       },
+                       "level": {
+                        "code": "box.level.unverified"
+                       }
+                      }
+                     }
+                    }
+                   },
+                   "second": {
+                    "code": "measurement.reason.dimension",
+                    "params": {
+                     "dimension": {
+                      "code": "box.dim.H"
+                     },
+                     "level": {
+                      "code": "box.level.low"
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "second": {
+                  "code": "measurement.reason.dimension",
+                  "params": {
+                   "dimension": {
+                    "code": "box.dim.bottom"
+                   },
+                   "level": {
+                    "code": "box.level.unverified"
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             },
+             "second": {
+              "code": "measurement.cap.coverage",
+              "params": {
+               "coverage": "67"
+              }
+             }
+            }
+           },
+           "second": {
+            "code": "measurement.reason.dimension",
+            "params": {
+             "dimension": {
+              "code": "box.dim.L"
+             },
+             "level": {
+              "code": "box.level.low"
+             }
+            }
+           }
+          }
+         },
+         "second": {
+          "code": "measurement.reason.dimension",
+          "params": {
+           "dimension": {
+            "code": "box.dim.H"
+           },
+           "level": {
+            "code": "box.level.low"
+           }
+          }
+         }
+        }
+       },
+       "second": {
+        "code": "measurement.reason.dimension",
+        "params": {
+         "dimension": {
+          "code": "box.dim.bottom"
+         },
+         "level": {
+          "code": "box.level.unverified"
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "label": {
+      "code": "measurement.stage.gates"
+     },
+     "text": {
+      "code": "measurement.passed"
+     }
+    }
+   ],
+   "caption": {
+    "code": "measurement.caption"
+   },
+   "url": "measurement-layer/pipeline-3b648d48.jpg"
+  }
+ }
+}
