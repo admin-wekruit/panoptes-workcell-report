@@ -1,0 +1,1 @@
+import{n as e}from"./PolicyPage-BwAf5Lqj.js";export{e as Function};

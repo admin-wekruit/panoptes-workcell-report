@@ -467,6 +467,7 @@
  "stage": "S2e",
  "targets": [
   {
+   "angles": null,
    "candidates": [],
    "class": "light_curtain",
    "cluster": null,
@@ -513,6 +514,7 @@
    ]
   },
   {
+   "angles": null,
    "candidates": [],
    "class": "light_curtain",
    "cluster": null,
@@ -548,6 +550,91 @@
    "views": []
   },
   {
+   "angles": {
+    "bins": [
+     {
+      "fromDeg": 0,
+      "recommended": true,
+      "sigmaCm": 0.48,
+      "status": "ADEQUATE",
+      "toDeg": 10
+     },
+     {
+      "fromDeg": 10,
+      "sigmaCm": 0.79,
+      "status": "ADEQUATE",
+      "toDeg": 20
+     },
+     {
+      "fromDeg": 20,
+      "sigmaCm": 1.55,
+      "status": "MARGINAL",
+      "toDeg": 30
+     },
+     {
+      "fromDeg": 30,
+      "sigmaCm": 4.97,
+      "status": "INSUFFICIENT",
+      "toDeg": 40
+     },
+     {
+      "fromDeg": 40,
+      "reason": {
+       "code": "capture.angle.reason.phone_too_high",
+       "params": {
+        "heightM": "2.20",
+        "maxM": "1.7"
+       }
+      },
+      "toDeg": 50
+     },
+     {
+      "fromDeg": 50,
+      "reason": {
+       "code": "capture.angle.reason.phone_too_high",
+       "params": {
+        "heightM": "3.06",
+        "maxM": "1.7"
+       }
+      },
+      "toDeg": 60
+     },
+     {
+      "fromDeg": 60,
+      "reason": {
+       "code": "capture.angle.reason.phone_too_high",
+       "params": {
+        "heightM": "4.49",
+        "maxM": "1.7"
+       }
+      },
+      "toDeg": 70
+     },
+     {
+      "fromDeg": 70,
+      "reason": {
+       "code": "capture.angle.reason.phone_too_high",
+       "params": {
+        "heightM": "7.66",
+        "maxM": "1.7"
+       }
+      },
+      "toDeg": 80
+     },
+     {
+      "fromDeg": 80,
+      "reason": {
+       "code": "capture.angle.reason.phone_too_high",
+       "params": {
+        "heightM": "23.06",
+        "maxM": "1.7"
+       }
+      },
+      "toDeg": 90
+     }
+    ],
+    "curve": null
+   },
    "candidates": [],
    "class": "fence",
    "cluster": null,
@@ -662,6 +749,7 @@
    ]
   },
   {
+   "angles": null,
    "candidates": [],
    "class": "light_curtain",
    "cluster": null,
@@ -708,6 +796,7 @@
    ]
   },
   {
+   "angles": null,
    "candidates": [],
    "class": "light_curtain",
    "cluster": null,
