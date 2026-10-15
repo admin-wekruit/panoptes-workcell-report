@@ -1,0 +1,772 @@
+{
+ "boxes": {
+  "code": "capture.box.later"
+ },
+ "cell": "030",
+ "counts": {
+  "ADEQUATE": 0,
+  "INSUFFICIENT": 1,
+  "MARGINAL": 2,
+  "UNDETERMINED": 2
+ },
+ "estop": {
+  "limitPct": 4.0,
+  "maxDeviationPct": 1.51,
+  "message": {
+   "code": "capture.estop.ok",
+   "params": {
+    "deviationPct": "1.51",
+    "limitPct": "4",
+    "photos": 1
+   }
+  },
+  "notes": [],
+  "photos": 1,
+  "planXYM": [
+   2.18,
+   -1.1
+  ],
+  "state": "ADEQUATE"
+ },
+ "footprints": [
+  {
+   "class": "cart",
+   "name": "cart",
+   "ring": [
+    [
+     3.54,
+     -0.43
+    ],
+    [
+     3.39,
+     -0.11
+    ],
+    [
+     3.3,
+     0.39
+    ],
+    [
+     3.2,
+     1.11
+    ],
+    [
+     3.24,
+     1.12
+    ],
+    [
+     3.37,
+     1.15
+    ],
+    [
+     3.98,
+     1.29
+    ],
+    [
+     4.08,
+     1.31
+    ],
+    [
+     4.24,
+     1.33
+    ],
+    [
+     6.99,
+     1.16
+    ],
+    [
+     5.64,
+     0.23
+    ],
+    [
+     3.74,
+     -0.38
+    ],
+    [
+     3.55,
+     -0.43
+    ],
+    [
+     3.54,
+     -0.43
+    ]
+   ]
+  },
+  {
+   "class": "guard",
+   "name": "guard",
+   "ring": [
+    [
+     3.74,
+     -0.38
+    ],
+    [
+     3.27,
+     0.81
+    ],
+    [
+     3.26,
+     0.84
+    ],
+    [
+     3.21,
+     1.02
+    ],
+    [
+     3.2,
+     1.11
+    ],
+    [
+     3.22,
+     1.12
+    ],
+    [
+     3.26,
+     1.13
+    ],
+    [
+     3.92,
+     1.28
+    ],
+    [
+     4.02,
+     1.3
+    ],
+    [
+     4.14,
+     1.32
+    ],
+    [
+     4.24,
+     1.33
+    ],
+    [
+     5.35,
+     1.2
+    ],
+    [
+     5.44,
+     1.11
+    ],
+    [
+     5.47,
+     1.07
+    ],
+    [
+     5.7,
+     0.27
+    ],
+    [
+     5.7,
+     0.26
+    ],
+    [
+     5.69,
+     0.24
+    ],
+    [
+     5.67,
+     0.23
+    ],
+    [
+     3.75,
+     -0.38
+    ],
+    [
+     3.74,
+     -0.38
+    ]
+   ]
+  },
+  {
+   "class": "light_curtain",
+   "name": "left_light_curtain",
+   "ring": [
+    [
+     1.84,
+     0.7
+    ],
+    [
+     1.84,
+     0.77
+    ],
+    [
+     1.86,
+     0.79
+    ],
+    [
+     1.9,
+     0.82
+    ],
+    [
+     1.93,
+     0.79
+    ],
+    [
+     1.93,
+     0.73
+    ],
+    [
+     1.92,
+     0.72
+    ],
+    [
+     1.88,
+     0.7
+    ],
+    [
+     1.84,
+     0.7
+    ]
+   ]
+  },
+  {
+   "class": "bollard",
+   "name": "left_post",
+   "ring": [
+    [
+     1.6,
+     0.52
+    ],
+    [
+     1.57,
+     0.54
+    ],
+    [
+     1.54,
+     0.57
+    ],
+    [
+     1.54,
+     0.61
+    ],
+    [
+     1.92,
+     0.77
+    ],
+    [
+     1.6,
+     0.52
+    ]
+   ]
+  },
+  {
+   "class": "light_curtain",
+   "name": "right_light_curtain",
+   "ring": [
+    [
+     2.17,
+     -1.06
+    ],
+    [
+     2.17,
+     -1.04
+    ],
+    [
+     2.22,
+     -0.98
+    ],
+    [
+     2.23,
+     -0.97
+    ],
+    [
+     2.27,
+     -0.98
+    ],
+    [
+     2.28,
+     -1.0
+    ],
+    [
+     2.27,
+     -1.06
+    ],
+    [
+     2.17,
+     -1.06
+    ]
+   ]
+  },
+  {
+   "class": "bollard",
+   "name": "right_post",
+   "ring": [
+    [
+     1.9,
+     -1.01
+    ],
+    [
+     1.88,
+     -0.99
+    ],
+    [
+     1.89,
+     -0.99
+    ],
+    [
+     2.26,
+     -1.0
+    ],
+    [
+     2.25,
+     -1.01
+    ],
+    [
+     1.9,
+     -1.01
+    ]
+   ]
+  },
+  {
+   "class": "robot",
+   "name": "robot",
+   "ring": [
+    [
+     7.47,
+     0.51
+    ],
+    [
+     7.24,
+     0.52
+    ],
+    [
+     7.2,
+     0.53
+    ],
+    [
+     6.97,
+     0.68
+    ],
+    [
+     6.67,
+     0.9
+    ],
+    [
+     6.66,
+     0.91
+    ],
+    [
+     6.65,
+     0.93
+    ],
+    [
+     6.65,
+     0.97
+    ],
+    [
+     6.76,
+     1.17
+    ],
+    [
+     6.84,
+     1.24
+    ],
+    [
+     6.88,
+     1.27
+    ],
+    [
+     7.2,
+     1.35
+    ],
+    [
+     7.21,
+     1.35
+    ],
+    [
+     7.72,
+     0.62
+    ],
+    [
+     7.62,
+     0.55
+    ],
+    [
+     7.56,
+     0.51
+    ],
+    [
+     7.47,
+     0.51
+    ]
+   ]
+  }
+ ],
+ "inputs": {
+  "binding": "frozen",
+  "floor": "S2c analysis",
+  "geometry": "030-mvs-da3-base-padded",
+  "objects": "evidence/objects.json",
+  "objectsSha256": "58d09c8ea8f5bdd5dded585484843aea93041b6bb151c21a4d588a5c76732314",
+  "scale": {
+   "nativeToMeters": 3.5616493184162774,
+   "source": "scale file estop-scale.json"
+  }
+ },
+ "model": {
+  "engine": "argus.checks.lower_edge.two_view",
+  "label": {
+   "code": "capture.model.label"
+  },
+  "lines": {
+   "bandInclusion": 0.65,
+   "minLengthPx": 100,
+   "verticalDeg": 30.0
+  },
+  "thresholds": {
+   "maxCm": 2.5,
+   "trustCm": 1.0
+  },
+  "uNoStepPx": 5.77
+ },
+ "plan": "capture/bor1-030-01.svg",
+ "publishedFor": {
+  "publicationId": "497b7fb5-b778-410b-ae82-875e1e106bbd",
+  "revisionId": "1691ba05-ed0b-5b47-8b59-5f6e4ab0b064"
+ },
+ "run": "bor1-030-01",
+ "schema": "capture/1",
+ "shotList": [
+  {
+   "id": "housing.left_light_curtain.two_views",
+   "state": "satisfied"
+  },
+  {
+   "id": "rail.right_fence.low",
+   "state": "missing"
+  },
+  {
+   "id": "rail.right_fence.high",
+   "state": "notNeeded"
+  },
+  {
+   "id": "housing.right_light_curtain.two_views",
+   "state": "satisfied"
+  },
+  {
+   "id": "estop.pair",
+   "state": "tick"
+  },
+  {
+   "id": "estop.cell",
+   "state": "satisfied"
+  },
+  {
+   "id": "cell.wide.1",
+   "state": "tick"
+  },
+  {
+   "id": "cell.wide.2",
+   "state": "tick"
+  },
+  {
+   "id": "format",
+   "state": "tick"
+  }
+ ],
+ "stage": "S2e",
+ "targets": [
+  {
+   "candidates": [],
+   "class": "light_curtain",
+   "cluster": null,
+   "flags": [],
+   "key": "left_light_curtain/housing_bottom",
+   "kind": "region",
+   "label": {
+    "code": "measurement.object.left_light_curtain"
+   },
+   "limit": {
+    "code": "capture.housing.pre",
+    "params": {
+     "object": {
+      "code": "measurement.object.left_light_curtain"
+     },
+     "views": 2
+    }
+   },
+   "limits": [
+    {
+     "code": "capture.housing.pre",
+     "params": {
+      "object": {
+       "code": "measurement.object.left_light_curtain"
+      },
+      "views": 2
+     }
+    }
+   ],
+   "next": [],
+   "object": "left_light_curtain",
+   "pairs": [],
+   "role": "housing_bottom",
+   "status": "MARGINAL",
+   "views": [
+    {
+     "frame": "frame_0001",
+     "photo": 1
+    },
+    {
+     "frame": "frame_0002",
+     "photo": 2
+    }
+   ]
+  },
+  {
+   "candidates": [],
+   "class": "light_curtain",
+   "cluster": null,
+   "flags": [],
+   "key": "left_light_curtain/lowest_beam",
+   "kind": "gap",
+   "label": {
+    "code": "measurement.object.left_light_curtain"
+   },
+   "limit": {
+    "code": "capture.beam.gap",
+    "params": {
+     "object": {
+      "code": "measurement.object.left_light_curtain"
+     }
+    }
+   },
+   "limits": [
+    {
+     "code": "capture.beam.gap",
+     "params": {
+      "object": {
+       "code": "measurement.object.left_light_curtain"
+      }
+     }
+    }
+   ],
+   "next": [],
+   "object": "left_light_curtain",
+   "pairs": [],
+   "role": "lowest_beam",
+   "status": "UNDETERMINED",
+   "views": []
+  },
+  {
+   "candidates": [],
+   "class": "fence",
+   "cluster": null,
+   "flags": [],
+   "key": "right_fence/panel_bottom",
+   "kind": "line",
+   "label": {
+    "code": "measurement.object.right_fence"
+   },
+   "limit": {
+    "code": "capture.limit.no_second_view",
+    "params": {
+     "withEdge": 1,
+     "withoutEdge": 0
+    }
+   },
+   "limits": [
+    {
+     "code": "capture.limit.no_second_view",
+     "params": {
+      "withEdge": 1,
+      "withoutEdge": 0
+     }
+    }
+   ],
+   "next": [
+    {
+     "action": {
+      "code": "capture.shot.low",
+      "params": {
+       "distanceM": "2.0",
+       "heightM": "0.32",
+       "side": {
+        "code": "capture.side.same",
+        "params": {
+         "photos": "1"
+        }
+       },
+       "tiltDeg": "5",
+       "toleranceM": "0.2"
+      }
+     },
+     "aim": [
+      2.95,
+      -0.93
+     ],
+     "kind": "low",
+     "notes": [
+      {
+       "code": "capture.shot.note.assumed_height",
+       "params": {
+        "heightM": "0.20"
+       }
+      }
+     ],
+     "pose": {
+      "heightM": 0.32,
+      "planXYM": [
+       2.59,
+       1.04
+      ],
+      "tiltDeg": 4.9,
+      "yawDeg": -79.7
+     },
+     "predicted": {
+      "dihedralDeg": 37.62,
+      "estopInFrame": true,
+      "estopRangeM": 2.34,
+      "jitter": {
+       "heightM": 0.1,
+       "positionM": 0.2
+      },
+      "partner": 1,
+      "robustPct": 100.0,
+      "sigmaCm": 0.48,
+      "status": "ADEQUATE",
+      "trials": 200
+     }
+    }
+   ],
+   "object": "right_fence",
+   "pairs": [],
+   "railPlanXYM": [
+    [
+     3.08,
+     -0.91
+    ],
+    [
+     2.82,
+     -0.96
+    ]
+   ],
+   "role": "panel_bottom",
+   "status": "INSUFFICIENT",
+   "views": [
+    {
+     "elevationDeg": 41.1,
+     "found": true,
+     "frame": "frame_0001",
+     "gapPx": 4.3,
+     "photo": 1,
+     "s3b": "kept",
+     "segment": [
+      2361.6,
+      2978.4,
+      2486.3,
+      3085.1
+     ],
+     "uPx": 6.56,
+     "widthPx": 3.12
+    }
+   ]
+  },
+  {
+   "candidates": [],
+   "class": "light_curtain",
+   "cluster": null,
+   "flags": [],
+   "key": "right_light_curtain/housing_bottom",
+   "kind": "region",
+   "label": {
+    "code": "measurement.object.right_light_curtain"
+   },
+   "limit": {
+    "code": "capture.housing.pre",
+    "params": {
+     "object": {
+      "code": "measurement.object.right_light_curtain"
+     },
+     "views": 2
+    }
+   },
+   "limits": [
+    {
+     "code": "capture.housing.pre",
+     "params": {
+      "object": {
+       "code": "measurement.object.right_light_curtain"
+      },
+      "views": 2
+     }
+    }
+   ],
+   "next": [],
+   "object": "right_light_curtain",
+   "pairs": [],
+   "role": "housing_bottom",
+   "status": "MARGINAL",
+   "views": [
+    {
+     "frame": "frame_0001",
+     "photo": 1
+    },
+    {
+     "frame": "frame_0002",
+     "photo": 2
+    }
+   ]
+  },
+  {
+   "candidates": [],
+   "class": "light_curtain",
+   "cluster": null,
+   "flags": [],
+   "key": "right_light_curtain/lowest_beam",
+   "kind": "gap",
+   "label": {
+    "code": "measurement.object.right_light_curtain"
+   },
+   "limit": {
+    "code": "capture.beam.gap",
+    "params": {
+     "object": {
+      "code": "measurement.object.right_light_curtain"
+     }
+    }
+   },
+   "limits": [
+    {
+     "code": "capture.beam.gap",
+     "params": {
+      "object": {
+       "code": "measurement.object.right_light_curtain"
+      }
+     }
+    }
+   ],
+   "next": [],
+   "object": "right_light_curtain",
+   "pairs": [],
+   "role": "lowest_beam",
+   "status": "UNDETERMINED",
+   "views": []
+  }
+ ],
+ "views": [
+  {
+   "frame": "frame_0001",
+   "height": 4032,
+   "photo": 1,
+   "planXYM": [
+    -0.0,
+    -0.0
+   ],
+   "sha256": "879ec826854e9f53c8b6e222b2d16d3e12b179ec60f4bf9c072eb5a4eccf38ac",
+   "width": 3024,
+   "yawDeg": 0.0
+  },
+  {
+   "frame": "frame_0002",
+   "height": 4032,
+   "photo": 2,
+   "planXYM": [
+    0.06,
+    -1.58
+   ],
+   "sha256": "6cd81ae4ae783c37d0a1129e39acb0d7064c46d9b51524130406642f8c7a3bea",
+   "width": 3024,
+   "yawDeg": 34.5
+  }
+ ]
+}

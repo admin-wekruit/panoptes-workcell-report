@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.080 -3.930 12.460 6.940" width="748" height="416">
+<path fill="none" stroke="#ddd" stroke-width="0.01" d="M-1,-3.930V3.010M0,-3.930V3.010M1,-3.930V3.010M2,-3.930V3.010M3,-3.930V3.010M4,-3.930V3.010M5,-3.930V3.010M6,-3.930V3.010M7,-3.930V3.010M8,-3.930V3.010M9,-3.930V3.010M10,-3.930V3.010M11,-3.930V3.010M-1.080,3H11.380M-1.080,2H11.380M-1.080,1H11.380M-1.080,0H11.380M-1.080,-1H11.380M-1.080,-2H11.380M-1.080,-3H11.380"/>
+<path fill="none" stroke="#c00" stroke-width="0.03" d="M0,0H1"/><path fill="none" stroke="#00c" stroke-width="0.03" d="M0,0V-1"/>
+<text x="1.05" y="0.1" font-size="0.3">e1 (m)</text><text x="0.05" y="-1.05" font-size="0.3">e2 (m)</text>
+<polygon fill="#d9ddd1" stroke="#6a786c" stroke-width="0.02" points="1.700,-0.680 1.710,-0.690 1.930,-0.880 1.950,-0.890 1.980,-0.900 2.320,-0.990 2.040,-0.820 1.980,-0.790 1.710,-0.680 1.700,-0.680"><title>left_light_curtain</title></polygon>
+<polygon fill="#d9ddd1" stroke="#6a786c" stroke-width="0.02" points="2.400,0.910 2.200,0.850 2.190,0.840 3.770,0.550 3.740,0.560 2.650,0.880 2.440,0.910 2.400,0.910"><title>right_light_curtain</title></polygon>
+<polygon fill="#d9ddd1" stroke="#6a786c" stroke-width="0.02" points="1.720,-0.590 1.710,-0.600 1.700,-0.660 1.700,-0.680 1.760,-0.720 3.250,-1.080 1.810,-0.600 1.780,-0.590 1.720,-0.590"><title>left_post</title></polygon>
+<polygon fill="#d9ddd1" stroke="#6a786c" stroke-width="0.02" points="2.160,0.960 2.130,0.950 2.120,0.940 2.110,0.910 2.110,0.860 2.130,0.840 2.140,0.830 2.180,0.820 2.200,0.820 2.210,0.840 2.230,0.890 2.170,0.960 2.160,0.960"><title>right_post</title></polygon>
+<polygon fill="#d9ddd1" stroke="#6a786c" stroke-width="0.02" points="5.270,-0.320 5.230,-0.360 5.170,-0.570 5.150,-0.750 5.330,-1.200 5.350,-1.240 9.570,-2.930 9.630,-2.920 10.380,-0.940 9.550,-0.700 5.440,-0.320 5.270,-0.320"><title>robot</title></polygon>
+<polygon fill="#d9ddd1" stroke="#6a786c" stroke-width="0.02" points="3.680,0.250 3.650,0.240 3.610,0.220 3.590,0.210 3.550,0.130 3.480,-0.030 3.270,-0.570 3.320,-0.840 3.390,-0.920 3.410,-0.940 4.630,-1.380 4.740,-1.400 5.250,-0.020 3.700,0.250 3.680,0.250"><title>cart</title></polygon>
+<polygon fill="#d9ddd1" stroke="#6a786c" stroke-width="0.02" points="3.710,0.580 3.640,0.400 3.190,-1.250 3.230,-1.270 4.470,-1.730 4.700,-1.780 4.880,-1.730 5.070,-1.000 5.320,0.160 5.320,0.190 5.300,0.220 5.280,0.240 5.240,0.260 4.090,0.530 3.970,0.550 3.840,0.570 3.740,0.580 3.710,0.580"><title>guard</title></polygon>
+<path stroke="#283b32" stroke-width="0.08" d="M2.000,-0.880L4.930,-1.780"><title>left_fence/panel_bottom</title></path>
+<path stroke="#283b32" stroke-width="0.08" d="M2.430,0.920L4.410,0.420"><title>right_fence/panel_bottom</title></path>
+<polygon fill="#283b32" points="0.300,0.001 -0.080,-0.090 -0.080,0.089"/><text x="0.150" y="-0.150" font-size="0.25">1</text>
+<polygon fill="#283b32" points="0.628,1.008 0.256,1.123 0.347,1.278"/><text x="0.520" y="1.010" font-size="0.25">2</text>
+<polygon fill="#283b32" points="0.213,0.376 -0.177,0.370 -0.139,0.544"/><text x="0.070" y="0.290" font-size="0.25">3</text>
+<circle cx="4.490" cy="2.010" r="0.200" fill="none" stroke="#304e3e" stroke-width="0.02" stroke-dasharray="0.06 0.04"/><path stroke="#304e3e" stroke-width="0.03" d="M4.490,2.010L3.460,-1.330"/><text x="4.740" y="2.010" font-size="0.3" fill="#304e3e">N1</text>
+<circle cx="2.850" cy="-1.590" r="0.200" fill="none" stroke="#304e3e" stroke-width="0.02" stroke-dasharray="0.06 0.04"/><path stroke="#304e3e" stroke-width="0.03" d="M2.850,-1.590L3.420,0.670"/><text x="3.100" y="-1.590" font-size="0.3" fill="#304e3e">N2</text>
+<path stroke="#aa542f" stroke-width="0.04" d="M2.280,0.870L2.480,1.070M2.280,1.070L2.480,0.870"/>
+</svg>

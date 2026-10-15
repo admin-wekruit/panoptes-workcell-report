@@ -1300,6 +1300,7 @@
    "label": {
     "code": "measurement.object.left_light_curtain"
    },
+   "objectId": "left_light_curtain",
    "pred": "housing_bottom_height",
    "reasons": [
     {
@@ -1367,6 +1368,7 @@
    "label": {
     "code": "measurement.object.left_light_curtain"
    },
+   "objectId": "left_light_curtain",
    "pred": "lowest_beam_height",
    "reasons": [
     {
@@ -1413,6 +1415,7 @@
    "label": {
     "code": "measurement.object.right_light_curtain"
    },
+   "objectId": "right_light_curtain",
    "pred": "housing_bottom_height",
    "reasons": [
     {
@@ -1480,6 +1483,7 @@
    "label": {
     "code": "measurement.object.right_light_curtain"
    },
+   "objectId": "right_light_curtain",
    "pred": "lowest_beam_height",
    "reasons": [
     {
@@ -1526,6 +1530,7 @@
    "label": {
     "code": "measurement.object.left_fence"
    },
+   "objectId": "left_fence",
    "pred": "floor_gap",
    "reasons": [
     {
@@ -1653,6 +1658,7 @@
    "label": {
     "code": "measurement.object.right_fence"
    },
+   "objectId": "right_fence",
    "pred": "floor_gap",
    "reasons": [
     {
